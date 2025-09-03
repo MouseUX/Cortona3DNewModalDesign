@@ -1,0 +1,18 @@
+.hidden,
+a.image.hidden,
+a.object.hidden {
+    display: none;
+}
+
+.break,
+a.image.break,
+a.object.break {
+    display: block;
+}
+
+.center,
+a.image.center,
+a.object.center {
+    display: block;
+    text-align: center;
+}

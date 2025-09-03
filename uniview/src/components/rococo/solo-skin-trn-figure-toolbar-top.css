@@ -1,0 +1,9 @@
+.display-mode-2d .location {
+    display: none;
+}
+
+.mode {
+    background-color: #ff0;
+    font-weight: bold;
+    padding: .25em;
+}

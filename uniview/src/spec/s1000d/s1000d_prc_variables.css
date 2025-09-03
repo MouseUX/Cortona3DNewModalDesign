@@ -1,0 +1,48 @@
+:root {
+    --left-text-indent: 2cm;
+    --left-text-indent-reverse: -2cm;
+    --left-toc-indent: 1.4cm;
+    --font-size: 10pt;
+
+    --change-bar-width: 2pt;
+    --change-bar-left-indent: 3mm;
+    --change-bar-left-indent-reverse: -3mm;
+
+    --list-body-indent: 7mm;
+
+    --indent-standart: 8pt;
+    --indent-half: 4pt;
+    --indent-quater: 2pt;
+}
+
+:root {
+    --levelledCounter1: target-counter(attr(href), counter1);
+    --levelledCounter2: target-counter(attr(href), counter2);
+    --levelledCounter3: target-counter(attr(href), counter3);
+    --levelledCounter4: target-counter(attr(href), counter4);
+    --levelledCounter5: target-counter(attr(href), counter5);
+    --levelledCounter6: target-counter(attr(href), counter6);
+    --levelledCounter7: target-counter(attr(href), counter7);
+    --levelledCounter8: target-counter(attr(href), counter8);
+
+    --levelledCounter1_2: var(--levelledCounter1) "." var(--levelledCounter2);
+    --levelledCounter1_2_3: var(--levelledCounter1_2) "." var(--levelledCounter3);
+    --levelledCounter1_2_3_4: var(--levelledCounter1_2_3) "." var(--levelledCounter4);
+    --levelledCounter1_2_3_4_5: var(--levelledCounter1_2_3_4) "." var(--levelledCounter5);
+    --levelledCounter1_2_3_4_5_6: var(--levelledCounter1_2_3_4_5) "." var(--levelledCounter6);
+    --levelledCounter1_2_3_4_5_6_7: var(--levelledCounter1_2_3_4_5_6) "." var(--levelledCounter7);
+    --levelledCounter1_2_3_4_5_6_7_8: var(--levelledCounter1_2_3_5_6_7) "." var(--levelledCounter8);
+
+    --levelledCounterContent1: attr(data-index);
+    --levelledCounterContent1_2: attr(data-index);
+    --levelledCounterContent1_2_3: attr(data-index);
+    --levelledCounterContent1_2_3_4: attr(data-index);
+    --levelledCounterContent1_2_3_4_5: attr(data-index);
+    --levelledCounterContent1_2_3_4_5_6: attr(data-index);
+    --levelledCounterContent1_2_3_4_5_6_7: attr(data-index);
+    --levelledCounterContent1_2_3_4_5_6_7_8: attr(data-index);
+
+    --figureCounter: attr(data-figure);
+    --sheetCounter: attr(data-sheet);
+    --tableCounter: attr(data-index);
+}

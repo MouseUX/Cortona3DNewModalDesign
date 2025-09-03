@@ -1,0 +1,26 @@
+.toc {
+    overflow-y: auto;
+}
+
+.toc .toc-list {
+
+}
+
+.toc .toc-list pre {
+    display: inline-block;
+    margin: 0;
+}
+
+.toc .toc-list li {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.toc .toc-list li span {
+    display: inline-block;
+    padding: .33em;
+}
+
+.toc .toc-list li:hover {
+    background-color: lightgrey;
+}

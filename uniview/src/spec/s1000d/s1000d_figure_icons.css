@@ -1,0 +1,59 @@
+.multimediaObject-link,
+.graphic-link {
+    display: block;
+}   
+
+.multimediaObject-link a,
+.multimediaobject-link a,
+.graphic-link a {
+    display: inline-block;
+}
+
+.multimediaObject-link,
+.multimediaobject-link,
+.graphic-link {
+    margin-bottom: 8pt;
+}
+
+.multimediaObject-link:last-child,
+.multimediaobject-link:last-child,
+.graphic-link:last-child {
+    margin-bottom: 0;
+}
+
+.multimediaObject-icon:before,
+.multimediaobject-icon:before,
+.graphic-icon:before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+.multimediaObject-icon[data-multimediaType='video']:before,
+.multimediaobject-icon[data-multimediaclass='video']:before {
+    background-image: url(../../../components/rococo/img/icon32-video.png);
+}
+.multimediaObject-icon[data-multimediaType='audio']:before,
+.multimediaobject-icon[data-multimediaclass='audio']:before {
+    background-image: url(../../../components/rococo/img/icon32-audio.png);
+}
+.multimediaObject-icon[data-multimediaType='3D']:before,
+.multimediaobject-icon[data-multimediaclass='3D']:before {
+    background-image: url(../../../components/rococo/img/icon32-3d-model.png);
+}
+.graphic-icon:before {
+    background-image: url(../../../components/rococo/img/icon32-picture.png);
+}
+
+.internalRef.link[data-show="other"][data-link="link2d"]:after,
+.internalRef.link[data-show="other"][data-link="linkMedia"]:after,
+.multimediaObject-link[data-show="other"]:after,
+.multimediaobject-link[data-show="other"]:after,
+.graphic-link[data-show="other"]:after {
+    content: "";
+    display: inline-block;
+    margin-left: 0.5em;
+    width: 16px;
+    height: 16px;
+    background-image: url(../../../components/rococo/img/btn_open_secondary.png);
+}

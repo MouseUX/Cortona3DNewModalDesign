@@ -1,0 +1,8 @@
+.procedure-document-alert .skin-modal-content > *:before {
+    display: none;
+}
+
+.procedure-document-alert .skin-modal-content > * {
+    color: #000;
+    margin-left: 0;
+}

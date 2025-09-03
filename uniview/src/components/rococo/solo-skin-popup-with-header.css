@@ -1,0 +1,38 @@
+.skin-popup-with-header {
+    padding: 0;
+    border-radius: .4em .4em .3em .3em;
+    z-index: 15;
+}
+
+.skin-popup-content {
+    margin: 0.25em 0.5em 0.5em 0.5em;
+}
+
+.skin-popup-header {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em;
+    font-weight: 600;
+    background-color: #ccc; 
+}
+
+.skin-popup-with-header.collapsed .button-collapse svg:first-child,
+.skin-popup-with-header .button-collapse svg:last-child {
+    display: none;
+}
+
+.skin-popup-with-header .button-collapse svg:first-child,
+.skin-popup-with-header.collapsed .button-collapse svg:last-child {
+    display: inherit;
+}
+
+.skin-popup-with-header.collapsed .skin-popup-content {
+    height: 0;
+    visibility: hidden;
+    margin-top: 0;
+    margin-bottom: 0;
+}

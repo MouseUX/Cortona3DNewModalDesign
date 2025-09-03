@@ -1,0 +1,1294 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Illustrated Parts Catalog (IPC)&nbsp;&ndash; user interface</title>
+
+    <style type="text/css">
+        body {
+            font-family: verdana;
+            font-size: 80%;
+            background-color: white;
+            color: black;
+            margin-top: 12pt;
+            margin-bottom: 10pt;
+            margin-left: 10pt;
+            margin-right: 10pt;
+        }
+
+        p {
+            font-family: verdana;
+            font-size: 100%;
+            color: black;
+            margin-top: 6pt;
+            margin-bottom: 6pt;
+            margin-left: 0pt;
+        }
+
+        li {
+            font-family: verdana;
+            font-size: 100%;
+            margin-left: 0pt;
+        }
+
+        td {
+            font-family: verdana;
+            font-size: 80%;
+            color: black;
+
+            background-color: whitesmoke;
+            margin: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border: solid 1px white;
+            vertical-align: top;
+        }
+
+        td.key {
+            background-color: gainsboro;
+            font-weight: bold;
+            vertical-align: top;
+        }
+
+        td.wht {
+            background-color: white;
+            margin: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            border: none;
+            vertical-align: top;
+        }
+
+        th {
+            font-family: verdana;
+            font-size: 80%;
+            color: black;
+            text-align: left;
+
+            background-color: gainsboro;
+            padding: 4px;
+            border: solid 1px white;
+        }
+
+        h1 {
+            font-family: verdana;
+            font-size: 130%;
+            font-weight: bold;
+            background-color: white;
+            color: #336699;
+            margin-bottom: 6pt;
+        }
+
+        h2 {
+            font-family: verdana;
+            font-size: 115%;
+            font-weight: bold;
+            background-color: white;
+            color: #336699;
+            margin-bottom: 6pt;
+            margin-top: 24pt;
+        }
+
+        h3 {
+            font-family: verdana;
+            font-size: 100%;
+            font-weight: bold;
+            background-color: white;
+            color: black;
+            margin-bottom: 3pt;
+        }
+
+        hr {
+            color: #336699;
+            height: 1px;
+        }
+
+        ul {
+            margin-top: 0pt;
+            margin-bottom: 6pt;
+            color: black;
+            list-style-type: disc;
+        }
+
+        a {
+            color: #1080FF;
+        }
+
+        a:visited {
+            color: saddlebrown;
+        }
+
+        a:hover {
+            color: darkorange;
+        }
+
+        .command {
+            padding: 4px;
+            color: #336699;
+            background-color: whitesmoke;
+            font-family: courier;
+        }
+
+        .hdbar {
+            margin-top: 32px;
+            margin-bottom: 0px;
+            width: 100%;
+            font-weight: bold;
+            background-color: #6699CC;
+            color: white;
+            padding: 2px;
+            padding-left: 4px;
+        }
+
+        div.note {
+            background-image: url(images/note1.png);
+            background-repeat: no-repeat;
+            background-color: white;
+            margin-top: 12pt;
+            margin-bottom: 0pt;
+            margin-left: 0pt;
+        }
+
+        div.table_note {
+            background-image: url(images/note2.png);
+            background-repeat: no-repeat;
+            background-color: #F5F5F5;
+            margin-top: 6pt;
+            margin-bottom: 0pt;
+            margin-left: 0pt;
+        }
+
+        div.fig_note {
+            font-size: 90%;
+            margin-top: 6pt;
+            margin-bottom: 6pt;
+            margin-left: 12pt;
+        }
+        
+        table {
+            font-size: medium;
+        }
+
+        img.btn {
+            margin: 2px 4px;
+            width: 16px;
+            height: 16px;
+        }
+
+        img.btn.inline {
+            margin: 0 2px 0 4px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Illustrated Parts Catalogue (IPC)&nbsp;&ndash; user interface</h1>
+    <hr noshade>
+
+    <p>
+        The IPC user interface consists of two workspaces, 3D/2D and DPL table. Each
+        workspace has its own control elements described below. 
+    </p>
+   
+    <p>The IPC can be in the following representations:</p>
+	<ul>
+    <p>
+            <b>2D and 3D</b> allows viewing both 2D and 3D images of the IPC. In this case, the IPC has a button
+            (2D Graphics <img class="btn inline" src="../../../../components/rococo/img/btn_2d.png">)
+            for switching between two windows.
+	</p>
+    <p>
+            <b>3D only</b> allows viewing only 3D images of the IPC. In this case, the 2D Graphics
+            button is unavailable.
+	</p>
+	<p>            
+            <b>2D only</b> allows viewing only 2D images of the IPC. In this case, the IPC
+            contains only the sheets that have 2D images. Other sheets and the 2D Graphics button are unavailable.
+	</p>
+	</ul>
+  
+
+
+    <table width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+            <td class="wht" width="130">
+                <img src="images/PublishProject1.png" width="1384" height="708" border="0">
+            </td>
+        </tr>
+    </table>
+
+
+    <div class="hdbar">3D/2D window</div>
+    <p>
+        The 3D window displays 3D image of the current sheet. You can navigate in the 3D window using the mouse or
+        keyboard. A locator (axis tripod) at the top right corner of the 3D window allows determining 
+		the orientation of the 3D model relative to the axes.
+    </p>
+
+    <p>
+        The 2D window displays vector and raster images associated with the current sheet.
+    </p>
+
+    <!-- 3D/2D Commands -->
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                User interface
+            </th>
+            <th valign="top" align="left">
+                Button
+            </th>
+            <th valign="top" align="left">
+                Purpose
+            </th>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Sheet
+            </td>
+            <td valign="top" align="center">
+                &nbsp;
+            </td>
+            <td valign="top" align="left">
+                Allows you to choose the detail sheet from a list of available sheets.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Reset
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_reset.png">
+            </td>
+            <td valign="top" align="left">
+                Restores the original view on the current sheet.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                2D graphics
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_2d.png">
+            </td>
+            <td valign="top" align="left">
+                Allows you to switch between the 2D and 3D windows.
+				The button is available only in the 2D and 3D viewing mode. 
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Print graphics
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_print3d.png">
+            </td>
+            <td valign="top" align="left">
+                Allows you to print the current 3D/2D image as displayed in the 3D/2D window.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Ignore transparency (for&nbsp;3D&nbsp;window)
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_ignore_tr.png">
+            </td>
+            <td valign="top" align="left">
+                If enabled, allows you to click through the transparent items in the 3D window, as the transparent items
+                become insensitive
+                to the user click.
+            </td>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                Restore all (for&nbsp;3D&nbsp;window)
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_show_all.png">
+            </td>
+            <td valign="top" align="left">
+                Shows all hidden and semitransparent objects.
+            </td>
+        </tr>		
+
+        <tr>
+            <td valign="top" align="left">
+                Skip animation (for&nbsp;3D&nbsp;window)
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_skip_anim.png">
+            </td>
+            <td valign="top" align="left">
+                If enabled, allows you to avoid a smooth transition (animation) from one sheet to another and makes the
+                transition between
+                the sheets instant.
+            </td>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                Settings
+            </td>
+			<td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_settings.png">
+            </td>			
+            <td valign="top" align="left">
+                Shows or hides the Settings list.
+                <p>
+                    <b>Transition animation rate</b>. Adjusts a playback speed for explosion transition.</p>					
+                <p>
+                    <b>Enable Transition Animation control</b>. If selected, activates the slider that allows you to manually review transitions between sheets. To display the slider, move the mouse pointer over the bottom of the 3D window or tap it if you have a touch screen.</p>
+				<p>
+                    <b>Scene lighting</b>.
+					Defines the number of light sources and their location to illuminate the model in the 3D window. The relative positions of the light sources are displayed to the right of the list. All light sources move with the viewer.
+					</p>						
+				<p>
+                    <b>Show navigation cube</b>. Shows or hides the Navigation Cube in the 3D window.
+					The Navigation Cube has three different types of hotspot areas: Edge, Corner, and Face. When you position the pointer over the edge, corner, or face of the Navigation Cube, the corresponding area is highlighted. With these areas you can switch between standard views and perform rotations.
+					</p>
+                <p>
+                    <b>Show surface edges</b>. If selected, displays surface boundaries in the 3D window.</p> 						
+                <p>
+                    <b>Anti-aliasing</b>. Activates a technique for minimizing the distortion artifacts in the 3D window.</p>					
+                <p>
+                    <b>Ambient occlusion</b>. Activates ambient occlusion shading and rendering technique in the 3D window.</p>
+
+					
+                <p>
+                    <b>Selection mode</b>. Specifies objects representation for selection in the 3D window.</p>			
+				<p> 
+					<i>Highlight with color</i>&nbsp;&ndash; the selection is highlighted.</p>			
+                <p>
+					<i>X-ray selected objects</i>&nbsp;&ndash; objects appear gray and translucent, except for the selection.</p>			
+                <p>
+					<i>Translucent shell</i>&nbsp;&ndash; the outer shell of the entire model appears translucent, non-selected internal objects are hidden.  
+				</p>			
+				
+                <p>
+                    <b>Outline hovered objects</b>. The selection is outlined.
+				</p>										
+            </td>
+        </tr>		
+
+        <tr>
+            <td valign="top" align="left">
+                Highlighting
+            </td>
+
+            <td valign="top" align="center">
+                &nbsp;
+            </td>
+
+            <td valign="top" align="left">
+                When you select or point to an item in the 3D window or a callout in the 2D window, it is highlighted.
+                The Item number (or CSN) is displayed as a popup for the selection. The color scheme can be changed 
+                by the catalog author. The following color scheme is applied by default:
+                <p>Yellow &mdash; for selected item or callout. The corresponding DPL row is also selected and
+                    highlighted in the DPL table.</p>
+                <p>Green &mdash; for the callout that has the pointer over it. The corresponding DPL row is also highlighted in the DPL table.
+                </p>
+            </td>
+        </tr>
+
+    </table>
+
+
+    <!-- 3D Navigation -->
+    <div class="hdbar">3D View bar</div>
+    <p>
+        Buttons for controlling viewing modes in the 3D window.
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                User interface
+            </th>
+            <th valign="top" align="left">
+                Button
+            </th>
+            <th valign="top" align="left">
+                Purpose
+            </th>
+        </tr>
+
+
+
+        <tr>
+            <td valign="top" align="left">
+                Set center
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_goto.png">
+            </td>
+            <td valign="top" align="left">
+                Allows you to specify the rotation center for the 3D model.
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Show rotation center
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_center.png">
+            </td>
+            <td valign="top" align="left">
+                Allows you to hide or show the rotation center.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Fit all
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_fit.png">
+            </td>
+            <td valign="top" align="left">
+                Makes the entire 3D model fully visible in the 3D window.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Align horizon
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_align.png">
+            </td>
+            <td valign="top" align="left">
+                Positions the camera's horizontal (but not longitudinal) axis parallel to the horizontal plane in the coordinate system.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Show&nbsp;coordinate&nbsp;axes
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_axes.png">
+            </td>
+            <td valign="top" align="left">
+                Shows or hides the orientation axes in the 3D window.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Measure
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_measure.png">
+            </td>			
+            <td valign="top" align="left">
+                Opens the tool to measure a distance.
+				In the 3D window, simply click once on one point, then click again on the second point.
+				The distance between the two red dots should then be displayed.				
+				To get the distance between points projected onto the vertical or horizontal plane, select the projection plane name from the list.
+				To change the unit of length, select <b>Units</b>.
+				To set the length of leader lines, drag the <b>H</b> slider.
+				Select <b>Keep visible</b> to make the dimension line visible after you close the measurement tool.
+				To set new points, click <b>Clear</b> or press the Esc key, and then specify points in the 3D window.
+				<p>
+				<b>WARNING</b>				
+				</p>
+				<p>
+				Do not use measurement results directly in the workflow as the 3D illustration may differ from the actual product. To obtain the dimensions necessary for manufacturing or servicing, refer to the relevant technical documentation.				
+				</p>					
+            </td>
+        </tr>			
+		
+        <tr>
+            <td valign="top" align="left">
+                Section plane
+            </td>
+            <td valign="top" align="center">
+                <img class="btn inline" src="../../../../components/rococo/img/btn_section_plane.png">
+            </td>			
+            <td valign="top" align="left">
+				Displays the model as if it were cut by a plane. 
+				Use controls to set (Left, Top, Front) and rotate (X and Y) the section plane. 
+				To move the section plane, drag the <b>D</b> slider.
+				Use <b>Flip</b> to mirror the section.
+				Select <b>Precise mode</b> to improve the accuracy of the sliders.				
+				Select <b>Keep visible</b> to make the section visible after you close the tool.
+				To move the section plane to the center of the selection, click <b>Reset</b>.				
+            </td>
+        </tr>			
+
+    </table>
+
+    <p>
+        There are several viewing modes that allow showing the 3D model from a specified position:
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                User interface
+            </th>
+            <th valign="top" align="left">
+                Button
+            </th>
+            <th valign="top" align="left">
+                Purpose
+            </th>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Front
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v1.png">
+            </td>
+            <td valign="top" align="left">
+                Shows the model from the front.
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Back
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v2.png">
+            </td>
+            <td valign="top" align="left">
+                Shows the model from the back.
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Left
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v4.png">
+            </td>
+            <td valign="top" align="left">
+                Shows the model from the left side.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Right
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v3.png">
+            </td>
+            <td valign="top" align="left">
+                Shows the model from the right side.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Top
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v5.png">
+            </td>
+            <td valign="top" align="left">
+                Shows the model from the top.
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Bottom
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v6.png">
+            </td>
+            <td valign="top" align="left">
+                Shows the model from the bottom.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Isometric
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v7.png">
+            </td>
+            <td valign="top" align="left">
+                Shows the model in an isometric view.
+            </td>
+        </tr>
+
+    </table>
+
+
+    <div class="hdbar">Selection bar</div>
+    <p>Allows fitting, showing, hiding and making transparent the items selected in the 3D window.</p>
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                User interface
+            </th>
+
+            <th valign="top" align="left">
+                Purpose
+            </th>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                Show selected objects in separate window
+            </td>
+            <td valign="top" align="left">
+                If enabled, displays the selection in the secondary 3D window.
+            </td>
+        </tr>			
+		
+        <tr>
+            <td valign="top" align="left">
+                Ignore transparency
+            </td>
+            <td valign="top" align="left">
+                If enabled, allows you to click through the transparent items in the 3D window, as the transparent items
+                become insensitive to the user click.
+            </td>
+        </tr>		
+		
+        <tr>
+            <td valign="top" align="left">
+                Restore all
+            </td>
+            <td valign="top" align="left">
+                Shows all hidden and semitransparent objects.
+            </td>
+        </tr>			
+
+
+        <tr>
+            <td valign="top" align="left">
+                Fit
+            </td>
+            <td valign="top" align="left">
+                Fits the bounding box of the selected items to the 3D window.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Show
+            </td>
+            <td valign="top" align="left">
+                Makes visible the selected items previously hidden in the 3D window. The check box of the
+                corresponding DPL row becomes
+                selected.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Hide
+            </td>
+            <td valign="top" align="left">
+                Hides the selected items in the 3D window. The check box of the corresponding DPL row becomes cleared.
+            </td>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                Select none
+            </td>
+            <td valign="top" align="left">
+                Deselects all items.
+            </td>
+        </tr>			
+
+        <tr>
+            <td valign="top" align="left">
+                Transparency
+            </td>
+            <td valign="top" align="left">
+				Allows you to set the transparency value for the selected items. 			
+				The Transparency command is available if one or more items are selected in the 3D window or if one or more DPL rows are selected in the DPL table.
+            </td>
+        </tr>
+    </table>
+
+
+    <!-- DPL table Commands-->
+    <div class="hdbar">DPL Table window</div>
+    <p>Displays the DPL table. Note that the DPL Table bar can contain a set of filters (for example: UCA, Model)
+    for filtering the DPL data by the chosen criteria. The use of one or another filter depends on the information standard that was used to create this IPC.
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                User interface
+            </th>
+            <th valign="top" align="left">
+                Button
+            </th>
+            <th valign="top" align="left">
+                Purpose
+            </th>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Print table
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_printt.png">
+            </td>
+            <td valign="top" align="left">
+                Allows you to print the DPL table.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Composite print
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_printc.png">
+            </td>
+            <td valign="top" align="left">
+                Allows you to print both the DPL table and all 2D images available in the IPC. If
+                Full Table is selected, the complete DPL table and all illustrations are printed. If Full Table is cleared, only current DPL sheet with corresponding illustration will be printed.
+                Each 2D
+                image (illustration) is printed out on a separate page.
+            </td>
+        </tr>
+
+
+
+        <tr>
+            <td valign="top" align="left">
+                Full table
+            </td>
+            <td valign="top" align="center">
+                &nbsp;
+            </td>
+            <td valign="top" align="left">
+                Shows the entire DPL table. The text of the rows that are not associated with the current sheet
+                (inactive rows) is gray in
+                color.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Export to CSV
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_excel.png">
+            </td>
+            <td valign="top" align="left">
+                Exports data of all selected DPL rows to a comma-separated file. If no DPL rows are selected, only DPL
+                rows associated with
+                visible 3D items are exported.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Help
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_help.png">
+            </td>
+            <td valign="top" align="left">
+                Provides a help system for the user interface.
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Title area
+            </td>
+            <td valign="top" align="center">
+                &nbsp;
+            </td>
+            <td valign="top" align="left">
+                The Title area provides some information about the IPC, for example: publication name, sheet
+                name, published
+                date.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Check boxes column
+            </td>
+            <td valign="top" align="center">
+                &nbsp;
+            </td>
+            <td valign="top" align="left">
+                The
+                <i>Check boxes</i> column is a DPL column with tick boxes. The following indications are used:
+                <p>
+                    <img src="../../../../components/rococo/img/boxshow.gif"> &mdash; the DPL row has the
+                    corresponding item visible in the 3D window on the current sheet.</p>
+                <p>
+                    <img src="../../../../components/rococo/img/boxhide.gif"> &mdash; means that the corresponding
+                    item is hidden in the 3D window on the current sheet. </p>
+                <p>
+                    no check box means that the DPL row has no corresponding 3D item on the current sheet.</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Highlighting
+            </td>
+
+            <td valign="top" align="center">
+                &nbsp;
+            </td>
+
+            <td valign="top" align="left">
+                When you select or point to a DPL row, it is highlighted. The Item number (or CSN) is displayed as a
+                popup for the highlighted DPL row. The color scheme can be changed by the catalog author.  
+				The following color scheme is applied by default:
+
+                <p>
+                    Aquamarine &mdash; for the DPL row that has the pointer over it and that refers to illustrated
+					items. The items and callouts are also highlighted in the 3D/2D window.
+                </p>
+                <p>
+                    Yellow &mdash; for selected DPL row. The corresponding items and callouts
+                    are also highlighted in the 3D/2D window.
+                </p>
+                <p>
+                    Pink &mdash; for the DPL row that has the pointer over it and that doesn't have illustrated items.
+                </p>
+
+            </td>
+        </tr>
+
+    </table>
+
+
+    <!-- DPL table Commands-->
+    <div class="hdbar">Context-sensitive menus in 3D/2D and DPL Table windows</div>
+    <p>Right-click an item in the 3D window or a DPL row in the DPL table or a callout in the 2D window to access the context-sensitive menus.
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                User interface
+            </th>
+            <th valign="top" align="left">
+                Meaning
+            </th>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Item/CSN
+            </td>
+            <td valign="top" align="left">
+                Shows the Item number or Catalog Sequence Number (CSN) for the selected item or DPL row or callout.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Fit
+            </td>
+            <td valign="top" align="left">
+                Fits the bounding box of selected items to the 3D window.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Show/Hide
+            </td>
+            <td valign="top" align="left">
+                Shows or hides the selected item in the 3D window. The check box of the corresponding DPL row becomes
+                selected or cleared
+                respectively.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Select/Unselect
+            </td>
+            <td valign="top" align="left">
+                Selects or unselects the chosen item in the 3D window or the chosen DPL row in the DPL table or the
+                chosen callout in the
+                2D window.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                The Sheet list
+            </td>
+            <td valign="top" align="left">
+                Allows you to choose a sheet from the list of available sheets illustrating the chosen DPL row. 
+				  The sheet recommended for the DPL row is displayed in bold. The current sheet is marked with the check mark symbol.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Show all
+            </td>
+            <td valign="top" align="left">
+                Makes all hidden items visible in the 3D window and selects the corresponding check boxes in the DPL
+                table.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Zoom in
+            </td>
+            <td valign="top" align="left">
+                Increases the image.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Zoom out
+            </td>
+            <td valign="top" align="left">
+                Decreases the image.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Best fit
+            </td>
+            <td valign="top" align="left">
+                Fits the image to the margin bounds.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                About
+            </td>
+            <td valign="top" align="left">
+                Shows the versions of IPC, 3D viewer and 2D viewer.
+            </td>
+
+        </tr>
+    </table>
+
+    <!-- DPL table Procedures-->
+    <div class="hdbar">DPL table&nbsp;&ndash; main procedures</div>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Operation
+            </th>
+
+            <th valign="top" align="left">
+                User action
+            </th>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Select a DPL row
+            </td>
+
+            <td valign="top" align="left">
+                Click the required DPL row.
+
+                <p>The DPL row and corresponding 3D item (or callout in 2D window) are highlighted.</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Select several DPL rows one by one
+            </td>
+
+            <td valign="top" align="left">
+                Press and hold down CTRL, and then click each required DPL row.
+            </td>
+
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Select a consecutive group of DPL rows
+            </td>
+
+            <td valign="top" align="left">
+                Click the first DPL row, press and hold down SHIFT, and then click the last DPL row.
+            </td>
+
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Fit item in the 3D window
+            </td>
+
+            <td valign="top" align="left">
+                Double-click the required DPL row.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Hide item in the 3D window
+            </td>
+
+            <td valign="top" align="left">
+                Clear the check box of the required DPL row.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Show item in the 3D window
+            </td>
+
+            <td valign="top" align="left">
+                Select the check box of the required DPL row.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Hide/Show a group of items in the 3D window
+            </td>
+            <td valign="top" align="left">
+                Select several DPL rows whose corresponding items you want to hide/show, and then use the Hide and Show
+                buttons on the Selection
+                bar.
+            </td>
+        </tr>
+
+
+    </table>
+
+    <!-- 2D window Procedures -->
+    <div class="hdbar">2D window&nbsp;&ndash; main procedures</div>
+    <p>Callouts in the 2D window are hotspots that allow for interaction between items and the corresponding DPL rows.
+        Right-click
+        in the 2D window to access the available context-sensitive commands. Right-click a callout to access the
+        context-sensitive
+        commands related to the item (the commands are described in the section "Context-Sensitive Menus in 3D/2D window
+        and DPL table")
+    </p>
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Operation
+            </th>
+
+            <th valign="top" align="left">
+                User action
+            </th>
+
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Select an item callout
+            </td>
+
+            <td valign="top" align="left">
+                Click the required callout.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Pan
+            </td>
+
+            <td valign="top" align="left">
+                Move the mouse while holding down its left button.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Zoom
+            </td>
+
+            <td valign="top" align="left">
+                Rotate the mouse wheel forward or backward.
+            </td>
+        </tr>
+
+    </table>
+
+
+    <!-- 3D window Procedures -->
+    <div class="hdbar">3D window&nbsp;&ndash; main procedures</div>
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Operation
+            </th>
+
+            <th valign="top" align="left">
+                User action
+            </th>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                Select an item
+            </td>
+
+            <td valign="top" align="left">
+                Click the required item.
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Select several items one by one
+            </td>
+
+            <td valign="top" align="left">
+                Press and hold down CTRL, and then click each required 3D item.
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Zoom in/out
+            </td>
+
+            <td valign="top" align="left">
+                Rotate the mouse wheel forward or backward. On Apple computers, use the Control modifier key.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Pan
+            </td>
+
+            <td valign="top" align="left">
+                Move the mouse with the mouse wheel pressed. On Apple computers, use the Option modifier key.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Spin
+            </td>
+
+            <td valign="top" align="left">
+                Move the mouse while holding down its left button.
+            </td>
+
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Set rotation center
+            </td>
+            <td valign="top" align="left">
+                On the 3D View bar, click 
+                <b>Set center</b> 
+                <img class="btn inline" src="../../../../components/rococo/img/btn_goto.png">, and then click the required item in the 3D
+                window.
+                
+                <p>Or holding down the ALT key, click any item in the 3D window.</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Fit 3D model
+            </td>
+            <td valign="top" align="left">
+                On the 3D View bar, click
+                <b>Fit</b>
+                <img class="btn inline" src="../../../../components/rococo/img/btn_fit.png">.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Fit selected items
+            </td>
+            <td valign="top" align="left">
+                Select the required items in the 3D window or DPL table, and then click 
+                <b>Fit</b> on the Selection bar.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Show 3D model from specified position
+            </td>
+            <td valign="top" align="left">
+                On the 3D View bar, click the required button 
+				(<img class="btn inline" src="../../../../components/rococo/img/v1.png">&nbsp;Front,
+                <img class="btn inline" src="../../../../components/rococo/img/v2.png">&nbsp;Back,
+                <img class="btn inline" src="../../../../components/rococo/img/v4.png">&nbsp;Left,
+                <img class="btn inline" src="../../../../components/rococo/img/v3.png">&nbsp;Right,
+                <img class="btn inline" src="../../../../components/rococo/img/v5.png">&nbsp;Top,
+                <img class="btn inline" src="../../../../components/rococo/img/v6.png">&nbsp;Bottom, and
+                <img class="btn inline" src="../../../../components/rococo/img/v7.png">&nbsp;Isometric).
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Hide/Show a group of items
+            </td>
+            <td valign="top" align="left">
+                Press and hold down CTRL, click each required 3D item, and then use the Hide and Show buttons on the
+                Selection bar.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Set transparency/opacity
+            </td>
+            <td valign="top" align="left">
+                Select the required item in the 3D window, and then drag the transparency slider on the Selection bar,
+                until the desired
+                effect is achieved in the 3D window.
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

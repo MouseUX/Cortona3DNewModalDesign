@@ -1,0 +1,19 @@
+.panel-comment {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    max-width: 80%;
+    flex-direction: column;
+    background-color: rgba(255,255,125,.9);
+    margin: 1em;
+    border-radius: .5em;
+    padding: 0 1em;
+}
+
+.panel-comment p {
+    margin: .5em 0;
+}
+
+.display-mode-2d .panel-comment {
+    display: none;
+}

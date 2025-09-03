@@ -1,0 +1,29 @@
+@media print {
+    .print .header .h1 {
+        margin-bottom: .25em !important;
+    }
+
+    .dpl-table .dpl-rev-mark span,
+    .print .header .rev .sheet-rev-mark span {
+        visibility: hidden;
+    }
+
+    .dpl-table .dpl-rev-mark,
+    .print .header .rev .sheet-rev-mark {
+        display: block;
+        position: absolute;
+        visibility: visible;
+        border-left: 2px solid #000;
+        height: 1em;
+    }
+
+    .dpl-table thead td {
+        border-right: none;
+    }
+}
+
+.dpl-table thead tr.fig td {
+    background: inherit;
+    border-bottom: none;
+    font-weight: normal;
+}

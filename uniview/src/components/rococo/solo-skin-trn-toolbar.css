@@ -1,0 +1,11 @@
+label.checked {
+    text-decoration: underline;
+}
+
+.skin-holder .skin-toolbar .radio .skin-control:last-child {
+    margin-right: 0.5em;
+}
+
+.skin-holder .skin-toolbar .radio label {
+    margin: 0;
+}

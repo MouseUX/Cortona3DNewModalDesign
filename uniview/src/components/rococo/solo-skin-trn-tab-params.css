@@ -1,0 +1,15 @@
+.params .skin-tree-item .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: inherit;
+}
+
+.params .skin-tree-item .content > * {
+    flex: 1 0 25%;
+}
+
+.params .skin-tree-item:first-child .content > * {
+    font-weight: bold;
+}

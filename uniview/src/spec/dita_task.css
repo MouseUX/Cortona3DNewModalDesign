@@ -1,0 +1,24 @@
+.procedure-document-alert .note__title {
+    display: none;
+}
+
+.skin-modal.danger .skin-modal-panel .skin-modal-title {
+    background-color: #bd2024;
+    color: #fff;
+}
+
+
+.skin-modal.warning .skin-modal-panel .skin-modal-title {
+    background-color: #ff7900;
+    color: #000;
+}
+
+.skin-modal.caution .skin-modal-panel .skin-modal-title {
+    background-color: #ffe100;
+    color: #000;
+}
+
+.skin-modal.notice .skin-modal-panel .skin-modal-title {
+    background-color: #004488;
+    color: #fff;
+}

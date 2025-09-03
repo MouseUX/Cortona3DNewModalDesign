@@ -1,0 +1,18 @@
+.skin-alert {
+    background-color: lightgoldenrodyellow;
+    padding: 1em;
+    margin: .25em;
+    display: flex;
+    justify-content: space-between;
+    order: 1000;
+}
+
+.skin-alert-close-button {
+    cursor: pointer;
+}
+
+.skin-alert-close-button:after {
+    content: "\00d7";
+    display: inline-block;    
+    width: 1em;
+}

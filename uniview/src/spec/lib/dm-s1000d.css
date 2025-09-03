@@ -1,0 +1,14 @@
+.doc-container .dmodule .graphic,
+.doc-container .dmodule .multimediaobject,
+.doc-container .dmodule .multimediaObject {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.doc-container .dmodule .boardno {
+    display: block;
+    text-align: right;
+    color: darkgrey;
+    font-size: .8em;
+    margin-bottom: 1em;
+}

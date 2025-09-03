@@ -1,0 +1,72 @@
+#VRML V2.0 utf8
+
+PROTO OnTop [
+	exposedField MFNode children []
+
+] {
+	EXTERNPROTO Layer3D [
+		eventIn MFNode addChildren
+		eventIn MFNode removeChildren
+		exposedField MFNode children
+		exposedField SFVec2f size
+		exposedField SFNode background
+		exposedField SFNode fog
+		exposedField SFNode navigationInfo
+		exposedField SFNode viewpoint
+	]
+	[ "urn:inet:parallelgraphics.com:cortona:Layer3D" "http://www.parallelgraphics.com/vrml/proto/Cortona/extensions.wrl#Layer3D" ]
+	EXTERNPROTO ViewportSensor [
+		eventOut SFVec2f size_changed
+		eventOut SFFloat fieldOfView_changed
+		eventOut SFFloat viewportSize_changed
+		eventOut SFBool isOrthographic_changed
+	]
+	[ "urn:inet:parallelgraphics.com:cortona:ViewportSensor" "http://www.parallelgraphics.com/vrml/proto/Cortona/extensions.wrl#ViewportSensor" ]
+
+	EXTERNPROTO OrthographicViewpoint [
+		eventIn SFBool set_bind
+		exposedField SFBool jump
+		exposedField SFRotation orientation
+		exposedField SFVec3f position
+		exposedField SFFloat viewportSize
+		field SFString description
+		eventOut SFTime bindTime
+		eventOut SFBool isBound
+	]
+	[ "urn:inet:parallelgraphics.com:cortona:OrthographicViewpoint" "http://www.parallelgraphics.com/vrml/proto/Cortona/extensions.wrl#OrthographicViewpoint" ]
+	Group {
+		children [
+			DEF L3D Layer3D	{
+				children IS	children
+			}
+			DEF PS ProximitySensor	{
+				enabled	TRUE
+				size 1e10 1e10 1e10
+			}
+			DEF VS ViewportSensor {}
+			DEF	S Script {
+				field SFNode layer USE L3D
+				field SFNode vp DEF VP Viewpoint {}
+				field SFNode ovp DEF OVP OrthographicViewpoint {}
+				eventIn SFBool set_isOrthographic
+				url "javascript:
+				function initialize() {
+					set_isOrthographic(Browser.getScene().isOrthographicCamera());
+				}
+				function set_isOrthographic(value) {
+					layer.viewpoint = value ? ovp : vp;
+				}
+				"
+			}
+		]
+	}
+	ROUTE PS.orientation_changed TO	VP.set_orientation
+	ROUTE PS.orientation_changed TO	OVP.set_orientation
+	ROUTE PS.position_changed TO VP.set_position
+	ROUTE PS.position_changed TO OVP.set_position
+	ROUTE VS.fieldOfView_changed TO	VP.set_fieldOfView
+	ROUTE VS.viewportSize_changed TO OVP.set_viewportSize
+	ROUTE VS.isOrthographic_changed	TO S.set_isOrthographic
+}
+
+OnTop {}

@@ -1,0 +1,354 @@
+:root {
+    --label-colonSymbol: __("ColonSymbol");
+    --label-page: __("Page");
+    --label-endOfDataModule: __("End of data module");
+    --label-blankPageCenter: __("Intentionally left blank");
+
+    --label-security-01: __("Unclassified");
+    --label-security-02: __("Restricted");
+    --label-security-03: __("Confidential");
+    --label-security-04: __("Secret");
+    --label-security-05: __("Top secret");
+    --label-security-default: __("Security class");
+
+    --label-HF-applic: __("Applicable to");
+    --label-applic-all: __("All");
+
+    --label-IPD-infoname: __("Illustrated Parts Data");
+    
+    --label-TOC: __("Table of contents");
+    --label-LOF: __("List of figures");
+    --label-LOT: __("List of tables");
+    --label-references: __("References");
+    --label-commonInfo: __("Common Information");
+    --label-thresholdInterval: __("Threshold interval");
+    --label-preliminaryRqmts: __("Preliminary requirements");
+    --label-mainProcedure: __("Procedure");
+    --label-closeRqmts: __("Requirements after job completion");
+    --label-description: __("Description");
+    --label-crewRefCard: __("Crew reference card");
+    --label-reqCondGroup: __("Required conditions");
+    --label-reqPersons: __("Required persons");
+    --label-reqTechInfoGroup: __("Required technical information");
+    --label-reqSupportEquips: __("Support equipment");
+    --label-reqSupplies: __("Consumables, materials and expendables");
+    --label-reqSpares: __("Spares");
+    --label-faultCode: __("Fault code");
+    --label-faultCodes: __("Fault codes");
+    --label-faultDescription: __("Fault description");
+    --label-possibleCauses: __("Possible causes");
+    --label-productCrossRefTable: __("Product cross-reference table");
+    --label-applicCrossRefTable: __("Applicability cross-reference table");
+    
+    --label-from: __("from");
+    --label-of: __("of");
+    --label-continued: __("Continued");
+    --label-figure: __("Fig");
+    --label-table: __("Table");
+    --label-multimedia: __("Fig");
+    --label-multimediaObject: __("Multimedia");
+    --label-para: __("Para");
+    --label-step: __("Step");
+    --label-sheet: __("Sheet");
+    --label-zone: __("Zone");
+    --label-zones: __("Zones");
+    --label-accessPoint: __("Access point");
+    --label-accessPoints: __("Access points");
+    --label-workLocation: __("Work location");
+    --label-workLocations: __("Work locations");
+
+    --label-partno: __("Part No");
+    --label-item: __("Item");
+    --label-CSN: __("CSN");
+    --label-CSNISN: __("CSN/ISN");
+    --label-materialSet: __("Set");
+    --label-legend: __("Legend to Fig");
+
+    --label-cbActionOpen: __("Open");
+    --label-cbActionClose: __("Close");
+
+    --label-header-cb-name: __("CB Name");
+    --label-header-cb: __("CB");
+    --label-header-cb-location: __("CB Location");
+    --label-remarks: __("Remarks");
+
+    --label-action: __("Action");
+    --label-condition: __("Condition");
+    --label-data-module: __("Data module");
+    --label-technical-publication: __("Technical publication");
+
+    --label-document-number: __("Document No.");
+    --label-title: __("Title");
+    --label-category: __("Category");
+
+    --label-person: __("Person");
+    --label-personCategory: __("Category");
+    --label-personSkill: __("Skill level");
+    --label-trade: __("Trade/Trade code");
+    --label-estimatedTime: __("Estimated time");
+
+    --label-persons: __("persons");
+    --label-person-inline: __("person");
+    --label-as-required: __("As required");
+    --label-man: __("Man");
+
+    --label-name: __("Name");
+    --label-identification: __("Identification");
+    --label-reference: __("Reference");
+    --label-quantity: __("Quantity");
+    
+    --label-accessPoint-accpnl01: __("Access door");
+    --label-accessPoint-accpnl02: __("Access panel");
+    --label-accessPoint-accpnl03: __("Access electrical panel");
+
+    --label-thresholdInterval-th01: __("Flight hours");
+    --label-thresholdInterval-th02: __("Flight cycles");
+    --label-thresholdInterval-th03: __("Months");
+    --label-thresholdInterval-th04: __("Weeks");
+    --label-thresholdInterval-th05: __("Years");
+    --label-thresholdInterval-th06: __("Days");
+    --label-thresholdInterval-th07: __("Supersonic cycles");
+    --label-thresholdInterval-th08: __("Pressure cycles");
+    --label-thresholdInterval-th09: __("Engine cycles");
+    --label-thresholdInterval-th10: __("Engine change");
+    --label-thresholdInterval-th11: __("Shop visits");
+    --label-thresholdInterval-th12: __("Auxiliary power unit change");
+    --label-thresholdInterval-th13: __("Landing gear change");
+    --label-thresholdInterval-th14: __("Wheel change");
+    --label-thresholdInterval-th15: __("Engine start");
+    --label-thresholdInterval-th16: __("APU hours");
+    --label-thresholdInterval-th17: __("Engine hours");
+    --label-thresholdInterval-th18: __("Elapsed hours");
+    --label-thresholdInterval-th19: __("Landings");
+    --label-thresholdInterval-th20: __("Operating cycles");
+    --label-thresholdInterval-th21: __("Operating hours");
+    --label-thresholdInterval-th22: __("Supersonic hours");
+    --label-thresholdInterval-th23: __("'A' check");
+    --label-thresholdInterval-th24: __("'B' check");
+    --label-thresholdInterval-th25: __("'C' check");
+    --label-thresholdInterval-th26: __("'D' check");
+    --label-thresholdInterval-th27: __("Daily");
+    --label-thresholdInterval-th28: __("'E' check");
+    --label-thresholdInterval-th29: __("Overnight");
+    --label-thresholdInterval-th30: __("Preflight");
+    --label-thresholdInterval-th31: __("Routine check");
+    --label-thresholdInterval-th32: __("Structural 'C' check");
+    --label-thresholdInterval-th33: __("Service check");
+    --label-thresholdInterval-th34: __("Transit");
+    --label-thresholdInterval-th35: __("Kilometers");
+    --label-thresholdInterval-th36: __("Consumption in cubic meter");
+    --label-thresholdInterval-th37: __("Consumption in liter");
+    --label-thresholdInterval-th38: __("Number of shots - each");
+    --label-thresholdInterval-th39: __("Number of shots - equivalent full charge (EFC)");
+
+    --label-installationLocationType-02: __("Section");
+    --label-installationLocationType-03: __("Station");
+    --label-installationLocationType-04: __("Water line");
+    --label-installationLocationType-05: __("Buttock line");
+
+    --label-productItemType-01: __("Frame");
+    --label-productItemType-02: __("Rib");
+    --label-productItemType-03: __("Stringer");
+
+    --label-reqTechInfoCategory-01: __("Publication module");
+    --label-reqTechInfoCategory-02: __("Data module");
+    --label-reqTechInfoCategory-03: __("Drawing");
+    --label-reqTechInfoCategory-04: __("Electrical diagram");
+    --label-reqTechInfoCategory-05: __("Schematic diagram");
+    --label-reqTechInfoCategory-06: __("Safety sheet");
+
+    --label-skillLevelCode-01: __("Basic");
+    --label-skillLevelCode-02: __("Intermediate");
+    --label-skillLevelCode-03: __("Advanced");
+
+    --label-learningAssessment: __("Learning Assessment");
+    --label-learningSummary: __("Learning Summary");
+    --label-learningContent: __("Learning Content");
+    --label-learningOverview: __("Learning Overview");
+
+    --label-questions: __("Questions");
+
+    --label-avehcfg: __("Required basic conditions");
+    --label-avehcfg-status-yes: __("Required");
+    --label-avehcfg-status-no: __("Prohibited");
+    --label-avehcfg-status-indiffer: __("Indifferent");
+    --label-avehcfg-status-na: __("Not applicable");
+    --label-avehcfg-power-engine: __("Engine");
+    --label-avehcfg-power-apu: __("APU");
+    --label-avehcfg-power-external: __("External");
+    --label-avehcfg-power-internal: __("Internal");
+    --label-avehcfg-power-indifferent: __("Indifferent");
+    --label-avehcfg-power-notapplic: __("Not applicable");
+    --label-avehcfg-status: __("Status");
+    --label-avehcfg-power: __("Power source");
+    --label-avehcfg-jacked: __("Product jacked up");
+    --label-avehcfg-safedev: __("Safety defices installed");
+    --label-avehcfg-elecpwr: __("Electric power");
+    --label-avehcfg-hydpwr: __("Hydraulic power");
+    --label-avehcfg-airpwr: __("Pneumatic power");
+    --label-avehcfg-fuel: __("Fueling");
+    --label-avehcfg-water: __("Water");
+    --label-avehcfg-fcposn: __("Specific EFCS pos.");
+
+    --label-issueNo: __("Issue No.");
+    --label-publisher: __("Publisher");
+    --label-manufacturer: __("Manufacturer");
+
+    --label-documentTitle: __("Document title");
+    --label-dataModuleCode: __("Data module code");
+    --label-issueDate: __("Issue date");
+    --label-noOfPages: __("No. of pages");
+    --label-fm-applic: __("Applicable to");
+
+    --label-loedm-generate-row1-part1: __("The listed documents are included in issue ");
+    --label-loedm-generate-row1-part2: __(", dated ");
+    --label-loedm-generate-row1-part3: __(", of this publication.");
+
+    --label-loedm-generate-row2: __("C = Changed data module");
+    --label-loedm-generate-row3: __("N = New data module");
+
+    --label-reason-for-update: __("Reason for update");
+    --label-updating-instruction: __("Updating instruction");
+
+    --label-high-table: __("Data modules to be removed or inserted");
+    --label-high-generate-row1: __("Remove or insert data modules as listed in Table 1.");
+    --label-high-generate-row2: __("I = Insert data module");
+    --label-high-generate-row3: __("R = Remove data module");
+
+    --label-sbCompliance: __("Category");
+    --label-sbComplianceCategory: __("UNAVAILABLE");
+    --label-sbComplianceCategory-sbcc01: __("Mandatory");
+    --label-sbComplianceCategory-sbcc02: __("Recommended");
+    --label-sbComplianceCategory-sbcc03: __("Desirable");
+    --label-sbComplianceCategory-sbcc04: __("SB Optional");
+
+    --label-sbTaskType: __("Task type");
+    --label-sbTaskCategory: __("UNAVAILABLE");
+    --label-sbTaskCategory-sbtc01: __("Modification");
+    --label-sbTaskCategory-sbtc02: __("SB Inspection");
+    --label-sbTaskCategory-sbtc03: __("Repair");
+    --label-sbTaskCategory-sbtc04: __("Evaluation");
+    --label-sbTaskCategory-sbtc05: __("Administrative");
+
+    --label-sbManagementInfo: __("Management info");
+    --label-sbRevisionInfo: __("Revision information");
+    --label-sbSummary: __("Summary");
+    --label-sbPlanningInfo: __("Planning information");
+    --label-sbMaterialInfo: __("Material information");
+    --label-sbAccomplishmentInstructions: __("Accomplishment instructions");
+    --label-sbAdditionalInfo: __("Appendix");
+
+    --label-sbProductModificationList: __("Modification numbers");
+    --label-sbImpactList: __("Impacts list");
+    --label-sbImpactType-sbit01: __("Weight");
+    --label-sbImpactType-sbit02: __("Balance");
+    --label-sbImpactType-sbit03: __("Direct current electrical load");
+    --label-sbImpactType-sbit04: __("Alternating current electrical load");
+    --label-sbImpactType-sbit05: __("Maintenance publications");
+    --label-sbImpactType-sbit06: __("Operational publications");
+
+    --label-sbConcurrentSbList: __("List of concurrent service bulletins");
+    --label-sbConcurrentStatus-previous: __("Must be done before the current SB");
+    --label-sbConcurrentStatus-notPrevious: __("Must not have been done before the current SB");
+    --label-sbConcurrentStatus-previousOrParallel: __("Must be done before or simultaneously with the current SB");
+
+    --label-sbAccomplishmentLimit: __("Accomplishment limit");
+    --label-sbTimeAssessment: __("Time assessment");
+
+    --label-sbCondition: __("Option to complete SB");
+    --label-sbDuration: __("Duration");
+    --label-sbEstimatedTime: __("Estimated time");
+    --label-sbOriginalIssueDate: __("Original document issue date");
+
+    --label-sbApproval: __("Approval identifier given by manufacturer approval authorities");
+    --label-sbApprovedDm: __("List of approval DM for SB");
+    --label-genericPropertyGroup: __("Generic property group");
+    --label-sbReplacementSb: __("SB, that can replace the current SB");
+
+    --label-genericProperty-gpt01: __("Passenger comfort affected");
+    --label-genericProperty-gpt02: __("Reliability affected");
+    --label-genericProperty-gpt03: __("Cost saving");
+    --label-genericProperty-gpt04: __("Structural life extension");
+    --label-genericProperty-gpt05: __("Cancels inspection Service Bulletin");
+    --label-genericProperty-gpt06: __("Product operation affected");
+    --label-genericProperty-gpt07: __("LROPS affected");
+    --label-genericProperty-gpt08: __("ETOPS affected");
+    --label-genericProperty-gpt09: __("Potential Airworthiness Directive");
+    --label-genericProperty-gpt10: __("Disposition for removed spare that can be on customer shop");
+    --label-genericProperty-gpt11: __("Support code for removed spare");
+
+    --label-genericPropertyFlag-true: __("Yes");
+    --label-genericPropertyFlag-false: __("No");
+    
+    --label-sbTimeComplianceType-sbtct01: __("Basic limit");
+    --label-sbTimeComplianceType-sbtct02: __("Grace period");
+    --label-sbTimeComplianceType-sbtct03: __("Repetitive interval");
+
+    --label-limitTypeValue-po: __("Perform once");
+    --label-limitTypeValue-oc: __("On");
+    --label-limitTypeValue-pe: __("Perform periodically");
+
+    --label-noInfo: __("Not applicable");
+
+    --label-sbMaterialSetList: __("List of material sets");
+    --label-sbSupportEquipsList: __("SB_list of support equipment");
+    --label-sbSuppliesList: __("SB_list of supplies");
+    --label-sbSparesList: __("SB_list of spares");
+    --label-sbRemovedSparesList: __("List of removed spares");
+
+    --label-price: __("Price");
+    --label-availability: __("Availability");
+    --label-procurementAddress: __("Procurement address");
+    --label-industrySupport: __("Industrial support");
+    --label-drawing: __("Drawing");
+    --label-instruction: __("Instruction");
+
+    --label-referencedTools: __("Referenced tools");
+    --label-referencedSupplies: __("Referenced supplies");
+    --label-referencedSpares: __("Referenced spares");
+
+    --label-oldIdentification: __("Old spare identification");
+    --label-newIdentification: __("New spare identification");
+    --label-sbICY: __("ICY for SB table");
+
+    --label-taskIdent: __("Task number");
+    --label-mpdZone: __("Zone");
+    --label-taskCode: __("Code");
+    --label-threshold: __("Threshold");
+    --label-threshold-short: __("Threshold short");
+    --label-interval: __("Interval");
+    --label-interval-short: __("Interval short");
+    --label-source: __("Source");
+    --label-skill: __("Skill");
+    --label-complexity: __("Complexity");
+    --label-access: __("Access");
+    --label-reqConds: __("Preliminary requirements short");
+    --label-to: __("to");
+    --label-skillType-st01-airplane: __("Skill type - airplane");
+    --label-skillType-st02-electric: __("Skill type - electric");
+    --label-skillType-st03-avionics: __("Skill type - avionics");
+    --label-skillType-st04-engine: __("Skill type - engine");
+    --label-skillType-st51-cabin: __("Skill type - cabin");
+    --label-skillType-st52-ndt: __("Skill type - ndt");
+    --label-skillType-st53-radio: __("Skill type - radio");
+    --label-skillType-st54-utilization: __("Skill type - utilization");
+    --label-taskCode-taskcd01: __("Task code - taskcd01");
+    --label-taskCode-taskcd02: __("Task code - taskcd02");
+    --label-taskCode-taskcd03: __("Task code - taskcd03");
+    --label-taskCode-taskcd04: __("Task code - taskcd04");
+    --label-taskCode-taskcd05: __("Task code - taskcd05");
+    --label-taskCode-taskcd06: __("Task code - taskcd06");
+    --label-taskCode-taskcd07: __("Task code - taskcd07");
+    --label-taskCode-taskcd08: __("Task code - taskcd08");
+    --label-taskCode-taskcd09: __("Task code - taskcd09");
+    --label-timeLimitIdent: __("Time limit");
+    --label-equipGroup: __("Equipment");
+    --label-limitUnitType-lt01: __("Time between overhaul");
+    --label-limitUnitType-lt02: __("Hard time");
+    --label-limitUnitType-lt03: __("Since last maintenance");
+    --label-limitUnitType-lt04: __("Out time limit");
+    --label-limitUnitType-lt05: __("On condition");
+    --label-limitUnitType-lt06: __("Check maintenance");
+    --label-limitUnitType-lt07: __("Functional check");
+    --label-controlAuthorityType-cat01: "AD";
+}

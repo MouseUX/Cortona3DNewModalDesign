@@ -1,0 +1,16 @@
+{
+  "loading": {
+    "loading": "Ladevorgang",
+    "initializing": "Initialisierung",
+    "failed": "Ladevorgang fehlgeschlagen"
+  },
+  "msg001": "Die Publikation ist lokal in einem Webbrowser geöffnet, nicht unter Verwendung der HTTP- oder HTTPS-Protokolle.",
+  "msg002": "Siehe Artikel: %s für mögliche Ursachen und Lösungen.",
+  "msg003": "Inkompatible Version der Cortona3D Solo-Bibliothek. Die Version muss %s oder höher sein.",
+  "msg004": "Fehler beim Laden aufgetreten.",
+  "msg005": "Es steht nicht genug Arbeitsspeicher (%s MB) für den 3D-Viewer zum Laden der Publikation zur Verfügung. Sie müssen den für den 3D-Viewer verfügbaren Arbeitsspeicher mit der Option \"3D-Viewer - Publikationsspeicher\" (Tools &gt; Veröffentlichungsoptionen) erhöhen und danach das Projekt neu veröffentlichen.",
+  "msg006": "Weitere Informationen finden Sie in der Browser-Konsole.",
+  "msg007": "Dieser Browser wird nicht mehr unterstützt. Die Funktionalität der Veröffentlichung ist möglicherweise eingeschränkt.",
+  "msg008": "Dieser Browser wird nicht unterstützt.",
+  "msg009": "Die Hilfedatei ist nicht verfügbar. Überprüfen Sie Ihre Verbindung mit %s."
+}

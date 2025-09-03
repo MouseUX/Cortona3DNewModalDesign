@@ -1,0 +1,82 @@
+.skin-tree-item {
+    
+}
+
+.skin-tree-item > div:first-child {
+    display: flex;
+    align-items: center;
+    padding-left: .5em;
+}
+
+.skin-tree-item .content {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.skin-tree-item .collapse-button {
+    display: flex;
+    width: 1.5em;
+    height: 1.5em;
+    border: 1px solid gray;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.skin-tree-item .collapse-button:before {
+    font-size: 1.2em;
+}
+
+.skin-tree-item.collapsed .collapse-button:before {
+    content: '＋';
+}
+
+.skin-tree-item .collapse-button:before {
+    content: '–';
+}
+
+.skin-tree-item .children {
+    margin-left: 3em;
+}
+
+.skin-tree-item.collapsed .children {
+    display: none;
+}
+
+
+.skin-tree-item .content {
+    border: 1px solid gray;
+    padding: .5em;
+    margin: .2em .5em .2em 0;
+    margin-left: 2em;
+    border-radius: 3px;
+}
+
+.skin-tree-item .collapse-button + .content {
+    margin-left: .5em;
+}
+
+
+.skin-tree-item .content label {
+    display: block;
+}
+
+.skin-tree-item .content.clickable {
+    cursor: pointer;
+}
+
+.skin-tree-item .content.hoverable,
+.skin-tree-item .content.selected {
+    transition: .3s;
+    transition-property: background-color;
+}
+
+.skin-tree-item .content.hoverable:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+.skin-tree-item .content.selected,
+.skin-tree-item .content.selected:hover {
+    background-color: aquamarine;
+}

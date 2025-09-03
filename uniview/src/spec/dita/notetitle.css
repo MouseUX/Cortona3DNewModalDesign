@@ -1,0 +1,48 @@
+.notetitle > span {
+    display: none;
+}
+.note[data-type="other"] .notetitle > span {
+    display: none;
+}
+.note[data-type="other"][data-othertype] .notetitle:before {
+    display: none;
+}
+.note[data-type="other"][data-othertype] .notetitle > span {
+    display: inline;
+}
+.warningtitle > span {
+    display: none;
+}
+.cautiontitle > span {
+    display: none;
+}
+.dangertitle > span {
+    display: none;
+}
+.notestitle > span {
+    display: none;
+}
+.tiptitle > span {
+    display: none;
+}
+.fastpathtitle > span {
+    display: none;
+}
+.importanttitle > span {
+    display: none;
+}
+.attentiontitle > span {
+    display: none;
+}
+.remembertitle > span {
+    display: none;
+}
+.restrictiontitle > span {
+    display: none;
+}
+.noticetitle > span {
+    display: none;
+}
+.troubletitle > span {
+    display: none;
+}

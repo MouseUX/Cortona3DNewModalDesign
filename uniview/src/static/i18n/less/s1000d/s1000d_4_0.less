@@ -1,0 +1,557 @@
+@plugin "less-plugin-i18n";
+configure();
+setLocale(@locale);
+
+@charset "utf-8";
+
+/*
+    s1000d_4_0.less
+*/
+
+.identAndStatusSection .issueInfo[data-issuenumber]:before {
+    content: __("Issue") ": ";
+}
+
+.identAndStatusSection .language[data-languageisocode]:before {
+    content: __("Language") ": ";
+}
+
+.identAndStatusSection .issueDate[data-day]:before {
+    content: __("Date") ": ";
+}
+
+.issueInfo[data-issuenumber]:after {
+    content: attr(data-issuenumber) "-" attr(data-inwork);
+}
+
+.language[data-languageisocode]:after {
+    content: attr(data-languageisocode) "-" attr(data-countryisocode);
+}
+
+.issueDate[data-day]:after {
+    content: attr(data-year) "-" attr(data-month) "-" attr(data-day)
+}
+
+.firstVerification:after {
+    content: attr(data-verificationType);
+}
+
+.skillLevel[data-skillLevelCode]:after {
+    content: attr(data-skillLevelCode);
+}
+
+.dataRestrictions:before {
+    content: __("Data Restrictions") ":";
+}
+
+.dataDistribution:before {
+    content: __("Distribution");
+}
+
+.exportControl:before {
+    content: __("Export Control");
+}
+
+.dataHandling:before {
+    content: __("Handling");
+}
+
+.dataDestruction:before {
+    content: __("Destruction");
+}
+
+.dataDisclosure:before {
+    content: __("Disclosure");
+}
+
+.copyright:before {
+    content: __("Copyright");
+}
+
+.dmRefAddressItems .infoName:before {
+    content: " - ";
+}
+
+.identNumber:before {
+    content: "";
+}
+
+.partAndSerialNumber:before {
+    content: "/";
+}
+
+.natoStockNumber:before {
+    content: __("NSN") " ";
+}
+
+.serialNumber:before {
+    content: __("Serial No") " ";
+}
+
+.customerStockNumber:before {
+    content: __("Stock no.") " ";
+}
+
+.zoneRef:before {
+    content: __("Zone") " ";
+}
+
+.accessPointRef:before,
+.accessPointRef[data-accessPointTypeValue="accpnl01"]:before {
+    content: __("Door") " ";
+}
+
+.accessPointRef[data-accessPointTypeValue="accpnl02"]:before {
+    content: __("Panel") " ";
+}
+
+.accessPointRef[data-accessPointTypeValue="accpnl03"]:before {
+    content: __("Electrical panel") " ";
+}
+
+.multimediaObject:before,
+.graphic:before {
+    content: __("Fig") " " attr(data-figure) " ";
+}
+
+.graphic[data-sheets]:after {
+    content: " (" __("Sheet") " " attr(data-sheet) " " __("of") " " attr(data-sheets) ")";
+}
+
+.multimediaObject[data-sheets]:after {
+    content: " (" __("Multimedia") " " attr(data-sheet) " " __("of") " " attr(data-sheets) ")";
+}
+
+.internalRef.irtt01:before {
+    content: __("Fig") " " attr(data-figure);
+}
+
+.internalRef.irtt02:before {
+    content: __("Table") " " attr(data-index);
+}
+
+.internalRef.irtt03:before {
+    content: __("Fig") " " attr(data-figure);
+}
+
+.internalRef.irtt07:before {
+    content: __("Para") " " attr(data-index);
+}
+
+.internalRef.irtt08:before {
+    content: __("Step") " " attr(data-index);
+}
+
+.internalRef.irtt09:before {
+    content: __("Fig") " " attr(data-figure) ", " __("Sheet") " " attr(data-sheet);
+}
+
+.internalRef.irtt10:before {
+    content: __("Fig") " " attr(data-figure) ", " attr(data-multimediaType);
+}
+
+.internalRef.irtt11:before {
+    content: __("Fig") " " attr(data-figure) " [" attr(data-referredFragment) "]";
+}
+
+
+.yesAnswerStart:before {
+    content: __("Yes");
+}
+
+.noAnswerStart:before {
+    content: __("No");
+}
+
+.choiceLink:before,
+.yesAnswerLink:before,
+.noAnswerLink:before {
+    content: __("Go to Step") " " attr(data-index);
+}
+
+.isolationProcedureEnd:after {
+    content: __('Go to Requirements after job completion.');
+}
+
+#app-figure-title.multimediaObject:before,
+#app-figure-title.internalRef.irtt01:before,
+#app-figure-title.internalRef.irtt03:before,
+#app-figure-title.internalRef.irtt09:before,
+#app-figure-title.internalRef.irtt10:before,
+#app-figure-title.internalRef.irtt11:before,
+#app-figure-title.internalRef.irtt12:before,
+#app-figure-title.graphic:before {
+    content: __("Fig") " " attr(data-index) " ";
+}
+
+#app-figure-title.graphic[data-subindexes]:after {
+    content: " (" __("Sheet") " " attr(data-subindex) " " __("of") " " attr(data-subindexes) ")";
+}
+
+#app-figure-title.multimediaObject[data-subindexes]:after {
+    content: " (" __("Multimedia") " " attr(data-subindex) " " __("of") " " attr(data-subindexes) ")";
+}
+
+#app-figure-title.graphic[data-subindexes='']:after,
+#app-figure-title.multimediaObject[data-subindexes='']:after {
+    content: none;
+}
+
+.personnel .numRequired[data-value]:before {
+    content: attr(data-value) " " __("persons");
+}
+
+.personnel .numRequired[data-value='1']:before {
+    content: attr(data-value) " " __("person");
+}
+
+.personnel .numRequired[data-value='0']:before,
+.personnel .numRequired[data-value='']:before {
+    content: __("As required");
+}
+
+.taskDuration:before {
+    content: __("Maintenance task duration");
+}
+
+.taskDuration:after {
+    content: __("Preliminary requirements") " " attr(data-startupDuration) " " attr(data-unitOfMeasure) "\000a" __("Procedure") " " attr(data-procedureDuration) " " attr(data-unitOfMeasure) "\000a" __("Requirements after job completion") " " attr(data-closeupDuration) " " attr(data-unitOfMeasure);
+}
+
+.externalPubCode:before {
+    content: attr(data-pubCodingScheme);
+}
+
+.externalPubIssueInfo:before {
+    content: __("Edition:") " ";
+}
+
+/* Centerhead2 titles */
+
+.mainProcedure:before {
+    content: __("Procedure");
+}
+
+.content>.description:before {
+    content: __("Description");
+}
+
+.maintPlanning:before {
+    content: __("Schedule");
+}
+
+.isolationMainProcedure:before {
+    content: __("Fault isolation procedure");
+}
+
+.descrCrew:before {
+    content: __("Crew/operator content");
+}
+
+.commonRepository:before {
+    content: __("Common information repository");
+}
+
+.faultReporting:before {
+    content: __("Fault reporting");
+}
+
+.detectionInfo:before {
+    content: __("Fault Detection");
+}
+
+.content>.refs:before {
+    content: __("References");
+}
+
+.preliminaryRqmts:before {
+    content: __("Preliminary requirements");
+}
+
+.closeRqmts:before {
+    content: __("Requirements after job completion");
+}
+
+/* sidehead0 titles */
+
+.cautionRepository:before {
+    content: __("Caution repository");
+}
+
+.toolRepository:before {
+    content: __("Tool repository");
+}
+
+.controlIndicatorRepository:before {
+    content: __("Controls and indicators");
+}
+
+.functionalPhysicalAreaRepository:before {
+    content: __("Functional and/or physical area repository");
+}
+
+.warningRepository:before {
+    content: __("Warning repository");
+}
+
+.zoneRepository:before {
+    content: __("Zone repository");
+}
+
+.partRepository:before {
+    content: __("Part repository");
+}
+
+.functionalItemRepository:before {
+    content: __("Functional item repository");
+}
+
+/* Warning, Caution, Note */
+
+.warning:before {
+    content: __("WARNING");
+}
+
+.caution:before {
+    content: __("CAUTION");
+}
+
+.note:before {
+    content: __("Note");
+}
+
+/* Sidehead0 titles */
+
+.productionMaintData:before {
+    content: __("Production management data");
+}
+
+.reqCondGroup:before {
+    content: __("Required conditions");
+}
+
+.reqSupportEquips:before {
+    content: __("Support equipment");
+}
+
+.reqSupplies:before {
+    content: __("Consumables, materials and expendables");
+}
+
+.reqTechInfoGroup:before {
+    content: __("Required technical information");
+}
+
+.reqSpares:before {
+    content: __("Spares");
+}
+
+.reqSafety:before {
+    content: __("Safety conditions");
+}
+
+.reqPersons:before {
+    content: __("Required persons");
+}
+
+.workAreaLocationGroup:before {
+    content: __("Work area location");
+}
+
+/* None keyword */
+
+.noSupportEquips:before,
+.noSupplies:before,
+.noSpares:before,
+.noSafety:before,
+.noConds:before {
+    content: __("None");
+}
+
+/* Tables */
+
+.table-contents>.title:before {
+    content: __("Table") " " counter(table) " ";
+}
+
+.content>.refs>.tabular:before {
+    content: __("Table") " " counter(table) " " __("References");
+}
+
+.reqCondGroup>.tabular:before {
+    content: __("Table") " " counter(table) " " __("Required conditions");
+}
+
+.reqPersons>.tabular:before {
+    content: __("Table") " " counter(table) " " __("Required persons");
+}
+
+.reqSupportEquips>.tabular:before {
+    content: __("Table") " " counter(table) " " __("Support equipment");
+}
+
+.reqSupplies>.tabular:before {
+    content: __("Table") " " counter(table) " " __("Consumables, materials and expendables");
+}
+
+.reqSpares>.tabular:before {
+    content: __("Table") " " counter(table) " " __("Spares");
+}
+
+.header>.name:before {
+    content: __("Name");
+}
+
+.header>.ident:before {
+    content: __("Identification/Reference");
+}
+
+.header>.qty:before {
+    content: __("Quantity");
+}
+
+.header>.remark:before {
+    content: __("Remark");
+}
+
+.header>.condition:before {
+    content: __("Action/Condition");
+}
+
+.header>.publication:before {
+    content: __("Data module/Technical publication");
+}
+
+.header>.title:before {
+    content: __("Title");
+}
+
+.header>.person:before {
+    content: __("Person");
+}
+
+.header>.category:before {
+    content: __("Category");
+}
+
+.header>.skill:before {
+    content: __("Skill level");
+}
+
+.header>.trade:before {
+    content: __("Trade/Trade code");
+}
+
+.header>.time:before {
+    content: __("Estimated time");
+}
+
+.dmodule:after {
+    content: __("End of data module");
+}
+
+.dmStatus .security[data-securityClassification]:before {
+    content: __("Security class") " " attr(data-securityClassification);
+}
+
+.dmStatus .security[data-securityClassification="01"]:before {
+    content: __("UNCLASSIFIED");
+}
+
+.dmStatus .security[data-securityClassification="02"]:before {
+    content: __("RESTRICTED");
+}
+
+.dmStatus .security[data-securityClassification="03"]:before {
+    content: __("CONFIDENTIAL");
+}
+
+.dmStatus .security[data-securityClassification="04"]:before {
+    content: __("SECRET");
+}
+
+.dmStatus .security[data-securityClassification="05"]:before {
+    content: __("TOP SECRET");
+}
+
+.dmStatus .responsiblePartnerCompany:before {
+    content: __("Responsible partner company") ": " attr(data-enterpriseCode) " / ";
+}
+
+.dmStatus .originator:before {
+    content: __("Originator") ": " attr(data-enterpriseCode) " / ";
+}
+
+.applicCrossRefTableRef:before {
+    content: __("ACT data module") ": ";
+}
+
+.dmStatus>.applic:before {
+    content: __("Applicability") ": ";
+}
+
+.techStandard:before {
+    content: __("Technical standard") ":";
+}
+
+.brexDmRef:before {
+    content: __("BREX data module") ": ";
+}
+
+.unverified:before {
+    content: __("Unverified");
+}
+
+.firstVerification:before {
+    content: __("First verification") ": ";
+}
+
+.secondVerification:before {
+    content: __("Second verification") ": ";
+}
+
+.systemBreakdownCode:before {
+    content: __("System breakdown code") ": ";
+}
+
+.reasonForUpdate:before {
+    content: __("Reason for update") ": ";
+}
+
+.skillLevel:before {
+    content: __("Skill level") ": ";
+}
+
+.personSkill .skillLevel:before {
+    content: "";
+}
+
+.skillLevel[data-skillLevelCode="sk01"]:after {
+    content: __("Basic");
+}
+
+.skillLevel[data-skillLevelCode="sk02"]:after {
+    content: __("Intermediate");
+}
+
+.skillLevel[data-skillLevelCode="sk03"]:after {
+    content: __("Advanced");
+}
+
+.catalogSeqNumberRef:before {
+    content: __("CSN") " " attr(data-figureNumber)attr(data-figureNumberVariant) "-" attr(data-item)attr(data-itemVariant);
+}
+
+.catalogSeqNumberRef[data-systemCode]:before {
+    content: __("CSN") " " attr(data-systemCode) "-" attr(data-subSystemCode)attr(data-subSubSystemCode) "-" attr(data-assyCode) "-" attr(data-figureNumber)attr(data-figureNumberVariant) "-" attr(data-item)attr(data-itemVariant);
+}
+
+.catalogSeqNumberRef[data-itemSeqNumberValue]:before {
+    content: __("CSN/ISN") " " attr(data-figureNumber)attr(data-figureNumberVariant) "-" attr(data-item)attr(data-itemVariant) "/" attr(data-itemSeqNumberValue);
+}
+
+.catalogSeqNumberRef[data-systemCode][data-itemSeqNumberValue]:before {
+    content: __("CSN/ISN") " " attr(data-systemCode) "-" attr(data-subSystemCode)attr(data-subSubSystemCode) "-" attr(data-assyCode) "-" attr(data-figureNumber)attr(data-figureNumberVariant) "-" attr(data-item)attr(data-itemVariant) "/" attr(data-itemSeqNumberValue);
+}
+
+@import (less) "s1000d-label-variables.css";

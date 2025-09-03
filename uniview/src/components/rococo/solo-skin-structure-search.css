@@ -1,0 +1,66 @@
+.search .skin-tree-item .content {
+    margin-left: 0;
+}
+
+.search .skin-tree-item .content {
+    display: flex;
+    flex-direction: row;
+}
+
+.search .search-item-content {
+    flex-grow: 1;
+}
+
+.search .search-counter {
+    border-radius: 45%;
+    text-align: center;
+    height: 1.5em;
+    min-width: 1.5em;
+    flex-shrink: 0;
+    background-color: lightgray;
+    color: #888;
+    padding: 0 1px;
+}
+
+.search .search-counter.from {
+    padding: 0 3px;
+    border-radius: 40%;
+}
+
+.search .search-counter.actual {
+    color: black;
+}
+
+.search .search-counter.actual.from[data-count]::after {
+    content: "/" attr(data-count);
+}
+
+.search .cortona3dsolo-wait {
+    flex-grow: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search .cortona3dsolo-wait .activity-indicator-win8 {
+    /*width: 1em;
+    height: 1em;*/
+}
+
+.search .search-input {
+    width: 100%;
+    min-width: 5em;
+}
+
+.search .search-toolbar .left {
+    flex-basis: 100%;
+}
+
+.search .collapse-button {
+    display: none;
+}
+
+.search .searchResult {
+    display: flex;
+}

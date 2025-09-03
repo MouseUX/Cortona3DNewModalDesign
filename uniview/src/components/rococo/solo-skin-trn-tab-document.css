@@ -1,0 +1,61 @@
+.training-mode-2 .doc-container {
+    display: none;
+}
+
+.doc-container .active {
+    background-color: lightgoldenrodyellow;
+}
+
+.doc-container .active-substep {
+    background-color: gold;
+}
+
+.scenario-document {
+
+}
+
+.scenario-document .title {
+    margin: .5em 0;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.scenario-document .steps {
+    margin-left: 2em;
+}
+
+.scenario-document .step {
+    display: list-item;
+    list-style: decimal;
+    padding: 1em;
+}
+
+.scenario-document .operation:first-child {
+    margin-top: .5em;
+}
+
+.scenario-document .operation {
+    font-style: italic;
+}
+
+.scenario-document .operation.alert {
+    margin: .5em 0;
+}
+
+.procedure-alert .alert-caution,
+.scenario-document .alert-caution {
+    color: darkorange;
+    font-weight: bold;
+}
+
+.procedure-alert .alert-warning,
+.scenario-document .alert-warning {
+    color: darkred;
+    font-weight: bold;
+}
+
+.procedure-alert .alert-note,
+.scenario-document .alert-note {
+    color: darkgreen;
+    font-weight: bold;
+}

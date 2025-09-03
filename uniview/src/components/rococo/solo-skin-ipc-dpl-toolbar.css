@@ -1,0 +1,58 @@
+#toolbar-dpl {
+    order: -10;
+    flex-wrap: wrap;
+}
+
+#toolbar-dpl .ipc-filters.wrap {
+    flex-basis: 100%;
+    order: 5;
+    flex-wrap: wrap;
+}
+
+#toolbar-dpl .ipc-filters.wrap label {
+    margin: .5em;
+}
+
+.ipc-filters.empty {
+    display: none;
+}
+
+#btn-print-table {
+    background-image: url(img/btn_printt.png);
+}
+
+#btn-composite-print {
+    background-image: url(img/btn_printc.png);
+}
+
+#btn-help {
+    background-image: url(img/btn_help.png);
+}
+
+#btn-excel {
+    background-image: url(img/btn_excel.png);
+}
+
+/* Large desktops and laptops 
+@media (min-width: 1200px) {}
+*/
+
+/* Portrait tablets and medium desktops 
+@media (min-width: 992px) and (max-width: 1199px) {}
+*/
+
+/* Portrait tablets and small desktops 
+@media (min-width: 768px) and (max-width: 991px) {}
+*/
+
+/* Landscape phones and portrait tablets 
+@media (max-width: 767px) {}
+*/
+
+/* Landscape phones and smaller 
+@media (max-width: 480px) {}
+*/
+
+/* Portrait
+@media (orientation: portrait) {}
+*/

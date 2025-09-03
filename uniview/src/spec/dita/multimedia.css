@@ -1,0 +1,86 @@
+video, audio {
+    margin: .5em;
+    display: inline-block;
+    max-width: 100%;
+}
+
+a.object,
+a.image {
+    align-items: baseline;
+    display: inline-flex;
+}
+
+a.image.embed {
+    display: inline;
+}
+
+.fig a.object,
+.fig a.image {
+    align-items: center;
+}
+
+.fig .object {
+    margin-top: 1em;
+}
+
+
+a.image:before,
+a.object:before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-color: #FFFFFF;
+    flex: 0 0 32px;
+    margin-right: 0.5em;
+}
+
+a.image:before {
+    background-image: url(../../components/rococo/img/icon32-picture.png);
+}
+
+a.image[data-ext='svg']:before,
+a.image[data-ext='cgm']:before {
+    background-image: url(../../components/rococo/img/icon32-vector.png);
+}
+
+a.image.embed:before {
+    display: none;
+}
+
+a.object:before {
+    background-image: url(../../components/rococo/img/icon32-file-download.png);
+}
+
+a.object[data-multimediatype='video']:before {
+    background-image: url(../../components/rococo/img/icon32-video.png);
+}
+
+a.object[data-multimediatype='audio']:before {
+    background-image: url(../../components/rococo/img/icon32-audio.png);
+}
+
+a.object[data-link='link3d']:before,
+a.object[data-multimediatype='model']:before,
+a.object[data-ext='wrl']:before,
+a.object[data-ext='cortona3d']:before,
+a.object[data-ext='vmb']:before,
+a.object[data-ext='solo']:before {
+    background-image: url(../../components/rococo/img/icon32-3d-model.png);
+}
+
+a.object[data-ext='pdf']:before {
+    background-image: url(../../components/rococo/img/icon32-pdf-window.png);
+}
+
+.image[placement="break"][align="left"] {
+    align-self: left;
+}
+
+.image[placement="break"][align="right"] {
+    align-self: right;
+}
+
+.image[placement="break"][align="center"] {
+    align-self: center;
+}

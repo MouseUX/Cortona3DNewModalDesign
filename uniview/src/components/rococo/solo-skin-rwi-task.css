@@ -1,0 +1,45 @@
+.skin-text.rwi-doc-caution,
+.skin-text.rwi-doc-warning,
+.skin-text.rwi-doc-note {
+    display: none;
+}
+
+.skin-text.rwi-doc-step {
+    border: 1px solid transparent;
+    padding: .5em .5em 0 .5em;
+}
+
+.skin-text.rwi-doc-step.current {
+    border-color: #f00;
+}
+
+.rwi-doc-data {
+    display: block;
+}
+
+p .rwi-doc-data,
+.rwi-doc-data .rwi-doc-data {
+    display: inline;
+}
+
+a {
+    color: #000080;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.disabled,
+a.hidden {
+    color: #888 !important;
+    cursor: not-allowed;
+    pointer-events: auto;
+}
+
+a:visited {
+    color: #000080;
+}
+
+a:hover {
+    color: #0000FF;
+    text-decoration: underline;
+}

@@ -1,0 +1,57 @@
+.skin-holder.training-mode-2 .vcr-container,
+.skin-holder.training-mode-0 .indicator-container,
+.skin-holder.training-mode-1 .indicator-container {
+    display: none;
+}
+
+.skin-holder.training-mode-2 .indicator-container {
+    display: flex;
+}
+
+.indicator-container {
+    flex: 1 0 50%;
+}
+
+.indicator {
+    position: relative;
+    flex: 1 0 50%;
+    align-self: stretch;
+    background: linear-gradient(to right, #0f0, #f00);
+}
+
+.indicator > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1em;
+    height: 100%;
+    background-color: #000;
+}
+
+.skin-holder-figure {
+    justify-content: flex-end;
+}
+
+#btn-play {
+    background-image: url(img/btn_play.png);
+}
+
+#btn-play.played {
+    background-image: url(img/btn_pause.png);
+}
+
+#btn-reset {
+    background-image: url(img/btn_reset.png);
+}
+
+#btn-stop {
+    background-image: url(img/btn_stop.png);
+}
+
+#btn-fwd {
+    background-image: url(img/btn_fwd.png);
+}
+
+#btn-bwd {
+    background-image: url(img/btn_bwd.png);
+}

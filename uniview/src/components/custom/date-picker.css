@@ -1,0 +1,144 @@
+#dteSet {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+}
+
+#dteSet table {
+    font-family: arial, verdana, helvetica, sans-serif;
+    font-size: 8pt;
+    border-left: 1px solid #336;
+    border-right: 1px solid #336;
+    border-spacing: 0;
+}
+
+#dteSet th {
+    font-weight: normal;
+}
+
+#dteSet th a {
+    font-weight: normal;
+    text-decoration: none;
+    color: #FFF;
+    padding: 1px;
+}
+
+#dteSet tr {
+    height: 1.5em;
+}
+
+#dteSet td {
+    text-align: center;
+    width: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#dteSet .header {
+    background-color: #292929;
+}
+
+#dteSet .dtfooter {
+    background-color: #292929;
+}
+
+#dteSet .dtfooter td {
+    padding: .3em;
+}
+
+#dteSet .dtBtnFtr {
+    color: #FFF;
+    margin: 1px 2px 1px 2px;
+    padding: 0px 5px 0px 5px;
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+#dteSet .dtBtnFtr:hover {
+    color: #FFF;
+    border: 1px solid #FFF;
+}
+
+#dteSet .dtBtnFtr:visited {
+    color: #FFF;
+}
+
+#dteSet .title {
+    text-align: center;
+    font-weight: bold;
+    color: #FFF;
+    width: 100%;
+    font-size: 1.2em;
+    white-space: nowrap;
+}
+
+#dteSet .current {
+    border: 1px solid #393939;
+    background-color: #292929;
+    color: #FFF;
+}
+
+#dteSet .empty {
+    background-color: #CCC;
+    border: 1px solid #FFF;
+}
+
+#dteSet .weekday {
+    background-color: #DDD;
+    color: #000;
+}
+
+#dteSet .weekend {
+    background-color: #F5F5F5;
+    color: #000;
+}
+
+#dteSet .weekday,
+#dteSet .weekend,
+#dteSet .current {
+    display: block;
+    text-decoration: none;
+    border: 1px solid #FFF;
+    width: 2em;
+}
+
+#dteSet .weekday:hover,
+#dteSet .weekend:hover,
+#dteSet .current:hover {
+    color: #FFF;
+    background-color: #336;
+    border: 1px solid #999;
+}
+
+#dteSet .previous {
+    text-align: left;
+}
+
+#dteSet .next {
+    text-align: right;
+}
+
+#dteSet .previous,
+#dteSet .next {
+    padding: 1px 3px 1px 3px;
+    font-size: 1.4em;
+    white-space: nowrap;
+}
+
+#dteSet .previous a,
+#dteSet .next a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#dteSet .previous a:first-child {
+    margin-right: .2em;
+}
+
+#dteSet .next a:last-child {
+    margin-left: .2em;
+}

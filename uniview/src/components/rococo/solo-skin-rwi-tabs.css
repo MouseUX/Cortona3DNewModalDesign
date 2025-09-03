@@ -1,0 +1,17 @@
+.rwi-tabs {
+    flex-grow: 1;
+    margin-bottom: .5em;
+}
+
+.rwi-tabs .skin-tabs-header {
+    margin-left: .5em;
+}
+
+.skin-tree-item .content:hover,
+.skin-tree-item .content.hover {
+    background-color: lightyellow;
+}
+
+.skin-tree-item .content.active {
+    background-color: darkkhaki;
+}

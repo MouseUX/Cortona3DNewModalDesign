@@ -1,0 +1,66 @@
+@plugin "less-plugin-i18n";
+configure();
+setLocale(@locale);
+
+@charset "utf-8";
+
+/*
+    dita.less
+*/
+
+.skin-modal-title {
+    .default-title {
+        display: none;
+    }
+    .warning-title:before {
+        content: __UC("Warning");
+    }
+
+    .caution-title:before {
+        content: __UC("Caution");
+    }
+
+    .danger-title:before {
+        content: __UC("Danger");
+    }
+
+    .note-title:before {
+        content: __UC("Note");
+    }
+
+    .notes-title:before {
+        content: __UC("Notes");
+    }
+
+    .tip-title:before {
+        content: __UC("Tip");
+    }
+
+    .fastpath-title:before {
+        content: __UC("Fastpath");
+    }
+
+    .important-title:before {
+        content: __UC("Important");
+    }
+
+    .attention-title:before {
+        content: __UC("Attention");
+    }
+
+    .remember-title:before {
+        content: __UC("Remember");
+    }
+
+    .restriction-title:before {
+        content: __UC("Restriction");
+    }
+
+    .notice-title:before {
+        content: __UC("Notice");
+    }
+
+    .trouble-title:before {
+        content: __UC("Trouble");
+    }
+}

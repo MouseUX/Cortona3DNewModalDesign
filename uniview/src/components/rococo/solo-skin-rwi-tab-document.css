@@ -1,0 +1,77 @@
+.job .skin-tree-item .content {
+    margin: 1px 0;
+    display: flex;
+    align-items: center;
+}
+
+.job .task-number {
+    width: 2em;
+    min-width: 2em;
+    align-self: stretch;
+    border-right: 1px solid gray;
+    margin-right: .5em;
+    padding-right: .5em;
+    text-align: right;
+} 
+
+.aux.panel .job .skin-tree-item.signed .content {
+    background-color: lightgray;
+}
+
+.job .signed:after {
+    content: attr(data-signed);
+    display: block;
+    text-align: right;
+    margin-bottom: .5em;
+    width: 100%;
+}
+
+.job .inspected:before {
+    content: attr(data-inspected);
+    display: block;
+    text-align: left;
+    margin-top: .5em;
+    width: 100%;
+    margin-left: 2em;
+}
+
+.job .rwi-doc-title {
+    display: block;
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+
+.document .skin-tree-item-leaf.collapsed .step > * {
+    display: none;
+}
+
+.document .skin-tree-item-leaf.collapsed .step > .rwi-doc-title {
+    display: block;
+}
+
+.document .skin-tree-item-leaf.collapsed .skin-tree-item-button:before {
+    content: "\25B7";
+}
+
+.document .skin-tree-item-leaf .skin-tree-item-button:before {
+    content: "\25BD";
+}
+
+.document .skin-tree-item-button {
+    min-height: 1em;
+    cursor: pointer;
+    padding-right: .5em;
+}
+
+.document .skin-tree-item-leaf {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.document .skin-tree-item-leaf > div:first-child {
+    align-items: flex-start;
+}
+
+.document .skin-tree-item-leaf > div:first-child + * {
+    flex: 1 0;
+}

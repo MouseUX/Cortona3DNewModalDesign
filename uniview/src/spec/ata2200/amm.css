@@ -1,0 +1,724 @@
+.doc-container,
+.procedure-alert {
+  /**
+  ata-cmm.css
+  26.10.2014 3:41:06
+ */
+  /*
+.pgblk {
+    counter-reset: item item1 item2 item3;
+}*/
+  /*
+  ATA Paragraphing and Outlining
+
+  1. prclist1, task, pbfmatr
+    A. prclist2, pretopic, topic, pbfmatr>list1
+      (1) prclist3, list1, pbfmatr>list2
+        (a) prclist4, list2, pbfmatr>list3
+          1. prclist5, list3, pbfmatr>list4
+            a. prclist6, list4, pbfmatr>list5
+              i prclist7, list5, pbfmatr>list6
+*/
+  /*
+img, object {
+  display:block;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+object, embed {
+  width: 100%;
+  height: 480px;
+}
+*/
+  /********************************/
+}
+.doc-container .trfmatr > .title,
+.procedure-alert .trfmatr > .title,
+.doc-container .pgblk > .title,
+.procedure-alert .pgblk > .title {
+  font-size: 1.5em;
+}
+.doc-container .intro > .title,
+.procedure-alert .intro > .title,
+.doc-container .sblist > .title,
+.procedure-alert .sblist > .title,
+.doc-container .effxref > .title,
+.procedure-alert .effxref > .title,
+.doc-container .chapter > .title,
+.procedure-alert .chapter > .title,
+.doc-container .section > .title,
+.procedure-alert .section > .title,
+.doc-container .subject > .title,
+.procedure-alert .subject > .title,
+.doc-container .task > .title,
+.procedure-alert .task > .title,
+.doc-container .pbfmatr > .title,
+.procedure-alert .pbfmatr > .title,
+.doc-container .prclist1 > li > .prcitem > .title,
+.procedure-alert .prclist1 > li > .prcitem > .title {
+  font-size: 1.2em;
+}
+.doc-container .headFootData,
+.procedure-alert .headFootData,
+.doc-container .graphicImg,
+.procedure-alert .graphicImg {
+  display: none;
+}
+.doc-container .pgblk,
+.procedure-alert .pgblk {
+  display: block;
+  margin-left: 0.3em;
+}
+.doc-container .pgblk > .title,
+.procedure-alert .pgblk > .title {
+  text-align: center;
+  text-decoration: underline;
+}
+.doc-container .task,
+.procedure-alert .task {
+  display: block;
+  margin: 1em 1em 1em 0.5em;
+  padding: 0.3em;
+}
+.doc-container .Procedure,
+.procedure-alert .Procedure {
+  margin-left: 1em;
+}
+.doc-container .changed,
+.procedure-alert .changed {
+  background-color: #E0E0E0;
+}
+.doc-container .chgdesc,
+.procedure-alert .chgdesc {
+  display: none;
+}
+.doc-container .title,
+.procedure-alert .title {
+  display: block;
+  margin: 1em 0;
+  font-weight: bold;
+}
+.doc-container .task > .title,
+.procedure-alert .task > .title {
+  text-align: left;
+  margin: 0;
+  padding: 1em 0;
+  text-decoration: underline;
+}
+.doc-container .prclist1 > li > .prcitem > .title,
+.procedure-alert .prclist1 > li > .prcitem > .title,
+.doc-container .task > .title,
+.procedure-alert .task > .title {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.doc-container .prclist1 > li:before,
+.procedure-alert .prclist1 > li:before,
+.doc-container .prclist2 > li:before,
+.procedure-alert .prclist2 > li:before,
+.doc-container .task > .title:before,
+.procedure-alert .task > .title:before {
+  font-weight: bold;
+}
+.doc-container li[data-notitle]:before,
+.procedure-alert li[data-notitle]:before {
+  font-weight: normal;
+}
+.doc-container .topic > .title,
+.procedure-alert .topic > .title,
+.doc-container .pretopic > .title,
+.procedure-alert .pretopic > .title,
+.doc-container .prclist2 > li > .prcitem > .title,
+.procedure-alert .prclist2 > li > .prcitem > .title {
+  font-size: 100%;
+  font-weight: bold;
+}
+.doc-container .amtoss,
+.procedure-alert .amtoss {
+  display: block;
+  position: relative;
+  background-color: #EEEEEE;
+  padding: 0.5em;
+}
+.doc-container .task > .amtoss,
+.procedure-alert .task > .amtoss {
+  margin: 1em 0 1em -2.8em;
+}
+.doc-container .subtask,
+.procedure-alert .subtask {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  padding: 0.3em;
+}
+.doc-container .legalntc,
+.procedure-alert .legalntc {
+  display: block;
+  margin: 6em;
+  font-size: 0.9em;
+}
+.doc-container .cpyrght,
+.procedure-alert .cpyrght {
+  display: block;
+  text-align: center;
+}
+.doc-container .center,
+.procedure-alert .center {
+  text-align: center;
+}
+.doc-container ul,
+.procedure-alert ul {
+  margin-left: 0;
+  padding-left: 0;
+  text-indent: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.doc-container ol,
+.procedure-alert ol {
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.doc-container .pageBlock.pgblk[data-pgblknbr],
+.procedure-alert .pageBlock.pgblk[data-pgblknbr] {
+  counter-reset: graphic item1;
+}
+.doc-container .pgblk,
+.procedure-alert .pgblk {
+  counter-reset: none;
+}
+.doc-container .task,
+.procedure-alert .task,
+.doc-container .pbfmatr,
+.procedure-alert .pbfmatr,
+.doc-container ol.prclist1,
+.procedure-alert ol.prclist1 {
+  counter-reset: item item2 item3;
+}
+.doc-container .topic,
+.procedure-alert .topic,
+.doc-container .pretopic,
+.procedure-alert .pretopic,
+.doc-container ol.prclist2,
+.procedure-alert ol.prclist2,
+.doc-container .pbfmatr ol.list1,
+.procedure-alert .pbfmatr ol.list1 {
+  counter-reset: item3;
+}
+.doc-container ol,
+.procedure-alert ol {
+  counter-reset: item;
+}
+.doc-container .task,
+.procedure-alert .task,
+.doc-container .pbfmatr,
+.procedure-alert .pbfmatr,
+.doc-container ol.prclist1 > li,
+.procedure-alert ol.prclist1 > li {
+  counter-increment: item1;
+}
+.doc-container .topic,
+.procedure-alert .topic,
+.doc-container .pretopic,
+.procedure-alert .pretopic,
+.doc-container .pbfmatr ol.list1 > li,
+.procedure-alert .pbfmatr ol.list1 > li,
+.doc-container ol.prclist2 > li,
+.procedure-alert ol.prclist2 > li {
+  counter-increment: item2;
+}
+.doc-container .subtask ol.list1 > li,
+.procedure-alert .subtask ol.list1 > li,
+.doc-container .pretopic ol.list1 > li,
+.procedure-alert .pretopic ol.list1 > li,
+.doc-container .pbfmatr ol.list2 > li,
+.procedure-alert .pbfmatr ol.list2 > li,
+.doc-container ol.prclist3 > li,
+.procedure-alert ol.prclist3 > li {
+  counter-increment: item3;
+}
+.doc-container ol > li,
+.procedure-alert ol > li,
+.doc-container .alert-message ol > li,
+.procedure-alert .alert-message ol > li {
+  counter-increment: item;
+}
+.doc-container .task,
+.procedure-alert .task,
+.doc-container .pbfmatr,
+.procedure-alert .pbfmatr,
+.doc-container .topic,
+.procedure-alert .topic,
+.doc-container .pretopic,
+.procedure-alert .pretopic,
+.doc-container li,
+.procedure-alert li {
+  padding-left: var(--left-indent);
+  text-indent: 0em;
+  margin-top: 1em;
+  display: list-item;
+  list-style: none;
+}
+.doc-container .task > .title::before,
+.procedure-alert .task > .title::before,
+.doc-container .pbfmatr > .title::before,
+.procedure-alert .pbfmatr > .title::before,
+.doc-container .topic > .title:before,
+.procedure-alert .topic > .title:before,
+.doc-container .pretopic > .title:before,
+.procedure-alert .pretopic > .title:before,
+.doc-container li:before,
+.procedure-alert li:before {
+  position: relative;
+  width: var(--left-indent);
+  display: inline-block;
+  margin-left: var(--left-indent-reverse);
+}
+.doc-container li > *:first-child,
+.procedure-alert li > *:first-child,
+.doc-container .prcitem > *:first-child,
+.procedure-alert .prcitem > *:first-child {
+  display: inline;
+}
+.doc-container ul.system > li:before,
+.procedure-alert ul.system > li:before,
+.doc-container ul > li:before,
+.procedure-alert ul > li:before {
+  content: "•";
+}
+.doc-container ul.none > li:before,
+.procedure-alert ul.none > li:before {
+  content: " ";
+}
+.doc-container ul.bullet > li:before,
+.procedure-alert ul.bullet > li:before {
+  content: "•";
+}
+.doc-container ul.ndash > li:before,
+.procedure-alert ul.ndash > li:before {
+  content: "–";
+}
+.doc-container ul.mdash > li:before,
+.procedure-alert ul.mdash > li:before {
+  content: "—";
+}
+.doc-container ul.diamond > li:before,
+.procedure-alert ul.diamond > li:before {
+  content: "♦";
+}
+.doc-container ul.asterisk > li:before,
+.procedure-alert ul.asterisk > li:before {
+  content: "*";
+}
+.doc-container ul.delta > li:before,
+.procedure-alert ul.delta > li:before {
+  content: "Δ";
+}
+.doc-container ul.square > li:before,
+.procedure-alert ul.square > li:before {
+  content: "□";
+}
+.doc-container .task > .title:before,
+.procedure-alert .task > .title:before,
+.doc-container .pbfmatr > .title:before,
+.procedure-alert .pbfmatr > .title:before,
+.doc-container ol.prclist1 > li:before,
+.procedure-alert ol.prclist1 > li:before {
+  content: counter(item1) ".";
+}
+.doc-container .topic > .title:before,
+.procedure-alert .topic > .title:before,
+.doc-container .pretopic > .title:before,
+.procedure-alert .pretopic > .title:before,
+.doc-container ol.prclist2 > li:before,
+.procedure-alert ol.prclist2 > li:before,
+.doc-container .pbfmatr ol.list1 > li:before,
+.procedure-alert .pbfmatr ol.list1 > li:before {
+  content: counter(item2, upper-alpha) ".";
+}
+.doc-container .subtask ol.list1 > li:before,
+.procedure-alert .subtask ol.list1 > li:before,
+.doc-container .pretopic ol.list1 > li:before,
+.procedure-alert .pretopic ol.list1 > li:before,
+.doc-container .pbfmatr ol.list2 > li:before,
+.procedure-alert .pbfmatr ol.list2 > li:before,
+.doc-container ol.prclist3 > li:before,
+.procedure-alert ol.prclist3 > li:before {
+  content: "(" counter(item3) ")";
+}
+.doc-container ol.nnp > li:before,
+.procedure-alert ol.nnp > li:before,
+.doc-container ol > li:before,
+.procedure-alert ol > li:before {
+  content: counter(item) ".";
+}
+.doc-container ol.aup > li:before,
+.procedure-alert ol.aup > li:before {
+  content: counter(item, upper-alpha) ".";
+}
+.doc-container ol.nnb > li:before,
+.procedure-alert ol.nnb > li:before {
+  content: "(" counter(item) ")";
+}
+.doc-container .subtask ol.list2 > li:before,
+.procedure-alert .subtask ol.list2 > li:before,
+.doc-container .pretopic ol.list2 > li:before,
+.procedure-alert .pretopic ol.list2 > li:before,
+.doc-container .pbfmatr ol.list3 > li:before,
+.procedure-alert .pbfmatr ol.list3 > li:before,
+.doc-container ol.prclist4 > li:before,
+.procedure-alert ol.prclist4 > li:before,
+.doc-container ol.alb > li:before,
+.procedure-alert ol.alb > li:before {
+  content: "(" counter(item, lower-alpha) ")";
+}
+.doc-container .subtask ol.list3 > li:before,
+.procedure-alert .subtask ol.list3 > li:before,
+.doc-container .pretopic ol.list3 > li:before,
+.procedure-alert .pretopic ol.list3 > li:before,
+.doc-container .pbfmatr ol.list4 > li:before,
+.procedure-alert .pbfmatr ol.list4 > li:before,
+.doc-container ol.prclist5 > li:before,
+.procedure-alert ol.prclist5 > li:before,
+.doc-container ol.nns > li:before,
+.procedure-alert ol.nns > li:before {
+  content: counter(item);
+  text-decoration: underline;
+}
+.doc-container .subtask ol.list4 > li:before,
+.procedure-alert .subtask ol.list4 > li:before,
+.doc-container .pretopic ol.list4 > li:before,
+.procedure-alert .pretopic ol.list4 > li:before,
+.doc-container .pbfmatr ol.list5 > li:before,
+.procedure-alert .pbfmatr ol.list5 > li:before,
+.doc-container ol.prclist6 > li:before,
+.procedure-alert ol.prclist6 > li:before {
+  content: counter(item, lower-alpha) ".";
+}
+.doc-container .subtask ol.list5 > li:before,
+.procedure-alert .subtask ol.list5 > li:before,
+.doc-container .pretopic ol.list5 > li:before,
+.procedure-alert .pretopic ol.list5 > li:before,
+.doc-container .pbfmatr ol.list6 > li:before,
+.procedure-alert .pbfmatr ol.list6 > li:before,
+.doc-container ol.prclist7 > li:before,
+.procedure-alert ol.prclist7 > li:before {
+  content: counter(item, lower-roman);
+}
+.doc-container .subtask ol.list6 > li:before,
+.procedure-alert .subtask ol.list6 > li:before,
+.doc-container .pretopic ol.list6 > li:before,
+.procedure-alert .pretopic ol.list6 > li:before,
+.doc-container .pbfmatr ol.list7 > li:before,
+.procedure-alert .pbfmatr ol.list7 > li:before {
+  content: counter(item, upper-roman);
+}
+.doc-container ol.rup > li:before,
+.procedure-alert ol.rup > li:before {
+  content: counter(item, upper-roman) ".";
+}
+.doc-container ol.rlp > li:before,
+.procedure-alert ol.rlp > li:before {
+  content: counter(item, lower-roman) ".";
+}
+.doc-container ol.rur > li:before,
+.procedure-alert ol.rur > li:before {
+  content: counter(item, upper-roman) ")";
+}
+.doc-container ol.rlr > li:before,
+.procedure-alert ol.rlr > li:before {
+  content: counter(item, lower-roman) ")";
+}
+.doc-container ol.nnr > li:before,
+.procedure-alert ol.nnr > li:before {
+  content: counter(item) ")";
+}
+.doc-container ol.aur > li:before,
+.procedure-alert ol.aur > li:before {
+  content: counter(item, upper-alpha) ")";
+}
+.doc-container ol.alr > li:before,
+.procedure-alert ol.alr > li:before {
+  content: counter(item, lower-alpha) ")";
+}
+.doc-container .sub,
+.procedure-alert .sub {
+  display: inline;
+  vertical-align: sub;
+  font-size: 75%;
+}
+.doc-container .super,
+.procedure-alert .super {
+  display: inline;
+  vertical-align: super;
+  font-size: 75%;
+}
+.doc-container .year + .year:before,
+.procedure-alert .year + .year:before {
+  content: ", ";
+}
+.doc-container .year + .holder:before,
+.procedure-alert .year + .holder:before {
+  content: " © ";
+}
+.doc-container .holder + .holder:before,
+.procedure-alert .holder + .holder:before {
+  content: ", ";
+}
+.doc-container .section > h4,
+.procedure-alert .section > h4 {
+  text-decoration: underline;
+}
+.doc-container ol.list1 > li > h4,
+.procedure-alert ol.list1 > li > h4 {
+  text-decoration: underline;
+}
+.doc-container div.table-contents,
+.procedure-alert div.table-contents {
+  margin-top: 1em;
+}
+.doc-container div.table-contents h4,
+.procedure-alert div.table-contents h4 {
+  text-align: center;
+}
+.doc-container table,
+.procedure-alert table {
+  border-collapse: collapse;
+}
+.doc-container td,
+.procedure-alert td,
+.doc-container th,
+.procedure-alert th {
+  padding: 0.5em;
+}
+.doc-container td p,
+.procedure-alert td p,
+.doc-container th p,
+.procedure-alert th p {
+  margin: 0;
+}
+.doc-container .warning,
+.procedure-alert .warning {
+  display: block;
+  margin-top: 1em;
+  margin-left: var(--left-indent-warning);
+}
+.doc-container .caution,
+.procedure-alert .caution {
+  display: block;
+  margin-top: 1em;
+  margin-left: var(--left-indent-caution);
+}
+.doc-container .note,
+.procedure-alert .note {
+  display: block;
+  margin-top: 1em;
+  margin-left: var(--left-indent-note);
+}
+.doc-container .warning:before,
+.procedure-alert .warning:before,
+.doc-container .caution:before,
+.procedure-alert .caution:before,
+.doc-container .note:before,
+.procedure-alert .note:before {
+  float: left;
+  text-decoration: underline;
+}
+.doc-container .warning:before,
+.procedure-alert .warning:before {
+  width: var(--left-indent-warning);
+  margin-left: var(--left-indent-warning-reverse);
+  content: var(--label-warning) var(--label-ColonSymbol);
+}
+.doc-container .caution:before,
+.procedure-alert .caution:before {
+  width: var(--left-indent-caution);
+  margin-left: var(--left-indent-caution-reverse);
+  content: var(--label-caution) var(--label-ColonSymbol);
+}
+.doc-container .note:before,
+.procedure-alert .note:before {
+  width: var(--left-indent-note);
+  margin-left: var(--left-indent-note-reverse);
+  content: var(--label-note) var(--label-ColonSymbol);
+}
+.doc-container .amm[data-lang="RU"] .warning,
+.procedure-alert .amm[data-lang="RU"] .warning {
+  margin-left: var(--left-indent-warning-extend);
+}
+.doc-container .amm[data-lang="RU"] .caution,
+.procedure-alert .amm[data-lang="RU"] .caution {
+  margin-left: var(--left-indent-caution-extend);
+}
+.doc-container .amm[data-lang="RU"] .note,
+.procedure-alert .amm[data-lang="RU"] .note {
+  margin-left: var(--left-indent-note-extend);
+}
+.doc-container .amm[data-lang="RU"] .warning:before,
+.procedure-alert .amm[data-lang="RU"] .warning:before {
+  width: var(--left-indent-warning-extend);
+  margin-left: var(--left-indent-warning-extend-reverse);
+}
+.doc-container .amm[data-lang="RU"] .caution:before,
+.procedure-alert .amm[data-lang="RU"] .caution:before {
+  width: var(--left-indent-caution-extend);
+  margin-left: var(--left-indent-caution-extend-reverse);
+}
+.doc-container .amm[data-lang="RU"] .note:before,
+.procedure-alert .amm[data-lang="RU"] .note:before {
+  width: var(--left-indent-note-extend);
+  margin-left: var(--left-indent-note-extend-reverse);
+}
+.doc-container .warning > *:first-child,
+.procedure-alert .warning > *:first-child,
+.doc-container .caution > *:first-child,
+.procedure-alert .caution > *:first-child,
+.doc-container .note > *:first-child,
+.procedure-alert .note > *:first-child {
+  margin-top: 0;
+}
+.doc-container .warning > *:first-child > li:first-child,
+.procedure-alert .warning > *:first-child > li:first-child,
+.doc-container .caution > *:first-child > li:first-child,
+.procedure-alert .caution > *:first-child > li:first-child,
+.doc-container .note > *:first-child > li:first-child,
+.procedure-alert .note > *:first-child > li:first-child {
+  margin-top: 0;
+}
+.doc-container .graphic,
+.procedure-alert .graphic {
+  text-align: center;
+  display: block;
+  max-width: 100%;
+}
+.doc-container .sheet,
+.procedure-alert .sheet {
+  padding: 2px;
+  display: block;
+  margin-top: 1em;
+}
+.doc-container .sptool *:before,
+.procedure-alert .sptool *:before,
+.doc-container .consume *:before,
+.procedure-alert .consume *:before {
+  content: " ";
+}
+.doc-container .sptool *:first-child:before,
+.procedure-alert .sptool *:first-child:before,
+.doc-container .consume *:first-child:before,
+.procedure-alert .consume *:first-child:before {
+  content: "";
+}
+.doc-container .kwd,
+.procedure-alert .kwd {
+  display: none;
+}
+.doc-container li > .link3d,
+.procedure-alert li > .link3d {
+  margin-left: 0;
+  margin-right: 0.5em;
+}
+.doc-container li > .link3d + *,
+.procedure-alert li > .link3d + * {
+  display: inline;
+}
+.doc-container .graphic > .title,
+.procedure-alert .graphic > .title {
+  margin-top: 1.5em;
+}
+.doc-container .note,
+.procedure-alert .note {
+  color: #216F02;
+  font-weight: bold;
+}
+.doc-container .warning,
+.procedure-alert .warning {
+  color: #FF0000;
+  font-weight: bold;
+}
+.doc-container .caution,
+.procedure-alert .caution {
+  color: #FF8800;
+  font-weight: bold;
+}
+.doc-container th,
+.procedure-alert th {
+  background-color: #EFEFEF;
+}
+.doc-container a,
+.procedure-alert a {
+  color: #000080;
+  text-decoration: none;
+}
+.doc-container a:visited,
+.procedure-alert a:visited {
+  color: #000080;
+}
+.doc-container a:hover,
+.procedure-alert a:hover {
+  color: #0000FF;
+  text-decoration: underline;
+}
+.doc-container .trreason,
+.procedure-alert .trreason {
+  font-style: italic;
+  margin-bottom: 1em;
+}
+.doc-container .ftnote,
+.procedure-alert .ftnote {
+  display: block;
+  font-size: 0.85em;
+}
+.doc-container .conname,
+.procedure-alert .conname,
+.doc-container .toolname,
+.procedure-alert .toolname,
+.doc-container .std[title] .stdname,
+.procedure-alert .std[title] .stdname {
+  display: none;
+}
+.doc-container .con[title],
+.procedure-alert .con[title],
+.doc-container .ted[title],
+.procedure-alert .ted[title],
+.doc-container .std[title],
+.procedure-alert .std[title] {
+  border-bottom: 1px dashed #000;
+  cursor: help;
+}
+.doc-container .fullstmt > .title,
+.procedure-alert .fullstmt > .title {
+  text-align: center;
+}
+.doc-container .effect[data-efftext],
+.procedure-alert .effect[data-efftext] {
+  text-align: right;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.doc-container .effect[data-efftext]:before,
+.procedure-alert .effect[data-efftext]:before {
+  content: "** ON " attr(data-efftext);
+  display: block;
+}
+:root {
+  --left-indent: 2rem;
+  --left-indent-reverse: -2rem;
+}
+:root {
+  --left-indent-warning: 6em;
+  --left-indent-caution: 6em;
+  --left-indent-note: 4em;
+  --left-indent-warning-reverse: -6em;
+  --left-indent-caution-reverse: -6em;
+  --left-indent-note-reverse: -4em;
+  --left-indent-warning-extend: 12em;
+  --left-indent-caution-extend: 8em;
+  --left-indent-note-extend: 8em;
+  --left-indent-warning-extend-reverse: -12em;
+  --left-indent-caution-extend-reverse: -8em;
+  --left-indent-note-extend-reverse: -8em;
+}

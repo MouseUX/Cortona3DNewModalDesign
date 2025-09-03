@@ -1,0 +1,89 @@
+.panel-settings {
+    width: auto;
+    background-color: rgba(220,220,220,.95);
+    padding: 1em;
+    z-index: 20;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    min-height: auto;
+    min-width: 8em;
+    max-width: 320px;
+    align-self: flex-end;
+    margin: 1em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid gray;
+    box-shadow: 2px 4px 28px rgba(0,0,0,0.25), 2px 4px 10px rgba(0,0,0,0.22);
+    border-radius: .3em;
+}
+
+.panel-settings-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: .25em;
+    margin-bottom: .25em;
+}
+
+.panel-settings-item > .label-control-checkbox {
+    align-self: start;
+}
+
+.panel-settings-item select {
+    width: 100%;
+}
+
+.panel-settings-item.start {
+    justify-content: flex-start;
+}
+
+.panel-settings-item .skin-control {
+}
+
+.panel-settings-item.disabled {
+    color: gray;
+}
+
+.panel-settings label {
+    font-weight: normal;
+}
+
+#options-scenelighting .label-control-select:after {
+    display: inline-block;
+    margin-left: .5em;
+    min-width: 24px;
+    height: 24px;
+    content: '';
+}
+
+#options-scenelighting .label-control-select:after,
+#options-scenelighting .label-control-select[data-value='0']:after {
+    background-image: url(img/lighting0.png);
+}
+
+#options-scenelighting .label-control-select[data-value='1']:after {
+    background-image: url(img/lighting1.png);
+}
+
+#options-scenelighting .label-control-select[data-value='2']:after {
+    background-image: url(img/lighting2.png);
+}
+
+#options-scenelighting .label-control-select[data-value='3']:after {
+    background-image: url(img/lighting3.png);
+}
+
+#options-scenelighting .label-control-select[data-value='4']:after {
+    background-image: url(img/lighting4.png);
+}
+
+#options-scenelighting .label-control-select[data-value='5']:after {
+    background-image: url(img/lighting5.png);
+}
+
+#options-scenelighting .label-control-select[data-value='6']:after {
+    background-image: url(img/lighting6.png);
+}

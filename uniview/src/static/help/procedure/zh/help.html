@@ -1,0 +1,698 @@
+﻿<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>流程：用户界面</title>
+
+    <style type="text/css">
+        body {
+            font-family: verdana;
+            font-size: 80%;
+            background-color: white;
+            color: black;
+            margin-top: 12pt;
+            margin-bottom: 10pt;
+            margin-left: 10pt;
+            margin-right: 10pt;
+        }
+
+        p {
+            font-family: verdana;
+            font-size: 100%;
+            color: black;
+            margin-top: 6pt;
+            margin-bottom: 6pt;
+            margin-left: 0pt;
+        }
+
+        li {
+            font-family: verdana;
+            font-size: 100%;
+            margin-left: 0pt;
+        }
+
+        td {
+            font-family: verdana;
+            font-size: 80%;
+            color: black;
+
+            background-color: whitesmoke;
+            margin: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border: solid 1px white;
+            vertical-align: top;
+        }
+
+        td.key {
+            background-color: gainsboro;
+            font-weight: bold;
+            vertical-align: top;
+        }
+
+        td.wht {
+            background-color: white;
+            margin: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            border: none;
+            vertical-align: top;
+        }
+
+        th {
+            font-family: verdana;
+            font-size: 80%;
+            color: black;
+            text-align: left;
+
+            background-color: gainsboro;
+            padding: 4px;
+            border: solid 1px white;
+        }
+
+        h1 {
+            font-family: verdana;
+            font-size: 130%;
+            font-weight: bold;
+            background-color: white;
+            color: #336699;
+            margin-bottom: 6pt;
+        }
+
+        h2 {
+            font-family: verdana;
+            font-size: 115%;
+            font-weight: bold;
+            background-color: white;
+            color: #336699;
+            margin-bottom: 6pt;
+            margin-top: 24pt;
+        }
+
+        h3 {
+            font-family: verdana;
+            font-size: 100%;
+            font-weight: bold;
+            background-color: white;
+            color: black;
+            margin-bottom: 3pt;
+        }
+
+        hr {
+            color: #336699;
+            height: 1px;
+        }
+
+        ul {
+            margin-top: 0pt;
+            margin-bottom: 6pt;
+            color: black;
+            list-style-type: disc;
+        }
+
+        a {
+            color: #1080FF;
+        }
+
+        a:visited {
+            color: saddlebrown;
+        }
+
+        a:hover {
+            color: darkorange;
+        }
+
+        .command {
+            padding: 4px;
+            color: #336699;
+            background-color: whitesmoke;
+            font-family: courier;
+        }
+
+        .hdbar {
+            margin-top: 32px;
+            margin-bottom: 0px;
+            width: 100%;
+            font-weight: bold;
+            background-color: #6699CC;
+            color: white;
+            padding: 2px;
+            padding-left: 4px;
+        }
+
+        div.note {
+            background-image: url(images/note1.png);
+            background-repeat: no-repeat;
+            background-color: white;
+            margin-top: 12pt;
+            margin-bottom: 0pt;
+            margin-left: 0pt;
+        }
+
+        div.table_note {
+            background-image: url(images/note2.png);
+            background-repeat: no-repeat;
+            background-color: #F5F5F5;
+            margin-top: 6pt;
+            margin-bottom: 0pt;
+            margin-left: 0pt;
+        }
+
+        div.fig_note {
+            font-size: 90%;
+            margin-top: 6pt;
+            margin-bottom: 6pt;
+            margin-left: 12pt;
+        }
+        
+        table {
+            font-size: medium;
+        }
+
+        img.btn {
+            margin: 2px 4px;
+            width: 16px;
+            height: 16px;
+        }
+
+        img.btn.inline {
+            margin: 0 2px 0 4px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>流程 - 用户界面</h1>
+
+    <hr noshade>
+
+    <p>
+        用户界面由两个工作区组成：&ldquo;文档&rdquo;和&ldquo;3D/2D&rdquo;。每个工作区都有其自己的控制元素，如下所述。注意，用户界面的外观取决于用于创建此交互式流程的信息标准。
+    </p>
+
+    <table width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+            <td class="wht" width="130">
+                <img src="images/Layout2.png" width="940" height="540" border="0">
+            </td>
+        </tr>
+    </table>
+
+    <!-- Document Window-->
+    <div class="hdbar">文档窗口</div>
+
+    <p>
+	&ldquo;文档&rdquo;窗口显示根据指定信息标准创建的文档。文档将提供员工执行任务的分步流程。流程步骤可以包含一些交互式元素。单击超链接可查看 3D 窗口中的当前步骤或 2D 窗口中的 2D 图像。
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                按钮
+            </th>
+
+            <th valign="top" align="left">
+                描述
+            </th>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                过滤器
+            </td>
+
+            <td valign="top" align="left">
+                根据基于 DITA 文档的流程的条件处理属性进行过滤。根据基于 S1000D 数据模块的流程的适用性进行过滤。
+            </td>
+        </tr>
+    </table>
+
+
+    <div class="hdbar">3D 窗口</div>
+
+    <p>
+        3D 窗口提供文档窗口中所述流程的 3D 表示。在 3D 窗口中，可以使用&ldquo;回放&rdquo;条上的按钮播放流程，使用鼠标进行导览。3D 窗口右上角的定位符（例如，三轴架）可用于确定单元或零件的空间位置。
+        <p>
+            如果第一次打开流程时 3D 窗口处于关闭状态，可单击&ldquo;文档&rdquo;窗口中相应的控制元素。
+        </p>
+    </p>
+
+
+    <!-- 3D Playback -->
+    <h3>回放条</h3>
+
+    <p>
+        用于控制 3D 窗口中流程回放的按钮。
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                命令
+            </th>
+            <th valign="top" align="left">
+                用途
+            </th>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                播放
+            </td>
+
+            <td valign="top" align="left">
+                在停止或暂停时开始流程的回放。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                暂停
+            </td>
+            <td valign="top" align="left">
+                在当前步骤处停止回放。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                上一个
+            </td>
+            <td valign="top" align="left">
+                返回上一步。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                下一个
+            </td>
+            <td valign="top" align="left">
+                移至流程的下一步。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                设置
+            </td>
+            <td valign="top" align="left">
+                显示或隐藏设置列表。
+                <p>
+                    <b>速度</b>。设置回放速度。</p>
+                <p>
+                    <b>冻结视点</b>。如果选中，则会将摄像机锁定到当前视图，从而防止在流程回放时摄像机移动。</p>
+                <p>
+                    <b>一步式回放</b>。如果选中，则锁定当前步骤的回放。</p>                   
+                <p>
+                    <b>禁用警报消息</b>。如果选中，则抑制回放期间向您通知有关流程警报的消息。</p>
+                <p>
+                    <b>显示内嵌注释</b>。如果选中，则在 3D 窗口中显示流程注释。</p>
+				<p>
+                    <b>场景光照</b>。 定义光源的数量及其位置以在 3D 窗口中照亮模型。 光源的相对位置显示在列表右侧。 所有光源都随查看器移动。
+					</p>					
+				<p>
+                    <b>显示导览立方体</b>。 在 3D 窗口中显示或隐藏导览立方体。导览立方体有三种不同类型的热点区域：边、拐角和面。当您将指针置于导览立方体的边、拐角或面上时，相应的区域将高亮显示。通过这些区域，可以在标准视图之间切换，也可进行旋转。
+					</p>
+                <p>
+                    <b>显示曲面边</b>。如果选中，则在 3D 窗口中显示曲面边界。</p> 					
+                <p>
+                    <b>反锯齿</b>.激活用于最小化 3D 窗口中变形构件的技术。</p>					
+                <p>
+                    <b>环境遮蔽</b>。激活 3D 窗口中的周围介质遮挡着色和渲染技术。</p>					
+					
+                <p>
+                    <b>选择模式</b>.指定要在 3D 窗口中选择的对象表示。</p>			
+				<p> 
+					<i>用颜色高亮显示</i> - 高亮显示所选内容。</p>			
+                <p>
+					<i>透视所选对象</i> - 除所选对象外，其余对象呈灰色半透明状态。</p>			
+                <p>
+					<i>半透明壳</i> - 整个模型的外壳呈半透明状态，非选定的内部对象将被隐藏。  
+				</p>			
+                <p>
+                    <b>描画光标悬停对象</b>。所选内容带轮廓显示。
+				</p>										
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                回放进度条
+            </td>
+            <td valign="top" align="left">
+                进度条指示流程的相对进度。拖动或单击进度条以查找所需的流程步骤。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                帮助
+            </td>
+            <td valign="top" align="left">
+                提供用户界面的帮助系统。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                展开，折叠
+            </td>
+            <td valign="top" align="left">
+                相对于查看器窗口框架展开或折叠 3D 窗口。
+            </td>
+        </tr>		
+    </table>
+
+
+    <!-- Selection Bar -->
+    <h3>选择条</h3>
+
+    <p>
+        用于显示和隐藏在 3D 窗口中选择的对象并使其适合窗口和变得透明的按钮。
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                用户界面
+            </th>
+
+            <th valign="top" align="left">
+                用途
+            </th>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                在单独的窗口中显示选定对象
+            </td>
+            <td valign="top" align="left">
+                如果启用，则在辅助 3D 窗口中显示选择内容。
+            </td>
+        </tr>		
+
+        <tr>
+            <td valign="top" align="left">
+                忽略透明度
+            </td>
+            <td valign="top" align="left">
+                如果启用，就可以穿过 3D 窗口中的透明项执行单击操作，因为透明项将不对用户的单击做出响应。
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                全部恢复
+            </td>
+            <td valign="top" align="left">
+                显示所有隐藏和半透明对象。
+            </td>
+        </tr>	
+
+        <tr>
+            <td valign="top" align="left">
+                适合窗口
+            </td>
+            <td valign="top" align="left">
+                使所选项的限定框适合 3D 窗口。
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                显示
+            </td>
+            <td valign="top" align="left">
+                使先前在 3D 窗口中隐藏的所选项可见。
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                隐藏
+            </td>
+            <td valign="top" align="left">
+                隐藏 3D 窗口中的所选项。
+            </td>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                全不选
+            </td>
+            <td valign="top" align="left">
+                取消选择所有项。
+            </td>
+        </tr>			
+
+        <tr>
+            <td valign="top" align="left">
+                透明度
+            </td>
+            <td valign="top" align="left">
+                用于设置所选项的透明度值。如果在 3D 窗口中选择一个或多个项，则透明度命令可用。
+            </td>
+        </tr>
+    </table>
+
+
+    <!-- 3D Navigation -->
+    <h3>在 3D 窗口中导览</h3>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                操作
+            </th>
+
+            <th valign="top" align="left">
+                用户操作
+            </th>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                放大/缩小
+            </td>
+
+            <td valign="top" align="left">
+                向前或向后旋转鼠标滚轮。在 Apple 计算机上，使用控制修改键。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                平移
+            </td>
+
+            <td valign="top" align="left">
+                按住鼠标滚轮并移动鼠标。在 Apple 计算机上，使用选项修改键。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                自转
+            </td>
+
+            <td valign="top" align="left">
+                移动鼠标时按住鼠标左键。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                设置旋转中心
+            </td>
+            <td valign="top" align="left">
+                按住 ALT 键，单击 3D 窗口中的任意项，或单击<b>设置中心</b> <img class="btn inline" src="../../../../components/rococo/img/btn_goto.png">，然后在 3D 窗口中单击所需的项。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                显示或隐藏旋转中心
+            </td>
+            <td valign="top" align="left">
+                单击<b>显示旋转中心</b> <img class="btn inline" src="../../../../components/rococo/img/btn_center.png"> 以在 3D 窗口中显示或隐藏旋转中心及其轴。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                全部适合
+            </td>
+            <td valign="top" align="left">
+                单击<b>全部适合显示</b> <img class="btn inline" src="../../../../components/rococo/img/btn_fit.png">，使项在 3D 窗口中完全可见。
+            </td>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                水平对齐
+            </td>     
+            <td valign="top" align="left">
+                单击<b>水平对齐</b> <img class="btn inline" src="../../../../components/rococo/img/btn_align.png">，将摄像机的水平（但不是纵向）轴设为与坐标系中的水平面平行。
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                显示或隐藏坐标轴
+            </td>  
+            <td valign="top" align="left">
+                单击<b>显示坐标轴</b> <img class="btn inline" src="../../../../components/rococo/img/btn_axes.png"> 以显示或隐藏 3D 窗口中的方位轴。 
+            </td>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                测量距离
+            </td>  
+            <td valign="top" align="left">
+                单击<b>测量</b> <img class="btn inline" src="../../../../components/rococo/img/btn_measure.png"> 以打开测量工具。 在 3D 窗口中，只需在一个点上单击一次，然后在第二个点上再次单击。 然后将显示两个红点之间的距离。 要获得投影到竖直面或水平面上的点之间的距离，从列表中选择投影平面名称。 要更改长度单位，选择<b>单位</b>。 要设置指引线长度，拖动 <b>H</b> 滑块。 选择<b>保持可见</b>，使尺寸线在关闭测量工具后仍然可见。要设置新的点，单击<b>清除</b>或按 Esc 键，然后在 3D 窗口中指定点。	
+				<p>
+				<b>WARNING</b>				
+				</p>
+				<p>
+				切勿在工作流程中直接使用测量结果，因为 3D 插图可能与实际产品有所不同。要获取制造或维修所需的尺寸，请参考相关技术文档。				
+				</p>					
+            </td>
+        </tr>		
+		
+        <tr>
+            <td valign="top" align="left">
+                剖视图 
+            </td>  
+            <td valign="top" align="left">
+                单击<b>截平面</b> <img class="btn inline" src="../../../../components/rococo/img/btn_section_plane.png">，可使模型显示为如同被平面剖切后一样。使用控件设置（左视图、俯视图、前视图）和旋转（X 和 Y）截平面。要移动截平面，拖动 <b>D</b> 滑块。 使用<b>翻转</b>镜像截面。 选择<b>精确模式</b>可提高滑块的精度。选择<b>保持可见</b>，使截面在关闭工具后可见。要将截平面移至所选内容的中心，单击<b>重置</b>。				
+            </td>
+        </tr>		
+		
+        <tr>
+            <td valign="top" align="left">
+                <img src="../../../../components/rococo/img/v1.png">
+                <img src="../../../../components/rococo/img/v2.png">
+                <img src="../../../../components/rococo/img/v4.png">
+                <img src="../../../../components/rococo/img/v3.png">
+                <img src="../../../../components/rococo/img/v5.png">
+                <img src="../../../../components/rococo/img/v6.png">
+                <img src="../../../../components/rococo/img/v7.png">
+            </td>
+            <td valign="top" align="left">
+                以不同视角显示 3D 窗口中的对象：前视图、后视图、左视图、右视图、俯视图、仰视图和正等测图。单击按钮激活视图。
+            </td>
+        </tr>		
+    </table>
+
+    <!-- 3D Context Commands-->
+    <h3>3D 窗口中的上下文相关菜单</h3>
+
+    <p>在 3D 窗口中右键单击任意位置以访问上下文相关菜单。</p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                命令
+            </th>
+            <th valign="top" align="left">
+                用途
+            </th>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                重置
+            </td>
+            <td valign="top" align="left">
+                重置步骤视图。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                全部适合
+            </td>
+            <td valign="top" align="left">
+                使项在 3D 窗口中完全可见。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                关于
+            </td>
+            <td valign="top" align="left">
+                显示流程、3D 查看器和 2D 查看器的版本。
+            </td>
+        </tr>
+    </table>
+
+    <!-- 2D Window Procedures -->
+    <div class="hdbar">2D 窗口</div>
+
+    <p>
+        2D 窗口显示与文档窗口中所述流程关联的矢量图像和光栅图像。当用户在文档窗口中单击 2D 图像超链接时，2D 窗口将替换 3D 窗口。右键单击 2D 窗口可访问可用的上下文相关命令。注意，命令列表取决于 2D 窗口中使用的 2D 查看器。
+    </p>
+
+    <h3>在 2D 窗口中导览</h3>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                操作
+            </th>
+            <th valign="top" align="left">
+                用户操作
+            </th>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                平移
+            </td>
+            <td valign="top" align="left">
+                移动鼠标时按住鼠标左键。
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                缩放
+            </td>
+            <td valign="top" align="left">
+                向前或向后旋转鼠标滚轮。
+            </td>
+        </tr>
+    </table>
+	
+    
+	<h3>2D 窗口中的按钮</h3>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                按钮
+            </th>
+            <th valign="top" align="left">
+                描述
+            </th>
+        </tr>	
+        <tr>
+            <td valign="top" align="left">
+                3D
+            </td>
+            <td valign="top" align="left">
+                打开 3D 窗口。
+            </td>
+        </tr> 
+        <tr>
+            <td valign="top" align="left">
+                展开，折叠
+            </td>
+            <td valign="top" align="left">
+                相对于查看器窗口框展开或折叠 2D 窗口。
+            </td>
+        </tr>	
+        <tr>
+            <td valign="top" align="left">
+                下一页，上一页
+            </td>
+            <td valign="top" align="left">
+                对于多页插图，可导航至下一页或上一页。
+            </td>
+        </tr> 		
+    </table>		
+
+</body>
+</html>

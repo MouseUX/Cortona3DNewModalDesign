@@ -1,0 +1,120 @@
+.dpl-container {
+    overflow: auto;
+    color: black;
+    order: 10;
+    align-items: flex-start !important;
+    height: 100%;
+    min-height: 2em;
+    margin-top: .5em;
+}
+
+.skin-holder-figure .dpl-container {
+    position: absolute;
+    z-index: 100;
+    background-color: rgba(240, 250, 255, 0.8);
+    
+    max-height: 80%;
+    height: auto;
+    bottom: 1em;
+    right: 1em;
+    left: 1em;
+}
+
+.dpl-full {
+    /*max-height: 80% !important;*/
+}
+
+.dpl-collapse tbody {
+    display: none;
+}
+
+.dpl-table .disabled {
+    color: gray;
+}
+
+.dpl-table .disabled .dpl-row-checkbox {
+    visibility: hidden;
+}
+
+.dpl-table .dpl-checkbox {
+    display: none;
+}
+
+.display-mode-2d .dpl-row-checkbox {
+    display: none !important;
+}
+
+.dpl-row-checkbox {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+}
+
+.dpl-table tr td:first-child pre {
+    position: relative;
+    width: 2em;
+}
+
+.dpl-table thead {
+    font-size: 11px;
+}
+.dpl-table tbody {
+    font-size: 12px;
+}
+.dpl-table thead pre {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+.dpl-table thead td {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+/*
+.dpl-container a[data-dmc] {
+    color: #000080;
+    text-decoration: none;
+}
+
+.dpl-container a[data-dmc]:visited {
+    color: #000080;
+}
+
+.dpl-container a[data-dmc]:hover {
+    color: #0000FF;
+    text-decoration: underline;
+}
+*/
+a[data-dmc].disabled {
+    pointer-events: none !important;
+    cursor: default;
+    color: #888 !important;
+}
+
+/* Sticky DPL table header */
+
+.dpl-container.dpl-header-sticky .dpl-table {
+    border-collapse: separate;
+}
+
+.dpl-container.dpl-header-sticky .dpl-table {
+    border-top: none;
+}
+
+.dpl-container.dpl-header-sticky .dpl-table tr:last-child td,
+.dpl-container.dpl-header-sticky .dpl-table thead td {
+    border-top: none;
+    border-bottom: none;
+}
+
+.dpl-container.dpl-header-sticky .dpl-table thead tr:first-child td {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.dpl-table td pre a {
+    white-space: pre-line;
+}

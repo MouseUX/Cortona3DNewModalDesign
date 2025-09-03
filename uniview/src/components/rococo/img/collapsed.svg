@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 13 20" fill="none" fill-rule="evenodd" stroke-miterlimit="5">
+  <title></title>
+  <desc>"Generator:ParallelGraphics Cortona2D","ProfileId:WebCGM""ProfileEd:2.1""ColourClass:colour""Source:Cortona2D Editor Pro 4.1.0.78""Date:20190417"</desc>
+  <rect width="13" height="20" fill="#fff"/>
+  <defs/>
+  <g transform="matrix(4.72441,0,0,4.72441,0.187499,20)">
+    <path fill="#000" d="M0,-0.29104 C0,-0.37042 0.026458,-0.44979 0.079375,-0.50271 L2.0108,-2.1167 0.10583,-3.7571 C0,-3.8629 -0.026458,-4.0217 0.079375,-4.1275 0.18521,-4.2333 0.34396,-4.2598 0.44979,-4.154 L2.5665,-2.3019 C2.6194,-2.249 2.6723,-2.1696 2.6723,-2.0902 2.6723,-2.0108 2.6458,-1.9579 2.5929,-1.905 L0.44979,-0.079376 C0.34396,0.026458 0.18521,-7.7486e-07 0.079375,-0.10583 0.026458,-0.15875 0,-0.23813 0,-0.29104 Z"/>
+  </g>
+</svg>

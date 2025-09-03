@@ -1,0 +1,49 @@
+#btn-section-plane {
+    background-image: url(img/btn_section_plane.png);
+}
+
+.section-plane-settings.panel-settings {
+    position: relative;
+}
+
+.section-plane-settings .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.section-plane-settings .buttons.right {
+    justify-content: flex-end;
+}
+
+.section-plane-settings .buttons button {
+    min-width: auto;
+    margin-right: 2px;
+}
+
+.section-plane-settings label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.section-plane-settings label > span:first-child {
+    margin-right: .5em;
+}
+
+.section-plane-settings .orientation > * {
+    margin-top: .5em;
+}
+
+.section-plane-settings .orientation > *:first-child {
+    margin-top: 0;
+}
+
+.section-plane-settings .orientation > label:first-of-type {
+    margin-top: .25em;
+}
+
+.section-plane-settings .subheader {
+    font-weight: 400;
+}

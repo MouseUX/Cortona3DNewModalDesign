@@ -1,0 +1,238 @@
+.caution,
+.warning,
+.danger {
+    font-weight: bold;
+}
+
+.cautiontitle,
+.warningtitle,
+.noticetitle,
+.troubletitle {
+    font-weight: bold;
+}
+
+.caution,
+.warning {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.notice,
+.trouble {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+[data-class~='topic/fig'],
+[data-class~='topic/table'] {
+    margin: 2em 0;
+}
+
+[data-class~='topic/topic'] {
+    margin: 1em;
+}
+
+[data-class~='task/step'],
+[data-class~='task/substep'] {
+    margin-top: .23em;
+    padding: .33em;
+}
+
+[data-class~='task/task'].play-context {
+    border: none;
+}
+
+[data-class~='task/task'].play-context [data-class~='task/taskbody'] {
+    border-left: .5em solid #add8e6;
+}
+
+[data-class~='topic/table']>caption {
+    margin-bottom: 0.75em;
+}
+
+.figcap {
+    display: block;
+}
+
+[data-class~='topic/table']>thead,
+[data-class~="topic/simpletable"]>thead {
+    background-color: #e5e5e5;
+}
+
+[data-class~='topic/fig'] {
+    padding: 0.75em;
+}
+
+[data-class~='topic/image'][data-placement='break'] {
+    display: inline-block;
+    max-width: 100%;
+}
+
+[data-class~="hazard-d/hazardstatement"] [data-class~="topic/image"] {
+    max-width: initial;
+    width: 64px;
+    height: auto;
+}
+
+[data-class~="hazard-d/hazardstatement"] {
+    width: 100%;
+}
+
+[data-class~="hazard-d/hazardstatement"] tr td:first-child {
+    width: 0;
+}
+
+[data-class~="hazard-d/hazardstatement"] tr td:first-child svg {
+    visibility: hidden;
+    width: 64px;
+    height: auto;
+}
+
+[data-class~="topic/div"] {
+    display: block;
+}
+
+
+/* TABLES */
+
+[data-class~='topic/table'],
+[data-class~="topic/simpletable"] {
+    border: solid 1px;
+}
+
+[data-class~='topic/table']>thead,
+[data-class~='topic/table']>tbody,
+[data-class~="topic/simpletable"]>thead {
+    border-top: solid 1px;
+}
+
+[data-class~='topic/table'].frame-top>tbody,
+.frame-topbot>tbody,
+.frame-all>tbody,
+.frame-top>thead,
+.frame-topbot>thead,
+.frame-all>thead {
+    border-top: solid 1px;
+}
+
+.frame-sides>tbody,
+.frame-bottom>tbody,
+.frame-none>tbody,
+.frame-sides>thead,
+.frame-bottom>thead,
+.frame-none>thead {
+    border-top: 0;
+}
+
+.frame-none [data-class~='topic/stentry'],
+.frame-top [data-class~='topic/stentry'],
+.frame-bottom [data-class~='topic/stentry'],
+.frame-sides [data-class~='topic/stentry'] {
+    border-bottom: 0;
+}
+
+.frame-none [data-class~='topic/stentry'],
+.frame-top [data-class~='topic/stentry'],
+.frame-bottom [data-class~='topic/stentry'],
+.frame-topbot [data-class~='topic/stentry'] {
+    border-right: 0;
+}
+
+[data-class~='topic/entry'],
+[data-class~='topic/stentry'] {
+    padding: 4px;
+    text-align: left;
+}
+
+[data-class~='topic/simpletable'] > thead th {
+    vertical-align: top;
+}
+
+[data-class~='topic/table'] > thead th {
+    vertical-align: bottom;
+}
+
+[data-class~='topic/table'] > thead th.valign-top {
+    vertical-align: top;
+}
+
+[data-class~='topic/table'] > thead th.valign-bottom {
+    vertical-align: bottom;
+}
+
+[data-class~='topic/table'] > thead th.valign-middle {
+    vertical-align: middle;
+}
+
+/* FIG */
+
+[data-class~='topic/fig'].figborder {
+    border: 2px solid Silver;
+}
+
+[data-class~='topic/fig'].figsides {
+    border-left: 2px solid Silver;
+    border-right: 2px solid Silver;
+}
+
+[data-class~='topic/fig'].figtop {
+    border-top: 2px solid Silver;
+}
+
+[data-class~='topic/fig'].figbottom {
+    border-width: 2px;
+    border-bottom: 2px solid Silver;
+}
+
+[data-class~='topic/fig'].figtopbot {
+    border-bottom: 2px solid Silver;
+    border-top: 2px solid Silver;
+}
+
+
+/* DL */
+
+div.dl,
+div[data-class~='topic/dl'] {
+    display: table;
+}
+
+div.dlhead,
+div[data-class~='topic/dlhead'] {
+    display: table-row;
+}
+
+div.dtentry,
+div.ddentry  {
+    display: table-cell;
+}
+
+div.dtentry {
+    padding-right: 1em;
+}
+
+div.dthd,
+div[data-class~='topic/dthd'] {}
+
+div.ddhd,
+div[data-class~='topic/ddhd'] {}
+
+div.dlentry,
+div[data-class~='topic/dlentry'] {
+    display: table-row;
+}
+
+div.dt,
+div[data-class~='topic/dt'] {}
+
+div.dd,
+div[data-class~='topic/dd'] {}
+
+
+/* OL, UL */
+
+[data-class~='topic/ol'],
+[data-class~='topic/ul'] {
+    padding-inline-start: 2em;
+    line-height: normal;
+}

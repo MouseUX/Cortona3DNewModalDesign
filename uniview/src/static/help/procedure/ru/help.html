@@ -1,0 +1,672 @@
+﻿<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Процедура: интерфейс пользователя</title>
+
+    <style type="text/css">
+        body {
+            font-family: verdana;
+            font-size: 80%;
+            background-color: white;
+            color: black;
+            margin-top: 12pt;
+            margin-bottom: 10pt;
+            margin-left: 10pt;
+            margin-right: 10pt;
+        }
+
+        p {
+            font-family: verdana;
+            font-size: 100%;
+            color: black;
+            margin-top: 6pt;
+            margin-bottom: 6pt;
+            margin-left: 0pt;
+        }
+
+        li {
+            font-family: verdana;
+            font-size: 100%;
+            margin-left: 0pt;
+        }
+
+        td {
+            font-family: verdana;
+            font-size: 80%;
+            color: black;
+
+            background-color: whitesmoke;
+            margin: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border: solid 1px white;
+            vertical-align: top;
+        }
+
+        td.key {
+            background-color: gainsboro;
+            font-weight: bold;
+            vertical-align: top;
+        }
+
+        td.wht {
+            background-color: white;
+            margin: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            border: none;
+            vertical-align: top;
+        }
+
+        th {
+            font-family: verdana;
+            font-size: 80%;
+            color: black;
+            text-align: left;
+
+            background-color: gainsboro;
+            padding: 4px;
+            border: solid 1px white;
+        }
+
+        h1 {
+            font-family: verdana;
+            font-size: 130%;
+            font-weight: bold;
+            background-color: white;
+            color: #336699;
+            margin-bottom: 6pt;
+        }
+
+        h2 {
+            font-family: verdana;
+            font-size: 115%;
+            font-weight: bold;
+            background-color: white;
+            color: #336699;
+            margin-bottom: 6pt;
+            margin-top: 24pt;
+        }
+
+        h3 {
+            font-family: verdana;
+            font-size: 100%;
+            font-weight: bold;
+            background-color: white;
+            color: black;
+            margin-bottom: 3pt;
+        }
+
+        hr {
+            color: #336699;
+            height: 1px;
+        }
+
+        ul {
+            margin-top: 0pt;
+            margin-bottom: 6pt;
+            color: black;
+            list-style-type: disc;
+        }
+
+        a {
+            color: #1080FF;
+        }
+
+        a:visited {
+            color: saddlebrown;
+        }
+
+        a:hover {
+            color: darkorange;
+        }
+
+        .command {
+            padding: 4px;
+            color: #336699;
+            background-color: whitesmoke;
+            font-family: courier;
+        }
+
+        .hdbar {
+            margin-top: 32px;
+            margin-bottom: 0px;
+            width: 100%;
+            font-weight: bold;
+            background-color: #6699CC;
+            color: white;
+            padding: 2px;
+            padding-left: 4px;
+        }
+
+        div.note {
+            background-image: url(images/note1.png);
+            background-repeat: no-repeat;
+            background-color: white;
+            margin-top: 12pt;
+            margin-bottom: 0pt;
+            margin-left: 0pt;
+        }
+
+        div.table_note {
+            background-image: url(images/note2.png);
+            background-repeat: no-repeat;
+            background-color: #F5F5F5;
+            margin-top: 6pt;
+            margin-bottom: 0pt;
+            margin-left: 0pt;
+        }
+
+        div.fig_note {
+            font-size: 90%;
+            margin-top: 6pt;
+            margin-bottom: 6pt;
+            margin-left: 12pt;
+        }
+        
+        table {
+            font-size: medium;
+        }
+
+        img.btn {
+            margin: 2px 4px;
+            width: 16px;
+            height: 16px;
+        }
+
+        img.btn.inline {
+            margin: 0 2px 0 4px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Процедура&nbsp;&ndash; интерфейс пользователя</h1>
+
+    <hr noshade>
+
+    <p>
+        Интерфейс пользователя интерактивного документа технической процедуры состоит из двух рабочих областей: 
+		&laquo;Документ&raquo;,
+        &laquo;3D-окно&raquo;
+        или &laquo;2D-окно&raquo;. 
+		Каждая рабочая область имеет свои элементы управления, описанные ниже. 
+		Обратите внимание, что внешний вид интерактивной процедуры и список доступных команд 
+		определяется информационным стандартом, в соответствии с которым выполнена документация.
+    </p>
+
+    <table width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+            <td class="wht" width="130">
+                <img src="images/Layout2.png" width="940" height="540" border="0">
+            </td>
+        </tr>
+    </table>
+
+    <!-- Document Window-->
+    <div class="hdbar">Окно &laquo;Документ&raquo;</div>
+
+    <p>Окно &laquo;Документ&raquo; отображает документ, созданный в соответствии с выбранным информационным стандартом. 
+	Документ содержит пошаговое описание иллюстрированной технической процедуры. Шаг процедуры может содержать интерактивные элементы, щелкая по которым можно просматривать соответствующий фрагмент процедуры в 3D-окне или соответствующую иллюстрацию
+	в 2D-окне.
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Кнопка
+            </th>
+            <th valign="top" align="left">
+                Назначение
+            </th>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Фильтр
+            </td>
+            <td valign="top" align="left">
+                Для документов, создаваемых в соответствии со стандартом DITA&mdash; возможность фильтрации по атрибуту
+                условной обработки; для документов, создаваемых в соответствии со стандартом S1000D&mdash; возможность
+                фильтрации для заданных значений применимости.
+
+            </td>
+        </tr>
+    </table>
+
+    <div class="hdbar">3D-окно</div>
+
+    <p>
+        3D-окно предназначено для отображения трехмерной иллюстрации технической процедуры, 
+		описание которой расположено в окне
+        &laquo;Документ&raquo;.
+        Техническую процедуру можно просматривать, используя панель воспроизведения и команды навигации. 
+		Направляющие оси в правом верхнем углу 3D-окна позволяют определить расположение изделия и узлов в трехмерном пространстве.
+        <p>
+            Если при первом открытии интерактивного документа 3D-окно закрыто, щелкните интерактивный элемент трехмерного окна в секции &laquo;Документ&raquo;.
+        </p>
+    </p>
+
+    <!-- 3D Playback -->
+    <h3>Панель &laquo;Воспроизведение&raquo;</h3>
+
+    <p>Содержит кнопки для управления воспроизведением процедуры в 3D-окне.</p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Команда
+            </th>
+            <th valign="top" align="left">
+                Назначение
+            </th>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                Воспроизведение
+            </td>
+
+            <td valign="top" align="left">
+                Начинает воспроизведение процедуры, если процедура была остановлена.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                Пауза
+            </td>
+            <td valign="top" align="left">
+                Останавливает воспроизведение на текущем моменте процедуры.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                Предыдущий шаг
+            </td>
+            <td valign="top" align="left">
+                Перемещает воспроизведение процедуры на один шаг назад.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                Следующий шаг
+            </td>
+            <td valign="top" align="left">
+                Перемещает воспроизведение процедуры на один шаг вперед.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                Настройки
+            </td>
+            <td valign="top" align="left">
+                Показывает или скрывает список настроек.
+                <p>
+                    <b>Скорость</b>. Позволяет задать скорость воспроизведения&nbsp;&ndash; выбирается коэффициент, на который будет умножена стандартная скорость воспроизведение.</p>
+                <p>
+                    <b>Зафиксировать вид</b>. Если выбрано, текущий вид в 3D-окне фиксируется, т.е.
+                    перемещение камеры в пространстве блокируется во время воспроизведения процедуры.</p>
+                <p>
+                    <b>Воспроизведение одного шага</b>. Если выбрано, воспроизводится только текущий шаг.</p>   
+                <p>
+                    <b>Отключить предупреждения</b>. Если выбрано, диалоговые окна предупреждений
+                    (предостережений),
+                    присутствующие в процедуре, не появляются во время воспроизведения процедуры.</p>
+                <p>
+                    <b>Показать комментарии процедуры</b>. Если выбрано, текст комментариев, имеющихся в
+                    процедуре,
+                    отображается в трехмерном окне.</p>
+                <p>
+                    <b>Показывать границы поверхностей</b>. Если выбрано, включает режим отображения границ поверхностей в 3D-окне.</p> 					
+                <p>
+                    <b>Сглаживание</b>. Активирует механизм сглаживания наклонных линий в 3D-окне для минимизации искажений.</p>					
+                <p>
+                    <b>Фоновое затенение</b>. Активирует технику затенения (ambient occlusion shading) в 3D-окне для улучшения отображения затененных поверхностей.</p>						
+                <p>
+                    <b>Режим выделения объектов</b>. Задает представление  объектов, выделенных в трехмерном окне.
+				</p>
+				<p>
+					<i>Выделять цветом</i>&nbsp;&ndash; цвет выделенного объекта изменяется. 
+				</p>
+				<p>					
+					<i>Прозрачность X-ray</i>&nbsp;&ndash; цвет выделенного объекта изменяется, а все остальные объекты отображаются полупрозрачными с различной степенью затенения. 
+				</p>
+				<p>										
+					<i>Прозрачная оболочка</i>&nbsp;&ndash; цвет выделенного объекта изменяется, оболочка изделия или сборки отображаются полупрозрачной, 
+					невыбранные внутренние объекты скрываются.  
+				</p>					
+                <p>
+                    <b>Отображать контур объекта при наведении</b>. Отображается контур выделенного объекта.
+				</p>						
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                Индикатор выполнения воспроизведения
+            </td>
+            <td valign="top" align="left">
+                Отслеживает ход воспроизведения процедуры. Щелкните на индикаторе, чтобы выбрать определенный шаг
+                процедуры.
+            </td>
+        </tr>
+    </table>
+
+
+    <!-- 3D Playback -->
+    <h3>Панель выбора 3D-объектов</h3>
+
+    <p>Позволяет совершать различные действия с выделенными объектами в 3D-окне.</p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Элемент интерфейса пользователя
+            </th>
+
+            <th valign="top" align="left">
+                Назначение
+            </th>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Игнорировать прозрачность
+            </td>
+            <td valign="top" align="left">
+                Если включено, делает прозрачные объекты нечувствительными к щелчку мыши в 3D-окне, что позволяет
+                щелкать сквозь прозрачные объекты по объектам, которые находятся за прозрачными объектами.
+            </td>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                Восстановить все объекты 
+            </td>
+
+            <td valign="top" align="left">
+                Восстанавливает первоначальный вид для всех скрытых и полупрозрачных объектов.
+            </td>
+        </tr>		
+
+        <tr>
+            <td valign="top" align="left">
+                Подогнать
+            </td>
+            <td valign="top" align="left">
+                Устанавливает вид таким образом, чтобы выделенный объект был достаточно близко и целиком умещался
+                в 3D-окне.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Показать
+            </td>
+            <td valign="top" align="left">
+                Показывает выделенные объекты, которые были предварительно скрыты в 3D-окне.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Скрыть
+            </td>
+            <td valign="top" align="left">
+                Скрывает выделенные объекты в 3D-окне.
+            </td>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                Снять выделение
+            </td>
+            <td valign="top" align="left">
+                Снимает выделение со всех объектов.
+            </td>
+        </tr>	
+		
+        <tr>
+            <td valign="top" align="left">
+                Прозрачность
+            </td>
+            <td valign="top" align="left">
+                Позволяет задать прозрачность для выделенных объектов. Команда установки прозрачности 
+				становится доступной, если в 3D-окне выделены объекты.
+            </td>
+        </tr>		
+    </table>
+
+    <!-- 3D Navigation -->
+    <h3>Навигация в 3D-окне</h3>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Операция
+            </th>
+
+            <th valign="top" align="left">
+                Действие пользователя
+            </th>
+
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                Масштабировать
+            </td>
+
+            <td valign="top" align="left">
+                Вращайте колесо мыши вперед или назад. На компьютерах Apple используйте модификатор Control.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                Переместить
+            </td>
+
+            <td valign="top" align="left">
+                Перемещайте мышь, удерживая колесо мыши нажатым. На компьютерах Apple используйте модификатор
+                Option.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                Вращать
+            </td>
+
+            <td valign="top" align="left">
+                Перемещайте мышь, удерживая левую кнопку мыши нажатой.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                Установить центр вращения
+            </td>
+            <td valign="top" align="left">
+                Удерживая клавишу ALT, щелкните объект в 3D-окне; или щелкните 
+                <b>Установить центр вращения</b>&nbsp;<img class="btn inline" src="../../../../components/rococo/img/btn_goto.png">,
+				а затем щелкните нужный вам объект в трехмерном окне.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                Показать/скрыть центр вращения
+            </td>
+            <td valign="top" align="left">
+                Щелкните                 
+                <b>Показать/скрыть центр вращения</b>&nbsp;<img class="btn inline" src="../../../../components/rococo/img/btn_center.png">,
+				чтобы показать или скрыть центр вращения объекта и его
+                оси в 3D-окне.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                Подогнать
+            </td>
+            <td valign="top" align="left">
+                Щелкните 
+                <b>Подогнать</b>&nbsp;<img class="btn inline" src="../../../../components/rococo/img/btn_fit.png">, чтобы все объекты были видны в 3D-окне.
+            </td>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                Выровнять горизонт
+            </td>
+            <td valign="top" align="left">
+                <img class="btn inline" src="../../../../components/rococo/img/btn_align.png">
+                Выравнивает вид по горизонтали.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Показать/скрыть оси ориентации
+            </td>
+            <td valign="top" align="left">
+                <img class="btn inline" src="../../../../components/rococo/img/btn_axes.png">
+                Отображает или скрывает оси направлений в трехмерном окне. 
+            </td>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                <img src="../../../../components/rococo/img/v1.png">
+                <img src="../../../../components/rococo/img/v2.png">
+                <img src="../../../../components/rococo/img/v4.png">
+                <img src="../../../../components/rococo/img/v3.png">
+                <img src="../../../../components/rococo/img/v5.png">
+                <img src="../../../../components/rococo/img/v6.png">
+                <img src="../../../../components/rococo/img/v7.png">
+            </td>
+            <td valign="top" align="left">
+                Устанавливает предопределенные виды в трехмерном окне: спереди, сзади, слева, справа, сверху,
+                снизу и изометрический.
+            </td>
+        </tr>
+    </table>
+
+    <!-- 3D Context Commands-->
+    <h3>Контекстно-зависимое меню в 3D-окне</h3>
+
+    <p>Для доступа к меню, щелкните правой кнопкой мыши в 3D-окне.</p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Команда
+            </th>
+            <th valign="top" align="left">
+                Назначение
+            </th>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                Восстановить
+            </td>
+            <td valign="top" align="left">
+                Возвращает камеру в трехмерном окне к положению, заданному текущим шагом процедуры.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                Подогнать
+            </td>
+            <td valign="top" align="left">
+                Устанавливает вид, при котором все объекты видны в трехмерном окне.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                О программе
+            </td>
+            <td valign="top" align="left">
+                Показывает номер версии интерактивного документа и программ просмотра 2D- и 3D-иллюстраций.
+            </td>
+        </tr>
+    </table>
+
+
+    <!-- 2D Window Procedures -->
+    <div class="hdbar">2D-окно</div>
+
+    <p>
+        2D-окно показывает векторные и растровые изображения, соответствующие технической процедуре в окне
+        &laquo;Документ&raquo;.
+        По умолчанию 2D-окно скрыто. 2D-окно открывается после щелчка на соответствующую гиперссылку в окне
+        &laquo;Документ&raquo;.
+        Для доступа к контекстному меню, щелкните правой кнопкой мыши в 2D-окне. Набор контекстных команд
+        зависит от программы
+        просмотра, которая используется в 2D-окне.
+    </p>
+
+    <h3>Навигация в 2D-окне</h3>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Операция
+            </th>
+
+            <th valign="top" align="left">
+                Действие пользователя
+            </th>
+
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                Переместить
+            </td>
+
+            <td valign="top" align="left">
+                Перемещайте мышь, удерживая левую кнопку.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                Масштабировать
+            </td>
+
+            <td valign="top" align="left">
+                Вращайте колесо мыши вперед или назад.
+            </td>
+        </tr>
+    </table>
+
+    <div class="hdbar">Кнопки в 3D-окне и 2D-окне</div>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <td valign="top" align="left">
+                Справка
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_help.png">
+            </td>
+            <td valign="top" align="left">
+                Вызов текущей справки.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                3D
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_3d.png">
+            </td>
+            <td valign="top" align="left">
+                Открывает 3D-окно.
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+.message {
+    padding: 1em;
+    border: 1px solid black;
+    margin: 1em 0;
+    min-height: 1.5em;
+    max-height: 20%;
+    overflow-y: auto;
+}
+
+.message.alert {
+    font-weight: bold;
+    color: #f00;
+}

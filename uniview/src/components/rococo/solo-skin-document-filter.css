@@ -1,0 +1,109 @@
+.filter-tabs {
+    width: 50vw;
+    height: 50vh;
+    min-width: 270px;
+    min-height: 140px;
+    max-width: 480px;
+    max-height: 480px;
+}
+
+.panel-filter {
+    width: auto;
+    background-color: rgb(220,220,220);
+    padding: 1em;
+    z-index: 10;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    min-height: auto;
+    align-self: flex-end;
+    margin: 1em;
+    position: absolute;
+    top: 3em;
+    right: 1em;
+    border: 1px solid gray;
+    box-shadow: 2px 4px 28px rgba(0,0,0,0.25), 2px 4px 10px rgba(0,0,0,0.22);
+}
+
+.panel-filter .footer {
+    margin-top: 1em;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.panel-filter .footer * {
+    margin-left: .5em;
+
+}
+
+.filter {
+    display: table;
+    background-color: white;
+    z-index: 100;
+    white-space: normal;
+    border: 1px solid gray;
+}
+
+.pct__table {
+    display: table;
+    width: 100%;
+}
+
+.filter__row,
+.pct__row {
+    display: table-row;
+}
+
+.pct__row {
+    cursor: pointer;
+}
+
+.pct__row.applied {
+    background-color: aquamarine;
+}
+
+.filter.applied {
+    border: 2px solid green;
+}
+
+.filter__attribute,
+.filter__value,
+.filter__action,
+.pct__description {
+    display: table-cell;
+    padding: 5px;
+    border-bottom: 1px solid gray;
+    border-collapse: collapse;
+}
+
+.filter__row:last-child .filter__attribute,
+.filter__row:last-child .filter__value,
+.filter__row:last-child .filter__action,
+.pct__row:last-child .pct__description {
+    border-bottom: none;
+}
+
+.filter__attribute {
+    width: 50px;
+}
+
+.filter__value {
+    min-width: 5em;
+}
+
+.filter__action {
+    text-align: center;
+    min-width: 4em;
+    width: 6em;
+}
+
+.filter__action select {
+    width: 100%;
+    font-size: 1em;
+    border: none;
+}
+
+.filter-tabs .skin-page-title,
+.filter-tabs .skin-page-body {
+    background-color: #F3F3F3;
+}

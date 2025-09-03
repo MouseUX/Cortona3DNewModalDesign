@@ -1,0 +1,24 @@
+@media screen {
+}
+
+@media print {
+    .graphics {
+        display: block;
+        max-width: 170mm;
+        max-height: 192mm;
+        margin: auto;
+        position: relative;
+    }
+    .graphics-label {
+        text-align: right;
+        padding: 1em 0 1em 0;
+    }
+    .skin-holder {
+        display: none;
+    }
+    .cortona3dsolo-canvas,
+    .cortona3dsolo-svg,
+	.cortona3dsolo-iframe {
+        position: relative;
+    }
+}

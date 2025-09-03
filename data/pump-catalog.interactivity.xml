@@ -1,0 +1,2916 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ipc>
+	<figure>
+		<metadata>
+			<value id="160d0ec6050" name="CollectionName" decl-id="C3DCOLLECTION" changed="0" revst="U"><![CDATA[Generic IPC]]></value>
+			<value id="160d0ec4750" name="Topic ID" decl-id="TOPIC_ID" changed="0" revst="U"><![CDATA[TOPIC_0000000002]]></value>
+			<value id="160d0ec4cd0" name="Title" decl-id="TITLE" changed="0" revst="U"><![CDATA[Illustrated Parts Catalog]]></value>
+		</metadata>
+		<media src="pump-catalog.wrl" id="1" type="vm/vrml">
+			<value name="IllustrationType" type="string"><![CDATA[0]]></value>
+			<value name="3DBackgroundColor" type="color"><![CDATA[#A6CAF0]]></value>
+			<value name="3DSelectedColor" type="color"><![CDATA[#FFFF00]]></value>
+			<value name="TableBackgroundColor" type="color"><![CDATA[#FFFFFF]]></value>
+			<value name="TableTextColor" type="color"><![CDATA[#000000]]></value>
+			<value name="TableBackgroundColorSel" type="color"><![CDATA[#EEEE00]]></value>
+			<value name="TableBackgroundColorHL" type="color"><![CDATA[#C8E2E2]]></value>
+			<value name="TableBackgroundColorHLNotIll" type="color"><![CDATA[#FFE4E1]]></value>
+			<value name="TableInactiveTextColor" type="color"><![CDATA[#808080]]></value>
+			<value name="2DSelectedColor" type="color"><![CDATA[#FFFF00]]></value>
+			<value name="2DHighLightColor" type="color"><![CDATA[#00FF00]]></value>
+			<value name="ContextMenuBackgroundColor" type="color"><![CDATA[#FFFFFF]]></value>
+			<value name="RemoveSpace" type="boolean"><![CDATA[No]]></value>
+			<value name="SimplifyFloats" type="boolean"><![CDATA[No]]></value>
+			<value name="CoordinateResolution" type="string"><![CDATA[0]]></value>
+			<value name="TooltipFormat" type="string"><![CDATA[Item:%[ITEM]]]></value>
+			<value name="UrlTarget" type="string"><![CDATA[_blank]]></value>
+			<value name="DITATopic" type="boolean"><![CDATA[No]]></value>
+			<value name="PDFPublish" type="boolean"><![CDATA[No]]></value>
+			<value name="ShowThrustLines" type="boolean"><![CDATA[No]]></value>
+			<value name="PublicPath" type="string"><![CDATA[http://localhost/ra/]]></value>
+			<value name="TotalMemory" type="number"><![CDATA[128]]></value>
+			<value name="UseShoppingCart" type="boolean"><![CDATA[No]]></value>
+			<value name="SingleHTMLBundle" type="boolean"><![CDATA[No]]></value>
+			<value name="UseSVGFilesOnly" type="boolean"><![CDATA[No]]></value>
+			<value name="KeepSurfaceEdges" type="boolean"><![CDATA[Yes]]></value>
+			<value name="UseViewerBundle" type="string"><![CDATA[1]]></value>
+			<value name="UseMultimediaBundle" type="string"><![CDATA[0]]></value>
+			<value name="UseCompressedSVG" type="boolean"><![CDATA[No]]></value>
+			<value name="iOSViewpointTransitionMode" type="string"><![CDATA[0]]></value>
+			<value name="PublisherVersion" type="string"><![CDATA[14.0.0.349 (64-bit)]]></value>
+			<value name="ModificationDate" type="string"><![CDATA[05/28/21]]></value>
+			<value name="SpecID" type="string"><![CDATA[GENERIC_IPC]]></value>
+			<value name="SpecVersion" type="string"><![CDATA[2.10]]></value>
+			<value name="SpecLang" type="string"><![CDATA[en]]></value>
+			<value name="SpecClass" type="string"><![CDATA[IPC]]></value>
+		</media>
+		<media src="pump-catalog-1.svg" id="160f072ff00" type="image/svg">
+			<value name="Name"><![CDATA[pump-catalog-1]]></value>
+			<value name="Description">
+			</value>
+			<value name="Flags"><![CDATA[12]]></value>
+		</media>
+		<media src="pump-catalog-2.svg" id="160d0d4b300" type="image/svg">
+			<value name="Name"><![CDATA[pump-catalog-2]]></value>
+			<value name="Description">
+			</value>
+			<value name="Flags"><![CDATA[12]]></value>
+		</media>
+		<media src="pump-catalog-3.svg" id="160d0d4b4b0" type="image/svg">
+			<value name="Name"><![CDATA[pump-catalog-3]]></value>
+			<value name="Description">
+			</value>
+			<value name="Flags"><![CDATA[12]]></value>
+		</media>
+		<media src="pump-catalog-4.svg" id="160d0d4d0d0" type="image/svg">
+			<value name="Name"><![CDATA[pump-catalog-4]]></value>
+			<value name="Description">
+			</value>
+			<value name="Flags"><![CDATA[12]]></value>
+		</media>
+		<media src="pump-catalog-5.svg" id="160d0d4ca10" type="image/svg">
+			<value name="Name"><![CDATA[pump-catalog-5]]></value>
+			<value name="Description">
+			</value>
+			<value name="Flags"><![CDATA[12]]></value>
+		</media>
+		<media src="pump-catalog-6.svg" id="160d0d4bf60" type="image/svg">
+			<value name="Name"><![CDATA[pump-catalog-6]]></value>
+			<value name="Description">
+			</value>
+			<value name="Flags"><![CDATA[12]]></value>
+		</media>
+		<dplist>
+			<item id="160cf8c2b70" refPart="160d0f64f40">
+				<refview ref="view_0">
+				</refview>
+				<metadata>
+					<value id="160d0f7b930" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[1]]></value>
+					<value id="160d0f7c9b0" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d0f7d230" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[10]]></value>
+					<value id="160d0f7c7b0" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d0f7bdb0" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[0]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:10]]></tooltip>
+				<callout hotspot-id="cd78b4770b3a7b4173f004b582fb9a11">10</callout>
+				<commands>
+					<command id="160d0d72230" type="DFP" changed="0" revst="U">
+						<value refMeta="160d0f7b930" name="Indent"><![CDATA[1]]></value>
+						<value refMeta="160d0ec5b50" name="Description For Part"><![CDATA[Pump Assy]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Pump_Assy_0</refmedia>
+			</item>
+			<item id="160cf8c2fd0" refPart="160d0f65a40">
+				<metadata>
+					<value id="160d0f7cab0" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[2]]></value>
+					<value id="160d0f7ce30" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[8]]></value>
+					<value id="160d0f7d330" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[20]]></value>
+					<value id="160d0f7c830" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d0f7b9b0" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[1]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:20]]></tooltip>
+				<callout hotspot-id="1ebac669b0c88ad9d3430d062368946d">20</callout>
+				<commands>
+					<command id="160d0d71e40" type="DFP" changed="0" revst="U">
+						<value refMeta="160d0f7cab0" name="Indent"><![CDATA[2]]></value>
+						<value refMeta="160d0ec5fd0" name="Description For Part"><![CDATA[Bolt, Hex Head, type 2]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Bolt__Hex_Head__type_2_(1)_1</refmedia>
+				<refmedia ref="1">Bolt__Hex_Head__type_2_(2)_3</refmedia>
+				<refmedia ref="1">Bolt__Hex_Head__type_2_(3)_5</refmedia>
+				<refmedia ref="1">Bolt__Hex_Head__type_2_(4)_7</refmedia>
+				<refmedia ref="1">Bolt__Hex_Head__type_2_(5)_9</refmedia>
+				<refmedia ref="1">Bolt__Hex_Head__type_2_(6)_11</refmedia>
+				<refmedia ref="1">Bolt__Hex_Head__type_2_(7)_13</refmedia>
+				<refmedia ref="1">Bolt__Hex_Head__type_2_(8)_15</refmedia>
+			</item>
+			<item id="160cf8c1bb0" refPart="160d0f65340">
+				<metadata>
+					<value id="160d0f7cb30" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[2]]></value>
+					<value id="160d0f7cbb0" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[8]]></value>
+					<value id="160d0f7d0b0" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[30]]></value>
+					<value id="160d0f7c030" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d0f7d030" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[2]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:30]]></tooltip>
+				<callout hotspot-id="e607a476a367f0ce8ce2684466f24df8">30</callout>
+				<commands>
+					<command id="160c84d2050" type="DFP" changed="0" revst="U">
+						<value refMeta="160d0f7cb30" name="Indent"><![CDATA[2]]></value>
+						<value refMeta="160d0ec48d0" name="Description For Part"><![CDATA[Gasket, type 2]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Gasket__type_2_(1)_2</refmedia>
+				<refmedia ref="1">Gasket__type_2_(2)_4</refmedia>
+				<refmedia ref="1">Gasket__type_2_(3)_6</refmedia>
+				<refmedia ref="1">Gasket__type_2_(4)_8</refmedia>
+				<refmedia ref="1">Gasket__type_2_(5)_10</refmedia>
+				<refmedia ref="1">Gasket__type_2_(6)_12</refmedia>
+				<refmedia ref="1">Gasket__type_2_(7)_14</refmedia>
+				<refmedia ref="1">Gasket__type_2_(8)_16</refmedia>
+			</item>
+			<item id="160cf8c1830" refPart="160d0f65100">
+				<refview ref="view_1">
+				</refview>
+				<metadata>
+					<value id="160d0f7c0b0" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[2]]></value>
+					<value id="160d0f7c130" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d0f7c1b0" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[40]]></value>
+					<value id="160d0f7c4b0" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d0f7c230" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[3]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:40]]></tooltip>
+				<callout hotspot-id="f4e08ce116dc328947435fae76c829c2">40</callout>
+				<commands>
+					<command id="160c62395a0" type="DFP" changed="0" revst="U">
+						<value refMeta="160d0f7c0b0" name="Indent"><![CDATA[2]]></value>
+						<value refMeta="160c84cb260" name="Description For Part"><![CDATA[Back Plate Assy]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Back_Plate_Assy_17</refmedia>
+			</item>
+			<item id="160cf8c2c50" refPart="160d0f650c0">
+				<refview ref="view_1">
+				</refview>
+				<metadata>
+					<value id="160d0f7ca30" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d0f7ceb0" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d0f7c2b0" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[50]]></value>
+					<value id="160d0f7c430" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d0f7c530" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[4]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:50]]></tooltip>
+				<callout hotspot-id="602d8f38c18c3858f0c84ef2da3a0749">50</callout>
+				<commands>
+					<command id="160cdf62230" type="DFP" changed="0" revst="U">
+						<value refMeta="160d0f7ca30" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160c84ca3e0" name="Description For Part"><![CDATA[Dowel Pin]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Dowel_Pin_(1)_18</refmedia>
+			</item>
+			<item id="160cf8c2470" refPart="160d0f65040">
+				<refview ref="view_1">
+				</refview>
+				<metadata>
+					<value id="160d0f7c630" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d0f7c6b0" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[8]]></value>
+					<value id="160d0f7c730" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[60]]></value>
+					<value id="160d0f7d3b0" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d0f7d4b0" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[5]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:60]]></tooltip>
+				<callout hotspot-id="3caf5c8b879ae5adb07aaaab08bdfae7">60</callout>
+				<commands>
+					<command id="160d107f330" type="DFP" changed="0" revst="U">
+						<value refMeta="160d0f7c630" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160c84ca460" name="Description For Part"><![CDATA[Bolt, Hex Head, type 1]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Bolt__Hex_Head__type_1_(1)_19</refmedia>
+				<refmedia ref="1">Bolt__Hex_Head__type_1_(2)_21</refmedia>
+				<refmedia ref="1">Bolt__Hex_Head__type_1_(3)_23</refmedia>
+				<refmedia ref="1">Bolt__Hex_Head__type_1_(4)_25</refmedia>
+				<refmedia ref="1">Bolt__Hex_Head__type_1_(5)_27</refmedia>
+				<refmedia ref="1">Bolt__Hex_Head__type_1_(6)_29</refmedia>
+				<refmedia ref="1">Bolt__Hex_Head__type_1_(7)_31</refmedia>
+				<refmedia ref="1">Bolt__Hex_Head__type_1_(8)_33</refmedia>
+			</item>
+			<item id="160cf8c2f60" refPart="160d0f65140">
+				<refview ref="view_1">
+				</refview>
+				<metadata>
+					<value id="160d0f7d530" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d0f7d5b0" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[8]]></value>
+					<value id="160d10892e0" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[70]]></value>
+					<value id="160d1088fe0" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d1088e60" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[6]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:70]]></tooltip>
+				<callout hotspot-id="ad73e94779dbe7bb14dc077df84851f5">70</callout>
+				<commands>
+					<command id="160d107edf0" type="DFP" changed="0" revst="U">
+						<value refMeta="160d0f7d530" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160cf664720" name="Description For Part"><![CDATA[Gasket, type 1]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Gasket__type_1_(1)_20</refmedia>
+				<refmedia ref="1">Gasket__type_1_(2)_22</refmedia>
+				<refmedia ref="1">Gasket__type_1_(3)_24</refmedia>
+				<refmedia ref="1">Gasket__type_1_(4)_26</refmedia>
+				<refmedia ref="1">Gasket__type_1_(5)_28</refmedia>
+				<refmedia ref="1">Gasket__type_1_(6)_30</refmedia>
+				<refmedia ref="1">Gasket__type_1_(7)_32</refmedia>
+				<refmedia ref="1">Gasket__type_1_(8)_34</refmedia>
+			</item>
+			<item id="160cf8c21d0" refPart="160d0f65a80">
+				<refview ref="view_1">
+				</refview>
+				<metadata>
+					<value id="160d1089560" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d10896e0" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d1089060" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[80]]></value>
+					<value id="160d1088c60" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10886e0" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[7]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:80]]></tooltip>
+				<callout hotspot-id="05bcc2cfdf92e81d83e6556e405568c8">80</callout>
+				<commands>
+					<command id="160d107eae0" type="DFP" changed="0" revst="U">
+						<value refMeta="160d1089560" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160cf665c20" name="Description For Part"><![CDATA[Ball Bearing Assy]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Ball_Bearing_Assy_35</refmedia>
+			</item>
+			<item id="160cf8c3a50" refPart="160d0f65d00">
+				<metadata>
+					<value id="160d1088de0" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[4]]></value>
+					<value id="160d10895e0" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d1088560" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[90]]></value>
+					<value id="160d1089660" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d1087ce0" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[8]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:90]]></tooltip>
+				<callout hotspot-id="af8e4e66b3b3d0a5e3016e44924e321f">90</callout>
+				<commands>
+					<command id="160d107f3a0" type="DFP" changed="0" revst="U">
+						<value refMeta="160d1088de0" name="Indent"><![CDATA[4]]></value>
+						<value refMeta="160cf666120" name="Description For Part"><![CDATA[Ball Bearing]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Ball_Bearing_36</refmedia>
+			</item>
+			<item id="160cf8c4150" refPart="160d0f66b40">
+				<metadata>
+					<value id="160d1089960" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[4]]></value>
+					<value id="160d1087ee0" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d1088ce0" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[100]]></value>
+					<value id="160d10887e0" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10885e0" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[9]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:100]]></tooltip>
+				<callout hotspot-id="dc4d2dd5b209ec2ce4e073c885632a09">100</callout>
+				<commands>
+					<command id="160d107ebc0" type="DFP" changed="0" revst="U">
+						<value refMeta="160d1089960" name="Indent"><![CDATA[4]]></value>
+						<value refMeta="160cf5c2050" name="Description For Part"><![CDATA[Zerk Fitting]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Zerk_Fitting_37</refmedia>
+			</item>
+			<item id="160cf8c4460" refPart="160d0f65ec0">
+				<metadata>
+					<value id="160d1087d60" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d10899e0" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d1087e60" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[110]]></value>
+					<value id="160d1089b60" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10893e0" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[10]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:110]]></tooltip>
+				<callout hotspot-id="d83b91fece39a6cdec9778a02418efad">110</callout>
+				<commands>
+					<command id="160d107dea0" type="DFP" changed="0" revst="U">
+						<value refMeta="160d1087d60" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f72e80" name="Description For Part"><![CDATA[Retaining ring]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Retaining_ring_38</refmedia>
+			</item>
+			<item id="160cf8c1d70" refPart="160d0f67380">
+				<refview ref="view_1">
+				</refview>
+				<metadata>
+					<value id="160d1088360" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d10890e0" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d1089be0" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[120]]></value>
+					<value id="160d1089160" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d1088be0" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[11]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:120]]></tooltip>
+				<callout hotspot-id="b7a519efe7a0d525312560b77aae2b4e">120</callout>
+				<commands>
+					<command id="160d107f1e0" type="DFP" changed="0" revst="U">
+						<value refMeta="160d1088360" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f73080" name="Description For Part"><![CDATA[Gasket, Case]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Gasket__Case_(1)_39</refmedia>
+			</item>
+			<item id="160cf8c1ec0" refPart="160d0f679c0">
+				<refview ref="view_1">
+				</refview>
+				<metadata>
+					<value id="160d10884e0" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d10891e0" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d10883e0" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[130]]></value>
+					<value id="160d1089760" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d1088760" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[12]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:130]]></tooltip>
+				<callout hotspot-id="3929f4e587d4a03d1a5abc05b77bddd2">130</callout>
+				<commands>
+					<command id="160d107ed10" type="DFP" changed="0" revst="U">
+						<value refMeta="160d10884e0" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f72e00" name="Description For Part"><![CDATA[Backplate]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Backplate_40</refmedia>
+			</item>
+			<item id="160cf8c29b0" refPart="160d0f66f00">
+				<refview ref="view_2">
+				</refview>
+				<metadata>
+					<value id="160d1088860" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[2]]></value>
+					<value id="160d1088660" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d1088d60" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[140]]></value>
+					<value id="160d10897e0" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d1089860" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[13]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:140]]></tooltip>
+				<callout hotspot-id="77610f34806f4ef74f96692a6d1cfea8">140</callout>
+				<commands>
+					<command id="160d107e6f0" type="DFP" changed="0" revst="U">
+						<value refMeta="160d1088860" name="Indent"><![CDATA[2]]></value>
+						<value refMeta="160d0f73d00" name="Description For Part"><![CDATA[Casing]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Casing_41</refmedia>
+			</item>
+			<item id="160cf8c1750" refPart="160d0f66f40">
+				<refview ref="view_6">
+				</refview>
+				<metadata>
+					<value id="160d10888e0" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[2]]></value>
+					<value id="160d1087de0" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d1089360" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[150]]></value>
+					<value id="160d10889e0" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d1088960" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[14]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:150]]></tooltip>
+				<callout hotspot-id="4bbef18e8d781f3094d3717807fa89c9">150</callout>
+				<commands>
+					<command id="160d107df80" type="DFP" changed="0" revst="U">
+						<value refMeta="160d10888e0" name="Indent"><![CDATA[2]]></value>
+						<value refMeta="160d0f72f80" name="Description For Part"><![CDATA[Idler Shaft Assy]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Idler_Shaft_Assy_42</refmedia>
+			</item>
+			<item id="160cf8c3ac0" refPart="160d0f67c40">
+				<refview ref="view_6">
+				</refview>
+				<metadata>
+					<value id="160d1089a60" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d1087f60" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d1088a60" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[160]]></value>
+					<value id="160d1088b60" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10898e0" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[15]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:160]]></tooltip>
+				<callout hotspot-id="7ca2e08ce074921e6ccff05a19aa6f63">160</callout>
+				<commands>
+					<command id="160d107e1b0" type="DFP" changed="0" revst="U">
+						<value refMeta="160d1089a60" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f73780" name="Description For Part"><![CDATA[Gear]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Gear_Shielded_50</refmedia>
+			</item>
+			<item id="160cf8c4a10" refPart="160d0f66f80">
+				<refview ref="view_6">
+				</refview>
+				<metadata>
+					<value id="160d1089460" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d1089ae0" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[2]]></value>
+					<value id="160d1088ae0" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[170]]></value>
+					<value id="160d1088ee0" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d1088f60" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[16]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:170]]></tooltip>
+				<callout hotspot-id="5ff011a608d03e81c91d7834d5dc75b3">170</callout>
+				<commands>
+					<command id="160d107e7d0" type="DFP" changed="0" revst="U">
+						<value refMeta="160d1089460" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f73800" name="Description For Part"><![CDATA[Washer, Expansion, type 2]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Washer__Expansion__type_2_(1)_43</refmedia>
+				<refmedia ref="1">Washer__Expansion__type_2_(2)_44</refmedia>
+			</item>
+			<item id="160cf8c3d60" refPart="160d0f68280">
+				<refview ref="view_6">
+				</refview>
+				<metadata>
+					<value id="160d1087fe0" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d1088060" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[2]]></value>
+					<value id="160d10880e0" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[180]]></value>
+					<value id="160d1089260" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10894e0" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[17]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:180]]></tooltip>
+				<callout hotspot-id="ba4ce0f0d0916a4b8514257b616e9eaa">180</callout>
+				<commands>
+					<command id="160d1080280" type="DFP" changed="0" revst="U">
+						<value refMeta="160d1087fe0" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f73100" name="Description For Part"><![CDATA[Bushing]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Bushing_(1)_45</refmedia>
+				<refmedia ref="1">Bushing_(2)_47</refmedia>
+			</item>
+			<item id="160cf8c3ba0" refPart="160d0f68440">
+				<refview ref="view_6">
+				</refview>
+				<metadata>
+					<value id="160d1088160" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d10881e0" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[2]]></value>
+					<value id="160d1088260" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[190]]></value>
+					<value id="160d10882e0" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d1088460" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[18]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:190]]></tooltip>
+				<callout hotspot-id="16fa9d8ea97ac0143818c7bea9b2c228">190</callout>
+				<commands>
+					<command id="160d1080d70" type="DFP" changed="0" revst="U">
+						<value refMeta="160d1088160" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f73c80" name="Description For Part"><![CDATA[Washer, Expansion, type 1]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Washer__Expansion__type_1_(1)_46</refmedia>
+				<refmedia ref="1">Washer__Expansion__type_1_(2)_48</refmedia>
+			</item>
+			<item id="160cf8c3f20" refPart="160d0f68140">
+				<refview ref="view_6">
+				</refview>
+				<metadata>
+					<value id="160d1087960" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d1087160" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d10860e0" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[200]]></value>
+					<value id="160d1087360" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10862e0" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[19]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:200]]></tooltip>
+				<callout hotspot-id="fda9f88889605cccd53ea37ef1768259">200</callout>
+				<commands>
+					<command id="160d10806e0" type="DFP" changed="0" revst="U">
+						<value refMeta="160d1087960" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f73000" name="Description For Part"><![CDATA[Shaft, Idler]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Shaft__Idler_49</refmedia>
+			</item>
+			<item id="160cf8c2550" refPart="160d0f68780">
+				<refview ref="view_6">
+				</refview>
+				<metadata>
+					<value id="160d10878e0" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[2]]></value>
+					<value id="160d1087660" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d10867e0" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[210]]></value>
+					<value id="160d1086b60" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10879e0" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[20]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:210]]></tooltip>
+				<callout hotspot-id="5146bf31ce01b76ced7a40d29687875d">210</callout>
+				<commands>
+					<command id="160d1080670" type="DFP" changed="0" revst="U">
+						<value refMeta="160d10878e0" name="Indent"><![CDATA[2]]></value>
+						<value refMeta="160d0f74780" name="Description For Part"><![CDATA[Drive Shaft Assy]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Drive_Shaft_Assy_53</refmedia>
+			</item>
+			<item id="160cf8c4850" refPart="160d0f67c40">
+				<refview ref="view_6">
+				</refview>
+				<metadata>
+					<value id="160d1086460" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d1087760" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d1086c60" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[220]]></value>
+					<value id="160d10873e0" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d1085ce0" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[21]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:220]]></tooltip>
+				<callout hotspot-id="765c304647b52add838a6bca3534ba89">220</callout>
+				<commands>
+					<command id="160d10802f0" type="DFP" changed="0" revst="U">
+						<value refMeta="160d1086460" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f73780" name="Description For Part"><![CDATA[Gear]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Gear_Shielded_(2)_61</refmedia>
+			</item>
+			<item id="160cf8c4380" refPart="160d0f66f80">
+				<refview ref="view_6">
+				</refview>
+				<metadata>
+					<value id="160d1086a60" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d1087060" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[2]]></value>
+					<value id="160d1086ce0" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[230]]></value>
+					<value id="160d10864e0" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10871e0" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[22]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:230]]></tooltip>
+				<callout hotspot-id="e849254b0f389639401dd866bb9e5d9a">230</callout>
+				<commands>
+					<command id="160d107ff70" type="DFP" changed="0" revst="U">
+						<value refMeta="160d1086a60" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f73800" name="Description For Part"><![CDATA[Washer, Expansion, type 2]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Washer__Expansion__type_2_(3)_54</refmedia>
+				<refmedia ref="1">Washer__Expansion__type_2_(4)_56</refmedia>
+			</item>
+			<item id="160cf8c3350" refPart="160d0f68280">
+				<refview ref="view_6">
+				</refview>
+				<metadata>
+					<value id="160d1086560" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d1086ae0" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[2]]></value>
+					<value id="160d1086d60" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[240]]></value>
+					<value id="160d1086be0" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d1087860" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[23]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:240]]></tooltip>
+				<callout hotspot-id="dbb1725e6c7b612f2f3d894f2d0172fd">240</callout>
+				<commands>
+					<command id="160d1080fa0" type="DFP" changed="0" revst="U">
+						<value refMeta="160d1086560" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f73100" name="Description For Part"><![CDATA[Bushing]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Bushing_(3)_55</refmedia>
+				<refmedia ref="1">Bushing_(4)_57</refmedia>
+			</item>
+			<item id="160cf8c3430" refPart="160d0f68440">
+				<refview ref="view_6">
+				</refview>
+				<metadata>
+					<value id="160d1086260" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d1086660" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[2]]></value>
+					<value id="160d10863e0" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[250]]></value>
+					<value id="160d1087460" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d1086fe0" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[24]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:250]]></tooltip>
+				<callout hotspot-id="19790b4f0c711aeaaf6a5f150e986b6c">250</callout>
+				<commands>
+					<command id="160d107fd40" type="DFP" changed="0" revst="U">
+						<value refMeta="160d1086260" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f73c80" name="Description For Part"><![CDATA[Washer, Expansion, type 1]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Washer__Expansion__type_1_(3)_58</refmedia>
+				<refmedia ref="1">Washer__Expansion__type_1_(4)_59</refmedia>
+			</item>
+			<item id="160cf8c48c0" refPart="160d0f68b40">
+				<refview ref="view_6">
+				</refview>
+				<metadata>
+					<value id="160d10870e0" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d1086de0" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d1086e60" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[260]]></value>
+					<value id="160d1086760" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d1085d60" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[25]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:260]]></tooltip>
+				<callout hotspot-id="2ecc31fdc23eead0408ce1ce4b6174cd">260</callout>
+				<commands>
+					<command id="160d10807c0" type="DFP" changed="0" revst="U">
+						<value refMeta="160d10870e0" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f74700" name="Description For Part"><![CDATA[Shaft, Drive]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Shaft__Drive_60</refmedia>
+			</item>
+			<item id="160cf8c1c20" refPart="160d0f67fc0">
+				<metadata>
+					<value id="160d1086360" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[2]]></value>
+					<value id="160d10865e0" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d10877e0" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[270]]></value>
+					<value id="160d10874e0" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10875e0" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[26]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:270]]></tooltip>
+				<callout hotspot-id="57869a000e7fb4430ced168475494bf7">270</callout>
+				<commands>
+					<command id="160d1080130" type="DFP" changed="0" revst="U">
+						<value refMeta="160d1086360" name="Indent"><![CDATA[2]]></value>
+						<value refMeta="160d0f73480" name="Description For Part"><![CDATA[Gasket, Flange, type 1]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Gasket__Flange__type_1_64</refmedia>
+			</item>
+			<item id="160cf8c2400" refPart="160d0f68840">
+				<metadata>
+					<value id="160d1087a60" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[2]]></value>
+					<value id="160d1086860" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d1087260" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[280]]></value>
+					<value id="160d1085de0" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10876e0" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[27]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:280]]></tooltip>
+				<callout hotspot-id="f8fcbb66f907df2c6ce6f8871f48b3b3">280</callout>
+				<commands>
+					<command id="160d1080520" type="DFP" changed="0" revst="U">
+						<value refMeta="160d1087a60" name="Indent"><![CDATA[2]]></value>
+						<value refMeta="160d0f73180" name="Description For Part"><![CDATA[Gasket, Flange, type 2]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Gasket__Flange__type_2_65</refmedia>
+			</item>
+			<item id="160cf8c1b40" refPart="160d0f67d00">
+				<metadata>
+					<value id="160d1087ae0" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[2]]></value>
+					<value id="160d1086060" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d10866e0" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[290]]></value>
+					<value id="160d1086ee0" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d1086f60" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[28]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:290]]></tooltip>
+				<callout hotspot-id="1e8e1c932f105ecb8c4f1606cae5cb1f">290</callout>
+				<commands>
+					<command id="160d1080590" type="DFP" changed="0" revst="U">
+						<value refMeta="160d1087ae0" name="Indent"><![CDATA[2]]></value>
+						<value refMeta="160d0f73980" name="Description For Part"><![CDATA[Flange, Straight, type 2]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Flange__Straight__type_2_66</refmedia>
+			</item>
+			<item id="160cf8c2b00" refPart="160d0f68a40">
+				<metadata>
+					<value id="160d10872e0" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[2]]></value>
+					<value id="160d1087b60" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d1085fe0" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[300]]></value>
+					<value id="160d1087be0" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d1087560" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[29]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:300]]></tooltip>
+				<callout hotspot-id="1c032f59749b355f32e897536b301a8d">300</callout>
+				<commands>
+					<command id="160d1081160" type="DFP" changed="0" revst="U">
+						<value refMeta="160d10872e0" name="Indent"><![CDATA[2]]></value>
+						<value refMeta="160d0f74080" name="Description For Part"><![CDATA[Flange, Straight, type 1]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Flange__Straight__type_1_67</refmedia>
+			</item>
+			<item id="160cf8c19f0" refPart="160d0f68b80">
+				<refview ref="view_4">
+				</refview>
+				<metadata>
+					<value id="160d1087c60" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[2]]></value>
+					<value id="160d1085e60" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d1085ee0" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[310]]></value>
+					<value id="160d1085f60" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d1086160" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[30]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:310]]></tooltip>
+				<callout hotspot-id="1e4f098bf5cb021880e5ecbd1ad3e822">310</callout>
+				<commands>
+					<command id="160d10829e0" type="DFP" changed="0" revst="U">
+						<value refMeta="160d1087c60" name="Indent"><![CDATA[2]]></value>
+						<value refMeta="160d0f73500" name="Description For Part"><![CDATA[Face Plate Assy]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Face_Plate_Assy_68</refmedia>
+			</item>
+			<item id="160cf8c4000" refPart="160d0f67e00">
+				<refview ref="view_4">
+				</refview>
+				<metadata>
+					<value id="160d10861e0" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d10868e0" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d1086960" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[320]]></value>
+					<value id="160d10869e0" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10ab910" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[31]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:320]]></tooltip>
+				<callout hotspot-id="1a335298bf716cd0ca8fa0e29341b75d">320</callout>
+				<commands>
+					<command id="160d1081780" type="DFP" changed="0" revst="U">
+						<value refMeta="160d10861e0" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f72d00" name="Description For Part"><![CDATA[Spring holder, rear]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Spring_holder__rear_69</refmedia>
+			</item>
+			<item id="160cf8c4e70" refPart="160d0f650c0">
+				<refview ref="view_4">
+				</refview>
+				<metadata>
+					<value id="160d10ab990" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d10ab810" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[2]]></value>
+					<value id="160d10aa410" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[330]]></value>
+					<value id="160d10aa490" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10aae90" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[32]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:330]]></tooltip>
+				<callout hotspot-id="4833bf2d5a5594150604e5d5bf86cf2f">330</callout>
+				<commands>
+					<command id="160d1082ac0" type="DFP" changed="0" revst="U">
+						<value refMeta="160d10ab990" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160c84ca3e0" name="Description For Part"><![CDATA[Dowel Pin]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Dowel_Pin_(2)_70</refmedia>
+				<refmedia ref="1">Dowel_Pin_(3)_71</refmedia>
+			</item>
+			<item id="160cf8c41c0" refPart="160d0f67f40">
+				<refview ref="view_4">
+				</refview>
+				<metadata>
+					<value id="160d10aac10" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d10a9e10" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d10aad10" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[340]]></value>
+					<value id="160d10aa310" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10aa010" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[33]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:340]]></tooltip>
+				<callout hotspot-id="be2e6d077ed7cddf61032301acf96abd">340</callout>
+				<commands>
+					<command id="160d1082270" type="DFP" changed="0" revst="U">
+						<value refMeta="160d10aac10" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f73900" name="Description For Part"><![CDATA[O-Ring, Buna]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">O-Ring__Buna_72</refmedia>
+			</item>
+			<item id="160cf8c4310" refPart="160d0f68c40">
+				<refview ref="view_4">
+				</refview>
+				<metadata>
+					<value id="160d10aa810" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d10a9d10" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d10abc10" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[350]]></value>
+					<value id="160d10abc90" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10a9d90" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[34]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:350]]></tooltip>
+				<callout hotspot-id="75e3d61714c5a4128038b13330e9e6f0">350</callout>
+				<commands>
+					<command id="160d1082660" type="DFP" changed="0" revst="U">
+						<value refMeta="160d10aa810" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f72d80" name="Description For Part"><![CDATA[Spring, High Pressure]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Spring__High_Pressure_73</refmedia>
+			</item>
+			<item id="160cf8c4690" refPart="160d0f689c0">
+				<refview ref="view_4">
+				</refview>
+				<metadata>
+					<value id="160d10ab110" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d10aaf90" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d10aa610" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[360]]></value>
+					<value id="160d10ab190" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10ab210" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[35]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:360]]></tooltip>
+				<callout hotspot-id="de2460d2049dec7f5746d471aea86e26">360</callout>
+				<commands>
+					<command id="160d10822e0" type="DFP" changed="0" revst="U">
+						<value refMeta="160d10ab110" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f73380" name="Description For Part"><![CDATA[Screw, Adjustment, type 1]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Screw__Adjustment__type_1_74</refmedia>
+			</item>
+			<item id="160cf8c43f0" refPart="160d0f682c0">
+				<refview ref="view_4">
+				</refview>
+				<metadata>
+					<value id="160d10a9f90" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d10ab690" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[2]]></value>
+					<value id="160d10aba10" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[370]]></value>
+					<value id="160d10aae10" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10aac90" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[36]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:370]]></tooltip>
+				<callout hotspot-id="3463342bdcb402d5073bdcc01ac20218">370</callout>
+				<commands>
+					<command id="160d1082ba0" type="DFP" changed="0" revst="U">
+						<value refMeta="160d10a9f90" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f73580" name="Description For Part"><![CDATA[Bolt, Hex Head, type 3]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Bolt__Hex_Head__type_3_(1)_75</refmedia>
+				<refmedia ref="1">Bolt__Hex_Head__type_3_(2)_78</refmedia>
+			</item>
+			<item id="160cf8c44d0" refPart="160d0f65340">
+				<refview ref="view_4">
+				</refview>
+				<metadata>
+					<value id="160d10ab890" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d10abb10" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[2]]></value>
+					<value id="160d10aa390" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[380]]></value>
+					<value id="160d10aba90" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10abb90" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[37]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:380]]></tooltip>
+				<callout hotspot-id="cb7361e010da9374c20310eac306f9f3">380</callout>
+				<commands>
+					<command id="160d10826d0" type="DFP" changed="0" revst="U">
+						<value refMeta="160d10ab890" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0ec48d0" name="Description For Part"><![CDATA[Gasket, type 2]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Gasket__type_2_(9)_76</refmedia>
+				<refmedia ref="1">Gasket__type_2_(10)_77</refmedia>
+			</item>
+			<item id="160cf8c42a0" refPart="160d0f65040">
+				<refview ref="view_4">
+				</refview>
+				<metadata>
+					<value id="160d10aa890" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d10ab610" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[5]]></value>
+					<value id="160d10a9e90" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[390]]></value>
+					<value id="160d10a9f10" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10aa090" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[38]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:390]]></tooltip>
+				<callout hotspot-id="b08c4d5050c86f337c73b3ed8ead0c9a">390</callout>
+				<commands>
+					<command id="160d1082eb0" type="DFP" changed="0" revst="U">
+						<value refMeta="160d10aa890" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160c84ca460" name="Description For Part"><![CDATA[Bolt, Hex Head, type 1]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Bolt__Hex_Head__type_1_(9)_79</refmedia>
+				<refmedia ref="1">Bolt__Hex_Head__type_1_(10)_81</refmedia>
+				<refmedia ref="1">Bolt__Hex_Head__type_1_(11)_83</refmedia>
+				<refmedia ref="1">Bolt__Hex_Head__type_1_(12)_85</refmedia>
+				<refmedia ref="1">Bolt__Hex_Head__type_1_(13)_87</refmedia>
+			</item>
+			<item id="160cf8c45b0" refPart="160d0f65140">
+				<refview ref="view_4">
+				</refview>
+				<metadata>
+					<value id="160d10ab710" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d10aa110" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[5]]></value>
+					<value id="160d10aa690" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[400]]></value>
+					<value id="160d10aad90" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10ab010" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[39]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:400]]></tooltip>
+				<callout hotspot-id="fd6951254442eb00bfaa13c8e395002a">400</callout>
+				<commands>
+					<command id="160d1082a50" type="DFP" changed="0" revst="U">
+						<value refMeta="160d10ab710" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160cf664720" name="Description For Part"><![CDATA[Gasket, type 1]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Gasket__type_1_(9)_80</refmedia>
+				<refmedia ref="1">Gasket__type_1_(10)_82</refmedia>
+				<refmedia ref="1">Gasket__type_1_(11)_84</refmedia>
+				<refmedia ref="1">Gasket__type_1_(12)_86</refmedia>
+				<refmedia ref="1">Gasket__type_1_(13)_88</refmedia>
+			</item>
+			<item id="160cf8c3dd0" refPart="160d0f68580">
+				<refview ref="view_4">
+				</refview>
+				<metadata>
+					<value id="160d10aa510" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d10ab090" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d10aa190" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[410]]></value>
+					<value id="160d10aa590" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10aa210" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[40]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:410]]></tooltip>
+				<callout hotspot-id="411d05ee2f8f2957cbec7022fe5e0453">410</callout>
+				<commands>
+					<command id="160d1082430" type="DFP" changed="0" revst="U">
+						<value refMeta="160d10aa510" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f74500" name="Description For Part"><![CDATA[Releif screw]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Releif_screw_89</refmedia>
+			</item>
+			<item id="160cf8c4b60" refPart="160d0f68bc0">
+				<refview ref="view_4">
+				</refview>
+				<metadata>
+					<value id="160d10aaf10" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d10ab490" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d10aa710" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[420]]></value>
+					<value id="160d10aa290" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10ab290" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[41]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:420]]></tooltip>
+				<callout hotspot-id="ca97519b4bfabefaa763b28657d56c2f">420</callout>
+				<commands>
+					<command id="160d1082510" type="DFP" changed="0" revst="U">
+						<value refMeta="160d10aaf10" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f73680" name="Description For Part"><![CDATA[Plug Cap]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Plug_Cap_90</refmedia>
+			</item>
+			<item id="160cf8c33c0" refPart="160d0f680c0">
+				<refview ref="view_4">
+				</refview>
+				<metadata>
+					<value id="160d10ab310" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d10aa790" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[2]]></value>
+					<value id="160d10aa910" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[430]]></value>
+					<value id="160d10aa990" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10aab90" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[42]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:430]]></tooltip>
+				<callout hotspot-id="f7cb5c923f91656a01c08f4d5930f5c2">430</callout>
+				<commands>
+					<command id="160d1081b00" type="DFP" changed="0" revst="U">
+						<value refMeta="160d10ab310" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f74600" name="Description For Part"><![CDATA[Drive Screw]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Drive_Screw_(1)_91</refmedia>
+				<refmedia ref="1">Drive_Screw_(2)_92</refmedia>
+			</item>
+			<item id="160cf8c3900" refPart="160d0f68600">
+				<refview ref="view_4">
+				</refview>
+				<metadata>
+					<value id="160d10aaa10" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d10aaa90" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[2]]></value>
+					<value id="160d10ab390" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[440]]></value>
+					<value id="160d10ab410" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10ab510" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[43]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:440]]></tooltip>
+				<callout hotspot-id="73b5d722ababd0f8c5e75ed23694bf80">440</callout>
+				<commands>
+					<command id="160d1083bd0" type="DFP" changed="0" revst="U">
+						<value refMeta="160d10aaa10" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f73b80" name="Description For Part"><![CDATA[Gasket, type 4]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Gasket__type_4_(1)_93</refmedia>
+				<refmedia ref="1">Gasket__type_4_(2)_94</refmedia>
+			</item>
+			<item id="160cf8c3c10" refPart="160d0f68640">
+				<refview ref="view_4">
+				</refview>
+				<metadata>
+					<value id="160d10aab10" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d10ab590" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d10ab790" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[450]]></value>
+					<value id="160d10abd10" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10ad610" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[44]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:450]]></tooltip>
+				<callout hotspot-id="893e86fc3ae327b62a3dabd2b98eeb42">450</callout>
+				<commands>
+					<command id="160d1084960" type="DFP" changed="0" revst="U">
+						<value refMeta="160d10aab10" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f74580" name="Description For Part"><![CDATA[Name Plate]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Name_Plate_95</refmedia>
+			</item>
+			<item id="160cf8c3b30" refPart="160d0f69c00">
+				<refview ref="view_4">
+				</refview>
+				<metadata>
+					<value id="160d10ad590" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d10ad890" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d10ad690" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[460]]></value>
+					<value id="160d10acc90" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10ac610" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[45]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:460]]></tooltip>
+				<callout hotspot-id="ae9cb009388a2a3eb051ceb5b9de0da1">460</callout>
+				<commands>
+					<command id="160d1083770" type="DFP" changed="0" revst="U">
+						<value refMeta="160d10ad590" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f73f80" name="Description For Part"><![CDATA[Gasket, type 3]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Gasket__type_3_96</refmedia>
+			</item>
+			<item id="160cf8c4930" refPart="160d0f692c0">
+				<refview ref="view_4">
+				</refview>
+				<metadata>
+					<value id="160d10ac090" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d10ad390" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d10acf90" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[470]]></value>
+					<value id="160d10ac890" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10ad090" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[46]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:470]]></tooltip>
+				<callout hotspot-id="ca8ba76b17f6a436774093e91cb7d3c8">470</callout>
+				<commands>
+					<command id="160d10832a0" type="DFP" changed="0" revst="U">
+						<value refMeta="160d10ac090" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f74180" name="Description For Part"><![CDATA[Nut, type 1]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Nut__type_1_97</refmedia>
+			</item>
+			<item id="160cf8c3e40" refPart="160d0f69840">
+				<refview ref="view_4">
+				</refview>
+				<metadata>
+					<value id="160d10abe10" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d10abe90" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d10ad190" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[480]]></value>
+					<value id="160d10ad910" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10acd10" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[47]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:480]]></tooltip>
+				<callout hotspot-id="ab9c5b761e5b9cd2263cd5c7ca4b5f61">480</callout>
+				<commands>
+					<command id="160d1083380" type="DFP" changed="0" revst="U">
+						<value refMeta="160d10abe10" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f74300" name="Description For Part"><![CDATA[Nut, Lock and Seal]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Nut__Lock_and_Seal_98</refmedia>
+			</item>
+			<item id="160cf8c3f90" refPart="160d0f69c40">
+				<refview ref="view_4">
+				</refview>
+				<metadata>
+					<value id="160d10abf10" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d10acd90" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d10adc10" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[490]]></value>
+					<value id="160d10ad990" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10ada10" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[48]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:490]]></tooltip>
+				<callout hotspot-id="5edc0d4860d90dbd0646e892b701ccfc">490</callout>
+				<commands>
+					<command id="160d1083460" type="DFP" changed="0" revst="U">
+						<value refMeta="160d10abf10" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f74a00" name="Description For Part"><![CDATA[Face Plate]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Face_Plate_99</refmedia>
+			</item>
+			<item id="160cf8c3740" refPart="160d0f696c0">
+				<refview ref="view_4">
+				</refview>
+				<metadata>
+					<value id="160d10ac210" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d10ad810" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d10ac810" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[500]]></value>
+					<value id="160d10ac390" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10ad510" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[49]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:500]]></tooltip>
+				<callout hotspot-id="58973a605d9d5cac947c0329d536722d">500</callout>
+				<commands>
+					<command id="160d1083a80" type="DFP" changed="0" revst="U">
+						<value refMeta="160d10ac210" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f74b80" name="Description For Part"><![CDATA[Spring, Standard]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Spring__Standard_100</refmedia>
+			</item>
+			<item id="160cf8c4a80" refPart="160d0f69800">
+				<refview ref="view_4">
+				</refview>
+				<metadata>
+					<value id="160d10ad710" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d10ad110" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d10abf90" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[510]]></value>
+					<value id="160d10ac910" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10ad210" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[50]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:510]]></tooltip>
+				<callout hotspot-id="912eb394a61c83454d0f6ae10734f454">510</callout>
+				<commands>
+					<command id="160d1084a40" type="DFP" changed="0" revst="U">
+						<value refMeta="160d10ad710" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d1000f70" name="Description For Part"><![CDATA[Spring holder, front]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Spring_holder__front_101</refmedia>
+			</item>
+			<item id="160cf8c3890" refPart="160d0f67380">
+				<refview ref="view_4">
+				</refview>
+				<metadata>
+					<value id="160d10ac690" name="Indent" decl-id="IND" changed="0" revst="U" role="5"><![CDATA[3]]></value>
+					<value id="160d10ac290" name="Quantity" decl-id="QNA" changed="0" revst="U" role="6"><![CDATA[1]]></value>
+					<value id="160d10ac010" name="ITEM" decl-id="ITEM" changed="0" revst="U" role="3"><![CDATA[520]]></value>
+					<value id="160d10ac710" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0" revst="U">
+					</value>
+					<value id="160d10ad290" name="$SEQ#" decl-id="_E04990D8C3AC448DA769281EEB134FA7" changed="0" revst="U"><![CDATA[51]]></value>
+				</metadata>
+				<tooltip><![CDATA[Item:520]]></tooltip>
+				<callout hotspot-id="e0ccb47ea871c2f2ee81e8f59e3cb7f0">520</callout>
+				<commands>
+					<command id="160d1083930" type="DFP" changed="0" revst="U">
+						<value refMeta="160d10ac690" name="Indent"><![CDATA[3]]></value>
+						<value refMeta="160d0f73080" name="Description For Part"><![CDATA[Gasket, Case]]></value>
+					</command>
+				</commands>
+				<refmedia ref="1">Gasket__Case_(2)_102</refmedia>
+			</item>
+		</dplist>
+		<ipc-table>
+			<table>
+				<thead>
+					<row>
+						<entry>
+						</entry>
+						<entry column-id="ITEM" width="4">
+							<para><![CDATA[ITEM]]></para>
+						</entry>
+						<entry column-id="DESCR" width="30">
+							<para><![CDATA[DESCRIPTION]]></para>
+						</entry>
+						<entry column-id="PARTNUMBER" width="20">
+							<para><![CDATA[PART NO.]]></para>
+						</entry>
+						<entry column-id="QTY" width="3">
+							<para><![CDATA[QTY]]></para>
+						</entry>
+						<entry column-id="INFO" width="12">
+							<para><![CDATA[INFO]]></para>
+						</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row refItem="160cf8c2b70">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[10]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d0d72230"><![CDATA[Pump Assy]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005300]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c2fd0">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[20]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d0d71e40"><![CDATA[•Bolt, Hex Head, type 2]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[BLT000350]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[8]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c1bb0">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[30]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160c84d2050"><![CDATA[•Gasket, type 2]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[BLT000351]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[8]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c1830">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[40]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160c62395a0"><![CDATA[•Back Plate Assy]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005301]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c2c50">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[50]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160cdf62230"><![CDATA[••Dowel Pin]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[DP00356]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c2470">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[60]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d107f330"><![CDATA[••Bolt, Hex Head, type 1]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[BLT000324]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[8]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c2f60">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[70]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d107edf0"><![CDATA[••Gasket, type 1]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[BLT000325]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[8]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c21d0">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[80]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d107eae0"><![CDATA[••Ball Bearing Assy]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005303]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c3a50">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[90]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d107f3a0"><![CDATA[•••Ball Bearing]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005305]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c4150">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[100]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d107ebc0"><![CDATA[•••Zerk Fitting]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005310]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c4460">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[110]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d107dea0"><![CDATA[••Retaining ring]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005302]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c1d70">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[120]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d107f1e0"><![CDATA[••Gasket, Case]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM00530]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c1ec0">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[130]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d107ed10"><![CDATA[••Backplate]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005320]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c29b0">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[140]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d107e6f0"><![CDATA[•Casing]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PPM005350]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c1750">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[150]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d107df80"><![CDATA[•Idler Shaft Assy]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005500]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c3ac0">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[160]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d107e1b0"><![CDATA[••Gear]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[SH40500]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c4a10">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[170]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d107e7d0"><![CDATA[••Washer, Expansion, type 2]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005531]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[2]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c3d60">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[180]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d1080280"><![CDATA[••Bushing]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005520]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[2]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c3ba0">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[190]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d1080d70"><![CDATA[••Washer, Expansion, type 1]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005530]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[2]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c3f20">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[200]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d10806e0"><![CDATA[••Shaft, Idler]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[SH40020]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c2550">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[210]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d1080670"><![CDATA[•Drive Shaft Assy]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005501]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c4850">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[220]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d10802f0"><![CDATA[••Gear]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[SH40500]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c4380">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[230]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d107ff70"><![CDATA[••Washer, Expansion, type 2]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005531]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[2]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c3350">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[240]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d1080fa0"><![CDATA[••Bushing]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005520]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[2]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c3430">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[250]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d107fd40"><![CDATA[••Washer, Expansion, type 1]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005530]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[2]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c48c0">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[260]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d10807c0"><![CDATA[••Shaft, Drive]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[SH40120]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c1c20">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[270]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d1080130"><![CDATA[•Gasket, Flange, type 1]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005345]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c2400">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[280]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d1080520"><![CDATA[•Gasket, Flange, type 2]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005346]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c1b40">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[290]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d1080590"><![CDATA[•Flange, Straight, type 2]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005341]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c2b00">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[300]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d1081160"><![CDATA[•Flange, Straight, type 1]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005340]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c19f0">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[310]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d10829e0"><![CDATA[•Face Plate Assy]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005600]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c4000">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[320]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d1081780"><![CDATA[••Spring holder, rear]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005451]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c4e70">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[330]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d1082ac0"><![CDATA[••Dowel Pin]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[DP00356]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[2]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c41c0">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[340]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d1082270"><![CDATA[••O-Ring, Buna]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005470]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c4310">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[350]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d1082660"><![CDATA[••Spring, High Pressure]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM5490]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c4690">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[360]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d10822e0"><![CDATA[••Screw, Adjustment, type 1]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[BLT005532]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c43f0">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[370]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d1082ba0"><![CDATA[••Bolt, Hex Head, type 3]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[BLT003345]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[2]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c44d0">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[380]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d10826d0"><![CDATA[••Gasket, type 2]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[BLT000351]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[2]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c42a0">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[390]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d1082eb0"><![CDATA[••Bolt, Hex Head, type 1]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[BLT000324]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[5]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c45b0">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[400]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d1082a50"><![CDATA[••Gasket, type 1]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[BLT000325]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[5]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c3dd0">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[410]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d1082430"><![CDATA[••Releif screw]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005410]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c4b60">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[420]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d1082510"><![CDATA[••Plug Cap]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005480]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c33c0">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[430]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d1081b00"><![CDATA[••Drive Screw]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005420]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[2]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c3900">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[440]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d1083bd0"><![CDATA[••Gasket, type 4]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005421]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[2]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c3c10">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[450]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d1084960"><![CDATA[••Name Plate]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005430]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c3b30">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[460]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d1083770"><![CDATA[••Gasket, type 3]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[NT3456]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c4930">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[470]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d10832a0"><![CDATA[••Nut, type 1]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[NT3457]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c3e40">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[480]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d1083380"><![CDATA[••Nut, Lock and Seal]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[NT4850]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c3f90">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[490]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d1083460"><![CDATA[••Face Plate]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005390]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c3740">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[500]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d1083a80"><![CDATA[••Spring, Standard]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005460]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c4a80">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[510]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d1084a40"><![CDATA[••Spring holder, front]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM005450]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+					<row refItem="160cf8c3890">
+						<entry>
+							<para>
+							</para>
+						</entry>
+						<entry>
+							<para><![CDATA[520]]></para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="160d1083930"><![CDATA[••Gasket, Case]]></cmdtext>
+						</entry>
+						<entry>
+							<para><![CDATA[PM00530]]></para>
+						</entry>
+						<entry>
+							<para><![CDATA[1]]></para>
+						</entry>
+						<entry>
+							<para>
+							</para>
+						</entry>
+					</row>
+				</tbody>
+			</table>
+		</ipc-table>
+		<bgmedia>
+			<refmedia ref="1">Loupe_103</refmedia>
+		</bgmedia>
+		<views>
+			<view id="view_0" stepid="view_0" changed="0" revst="U" hidden="0">
+				<description>Assembled View</description>
+				<transition id="view_1" stepid="trans_0">
+				</transition>
+				<transition id="view_2" stepid="trans_1">
+				</transition>
+				<transition id="view_3" stepid="trans_2">
+				</transition>
+				<transition id="view_4" stepid="trans_3">
+				</transition>
+				<transition id="view_5" stepid="trans_4">
+				</transition>
+				<viewpoint>
+					<refmedia ref="1"><![CDATA[vp_0]]></refmedia>
+				</viewpoint>
+				<refItem ref="160cf8c1750">
+				</refItem>
+				<refItem ref="160cf8c1830">
+				</refItem>
+				<refItem ref="160cf8c19f0">
+				</refItem>
+				<refItem ref="160cf8c2550">
+				</refItem>
+				<refItem ref="160cf8c29b0">
+				</refItem>
+				<refItem ref="160cf8c2b70">
+				</refItem>
+				<metadata>
+				</metadata>
+				<refmedia ref="1">
+				</refmedia>
+				<refmedia ref="160f072ff00">
+				</refmedia>
+			</view>
+			<view id="view_1" stepid="view_1" changed="0" revst="U" hidden="0">
+				<description>Backplate Assy View</description>
+				<viewpoint>
+					<refmedia ref="1"><![CDATA[vp_1]]></refmedia>
+				</viewpoint>
+				<refItem ref="160cf8c1830">
+				</refItem>
+				<refItem ref="160cf8c1d70">
+				</refItem>
+				<refItem ref="160cf8c1ec0">
+				</refItem>
+				<refItem ref="160cf8c21d0">
+				</refItem>
+				<refItem ref="160cf8c2470">
+				</refItem>
+				<refItem ref="160cf8c2b70">
+				</refItem>
+				<refItem ref="160cf8c2c50">
+				</refItem>
+				<refItem ref="160cf8c2f60">
+				</refItem>
+				<metadata>
+				</metadata>
+				<refmedia ref="1">
+				</refmedia>
+				<refmedia ref="160d0d4b300">
+				</refmedia>
+			</view>
+			<view id="view_2" stepid="view_2" changed="0" revst="U" hidden="0">
+				<description>Casing View</description>
+				<viewpoint>
+					<refmedia ref="1"><![CDATA[vp_2]]></refmedia>
+				</viewpoint>
+				<refItem ref="160cf8c1b40">
+				</refItem>
+				<refItem ref="160cf8c1bb0">
+				</refItem>
+				<refItem ref="160cf8c1c20">
+				</refItem>
+				<refItem ref="160cf8c2400">
+				</refItem>
+				<refItem ref="160cf8c29b0">
+				</refItem>
+				<refItem ref="160cf8c2b00">
+				</refItem>
+				<refItem ref="160cf8c2b70">
+				</refItem>
+				<refItem ref="160cf8c2fd0">
+				</refItem>
+				<metadata>
+				</metadata>
+				<refmedia ref="1">
+				</refmedia>
+				<refmedia ref="160d0d4b4b0">
+				</refmedia>
+			</view>
+			<view id="view_3" stepid="view_3" changed="0" revst="U" hidden="0">
+				<description>Sectioned View</description>
+				<viewpoint>
+					<refmedia ref="1"><![CDATA[vp_3]]></refmedia>
+				</viewpoint>
+				<refItem ref="160cf8c1750">
+				</refItem>
+				<refItem ref="160cf8c1830">
+				</refItem>
+				<refItem ref="160cf8c1d70">
+				</refItem>
+				<refItem ref="160cf8c1ec0">
+				</refItem>
+				<refItem ref="160cf8c21d0">
+				</refItem>
+				<refItem ref="160cf8c2470">
+				</refItem>
+				<refItem ref="160cf8c2550">
+				</refItem>
+				<refItem ref="160cf8c29b0">
+				</refItem>
+				<refItem ref="160cf8c2c50">
+				</refItem>
+				<refItem ref="160cf8c2f60">
+				</refItem>
+				<refItem ref="160cf8c3350">
+				</refItem>
+				<refItem ref="160cf8c3430">
+				</refItem>
+				<refItem ref="160cf8c3a50">
+				</refItem>
+				<refItem ref="160cf8c3ac0">
+				</refItem>
+				<refItem ref="160cf8c3ba0">
+				</refItem>
+				<refItem ref="160cf8c3d60">
+				</refItem>
+				<refItem ref="160cf8c3f20">
+				</refItem>
+				<refItem ref="160cf8c4150">
+				</refItem>
+				<refItem ref="160cf8c4380">
+				</refItem>
+				<refItem ref="160cf8c4460">
+				</refItem>
+				<refItem ref="160cf8c4850">
+				</refItem>
+				<refItem ref="160cf8c48c0">
+				</refItem>
+				<refItem ref="160cf8c4a10">
+				</refItem>
+				<metadata>
+				</metadata>
+				<refmedia ref="1">
+				</refmedia>
+				<refmedia ref="160d0d4d0d0">
+				</refmedia>
+			</view>
+			<view id="view_4" stepid="view_4" changed="0" revst="U" hidden="0">
+				<description>Releif Valve Assy View</description>
+				<viewpoint>
+					<refmedia ref="1"><![CDATA[vp_4]]></refmedia>
+				</viewpoint>
+				<refItem ref="160cf8c19f0">
+				</refItem>
+				<refItem ref="160cf8c33c0">
+				</refItem>
+				<refItem ref="160cf8c3740">
+				</refItem>
+				<refItem ref="160cf8c3890">
+				</refItem>
+				<refItem ref="160cf8c3900">
+				</refItem>
+				<refItem ref="160cf8c3b30">
+				</refItem>
+				<refItem ref="160cf8c3c10">
+				</refItem>
+				<refItem ref="160cf8c3dd0">
+				</refItem>
+				<refItem ref="160cf8c3e40">
+				</refItem>
+				<refItem ref="160cf8c3f90">
+				</refItem>
+				<refItem ref="160cf8c4000">
+				</refItem>
+				<refItem ref="160cf8c41c0">
+				</refItem>
+				<refItem ref="160cf8c42a0">
+				</refItem>
+				<refItem ref="160cf8c4310">
+				</refItem>
+				<refItem ref="160cf8c43f0">
+				</refItem>
+				<refItem ref="160cf8c44d0">
+				</refItem>
+				<refItem ref="160cf8c45b0">
+				</refItem>
+				<refItem ref="160cf8c4690">
+				</refItem>
+				<refItem ref="160cf8c4930">
+				</refItem>
+				<refItem ref="160cf8c4a80">
+				</refItem>
+				<refItem ref="160cf8c4b60">
+				</refItem>
+				<refItem ref="160cf8c4e70">
+				</refItem>
+				<metadata>
+				</metadata>
+				<refmedia ref="1">
+				</refmedia>
+				<refmedia ref="160d0d4ca10">
+				</refmedia>
+			</view>
+			<view id="view_5" stepid="view_5" changed="0" revst="U" hidden="1">
+				<description>Intermediate</description>
+				<transition id="view_6" stepid="trans_5">
+				</transition>
+				<viewpoint>
+					<refmedia ref="1"><![CDATA[vp_5]]></refmedia>
+				</viewpoint>
+				<metadata>
+				</metadata>
+				<refmedia ref="1">
+				</refmedia>
+			</view>
+			<view id="view_6" stepid="view_6" changed="0" revst="U" hidden="0">
+				<description>Drive Shafts View</description>
+				<viewpoint>
+					<refmedia ref="1"><![CDATA[vp_6]]></refmedia>
+				</viewpoint>
+				<refItem ref="160cf8c1750">
+				</refItem>
+				<refItem ref="160cf8c2550">
+				</refItem>
+				<refItem ref="160cf8c3350">
+				</refItem>
+				<refItem ref="160cf8c3430">
+				</refItem>
+				<refItem ref="160cf8c3ac0">
+				</refItem>
+				<refItem ref="160cf8c3ba0">
+				</refItem>
+				<refItem ref="160cf8c3d60">
+				</refItem>
+				<refItem ref="160cf8c3f20">
+				</refItem>
+				<refItem ref="160cf8c4380">
+				</refItem>
+				<refItem ref="160cf8c4850">
+				</refItem>
+				<refItem ref="160cf8c48c0">
+				</refItem>
+				<refItem ref="160cf8c4a10">
+				</refItem>
+				<metadata>
+				</metadata>
+				<refmedia ref="1">
+				</refmedia>
+				<refmedia ref="160d0d4bf60">
+				</refmedia>
+			</view>
+		</views>
+	</figure>
+	<parts>
+		<part id="160d0f64f40">
+			<metadata>
+				<value id="160d0ec5b50" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Pump Assy]]></value>
+				<value id="160d0ec52d0" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM005300]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f65a40">
+			<metadata>
+				<value id="160d0ec5fd0" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Bolt, Hex Head, type 2]]></value>
+				<value id="160d0ec47d0" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[BLT000350]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f65340">
+			<metadata>
+				<value id="160d0ec48d0" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Gasket, type 2]]></value>
+				<value id="160c84ca0e0" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[BLT000351]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f65100">
+			<metadata>
+				<value id="160c84cb260" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Back Plate Assy]]></value>
+				<value id="160c84cb8e0" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM005301]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f650c0">
+			<metadata>
+				<value id="160c84ca3e0" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Dowel Pin]]></value>
+				<value id="160c84cb960" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[DP00356]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f65040">
+			<metadata>
+				<value id="160c84ca460" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Bolt, Hex Head, type 1]]></value>
+				<value id="160c84ca560" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[BLT000324]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f65140">
+			<metadata>
+				<value id="160cf664720" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Gasket, type 1]]></value>
+				<value id="160cf665220" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[BLT000325]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f65a80">
+			<metadata>
+				<value id="160cf665c20" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Ball Bearing Assy]]></value>
+				<value id="160cf665ca0" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM005303]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f65d00">
+			<metadata>
+				<value id="160cf666120" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Ball Bearing]]></value>
+				<value id="160cf5c1d50" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM005305]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f66b40">
+			<metadata>
+				<value id="160cf5c2050" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Zerk Fitting]]></value>
+				<value id="160c622dac0" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM005310]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f65ec0">
+			<metadata>
+				<value id="160d0f72e80" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Retaining ring]]></value>
+				<value id="160d0f74280" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM005302]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f67380">
+			<metadata>
+				<value id="160d0f73080" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Gasket, Case]]></value>
+				<value id="160d0f73e80" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM00530]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f679c0">
+			<metadata>
+				<value id="160d0f72e00" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Backplate]]></value>
+				<value id="160d0f74400" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM005320]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f66f00">
+			<metadata>
+				<value id="160d0f73d00" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Casing]]></value>
+				<value id="160d0f72f00" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PPM005350]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f66f40">
+			<metadata>
+				<value id="160d0f72f80" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Idler Shaft Assy]]></value>
+				<value id="160d0f73700" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM005500]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f67c40">
+			<metadata>
+				<value id="160d0f73780" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Gear]]></value>
+				<value id="160d0f73c00" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[SH40500]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f66f80">
+			<metadata>
+				<value id="160d0f73800" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Washer, Expansion, type 2]]></value>
+				<value id="160d0f74200" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM005531]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f68280">
+			<metadata>
+				<value id="160d0f73100" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Bushing]]></value>
+				<value id="160d0f72c80" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM005520]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f68440">
+			<metadata>
+				<value id="160d0f73c80" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Washer, Expansion, type 1]]></value>
+				<value id="160d0f74480" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM005530]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f68140">
+			<metadata>
+				<value id="160d0f73000" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Shaft, Idler]]></value>
+				<value id="160d0f73e00" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[SH40020]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f68780">
+			<metadata>
+				<value id="160d0f74780" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Drive Shaft Assy]]></value>
+				<value id="160d0f74a80" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM005501]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f68b40">
+			<metadata>
+				<value id="160d0f74700" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Shaft, Drive]]></value>
+				<value id="160d0f73400" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[SH40120]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f67fc0">
+			<metadata>
+				<value id="160d0f73480" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Gasket, Flange, type 1]]></value>
+				<value id="160d0f73880" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM005345]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f68840">
+			<metadata>
+				<value id="160d0f73180" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Gasket, Flange, type 2]]></value>
+				<value id="160d0f74000" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM005346]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f67d00">
+			<metadata>
+				<value id="160d0f73980" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Flange, Straight, type 2]]></value>
+				<value id="160d0f74880" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM005341]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f68a40">
+			<metadata>
+				<value id="160d0f74080" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Flange, Straight, type 1]]></value>
+				<value id="160d0f73200" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM005340]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f68b80">
+			<metadata>
+				<value id="160d0f73500" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Face Plate Assy]]></value>
+				<value id="160d0f73280" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM005600]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f67e00">
+			<metadata>
+				<value id="160d0f72d00" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Spring holder, rear]]></value>
+				<value id="160d0f73300" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM005451]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f67f40">
+			<metadata>
+				<value id="160d0f73900" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[O-Ring, Buna]]></value>
+				<value id="160d0f74800" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM005470]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f68c40">
+			<metadata>
+				<value id="160d0f72d80" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Spring, High Pressure]]></value>
+				<value id="160d0f73b00" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM5490]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f689c0">
+			<metadata>
+				<value id="160d0f73380" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Screw, Adjustment, type 1]]></value>
+				<value id="160d0f73a00" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[BLT005532]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f682c0">
+			<metadata>
+				<value id="160d0f73580" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Bolt, Hex Head, type 3]]></value>
+				<value id="160d0f73600" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[BLT003345]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f68580">
+			<metadata>
+				<value id="160d0f74500" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Releif screw]]></value>
+				<value id="160d0f74680" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM005410]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f68bc0">
+			<metadata>
+				<value id="160d0f73680" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Plug Cap]]></value>
+				<value id="160d0f73a80" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM005480]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f680c0">
+			<metadata>
+				<value id="160d0f74600" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Drive Screw]]></value>
+				<value id="160d0f74900" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM005420]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f68600">
+			<metadata>
+				<value id="160d0f73b80" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Gasket, type 4]]></value>
+				<value id="160d0f73d80" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM005421]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f68640">
+			<metadata>
+				<value id="160d0f74580" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Name Plate]]></value>
+				<value id="160d0f73f00" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM005430]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f69c00">
+			<metadata>
+				<value id="160d0f73f80" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Gasket, type 3]]></value>
+				<value id="160d0f74100" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[NT3456]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f692c0">
+			<metadata>
+				<value id="160d0f74180" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Nut, type 1]]></value>
+				<value id="160d0f74980" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[NT3457]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f69840">
+			<metadata>
+				<value id="160d0f74300" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Nut, Lock and Seal]]></value>
+				<value id="160d0f74380" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[NT4850]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f69c40">
+			<metadata>
+				<value id="160d0f74a00" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Face Plate]]></value>
+				<value id="160d0f74b00" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM005390]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f696c0">
+			<metadata>
+				<value id="160d0f74b80" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Spring, Standard]]></value>
+				<value id="160d1000970" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM005460]]></value>
+			</metadata>
+		</part>
+		<part id="160d0f69800">
+			<metadata>
+				<value id="160d1000f70" name="Description" decl-id="DFP" changed="0" revst="U" role="2"><![CDATA[Spring holder, front]]></value>
+				<value id="160d1000470" name="PARTNUMBER" decl-id="PNR" changed="0" revst="U" role="1"><![CDATA[PM005450]]></value>
+			</metadata>
+		</part>
+	</parts>
+	<reftables>
+		<reftable name="INDENT">
+			<value descr=""><![CDATA[1]]></value>
+			<value descr="."><![CDATA[2]]></value>
+			<value descr=".."><![CDATA[3]]></value>
+			<value descr="..."><![CDATA[4]]></value>
+			<value descr="...."><![CDATA[5]]></value>
+			<value descr="....."><![CDATA[6]]></value>
+			<value descr="......"><![CDATA[7]]></value>
+			<value descr="......."><![CDATA[8]]></value>
+			<value descr="........"><![CDATA[9]]></value>
+		</reftable>
+		<reftable name="TOPICSTATUS">
+			<value>
+			</value>
+			<value><![CDATA[changed]]></value>
+			<value><![CDATA[deleted]]></value>
+			<value><![CDATA[new]]></value>
+			<value><![CDATA[unchanged]]></value>
+		</reftable>
+	</reftables>
+</ipc>

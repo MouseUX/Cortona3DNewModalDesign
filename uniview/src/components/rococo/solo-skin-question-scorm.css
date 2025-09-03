@@ -1,0 +1,11 @@
+.learningAssessment:before {
+    content: "" !important;
+}
+
+.correct {
+  background-color: #90EE90;
+}
+
+.wrong {
+  background-color: #FFCCCC;
+}

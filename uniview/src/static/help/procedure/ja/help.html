@@ -1,0 +1,698 @@
+﻿<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>プロシージャ: ユーザーインタフェース</title>
+
+    <style type="text/css">
+        body {
+            font-family: verdana;
+            font-size: 80%;
+            background-color: white;
+            color: black;
+            margin-top: 12pt;
+            margin-bottom: 10pt;
+            margin-left: 10pt;
+            margin-right: 10pt;
+        }
+
+        p {
+            font-family: verdana;
+            font-size: 100%;
+            color: black;
+            margin-top: 6pt;
+            margin-bottom: 6pt;
+            margin-left: 0pt;
+        }
+
+        li {
+            font-family: verdana;
+            font-size: 100%;
+            margin-left: 0pt;
+        }
+
+        td {
+            font-family: verdana;
+            font-size: 80%;
+            color: black;
+
+            background-color: whitesmoke;
+            margin: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border: solid 1px white;
+            vertical-align: top;
+        }
+
+        td.key {
+            background-color: gainsboro;
+            font-weight: bold;
+            vertical-align: top;
+        }
+
+        td.wht {
+            background-color: white;
+            margin: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            border: none;
+            vertical-align: top;
+        }
+
+        th {
+            font-family: verdana;
+            font-size: 80%;
+            color: black;
+            text-align: left;
+
+            background-color: gainsboro;
+            padding: 4px;
+            border: solid 1px white;
+        }
+
+        h1 {
+            font-family: verdana;
+            font-size: 130%;
+            font-weight: bold;
+            background-color: white;
+            color: #336699;
+            margin-bottom: 6pt;
+        }
+
+        h2 {
+            font-family: verdana;
+            font-size: 115%;
+            font-weight: bold;
+            background-color: white;
+            color: #336699;
+            margin-bottom: 6pt;
+            margin-top: 24pt;
+        }
+
+        h3 {
+            font-family: verdana;
+            font-size: 100%;
+            font-weight: bold;
+            background-color: white;
+            color: black;
+            margin-bottom: 3pt;
+        }
+
+        hr {
+            color: #336699;
+            height: 1px;
+        }
+
+        ul {
+            margin-top: 0pt;
+            margin-bottom: 6pt;
+            color: black;
+            list-style-type: disc;
+        }
+
+        a {
+            color: #1080FF;
+        }
+
+        a:visited {
+            color: saddlebrown;
+        }
+
+        a:hover {
+            color: darkorange;
+        }
+
+        .command {
+            padding: 4px;
+            color: #336699;
+            background-color: whitesmoke;
+            font-family: courier;
+        }
+
+        .hdbar {
+            margin-top: 32px;
+            margin-bottom: 0px;
+            width: 100%;
+            font-weight: bold;
+            background-color: #6699CC;
+            color: white;
+            padding: 2px;
+            padding-left: 4px;
+        }
+
+        div.note {
+            background-image: url(images/note1.png);
+            background-repeat: no-repeat;
+            background-color: white;
+            margin-top: 12pt;
+            margin-bottom: 0pt;
+            margin-left: 0pt;
+        }
+
+        div.table_note {
+            background-image: url(images/note2.png);
+            background-repeat: no-repeat;
+            background-color: #F5F5F5;
+            margin-top: 6pt;
+            margin-bottom: 0pt;
+            margin-left: 0pt;
+        }
+
+        div.fig_note {
+            font-size: 90%;
+            margin-top: 6pt;
+            margin-bottom: 6pt;
+            margin-left: 12pt;
+        }
+        
+        table {
+            font-size: medium;
+        }
+
+        img.btn {
+            margin: 2px 4px;
+            width: 16px;
+            height: 16px;
+        }
+
+        img.btn.inline {
+            margin: 0 2px 0 4px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>プロシージャ &ndash; ユーザーインタフェース</h1>
+
+    <hr noshade>
+
+    <p>
+        ユーザーインタフェースは、ドキュメントと3D/2Dの2つのワークスペースで構成されています。各ワークスペースには、以下で説明する独自の制御要素があります。ユーザーインタフェースの外観は、このインタラクティブ手続きの作成に使用された情報標準によって異なります。
+    </p>
+
+    <table width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+            <td class="wht" width="130">
+                <img src="images/Layout2.png" width="940" height="540" border="0">
+            </td>
+        </tr>
+    </table>
+
+    <!-- Document Window-->
+    <div class="hdbar">ドキュメントウィンドウ</div>
+
+    <p>
+	ドキュメントウィンドウには、指定した情報規格に従って作成されたドキュメントが表示されます。このドキュメントには、従業員がタスクを実行するためのステップバイステッププロシージャが示されています。プロシージャステップには、幾つかの対話型要素が含まれることがあります。ハイパーリンクをクリックして、3Dウィンドウに現在のステップを表示するか、2Dウィンドウに2Dイメージを表示します。
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                ボタン
+            </th>
+
+            <th valign="top" align="left">
+                説明
+            </th>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                フィルタ
+            </td>
+
+            <td valign="top" align="left">
+                DITAドキュメントに基づいたプロシージャの条件処理属性によるフィルタ。S1000Dデータモジュールに基づいたプロシージャの適用性によるフィルタ。
+            </td>
+        </tr>
+    </table>
+
+
+    <div class="hdbar">3Dウィンドウ</div>
+
+    <p>
+        3Dウィンドウは、ドキュメントウィンドウに記述されたプロシージャの3D表現を示します。3Dウィンドウでは、再生バーのボタンを使用してプロシージャを再生し、マウスを使用してナビゲートすることができます。3Dウィンドウの右上にあるロケータ(座標系の三軸など)を使用して、ユニットまたはパートの空間位置を決定できます。
+        <p>
+            プロシージャを最初に開いたときに3Dウィンドウが閉じている場合、ドキュメントウィンドウで対応する制御要素をクリックします。
+        </p>
+    </p>
+
+
+    <!-- 3D Playback -->
+    <h3>再生バー</h3>
+
+    <p>
+        3Dウィンドウでのプロシージャ再生を制御するボタン。
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                コマンド
+            </th>
+            <th valign="top" align="left">
+                目的
+            </th>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                再生
+            </td>
+
+            <td valign="top" align="left">
+                停止または一時停止されている場合に、プロシージャの再生を開始します。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                一時停止
+            </td>
+            <td valign="top" align="left">
+                現在のステップで再生を停止します。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                前へ
+            </td>
+            <td valign="top" align="left">
+                前のステップに戻ります。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                次
+            </td>
+            <td valign="top" align="left">
+                プロシージャを次のステップに移動します。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                設定
+            </td>
+            <td valign="top" align="left">
+                設定リストを表示または非表示にします。
+                <p>
+                    <b>速度</b>。再生速度を設定します。</p>
+                <p>
+                    <b>ビューポイントを凍結</b>。選択されている場合、カメラが現在のビューにロックされるので、プロシージャ再生中にカメラの移動を防止します。</p>
+                <p>
+                    <b>ワンステッププレイバック</b>。これを選択すると、現在のステップの再生がロックされます。</p>                   
+                <p>
+                    <b>アラートメッセージを無効化</b>。これを選択すると、再生中にプロシージャのアラートについて通知するメッセージが抑制されます。</p>
+                <p>
+                    <b>インラインコメントを表示</b>。これを選択すると、プロシージャコメントが3Dウィンドウに表示されます。</p>
+				<p>
+                    <b>シーン光源</b>。 光源の数と光源の位置を定義して、3Dウィンドウ内のモデルを照らします。 光源の相対位置がリストの右側に表示されます。 すべての光源はビューアと共に移動します。
+					</p>					
+				<p>
+                    <b>ナビゲーションキューブを表示</b>。3Dウィンドウで、ナビゲーションキューブを表示または非表示にします。ナビゲーションキューブには、エッジ、コーナー、およびフェースの、3つの異なるタイプのホットスポット領域があります。ナビゲーションキューブのエッジ、コーナー、またはフェースの上にポインタを置くと、対応する領域が強調表示されます。これらの領域を使用すると、標準ビューを切り替え、回転することができます。
+					</p>
+                <p>
+                    <b>サーフェスエッジを表示</b>。これを選択すると、3Dウィンドウにサーフェス境界が表示されます。</p> 					
+                <p>
+                    <b>アンチエイリアシング</b>。3Dウィンドウ内のゆがみアーティファクトを最小化するテクニックをアクティブにします。</p>					
+                <p>
+                    <b>周囲の包蔵</b>。3Dウィンドウで、アンビエントオクルージョンシェーディングおよびレンダリングテクニックをアクティブにします。</p>					
+					
+                <p>
+                    <b>選択モード</b>。3Dウィンドウで選択するオブジェクト表現を指定します。</p>			
+				<p> 
+					<i>色で強調表示</i> - 選択が強調表示されます。</p>			
+                <p>
+					<i>選択したオブジェクトをX-レイ</i>&nbsp;&ndash; 選択対象を除き、グレーの半透明で表示されます。</p>			
+                <p>
+					<i>透過シェル</i> - モデル全体の外側シェルが透明に表示され、選択されていない内部オブジェクトが非表示になります。  
+				</p>			
+                <p>
+                    <b>アウトラインホバーオブジェクト</b>。選択対象の輪郭が描かれます。
+				</p>										
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                再生進行状況バー
+            </td>
+            <td valign="top" align="left">
+                進行状況バーは、プロシージャの相対的な進捗状況を示します。進行状況バーをドラッグまたはクリックして、必要なプロシージャステップを探します。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                ヘルプ
+            </td>
+            <td valign="top" align="left">
+                ユーザーインタフェースのヘルプシステムを提供します。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                展開、折りたたみ
+            </td>
+            <td valign="top" align="left">
+                ビューアウィンドウフレームを基準にして3Dウィンドウを展開または折畳みます。
+            </td>
+        </tr>		
+    </table>
+
+
+    <!-- Selection Bar -->
+    <h3>選択バー</h3>
+
+    <p>
+        3Dウィンドウで選択されたオブジェクトのフィッティング、表示、非表示、および透明化のためのボタン。
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                ユーザーインタフェース
+            </th>
+
+            <th valign="top" align="left">
+                目的
+            </th>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                選択したオブジェクトを別のウィンドウで表示
+            </td>
+            <td valign="top" align="left">
+                有効な場合は、セカンダリ3Dウィンドウに選択内容を表示します。
+            </td>
+        </tr>		
+
+        <tr>
+            <td valign="top" align="left">
+                透明度を無視
+            </td>
+            <td valign="top" align="left">
+                有効な場合、透明アイテムがユーザーのクリックに反応しなくなるので、3Dウィンドウ内の透明アイテムを通してクリックすることができます。
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                すべて復元
+            </td>
+            <td valign="top" align="left">
+                非表示オブジェクトと半透明オブジェクトをすべて表示します。
+            </td>
+        </tr>	
+
+        <tr>
+            <td valign="top" align="left">
+                フィット
+            </td>
+            <td valign="top" align="left">
+                選択したアイテムの境界ボックスを3Dウィンドウにフィットさせます。
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                表示
+            </td>
+            <td valign="top" align="left">
+                3Dウィンドウにおいて、前に非表示にした選択アイテムを表示します。
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                非表示
+            </td>
+            <td valign="top" align="left">
+                3Dウィンドウで選択したアイテムを非表示にします。
+            </td>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                すべての選択を解除
+            </td>
+            <td valign="top" align="left">
+                すべてのアイテムを選択解除します。
+            </td>
+        </tr>			
+
+        <tr>
+            <td valign="top" align="left">
+                透明度
+            </td>
+            <td valign="top" align="left">
+                選択したアイテムの透明度の値を設定できます。透明度コマンドは、3Dウィンドウで1つまたは複数のアイテムが選択されている場合に使用できます。
+            </td>
+        </tr>
+    </table>
+
+
+    <!-- 3D Navigation -->
+    <h3>3Dウィンドウでのナビゲーション</h3>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                オペレーション
+            </th>
+
+            <th valign="top" align="left">
+                ユーザーアクション
+            </th>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                拡大/縮小
+            </td>
+
+            <td valign="top" align="left">
+                マウスホイールを前方または後方に回転します。Appleコンピュータでは、Control修飾キーを使用します。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                パン
+            </td>
+
+            <td valign="top" align="left">
+                マウスホイールを押したままマウスを移動します。Appleコンピュータでは、Option修飾キーを使用します。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                スピン
+            </td>
+
+            <td valign="top" align="left">
+                左ボタンを押したままマウスを移動します。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                回転中心の設定
+            </td>
+            <td valign="top" align="left">
+                ALTキーを押したまま、3Dウィンドウ内の任意のアイテムをクリックするか、または<b>中心に設定</b> <img class="btn inline" src="../../../../components/rococo/img/btn_goto.png">をクリックしてから、3Dウィンドウで必要なアイテムをクリックします。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                回転中心を表示/非表示
+            </td>
+            <td valign="top" align="left">
+                <b>回転中心を表示</b> <img class="btn inline" src="../../../../components/rococo/img/btn_center.png">をクリックして、3Dウィンドウで回転中心とその軸を表示または非表示にします。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                すべてフィット
+            </td>
+            <td valign="top" align="left">
+                <b>すべてフィット</b> <img class="btn inline" src="../../../../components/rococo/img/btn_fit.png">をクリックして、3Dウィンドウでアイテムを完全に表示するようにします。
+            </td>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                水平に整列
+            </td>     
+            <td valign="top" align="left">
+                <b>水平に整列</b> <img class="btn inline" src="../../../../components/rococo/img/btn_align.png">をクリックして、カメラの水平軸(縦方向軸ではない)を座標系の水平面に平行にします。
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                座標軸を表示/非表示
+            </td>  
+            <td valign="top" align="left">
+                <b>座標軸を表示</b> <img class="btn inline" src="../../../../components/rococo/img/btn_axes.png">をクリックして、3Dウィンドウ内の向きの軸を表示または非表示にします。 
+            </td>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                距離の測定
+            </td>  
+            <td valign="top" align="left">
+                <b>測定</b> <img class="btn inline" src="../../../../components/rococo/img/btn_measure.png">をクリックして、測定ツールを開きます。3Dウィンドウで、1つの点を1回クリックしてから、2番目の点を再度クリックします。2つの赤い点の間の距離が表示されます。垂直または水平面上に投影される点間の距離を取得するには、リストから投影平面の名前を選択します。長さの単位を変更するには、<b>ユニット</b>を選択します。引出し線の長さを設定するには、<b>H</b>スライダをドラッグします。測定ツールを閉じた後に寸法線を表示するには、<b>可視を維持</b>を選択します。新しい点を設定するには、<b>クリア</b>をクリックするか、Escキーを押してから、3Dウィンドウで点を指定します。	
+				<p>
+				<b>WARNING</b>				
+				</p>
+				<p>
+				3Dイラストは実際の製品とは異なる場合があるので、測定結果をワークフローで直接使用しないでください。製造またはサービスに必要な寸法を取得するには、関連する技術文書を参照してください。				
+				</p>					
+            </td>
+        </tr>		
+		
+        <tr>
+            <td valign="top" align="left">
+                断面ビュー 
+            </td>  
+            <td valign="top" align="left">
+                <b>断面平面</b><img class="btn inline" src="../../../../components/rococo/img/btn_section_plane.png">をクリックして、平面によって切断されたかのようにモデルを表示します。コントロールを使用して、断面平面の設定(左、上、フロント)と回転(XおよびY)を行います。断面平面を移動するには、<b>D</b>スライダをドラッグします。断面をミラーするには、<b>反転</b>を使用します。スライダの精度を改善するには、<b>正確なモード</b>を選択します。ツールを閉じた後に断面を表示するには、<b>可視を維持</b>を選択します。断面平面を選択の中心に移動するには、<b>リセット</b>をクリックします。				
+            </td>
+        </tr>		
+		
+        <tr>
+            <td valign="top" align="left">
+                <img src="../../../../components/rococo/img/v1.png">
+                <img src="../../../../components/rococo/img/v2.png">
+                <img src="../../../../components/rococo/img/v4.png">
+                <img src="../../../../components/rococo/img/v3.png">
+                <img src="../../../../components/rococo/img/v5.png">
+                <img src="../../../../components/rococo/img/v6.png">
+                <img src="../../../../components/rococo/img/v7.png">
+            </td>
+            <td valign="top" align="left">
+                フロント、バック、左、右、トップ、ボトム、および等角投影の様々なビューから、3Dウィンドウにオブジェクトを表示します。ボタンをクリックして、ビューをアクティブ化します。
+            </td>
+        </tr>		
+    </table>
+
+    <!-- 3D Context Commands-->
+    <h3>3Dウィンドウのコンテキスト依存メニュー</h3>
+
+    <p>3Dウィンドウ内の任意の場所を右クリックして、コンテキスト依存メニューにアクセスします。</p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                コマンド
+            </th>
+            <th valign="top" align="left">
+                目的
+            </th>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                リセット
+            </td>
+            <td valign="top" align="left">
+                ステップビューをリセットします。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                すべてフィット
+            </td>
+            <td valign="top" align="left">
+                3Dウィンドウでアイテムを完全に表示するようにします。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                バージョン情報
+            </td>
+            <td valign="top" align="left">
+                プロシージャ、3Dビューアおよび2Dビューアのバージョンを表示します。
+            </td>
+        </tr>
+    </table>
+
+    <!-- 2D Window Procedures -->
+    <div class="hdbar">2Dウィンドウ</div>
+
+    <p>
+        2Dウィンドウには、ドキュメントウィンドウに記述されているプロシージャに関連付けられているベクトルおよびラスタイメージが表示されます。2Dウィンドウは、ユーザーがドキュメントウィンドウ内の2Dイメージハイパーリンクをクリックすると、3Dウィンドウに取って代わります。2Dウィンドウで右クリックして、使用可能なコンテキスト依存コマンドにアクセスします。コマンドリストは、2Dウィンドウで使用される2Dビューアによって異なることに注意してください。
+    </p>
+
+    <h3>2Dウィンドウでのナビゲーション</h3>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                オペレーション
+            </th>
+            <th valign="top" align="left">
+                ユーザーアクション
+            </th>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                パン
+            </td>
+            <td valign="top" align="left">
+                左ボタンを押したままマウスを移動します。
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                ズーム
+            </td>
+            <td valign="top" align="left">
+                マウスホイールを前方または後方に回転します。
+            </td>
+        </tr>
+    </table>
+	
+    
+	<h3>2Dウィンドウのボタン</h3>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                ボタン
+            </th>
+            <th valign="top" align="left">
+                説明
+            </th>
+        </tr>	
+        <tr>
+            <td valign="top" align="left">
+                3D
+            </td>
+            <td valign="top" align="left">
+                3Dウィンドウを開きます。
+            </td>
+        </tr> 
+        <tr>
+            <td valign="top" align="left">
+                展開、折りたたみ
+            </td>
+            <td valign="top" align="left">
+                ビューアウィンドウフレームを基準として2Dウィンドウを展開または折りたたみます。
+            </td>
+        </tr>	
+        <tr>
+            <td valign="top" align="left">
+                次のシート、前のシート
+            </td>
+            <td valign="top" align="left">
+                複数ページのイラストの場合、次または前のページに移動します。
+            </td>
+        </tr> 		
+    </table>		
+
+</body>
+</html>

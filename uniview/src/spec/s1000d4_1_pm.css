@@ -1,0 +1,11 @@
+.structure-tree .skin-tree-item .content.disabled,
+.structure-tree .skin-tree-item.disabled {
+    display: none;
+}
+/*
+.pct-toolbar.main {
+    flex-wrap: wrap;
+}
+*/
+
+

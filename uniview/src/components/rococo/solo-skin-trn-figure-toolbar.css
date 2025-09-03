@@ -1,0 +1,38 @@
+.skin-holder-figure {
+    justify-content: flex-end;
+}
+
+.skin-holder-view .panel-settings {
+    bottom: 0;
+    top: auto;
+    z-index: 100;
+}
+
+#btn-help {
+    background-image: url(img/btn_help.png);
+}
+
+#btn-nav-spin {
+    background-image: url(img/sbtn_spin.png);
+}
+
+#btn-nav-zoom {
+    background-image: url(img/sbtn_zoom.png);
+}
+
+#btn-nav-pan {
+    background-image: url(img/sbtn_pan.png);
+}
+
+#btn-nav-fit {
+    background-image: url(img/btn_fit.png);
+}
+
+
+#btn-settings {
+    background-image: url(img/btn_settings.png);
+}
+
+#btn-skip-animation {
+    background-image: url(img/btn_skip_anim.png);
+}

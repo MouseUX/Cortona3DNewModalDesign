@@ -1,0 +1,77 @@
+#toolbar-part-selection.bottom {
+    padding-top: 0;
+}
+
+.display-mode-2d #toolbar-part-selection {
+    display: none;
+}
+
+#btn-selection-fit {
+    background-image: url(img/btn_selection_fit.png);
+}
+
+#btn-selection-show {
+    background-image: url(img/btn_selection_show.png);
+}
+
+#btn-selection-hide {
+    background-image: url(img/btn_selection_hide.png);
+}
+
+#btn-select-none {
+    background-image: url(img/btn_select_none.png);
+}
+
+#btn-selection-external-view {
+    background-image: url(img/btn_selection_external_view.png);
+}
+
+#btn-show-all {
+    background-image: url(img/btn_show_all.png);
+}
+
+.toolbar-part-selection-content {
+    justify-content: space-between;
+}
+
+.skin-holder .skin-toolbar .toolbar-part-selection-content {
+    margin: 0;
+}
+
+.toolbar-part-selection-content > .right {
+    flex-basis: auto;
+    min-width: 50%;
+}
+
+/* Large desktops and laptops 
+@media (min-width: 1200px) {}
+*/
+
+/* Portrait tablets and medium desktops 
+@media (min-width: 992px) and (max-width: 1199px) {}
+*/
+
+/* Portrait tablets and small desktops 
+@media (min-width: 768px) and (max-width: 991px) {}
+*/
+
+/* Landscape phones and portrait tablets 
+@media (max-width: 767px) {}
+*/
+@media (max-width: 420px) and (orientation: portrait) {
+    #toolbar-part-selection label {
+        display: none;
+    }
+
+    #toolbar-part-selection input[type='range'] {
+        margin-left: 1em;
+    }
+}
+
+/* Landscape phones and smaller 
+@media (max-width: 480px) {}
+*/
+
+/* Portrait
+@media (orientation: portrait) {}
+*/

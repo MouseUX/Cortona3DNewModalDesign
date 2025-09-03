@@ -1,0 +1,64 @@
+.skin-ipc-dpl-header {
+    color: black;
+    margin-top: .5em;
+    padding: .5em;
+    align-items: flex-start;
+    flex: 0 1 64px;
+}
+
+.direction-column {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.direction-row {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    max-height: 96px;
+    max-width: 196px;
+    margin-right: 1em;
+}
+
+.title {
+    font-family: Tahoma, sans-serif;
+    font-size: 17px;
+    margin: 0;
+}
+
+.subtitle {
+    font-family: Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.mono {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+}
+
+.low {
+    flex-grow: 1;
+    margin-top: .5em;
+}
+
+.low.bot {
+    flex-grow: 0;
+}
+
+.sheet {
+    margin-left: 2em;
+}
+
+.direction-column.left {
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.direction-column.right {
+    align-items: flex-end;
+    text-align: right;
+}

@@ -1,0 +1,16 @@
+{
+  "loading": {
+    "loading": "Chargement",
+    "initializing": "Initialisation",
+    "failed": "Echec de chargement"
+  },
+  "msg001": "La publication s'ouvre dans un navigateur local et non via les protocoles HTTP ou HTTPS.",
+  "msg002": "Voir l'article %s pour découvrir les causes et solutions possibles.",
+  "msg003": "Version de la bibliothèque Cortona3D Solo incompatible. La version doit être %s ou supérieure.",
+  "msg004": "Erreur de chargement.",
+  "msg005": "Il n'y a pas assez de mémoire (%s Mo) pour que l'Afficheur 3D charge la publication. Vous devez augmenter la quantité de mémoire allouée à l'Afficheur 3D dans l'option de publication Mémoire de l'Afficheur 3D (Outils &gt; Options de publication) et republier le projet.",
+  "msg006": "Voir la console du navigateur pour plus de détails.",
+  "msg007": "Ce navigateur n'est plus pris en charge. La fonctionnalité de publication risque d'être limitée.",
+  "msg008": "Ce navigateur n'est pas pris en charge.",
+  "msg009": "Ce fichier d'aide n'est pas disponible. Vérifiez votre connexion avec %s."
+}

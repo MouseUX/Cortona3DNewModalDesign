@@ -1,0 +1,31 @@
+.aux.panel {
+    border-bottom: none;
+}
+
+@media ((orientation: portrait) and (max-height: 1023px)) or (max-height: 767px) {
+    .skin-holder .skin-ipc-dpl-header .title {
+        display: none;
+    }
+
+    .skin-holder .skin-ipc-dpl-header .subtitle {
+        font-size: 14px;
+    }
+
+    .skin-holder .skin-ipc-dpl-header .logo {
+        max-height: 48px;
+    }
+
+    .skin-holder .dpl-legend {
+        flex-shrink: 0.5;
+    }
+}
+
+@media (max-height: 480px) {
+    .skin-holder .skin-ipc-dpl-header {
+        display: none;
+    }
+
+    .skin-holder .dpl-legend {
+        flex-shrink: inherit;
+    }
+}

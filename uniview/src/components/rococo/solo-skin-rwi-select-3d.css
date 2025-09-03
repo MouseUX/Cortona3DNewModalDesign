@@ -1,0 +1,5 @@
+.solo-skin-rwi-select-3d {}
+
+[data-id].selected {
+    background-color: orange !important;
+}

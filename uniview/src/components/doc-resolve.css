@@ -1,0 +1,33 @@
+.doc-container .link {
+    cursor: pointer;
+}
+
+.doc-container .link.disabled {
+    cursor: not-allowed;
+    pointer-events: auto;
+}
+
+.doc-container a[href],
+.doc-container a.link {
+    color: #00D;
+    text-decoration: none;
+}
+
+.doc-container a[href]:visited,
+.doc-container a.link:visited {
+    color: #00D;
+}
+
+.doc-container a[href]:hover,
+.doc-container a.link:hover {
+    color: #00F;
+    text-decoration: underline;
+}
+
+.skin-popup.footnote-popup {
+    position: absolute;
+    padding: 5pt;
+    background: rgb(255, 255, 204);
+    border: 1px solid black;
+    border-radius: 5px;
+}

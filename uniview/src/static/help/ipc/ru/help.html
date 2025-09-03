@@ -1,0 +1,1254 @@
+﻿<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Каталог деталей&nbsp;&ndash; интерфейс пользователя</title>
+
+    <style type="text/css">
+        body {
+            font-family: verdana;
+            font-size: 80%;
+            background-color: white;
+            color: black;
+            margin-top: 12pt;
+            margin-bottom: 10pt;
+            margin-left: 10pt;
+            margin-right: 10pt;
+        }
+
+        p {
+            font-family: verdana;
+            font-size: 100%;
+            color: black;
+            margin-top: 6pt;
+            margin-bottom: 6pt;
+            margin-left: 0pt;
+        }
+
+        li {
+            font-family: verdana;
+            font-size: 100%;
+            margin-left: 0pt;
+        }
+
+        td {
+            font-family: verdana;
+            font-size: 80%;
+            color: black;
+
+            background-color: whitesmoke;
+            margin: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border: solid 1px white;
+            vertical-align: top;
+        }
+
+        td.key {
+            background-color: gainsboro;
+            font-weight: bold;
+            vertical-align: top;
+        }
+
+        td.wht {
+            background-color: white;
+            margin: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            border: none;
+            vertical-align: top;
+        }
+
+        th {
+            font-family: verdana;
+            font-size: 80%;
+            color: black;
+            text-align: left;
+
+            background-color: gainsboro;
+            padding: 4px;
+            border: solid 1px white;
+        }
+
+        h1 {
+            font-family: verdana;
+            font-size: 130%;
+            font-weight: bold;
+            background-color: white;
+            color: #336699;
+            margin-bottom: 6pt;
+        }
+
+        h2 {
+            font-family: verdana;
+            font-size: 115%;
+            font-weight: bold;
+            background-color: white;
+            color: #336699;
+            margin-bottom: 6pt;
+            margin-top: 24pt;
+        }
+
+        h3 {
+            font-family: verdana;
+            font-size: 100%;
+            font-weight: bold;
+            background-color: white;
+            color: black;
+            margin-bottom: 3pt;
+        }
+
+        hr {
+            color: #336699;
+            height: 1px;
+        }
+
+        ul {
+            margin-top: 0pt;
+            margin-bottom: 6pt;
+            color: black;
+            list-style-type: disc;
+        }
+
+        a {
+            color: #1080FF;
+        }
+
+        a:visited {
+            color: saddlebrown;
+        }
+
+        a:hover {
+            color: darkorange;
+        }
+
+        .command {
+            padding: 4px;
+            color: #336699;
+            background-color: whitesmoke;
+            font-family: courier;
+        }
+
+        .hdbar {
+            margin-top: 32px;
+            margin-bottom: 0px;
+            width: 100%;
+            font-weight: bold;
+            background-color: #6699CC;
+            color: white;
+            padding: 2px;
+            padding-left: 4px;
+        }
+
+        div.note {
+            background-image: url(images/note1.png);
+            background-repeat: no-repeat;
+            background-color: white;
+            margin-top: 12pt;
+            margin-bottom: 0pt;
+            margin-left: 0pt;
+        }
+
+        div.table_note {
+            background-image: url(images/note2.png);
+            background-repeat: no-repeat;
+            background-color: #F5F5F5;
+            margin-top: 6pt;
+            margin-bottom: 0pt;
+            margin-left: 0pt;
+        }
+
+        div.fig_note {
+            font-size: 90%;
+            margin-top: 6pt;
+            margin-bottom: 6pt;
+            margin-left: 12pt;
+        }
+        
+        table {
+            font-size: medium;
+        }
+
+        img.btn {
+            margin: 2px 4px;
+            width: 16px;
+            height: 16px;
+        }
+
+        img.btn.inline {
+            margin: 0 2px 0 4px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Каталог деталей&nbsp;&ndash; интерфейс пользователя</h1>
+    <hr noshade>
+
+    <p>
+        Интерфейс пользователя каталога состоит из двух рабочих областей: 3D- или 2D-окно, DPL-таблица. 
+		Каждая рабочая область имеет свои элементы управления, описанные ниже.
+        
+	</p>
+        
+        
+    <p>Интерактивный каталог деталей может быть представлен в следующих видах:</p>
+		<ul>        
+			<li>
+                <b>2D и 3D</b> обеспечивает просмотр 2D- и 3D-иллюстраций в 2D- и 3D-окнах соответственно. 
+				В этом случае каталог имеет кнопку
+                <span style="white-space: nowrap;">(2D-графика
+                    <img class="btn inline" src="../../../../components/rococo/img/btn_2d.png">)</span>
+                для переключения между окнами.</li>
+            <li>
+                <b>3D</b> позволяет просматривать только 3D-иллюстрации. В этом случае кнопка &laquo;2D-графика&raquo;
+                недоступна.</li>
+            <li>
+                <b>2D</b> позволяет просматривать только 2D-иллюстрации. В этом случае доступны листы, содержащие 2D-иллюстрации.
+                Другие листы каталога, а также кнопка &laquo;2D-графика&raquo;, недоступны.</li>
+        </ul>				
+     <p>Представление каталога задается автором при создании каталога и не может быть
+		изменено во время просмотра.</p>
+
+
+
+        <table width="100%" cellspacing="0" cellpadding="0">
+            <tr>
+                <td class="wht" width="130">
+                    <img src="images/PublishProject1.png" width="1340" height="718" border="0">
+                </td>
+            </tr>
+        </table>
+    </p>
+
+    <div class="hdbar">3D/2D-окно</div>
+    <p>
+        3D-окно отображает трехмерную иллюстрацию текущего листа каталога. С помощью мыши и клавиатуры вы можете
+        осуществлять навигацию в трехмерном окне. 
+		Направляющие оси в правом верхнем углу 3D-окна позволяют определить положение и направление
+        вида в трехмерном пространстве.
+    </p>
+
+    <p>
+        2D-окно отображает векторные и растровые иллюстрации, соответствующие листу каталога.
+    </p>
+
+    <!-- 3D/2D Commands -->
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Элемент интерфейса пользователя
+            </th>
+            <th valign="top" align="left">
+                Кнопка
+            </th>
+            <th valign="top" align="left">
+                Назначение
+            </th>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Лист
+            </td>
+            <td valign="top" align="center">
+                &nbsp;
+            </td>
+            <td valign="top" align="left">
+                Позволяет выбрать соответствующий лист каталога из списка.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Восстановить
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_reset.png">
+            </td>
+            <td valign="top" align="left">
+                Восстанавливает первоначальный вид текущего листа.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                2D-графика
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_2d.png">
+            </td>
+            <td valign="top" align="left">
+                Позволяет переключаться между 2D- и 3D-окнами. Указанная кнопка появляется только в режиме
+                <b>2D и 3D</b>. См. примечание выше.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Печать графики
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_print3d.png">
+            </td>
+            <td valign="top" align="left">
+                Печать содержимого 2D- или 3D-окна.
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Игнорировать прозрачность (только для 3D-окна)
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_ignore_tr.png">
+            </td>
+            <td valign="top" align="left">
+                Если включено, делает прозрачные объекты нечувствительными к щелчку мыши в 3D-окне, что позволяет
+                щелкать сквозь прозрачные
+                объекты по объектам, которые находятся за прозрачными объектами.
+            </td>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                Восстановить все объекты (только для 3D-окна)
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_show_all.png">
+            </td>
+            <td valign="top" align="left">
+                Восстанавливает первоначальный вид для всех скрытых и полупрозрачных объектов.
+            </td>
+        </tr>		
+
+        <tr>
+
+            <td valign="top" align="left">
+                Без анимации (только для 3D-окна)
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_skip_anim.png">
+            </td>
+            <td valign="top" align="left">
+                Если включено, постепенный переход (анимация) между изображениями на разных листах при смене листа не
+                используется. Переход
+                между изображениями на разных листах будет скачкообразный.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Настройки
+            </td>
+			<td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_settings.png">
+            </td>			
+            <td valign="top" align="left">
+                Показывает или скрывает список настроек.
+                <p>
+                    <b>Скорость анимации перехода</b>. Задает скорость перехода к разобранному виду.
+				</p>
+                <p>
+                    <b>Включить управление анимацией перехода</b>. Если выбрано, активирует управляющий элемент &laquo;Управление анимацией перехода&raquo;, позволяющий вручную просматривать переходы между листами. Чтобы отобразить управляющий элемент, наведите указатель мыши на нижнюю часть 3D-окна или коснитесь экрана, если у вас сенсорный экран.
+				</p>					
+                <p>
+                    <b>Показывать границы поверхностей</b>. Если выбрано, включает режим отображения границ поверхностей в 3D-окне.
+				</p> 					
+                <p>
+                    <b>Сглаживание</b>. Активирует механизм сглаживания наклонных линий в 3D-окне для минимизации искажений.
+				</p>					
+                <p>
+                    <b>Фоновое затенение</b>. Активирует технику затенения (ambient occlusion shading) в 3D-окне для улучшения отображения затененных поверхностей.
+				</p>						
+                <p>
+                    <b>Режим выделения объектов</b>. Задает представление  объектов, выделенных в трехмерном окне.
+				</p>
+				<p>
+					<i>Выделять цветом</i>&nbsp;&ndash; цвет выделенного объекта изменяется. 
+				</p>
+				<p>					
+					<i>Прозрачность X-ray</i>&nbsp;&ndash; цвет выделенного объекта изменяется, а все остальные объекты отображаются полупрозрачными с различной степенью затенения. 
+				</p>
+				<p>										
+					<i>Прозрачная оболочка</i>&nbsp;&ndash; цвет выделенного объекта изменяется, оболочка изделия или сборки отображаются полупрозрачной, 
+					невыбранные внутренние объекты скрываются.  
+				</p>					
+                <p>
+                    <b>Отображать контур объекта при наведении</b>. Отображается контур выделенного объекта.
+				</p>
+            </td>
+        </tr>				
+
+        <tr>
+            <td valign="top" align="left">
+                Подсветка
+            </td>
+
+            <td valign="top" align="center">
+                &nbsp;
+            </td>
+
+            <td valign="top" align="left">
+                При выделении объекта или выноски, наведении указателя мыши на объект в 3D-окне или на выноску в 2D-окне, объект или выноска
+                подсвечиваются.
+                Для подсвеченного объекта или выноски показывается номер позиции (или номер CSN). Автор каталога может
+                задать любые цвета для подсветки. По умолчанию используется следующая цветовая схема:
+                <p>Желтый &mdash; для выделенного объекта или выноски. Соответствующая DPL-строка также выделяется и
+                    подсвечивается.</p>
+                <p>Зеленый &mdash; для выноски, на которую наведен указатель мыши. Соответствующая DPL-строка также
+                    подсвечивается.</p>
+            </td>
+        </tr>
+
+    </table>
+
+    <!-- 3D Navigation -->
+    <div class="hdbar">Панель &laquo;3D-вид&raquo;</div>
+    <p>
+        Содержит кнопки, позволяющие задавать разные виды в 3D-окне.
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Элемент интерфейса пользователя
+            </th>
+            <th valign="top" align="left">
+                Кнопка
+            </th>
+            <th valign="top" align="left">
+                Назначение
+            </th>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Установить центр
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_goto.png">
+            </td>
+            <td valign="top" align="left">
+                Позволяет установить центр вращения для 3D-модели. Центр ограничивающего параллелепипеда выделенного
+                объекта устанавливается
+                в центре трехмерного окна.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Показать/скрыть центр вращения
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_center.png">
+            </td>
+            <td valign="top" align="left">
+                Позволяет показать или скрыть центр вращения в 3D-окне.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Подогнать
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_fit.png">
+            </td>
+            <td valign="top" align="left">
+                Устанавливает вид таким образом, чтобы изделие, узел или деталь были полностью видны в 3D-окне.
+            </td>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                Выровнять горизонт
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_align.png">
+            </td>
+            <td valign="top" align="left">
+                Выравнивает вид по горизонтали.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Показать/скрыть оси ориентации
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_axes.png">
+            </td>
+            <td valign="top" align="left">
+                Отображает или скрывает оси направлений в трехмерном окне. 
+            </td>
+        </tr>			
+
+    </table>
+
+    <p>
+        Представленные в таблице команды позволяют показывать изделие, узел или деталь с различных направлений:
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Элемент интерфейса пользователя
+            </th>
+            <th valign="top" align="left">
+                Кнопка
+            </th>
+            <th valign="top" align="left">
+                Назначение
+            </th>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Вид спереди
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v1.png">
+            </td>
+            <td valign="top" align="left">
+                Показывает изделие спереди.
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Вид сзади
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v2.png">
+            </td>
+            <td valign="top" align="left">
+                Показывает изделие сзади.
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Вид слева
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v4.png">
+            </td>
+            <td valign="top" align="left">
+                Показывает изделие слева.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Вид справа
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v3.png">
+            </td>
+            <td valign="top" align="left">
+                Показывает изделие справа.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Вид сверху
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v5.png">
+            </td>
+            <td valign="top" align="left">
+                Показывает изделие сверху.
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Вид снизу
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v6.png">
+            </td>
+            <td valign="top" align="left">
+                Показывает изделие снизу.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Изометрический вид
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v7.png">
+            </td>
+            <td valign="top" align="left">
+                Показывает изометрический вид изделия.
+            </td>
+        </tr>
+
+    </table>
+
+
+
+    <div class="hdbar">Панель &laquo;Выделение&raquo;</div>
+    <p>Позволяет совершать различные действия с выделенными объектами в 3D-окне.</p>
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Элемент интерфейса пользователя
+            </th>
+
+            <th valign="top" align="left">
+                Назначение
+            </th>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Подогнать
+            </td>
+            <td valign="top" align="left">
+                Устанавливает вид таким образом, чтобы объект был показан достаточно близко и целиком умещался в 3D-окне.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Показать
+            </td>
+            <td valign="top" align="left">
+                Отображает выделенные объекты, которые были предварительно скрыты в 3D-окне. В колонке маркеров DPL-таблицы на выделенных строках появятся флажки.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Скрыть
+            </td>
+            <td valign="top" align="left">
+                Скрывает выделенные объекты в 3D-окне. В колонке маркеров соответствующей DPL-строки флажок будет
+                снят.
+            </td>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                Снять выделение
+            </td>
+            <td valign="top" align="left">
+                Снимает выделение со всех объектов.
+            </td>
+        </tr>			
+
+        <tr>
+            <td valign="top" align="left">
+                Прозрачность
+            </td>
+            <td valign="top" align="left">
+                Позволяет установить прозрачность для выделенных объектов. Команда установки прозрачности становится
+                доступной, если
+                в 3D-окне выделены один или несколько объектов, или если выделены одна или несколько DPL-строк.
+            </td>
+        </tr>
+    </table>
+
+
+    <!-- DPL Table Commands-->
+    <div class="hdbar">DPL-таблица</div>
+    <p>Содержит DPL-таблицу. Обратите внимание, что панель DPL-таблицы может содержать ряд фильтров (например: Модель,
+        Применимость), которые позволяют фильтровать данные таблицы по выбранному критерию. 
+		Наличие того или иного фильтра зависит от
+        информационного стандарта, в соответствии с которым выполнен каталог.
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Элемент интерфейса пользователя
+            </th>
+            <th valign="top" align="left">
+                Кнопка
+            </th>
+            <th valign="top" align="left">
+                Назначение
+            </th>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Печать таблицы
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_printt.png">
+            </td>
+            <td valign="top" align="left">
+                Позволяет печатать DPL-таблицу.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Комбинированная печать
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_printc.png">
+            </td>
+            <td valign="top" align="left">
+                Позволяет печатать DPL-таблицу и все 2D-иллюстрации, присутствующие в публикации. Если установлен флажок
+                <b>Вся таблица</b>, на печать выводятся DPL-таблица и все иллюстрации. Если флажок
+                <b>Вся таблица</b> снят, выводятся на печать текущий лист DPL-таблицы и ассоциированная с ним
+                иллюстрация. Каждая
+                иллюстрация печатается на отдельной странице.
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Вся таблица
+            </td>
+            <td valign="top" align="center">
+                &nbsp;
+            </td>
+            <td valign="top" align="left">
+                Показывает всю DPL-таблицу. Серым отображаются строки, которые не соответствуют текущему листу.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Экспорт в CSV
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_excel.png">
+            </td>
+            <td valign="top" align="left">
+                Сохраняет выделенные строки таблицы в формате с разделением значений запятыми (CSV). Если не выделено ни
+                одной строки, сохраняются
+                все строки текущей таблицы.
+
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Справка
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_help.png">
+            </td>
+            <td valign="top" align="left">
+                Показывает текст данной справки.
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Область заголовка
+            </td>
+            <td valign="top" align="center">
+                &nbsp;
+            </td>
+            <td valign="top" align="left">
+                Область заголовка содержит информацию о публикации, например: имя публикации, имя листа, дату
+                опубликования.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Колонка &laquo;Маркеры&raquo;
+            </td>
+            <td valign="top" align="center">
+                &nbsp;
+            </td>
+            <td valign="top" align="left">
+                В колонке маркеров используются следующие обозначения.
+                <p>
+                    <img src="../../../../components/rococo/img/boxshow.gif"> &mdash; данной строке соответствует
+                    объект (деталь или сборка) в 3D-окне для текущего листа; все графические
+                    компоненты объекта представлены на данном листе.</p>
+                <p>
+                    <img src="../../../../components/rococo/img/boxhide.gif"> &mdash; объект (деталь или сборка) скрыт
+                    в 3D-окне на текущем листе. </p>
+                <p>
+                    Маркер отсутствует &mdash; объект (деталь или сборка) не имеет графического представления на текущем
+                    листе.</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Подсветка
+            </td>
+
+            <td valign="top" align="center">
+                &nbsp;
+            </td>
+
+            <td valign="top" align="left">
+                <p>
+                    При выделении или наведении указателя мыши на DPL-строку, строка подсвечивается. Для подсвеченной
+                    DPL-строки показывается номер позиции (или номер CSN). Автор каталога может задать любые цвета 
+					для подсветки. По умолчанию используется следующая цветовая схема:
+                </p>
+                <p>
+                    Аквамариновый&nbsp;&mdash; для DPL-строки, на которую наведен указатель мыши,
+                    и соответствующих DPL-строке объектов и выносок, которые представлены в 3D- и 2D-окне.                    
+                </p>
+                <p>
+                    Желтый&nbsp;&mdash; для выделенной DPL-строки.
+                    Соответствующие объекты и выноски также выделяются желтым цветом в 3D- и 2D-окне.
+                </p>
+                <p>
+                    Розовый &mdash; для DPL-строки, на которую наведен указатель мыши и у которой
+                    нет иллюстрированных объектов.
+                </p>
+
+            </td>
+        </tr>
+
+
+    </table>
+
+    <div class="hdbar">Контекстно-зависимое меню 3D/2D-окна и DPL-таблицы</div>
+    <p>Чтобы открыть контекстно-зависимое меню, щелкните правой кнопкой мыши объект в 3D-окне, выноску в 2D-окне или
+        DPL-строку.
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Элемент интерфейса пользователя
+            </th>
+            <th valign="top" align="left">
+                Назначение
+            </th>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Позиция
+            </td>
+            <td valign="top" align="left">
+                Номер позиции (или CSN - Catalog Sequence Number) для объекта, выноски или DPL-строки.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Подогнать
+            </td>
+            <td valign="top" align="left">
+                Устанавливает вид таким образом, чтобы все выделенные графические объекты были видны в 3D-окне.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Показать/скрыть
+            </td>
+            <td valign="top" align="left">
+                Показывает или скрывает выделенные объекты в 3D-окне. При выполнении данной команды изменяется
+                соответствующий маркер DPL-строки.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Выделить/снять выделение
+            </td>
+            <td valign="top" align="left">
+                Выделяет или снимает выделение объекта в 3D-окне или строки в DPL-таблице или выноски в 2D-окне.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Список листов
+            </td>
+            <td valign="top" align="left">
+                Предоставляет список листов каталога. Лист, отмеченный жирным шрифтом, указывает рекомендуемый автором
+                каталога лист (страницу
+                каталога), на котором деталь (сборка), ассоциированная с выбранной строкой таблицы, представлена
+                наиболее
+                полно. Текущая страница отмечена галочкой.
+
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Показать все
+            </td>
+            <td valign="top" align="left">
+                Показывает все скрытые объекты в 3D-окне, устанавливает соответствующие маркеры в DPL-таблице.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Увеличить
+            </td>
+            <td valign="top" align="left">
+                Увеличивает размер изображения.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Уменьшить
+            </td>
+            <td valign="top" align="left">
+                Уменьшает размер изображения.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Подогнать по размеру
+            </td>
+            <td valign="top" align="left">
+                Подгоняет размер изображения к размеру окна.
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                О программе
+            </td>
+            <td valign="top" align="left">
+                Показывает номер версии публикации и программ просмотра 2D- и 3D-иллюстраций.
+            </td>
+        </tr>
+    </table>
+
+
+
+    <!-- DPL Table Procedures-->
+    <div class="hdbar">DPL-таблица: основные действия пользователя</div>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Операция
+            </th>
+
+            <th valign="top" align="left">
+                Действие пользователя
+            </th>
+
+        </tr>
+
+        <tr>
+
+            <td valign="top" align="left">
+                Выделить DPL-строку
+            </td>
+
+            <td valign="top" align="left">
+                Щелкните соответствующую DPL-строку.
+                <p>DPL-строка и соответствующий 3D-объект (или соответствующая выноска в 2D-окне) подсвечиваются.</p>
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td valign="top" align="left">
+                Выделить несколько DPL-строк
+            </td>
+
+            <td valign="top" align="left">
+                Удерживая клавишу CTRL, щелкните требуемые DPL-строки.
+            </td>
+
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                Выделить группу DPL-строк, расположенных одна за другой
+            </td>
+
+            <td valign="top" align="left">
+                Щелкните первую DPL-строку и, удерживая клавишу SHIFT, щелкните последнюю DPL-строку.
+
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                Настроить вид на объект в 3D-окне
+            </td>
+
+            <td valign="top" align="left">
+                Дважды щелкните DPL-строку.
+
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                Скрыть объект в 3D-окне
+            </td>
+
+            <td valign="top" align="left">
+                Снимите флажок в колонке маркеров требуемой DPL-строки.
+
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                Показать объект в 3D-окне
+            </td>
+
+            <td valign="top" align="left">
+                Установите флажок в колонке маркеров требуемой DPL-строки.
+
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Скрыть (показать) группу объектов в 3D-окне
+            </td>
+
+            <td valign="top" align="left">
+                Выделите несколько DPL-строк, чьи соответствующие 3D-объекты необходимо скрыть/показать, а затем
+                используйте кнопки
+                <b>Скрыть</b> и
+                <b>Показать</b> на панели
+                <b>Выделение</b>.
+
+            </td>
+        </tr>
+
+
+
+    </table>
+
+    <!-- 2D Window Procedures-->
+    <div class="hdbar">2D-окно: основные действия пользователя</div>
+    <p>Выноски в 2D-окне представляют гиперссылки, указывающие на соответствующие строки DPL-таблицы. Щелкните правой
+        кнопкой
+        мыши в 2D-окне, чтобы открыть контекстное меню. Щелкните правой кнопкой мыши выноску, чтобы открыть контекстное
+        меню,
+        относящиеся к графическому объекту (команды меню описаны в разделе &laquo;Контекстно-зависимое меню 3D/2D-окна и
+        DPL-таблицы&raquo;)
+    </p>
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Операция
+            </th>
+
+            <th valign="top" align="left">
+                Действие пользователя
+            </th>
+
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Выделить выноску объекта
+            </td>
+
+            <td valign="top" align="left">
+                Щелкните требуемую выноску.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Переместить
+            </td>
+
+            <td valign="top" align="left">
+                Перемещайте мышь, удерживая колесо мыши нажатым.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Масштабировать
+            </td>
+
+            <td valign="top" align="left">
+                Вращайте колесо мыши вперед или назад.
+            </td>
+        </tr>
+
+    </table>
+
+
+    <!-- 3D Window Procedures-->
+    <div class="hdbar">3D-окно: основные действия пользователя</div>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+        <tr>
+            <th valign="top" align="left">
+                Операция
+            </th>
+
+            <th valign="top" align="left">
+                Действие пользователя
+            </th>
+
+
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Выделить 3D-объект
+            </td>
+
+            <td valign="top" align="left">
+                Щелкните требуемый 3D-объект.
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td valign="top" align="left">
+                Выделить нескольких объектов
+            </td>
+
+            <td valign="top" align="left">
+                Удерживайте клавишу CTRL, щелкните требуемые 3D-объекты.
+            </td>
+
+        </tr>
+
+        <td valign="top" align="left">
+            Масштабировать
+        </td>
+
+        <td valign="top" align="left">
+            Вращайте колесо мыши вперед или назад. На компьютерах Apple используйте модификатор Control.
+        </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Переместить
+            </td>
+
+            <td valign="top" align="left">
+                Перемещайте мышь, удерживая колесо мыши. На компьютерах Apple используйте модификатор Option.
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Вращать
+            </td>
+
+            <td valign="top" align="left">
+                Перемещайте мышь, удерживая левую кнопку.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Установить центр вращения
+            </td>
+            <td valign="top" align="left">
+                На панели
+                <b>3D-вид</b>
+                щелкните 
+                <b>Установить центр вращения</b>
+                <img class="btn inline" src="../../../../components/rococo/img/btn_goto.png">, затем щелкните объект в 3D-окне.
+               
+                <p> Или удерживая клавишу ALT, щелкните объект в 3D-окне.</p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                Настроить вид на видимые объекты
+            </td>
+            <td valign="top" align="left">
+                На панели
+                <b>3D-вид</b> щелкните 
+                <b>Подогнать</b>
+                <img class="btn inline" src="../../../../components/rococo/img/btn_fit.png">.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Настроить вид на выделенные объекты
+            </td>
+            <td valign="top" align="left">
+                Выделите 3D-объекты, затем щелкните
+                <b>Подогнать</b> на панели
+                <b>Выделение</b>.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Настройка вида 3D-модели с различных направлений
+            </td>
+            <td valign="top" align="left">
+                На панели
+                <b>3D-вид</b> щелкните требуемую кнопку 
+                (<img class="btn inline" src="../../../../components/rococo/img/v1.png">&nbsp;Спереди,
+                <img class="btn inline" src="../../../../components/rococo/img/v2.png">&nbsp;Сзади,
+                <img class="btn inline" src="../../../../components/rococo/img/v4.png">&nbsp;Слева,
+                <img class="btn inline" src="../../../../components/rococo/img/v3.png">&nbsp;Справа,
+                <img class="btn inline" src="../../../../components/rococo/img/v5.png">&nbsp;Сверху,
+                <img class="btn inline" src="../../../../components/rococo/img/v6.png">&nbsp;Снизу,
+                <img class="btn inline" src="../../../../components/rococo/img/v7.png">&nbsp;Изометрический).
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Скрыть (показать) группу объектов
+            </td>
+            <td valign="top" align="left">
+                Удерживайте клавишу CTRL, щелкните 3D-объекты; используйте кнопки
+                <b>Скрыть</b> и
+                <b>Показать</b> на панели
+                <b>Выделение</b>.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Выбрать уровень прозрачности объекта
+            </td>
+            <td valign="top" align="left">
+                Выделите 3D-объекты, переместите движок элемента
+                <b>Прозрачность</b> на панели
+                <b>Выделение</b>
+                для достижения требуемого уровня прозрачности.
+            </td>
+        </tr>
+
+    </table>
+
+
+
+
+</body>
+
+</html>

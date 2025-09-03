@@ -1,0 +1,15 @@
+#btn-3d-display-mode {
+    background-image: url(img/btn_3d.png);
+}
+
+.fig-title[data-figure]:before {
+    content: var(--label-figure) " " attr(data-figure) "\00a0";
+}
+
+.fig-title[data-sheet]:after {
+    content: "\00a0(" var(--label-sheet) " " attr(data-sheet) " " var(--label-of) " " attr(data-sheets) ")";
+}
+
+.fig-title.multimedia[data-sheet]:after {
+    content: "\00a0(" var(--label-multimediaObject) " " attr(data-sheet) " " var(--label-of) " " attr(data-sheets) ")";
+}

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ipc>
+<figure>
+<media src="TestMichaelCatalog.wrl" id="1" type="vm/vrml">
+<value name="IllustrationType" type="string"><![CDATA[0]]></value>
+<value name="3DFramePosition" type="string"><![CDATA[Left]]></value>
+<value name="3DFrameSize" type="string"><![CDATA[50]]></value>
+<value name="3DBackgroundColor" type="color"><![CDATA[#FFFFFF]]></value>
+<value name="3DSelectedColor" type="color"><![CDATA[#FFFF00]]></value>
+<value name="TableBackgroundColor" type="color"><![CDATA[#FFFFFF]]></value>
+<value name="TableTextColor" type="color"><![CDATA[#000000]]></value>
+<value name="TableBackgroundColorSel" type="color"><![CDATA[#EEEE00]]></value>
+<value name="TableTextColorSel" type="color"><![CDATA[#000000]]></value>
+<value name="TableBackgroundColorHL" type="color"><![CDATA[#C8E2E2]]></value>
+<value name="TableBackgroundColorHLNotIll" type="color"><![CDATA[#FFE4E1]]></value>
+<value name="TableInactiveTextColor" type="color"><![CDATA[#808080]]></value>
+<value name="TableAdaptiveQty" type="boolean"><![CDATA[No]]></value>
+<value name="2DSelectedColor" type="color"><![CDATA[#FFFF00]]></value>
+<value name="2DSelectedFillOpacity" type="number"><![CDATA[80]]></value>
+<value name="2DHighLightColor" type="color"><![CDATA[#00FF00]]></value>
+<value name="ContextMenuBackgroundColor" type="color"><![CDATA[#FFFFFF]]></value>
+<value name="RemoveSpace" type="boolean"><![CDATA[No]]></value>
+<value name="SimplifyFloats" type="boolean"><![CDATA[No]]></value>
+<value name="CoordinateResolution" type="string"><![CDATA[0]]></value>
+<value name="EncodeRes" type="boolean"><![CDATA[Yes]]></value>
+<value name="TooltipFormat" type="string"><![CDATA[Item: %[ITEM]]]></value>
+<value name="UrlTarget" type="string"><![CDATA[_blank]]></value>
+<value name="DITATopic" type="boolean"><![CDATA[No]]></value>
+<value name="PDFPublish" type="boolean"><![CDATA[No]]></value>
+<value name="ShowThrustLines" type="boolean"><![CDATA[Yes]]></value>
+<value name="PublicPath" type="string"><![CDATA[
+]]></value>
+<value name="UseShoppingCart" type="boolean"><![CDATA[No]]></value>
+<value name="SingleHTMLBundle" type="boolean"><![CDATA[No]]></value>
+<value name="KeepSurfaceEdges" type="boolean"><![CDATA[No]]></value>
+<value name="UseViewerBundle" type="string"><![CDATA[0]]></value>
+<value name="UseMultimediaBundle" type="string"><![CDATA[0]]></value>
+<value name="iOSViewpointTransitionMode" type="string"><![CDATA[0]]></value>
+<value name="ShowAxes" type="boolean"><![CDATA[Yes]]></value>
+<value name="InitialSceneLighting" type="string"><![CDATA[0]]></value>
+<value name="InitialAmbientOcclusion" type="boolean"><![CDATA[No]]></value>
+<value name="InitialAntiAliasing" type="boolean"><![CDATA[Yes]]></value>
+<value name="InitialOutlineHoveredObjects" type="boolean"><![CDATA[No]]></value>
+<value name="InitialSelectionMode" type="string"><![CDATA[0]]></value>
+<value name="InitialNavigationCube" type="boolean"><![CDATA[No]]></value>
+<value name="UpRight" type="boolean"><![CDATA[No]]></value>
+<value name="AllowMeasureTool" type="boolean"><![CDATA[No]]></value>
+<value name="AllowCrossSectionTool" type="boolean"><![CDATA[No]]></value>
+<value name="AllowSelectedObjectsExternal3DView" type="boolean"><![CDATA[No]]></value>
+<value name="UseSVGFilesOnly" type="boolean"><![CDATA[No]]></value>
+<value name="UseCompressedSVG" type="boolean"><![CDATA[No]]></value>
+<value name="DisableHTMLCreation" type="boolean"><![CDATA[No]]></value>
+<value name="Manifest" type="boolean"><![CDATA[No]]></value>
+<value name="RemoveEmptyColumns" type="boolean"><![CDATA[No]]></value>
+<value name="ReferenceSpecID" type="string"><![CDATA[GENERIC_IPC]]></value>
+<value name="PublisherVersion" type="string"><![CDATA[2412.0.0.361 (64-bit)]]></value>
+<value name="ModificationDate" type="string"><![CDATA[08/27/25]]></value>
+<value name="SpecID" type="string"><![CDATA[TESTMICHAEL]]></value>
+<value name="SpecVersion" type="string"><![CDATA[1.0]]></value>
+<value name="SpecLang" type="string"><![CDATA[en]]></value>
+<value name="SpecClass" type="string"><![CDATA[IPC]]></value>
+</media>
+<dplist>
+</dplist>
+<ipc-table>
+<table>
+<thead>
+<row>
+<entry>
+</entry>
+<entry column-id="ITEM" width="4">
+<para><![CDATA[פריט]]></para>
+</entry>
+<entry column-id="DESCR" width="30">
+<para><![CDATA[תיאור]]></para>
+</entry>
+<entry column-id="PARTNUMBER" width="20">
+<para><![CDATA[מספר פריט]]></para>
+</entry>
+<entry column-id="QTY" width="3">
+<para><![CDATA[כמות]]></para>
+</entry>
+<entry column-id="INFO" width="12">
+<para><![CDATA[מידע]]></para>
+</entry>
+<entry column-id="APPLICABILITY" width="10">
+<para><![CDATA[תקף ל]]></para>
+</entry>
+</row>
+</thead>
+<tbody>
+</tbody>
+</table>
+</ipc-table>
+<bgmedia>
+<refmedia ref="1">_4900-9900-51-DESIGN_0</refmedia>
+</bgmedia>
+<views>
+<view id="_83CC2BD915364ADF97939576F7955770" stepid="_83CC2BD915364ADF97939576F7955770" changed="0" revst="U" hidden="0">
+<description>No name</description>
+<viewpoint>
+<refmedia ref="1"><![CDATA[vp_0]]></refmedia>
+</viewpoint>
+<background>
+</background>
+<refmedia ref="1">
+</refmedia>
+</view>
+</views>
+</figure>
+<parts>
+</parts>
+<reftables>
+<reftable name="INDENT" type="integer">
+<value descr=""><![CDATA[1]]></value>
+<value descr="."><![CDATA[2]]></value>
+<value descr=".."><![CDATA[3]]></value>
+<value descr="..."><![CDATA[4]]></value>
+<value descr="...."><![CDATA[5]]></value>
+<value descr="....."><![CDATA[6]]></value>
+<value descr="......"><![CDATA[7]]></value>
+<value descr="......."><![CDATA[8]]></value>
+<value descr="........"><![CDATA[9]]></value>
+</reftable>
+<reftable name="TOPICSTATUS" type="string">
+<value><![CDATA[
+]]></value>
+<value><![CDATA[changed]]></value>
+<value><![CDATA[deleted]]></value>
+<value><![CDATA[new]]></value>
+<value><![CDATA[unchanged]]></value>
+</reftable>
+<reftable name="IllustrationType" type="integer">
+<value descr="2D and 3D"><![CDATA[0]]></value>
+<value descr="2D only"><![CDATA[2]]></value>
+<value descr="3D only"><![CDATA[1]]></value>
+</reftable>
+<reftable name="ApplicabilityList" type="string">
+</reftable>
+<reftable name="IPCPageList" type="string">
+<value descr=""><![CDATA[
+]]></value>
+<value descr="?"><![CDATA[#_83CC2BD915364ADF97939576F7955770]]></value>
+</reftable>
+</reftables>
+</ipc>

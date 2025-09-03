@@ -1,0 +1,409 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Virtual Training Viewer Help</title>
+    <style type="text/css">
+        body {
+            font-family: verdana;
+            font-size: 80%;
+            background-color: white;
+            color: black;
+            margin-top: 12pt;
+            margin-bottom: 10pt;
+            margin-left: 10pt;
+            margin-right: 10pt;
+        }
+
+        p {
+            font-family: verdana;
+            font-size: 100%;
+            color: black;
+            margin-top: 6pt;
+            margin-bottom: 6pt;
+            margin-left: 0pt;
+        }
+
+        li {
+            font-family: verdana;
+            font-size: 100%;
+            margin-left: 0pt;
+        }
+
+        td {
+            font-family: verdana;
+            font-size: 70%;
+            color: black;
+
+            background-color: whitesmoke;
+            margin: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border: solid 1px white;
+            vertical-align: top;
+        }
+
+        th {
+            font-family: verdana;
+            font-size: 70%;
+            color: black;
+            text-align: left;
+
+            background-color: gainsboro;
+            padding: 4px;
+            border: solid 1px white;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            text-align: left;
+            color: darkslategray;
+        }
+
+        h1 {
+            font-size: 150%;
+            margin-top: 20pt;
+            margin-bottom: 0pt;
+
+        }
+
+        h2 {
+            font-size: 120%;
+            margin-left: 9pt;
+            margin-bottom: 0pt;
+            margin-top: 0pt;
+        }
+
+        h3 {
+            font-size: 110%;
+            margin-bottom: 6pt;
+            color: black;
+        }
+
+        ul {
+            margin-top: 0pt;
+            margin-bottom: 6pt;
+            color: black;
+            list-style-type: disc;
+        }
+
+        ol {
+            margin-left: 0px;
+            margin-top: 0pt;
+            margin-bottom: 6pt;
+        }
+		
+        li {
+            font-family: verdana;
+            font-size: 100%;
+            margin-left: 0pt;
+        }		
+
+       
+        table {
+            font-size: medium;
+        }
+		
+        div.note {
+            background-image: url(images/note1.png);
+            background-repeat: no-repeat;
+            background-color: white;
+            margin-top: 12pt;
+            margin-bottom: 0pt;
+            margin-left: 0pt;
+		}
+
+        img.btn {
+            margin: 2px 4px;
+            width: 16px;
+            height: 16px;
+        }
+
+        img.btn.inline {
+            margin: 0 2px 0 4px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="main">
+        <h1>3D training application&nbsp;&ndash; user interface</h1>
+        <p>
+            This 3D training application allows you to study the training
+            procedure. You can use the training application in three different modes:
+            <ul>
+                <li>
+                    <b>Demo mode</b> &ndash; automatic playback of the procedure. You can play desired steps several
+                    times at various
+                    speeds and examine the procedure from different angles.</li>
+                <li>
+                    <b>Study mode</b> &ndash; interactive playback of the procedure. You can execute the procedure with
+                    the help of
+                    various hints.</li>
+                <li>
+                    <b>Exam mode</b> &ndash; testing your knowledge. The procedure should be executed without any hints.
+                </li>
+            </ul>
+        </p>
+
+        <h1>Training environment</h1>
+        <p>
+            The lower pane allows you to select and activate appropriate training mode:
+		</p>			
+		<p>
+            <img src="images/operation_pane.png" width="412" height="58" />
+        </p>
+        <p>
+            In the Demo and Study modes you can control the playback of the procedure by using a VCR-like control panel:
+		</p>			
+		<p>			
+            <img src="images/operation_pane_mode_selected.png" width="412" height="66" />
+        </p>
+
+        <ul>
+            <li>
+                <b>Play step</b> starts (stops) the playback of the procedure. </li>
+            <li>
+                <b>Reset step</b> stops and rewinds the current step to the beginning. </li>
+            <li>
+                <b>Previous step</b> moves the playback to the previous step.</li>
+            <li>
+                <b>Next step</b> moves the playback to the next step. </li>
+            <li>
+                <b>Switch off mode</b> cancels the current mode.</li>
+        </ul>
+
+        <p>
+            <img src="images/playing_options1.png" width="412" height="64" />
+		</p>			
+		
+            <ul>
+                <li>
+                    <b>Location</b> Allows you to move the camera to the appropriate area of 3D model.</li>
+            </ul>
+        
+        <p>
+            The
+            <b>Operation pane</b> represents expected operation or group of operations. You should read instructions and
+            perform
+            actions, such as enter the requested parameter or select the object that takes part in a procedure:
+		</p>			
+		<p>			
+            <img src="images/operation_panel1.png" width="412" height="142" />
+        </p>
+
+        <p>
+            The upper pane helps you to go through the procedure:
+		</p>			
+		<p>			
+            <img src="images/upper_pane1.png" width="412" height="124" />
+		</p>			
+            <ul>
+                <li>
+                    <b>Document</b>. Displays the part of the document that is associated with the currently active
+                    procedure
+                    step. </li>
+                <li>
+                    <b>Instructions</b>. Displays comments associated with the current training step. </li>
+                <li>
+                    <b>Parts</b>. Displays the list of interactive objects in the current training. Allows you to find
+                    objects'
+                    location and display additional meta-information.</li>
+                <li>
+                    <b>Parameters</b>. Displays the list of parameters that are used in the current training. These
+                    parameters are used as conditional jumps in the training scenario. You can be asked to enter such a
+                    parameter.
+                </li>
+            </ul>
+        
+
+        <h1>Training modes</h1>
+
+        <p>
+            <h2>Demo mode</h2>
+            <ul>
+                <li>To enter this mode, select the Demo mode, then click
+                    <b>Activate mode</b>.</li>
+                <li>To start the playback, click 
+                    <b>Play Step</b>. The description of the currently active step is shown on the Document
+                    tabbed page. </li>
+                <li>The procedure will be displayed continuously.</li>
+                <li>To temporarily stop playing, click
+                    <b>Pause</b>. Click
+                    <b>Play</b> to continue the playback. </li>
+                <li>To display the description of the whole procedure, click
+                    <b>Document</b>. </li>
+                <li>You can navigate in the 3D window (see the Navigation in the 3D window section of this document).
+                </li>
+                <li> The Parts tabbed page allows you to highlight the desired part in the 3D window (click locate) and
+                    display
+                    additional information (click meta). </li>
+                <li>To move to the next or previous step of the procedure, click 
+                    <b>Next step</b> or
+                    <b>Previous step</b>. </li>
+                <li>To exit the Demo mode, click
+                    <b>Switch off mode</b>. </li>
+            </ul>
+        </p>
+
+
+
+        <p>
+            <h2>Study mode</h2>
+            <ul>
+                <li>To enter this mode, select the
+                    <b>Study</b> mode, then click
+                    <b>Activate mode</b>.</li>
+                <li>Click
+                    <b>Play step</b> to begin study of the procedure. You should follow the instructions appeared in the
+                    Operation
+                    pane. There are three groups of instructions: </li>
+                <ol>
+                    <li>Locate those parts that are involved in the current procedure step, and then click on them in 3D
+                        window or on the Parts tabbed page.</li>
+                    <li>Choose the correct answer in the choice list. </li>
+                    <li>Specify a value for a parameter. </li>
+                </ol>
+                <li>The
+                    <b>Skip</b> button allows you to move to the next operation in the training scenario. </li>
+                <li>The
+                    <b>Test result</b> visually indicates made mistakes (green&nbsp;&ndash; correct, red&nbsp;&ndash; incorrect).
+					The level of the mistake is specified in the 3D simulation and gradually increases for the current step. 
+					Each new step begins with the zero-mistake level. </li>
+                <li>Complete all steps and click
+                    <b>Switch off mode</b> whenever you ready to exit the Study mode. </li>
+            </ul>
+        </p>
+
+        <p>
+            <h2>Exam mode</h2>
+            <ul>
+                <li>To enter this mode, select the
+                    <b>Exam</b> mode, then click
+                    <b>Activate mode</b>. </li>
+                <li>Click <b>Start</b> to start the test. Here you should execute the actions in the same way as in the Study mode, but the hints are not available any longer. </li>
+                <li>To exit the Exam mode, click <b>Switch off mode</b>.</li>
+            </ul>
+        </p>
+
+        <h1>Navigation in the 3D window</h1>
+        <p>
+            You can navigate in the 3D window by using the mouse or the Navigation bar:
+		</p>			
+		<p>			
+            <img src="images/navigation_bar.png" width="412" height="30" />
+        </p>
+        <p>
+            <b>To Zoom in / Zoom out 3D model:</b>
+            <ul>
+                <li>Use the mouse wheel; </li>
+                <li>Or click 
+                    Zoom&nbsp;<img class="btn inline" src="../../../../components/rococo/img/sbtn_zoom.png"> 
+					on the Navigation bar, position the pointer anywhere in the 3D window, 
+					press the left mouse button, 
+					and then move the mouse while holding down its left button. </li>
+            </ul>
+        </p>
+        <p>
+            <b>To move the camera up/down or left/right:</b>
+            <ul>
+                <li>Position the pointer anywhere in the 3D window, and then move the mouse with the middle button (or
+                    mouse wheel) pressed. </li>
+                <li>Or click Pan&nbsp;<img class="btn inline" src="../../../../components/rococo/img/sbtn_pan.png"> 
+				    on the Navigation bar, 
+					position the pointer over 3D, and move the mouse while holding down its left button.</li>
+            </ul>
+        </p>
+        <p>
+            <b>To make 3D model fully visible in the 3D window:</b>
+            <ul>
+                <li>Click Fit&nbsp; <img class="btn inline" src="../../../../components/rococo/img/btn_fit.png">
+					on the Navigation bar. </li>
+            </ul>
+        </p>
+        <p>
+            <b>To rotate 3D model:</b>
+            <ul>
+                <li>Click Spin&nbsp;<img class="btn inline" src="../../../../components/rococo/img/sbtn_spin.png">  
+					on the Navigation bar, position the pointer over 3D model, and move the mouse while holding
+                    down its left button. </li>
+            </ul>
+        </p>
+        <p>
+            <b>To specify the rotation center in 3D:</b>
+            <ul>
+                <li>Press the ALT key and then click any geometry in 3D window.</li>
+                <li>Or position the pointer over any geometry in 3D window and then click the middle mouse button (or
+                    the mouse
+                    wheel). </li>
+            </ul>
+        </p>
+
+        <p>
+            <b>To go to the next procedure step (animation):</b>
+            <ul>
+                <li>Click Skip current animation&nbsp;<img class="btn inline" src="../../../../components/rococo/img/btn_skip_anim.png">.
+                </li>
+
+            </ul>
+        </p>
+
+        <h1>Settings</h1>
+        <p>
+            <ul>
+                <li>
+                    <b>Speed</b>. Sets the playback speed for the 3D
+                    procedure.
+                </li>
+                <li>
+                    <b>Freeze viewpoint</b>. If selected, the current viewer position is used during the
+                    playback.
+                </li>
+                <li>
+                    <b>Disable alert message</b>. If selected, blocks alert messages output. </li>
+                <li>
+                    <b>Enable extra-highlighting of parts in Demo and Study modes</b>. If selected (default
+                    value), a semi-transparent
+                    blinking sphere appears above the selected in 3D object to attract the trainee attention.
+                </li>
+
+                <li>
+                    <b>Continuous playback in the Demo mode</b>. If selected (default value), allows
+                    uninterrupted playback of the
+                    training procedure. If cleared, the playback stops after each step.</li>
+
+                <li>
+                    <b>Enable direct hints in the Study mode</b>. Shows or hides, in the Operation pane, the
+                    information about
+                    the trainee's actions that should be done. Enabling direct hints allows you to locate the part by
+                    using
+                    the Locate Part button (it has the name of the required part). In addition, when direct hints are
+                    enabled,
+                    the correct answers are displayed in the Choice list.</li>
+				<li>
+                    <b>Show navigation cube</b>. Shows or hides the Navigation Cube in the 3D window.
+					The Navigation Cube has three different types of hotspot areas: Edge, Corner, and Face. When you position the pointer over the edge, corner, or face of the Navigation Cube, the corresponding area is highlighted. With these areas you can switch between standard views and perform rotations.
+					</li>
+                <li>    
+                    <b>Show surface edges</b>. If selected, enables the display of surface boundaries in the 3D window.
+                    </li>					
+                <li>
+                    <b>Anti-aliasing</b>. Activates a technique for minimizing the distortion artifacts in the 3D window.</li>					
+                <li>
+                    <b>Ambient occlusion</b>. Activates ambient occlusion shading and rendering technique in the 3D window.</li> 					
+                <li>
+                    <b>Outline hovered objects</b>. The selection is outlined.
+				</li>					
+            </ul>
+        </p>
+    </div>
+</body>
+
+</html>

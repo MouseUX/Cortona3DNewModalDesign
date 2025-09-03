@@ -1,0 +1,6 @@
+.figure-header {
+    padding: 0 1em;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}

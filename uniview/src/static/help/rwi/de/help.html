@@ -1,0 +1,815 @@
+﻿<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Arbeitsanweisung. Benutzeroberfl&auml;che</title>
+
+    <style type="text/css">
+        body {
+            font-family: verdana;
+            font-size: 80%;
+            background-color: white;
+            color: black;
+            margin-top: 12pt;
+            margin-bottom: 10pt;
+            margin-left: 10pt;
+            margin-right: 10pt;
+        }
+
+        p {
+            font-family: verdana;
+            font-size: 100%;
+            color: black;
+            margin-top: 6pt;
+            margin-bottom: 6pt;
+            margin-left: 0pt;
+        }
+
+        li {
+            font-family: verdana;
+            font-size: 100%;
+            margin-left: 0pt;
+        }
+
+        td {
+            font-family: verdana;
+            font-size: 80%;
+            color: black;
+
+            background-color: whitesmoke;
+            margin: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border: solid 1px white;
+            vertical-align: top;
+        }
+
+        td.key {
+            background-color: gainsboro;
+            font-weight: bold;
+            vertical-align: top;
+        }
+
+        td.wht {
+            background-color: white;
+            margin: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            border: none;
+            vertical-align: top;
+        }
+
+        th {
+            font-family: verdana;
+            font-size: 80%;
+            color: black;
+            text-align: left;
+
+            background-color: gainsboro;
+            padding: 4px;
+            border: solid 1px white;
+        }
+
+        h1 {
+            font-family: verdana;
+            font-size: 130%;
+            font-weight: bold;
+            background-color: white;
+            color: #336699;
+            margin-bottom: 6pt;
+        }
+
+        h2 {
+            font-family: verdana;
+            font-size: 115%;
+            font-weight: bold;
+            background-color: white;
+            color: #336699;
+            margin-bottom: 6pt;
+            margin-top: 24pt;
+        }
+
+        h3 {
+            font-family: verdana;
+            font-size: 100%;
+            font-weight: bold;
+            background-color: white;
+            color: black;
+            margin-bottom: 3pt;
+        }
+
+        hr {
+            color: #336699;
+            height: 1px;
+        }
+
+        ul {
+            margin-top: 0pt;
+            margin-bottom: 6pt;
+            color: black;
+            list-style-type: disc;
+        }
+
+        a {
+            color: #1080FF;
+        }
+
+        a:visited {
+            color: saddlebrown;
+        }
+
+        a:hover {
+            color: darkorange;
+        }
+
+        .command {
+            padding: 4px;
+            color: #336699;
+            background-color: whitesmoke;
+            font-family: courier;
+        }
+
+        .hdbar {
+            margin-top: 32px;
+            margin-bottom: 0px;
+            width: 100%;
+            font-weight: bold;
+            background-color: #6699CC;
+            color: white;
+            padding: 2px;
+            padding-left: 4px;
+        }
+
+        div.note {
+            background-image: url(images/note1.png);
+            background-repeat: no-repeat;
+            background-color: white;
+            margin-top: 12pt;
+            margin-bottom: 0pt;
+            margin-left: 0pt;
+        }
+
+        div.table_note {
+            background-image: url(images/note2.png);
+            background-repeat: no-repeat;
+            background-color: #F5F5F5;
+            margin-top: 6pt;
+            margin-bottom: 0pt;
+            margin-left: 0pt;
+        }
+
+        div.fig_note {
+            font-size: 90%;
+            margin-top: 6pt;
+            margin-bottom: 6pt;
+            margin-left: 12pt;
+        }
+        
+        table {
+            font-size: medium;
+        }
+
+        img.btn {
+            margin: 2px 4px;
+            width: 16px;
+            height: 16px;
+        }
+
+        img.btn.inline {
+            margin: 0 2px 0 4px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Arbeitsanweisungen&nbsp;&ndash; Benutzeroberfl&auml;che</h1>
+    <hr noshade>
+
+    <p>
+        Das interaktive Dokument kann in zwei unterschiedlichen Modi verwendet werden:
+
+        <h3>Vorschaumodus</h3>
+        <ul>
+            <li>Der gesamte Vorgang wird abgespielt.</li>
+            <li>Der Benutzer kann die Wiedergabe des Vorgangs steuern.</li>
+            <li>Der Befehl <i>Abmelden</i> ist nicht verf&uuml;gbar, da er nicht ben&ouml;tigt wird.</li>
+        </ul>
+
+        <h3>Auftragsmodus</h3>
+        <ul>
+            <li>Die aktuelle Aufgabe wird abgespielt.</li>
+            <li>Der Benutzer kann die Wiedergabe der aktuellen Aufgabe steuern.</li>
+            <li>Der Benutzer muss auf die Schaltfl&auml;che <i>Abmelden</i> klicken, um zur n&auml;chsten Aufgabe zu springen.</li>
+        </ul>
+
+    </p>
+
+    <p>
+        Die Benutzeroberfl&auml;che des interaktiven Dokuments besteht aus zwei Arbeitsbereichen: dem Datenfenster und dem 3D-/2D-Fenster. Jeder Arbeitsbereich verf&uuml;gt &uuml;ber eigene Bedienelemente.</p>
+    <p>
+        Klicken Sie f&uuml;r Hilfe auf die Schaltfl&auml;che &quot;Hilfe&quot; in der unteren rechten Ecke des interaktiven Dokuments.
+    </p>
+
+    <table width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+            <td class="wht" width="130"><img src="images/Layout1.png" width="921" height="363" border="0"></td>
+        </tr>
+    </table>
+
+    <div class="hdbar">Datenfenster</div>
+    <p>Das Datenfenster enth&auml;lt die Titelleiste und die folgenden Registerkarten: Voraussetzungen, St&uuml;ckliste, Ressourcen, Anweisungen und Dokument.</p>
+
+    <!-- Title Area -->
+    <h3>Titelleiste</h3>
+    <p>Im Bereich &quot;Titel&quot; werden allgemeine Informationen zu den Arbeitsanweisungen angezeigt. Z. B. Auftragscode, Arbeitstyp, Erwartete Zeit.
+    </p>
+
+    <!-- Prerequisite Tab -->
+    <h3>Registerkarte &quot;Voraussetzungen&quot;</h3>
+    <p>Auf der Registerkarte &quot;Voraussetzungen&quot; werden die Bedingungen beschrieben, die erf&uuml;llt werden m&uuml;ssen, bevor der technische Vorgang beginnen kann. Die Registerkarte ist aktiv, wenn das interaktive Dokument zum ersten Mal ge&ouml;ffnet wird.
+    </p>
+
+    <!-- BOM Tab -->
+    <h3>Registerkarte &quot;St&uuml;ckliste&quot;</h3>
+    <p>Auf der Registerkarte &quot;St&uuml;ckliste&quot; wird eine eingedr&uuml;ckte Teileliste angezeigt. Jeder St&uuml;cklisteneintrag bietet die folgenden Informationen &uuml;ber ein Teil: Teilenummer, Beschreibung, Menge und Alternative Teilenummer.</p>
+
+    <p>Wenn der Benutzer auf den St&uuml;cklistendatensatz klickt, passt er die entsprechenden Elemente im 3D-Fenster ein und hebt sie hervor.</p>
+    <p>Wenn Sie den Zeiger &uuml;ber einem St&uuml;cklistendatensatz platzieren, werden der Datensatz und die zugeh&ouml;rigen Elemente im 3D-Fenster hervorgehoben.</p>
+    <p>Durch Klicken auf das Plus-Zeichen kann der Benutzer die Hierarchie einblenden.</p>
+
+
+    <!-- Resources Tab -->
+    <h3>Registerkarte &quot;Ressourcen&quot;</h3>
+    <p>Die Registerkarte &quot;Ressourcen&quot; beschreibt die f&uuml;r die Durchf&uuml;hrung des technischen Vorgangs erforderlichen Ressourcen.
+    </p>
+
+    <!-- Instructions Tab -->
+    <h3>Registerkarte &quot;Anweisungen&quot;</h3>
+    <p>Die Registerkarte &quot;Anweisungen&quot; umfasst die folgenden Abschnitte: Aktuelle Aufgabe, Erforderliche Teile, Erforderliche Ressourcen. Der Abschnitt <i>Aktuelle Aufgabe</i> zeigt einen Text f&uuml;r die aktuelle Aufgabe an.</p>
+    <p>
+        Der Text kann Hyperlinks zu 3D-Elementen und 2D-Bildern enthalten. Text, der eine Verkn&uuml;pfung zu einem 3D-Element enth&auml;lt, ist mit einer gestrichelten Linie unterstrichen. Der Benutzer klickt auf den unterstrichenen Text. Damit w&auml;hlt er das entsprechende Element aus und passt es in das 3D-Fenster ein.<br>
+        Text, der eine Verkn&uuml;pfung zu einem 2D-Element enth&auml;lt, ist mit einer gepunkteten Linie unterstrichen (z.&nbsp;B. <img src="images/Ex_figure.png" width="38" height="19">). Der Benutzer klickt auf den unterstrichenen Text und &ouml;ffnet das entsprechende Bild im 2D-Fenster.</p>
+    <p>
+        Der Abschnitt <i>Erforderliche Teile</i> zeigt die St&uuml;cklistendaten f&uuml;r die Teile an, die Verkn&uuml;pfungen zu den entsprechenden 3D-Elementen enthalten.
+    </p>
+    <p>
+        Der Abschnitt <i>Erforderliche Ressourcen</i> zeigt die Ressourcen an, die f&uuml;r die aktuelle Aufgabe ben&ouml;tigt werden.
+    </p>
+
+    <!-- Document Tab -->
+    <h3>Registerkarte &quot;Dokument&quot;</h3>
+    <p>Die Registerkarte &quot;Dokument&quot; zeigt den kompletten Text der Arbeitsanweisungen an.
+        <p>Im Auftragsmodus kann der Benutzer auf die Schaltfl&auml;che <i>Abmelden</i> dr&uuml;cken, um zur n&auml;chsten Aufgabe der Anweisung zu gelangen. Die vorherige Aufgabe zeigt die Zeit und das Datum an, wann die Schaltfl&auml;che <i>Abmelden</i> f&uuml;r diese Aufgabe gedr&uuml;ckt wurde (z.&nbsp;B. <i>Abmeldung: Mittwoch, 21. Juli 2010 12:47:10 PM</i>) Die Anzeige von Zeit und Datum ist nur in der aktuellen SItzung m&ouml;glich, da diese Daten nirgends gespeichert werden.
+        </p>
+
+        <p>
+            Das Meldungsfenster <i>Inspektion erforderlich</i> kann bei der Wiedergabe des Vorgangs angezeigt werden. Die entsprechende Aufgabe zeigt Urzeit und Datum an, wann die Schaltfl&auml;che <i>Schlie&szlig;en</i> im Meldungsfenster <i>Inspektion erforderlich</i> gedr&uuml;ckt wird (z.&nbsp;B. <i>Gepr&uuml;ft: Mittwoch, 21. Juli 2010 12:48:57 PM</i>). Die Anzeige von Zeit und Datum ist nur in der aktuellen Sitzung m&ouml;glich.
+        </p>
+
+        <p>
+            Wenn Sie im Vorschaumodus auf die erforderliche Aufgabe des Vorgangs klicken, wird die Aufgabe auf der Registerkarte &quot;Dokument&quot; hervorgehoben und die Wiedergabe des Vorgangs wird aktiviert. Im Auftragsmodus steht nur die aktuelle Aufgabe zur Wiedergabe zur Verf&uuml;gung.</p>
+        <p>
+            Der Dokumenttext kann Hyperlinks zu 3D-Elementen und 2D-Bildern enthalten (siehe Registerkarte &quot;Anweisungen&quot;).</p>
+    </p>
+
+    <!--3D Window   -->
+
+    <div class="hdbar">3D-Fenster</div>
+    <p>
+        Das 3D-Fenster bietet eine 3D-Darstellung des Vorgangs, der in der Registerkarte &quot;Dokument&quot; beschrieben ist. Im 3D-Fenster kann der Benutzer den Vorgang mithilfe der Wiedergabeleiste wiedergeben und mit den Maustasten navigieren. Mit der Positionierung (z. B. Achsenstativ) in der oberen rechten Ecke des 3D-Fensters k&ouml;nnen Sie die r&auml;umliche Position der Einheit oder des Teils bestimmen.
+    </p>
+
+    <!-- 3D Playback -->
+    <h3>Wiedergabeleiste</h3>
+    <p>
+        Schaltfl&auml;chen zum Steuern der Vorgangswiedergabe im 3D-Fenster.
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Befehl
+            </th>
+            <th valign="top" align="left">
+                Zweck
+            </th>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Abspielen
+            </td>
+
+            <td valign="top" align="left">
+                Startet die Wiedergabe des Vorgangs, wenn er angehalten oder pausiert ist.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Pausieren
+            </td>
+            <td valign="top" align="left">
+                Stoppt die Wiedergabe am aktuellen Schritt.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Anhalten
+            </td>
+            <td valign="top" align="left">
+                Stoppt die Wiedergabe und spult den aktuellen Schritt zum Anfang zur&uuml;ck.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Abmelden
+            </td>
+
+            <td valign="top" align="left">
+                Verf&uuml;gbar im Auftragsmodus.<br>
+                Aktiviert die n&auml;chste Aufgabe. Die Aufgabe wird in der Registerkarte &quot;Dokument&quot; hervorgehoben und der entsprechende Moment des Vorgangs wird im 3D-Fenster wiedergegeben. Die vorherige Aufgabe in der Registerkarte &quot;Dokument&quot; zeigt die Zeit und das Datum an, wann die Schaltfl&auml;che <i>Abmelden</i> f&uuml;r diese Aufgabe gedr&uuml;ckt wurde.
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                <p>Einstellungen</p>
+            </td>
+            <td valign="top" align="left">
+                <p>Blendet die Einstellungen ein/aus.</p>
+                <p>
+                    <b>Geschwindigkeit</b>. Legt die Wiedergabegeschwindigkeit fest.</p>
+                <p>
+                    <b>Ansichtspunkt einfrieren</b>. Wenn diese Option ausgew&auml;hlt ist, wird die Kamera in der aktuellen Ansicht gesperrt, wodurch die Bewegung der Kamera w&auml;hrend der Wiedergabe des Vorgangs verhindert wird.</p>                                    
+                <p>
+                    <b>Warnmeldungen deaktivieren</b>. Ist diese Option ausgew&auml;hlt, werden Warnmeldungen w&auml;hrend der Wiedergabe des Vorgangs unterdr&uuml;ckt.</p>
+                <p>
+                    <b>PMI</b>. Ist diese Option ausgew&auml;hlt, werden die PMI-Daten angezeigt. PMI (Product Manufacturing Information) stellt nicht-geometrische Attribute in computergest&uuml;tzten 3D-Design dar, die f&uuml;r die Herstellung von Produktkomponenten oder Untersystemen erforderlich sind. </p>
+				<p>
+                    <b>Szenenbeleuchtung</b>. Definiert die Anzahl der Lichtquellen und ihrer Position, um das Modell im 3D-Fenster zu beleuchten. Die relativen Positionen der Lichtquellen werden rechts von der Liste angezeigt. Alle Lichtquellen bewegen sich zusammen mit dem Betrachter.
+					</p>					
+				<p>
+                    <b>Navigationsw&uuml;rfel anzeigen</b>. Blendet den Navigationsw&uuml;rfel im 3D-Fenster ein oder aus. Der Navigations-W&uuml;rfel verf&uuml;gt &uuml;ber drei verschiedene Typen von Hotspot-Bereichen: Kante, Ecke und Fl&auml;che. Wenn Sie den Mauszeiger auf die Kante, Ecke oder Fl&auml;che des Navigations-W&uuml;rfels positionieren, wird der entsprechende Bereich hervorgehoben. Mit diesen Bereichen k&ouml;nnen Sie zwischen Standardansichten umschalten und Drehungen vornehmen.
+					</p>
+                <p>
+                    <b>Oberfl&auml;chenkanten anzeigen</b>. Ist diese Option ausgew&auml;hlt, wird die Anzeige der Fl&auml;chengrenzen im 3D-Fenster aktiviert.</p>					
+                <p>
+                    <b>Anti-Aliasing</b>. Aktiviert eine Technik zur Minimierung der Verwindungsartefakte im 3D-Fenster.</p>						
+                <p>
+                    <b>Umgebungsverdeckung</b>. Aktiviert die Schattierungs- und Darstellungsmethode f&uuml;r die Umgebungsverdeckung im 3D-Fenster.</p>					
+
+                <p>
+                    <b>Auswahlmodus</b>. Gibt die Objektdarstellung zur Auswahl im 3D-Fenster an.</p>			
+				<p> 
+					<i>Mit Farbe hervorheben</i> &ndash; die Auswahl wird hervorgehoben.</p>			
+                <p>
+					<i>Ausgew&auml;hlte Objekte durchleuchten</i> &ndash; Objekte erscheinen grau und durchsichtig, mit Ausnahme der Auswahl.</p>			
+                <p>
+					<i>Transluzente Schale</i> &ndash; die Au&szlig;enschale des gesamten Modells erscheint durchsichtig, nicht ausgew&auml;hlte interne Objekte sind ausgeblendet.  
+				</p>					
+                <p>
+                    <b>Umriss f&uuml;r schwebende Objekte</b>. Die Auswahl wird umrissen.
+				</p>
+
+
+
+            </td>
+        </tr>
+
+    </table>
+
+    <!-- 3D Navigation -->
+    <h3>Wiedergabezeitleiste</h3>
+    <p>
+        Zeigt den Fortschritt der Wiedergabe an. Durch Klicken auf die Leiste k&ouml;nnen Sie den gew&uuml;nschten Moment des Vorgangs ausw&auml;hlen.
+    </p>
+
+
+    <!-- Selection Bar -->
+    <h3>Auswahlleiste</h3>
+
+    <p>
+        Schaltfl&auml;chen zum Einpassen, Anzeigen, Ausblenden und Durchsichtigmachen von Objekten, die im 3D-Fenster ausgew&auml;hlt sind.
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Benutzerschnittstelle
+            </th>
+            <th valign="top" align="left">
+                Schaltfl&auml;che
+            </th>
+            <th valign="top" align="left">
+                Zweck
+            </th>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                Ausgew&auml;hlte Objekte in separatem Fenster anzeigen
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_selection_external_view.png">
+            </td>			
+            <td valign="top" align="left">
+                Wenn diese Option aktiviert ist, wird die Auswahl im sekund&auml;ren 3D-Fenster angezeigt.
+            </td>
+        </tr>		
+
+        <tr>
+            <td valign="top" align="left">
+                Transparenz ignorieren
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_ignore_tr.png">
+            </td>			
+            <td valign="top" align="left">
+                Ist diese Option aktiviert, k&ouml;nnen Sie durch die transparenten Elemente im 3D-Fenster klicken, da die transparenten Elemente f&uuml;r den Klick des Benutzers unempfindlich werden.
+            </td>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                Alle wiederherstellen
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_show_all.png">
+            </td>			
+            <td valign="top" align="left">
+                Zeigt alle ausgeblendeten und halbtransparenten Objekte an.
+            </td>
+        </tr>			
+
+        <tr>
+            <td valign="top" align="left">
+                Einpassen
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_selection_fit.png">
+            </td>			
+            <td valign="top" align="left">
+                Passt den Begrenzungsrahmen der ausgew&auml;hlten Elemente in das 3D-Fenster ein.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Anzeigen
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_selection_show.png">
+            </td>			
+            <td valign="top" align="left">
+                Macht die ausgew&auml;hlten Elemente sichtbar, die zuvor im 3D-Fenster ausgeblendet waren.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Ausblenden
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_selection_hide.png">
+            </td>				
+            <td valign="top" align="left">
+                Blendet die ausgew&auml;hlten Elemente im 3D-Fenster aus.
+            </td>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                Keine ausw&auml;hlen
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_select_none.png">
+            </td>				
+            <td valign="top" align="left">
+                Hebt die Auswahl aller Elemente auf.
+            </td>
+        </tr>			
+
+        <tr>
+            <td valign="top" align="left">
+                Transparenz
+            </td>
+            <td valign="top" align="center">
+                &nbsp;
+            </td>			
+            <td valign="top" align="left">
+                Erm&ouml;glicht das Festlegen des Transparenzwerts f&uuml;r die ausgew&auml;hlten Elemente. Der Befehl &bdquo;Transparenz&ldquo; ist verf&uuml;gbar, wenn ein oder mehrere Elemente im 3D-Fenster ausgew&auml;hlt sind.
+            </td>
+        </tr>
+    </table>
+	
+    <!-- Secondary 3D -->
+    <h3>Sekund&auml;res 3D-Fenster</h3>
+
+    <p>
+        Die ausgew&auml;hlten Objekte werden im sekund&auml;ren 3D-Fenster angezeigt. 
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Benutzerschnittstelle
+            </th>
+            <th valign="top" align="left">
+                Schaltfl&auml;che
+            </th>
+            <th valign="top" align="left">
+                Zweck
+            </th>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                Drehmittelpunkt
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_goto.png">
+            </td>
+            <td valign="top" align="left">
+                Erm&ouml;glicht es Ihnen, das Rotationszentrum f&uuml;r das 3D-Modell festzulegen.
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Rotationszentrum anzeigen
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_center.png">
+            </td>
+            <td valign="top" align="left">
+                Erm&ouml;glicht das Ausblenden oder Anzeigen des Rotationszentrums.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Alle einpassen
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_fit.png">
+            </td>
+            <td valign="top" align="left">
+                Macht das gesamte 3D-Modell im 3D-Fenster vollst&auml;ndig sichtbar.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Horizont ausrichten
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_align.png">
+            </td>
+            <td valign="top" align="left">
+                Positioniert die horizontale (nicht jedoch die l&auml;ngs verlaufende) Achse der Kamera parallel zur horizontalen Ebene im Koordinatensystem.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Messen
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_measure.png">
+            </td>			
+            <td valign="top" align="left">
+                &Ouml;ffnet das Werkzeug zum Messen eines Abstands. Klicken Sie im 3D-Fenster einfach einmal auf einen Punkt und klicken Sie dann erneut auf den zweiten Punkt. Der Abstand zwischen den beiden roten Punkten sollte dann angezeigt werden. Um den Abstand zwischen auf die vertikale oder horizontale Ebene projizierte Punkten zu ermitteln, w&auml;hlen Sie den Namen der Projektionsebene aus der Liste aus. Um die L&auml;ngeneinheit zu &auml;ndern, w&auml;hlen Sie <b>Einheiten</b> aus. Um die L&auml;nge der Bezugslinien festzulegen, ziehen Sie den Schieberegler <b>H</b>. W&auml;hlen Sie <b>Sichtbar lassen</b> aus, damit die Bema&szlig;ungslinie nach dem Schlie&szlig;en des Messwerkzeugs sichtbar bleibt. Um neue Punkte festzulegen, klicken Sie auf <b>L&ouml;schen</b> oder dr&uuml;cken Sie die Esc-Taste und geben Sie dann Punkte im 3D-Fenster an.
+				<p>
+				<b>WARNING</b>				
+				</p>
+				<p>
+				Verwenden Sie Messergebnisse nicht direkt im Workflow, da die 3D-Abbildung vom tats&auml;chlichen Produkt abweichen kann. Die f&uuml;r die Herstellung oder Wartung erforderlichen Abmessungen entnehmen Sie bitte der entsprechenden technischen Dokumentation.				
+				</p>					
+            </td>
+        </tr>			
+		
+        <tr>
+            <td valign="top" align="left">
+                Schnittebene
+            </td>
+            <td valign="top" align="center">
+                <img class="btn inline" src="../../../../components/rococo/img/btn_section_plane.png">
+            </td>			
+            <td valign="top" align="left">
+				Zeigt das Modell so an, als w&uuml;rde es von einer Ebene geschnitten. Verwenden Sie die Steuerelemente, um die Schnittebene festzulegen (Links, Oben, Vorne) und zu drehen (X und Y). Um die Schnittebene zu verschieben, ziehen Sie den Schieberegler <b>D</b>. Verwenden Sie <b>Umkehren</b>, um den Schnitt zu spiegeln. W&auml;hlen Sie <b>Pr&auml;zisionsmodus</b> aus, um die Genauigkeit der Schieberegler zu verbessern. W&auml;hlen Sie <b>Sichtbar lassen</b> aus, damit der Schnitt nach Schlie&szlig;en des Werkzeugs sichtbar bleibt. Um die Schnittebene in die Mitte der Auswahl zu verschieben, klicken Sie auf <b>Zur&uuml;cksetzen</b>.				
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Vorne
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v1.png">
+            </td>
+            <td valign="top" align="left">
+                Zeigt das Modell von vorne.
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Hinten
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v2.png">
+            </td>
+            <td valign="top" align="left">
+                Zeigt das Modell von hinten.
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Links
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v4.png">
+            </td>
+            <td valign="top" align="left">
+                Zeigt das Modell von der linken Seite.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Rechts
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v3.png">
+            </td>
+            <td valign="top" align="left">
+                Zeigt das Modell von der rechten Seite.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Oben
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v5.png">
+            </td>
+            <td valign="top" align="left">
+                Zeigt das Modell von oben.
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Unten
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v6.png">
+            </td>
+            <td valign="top" align="left">
+                Zeigt das Modell von unten.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Isometrisch
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v7.png">
+            </td>
+            <td valign="top" align="left">
+                Zeigt das Modell in einer isometrischen Ansicht.
+            </td>
+        </tr>		
+
+    </table>
+
+    <!-- 3D Context Commands-->
+    <h3>Kontextabh&auml;ngiges Men&uuml; im 3D-Fenster</h3>
+    <p>Klicken Sie irgendwo im 3D-Fenster, um auf das Kontextmen&uuml; zuzugreifen.
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Befehl
+            </th>
+            <th valign="top" align="left">
+                Zweck
+            </th>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                Zur&uuml;cksetzen
+            </td>
+            <td valign="top" align="left">
+                Setzt die Schrittansicht zur&uuml;ck.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                Alle einpassen
+            </td>
+            <td valign="top" align="left">
+                Macht die Elemente im 3D-Fenster komplett sichtbar.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                Info
+            </td>
+            <td valign="top" align="left">
+                Zeigt die Versionen des interaktiven Dokuments, des 3D-Viewers und des 2D-Viewers an.
+            </td>
+        </tr>
+
+    </table>
+
+
+    <!--2D Window   -->
+    <div class="hdbar">2D-Fenster</div>
+    <p>
+        Das 2D-Fenster zeigt Vektor- und Rasterbilder an, die mit dem Vorgang verkn&uuml;pft sind, der im Datenfenster beschrieben ist.
+        <p>
+            Das 2D-Fenster ersetzt das 3D-Fenster, wenn der Benutzer im Datenfenster auf einen Hyperlink zu einem 2D-Bild klickt (Registerkarte &quot;Anweisungen&quot; oder &quot;Dokument&quot;).
+        </p>
+        Klicken Sie mit der rechten Maustaste in das 2D-Fenster, um auf die verf&uuml;gbaren kontextsensitiven Befehle zuzugreifen. Die Liste der Befehle h&auml;ngt davon ab, welcher 2D-Viewer im 2D-Fenster verwendet wird.
+    </p>
+
+    <h3>Navigation im 2D-Fenster</h3>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Vorgang
+            </th>
+            <th valign="top" align="left">
+                Benutzeraktion
+            </th>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Verschieben
+            </td>
+            <td valign="top" align="left">
+                Bewegen Sie die Maus bei gedr&uuml;ckter linker Maustaste.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Zoomen
+            </td>
+            <td valign="top" align="left">
+                Drehen Sie das Mausrad vorw&auml;rts oder r&uuml;ckw&auml;rts.
+            </td>
+        </tr>
+    </table>
+
+    <div class="hdbar">Schaltfl&auml;chen im 3D-/2D-Fenster</div>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <td valign="top" align="left">
+                Hilfe
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_help.png">
+            </td>
+            <td valign="top" align="left">
+                Bietet ein Hilfesystem f&uuml;r die Benutzeroberfl&auml;che.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                3D
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_3d.png">
+            </td>
+            <td valign="top" align="left">
+                &Ouml;ffnet das 3D-Fenster.
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

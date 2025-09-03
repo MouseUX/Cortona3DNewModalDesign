@@ -1,0 +1,87 @@
+.skin-container.doc-container {
+    display: block;
+    overflow: auto;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.doc-container .tiramisu-procedure {
+    padding: 0 0.5em 0 1.5em;
+}
+
+.doc-container .tiramisu-proc-title {
+    border-radius: 0;
+}
+
+.doc-container .tiramisu-proc-item {
+    width: auto;
+    padding: 2px 4px;
+    margin: 4px 0 0 0;
+}
+
+.doc-container .tiramisu-proc-item-empty:before {
+    content: " ";
+    display: inline-block;
+}
+
+.doc-container .tiramisu-proc-item.tiramisu-proc-item-empty:before {
+    display: none;
+}
+
+.doc-container .tiramisu-proc-item-content {
+    margin-top: 0;
+}
+.doc-container .tiramisu-proc-item p {
+    margin: 0.5em 0;
+}
+
+.doc-container .play-context {
+    position: relative;
+}
+
+.doc-container .play-context:after {
+    position: absolute;
+    content: '';
+    left: -1em;
+    top: 0;
+    width: .7em;
+    height: 100%;
+    background-color: #add8e6;
+}
+
+.doc-container li.play-context:after {
+    left: -3em;
+}
+
+.doc-container .active {
+    background-color: #ee8;
+}
+
+.doc-container .link3d[data-key]:before {
+    content: "3D";
+    font-size: .8em;
+    padding: .2em;
+    display: inline-block;
+    background-color: #DD0000;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+    margin-right: 0.5em;
+}
+
+.doc-container .link3d[data-key]:hover:before {
+    background-color: #FF0000;
+    text-decoration: underline;
+}
+
+.doc-container .hidden {
+    display: none;
+}
+
+.doc-container .filterHide {
+    display: none !important;
+}
+
+.link3d .link3d {
+    display: none;
+}

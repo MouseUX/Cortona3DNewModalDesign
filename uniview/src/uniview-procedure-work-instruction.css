@@ -1,0 +1,24 @@
+.skin-holder {
+    color: inherit;
+    background-color: inherit;
+}
+
+.skin-tree-item [data-id].content.disabled,
+.skin-tree-item [data-id].content.disabled * {
+    cursor: not-allowed;
+    color: #888;
+}
+
+.main .title {
+    font-family: inherit;
+    font-size: 1em;
+}
+
+.main .center {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 1.2em;
+    color: darkgrey;
+}

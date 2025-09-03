@@ -1,0 +1,36 @@
+.buttons-group button {
+    margin-left: .5em;
+}
+
+.exam-results {
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.exam-results>.skin-container {
+    margin-top: .5em;
+    font-weight: normal;
+    align-items: flex-end;
+}
+
+.exam-results>.skin-container>*:first-child {
+    flex: 0 0 6em;
+    align-self: flex-start;
+}
+
+.exam-results .status {
+    color: darkred;
+}
+
+.exam-results .status.status-passed {
+    color: darkgreen;
+}
+
+.step-description {
+    color: #006699;
+}
+.step-comment {
+    margin: .5em 0 0 2em;
+    color: #006400;
+    font-size: 0.9em;
+}

@@ -1,0 +1,10 @@
+.skin-rwi-header {
+    line-height: 1.5em;
+    padding: .5em;
+    margin-bottom: .5em;
+}
+
+label .skin-text {
+    font-weight: normal;
+    word-break: break-word;
+}

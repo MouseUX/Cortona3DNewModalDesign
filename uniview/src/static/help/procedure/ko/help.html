@@ -1,0 +1,698 @@
+﻿<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>절차: 사용자 인터페이스</title>
+
+    <style type="text/css">
+        body {
+            font-family: verdana;
+            font-size: 80%;
+            background-color: white;
+            color: black;
+            margin-top: 12pt;
+            margin-bottom: 10pt;
+            margin-left: 10pt;
+            margin-right: 10pt;
+        }
+
+        p {
+            font-family: verdana;
+            font-size: 100%;
+            color: black;
+            margin-top: 6pt;
+            margin-bottom: 6pt;
+            margin-left: 0pt;
+        }
+
+        li {
+            font-family: verdana;
+            font-size: 100%;
+            margin-left: 0pt;
+        }
+
+        td {
+            font-family: verdana;
+            font-size: 80%;
+            color: black;
+
+            background-color: whitesmoke;
+            margin: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border: solid 1px white;
+            vertical-align: top;
+        }
+
+        td.key {
+            background-color: gainsboro;
+            font-weight: bold;
+            vertical-align: top;
+        }
+
+        td.wht {
+            background-color: white;
+            margin: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            border: none;
+            vertical-align: top;
+        }
+
+        th {
+            font-family: verdana;
+            font-size: 80%;
+            color: black;
+            text-align: left;
+
+            background-color: gainsboro;
+            padding: 4px;
+            border: solid 1px white;
+        }
+
+        h1 {
+            font-family: verdana;
+            font-size: 130%;
+            font-weight: bold;
+            background-color: white;
+            color: #336699;
+            margin-bottom: 6pt;
+        }
+
+        h2 {
+            font-family: verdana;
+            font-size: 115%;
+            font-weight: bold;
+            background-color: white;
+            color: #336699;
+            margin-bottom: 6pt;
+            margin-top: 24pt;
+        }
+
+        h3 {
+            font-family: verdana;
+            font-size: 100%;
+            font-weight: bold;
+            background-color: white;
+            color: black;
+            margin-bottom: 3pt;
+        }
+
+        hr {
+            color: #336699;
+            height: 1px;
+        }
+
+        ul {
+            margin-top: 0pt;
+            margin-bottom: 6pt;
+            color: black;
+            list-style-type: disc;
+        }
+
+        a {
+            color: #1080FF;
+        }
+
+        a:visited {
+            color: saddlebrown;
+        }
+
+        a:hover {
+            color: darkorange;
+        }
+
+        .command {
+            padding: 4px;
+            color: #336699;
+            background-color: whitesmoke;
+            font-family: courier;
+        }
+
+        .hdbar {
+            margin-top: 32px;
+            margin-bottom: 0px;
+            width: 100%;
+            font-weight: bold;
+            background-color: #6699CC;
+            color: white;
+            padding: 2px;
+            padding-left: 4px;
+        }
+
+        div.note {
+            background-image: url(images/note1.png);
+            background-repeat: no-repeat;
+            background-color: white;
+            margin-top: 12pt;
+            margin-bottom: 0pt;
+            margin-left: 0pt;
+        }
+
+        div.table_note {
+            background-image: url(images/note2.png);
+            background-repeat: no-repeat;
+            background-color: #F5F5F5;
+            margin-top: 6pt;
+            margin-bottom: 0pt;
+            margin-left: 0pt;
+        }
+
+        div.fig_note {
+            font-size: 90%;
+            margin-top: 6pt;
+            margin-bottom: 6pt;
+            margin-left: 12pt;
+        }
+        
+        table {
+            font-size: medium;
+        }
+
+        img.btn {
+            margin: 2px 4px;
+            width: 16px;
+            height: 16px;
+        }
+
+        img.btn.inline {
+            margin: 0 2px 0 4px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>절차&nbsp;- 사용자 인터페이스</h1>
+
+    <hr noshade>
+
+    <p>
+        사용자 인터페이스는 문서 및 3D/2D의 두 작업 영역으로 구성됩니다. 각 작업 영역에는 아래에 설명된 자체 제어 요소가 있습니다. 사용자 인터페이스의 모양은 이 대화형 절차를 생성하는 데 사용된 정보 표준에 따라 다릅니다.
+    </p>
+
+    <table width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+            <td class="wht" width="130">
+                <img src="images/Layout2.png" width="940" height="540" border="0">
+            </td>
+        </tr>
+    </table>
+
+    <!-- Document Window-->
+    <div class="hdbar">문서 윈도우</div>
+
+    <p>
+	문서 윈도우에는 지정된 정보 표준에 따라 생성된 문서가 표시됩니다. 문서는 직원이 타스크를 수행할 수 있는 단계별 절차를 제공합니다. 절차 단계에는 일부 대화식 요소가 포함될 수 있습니다. 하이퍼링크를 클릭하여 3D 윈도우에서 현재 단계를 보거나 2D 윈도우에서 2D 이미지를 볼 수 있습니다.
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                버튼
+            </th>
+
+            <th valign="top" align="left">
+                설명
+            </th>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                필터
+            </td>
+
+            <td valign="top" align="left">
+                DITA 문서를 기반으로 절차에 대한 조건부 처리 속성으로 필터링합니다. S1000D 데이터 모듈을 기반으로 절차의 적용 가능성을 기준으로 필터링합니다.
+            </td>
+        </tr>
+    </table>
+
+
+    <div class="hdbar">3D 윈도우</div>
+
+    <p>
+        3D 윈도우는 문서 윈도우에 설명된 절차의 3D 표현을 제공합니다. 3D 윈도우에서 재생 바의 버튼을 사용하여 절차를 재생하고, 마우스를 사용하여 탐색할 수 있습니다. 3D 윈도우의 오른쪽 상단 모서리에 있는 로케이터(예: 축 삼각대)를 사용하여 단위 또는 파트의 공간 위치를 확인할 수 있습니다.
+        <p>
+            처음으로 절차를 열 때 3D 윈도우가 닫히면 문서 윈도우에서 해당 제어 요소를 클릭합니다.
+        </p>
+    </p>
+
+
+    <!-- 3D Playback -->
+    <h3>재생 바</h3>
+
+    <p>
+        3D 윈도우에서 절차 재생을 제어하기 위한 버튼입니다.
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                명령
+            </th>
+            <th valign="top" align="left">
+                목적
+            </th>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                재생
+            </td>
+
+            <td valign="top" align="left">
+                중지 또는 일시 중지될 경우 절차의 재생을 시작합니다.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                일시 중지
+            </td>
+            <td valign="top" align="left">
+                현재 단계에서 재생을 중지합니다.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                이전
+            </td>
+            <td valign="top" align="left">
+                이전 단계로 복귀합니다.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                다음
+            </td>
+            <td valign="top" align="left">
+                절차를 다음 단계로 이동합니다.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                설정
+            </td>
+            <td valign="top" align="left">
+                설정 리스트를 표시하거나 숨깁니다.
+                <p>
+                    <b>속도</b>. 재생 속도를 설정합니다.</p>
+                <p>
+                    <b>시점 동결</b>. 선택하면 카메라를 현재 뷰로 잠그므로 절차를 재생하는 동안 카메라의 이동이 방지됩니다.</p>
+                <p>
+                    <b>원스텝 재생</b>. 선택된 경우 현재 단계의 재생이 잠깁니다.</p>                   
+                <p>
+                    <b>알림 메시지 비활성화</b>. 선택된 경우 재생 중에 절차에 대한 알림을 알리는 메시지가 표시되지 않습니다.</p>
+                <p>
+                    <b>인라인 주석 표시</b>. 선택된 경우 절차 주석이 3D 윈도우에 표시됩니다.</p>
+				<p>
+                    <b>장면 조명</b>. 3D 윈도우에서 모델을 비출 광원의 수와 위치를 정의합니다. 광원의 상대 위치가 리스트의 오른쪽에 표시됩니다. 모든 광원이 뷰어와 함께 이동됩니다.
+					</p>					
+				<p>
+                    <b>탐색 육면체를 표시합니다</b>. 3D 윈도우에서 탐색 육면체를 표시하거나 숨깁니다. 탐색 육면체에는 세 가지 유형의 핫스팟 영역(모서리, 코너 및 면)이 있습니다. 탐색 육면체의 모서리, 코너 또는 면에 포인터를 놓으면 해당 영역이 강조 표시됩니다. 이러한 영역을 사용하여 표준 뷰 간에 전환하고 회전을 수행할 수 있습니다.
+					</p>
+                <p>
+                    <b>곡면 모서리 표시</b>. 선택된 경우 3D 윈도우에서 곡면 경계가 표시됩니다.</p> 					
+                <p>
+                    <b>앤티앨리어싱</b>. 3D 윈도우에서 왜곡 아티팩트를 최소화하는 기법을 활성화합니다.</p>					
+                <p>
+                    <b>앰비언트 오클루전</b>. 3D 윈도우에서 주변 폐색 음영처리 및 렌더링 기법을 활성화합니다.</p>					
+					
+                <p>
+                    <b>선택 모드</b>. 3D 윈도우에서 선택을 위한 개체 표현을 지정합니다.</p>			
+				<p> 
+					<i>색상으로 강조 표시</i>&nbsp;- 선택이 강조 표시됩니다.</p>			
+                <p>
+					<i>X선 선택한 개체</i>&nbsp;- 선택 사항을 제외한 개체는 회색 및 반투명하게 표시됩니다.</p>			
+                <p>
+					<i>반투명 셸</i>&nbsp;- 전체 모델의 외부 셸은 반투명으로 표시되고 선택되지 않은 내부 개체는 숨겨집니다.  
+				</p>			
+                <p>
+                    <b>호버링된 개체 윤곽선 그리기</b>. 선택 영역의 윤곽선이 그려집니다.
+				</p>										
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                재생 진행률 표시줄
+            </td>
+            <td valign="top" align="left">
+                진행률 표시줄은 절차의 상대적인 진행 상태를 나타냅니다. 진행률 표시줄을 끌거나 클릭하여 필요한 절차 단계를 찾습니다.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                도움말
+            </td>
+            <td valign="top" align="left">
+                사용자 인터페이스에 대한 도움말 시스템을 제공합니다.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                확장/축소
+            </td>
+            <td valign="top" align="left">
+                뷰어 윈도우 프레임을 기준으로 3D 윈도우를 확장하거나 축소합니다.
+            </td>
+        </tr>		
+    </table>
+
+
+    <!-- Selection Bar -->
+    <h3>선택 바</h3>
+
+    <p>
+        3D 윈도우에서 선택된 개체를 맞춤, 표시, 숨기기 및 투명하게 만들기 위한 버튼입니다.
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                사용자 인터페이스
+            </th>
+
+            <th valign="top" align="left">
+                목적
+            </th>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                별도의 윈도우에 선택한 개체 표시
+            </td>
+            <td valign="top" align="left">
+                이 옵션을 활성화하면 보조 3D 윈도우에 선택이 표시됩니다.
+            </td>
+        </tr>		
+
+        <tr>
+            <td valign="top" align="left">
+                투명도 무시
+            </td>
+            <td valign="top" align="left">
+                이 옵션을 활성화하면 투명 아이템이 사용자 클릭에 둔감해지므로 3D 윈도우에서 투명 아이템을 클릭하여 연결할 수 있습니다.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                모두 복원
+            </td>
+            <td valign="top" align="left">
+                숨겨진 개체와 반투명 개체를 모두 보여줍니다.
+            </td>
+        </tr>	
+
+        <tr>
+            <td valign="top" align="left">
+                맞춤
+            </td>
+            <td valign="top" align="left">
+                선택한 아이템의 경계 상자를 3D 윈도우에 맞춥니다.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                표시
+            </td>
+            <td valign="top" align="left">
+                3D 윈도우에서 이전에 숨긴 선택한 아이템을 표시합니다.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                숨기기
+            </td>
+            <td valign="top" align="left">
+                3D 윈도우에서 선택한 아이템을 숨깁니다.
+            </td>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                아무 것도 선택하지 않습니다
+            </td>
+            <td valign="top" align="left">
+                모든 아이템을 선택 취소합니다.
+            </td>
+        </tr>			
+
+        <tr>
+            <td valign="top" align="left">
+                투명도
+            </td>
+            <td valign="top" align="left">
+                선택된 아이템에 대한 투명도 값을 설정할 수 있습니다. 3D 윈도우에서 하나 이상의 아이템이 선택된 경우 투명도 명령을 사용할 수 있습니다.
+            </td>
+        </tr>
+    </table>
+
+
+    <!-- 3D Navigation -->
+    <h3>3D 윈도우에서 탐색</h3>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                오퍼레이션
+            </th>
+
+            <th valign="top" align="left">
+                사용자 작업
+            </th>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                확대/축소
+            </td>
+
+            <td valign="top" align="left">
+                마우스 휠을 앞뒤로 회전합니다. Apple 컴퓨터에서 Control 보조키를 사용합니다.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                이동
+            </td>
+
+            <td valign="top" align="left">
+                마우스 휠을 누른 상태로 마우스를 이동합니다. Apple 컴퓨터에서 Option 보조키를 사용합니다.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                회전
+            </td>
+
+            <td valign="top" align="left">
+                마우스 왼쪽 버튼을 누른 채로 마우스를 이동합니다.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                회전 중심 설정
+            </td>
+            <td valign="top" align="left">
+                ALT 키를 누른 상태에서 3D 윈도우에서 임의의 아이템을 클릭하거나 <b>중심 설정</b> <img class="btn inline" src="../../../../components/rococo/img/btn_goto.png">을 클릭한 다음 3D 윈도우에서 필요한 아이템을 클릭합니다.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                회전 중심 표시 또는 숨기기
+            </td>
+            <td valign="top" align="left">
+                <b>회전 중심 표시</b> <img class="btn inline" src="../../../../components/rococo/img/btn_center.png">를 클릭하여 3D 윈도우에서 회전 중심 및 해당 축을 표시하거나 숨깁니다.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                전체 맞춤
+            </td>
+            <td valign="top" align="left">
+                <b>모두 맞추기</b> <img class="btn inline" src="../../../../components/rococo/img/btn_fit.png">를 클릭하여 3D 윈도우에서 아이템이 완전히 표시되도록 만듭니다.
+            </td>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                수평으로 정렬
+            </td>     
+            <td valign="top" align="left">
+                <b>수평으로 정렬</b> <img class="btn inline" src="../../../../components/rococo/img/btn_align.png">을 클릭하여 카메라의 수평(길이 방향이 아님) 축을 좌표계의 수평 평면에 평행하게 설정할 수 있습니다.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                좌표계 표시 또는 숨기기
+            </td>  
+            <td valign="top" align="left">
+                3D 윈도우에 방향 축을 표시하거나 숨기려면 <b>좌표 축 표시</b> <img class="btn inline" src="../../../../components/rococo/img/btn_axes.png">를 클릭합니다. 
+            </td>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                거리 측정
+            </td>  
+            <td valign="top" align="left">
+                <b>측정</b>을 클릭하여 <img class="btn inline" src="../../../../components/rococo/img/btn_measure.png"> 측정 도구를 엽니다. 3D 윈도우에서 한 점을 한 번 클릭한 다음 두 번째 점을 다시 클릭합니다. 그러면 빨간색 점 두 개 사이의 거리가 표시됩니다. 수직면 또는 수평면에 투영된 두 점 사이의 거리를 확인하려면 리스트에서 투영면 이름을 선택합니다. 길이 단위를 변경하려면 <b>단위</b>를 선택합니다. 지시선 길이를 설정하려면 <b>H</b> 슬라이더를 끌어옵니다. 측정 도구를 닫은 후 치수선을 보이게 하려면 <b>계속 표시</b>를 선택합니다. 새 점을 설정하려면 <b>지우기</b>를 클릭하거나 Esc 키를 누르고 3D 윈도우에서 점을 지정합니다.	
+				<p>
+				<b>WARNING</b>				
+				</p>
+				<p>
+				3D 그림이 실제 제품과 다를 수 있으므로 측정 결과를 직접 워크플로에 사용하지 마십시오. 제조 또는 서비스에 필요한 치수를 얻으려면 관련 기술 문서를 참조하십시오.				
+				</p>					
+            </td>
+        </tr>		
+		
+        <tr>
+            <td valign="top" align="left">
+                단면 뷰 
+            </td>  
+            <td valign="top" align="left">
+                <b>절단면</b>을 클릭하여 <img class="btn inline" src="../../../../components/rococo/img/btn_section_plane.png"> 모델을 평면에 의해 절단된 것처럼 표시합니다. 제어를 사용하여 (좌측, 상단, 정면)을 설정하고 (X, Y) 절단면을 회전합니다. 절단면을 이동하려면 <b>D</b> 슬라이더를 끌어옵니다. <b>뒤집기</b>를 사용하여 단면을 미러링합니다. 슬라이더의 정확도를 높이려면 <b>정밀 모드</b>를 선택합니다. 도구를 닫은 후 단면을 보이게 하려면 <b>계속 표시</b>를 선택합니다. 절단면을 선택 영역의 중앙으로 이동하려면 <b>재설정</b>을 클릭합니다.				
+            </td>
+        </tr>		
+		
+        <tr>
+            <td valign="top" align="left">
+                <img src="../../../../components/rococo/img/v1.png">
+                <img src="../../../../components/rococo/img/v2.png">
+                <img src="../../../../components/rococo/img/v4.png">
+                <img src="../../../../components/rococo/img/v3.png">
+                <img src="../../../../components/rococo/img/v5.png">
+                <img src="../../../../components/rococo/img/v6.png">
+                <img src="../../../../components/rococo/img/v7.png">
+            </td>
+            <td valign="top" align="left">
+                앞쪽, 뒤쪽, 왼쪽, 오른쪽, 위쪽, 아래쪽 및 등각 뷰의 서로 다른 뷰에서 3D 윈도우에 개체를 표시합니다. 버튼을 클릭하여 뷰를 활성화합니다.
+            </td>
+        </tr>		
+    </table>
+
+    <!-- 3D Context Commands-->
+    <h3>3D 윈도우의 상황에 맞는 메뉴</h3>
+
+    <p>3D 윈도우의 아무 곳이나 마우스 오른쪽 버튼으로 클릭하여 상황에 맞는 메뉴에 액세스합니다.</p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                명령
+            </th>
+            <th valign="top" align="left">
+                목적
+            </th>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                재설정
+            </td>
+            <td valign="top" align="left">
+                단계 뷰를 재설정합니다.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                전체 맞춤
+            </td>
+            <td valign="top" align="left">
+                아이템이 3D 윈도우에 완전히 표시되도록 만듭니다.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                정보
+            </td>
+            <td valign="top" align="left">
+                절차, 3D 뷰어 및 2D 뷰어의 버전을 표시합니다.
+            </td>
+        </tr>
+    </table>
+
+    <!-- 2D Window Procedures -->
+    <div class="hdbar">2D 윈도우</div>
+
+    <p>
+        2D 윈도우에는 문서 윈도우에 설명된 절차와 연결된 벡터 및 래스터 이미지가 표시됩니다. 사용자는 문서 윈도우에서 2D 이미지 하이퍼링크를 클릭하면 2D 윈도우가 3D 윈도우를 대체합니다. 2D 윈도우에서 마우스 오른쪽 버튼을 클릭하여 사용 가능한 상황에 맞는 명령에 액세스합니다. 명령 리스트는 2D 윈도우에서 사용되는 2D 뷰어에 따라 다를 수 있습니다.
+    </p>
+
+    <h3>2D 윈도우에서 탐색</h3>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                오퍼레이션
+            </th>
+            <th valign="top" align="left">
+                사용자 작업
+            </th>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                이동
+            </td>
+            <td valign="top" align="left">
+                마우스 왼쪽 버튼을 누른 채로 마우스를 이동합니다.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                확대/축소
+            </td>
+            <td valign="top" align="left">
+                마우스 휠을 앞뒤로 회전합니다.
+            </td>
+        </tr>
+    </table>
+	
+    
+	<h3>2D 윈도우의 버튼</h3>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                버튼
+            </th>
+            <th valign="top" align="left">
+                설명
+            </th>
+        </tr>	
+        <tr>
+            <td valign="top" align="left">
+                3D
+            </td>
+            <td valign="top" align="left">
+                3D 윈도우를 엽니다.
+            </td>
+        </tr> 
+        <tr>
+            <td valign="top" align="left">
+                확장/축소
+            </td>
+            <td valign="top" align="left">
+                뷰어 윈도우 프레임을 기준으로 2D 윈도우를 확장하거나 축소합니다.
+            </td>
+        </tr>	
+        <tr>
+            <td valign="top" align="left">
+                다음 시트, 이전 시트
+            </td>
+            <td valign="top" align="left">
+                다중 페이지 일러스트레이션의 경우 다음 페이지 또는 이전 페이지로 이동합니다.
+            </td>
+        </tr> 		
+    </table>		
+
+</body>
+</html>

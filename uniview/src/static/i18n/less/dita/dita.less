@@ -1,0 +1,61 @@
+@plugin "less-plugin-i18n";
+configure();
+setLocale(@locale);
+
+@charset "utf-8";
+
+/*
+    dita.less
+*/
+
+.warningtitle:before {
+    content: __("Warning") __("ColonSymbol") " ";
+}
+
+.cautiontitle:before {
+    content: __("Caution") __("ColonSymbol") " ";
+}
+
+.dangertitle:before {
+    content: __("Danger") __("ColonSymbol") " ";
+}
+
+.notetitle:before {
+    content: __("Note") __("ColonSymbol") " ";
+}
+
+.notestitle:before {
+    content: __("Notes") __("ColonSymbol") " ";
+}
+
+.tiptitle:before {
+    content: __("Tip") __("ColonSymbol") " ";
+}
+
+.fastpathtitle:before {
+    content: __("Fastpath") __("ColonSymbol") " ";
+}
+
+.importanttitle:before {
+    content: __("Important") __("ColonSymbol") " ";
+}
+
+.attentiontitle:before {
+    content: __("Attention") __("ColonSymbol") " ";
+}
+
+.remembertitle:before {
+    content: __("Remember") __("ColonSymbol") " ";
+}
+
+.restrictiontitle:before {
+    content: __("Restriction") __("ColonSymbol") " ";
+}
+
+.noticetitle:before {
+    content: __("Notice") __("ColonSymbol") " ";
+}
+
+.troubletitle:before {
+    content: __("Trouble") __("ColonSymbol") " ";
+}

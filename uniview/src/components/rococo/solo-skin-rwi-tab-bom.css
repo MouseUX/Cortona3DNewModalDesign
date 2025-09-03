@@ -1,0 +1,14 @@
+.aux.panel .skin-tree-item .content.hoverable.disabled:hover {
+    background-color: #ffc9c9;
+}
+
+.bom .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bom img.thumbnail {
+    width: 96px;
+    height: 96px;
+    flex-shrink: 0;
+}

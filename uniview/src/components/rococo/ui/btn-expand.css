@@ -1,0 +1,13 @@
+.btn-expand {
+    background-image: url(../img/btn_expand.png);
+}
+
+.skin-holder .btn-expand.checked {
+    background-image: url(../img/btn_collaps.png);
+    background-color: inherit;
+    border-color: transparent;    
+}
+
+.uniview-empty-document .btn-expand {
+    display: none;
+}

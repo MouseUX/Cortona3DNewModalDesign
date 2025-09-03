@@ -1,0 +1,1214 @@
+﻿<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Catalogo parti illustrate (IPC): interfaccia utente</title>
+
+    <style type="text/css">
+        body {
+            font-family: verdana;
+            font-size: 80%;
+            background-color: white;
+            color: black;
+            margin-top: 12pt;
+            margin-bottom: 10pt;
+            margin-left: 10pt;
+            margin-right: 10pt;
+        }
+
+        p {
+            font-family: verdana;
+            font-size: 100%;
+            color: black;
+            margin-top: 6pt;
+            margin-bottom: 6pt;
+            margin-left: 0pt;
+        }
+
+        li {
+            font-family: verdana;
+            font-size: 100%;
+            margin-left: 0pt;
+        }
+
+        td {
+            font-family: verdana;
+            font-size: 80%;
+            color: black;
+
+            background-color: whitesmoke;
+            margin: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border: solid 1px white;
+            vertical-align: top;
+        }
+
+        td.key {
+            background-color: gainsboro;
+            font-weight: bold;
+            vertical-align: top;
+        }
+
+        td.wht {
+            background-color: white;
+            margin: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            border: none;
+            vertical-align: top;
+        }
+
+        th {
+            font-family: verdana;
+            font-size: 80%;
+            color: black;
+            text-align: left;
+
+            background-color: gainsboro;
+            padding: 4px;
+            border: solid 1px white;
+        }
+
+        h1 {
+            font-family: verdana;
+            font-size: 130%;
+            font-weight: bold;
+            background-color: white;
+            color: #336699;
+            margin-bottom: 6pt;
+        }
+
+        h2 {
+            font-family: verdana;
+            font-size: 115%;
+            font-weight: bold;
+            background-color: white;
+            color: #336699;
+            margin-bottom: 6pt;
+            margin-top: 24pt;
+        }
+
+        h3 {
+            font-family: verdana;
+            font-size: 100%;
+            font-weight: bold;
+            background-color: white;
+            color: black;
+            margin-bottom: 3pt;
+        }
+
+        hr {
+            color: #336699;
+            height: 1px;
+        }
+
+        ul {
+            margin-top: 0pt;
+            margin-bottom: 6pt;
+            color: black;
+            list-style-type: disc;
+        }
+
+        a {
+            color: #1080FF;
+        }
+
+        a:visited {
+            color: saddlebrown;
+        }
+
+        a:hover {
+            color: darkorange;
+        }
+
+        .command {
+            padding: 4px;
+            color: #336699;
+            background-color: whitesmoke;
+            font-family: courier;
+        }
+
+        .hdbar {
+            margin-top: 32px;
+            margin-bottom: 0px;
+            width: 100%;
+            font-weight: bold;
+            background-color: #6699CC;
+            color: white;
+            padding: 2px;
+            padding-left: 4px;
+        }
+
+        div.note {
+            background-image: url(images/note1.png);
+            background-repeat: no-repeat;
+            background-color: white;
+            margin-top: 12pt;
+            margin-bottom: 0pt;
+            margin-left: 0pt;
+        }
+
+        div.table_note {
+            background-image: url(images/note2.png);
+            background-repeat: no-repeat;
+            background-color: #F5F5F5;
+            margin-top: 6pt;
+            margin-bottom: 0pt;
+            margin-left: 0pt;
+        }
+
+        div.fig_note {
+            font-size: 90%;
+            margin-top: 6pt;
+            margin-bottom: 6pt;
+            margin-left: 12pt;
+        }
+        
+        table {
+            font-size: medium;
+        }
+
+        img.btn {
+            margin: 2px 4px;
+            width: 16px;
+            height: 16px;
+        }
+
+        img.btn.inline {
+            margin: 0 2px 0 4px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Catalogo parti illustrate (IPC) : interfaccia utente</h1>
+    <hr noshade>
+
+    <p>
+        L'interfaccia utente IPC &egrave; costituita da due aree di lavoro: 3D/2D e tabella DPL. Ogni area di lavoro ha i propri elementi di controllo descritti di seguito. 
+    </p>
+   
+    <p>L'IPC pu&ograve; essere rappresentato come segue:</p>
+	<ul>
+    <p>
+            <b>2D e 3D</b> consentono di visualizzare immagini 2D e 3D dell'IPC. In questo caso, l&rsquo;IPC dispone di un pulsante (Grafica 2D <img class="btn inline" src="../../../../components/rococo/img/btn_2d.png">) per passare da una finestra all&rsquo;altra.
+	</p>
+    <p>
+            <b>Solo 3D</b> consente di visualizzare solo immagini 3D dell'IPC. In questo caso, il pulsante Grafica 2D non &egrave; disponibile.
+	</p>
+	<p>            
+            <b>Solo 2D</b> consente di visualizzare solo immagini 2D dell'IPC. In questo caso, l&rsquo;IPC contiene solo i fogli con immagini 2D. Non sono disponibili altri fogli n&eacute; il pulsante Grafica 2D.
+	</p>
+	</ul>
+  
+
+
+    <table width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+            <td class="wht" width="130">
+                <img src="images/PublishProject1.png" width="1384" height="708" border="0">
+            </td>
+        </tr>
+    </table>
+
+
+    <div class="hdbar">Finestra 3D/2D</div>
+    <p>
+        La finestra 3D visualizza un'immagine 3D del foglio corrente. &Egrave; possibile navigare nella finestra 3D utilizzando il mouse o la tastiera. Un localizzatore (treppiede) nell'angolo superiore destro della finestra 3D consente di determinare l'orientamento del modello 3D rispetto agli assi.
+    </p>
+
+    <p>
+        La finestra 2D visualizza immagini vettoriali e raster associate al foglio corrente.
+    </p>
+
+    <!-- 3D/2D Commands -->
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Interfaccia utente
+            </th>
+            <th valign="top" align="left">
+                Pulsante
+            </th>
+            <th valign="top" align="left">
+                Finalit&agrave;
+            </th>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Superficie
+            </td>
+            <td valign="top" align="center">
+                &nbsp;
+            </td>
+            <td valign="top" align="left">
+                Consente di selezionare il foglio di dettaglio da un elenco di fogli disponibili.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Ripristina
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_reset.png">
+            </td>
+            <td valign="top" align="left">
+                Ripristina la vista originale sul foglio corrente.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Grafica 2D
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_2d.png">
+            </td>
+            <td valign="top" align="left">
+                Consente di passare tra le finestre 2D e 3D. Il pulsante &egrave; disponibile solo nella modalit&agrave; di visualizzazione 2D e 3D. 
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Stampa grafica
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_print3d.png">
+            </td>
+            <td valign="top" align="left">
+                Consente di stampare l'immagine 3D/2D corrente come visualizzata nella finestra 3D/2D.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Ignora trasparenza (per finestra 3D)
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_ignore_tr.png">
+            </td>
+            <td valign="top" align="left">
+                Se abilitato, consente di fare clic sugli item trasparenti nella finestra 3D, quando gli item trasparenti diventano insensibili al clic dell'utente.
+            </td>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                Ripristina tutto (per finestra 3D)
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_show_all.png">
+            </td>
+            <td valign="top" align="left">
+                Mostra tutti gli oggetti nascosti e semitrasparenti.
+            </td>
+        </tr>		
+
+        <tr>
+            <td valign="top" align="left">
+                Ignora animazione (per finestra 3D)
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_skip_anim.png">
+            </td>
+            <td valign="top" align="left">
+                Se abilitato, consente di evitare una transizione graduale (animazione) da una superficie all'altra e rende istantanea la transizione tra le superfici.
+            </td>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                Impostazioni
+            </td>
+			<td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_settings.png">
+            </td>			
+            <td valign="top" align="left">
+                Mostra o nasconde l'elenco Impostazioni.
+                <p>
+                    <b>Velocit&agrave; di transizione animazione</b>. Regola la velocit&agrave; di riproduzione per la transizione della vista esplosa.</p>					
+                <p>
+                    <b>Attiva Controllo animazione transizione</b>. Se selezionata, attiva il dispositivo di scorrimento che consente di rivedere manualmente le transizioni tra i fogli. Per visualizzare il dispositivo di scorrimento, spostare il puntatore del mouse sulla parte inferiore della finestra 3D o toccarlo se si dispone di un touchscreen.</p>
+				<p>
+                    <b>Illuminazione scena</b>. Definisce il numero e la posizione delle sorgenti di luce per illuminare il modello nella finestra 3D. Le posizioni relative delle sorgenti di luce vengono visualizzate a destra dell'elenco. Tutte le sorgenti di luce si spostano con il visualizzatore.
+					</p>						
+				<p>
+                    <b>Mostra cubo di navigazione</b>. Mostra o nasconde il Cubo di navigazione nella finestra 3D. Il Cubo di navigazione ha tre diversi tipi di aree hotspot: Spigolo, Vertice e Faccia. Quando si posiziona il puntatore sul bordo, sul vertice o sulla faccia del Cubo di navigazione, viene evidenziata l'area corrispondente. Con queste aree &egrave; possibile passare da una vista standard all'altra ed eseguire rotazioni.
+					</p>
+                <p>
+                    <b>Mostra spigoli superficie</b>. Se selezionata, visualizza i contorni della superficie nella finestra 3D.</p> 						
+                <p>
+                    <b>Antialiasing</b>. Attiva una tecnica per ridurre al minimo gli elementi di distorsione nella finestra 3D.</p>					
+                <p>
+                    <b>Occlusione ambientale</b>. Attiva la tecnica di rendering e ombreggiatura dell'occlusione ambientale nella finestra 3D.</p>
+
+					
+                <p>
+                    <b>Modalit&agrave; di selezione</b>. Specifica la rappresentazione degli oggetti per la selezione nella finestra 3D.</p>			
+				<p> 
+					<i>Evidenzia con colore</i>: viene evidenziata la selezione.</p>			
+                <p>
+					<i>Oggetti selezionati a raggi X</i>: gli oggetti appaiono in grigio e traslucidi, ad eccezione della selezione.</p>			
+                <p>
+					<i>Shell traslucida</i>: il guscio esterno dell'intero modello appare trasparente, mentre gli oggetti interni non selezionati vengono nascosti.  
+				</p>			
+				
+                <p>
+                    <b>Contorno degli oggetti al passaggio del mouse</b>. La selezione viene contornata.
+				</p>										
+            </td>
+        </tr>		
+
+        <tr>
+            <td valign="top" align="left">
+                Evidenziazione
+            </td>
+
+            <td valign="top" align="center">
+                &nbsp;
+            </td>
+
+            <td valign="top" align="left">
+                Quando si seleziona o si punta un item nella finestra 3D o un callout nella finestra 2D, questo viene evidenziato. Il numero item (o CSN) viene visualizzato come finestra popup per la selezione. Lo schema di colore pu&ograve; essere modificato dall'autore del catalogo. Il seguente schema di colore viene applicato per impostazione predefinita:
+                <p>Giallo: per l'item o il callout selezionato. La riga DPL corrispondente viene anche selezionata ed evidenziata nella tabella DPL.</p>
+                <p>Verde: per il callout su cui &egrave; posizionato il puntatore. La riga DPL corrispondente viene anche evidenziata nella tabella DPL.
+                </p>
+            </td>
+        </tr>
+
+    </table>
+
+
+    <!-- 3D Navigation -->
+    <div class="hdbar">Barra Vista 3D</div>
+    <p>
+        Pulsanti per il controllo delle modalit&agrave; di visualizzazione nella finestra 3D.
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Interfaccia utente
+            </th>
+            <th valign="top" align="left">
+                Pulsante
+            </th>
+            <th valign="top" align="left">
+                Finalit&agrave;
+            </th>
+        </tr>
+
+
+
+        <tr>
+            <td valign="top" align="left">
+                Imposta centro
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_goto.png">
+            </td>
+            <td valign="top" align="left">
+                Consente di specificare il centro di rotazione per il modello 3D.
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Mostra centro di rotazione
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_center.png">
+            </td>
+            <td valign="top" align="left">
+                Consente di nascondere o visualizzare il centro di rotazione.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Includi tutto
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_fit.png">
+            </td>
+            <td valign="top" align="left">
+                Rende l'intero modello 3D completamente visibile nella finestra 3D.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Allinea orizzonte
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_align.png">
+            </td>
+            <td valign="top" align="left">
+                Posiziona l'asse orizzontale (ma non longitudinale) della telecamera parallelamente al piano orizzontale nel sistema di coordinate.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Mostra assi delle coordinate
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_axes.png">
+            </td>
+            <td valign="top" align="left">
+                Mostra o nasconde gli assi di orientamento nella finestra 3D.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Misura
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_measure.png">
+            </td>			
+            <td valign="top" align="left">
+                Apre lo strumento per misurare una distanza. Nella finestra 3D &egrave; sufficiente fare clic una volta su un punto, quindi fare nuovamente clic sul secondo punto. Dopodich&eacute; dovrebbe essere visualizzata la distanza tra i due punti rossi. Per ottenere la distanza tra i punti proiettati sul piano verticale o orizzontale, selezionare il nome del piano di proiezione dall'elenco. Per modificare l'unit&agrave; di lunghezza, selezionare <b>Unit&agrave;</b>. Per impostare la lunghezza delle linee direttrici, trascinare il dispositivo di scorrimento <b>H</b>. Selezionare <b>Mantieni visibile</b> per rendere visibile la linea di quota dopo la chiusura dello strumento di misurazione. Per impostare nuovi punti, fare clic su <b>Cancella</b> o premere il tasto Esc, quindi specificare i punti nella finestra 3D.
+				<p>
+				<b>AVVISO</b>				
+				</p>
+				<p>
+				Non utilizzare i risultati di misurazione direttamente nel workflow poich&eacute; l'illustrazione 3D potrebbe differire dal prodotto effettivo. Per ottenere le quote necessarie per la produzione o l'assistenza, fare riferimento alla documentazione tecnica pertinente.				
+				</p>					
+            </td>
+        </tr>			
+		
+        <tr>
+            <td valign="top" align="left">
+                Piano di sezione
+            </td>
+            <td valign="top" align="center">
+                <img class="btn inline" src="../../../../components/rococo/img/btn_section_plane.png">
+            </td>			
+            <td valign="top" align="left">
+				Visualizza il modello come se fosse tagliato da un piano. Utilizzare i controlli per impostare (Sinistra, In alto, Davanti) e ruotare (X e Y) il piano di sezione. Per spostare il piano di sezione, trascinare il dispositivo di scorrimento <b>D</b>. Utilizzare <b>Ribalta</b> per riflettere la sezione. Selezionare la <b>Modalit&agrave; Precisa</b> per migliorare la precisione dei cursori. Selezionare <b>Mantieni visibile</b> per rendere visibile la sezione dopo la chiusura dello strumento. Per spostare il piano di sezione al centro della selezione, fare clic su <b>Ripristina</b>.				
+            </td>
+        </tr>			
+
+    </table>
+
+    <p>
+        Esistono diverse modalit&agrave; di visualizzazione che consentono di mostrare il modello 3D da una posizione specificata:
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Interfaccia utente
+            </th>
+            <th valign="top" align="left">
+                Pulsante
+            </th>
+            <th valign="top" align="left">
+                Finalit&agrave;
+            </th>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Anteriore
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v1.png">
+            </td>
+            <td valign="top" align="left">
+                Mostra il modello frontalmente.
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Posteriore
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v2.png">
+            </td>
+            <td valign="top" align="left">
+                Mostra il modello dalla parte posteriore.
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Sinistra
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v4.png">
+            </td>
+            <td valign="top" align="left">
+                Mostra il modello dal lato sinistro.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Destra
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v3.png">
+            </td>
+            <td valign="top" align="left">
+                Mostra il modello dal lato destro.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Superiore
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v5.png">
+            </td>
+            <td valign="top" align="left">
+                Mostra il modello dall'alto.
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Inferiore
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v6.png">
+            </td>
+            <td valign="top" align="left">
+                Mostra il modello dal basso.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Isometrica
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v7.png">
+            </td>
+            <td valign="top" align="left">
+                Mostra il modello in una vista isometrica.
+            </td>
+        </tr>
+
+    </table>
+
+
+    <div class="hdbar">Barra di selezione</div>
+    <p>Consente di adattare, mostrare, nascondere e rendere trasparenti gli item selezionati nella finestra 3D.</p>
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Interfaccia utente
+            </th>
+
+            <th valign="top" align="left">
+                Finalit&agrave;
+            </th>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                Mostra oggetti selezionati in una finestra separata
+            </td>
+            <td valign="top" align="left">
+                Se abilitato, visualizza la selezione nella finestra 3D secondaria.
+            </td>
+        </tr>			
+		
+        <tr>
+            <td valign="top" align="left">
+                Ignora trasparenza
+            </td>
+            <td valign="top" align="left">
+                Se abilitato, consente di fare clic sugli item trasparenti nella finestra 3D, quando gli item trasparenti diventano insensibili al clic dell'utente.
+            </td>
+        </tr>		
+		
+        <tr>
+            <td valign="top" align="left">
+                Ripristina tutto
+            </td>
+            <td valign="top" align="left">
+                Mostra tutti gli oggetti nascosti e semitrasparenti.
+            </td>
+        </tr>			
+
+
+        <tr>
+            <td valign="top" align="left">
+                Adatta
+            </td>
+            <td valign="top" align="left">
+                Adatta il riquadro di delimitazione degli item selezionati alla finestra 3D.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Mostra
+            </td>
+            <td valign="top" align="left">
+                Rende visibili gli item selezionati precedentemente nascosti nella finestra 3D. Viene selezionata la casella di controllo della corrispondente riga DPL.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Nascondi
+            </td>
+            <td valign="top" align="left">
+                Nasconde gli item selezionati nella finestra 3D. La casella di controllo della corrispondente riga DPL viene deselezionata.
+            </td>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                Nessuna selezione
+            </td>
+            <td valign="top" align="left">
+                Deseleziona tutti gli item.
+            </td>
+        </tr>			
+
+        <tr>
+            <td valign="top" align="left">
+                Trasparenza
+            </td>
+            <td valign="top" align="left">
+				Consente di impostare il valore di trasparenza per gli item selezionati. Il comando Trasparenza &egrave; disponibile se uno o pi&ugrave; item sono selezionati nella finestra 3D o se una o pi&ugrave; righe DPL sono selezionate nella tabella DPL.
+            </td>
+        </tr>
+    </table>
+
+
+    <!-- DPL table Commands-->
+    <div class="hdbar">Finestra Tabella DPL</div>
+    <p>Visualizza la tabella DPL. Si noti che la barra della tabella DPL pu&ograve; contenere un gruppo di filtri (ad esempio: UCA, Modello) per filtrare i dati DPL in base ai criteri scelti. L'uso di uno o pi&ugrave; filtri dipende dallo standard di informazioni utilizzato per creare questo IPC.
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Interfaccia utente
+            </th>
+            <th valign="top" align="left">
+                Pulsante
+            </th>
+            <th valign="top" align="left">
+                Finalit&agrave;
+            </th>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Stampare la tabella
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_printt.png">
+            </td>
+            <td valign="top" align="left">
+                Consente di stampare la tabella DPL.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Stampa composita
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_printc.png">
+            </td>
+            <td valign="top" align="left">
+                Consente di stampare sia la tabella DPL che tutte le immagini 2D disponibili nell&rsquo;IPC. Se l'opzione Tabella completa &egrave; selezionata, vengono stampate la tabella DPL completa e tutte le illustrazioni. Se l'opzione Tabella completa &egrave; deselezionata, verr&agrave; stampato solo il foglio DPL corrente con l'illustrazione corrispondente. Ogni immagine 2D (illustrazione) viene stampata su una pagina separata.
+            </td>
+        </tr>
+
+
+
+        <tr>
+            <td valign="top" align="left">
+                Tabella completa
+            </td>
+            <td valign="top" align="center">
+                &nbsp;
+            </td>
+            <td valign="top" align="left">
+                Mostra l'intera tabella DPL. Il testo delle righe non associate al foglio corrente (righe inattive) ha un colore grigio.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Esporta in un CSV
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_excel.png">
+            </td>
+            <td valign="top" align="left">
+                Esporta i dati di tutte le righe DPL selezionate in un file separato da virgole. Se non viene selezionata alcuna riga DPL, vengono esportate solo le righe DPL associate agli item 3D visibili.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Guida
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_help.png">
+            </td>
+            <td valign="top" align="left">
+                Fornisce una Guida per l'interfaccia utente.
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Area del titolo
+            </td>
+            <td valign="top" align="center">
+                &nbsp;
+            </td>
+            <td valign="top" align="left">
+                L'area del titolo fornisce alcune informazioni sull&rsquo;IPC, ad esempio: nome della pubblicazione, nome del foglio, data di pubblicazione.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Colonna delle caselle di controllo
+            </td>
+            <td valign="top" align="center">
+                &nbsp;
+            </td>
+            <td valign="top" align="left">
+                La colonna <i>Caselle di controllo</i> &egrave; una colonna DPL con caselle di spunta. Sono utilizzate le seguenti indicazioni:
+                <p>
+                    <img src="../../../../components/rococo/img/boxshow.gif">: la riga DPL ha l'item corrispondente visibile nella finestra 3D sul foglio corrente.</p>
+                <p>
+                    <img src="../../../../components/rococo/img/boxhide.gif">: significa che l'item corrispondente &egrave; nascosto nella finestra 3D sul foglio corrente. </p>
+                <p>
+                    nessuna casella di controllo, indica che la riga DPL non ha un item 3D corrispondente sul foglio corrente.</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Evidenziazione
+            </td>
+
+            <td valign="top" align="center">
+                &nbsp;
+            </td>
+
+            <td valign="top" align="left">
+                Quando si seleziona o si punta una riga DPL, questa viene evidenziata. Il numero item (o CSN) viene visualizzato come finestra popup per la riga DPL evidenziata. Lo schema di colore pu&ograve; essere modificato dall'autore del catalogo. Il seguente schema di colore viene applicato per impostazione predefinita:
+
+                <p>
+                    Acquamarina: per la riga DPL su cui &egrave; posizionato il puntatore e che fa riferimento agli item illustrati. Gli item e i callout vengono evidenziati anche nella finestra 3D/2D.
+                </p>
+                <p>
+                    Giallo: per la riga DPL selezionata. Gli item e i callout corrispondenti vengono evidenziati anche nella finestra 3D/2D.
+                </p>
+                <p>
+                    Rosa: per la riga DPL su cui &egrave; posizionato il puntatore e che non ha item illustrati.
+                </p>
+
+            </td>
+        </tr>
+
+    </table>
+
+
+    <!-- DPL table Commands-->
+    <div class="hdbar">Menu sensibili al contesto nelle finestre 3D/2D e Tabella DPL</div>
+    <p>Fare clic con il pulsante destro del mouse su un item nella finestra 3D o su una riga DPL nella tabella DPL o su un callout nella finestra 2D per accedere ai menu sensibili al contesto.
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Interfaccia utente
+            </th>
+            <th valign="top" align="left">
+                Significato
+            </th>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Item/CSN
+            </td>
+            <td valign="top" align="left">
+                Mostra il numero item o il numero di sequenza catalogo (CSN) per l'item o la riga DPL o il callout selezionati.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Adatta
+            </td>
+            <td valign="top" align="left">
+                Adatta il riquadro di delimitazione degli item selezionati alla finestra 3D.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Mostra/Nascondi
+            </td>
+            <td valign="top" align="left">
+                Mostra o nasconde l'item selezionato nella finestra 3D. La casella di controllo della riga DPL corrispondente viene rispettivamente selezionata o deselezionata.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Seleziona/Deseleziona
+            </td>
+            <td valign="top" align="left">
+                Seleziona o deseleziona l'item selezionato nella finestra 3D o nella riga DPL selezionata nella tabella DPL o il callout selezionato nella finestra 2D.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                L'elenco Foglio
+            </td>
+            <td valign="top" align="left">
+                Consente di selezionare un foglio dall'elenco dei fogli disponibili che illustrano la riga DPL selezionata. Il foglio consigliato per la riga DPL viene visualizzato in grassetto. Il foglio corrente &egrave; contrassegnato dal simbolo di spunta.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Mostra tutto
+            </td>
+            <td valign="top" align="left">
+                Rende visibili tutti gli item nascosti nella finestra 3D e seleziona le caselle di controllo corrispondenti nella tabella DPL.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Ingrandisci
+            </td>
+            <td valign="top" align="left">
+                Aumenta l'immagine.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Rimpicciolisci
+            </td>
+            <td valign="top" align="left">
+                Riduce l'immagine.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Adatta
+            </td>
+            <td valign="top" align="left">
+                Adatta l'immagine ai margini.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Informazioni
+            </td>
+            <td valign="top" align="left">
+                Mostra le versioni dell&rsquo;IPC, del visualizzatore 3D e del visualizzatore 2D.
+            </td>
+
+        </tr>
+    </table>
+
+    <!-- DPL table Procedures-->
+    <div class="hdbar">Tabella DPL: procedure principali</div>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Operazione
+            </th>
+
+            <th valign="top" align="left">
+                Azione dell'utente
+            </th>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Seleziona una riga DPL
+            </td>
+
+            <td valign="top" align="left">
+                Fare clic sulla riga DPL richiesta.
+
+                <p>La riga DPL e il corrispondente item 3D (o callout nella finestra 2D) vengono evidenziati.</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Seleziona molte righe DPL una alla volta
+            </td>
+
+            <td valign="top" align="left">
+                Tenere premuto il tasto CTRL e fare clic su ogni riga DPL richiesta.
+            </td>
+
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Seleziona un gruppo consecutivo di righe DPL
+            </td>
+
+            <td valign="top" align="left">
+                Fare clic sulla prima riga DPL, premere e tenere premuto MAIUSC, quindi fare clic sull'ultima riga DPL.
+            </td>
+
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Adatta item nella finestra 3D
+            </td>
+
+            <td valign="top" align="left">
+                Fare doppio clic sulla riga DPL richiesta.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Nascondi item nella finestra 3D
+            </td>
+
+            <td valign="top" align="left">
+                Deselezionare la casella di controllo della riga DPL richiesta.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Mostra item nella finestra 3D
+            </td>
+
+            <td valign="top" align="left">
+                Selezionare la casella di controllo della riga DPL richiesta.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Nascondi/Mostra un gruppo di item nella finestra 3D
+            </td>
+            <td valign="top" align="left">
+                Selezionare pi&ugrave; righe DPL di cui nascondere/visualizzare gli item corrispondenti, quindi utilizzare i pulsanti Nascondi e Mostra sulla barra di selezione.
+            </td>
+        </tr>
+
+
+    </table>
+
+    <!-- 2D window Procedures -->
+    <div class="hdbar">Finestra 2D: procedure principali</div>
+    <p>I callout nella finestra 2D sono hotspot che consentono l'interazione tra gli item e le corrispondenti righe DPL. Fare clic con il pulsante destro del mouse nella finestra 2D per accedere ai comandi sensibili al contesto disponibili. Fare clic con il pulsante destro del mouse su un callout per accedere ai comandi sensibili al contesto relativi all'item (i comandi sono descritti nella sezione &quot;Menu sensibili al contesto nella finestra 3D/2D e tabella DPL&quot;)
+    </p>
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Operazione
+            </th>
+
+            <th valign="top" align="left">
+                Azione dell'utente
+            </th>
+
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Selezionare un callout item
+            </td>
+
+            <td valign="top" align="left">
+                Fare clic sul callout desiderato.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Sposta
+            </td>
+
+            <td valign="top" align="left">
+                Spostare il mouse tenendo premuto il pulsante sinistro.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Zoom
+            </td>
+
+            <td valign="top" align="left">
+                Scorrere la rotella del mouse in avanti o indietro.
+            </td>
+        </tr>
+
+    </table>
+
+
+    <!-- 3D window Procedures -->
+    <div class="hdbar">Finestra 3D: procedure principali</div>
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                Operazione
+            </th>
+
+            <th valign="top" align="left">
+                Azione dell'utente
+            </th>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                Selezionare un oggetto
+            </td>
+
+            <td valign="top" align="left">
+                Fare clic sull'item desiderato.
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Selezionare molti item uno alla volta
+            </td>
+
+            <td valign="top" align="left">
+                Tenere premuto il tasto CTRL e fare clic su ogni item 3D desiderato.
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                Ingrandimento/Riduzione
+            </td>
+
+            <td valign="top" align="left">
+                Scorrere la rotella del mouse in avanti o indietro. Sui computer Apple, utilizzare il tasto modificatore Ctrl.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Sposta
+            </td>
+
+            <td valign="top" align="left">
+                Spostare il mouse con la rotella del mouse premuta. Sui computer Apple, utilizzare il tasto modificatore Opzione.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Rotazione
+            </td>
+
+            <td valign="top" align="left">
+                Spostare il mouse tenendo premuto il pulsante sinistro.
+            </td>
+
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Impostare il centro di rotazione
+            </td>
+            <td valign="top" align="left">
+                Nella barra Vista 3D, fare clic su <b>Imposta centro</b> <img class="btn inline" src="../../../../components/rococo/img/btn_goto.png">, quindi fare clic sull'item richiesto nella finestra 3D.
+                
+                <p>In alternativa, tenendo premuto il tasto ALT, fare clic su qualsiasi item nella finestra 3D.</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Adatta modello 3D
+            </td>
+            <td valign="top" align="left">
+                Sulla barra Vista 3D, fare clic su <b>Adatta</b> <img class="btn inline" src="../../../../components/rococo/img/btn_fit.png">.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Adatta item selezionati
+            </td>
+            <td valign="top" align="left">
+                Selezionare uno o pi&ugrave; item necessari nella finestra 3D o nella tabella DPL, quindi fare clic su <b>Adatta</b> nella barra di selezione.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Mostra modello 3D dalla posizione specificata
+            </td>
+            <td valign="top" align="left">
+                Sulla barra Vista 3D, fare clic sul pulsante richiesto (<img class="btn inline" src="../../../../components/rococo/img/v1.png">&nbsp;Anteriore, <img class="btn inline" src="../../../../components/rococo/img/v2.png">&nbsp;Posteriore, <img class="btn inline" src="../../../../components/rococo/img/v4.png">&nbsp;Sinistra, <img class="btn inline" src="../../../../components/rococo/img/v3.png">&nbsp;Destra, <img class="btn inline" src="../../../../components/rococo/img/v5.png">&nbsp;Superiore, <img class="btn inline" src="../../../../components/rococo/img/v6.png">&nbsp;Inferiore e <img class="btn inline" src="../../../../components/rococo/img/v7.png">&nbsp;Isometrica).
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Nascondi/Mostra un gruppo di item
+            </td>
+            <td valign="top" align="left">
+                Tenere premuto il tasto CTRL, fare clic su ogni item 3D desiderato, quindi utilizzare i pulsanti Nascondi e Mostra sulla barra di selezione.
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                Imposta trasparenza/opacit&agrave;
+            </td>
+            <td valign="top" align="left">
+                Selezionare l'item desiderato nella finestra 3D, quindi trascinare il dispositivo di scorrimento della trasparenza sulla barra di selezione, fino a ottenere l'effetto desiderato nella finestra 3D.
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

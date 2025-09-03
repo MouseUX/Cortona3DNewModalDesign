@@ -1,0 +1,8 @@
+.trn-tabs {
+    flex-grow: 1;
+    min-height: 4em;
+}
+
+.trn-tabs .skin-tabs-header {
+    margin-left: .5em;
+}

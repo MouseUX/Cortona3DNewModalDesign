@@ -1,0 +1,3 @@
+# Ignore only specific large files
+data/Cardom.vmp
+data/TestMichaelCatalog.wrl

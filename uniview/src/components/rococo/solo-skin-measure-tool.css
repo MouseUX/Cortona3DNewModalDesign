@@ -1,0 +1,33 @@
+#btn-measure-tool {
+    background-image: url(img/btn_measure.png);
+}
+
+.measure-tool-settings.panel-settings {
+    position: relative;
+}
+
+.measure-tool-settings .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.measure-tool-settings .buttons button {
+    min-width: auto;
+    margin-right: 2px;
+}
+
+.measure-tool-settings label {
+    display: flex;
+    align-items: center;
+}
+
+.measure-tool-settings label > span:first-child {
+    margin-right: .5em;
+}
+
+.measure-tool-settings .disabled * {
+    color: #AAAAAA !important;
+    pointer-events: none !important;
+}

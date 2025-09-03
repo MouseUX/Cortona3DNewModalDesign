@@ -1,0 +1,13 @@
+.procedure-document-alert.procedure-alert:before {
+    display: none;
+}
+
+.doc-container a.disabled {
+    pointer-events: none;
+    cursor: default;
+    color: #888 !important;
+}
+
+.doc-container {
+    margin-top: .5em;
+}

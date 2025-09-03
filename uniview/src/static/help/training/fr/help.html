@@ -1,0 +1,346 @@
+﻿<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Aide de l'Afficheur de la formation virtuelle</title>
+    <style type="text/css">
+        body {
+            font-family: verdana;
+            font-size: 80%;
+            background-color: white;
+            color: black;
+            margin-top: 12pt;
+            margin-bottom: 10pt;
+            margin-left: 10pt;
+            margin-right: 10pt;
+        }
+
+        p {
+            font-family: verdana;
+            font-size: 100%;
+            color: black;
+            margin-top: 6pt;
+            margin-bottom: 6pt;
+            margin-left: 0pt;
+        }
+
+        li {
+            font-family: verdana;
+            font-size: 100%;
+            margin-left: 0pt;
+        }
+
+        td {
+            font-family: verdana;
+            font-size: 70%;
+            color: black;
+
+            background-color: whitesmoke;
+            margin: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border: solid 1px white;
+            vertical-align: top;
+        }
+
+        th {
+            font-family: verdana;
+            font-size: 70%;
+            color: black;
+            text-align: left;
+
+            background-color: gainsboro;
+            padding: 4px;
+            border: solid 1px white;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            text-align: left;
+            color: darkslategray;
+        }
+
+        h1 {
+            font-size: 150%;
+            margin-top: 20pt;
+            margin-bottom: 0pt;
+
+        }
+
+        h2 {
+            font-size: 120%;
+            margin-left: 9pt;
+            margin-bottom: 0pt;
+            margin-top: 0pt;
+        }
+
+        h3 {
+            font-size: 110%;
+            margin-bottom: 6pt;
+            color: black;
+        }
+
+        ul {
+            margin-top: 0pt;
+            margin-bottom: 6pt;
+            color: black;
+            list-style-type: disc;
+        }
+
+        ol {
+            margin-left: 0px;
+            margin-top: 0pt;
+            margin-bottom: 6pt;
+        }
+		
+        li {
+            font-family: verdana;
+            font-size: 100%;
+            margin-left: 0pt;
+        }		
+
+       
+        table {
+            font-size: medium;
+        }
+		
+        div.note {
+            background-image: url(images/note1.png);
+            background-repeat: no-repeat;
+            background-color: white;
+            margin-top: 12pt;
+            margin-bottom: 0pt;
+            margin-left: 0pt;
+		}
+
+        img.btn {
+            margin: 2px 4px;
+            width: 16px;
+            height: 16px;
+        }
+
+        img.btn.inline {
+            margin: 0 2px 0 4px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="main">
+        <h1>Application de formation 3D &ndash; interface utilisateur</h1>
+        <p>
+            Cette application de formation 3D permet d'&eacute;tudier la proc&eacute;dure de formation. Vous pouvez utiliser l'application de formation dans trois modes diff&eacute;rents&nbsp;:
+            <ul>
+                <li>
+                    <b>Mode D&eacute;mo</b>&nbsp;&ndash; lecture automatique de la proc&eacute;dure. Vous pouvez lire les &eacute;tapes souhait&eacute;es plusieurs fois &agrave; diff&eacute;rentes vitesses et examiner la proc&eacute;dure sous diff&eacute;rents angles.</li>
+                <li>
+                    <b>Mode Etude</b>&nbsp;&ndash; lecture interactive de la proc&eacute;dure. Vous pouvez ex&eacute;cuter la proc&eacute;dure &agrave; l'aide de plusieurs conseils.</li>
+                <li>
+                    <b>Mode Examen</b>&nbsp;&ndash; test de vos connaissances. La proc&eacute;dure doit &ecirc;tre ex&eacute;cut&eacute;e sans aucun conseil.
+                </li>
+            </ul>
+        </p>
+
+        <h1>Environnement de formation</h1>
+        <p>
+            Le volet inf&eacute;rieur permet de s&eacute;lectionner et d'activer le mode de formation appropri&eacute;&nbsp;: 
+		</p>			
+		<p>
+            <img src="images/operation_pane.png" width="412" height="58" />
+        </p>
+        <p>
+            Dans les modes D&eacute;mo et Etude, vous pouvez contr&ocirc;ler la lecture de la proc&eacute;dure en utilisant un panneau de configuration de type magn&eacute;toscope&nbsp;: 
+		</p>			
+		<p>			
+            <img src="images/operation_pane_mode_selected.png" width="412" height="66" />
+        </p>
+
+        <ul>
+            <li>
+                <b>Lire l'&eacute;tape</b> commence (ou arr&ecirc;te) la lecture de la proc&eacute;dure. </li>
+            <li>
+                <b>R&eacute;initialiser l'&eacute;tape</b> arr&ecirc;te et revient au d&eacute;but de l'&eacute;tape en cours. </li>
+            <li>
+                <b>Etape pr&eacute;c&eacute;dente</b> revient en arri&egrave;re &agrave; l'&eacute;tape pr&eacute;c&eacute;dente.</li>
+            <li>
+                <b>Etape suivante</b> avance jusqu'&agrave; l'&eacute;tape suivante. </li>
+            <li>
+                <b>D&eacute;sactiver le mode</b> Annule le mode actuel.</li>
+        </ul>
+
+        <p>
+            <img src="images/playing_options1.png" width="412" height="64" />
+		</p>			
+		
+            <ul>
+                <li>
+                    <b>Emplacement</b> D&eacute;place la cam&eacute;ra vers la zone appropri&eacute;e du mod&egrave;le 3D.</li>
+            </ul>
+        
+        <p>
+            Le <b>volet Op&eacute;ration</b> repr&eacute;sente l'op&eacute;ration ou le groupe d'op&eacute;rations attendu. Vous devez lire les instructions et effectuer des actions, telles que saisir le param&egrave;tre demand&eacute; ou s&eacute;lectionner l'objet qui participe &agrave; une proc&eacute;dure&nbsp;: 
+		</p>			
+		<p>			
+            <img src="images/operation_panel1.png" width="412" height="142" />
+        </p>
+
+        <p>
+            Le volet sup&eacute;rieur permet de passer en revue la proc&eacute;dure&nbsp;: 
+		</p>			
+		<p>			
+            <img src="images/upper_pane1.png" width="412" height="124" />
+		</p>			
+            <ul>
+                <li>
+                    <b>Document</b>. Affiche la partie du document qui est associ&eacute;e &agrave; l'&eacute;tape de proc&eacute;dure actuellement active. </li>
+                <li>
+                    <b>Instructions</b>. Affiche les commentaires associ&eacute;s &agrave; l'&eacute;tape de formation en cours. </li>
+                <li>
+                    <b>Articles</b>. Affiche la liste des objets interactifs dans la formation en cours. Permet de rechercher l'emplacement des objets et d'afficher des m&eacute;ta-informations suppl&eacute;mentaires.</li>
+                <li>
+                    <b>Param&egrave;tres</b>. Affiche la liste des param&egrave;tres utilis&eacute;s dans la formation en cours. Ces param&egrave;tres sont utilis&eacute;s comme sauts conditionnels dans le sc&eacute;nario de formation. Vous pouvez &ecirc;tre invit&eacute; &agrave; entrer un tel param&egrave;tre.
+                </li>
+            </ul>
+        
+
+        <h1>Modes de formation</h1>
+
+        <p>
+            <h2>Mode D&eacute;mo</h2>
+            <ul>
+                <li>Pour acc&eacute;der &agrave; ce mode, s&eacute;lectionnez le mode D&eacute;mo, puis cliquez sur <b>Activer le mode</b>.</li>
+                <li>Pour commencer la lecture, cliquez sur <b>Lire l'&eacute;tape</b>. La description de l'&eacute;tape actuellement active est affich&eacute;e sur la page &agrave; onglets Document. </li>
+                <li>La proc&eacute;dure sera affich&eacute;e en continu.</li>
+                <li>Pour arr&ecirc;ter temporairement la lecture, cliquez sur <b>Pause</b>. Cliquez sur <b>Lire</b> pour poursuivre la lecture. </li>
+                <li>Pour afficher la description de l'ensemble de la proc&eacute;dure, cliquez sur <b>Document</b>. </li>
+                <li>Vous pouvez naviguer dans la fen&ecirc;tre 3D (consultez Navigation dans la section fen&ecirc;tre 3D de ce document).
+                </li>
+                <li> La page &agrave; onglets Pi&egrave;ces permet de mettre en surbrillance la pi&egrave;ce d&eacute;sir&eacute;e dans la fen&ecirc;tre 3D (cliquez sur localiser) et d'afficher des informations suppl&eacute;mentaires (cliquez sur m&eacute;ta). </li>
+                <li>Pour passer &agrave; l'&eacute;tape suivante ou pr&eacute;c&eacute;dente de la proc&eacute;dure, cliquez sur <b>Etape suivante</b> ou <b>Etape pr&eacute;c&eacute;dente</b>. </li>
+                <li>Pour quitter le mode D&eacute;mo, cliquez sur <b>D&eacute;sactiver le mode</b>. </li>
+            </ul>
+        </p>
+
+
+
+        <p>
+            <h2>Mode Etude</h2>
+            <ul>
+                <li>Pour acc&eacute;der &agrave; ce mode, s&eacute;lectionnez le mode <b>Etude</b>, puis cliquez sur <b>Activer le mode</b>.</li>
+                <li>Cliquez sur <b>Lire l'&eacute;tape</b> pour commencer l'&eacute;tude de la proc&eacute;dure. Vous devez suivre les instructions qui apparaissent dans le volet Op&eacute;ration. Il existe trois groupes d'instructions&nbsp;: </li>
+                <ol>
+                    <li>Localisez les pi&egrave;ces impliqu&eacute;es dans l'&eacute;tape de proc&eacute;dure actuelle, puis cliquez sur celles-ci dans la fen&ecirc;tre 3D ou sur la page &agrave; onglets Pi&egrave;ces.</li>
+                    <li>Choisissez la bonne r&eacute;ponse dans la liste de s&eacute;lection. </li>
+                    <li>Sp&eacute;cifier une valeur pour un param&egrave;tre. </li>
+                </ol>
+                <li>Le bouton <b>Omettre</b> permet de passer &agrave; l'op&eacute;ration suivante dans le sc&eacute;nario de formation. </li>
+                <li>Le <b>R&eacute;sultat de test</b> indique visuellement les erreurs effectu&eacute;es (vert&nbsp;: correct, rouge&nbsp;: incorrect). Le niveau de l'erreur est sp&eacute;cifi&eacute; dans la simulation 3D et augmente graduellement pour l'&eacute;tape en cours. Chaque nouvelle &eacute;tape commence par le niveau d'erreur z&eacute;ro. </li>
+                <li>Effectuez toutes les &eacute;tapes et cliquez sur <b>D&eacute;sactiver le mode</b> chaque fois que vous &ecirc;tes pr&ecirc;t &agrave; quitter le mode Etude. </li>
+            </ul>
+        </p>
+
+        <p>
+            <h2>Mode Examen</h2>
+            <ul>
+                <li>Pour acc&eacute;der &agrave; ce mode, s&eacute;lectionnez le mode <b>Examen</b>, puis cliquez sur <b>Activer le mode</b>. </li>
+                <li>Cliquez sur <b>D&eacute;but</b> pour lancer le test. Ici, vous devez ex&eacute;cuter les actions de la m&ecirc;me mani&egrave;re que dans le mode Etude, mais les conseils ne sont plus disponibles. </li>
+                <li>Pour quitter le mode Examen, cliquez sur <b>D&eacute;sactiver le mode</b>.</li>
+            </ul>
+        </p>
+
+        <h1>Navigation dans la fen&ecirc;tre 3D</h1>
+        <p>
+            Vous pouvez naviguer dans la fen&ecirc;tre 3D &agrave; l'aide de la souris ou de la barre de navigation&nbsp;: 
+		</p>			
+		<p>			
+            <img src="images/navigation_bar.png" width="412" height="30" />
+        </p>
+        <p>
+            <b>Pour faire un zoom avant /zoom arri&egrave;re sur le mod&egrave;le 3D&nbsp;: </b>
+            <ul>
+                <li>Utilisez la molette de la souris&nbsp;; </li>
+                <li>Ou bien cliquez sur Zoom <img class="btn inline" src="../../../../components/rococo/img/sbtn_zoom.png"> sur la barre de navigation, placez le pointeur n'importe o&ugrave; dans la fen&ecirc;tre 3D, appuyez sur le bouton gauche de la souris, puis d&eacute;placez la souris tout en maintenant le bouton gauche enfonc&eacute;. </li>
+            </ul>
+        </p>
+        <p>
+            <b>Pour d&eacute;placer la cam&eacute;ra vers le haut/vers le bas ou vers la gauche/vers la droite&nbsp;: </b>
+            <ul>
+                <li>Positionnez le pointeur n'importe o&ugrave; dans la fen&ecirc;tre 3D, puis d&eacute;placez la souris en appuyant sur le bouton du milieu (ou la molette de la souris). </li>
+                <li>Ou bien cliquez sur le bouton Panoramique <img class="btn inline" src="../../../../components/rococo/img/sbtn_pan.png"> de la barre de navigation, placez le pointeur sur 3D et d&eacute;placez la souris tout en maintenant enfonc&eacute; le bouton gauche.</li>
+            </ul>
+        </p>
+        <p>
+            <b>Pour que le mod&egrave;le 3D soit enti&egrave;rement visible dans la fen&ecirc;tre 3D&nbsp;: </b>
+            <ul>
+                <li>Cliquez sur Ajuster <img class="btn inline" src="../../../../components/rococo/img/btn_fit.png"> dans la barre de navigation. </li>
+            </ul>
+        </p>
+        <p>
+            <b>Pour faire pivoter le mod&egrave;le 3D&nbsp;: </b>
+            <ul>
+                <li>Cliquez sur Faire pivoter <img class="btn inline" src="../../../../components/rococo/img/sbtn_spin.png"> dans la barre de navigation, placez le pointeur sur le mod&egrave;le 3D et d&eacute;placez la souris tout en maintenant enfonc&eacute; le bouton gauche. </li>
+            </ul>
+        </p>
+        <p>
+            <b>Pour sp&eacute;cifier le centre de rotation en 3D&nbsp;: </b>
+            <ul>
+                <li>Appuyez sur la touche ALT et cliquez sur une g&eacute;om&eacute;trie dans la fen&ecirc;tre 3D.</li>
+                <li>Ou placez le pointeur sur une g&eacute;om&eacute;trie dans la fen&ecirc;tre 3D, puis cliquez sur le bouton central de la souris (ou la molette de la souris). </li>
+            </ul>
+        </p>
+
+        <p>
+            <b>Pour passer &agrave; l'&eacute;tape de proc&eacute;dure suivante (animation)&nbsp;:</b>
+            <ul>
+                <li>Cliquez sur Ignorer l'animation actuelle <img class="btn inline" src="../../../../components/rococo/img/btn_skip_anim.png">.
+                </li>
+
+            </ul>
+        </p>
+
+        <h1>Param&egrave;tres</h1>
+        <p>
+            <ul>
+                <li>
+                    <b>Vitesse</b>. D&eacute;finit la vitesse pour rejouer la proc&eacute;dure 3D.
+                </li>
+                <li>
+                    <b>Geler point de vue</b>. Si s&eacute;lectionn&eacute;, la position actuelle de l'afficheur est utilis&eacute;e pendant la lecture.
+                </li>
+                <li>
+                    <b>D&eacute;sactiver le message d'alerte</b>. Si s&eacute;lectionn&eacute;, bloque la sortie des messages d'alerte. </li>
+                <li>
+                    <b>Activer le contraste suppl&eacute;mentaire pour les pi&egrave;ces en mode D&eacute;mo et &Eacute;tude</b>. Si s&eacute;lectionn&eacute; (par d&eacute;faut), une sph&egrave;re translucide clignotante appara&icirc;t au-dessus de l'objet s&eacute;lectionn&eacute; en 3D pour attirer l'attention du stagiaire.
+                </li>
+
+                <li>
+                    <b>Lire en continu en mode D&eacute;mo</b>. Si s&eacute;lectionn&eacute; (par d&eacute;faut), permet de rejouer sans interruption la proc&eacute;dure de formation. Si cette option n'est pas coch&eacute;e, la lecture s'arr&ecirc;te apr&egrave;s chaque &eacute;tape.</li>
+
+                <li>
+                    <b>Activer les conseils directs en mode &Eacute;tude</b>. Affiche ou masque, dans le volet Op&eacute;ration, les informations sur les actions de stagiaire qui doit &ecirc;tre ex&eacute;cut&eacute;es. L'activation des conseils directs vous permet de localiser la pi&egrave;ce en utilisant le bouton Localiser pi&egrave;ce (elle a le nom de la pi&egrave;ce requise). En outre, lorsque les conseils directs sont activ&eacute;s, les r&eacute;ponses correctes sont affich&eacute;es dans la liste de Choix.</li>
+				<li>
+                    <b>Afficher le cube de navigation</b>. Affiche ou masque le cube de navigation dans la fen&ecirc;tre&nbsp;3D. Le cube de navigation comporte trois types de zones de HotSpot&nbsp;: ar&ecirc;te, coin et face. Lorsque vous positionnez le pointeur sur l'ar&ecirc;te, le coin ou la face du cube de navigation, la zone correspondante est mise en surbrillance. Avec ces zones, vous pouvez basculer entre les vues standard et effectuer des rotations.
+					</li>
+                <li>    
+                    <b>Afficher les ar&ecirc;tes de surface</b>. Si s&eacute;lectionn&eacute;, active l'affichage des contours de surface dans la fen&ecirc;tre 3D.
+                    </li>					
+                <li>
+                    <b>Anticr&eacute;nelage</b>. Active une technique pour minimiser les artefacts de distorsion dans la fen&ecirc;tre 3D.</li>					
+                <li>
+                    <b>Occlusion ambiante</b>. Active l'ombrage de l'occlusion ambiante et la technique de rendu dans la fen&ecirc;tre 3D.</li> 					
+                <li>
+                    <b>Rep&eacute;rer les objets survol&eacute;s</b>. La s&eacute;lection est entour&eacute;e.
+				</li>					
+            </ul>
+        </p>
+    </div>
+</body>
+
+</html>

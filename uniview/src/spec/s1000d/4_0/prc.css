@@ -1,0 +1,4867 @@
+.doc-container,
+.procedure-alert {
+  /*
+    s1000d_prc.css
+    13.05.2015 12:08:16
+*/
+  /*
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 10pt;
+  font-family: Verdana, sans-serif;
+  overflow: auto;
+}
+
+a[href] { 
+    color:#0000A0; 
+    text-decoration: none; 
+}
+a[href]:visited { 
+    color: #0000A0; 
+}
+a[href]:hover { 
+    color: #0000FF; 
+    text-decoration: underline; 
+}
+*/
+  /* Caption */
+  /* Warning, Caution, Notes */
+  /* References */
+  /* Toggle elements styles (bold, italic, underline) */
+  /* Paragraphs */
+  /* Lists */
+  /* Definition List */
+  /* Lists headings styles */
+  /* Tables */
+  /* Preliminary requirements */
+  /* Tabular data */
+  /* taskDuration */
+  /* Tables heading */
+  /* Tabular headers */
+  /* Autocontent heading */
+  /* Inlines */
+  /* Blocks */
+  /* acronyms */
+  /* change bars */
+  /* common headers*/
+  /* common info */
+  /* fault */
+  /* footnote */
+  /* global */
+  /* counters */
+  /* ==== alt steps ==== */
+  /* lists */
+  /* proced -> preliminaryRqmts */
+  /* ==== format table ==== */
+  /* chrome fix */
+  /* ==== column widths ==== */
+  /* ==== table captions ==== */
+  /* ==== table headers ==== */
+  /* ==== table contents ==== */
+  /* proced -> productionMaintData */
+  /*.workAreaLocationGroup .zoneRef:before,
+.workAreaLocationGroup .accessPointRef:before {
+    content: "";
+}*/
+  /* References */
+  /* =========== refs ============ */
+  /* ========== internalRef ============ */
+  /* figure */
+  /* table */
+  /* multimedia */
+  /* para */
+  /* proceduralStep */
+  /* sheet[graphic] */
+  /* multimediaObject */
+  /* hotspot */
+  /* zone */
+  /* accessPoint */
+  /* ==== CSN ==== */
+  /* ==== materialSetRef ==== */
+  /* tables */
+  /* ========== frontmatter =========== */
+  /* crew */
+  /* ==== learning ==== */
+  /* ==== inlineApplic ==== */
+  /* ==== ACT ==== */
+  /* ==== PCT ==== */
+  /* sb */
+  /* .sbManagementInfo,
+.sbRevisionInfo,
+.sbSummary,
+.sbPlanningInfo,
+.sbMaterialInfo,
+.sbAccomplishmentInstructions,
+.sbAdditionalInfo {
+    break-before: page;
+} */
+}
+.doc-container .dmodule,
+.procedure-alert .dmodule {
+  padding: 8pt;
+}
+.doc-container .content,
+.procedure-alert .content {
+  counter-reset: table figure;
+}
+.doc-container .content > *,
+.procedure-alert .content > * {
+  margin-top: 12pt;
+}
+.doc-container .dmodule:after,
+.procedure-alert .dmodule:after {
+  display: block;
+  text-align: center;
+  margin-top: 16pt;
+  font-weight: bold;
+  min-height: 1em;
+}
+.doc-container .taskDuration:before,
+.procedure-alert .taskDuration:before,
+.doc-container .title,
+.procedure-alert .title {
+  display: block;
+  font-weight: bold;
+  margin-top: 8pt;
+  min-height: 1em;
+}
+.doc-container .identAndStatusSection,
+.procedure-alert .identAndStatusSection {
+  background-color: #E0FFFF;
+  padding: 6pt;
+  margin-top: 12pt;
+  border: solid silver 1px;
+  cursor: pointer;
+}
+.doc-container .identAndStatusSection > .dmAddress,
+.procedure-alert .identAndStatusSection > .dmAddress {
+  display: block;
+  text-align: right;
+  min-height: 1em;
+}
+.doc-container .identAndStatusSection > .dmAddress *,
+.procedure-alert .identAndStatusSection > .dmAddress * {
+  display: block;
+  font-weight: normal;
+  min-height: 1em;
+}
+.doc-container .identAndStatusSection > .dmAddress .dmCode,
+.procedure-alert .identAndStatusSection > .dmAddress .dmCode {
+  font-weight: bold;
+  margin-top: 12pt;
+  margin-bottom: 6pt;
+}
+.doc-container .identAndStatusSection > .dmAddress *:before,
+.procedure-alert .identAndStatusSection > .dmAddress *:before {
+  color: #808080;
+  font-weight: bold;
+  margin-right: 1em;
+}
+.doc-container .externalPubTitle,
+.procedure-alert .externalPubTitle {
+  font-weight: bold;
+}
+.doc-container .dmStatus,
+.procedure-alert .dmStatus {
+  display: none;
+}
+.doc-container .dmStatus .security,
+.procedure-alert .dmStatus .security {
+  font-weight: bold;
+}
+.doc-container .brexDmRef,
+.procedure-alert .brexDmRef,
+.doc-container .qualityAssurance,
+.procedure-alert .qualityAssurance,
+.doc-container .systemBreakdownCode,
+.procedure-alert .systemBreakdownCode,
+.doc-container .skillLevel,
+.procedure-alert .skillLevel,
+.doc-container .reasonForUpdate,
+.procedure-alert .reasonForUpdate,
+.doc-container .dmStatus .techStandard,
+.procedure-alert .dmStatus .techStandard,
+.doc-container .dmStatus .applic,
+.procedure-alert .dmStatus .applic,
+.doc-container .dmStatus .applicCrossRefTableRef,
+.procedure-alert .dmStatus .applicCrossRefTableRef,
+.doc-container .dmStatus .functionalItemRef,
+.procedure-alert .dmStatus .functionalItemRef,
+.doc-container .dmStatus .remarks,
+.procedure-alert .dmStatus .remarks,
+.doc-container .dmStatus .security,
+.procedure-alert .dmStatus .security,
+.doc-container .dmStatus .responsiblePartnerCompany,
+.procedure-alert .dmStatus .responsiblePartnerCompany,
+.doc-container .dmStatus .originator,
+.procedure-alert .dmStatus .originator {
+  text-align: right;
+  display: block;
+  min-height: 1em;
+}
+.doc-container .brexDmRef,
+.procedure-alert .brexDmRef,
+.doc-container .qualityAssurance,
+.procedure-alert .qualityAssurance,
+.doc-container .systemBreakdownCode,
+.procedure-alert .systemBreakdownCode,
+.doc-container .skillLevel,
+.procedure-alert .skillLevel,
+.doc-container .reasonForUpdate,
+.procedure-alert .reasonForUpdate,
+.doc-container .dmStatus .techStandard,
+.procedure-alert .dmStatus .techStandard,
+.doc-container .dmStatus .applic,
+.procedure-alert .dmStatus .applic,
+.doc-container .dmStatus .applicCrossRefTableRef,
+.procedure-alert .dmStatus .applicCrossRefTableRef,
+.doc-container .dmStatus .functionalItemRef,
+.procedure-alert .dmStatus .functionalItemRef,
+.doc-container .dmStatus .remarks,
+.procedure-alert .dmStatus .remarks {
+  margin-top: 6pt;
+}
+.doc-container .dataRestrictions,
+.procedure-alert .dataRestrictions {
+  font-family: monospace;
+  font-size: 9pt;
+}
+.doc-container .restrictionInstructions,
+.procedure-alert .restrictionInstructions {
+  margin-left: 20pt;
+}
+.doc-container .dataHandling:before,
+.procedure-alert .dataHandling:before,
+.doc-container .dataDestruction:before,
+.procedure-alert .dataDestruction:before,
+.doc-container .dataDisclosure:before,
+.procedure-alert .dataDisclosure:before,
+.doc-container .dataDistribution:before,
+.procedure-alert .dataDistribution:before,
+.doc-container .copyright:before,
+.procedure-alert .copyright:before,
+.doc-container .exportControl:before,
+.procedure-alert .exportControl:before {
+  display: block;
+  margin-top: 6pt;
+  margin-bottom: 6pt;
+  min-height: 1em;
+}
+.doc-container .dataRestrictions:before,
+.procedure-alert .dataRestrictions:before,
+.doc-container .dataHandling,
+.procedure-alert .dataHandling,
+.doc-container .dataDisclosure,
+.procedure-alert .dataDisclosure,
+.doc-container .dataDestruction,
+.procedure-alert .dataDestruction,
+.doc-container .dataDistribution,
+.procedure-alert .dataDistribution,
+.doc-container .dataConds,
+.procedure-alert .dataConds,
+.doc-container .policyStatement,
+.procedure-alert .policyStatement,
+.doc-container .supersedure,
+.procedure-alert .supersedure,
+.doc-container .copyright,
+.procedure-alert .copyright,
+.doc-container .exportControl,
+.procedure-alert .exportControl {
+  margin-top: 2pt;
+  margin-bottom: 6pt;
+  text-align: left;
+}
+.doc-container .restrictionInfo,
+.procedure-alert .restrictionInfo {
+  margin-left: 20pt;
+  margin-top: 12pt;
+}
+.doc-container .dmAddress .dmTitle > *,
+.procedure-alert .dmAddress .dmTitle > * {
+  text-align: center;
+}
+.doc-container .dmAddress .techName,
+.procedure-alert .dmAddress .techName,
+.doc-container .centerhead1,
+.procedure-alert .centerhead1 {
+  font-size: 14pt;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 27pt;
+  margin-bottom: 17pt;
+}
+.doc-container .mainProcedure,
+.procedure-alert .mainProcedure,
+.doc-container .isolationMainProcedure,
+.procedure-alert .isolationMainProcedure {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.doc-container .mainProcedure > .link,
+.procedure-alert .mainProcedure > .link,
+.doc-container .isolationMainProcedure > .link,
+.procedure-alert .isolationMainProcedure > .link {
+  margin-top: 27pt;
+  position: inherit;
+}
+.doc-container .mainProcedure:before,
+.procedure-alert .mainProcedure:before,
+.doc-container .content > .description:before,
+.procedure-alert .content > .description:before,
+.doc-container .maintPlanning:before,
+.procedure-alert .maintPlanning:before,
+.doc-container .isolationMainProcedure:before,
+.procedure-alert .isolationMainProcedure:before,
+.doc-container .descrCrew:before,
+.procedure-alert .descrCrew:before,
+.doc-container .commonRepository:before,
+.procedure-alert .commonRepository:before,
+.doc-container .faultReporting:before,
+.procedure-alert .faultReporting:before,
+.doc-container .detectionInfo:before,
+.procedure-alert .detectionInfo:before,
+.doc-container .content > .refs:before,
+.procedure-alert .content > .refs:before,
+.doc-container .preliminaryRqmts:before,
+.procedure-alert .preliminaryRqmts:before,
+.doc-container .closeRqmts:before,
+.procedure-alert .closeRqmts:before,
+.doc-container .dmAddress .infoName,
+.procedure-alert .dmAddress .infoName,
+.doc-container .centerhead2,
+.procedure-alert .centerhead2,
+.doc-container .productCrossRefTable:before,
+.procedure-alert .productCrossRefTable:before,
+.doc-container .applicCrossRefTable:before,
+.procedure-alert .applicCrossRefTable:before {
+  display: block;
+  font-size: 14pt;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  margin-top: 27pt;
+  margin-bottom: 17pt;
+  min-height: 1em;
+}
+.doc-container .productionMaintData:before,
+.procedure-alert .productionMaintData:before,
+.doc-container .reqCondGroup:before,
+.procedure-alert .reqCondGroup:before,
+.doc-container .reqSupportEquips:before,
+.procedure-alert .reqSupportEquips:before,
+.doc-container .reqSupplies:before,
+.procedure-alert .reqSupplies:before,
+.doc-container .reqTechInfoGroup:before,
+.procedure-alert .reqTechInfoGroup:before,
+.doc-container .reqSpares:before,
+.procedure-alert .reqSpares:before,
+.doc-container .reqSafety:before,
+.procedure-alert .reqSafety:before,
+.doc-container .reqPersons:before,
+.procedure-alert .reqPersons:before,
+.doc-container .cautionRepository:before,
+.procedure-alert .cautionRepository:before,
+.doc-container .toolRepository:before,
+.procedure-alert .toolRepository:before,
+.doc-container .controlIndicatorRepository:before,
+.procedure-alert .controlIndicatorRepository:before,
+.doc-container .functionalPhysicalAreaRepository:before,
+.procedure-alert .functionalPhysicalAreaRepository:before,
+.doc-container .warningRepository:before,
+.procedure-alert .warningRepository:before,
+.doc-container .zoneRepository:before,
+.procedure-alert .zoneRepository:before,
+.doc-container .partRepository:before,
+.procedure-alert .partRepository:before,
+.doc-container .functionalItemRepository:before,
+.procedure-alert .functionalItemRepository:before,
+.doc-container .workAreaLocationGroup:before,
+.procedure-alert .workAreaLocationGroup:before,
+.doc-container .sidehead0,
+.procedure-alert .sidehead0 {
+  display: block;
+  font-size: 14pt;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 27pt;
+  margin-bottom: 17pt;
+  min-height: 1em;
+}
+.doc-container .level1 > .title,
+.procedure-alert .level1 > .title,
+.doc-container .sidehead1,
+.procedure-alert .sidehead1 {
+  display: block;
+  font-size: 14pt;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 27pt;
+  margin-bottom: 7pt;
+  min-height: 1em;
+}
+.doc-container .level2 > .title,
+.procedure-alert .level2 > .title,
+.doc-container .sidehead2,
+.procedure-alert .sidehead2 {
+  display: block;
+  font-size: 12pt;
+  font-weight: bold;
+  text-align: left;
+  min-height: 1em;
+}
+.doc-container .level3 > .title,
+.procedure-alert .level3 > .title,
+.doc-container .sidehead3,
+.procedure-alert .sidehead3 {
+  display: block;
+  font-size: 10pt;
+  font-weight: bold;
+  text-align: left;
+  min-height: 1em;
+}
+.doc-container .level4 > .title,
+.procedure-alert .level4 > .title,
+.doc-container .sidehead4,
+.procedure-alert .sidehead4 {
+  display: block;
+  font-size: 10pt;
+  text-align: left;
+  min-height: 1em;
+}
+.doc-container .level5 > .title,
+.procedure-alert .level5 > .title,
+.doc-container .sidehead5,
+.procedure-alert .sidehead5 {
+  display: block;
+  font-size: 10pt;
+  font-style: italic;
+  text-align: left;
+  min-height: 1em;
+}
+.doc-container .levelledPara,
+.procedure-alert .levelledPara,
+.doc-container .proceduralStep,
+.procedure-alert .proceduralStep,
+.doc-container .commonInfoDescrPara,
+.procedure-alert .commonInfoDescrPara,
+.doc-container .isolationStep,
+.procedure-alert .isolationStep,
+.doc-container .isolationStepQuestion,
+.procedure-alert .isolationStepQuestion,
+.doc-container .choice,
+.procedure-alert .choice,
+.doc-container .yesAnswer,
+.procedure-alert .yesAnswer,
+.doc-container .noAnswer,
+.procedure-alert .noAnswer,
+.doc-container .isolationProcedureEnd,
+.procedure-alert .isolationProcedureEnd {
+  padding-left: 55pt;
+  position: relative;
+}
+.doc-container .levelledPara > .levelledPara,
+.procedure-alert .levelledPara > .levelledPara,
+.doc-container .proceduralStep > .proceduralStep,
+.procedure-alert .proceduralStep > .proceduralStep,
+.doc-container .commonInfoDescrPara > .commonInfoDescrPara,
+.procedure-alert .commonInfoDescrPara > .commonInfoDescrPara {
+  margin-left: -55pt;
+}
+.doc-container .level1,
+.procedure-alert .level1 {
+  counter-increment: counter1;
+  counter-reset: counter2 counter3 counter4 counter5 counter6 counter7 counter8;
+}
+.doc-container .level2,
+.procedure-alert .level2 {
+  counter-increment: counter2;
+  counter-reset: counter3 counter4 counter5 counter6 counter7 counter8;
+}
+.doc-container .level3,
+.procedure-alert .level3 {
+  counter-increment: counter3;
+  counter-reset: counter4 counter5 counter6 counter7 counter8;
+}
+.doc-container .level4,
+.procedure-alert .level4 {
+  counter-increment: counter4;
+  counter-reset: counter5 counter6 counter7 counter8;
+}
+.doc-container .level5,
+.procedure-alert .level5 {
+  counter-increment: counter5;
+  counter-reset: counter6 counter7 counter8;
+}
+.doc-container .level6,
+.procedure-alert .level6 {
+  counter-increment: counter6;
+  counter-reset: counter7 counter8;
+}
+.doc-container .level7,
+.procedure-alert .level7 {
+  counter-increment: counter7;
+  counter-reset: counter8;
+}
+.doc-container .level8,
+.procedure-alert .level8 {
+  counter-increment: counter8;
+}
+.doc-container .level1 > *:first-child:before,
+.procedure-alert .level1 > *:first-child:before,
+.doc-container .level2 > *:first-child:before,
+.procedure-alert .level2 > *:first-child:before,
+.doc-container .level3 > *:first-child:before,
+.procedure-alert .level3 > *:first-child:before,
+.doc-container .level4 > *:first-child:before,
+.procedure-alert .level4 > *:first-child:before,
+.doc-container .level5 > *:first-child:before,
+.procedure-alert .level5 > *:first-child:before,
+.doc-container .level6 > *:first-child:before,
+.procedure-alert .level6 > *:first-child:before,
+.doc-container .level7 > *:first-child:before,
+.procedure-alert .level7 > *:first-child:before,
+.doc-container .level8 > *:first-child:before,
+.procedure-alert .level8 > *:first-child:before {
+  position: absolute;
+  margin-left: -55pt;
+}
+.doc-container .level1 > *:first-child:before,
+.procedure-alert .level1 > *:first-child:before {
+  content: counter(counter1);
+}
+.doc-container .level2 > *:first-child:before,
+.procedure-alert .level2 > *:first-child:before {
+  content: counter(counter1) "." counter(counter2);
+}
+.doc-container .level3 > *:first-child:before,
+.procedure-alert .level3 > *:first-child:before {
+  content: counter(counter1) "." counter(counter2) "." counter(counter3);
+}
+.doc-container .level4 > *:first-child:before,
+.procedure-alert .level4 > *:first-child:before {
+  content: counter(counter1) "." counter(counter2) "." counter(counter3) "." counter(counter4);
+}
+.doc-container .level5 > *:first-child:before,
+.procedure-alert .level5 > *:first-child:before {
+  content: counter(counter1) "." counter(counter2) "." counter(counter3) "." counter(counter4) "." counter(counter5);
+}
+.doc-container .level6 > *:first-child:before,
+.procedure-alert .level6 > *:first-child:before {
+  content: counter(counter1) "." counter(counter2) "." counter(counter3) "." counter(counter4) "." counter(counter5) "." counter(counter6);
+}
+.doc-container .level7 > *:first-child:before,
+.procedure-alert .level7 > *:first-child:before {
+  content: counter(counter1) "." counter(counter2) "." counter(counter3) "." counter(counter4) "." counter(counter5) "." counter(counter6) "." counter(counter7);
+}
+.doc-container .level8 > *:first-child:before,
+.procedure-alert .level8 > *:first-child:before {
+  content: counter(counter1) "." counter(counter2) "." counter(counter3) "." counter(counter4) "." counter(counter5) "." counter(counter6) "." counter(counter7) "." counter(counter8);
+}
+.doc-container .caption,
+.procedure-alert .caption {
+  display: block;
+  padding-top: 2pt;
+  padding-left: 2pt;
+  padding-bottom: 2pt;
+  padding-right: 2pt;
+  min-height: 1em;
+}
+.doc-container .caption[data-color='co00'] > .captionLine,
+.procedure-alert .caption[data-color='co00'] > .captionLine {
+  background-color: white;
+}
+.doc-container .caption[data-color='co01'] > .captionLine,
+.procedure-alert .caption[data-color='co01'] > .captionLine {
+  background-color: green;
+}
+.doc-container .caption[data-color='co02'] > .captionLine,
+.procedure-alert .caption[data-color='co02'] > .captionLine {
+  background-color: #FFA500;
+}
+.doc-container .caption[data-color='co03'] > .captionLine,
+.procedure-alert .caption[data-color='co03'] > .captionLine {
+  background-color: #FFD700;
+}
+.doc-container .caption[data-color='co04'] > .captionLine,
+.procedure-alert .caption[data-color='co04'] > .captionLine {
+  background-color: red;
+}
+.doc-container .caption[data-color='co07'] > .captionLine,
+.procedure-alert .caption[data-color='co07'] > .captionLine {
+  background-color: white;
+}
+.doc-container .caption[data-color='co08'] > .captionLine,
+.procedure-alert .caption[data-color='co08'] > .captionLine {
+  background-color: gray;
+}
+.doc-container .caption[data-color='co09'] > .captionLine,
+.procedure-alert .caption[data-color='co09'] > .captionLine {
+  background-color: clear;
+}
+.doc-container .caption[data-color='co10'] > .captionLine,
+.procedure-alert .caption[data-color='co10'] > .captionLine {
+  background-color: black;
+}
+.doc-container .caption[data-color='co51'] > .captionLine,
+.procedure-alert .caption[data-color='co51'] > .captionLine {
+  background-color: #3C6BFB;
+}
+.doc-container .warning,
+.procedure-alert .warning,
+.doc-container .caution,
+.procedure-alert .caution,
+.doc-container .note,
+.procedure-alert .note {
+  display: block;
+  min-height: 1em;
+}
+.doc-container .warning,
+.procedure-alert .warning,
+.doc-container .caution,
+.procedure-alert .caution {
+  font-weight: bold;
+  text-align: center;
+}
+.doc-container .warning > *,
+.procedure-alert .warning > * {
+  text-align: left;
+}
+.doc-container .warning:before,
+.procedure-alert .warning:before,
+.doc-container .caution:before,
+.procedure-alert .caution:before {
+  display: block;
+  font-size: 12pt;
+  line-height: 1;
+  width: max-content;
+  margin: 0 auto;
+}
+.doc-container .warning:before,
+.procedure-alert .warning:before {
+  text-decoration: none;
+  border-bottom: 2px solid;
+}
+.doc-container .note,
+.procedure-alert .note {
+  padding-left: 7mm;
+}
+.doc-container .note:before,
+.procedure-alert .note:before {
+  text-align: left;
+  font-weight: bold;
+  display: block;
+  margin-left: -7mm;
+  min-height: 1em;
+}
+.doc-container .multimedia > .title,
+.procedure-alert .multimedia > .title,
+.doc-container .figure > .title,
+.procedure-alert .figure > .title {
+  display: none;
+}
+.doc-container .multimedia,
+.procedure-alert .multimedia,
+.doc-container .figure,
+.procedure-alert .figure {
+  display: block;
+  margin-top: 8pt;
+  margin-bottom: 8pt;
+  font-style: italic;
+  counter-increment: figure;
+  counter-reset: sheet;
+  min-height: 1em;
+}
+.doc-container .multimediaObject,
+.procedure-alert .multimediaObject,
+.doc-container .graphic,
+.procedure-alert .graphic {
+  display: block;
+  margin-top: 4pt;
+  counter-increment: sheet;
+  min-height: 1em;
+}
+.doc-container .emphasis,
+.procedure-alert .emphasis {
+  font-weight: bold;
+}
+.doc-container .emphasis.em01,
+.procedure-alert .emphasis.em01 {
+  font-weight: bold;
+}
+.doc-container .emphasis.em02,
+.procedure-alert .emphasis.em02 {
+  font-weight: normal;
+  font-style: italic;
+}
+.doc-container .emphasis.em03,
+.procedure-alert .emphasis.em03 {
+  font-weight: normal;
+  text-decoration: underline;
+}
+.doc-container .emphasis.em04,
+.procedure-alert .emphasis.em04 {
+  font-weight: normal;
+  text-decoration: overline;
+}
+.doc-container .emphasis.em05,
+.procedure-alert .emphasis.em05 {
+  font-weight: normal;
+  text-decoration: line-through;
+}
+.doc-container .subScript,
+.procedure-alert .subScript {
+  vertical-align: sub;
+  font-size: 80%;
+}
+.doc-container .superScript,
+.procedure-alert .superScript {
+  vertical-align: super;
+  font-size: 80%;
+}
+.doc-container .p,
+.procedure-alert .p,
+.doc-container .action,
+.procedure-alert .action {
+  display: block;
+  margin-bottom: 8pt;
+  margin-top: 8pt;
+  text-indent: 0;
+  text-align: left;
+  min-height: 1em;
+}
+.doc-container .isolationProcedureEnd:after,
+.procedure-alert .isolationProcedureEnd:after {
+  display: block;
+  font-weight: bold;
+}
+.doc-container ul,
+.procedure-alert ul {
+  display: block;
+  margin-bottom: 8pt;
+  margin-top: 8pt;
+  text-align: left;
+  padding-left: 9mm;
+  min-height: 1em;
+}
+.doc-container ol,
+.procedure-alert ol {
+  display: block;
+  margin-bottom: 8pt;
+  margin-top: 8pt;
+  text-align: left;
+  padding-left: 9mm;
+  min-height: 1em;
+}
+.doc-container li,
+.procedure-alert li {
+  display: block;
+  margin-bottom: 0pt;
+  margin-top: 0pt;
+  text-align: left;
+  font-style: normal;
+  min-height: 1em;
+}
+.doc-container li,
+.procedure-alert li {
+  text-indent: -9mm;
+}
+.doc-container li .note,
+.procedure-alert li .note {
+  margin-left: 9mm;
+  text-indent: 0;
+  padding-left: 0;
+}
+.doc-container ol > li,
+.procedure-alert ol > li {
+  margin-bottom: 8pt;
+}
+.doc-container li > .p:first-child,
+.procedure-alert li > .p:first-child {
+  display: inline;
+}
+.doc-container ol,
+.procedure-alert ol {
+  counter-reset: seq1;
+}
+.doc-container ol ol,
+.procedure-alert ol ol {
+  counter-reset: seq2;
+}
+.doc-container ol > li,
+.procedure-alert ol > li {
+  counter-increment: seq1;
+}
+.doc-container ol ol > li,
+.procedure-alert ol ol > li {
+  counter-increment: seq2;
+}
+.doc-container li:before,
+.procedure-alert li:before {
+  display: inline-block;
+  text-indent: 0;
+  width: 7mm;
+}
+.doc-container ol > li:before,
+.procedure-alert ol > li:before {
+  content: counter(seq1);
+}
+.doc-container ol ol > li:before,
+.procedure-alert ol ol > li:before {
+  content: counter(seq1) "." counter(seq2);
+}
+.doc-container ul.pf01 > li:before,
+.procedure-alert ul.pf01 > li:before {
+  content: "";
+}
+.doc-container ul.pf03 > li:before,
+.procedure-alert ul.pf03 > li:before {
+  content: "\2010";
+}
+.doc-container ul.pf04 > li:before,
+.procedure-alert ul.pf04 > li:before {
+  content: "\229A";
+}
+.doc-container ul.pf05 > li:before,
+.procedure-alert ul.pf05 > li:before {
+  content: "\25CB";
+}
+.doc-container ul.pf06 > li:before,
+.procedure-alert ul.pf06 > li:before {
+  content: "\25A1";
+}
+.doc-container .warning ul > li:before,
+.procedure-alert .warning ul > li:before,
+.doc-container .caution ul > li:before,
+.procedure-alert .caution ul > li:before,
+.doc-container ul.pf07 > li:before,
+.procedure-alert ul.pf07 > li:before {
+  content: "\25CF";
+  font-weight: normal;
+}
+.doc-container ul > li:before,
+.procedure-alert ul > li:before,
+.doc-container ul.pf02 > li:before,
+.procedure-alert ul.pf02 > li:before {
+  content: "\2010";
+}
+.doc-container ol ul > li:before,
+.procedure-alert ol ul > li:before,
+.doc-container ul ul > li:before,
+.procedure-alert ul ul > li:before,
+.doc-container ol ul.pf02 > li:before,
+.procedure-alert ol ul.pf02 > li:before,
+.doc-container ul ul.pf02 > li:before,
+.procedure-alert ul ul.pf02 > li:before {
+  content: "\25CF";
+}
+.doc-container ol ul ul > li:before,
+.procedure-alert ol ul ul > li:before,
+.doc-container ul ul ul > li:before,
+.procedure-alert ul ul ul > li:before,
+.doc-container ol ul ul.pf02 > li:before,
+.procedure-alert ol ul ul.pf02 > li:before,
+.doc-container ul ul ul.pf02 > li:before,
+.procedure-alert ul ul ul.pf02 > li:before {
+  content: "\2010";
+}
+.doc-container .definitionList,
+.procedure-alert .definitionList {
+  display: block;
+  margin-top: 8pt;
+  min-height: 1em;
+}
+.doc-container dt,
+.procedure-alert dt {
+  width: 50mm;
+  float: left;
+}
+.doc-container dd,
+.procedure-alert dd {
+  margin-left: 50mm;
+}
+.doc-container ol > .title,
+.procedure-alert ol > .title,
+.doc-container ul > .title,
+.procedure-alert ul > .title {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 4pt;
+  padding-left: 0;
+  margin-left: -9mm;
+  text-indent: 0;
+}
+.doc-container .content > .refs > .tabular:before,
+.procedure-alert .content > .refs > .tabular:before,
+.doc-container .reqCondGroup > .tabular:before,
+.procedure-alert .reqCondGroup > .tabular:before,
+.doc-container .reqPersons > .tabular:before,
+.procedure-alert .reqPersons > .tabular:before,
+.doc-container .reqSupportEquips > .tabular:before,
+.procedure-alert .reqSupportEquips > .tabular:before,
+.doc-container .reqSupplies > .tabular:before,
+.procedure-alert .reqSupplies > .tabular:before,
+.doc-container .reqSpares > .tabular:before,
+.procedure-alert .reqSpares > .tabular:before,
+.doc-container .table-contents > .title,
+.procedure-alert .table-contents > .title,
+.doc-container .definitionList > .title,
+.procedure-alert .definitionList > .title {
+  text-align: left;
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: 4pt;
+  padding-left: 0;
+  margin-left: 0;
+  text-indent: 0;
+}
+.doc-container .termTitle,
+.procedure-alert .termTitle,
+.doc-container .definitionTitle,
+.procedure-alert .definitionTitle {
+  display: block;
+  text-decoration: underline;
+  font-weight: bold;
+  text-align: left;
+  min-height: 1em;
+}
+.doc-container .termTitle,
+.procedure-alert .termTitle {
+  width: 50mm;
+  float: left;
+}
+.doc-container .definitionTitle,
+.procedure-alert .definitionTitle {
+  margin-left: 50mm;
+}
+.doc-container .content > .refs,
+.procedure-alert .content > .refs,
+.doc-container .reqCondGroup,
+.procedure-alert .reqCondGroup,
+.doc-container .reqPersons,
+.procedure-alert .reqPersons,
+.doc-container .reqSupportEquips,
+.procedure-alert .reqSupportEquips,
+.doc-container .reqSupplies,
+.procedure-alert .reqSupplies,
+.doc-container .reqSpares,
+.procedure-alert .reqSpares {
+  counter-increment: table;
+}
+.doc-container .table,
+.procedure-alert .table {
+  display: block;
+  margin-top: 12pt;
+  counter-increment: table;
+  min-height: 1em;
+}
+.doc-container .table table,
+.procedure-alert .table table {
+  width: 100%;
+}
+.doc-container .table td,
+.procedure-alert .table td,
+.doc-container .table th,
+.procedure-alert .table th {
+  padding: 0pt 4pt;
+}
+.doc-container th[align='left'],
+.procedure-alert th[align='left'],
+.doc-container td[align='left'],
+.procedure-alert td[align='left'],
+.doc-container th[align='left'] .p,
+.procedure-alert th[align='left'] .p,
+.doc-container td[align='left'] .p,
+.procedure-alert td[align='left'] .p {
+  text-align: left;
+}
+.doc-container th[align='center'],
+.procedure-alert th[align='center'],
+.doc-container td[align='center'],
+.procedure-alert td[align='center'],
+.doc-container th[align='center'] .p,
+.procedure-alert th[align='center'] .p,
+.doc-container td[align='center'] .p,
+.procedure-alert td[align='center'] .p {
+  text-align: center;
+}
+.doc-container th[align='right'],
+.procedure-alert th[align='right'],
+.doc-container td[align='right'],
+.procedure-alert td[align='right'],
+.doc-container th[align='right'] .p,
+.procedure-alert th[align='right'] .p,
+.doc-container td[align='right'] .p,
+.procedure-alert td[align='right'] .p {
+  text-align: right;
+}
+.doc-container th[align='justify'],
+.procedure-alert th[align='justify'],
+.doc-container td[align='justify'],
+.procedure-alert td[align='justify'],
+.doc-container th[align='justify'] .p,
+.procedure-alert th[align='justify'] .p,
+.doc-container td[align='justify'] .p,
+.procedure-alert td[align='justify'] .p {
+  text-align: justify;
+}
+.doc-container .productionMaintData,
+.procedure-alert .productionMaintData,
+.doc-container .reqCondGroup,
+.procedure-alert .reqCondGroup,
+.doc-container .reqSupportEquips,
+.procedure-alert .reqSupportEquips,
+.doc-container .reqSupplies,
+.procedure-alert .reqSupplies,
+.doc-container .reqSpares,
+.procedure-alert .reqSpares,
+.doc-container .reqPersons,
+.procedure-alert .reqPersons,
+.doc-container .reqSafety,
+.procedure-alert .reqSafety {
+  display: block;
+  min-height: 1em;
+}
+.doc-container .productionMaintData > *,
+.procedure-alert .productionMaintData > *,
+.doc-container .reqCondGroup > *,
+.procedure-alert .reqCondGroup > *,
+.doc-container .reqSupportEquips > *,
+.procedure-alert .reqSupportEquips > *,
+.doc-container .reqSupplies > *,
+.procedure-alert .reqSupplies > *,
+.doc-container .reqSpares > *,
+.procedure-alert .reqSpares > *,
+.doc-container .reqPersons > *,
+.procedure-alert .reqPersons > *,
+.doc-container .reqSafety > *,
+.procedure-alert .reqSafety > * {
+  margin-left: 55pt;
+}
+.doc-container .embeddedSupportEquipDescr > *:first-child,
+.procedure-alert .embeddedSupportEquipDescr > *:first-child,
+.doc-container .embeddedSupplyDescr > *:first-child,
+.procedure-alert .embeddedSupplyDescr > *:first-child,
+.doc-container .embeddedSpareDescr > *:first-child,
+.procedure-alert .embeddedSpareDescr > *:first-child {
+  padding-left: 22pt;
+}
+.doc-container .workAreaLocationGroup,
+.procedure-alert .workAreaLocationGroup {
+  margin-top: 6pt;
+}
+.doc-container .workAreaLocationGroup *,
+.procedure-alert .workAreaLocationGroup * {
+  display: inline-block;
+}
+.doc-container .workAreaLocationGroup .zoneRef:before,
+.procedure-alert .workAreaLocationGroup .zoneRef:before,
+.doc-container .workAreaLocationGroup .accessPointRef:before,
+.procedure-alert .workAreaLocationGroup .accessPointRef:before {
+  font-weight: bold;
+  display: inline-block;
+  width: 110pt;
+}
+.doc-container .workAreaLocationGroup .zoneRef + .zoneRef,
+.procedure-alert .workAreaLocationGroup .zoneRef + .zoneRef,
+.doc-container .workAreaLocationGroup .accessPointRef + .accessPointRef,
+.procedure-alert .workAreaLocationGroup .accessPointRef + .accessPointRef {
+  display: block;
+  min-height: 1em;
+}
+.doc-container .personSkill .skillLevel,
+.procedure-alert .personSkill .skillLevel {
+  text-align: left;
+}
+.doc-container .content > .refs > .tabular:before,
+.procedure-alert .content > .refs > .tabular:before,
+.doc-container .reqCondGroup > .tabular:before,
+.procedure-alert .reqCondGroup > .tabular:before,
+.doc-container .reqPersons > .tabular:before,
+.procedure-alert .reqPersons > .tabular:before,
+.doc-container .reqSupportEquips > .tabular:before,
+.procedure-alert .reqSupportEquips > .tabular:before,
+.doc-container .reqSupplies > .tabular:before,
+.procedure-alert .reqSupplies > .tabular:before,
+.doc-container .reqSpares > .tabular:before,
+.procedure-alert .reqSpares > .tabular:before {
+  text-align: center;
+  display: table-caption;
+}
+.doc-container .tabular,
+.procedure-alert .tabular {
+  display: table;
+  margin-left: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  border-bottom: 0.5pt solid black;
+  width: 100%;
+}
+.doc-container .tabular > *,
+.procedure-alert .tabular > * {
+  display: table-row !important;
+}
+.doc-container .noSupportEquips:before,
+.procedure-alert .noSupportEquips:before,
+.doc-container .noSupplies:before,
+.procedure-alert .noSupplies:before,
+.doc-container .noSpares:before,
+.procedure-alert .noSpares:before,
+.doc-container .noConds:before,
+.procedure-alert .noConds:before,
+.doc-container .tabular > * > *,
+.procedure-alert .tabular > * > * {
+  display: table-cell !important;
+  padding: 4pt;
+}
+.doc-container .taskDuration,
+.procedure-alert .taskDuration {
+  display: block;
+  padding-left: 55pt;
+  min-height: 1em;
+}
+.doc-container .taskDuration:before,
+.procedure-alert .taskDuration:before {
+  margin-left: -55pt;
+}
+.doc-container .taskDuration:after,
+.procedure-alert .taskDuration:after {
+  white-space: pre;
+}
+.doc-container .externalPubCode:before,
+.procedure-alert .externalPubCode:before {
+  display: inline-block;
+  margin-right: 0.25em;
+}
+.doc-container .table-contents > .title,
+.procedure-alert .table-contents > .title {
+  text-align: center;
+}
+.doc-container .header > *,
+.procedure-alert .header > * {
+  font-weight: bold;
+  border-bottom: 0.5pt solid black;
+  border-top: 0.5pt solid black;
+}
+.doc-container .dmAddress .language:before,
+.procedure-alert .dmAddress .language:before,
+.doc-container .dmAddress .language:before,
+.procedure-alert .dmAddress .language:before,
+.doc-container .dmAddress .issueInfo:before,
+.procedure-alert .dmAddress .issueInfo:before,
+.doc-container .dmAddress .issueDate:before,
+.procedure-alert .dmAddress .issueDate:before,
+.doc-container .dmStatus .responsiblePartnerCompany:before,
+.procedure-alert .dmStatus .responsiblePartnerCompany:before,
+.doc-container .dmStatus .originator:before,
+.procedure-alert .dmStatus .originator:before,
+.doc-container .applicCrossRefTableRef:before,
+.procedure-alert .applicCrossRefTableRef:before,
+.doc-container .dmStatus > .applic:before,
+.procedure-alert .dmStatus > .applic:before,
+.doc-container .techStandard:before,
+.procedure-alert .techStandard:before,
+.doc-container .brexDmRef:before,
+.procedure-alert .brexDmRef:before,
+.doc-container .firstVerification:before,
+.procedure-alert .firstVerification:before,
+.doc-container .secondVerification:before,
+.procedure-alert .secondVerification:before,
+.doc-container .unverified:before,
+.procedure-alert .unverified:before,
+.doc-container .systemBreakdownCode:before,
+.procedure-alert .systemBreakdownCode:before,
+.doc-container .skillLevel:before,
+.procedure-alert .skillLevel:before,
+.doc-container .reasonForUpdate:before,
+.procedure-alert .reasonForUpdate:before,
+.doc-container .supplyDescr:before,
+.procedure-alert .supplyDescr:before,
+.doc-container .spareDescr:before,
+.procedure-alert .spareDescr:before,
+.doc-container .supportEquipDescr:before,
+.procedure-alert .supportEquipDescr:before,
+.doc-container .embeddedSupplyDescr:before,
+.procedure-alert .embeddedSupplyDescr:before,
+.doc-container .embeddedSupportEquipDescr:before,
+.procedure-alert .embeddedSupportEquipDescr:before,
+.doc-container .embeddedSpareDescr:before,
+.procedure-alert .embeddedSpareDescr:before,
+.doc-container .condCrossRefTableRef:before,
+.procedure-alert .condCrossRefTableRef:before,
+.doc-container .productCrossRefTableRef:before,
+.procedure-alert .productCrossRefTableRef:before,
+.doc-container .if > .caseCond:before,
+.procedure-alert .if > .caseCond:before,
+.doc-container .elseIf > .caseCond:before,
+.procedure-alert .elseIf > .caseCond:before,
+.doc-container .challenge:after,
+.procedure-alert .challenge:after,
+.doc-container .dataRestrictions:before,
+.procedure-alert .dataRestrictions:before,
+.doc-container .dataDistribution:before,
+.procedure-alert .dataDistribution:before,
+.doc-container .exportControl:before,
+.procedure-alert .exportControl:before,
+.doc-container .dataHandling:before,
+.procedure-alert .dataHandling:before,
+.doc-container .dataDestruction:before,
+.procedure-alert .dataDestruction:before,
+.doc-container .dataDisclosure:before,
+.procedure-alert .dataDisclosure:before,
+.doc-container .copyright:before,
+.procedure-alert .copyright:before,
+.doc-container .frontMatter .responsiblePartnerCompany:before,
+.procedure-alert .frontMatter .responsiblePartnerCompany:before,
+.doc-container .frontMatter .enterpriseSpec:before,
+.procedure-alert .frontMatter .enterpriseSpec:before,
+.doc-container .timeLimitInfo *:before,
+.procedure-alert .timeLimitInfo *:before,
+.doc-container .isolationStep:before,
+.procedure-alert .isolationStep:before,
+.doc-container .parameter:before,
+.procedure-alert .parameter:before,
+.doc-container .hotspot:before,
+.procedure-alert .hotspot:before,
+.doc-container .isolationProcedureEnd:before,
+.procedure-alert .isolationProcedureEnd:before {
+  font-weight: bold;
+  color: #444444;
+}
+.doc-container .enterpriseName,
+.procedure-alert .enterpriseName,
+.doc-container .identExtension,
+.procedure-alert .identExtension,
+.doc-container .dmCode,
+.procedure-alert .dmCode,
+.doc-container .language,
+.procedure-alert .language,
+.doc-container .issueInfo,
+.procedure-alert .issueInfo,
+.doc-container .issueDate,
+.procedure-alert .issueDate,
+.doc-container .security,
+.procedure-alert .security,
+.doc-container .exportRegistrationStmt,
+.procedure-alert .exportRegistrationStmt,
+.doc-container .subScript,
+.procedure-alert .subScript,
+.doc-container .superScript,
+.procedure-alert .superScript,
+.doc-container .dmRef,
+.procedure-alert .dmRef,
+.doc-container .dmRefIdent,
+.procedure-alert .dmRefIdent,
+.doc-container .dmRefAddressItems,
+.procedure-alert .dmRefAddressItems,
+.doc-container .behavior,
+.procedure-alert .behavior,
+.doc-container .functionalItemRef,
+.procedure-alert .functionalItemRef,
+.doc-container .refs > .dmRef .dmRefIdent,
+.procedure-alert .refs > .dmRef .dmRefIdent,
+.doc-container .refs > .dmRef .dmRefIdent > *,
+.procedure-alert .refs > .dmRef .dmRefIdent > *,
+.doc-container .refs > .dmRef .dmRefAddressItems,
+.procedure-alert .refs > .dmRef .dmRefAddressItems,
+.doc-container .refs > .dmRef .dmRefAddressItems > *,
+.procedure-alert .refs > .dmRef .dmRefAddressItems > *,
+.doc-container .refs .techName,
+.procedure-alert .refs .techName,
+.doc-container .refs .infoName,
+.procedure-alert .refs .infoName,
+.doc-container .pmRef,
+.procedure-alert .pmRef,
+.doc-container .pmRefIdent,
+.procedure-alert .pmRefIdent,
+.doc-container .pmCode,
+.procedure-alert .pmCode,
+.doc-container .pmRefAddressItems,
+.procedure-alert .pmRefAddressItems,
+.doc-container .pubMedia,
+.procedure-alert .pubMedia,
+.doc-container .externalPubRef,
+.procedure-alert .externalPubRef,
+.doc-container .externalPubRefIdent,
+.procedure-alert .externalPubRefIdent,
+.doc-container .externalPubCode,
+.procedure-alert .externalPubCode,
+.doc-container .externalPubTitle,
+.procedure-alert .externalPubTitle,
+.doc-container .indexFlag,
+.procedure-alert .indexFlag,
+.doc-container .acronym,
+.procedure-alert .acronym,
+.doc-container .acronymTerm,
+.procedure-alert .acronymTerm,
+.doc-container .verbatimText,
+.procedure-alert .verbatimText,
+.doc-container .externalPubIssue,
+.procedure-alert .externalPubIssue,
+.doc-container .externalPubRefAddressItems,
+.procedure-alert .externalPubRefAddressItems,
+.doc-container .circuitBreakerRef,
+.procedure-alert .circuitBreakerRef,
+.doc-container .controlIndicatorRef,
+.procedure-alert .controlIndicatorRef,
+.doc-container .inlineSignificantData,
+.procedure-alert .inlineSignificantData,
+.doc-container .quantity,
+.procedure-alert .quantity,
+.doc-container .fullNatoStockNumber,
+.procedure-alert .fullNatoStockNumber,
+.doc-container .zoneRef,
+.procedure-alert .zoneRef,
+.doc-container .accessPointRef,
+.procedure-alert .accessPointRef,
+.doc-container .partNumber,
+.procedure-alert .partNumber,
+.doc-container .serialNumber,
+.procedure-alert .serialNumber,
+.doc-container .internalRef,
+.procedure-alert .internalRef,
+.doc-container .changeInline,
+.procedure-alert .changeInline,
+.doc-container .symbol,
+.procedure-alert .symbol,
+.doc-container .captionLine,
+.procedure-alert .captionLine,
+.doc-container .footnoteRef,
+.procedure-alert .footnoteRef,
+.doc-container .spanspec,
+.procedure-alert .spanspec,
+.doc-container .enumeration,
+.procedure-alert .enumeration,
+.doc-container .catalogSeqNumberRef,
+.procedure-alert .catalogSeqNumberRef,
+.doc-container .partRef,
+.procedure-alert .partRef,
+.doc-container .installationLocation,
+.procedure-alert .installationLocation,
+.doc-container .productItem,
+.procedure-alert .productItem,
+.doc-container .noConds,
+.procedure-alert .noConds,
+.doc-container .reqCond,
+.procedure-alert .reqCond,
+.doc-container .variableRef,
+.procedure-alert .variableRef,
+.doc-container .globalPropertyRef,
+.procedure-alert .globalPropertyRef,
+.doc-container .booleanOperator,
+.procedure-alert .booleanOperator,
+.doc-container .numberOperator,
+.procedure-alert .numberOperator,
+.doc-container .setOperator,
+.procedure-alert .setOperator,
+.doc-container .stringOperator,
+.procedure-alert .stringOperator,
+.doc-container .booleanFunction,
+.procedure-alert .booleanFunction,
+.doc-container .numberFunction,
+.procedure-alert .numberFunction,
+.doc-container .setFunction,
+.procedure-alert .setFunction,
+.doc-container .stringFunction,
+.procedure-alert .stringFunction,
+.doc-container .trueValue,
+.procedure-alert .trueValue,
+.doc-container .falseValue,
+.procedure-alert .falseValue,
+.doc-container .noValue,
+.procedure-alert .noValue,
+.doc-container .reqCondDm,
+.procedure-alert .reqCondDm,
+.doc-container .reqCondDm > *,
+.procedure-alert .reqCondDm > *,
+.doc-container .personCategory,
+.procedure-alert .personCategory,
+.doc-container .personSkill,
+.procedure-alert .personSkill,
+.doc-container .trade,
+.procedure-alert .trade,
+.doc-container .estimatedTime,
+.procedure-alert .estimatedTime,
+.doc-container .toolRef,
+.procedure-alert .toolRef,
+.doc-container .materialSetRef,
+.procedure-alert .materialSetRef,
+.doc-container .noSupportEquips,
+.procedure-alert .noSupportEquips,
+.doc-container .noSupplies,
+.procedure-alert .noSupplies,
+.doc-container .supplyRef,
+.procedure-alert .supplyRef,
+.doc-container .supplyRqmtRef,
+.procedure-alert .supplyRqmtRef,
+.doc-container .noSpares,
+.procedure-alert .noSpares,
+.doc-container .noSafety,
+.procedure-alert .noSafety,
+.doc-container .threshold,
+.procedure-alert .threshold,
+.doc-container .thresholdValue,
+.procedure-alert .thresholdValue,
+.doc-container .tolerance,
+.procedure-alert .tolerance,
+.doc-container .enterpriseRef,
+.procedure-alert .enterpriseRef,
+.doc-container .buyerFurnishedEquipFlag,
+.procedure-alert .buyerFurnishedEquipFlag,
+.doc-container .sparePartClass,
+.procedure-alert .sparePartClass,
+.doc-container .partUsage,
+.procedure-alert .partUsage,
+.doc-container .unitOfIssueQualificationSegment,
+.procedure-alert .unitOfIssueQualificationSegment,
+.doc-container .quantityPerUnit,
+.procedure-alert .quantityPerUnit,
+.doc-container .hazardousClass,
+.procedure-alert .hazardousClass,
+.doc-container .enterpriseIdent,
+.procedure-alert .enterpriseIdent,
+.doc-container .enterpriseIdentAlt,
+.procedure-alert .enterpriseIdentAlt,
+.doc-container .workArea,
+.procedure-alert .workArea,
+.doc-container .limit,
+.procedure-alert .limit,
+.doc-container .limit > *,
+.procedure-alert .limit > *,
+.doc-container .sampling,
+.procedure-alert .sampling,
+.doc-container .inspectionType,
+.procedure-alert .inspectionType,
+.doc-container .trigger,
+.procedure-alert .trigger,
+.doc-container .limitRange,
+.procedure-alert .limitRange,
+.doc-container .limitRangeFrom,
+.procedure-alert .limitRangeFrom,
+.doc-container .cautionIdent,
+.procedure-alert .cautionIdent,
+.doc-container .functionalPhysicalAreaIdent,
+.procedure-alert .functionalPhysicalAreaIdent,
+.doc-container .warningIdent,
+.procedure-alert .warningIdent,
+.doc-container .zoneIdent,
+.procedure-alert .zoneIdent,
+.doc-container .partIdent,
+.procedure-alert .partIdent,
+.doc-container .functionalItemIdent,
+.procedure-alert .functionalItemIdent,
+.doc-container .applic *,
+.procedure-alert .applic *,
+.doc-container .identNumber,
+.procedure-alert .identNumber,
+.doc-container .identNumber > *,
+.procedure-alert .identNumber > * {
+  display: inline;
+}
+.doc-container .supportEquipDescr > * > *,
+.procedure-alert .supportEquipDescr > * > *,
+.doc-container .supplyDescr > * > *,
+.procedure-alert .supplyDescr > * > *,
+.doc-container .spareDescr > * > *,
+.procedure-alert .spareDescr > * > *,
+.doc-container .embeddedSupportEquipDescr > * > *,
+.procedure-alert .embeddedSupportEquipDescr > * > *,
+.doc-container .embeddedSpareDescr > * > *,
+.procedure-alert .embeddedSpareDescr > * > *,
+.doc-container .blockchild > *,
+.procedure-alert .blockchild > * {
+  display: block !important;
+}
+.doc-container .acronym,
+.procedure-alert .acronym {
+  display: inline-block;
+}
+.doc-container .acronymTerm,
+.procedure-alert .acronymTerm {
+  cursor: pointer;
+  border-bottom: 1px dashed #000;
+}
+.doc-container .acronymDefinition,
+.procedure-alert .acronymDefinition {
+  display: none;
+}
+.doc-container .footnote,
+.procedure-alert .footnote {
+  cursor: pointer;
+  vertical-align: super;
+  font-size: 80%;
+}
+.doc-container .footnoteBody,
+.procedure-alert .footnoteBody {
+  display: none;
+}
+.doc-container .verbatimText,
+.procedure-alert .verbatimText {
+  font-size: 0.9em;
+  white-space: pre;
+  font-family: monospace;
+}
+.doc-container .bar,
+.procedure-alert .bar {
+  background: black;
+  width: var(--change-bar-width);
+  position: absolute;
+  left: var(--change-bar-left-indent);
+}
+.doc-container .centerhead1,
+.procedure-alert .centerhead1,
+.doc-container .centerhead2,
+.procedure-alert .centerhead2,
+.doc-container .sidehead0,
+.procedure-alert .sidehead0,
+.doc-container .sidehead1,
+.procedure-alert .sidehead1,
+.doc-container .sidehead2,
+.procedure-alert .sidehead2,
+.doc-container .sidehead3,
+.procedure-alert .sidehead3,
+.doc-container .sidehead4,
+.procedure-alert .sidehead4,
+.doc-container .sidehead5,
+.procedure-alert .sidehead5 {
+  display: block;
+  margin-top: 0;
+}
+.doc-container .centerhead1,
+.procedure-alert .centerhead1 {
+  font-size: 14pt;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 17pt;
+  min-height: 1em;
+}
+.doc-container .centerhead2,
+.procedure-alert .centerhead2 {
+  font-size: 14pt;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 17pt;
+  min-height: 1em;
+}
+.doc-container .sidehead1,
+.procedure-alert .sidehead1 {
+  font-size: 14pt;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 15pt;
+  min-height: 1em;
+}
+.doc-container .commonInfo > .title.empty:before,
+.procedure-alert .commonInfo > .title.empty:before {
+  content: var(--label-commonInfo);
+}
+.doc-container .faultTable,
+.procedure-alert .faultTable {
+  margin-bottom: 17pt;
+}
+.doc-container .faultTable th:nth-child(1),
+.procedure-alert .faultTable th:nth-child(1) {
+  width: 30%;
+}
+.doc-container .faultTable th:nth-child(2),
+.procedure-alert .faultTable th:nth-child(2) {
+  width: 40%;
+}
+.doc-container .faultTable th:nth-child(3),
+.procedure-alert .faultTable th:nth-child(3) {
+  width: 30%;
+}
+.doc-container .faultTableTitle:before,
+.procedure-alert .faultTableTitle:before {
+  content: var(--label-faultCodes);
+}
+.doc-container .faultTable th.code:before,
+.procedure-alert .faultTable th.code:before {
+  content: var(--label-faultCode);
+}
+.doc-container .faultTable th.description:before,
+.procedure-alert .faultTable th.description:before {
+  content: var(--label-faultDescription);
+}
+.doc-container .faultTable th.causes:before,
+.procedure-alert .faultTable th.causes:before {
+  content: var(--label-possibleCauses);
+}
+.doc-container .faultTable .faultCode:before,
+.procedure-alert .faultTable .faultCode:before {
+  content: attr(data-faultcode);
+}
+.doc-container .footnote:before,
+.procedure-alert .footnote:before {
+  display: inline;
+  vertical-align: super;
+  content: attr(data-count) " ";
+}
+.doc-container .row__footnote .footnoteBody,
+.procedure-alert .row__footnote .footnoteBody,
+.doc-container .row__footnote .footnoteBody > *,
+.procedure-alert .row__footnote .footnoteBody > * {
+  display: inline;
+}
+.doc-container .row__footnote,
+.procedure-alert .row__footnote {
+  border-top: 0.5pt solid black;
+}
+.doc-container .status.print,
+.procedure-alert .status.print,
+.doc-container .headFootData,
+.procedure-alert .headFootData,
+.doc-container img.graphicImg,
+.procedure-alert img.graphicImg,
+.doc-container img.multimediaObject,
+.procedure-alert img.multimediaObject,
+.doc-container .infoEntityIdent,
+.procedure-alert .infoEntityIdent {
+  display: none;
+}
+.doc-container .productIllustration .graphicImg,
+.procedure-alert .productIllustration .graphicImg {
+  display: block;
+  margin: auto;
+}
+.doc-container .reqTechInfoGroup,
+.procedure-alert .reqTechInfoGroup {
+  counter-increment: table;
+}
+.doc-container .dmodule,
+.procedure-alert .dmodule {
+  counter-reset: counter1 counter2 counter3 counter4 counter5 counter6 counter7 counter8 figure sheet table footnote question;
+}
+.doc-container .Procedure,
+.procedure-alert .Procedure,
+.doc-container .description,
+.procedure-alert .description {
+  counter-reset: counter1 counter2 counter3 counter4 counter5 counter6 counter7 counter8;
+}
+.doc-container .levelled1:before,
+.procedure-alert .levelled1:before {
+  content: var(--levelledCounterContent1);
+}
+.doc-container .levelled2:before,
+.procedure-alert .levelled2:before {
+  content: var(--levelledCounterContent1_2);
+}
+.doc-container .levelled3:before,
+.procedure-alert .levelled3:before {
+  content: var(--levelledCounterContent1_2_3);
+}
+.doc-container .levelled4:before,
+.procedure-alert .levelled4:before {
+  content: var(--levelledCounterContent1_2_3_4);
+}
+.doc-container .levelled5:before,
+.procedure-alert .levelled5:before {
+  content: var(--levelledCounterContent1_2_3_4_5);
+}
+.doc-container .levelled6:before,
+.procedure-alert .levelled6:before {
+  content: var(--levelledCounterContent1_2_3_4_5_6);
+}
+.doc-container .levelled7:before,
+.procedure-alert .levelled7:before {
+  content: var(--levelledCounterContent1_2_3_4_5_6_7);
+}
+.doc-container .levelled8:before,
+.procedure-alert .levelled8:before {
+  content: var(--levelledCounterContent1_2_3_4_5_6_7_8);
+}
+.doc-container .levels > .levelAlts,
+.procedure-alert .levels > .levelAlts {
+  counter-increment: counter1;
+}
+.doc-container .level1 > .levelAlts,
+.procedure-alert .level1 > .levelAlts {
+  counter-increment: counter2;
+}
+.doc-container .level2 > .levelAlts,
+.procedure-alert .level2 > .levelAlts {
+  counter-increment: counter3;
+}
+.doc-container .level3 > .levelAlts,
+.procedure-alert .level3 > .levelAlts {
+  counter-increment: counter4;
+}
+.doc-container .level4 > .levelAlts,
+.procedure-alert .level4 > .levelAlts {
+  counter-increment: counter5;
+}
+.doc-container .level5 > .levelAlts,
+.procedure-alert .level5 > .levelAlts {
+  counter-increment: counter6;
+}
+.doc-container .level6 > .levelAlts,
+.procedure-alert .level6 > .levelAlts {
+  counter-increment: counter7;
+}
+.doc-container .level7 > .levelAlts,
+.procedure-alert .level7 > .levelAlts {
+  counter-increment: counter8;
+}
+.doc-container .levelAlts > .level1,
+.procedure-alert .levelAlts > .level1,
+.doc-container .levelAlts > .level2,
+.procedure-alert .levelAlts > .level2,
+.doc-container .levelAlts > .level3,
+.procedure-alert .levelAlts > .level3,
+.doc-container .levelAlts > .level4,
+.procedure-alert .levelAlts > .level4,
+.doc-container .levelAlts > .level5,
+.procedure-alert .levelAlts > .level5,
+.doc-container .levelAlts > .level6 .levelAlts > .level7,
+.procedure-alert .levelAlts > .level6 .levelAlts > .level7,
+.doc-container .levelAlts > .level8,
+.procedure-alert .levelAlts > .level8 {
+  counter-increment: none;
+}
+.doc-container .levels,
+.procedure-alert .levels {
+  counter-reset: counter1 counter2 counter3 counter4 counter5 counter6 counter7 counter8;
+}
+.doc-container .levels > .levelAlts,
+.procedure-alert .levels > .levelAlts,
+.doc-container .levelAlts > .level1,
+.procedure-alert .levelAlts > .level1 {
+  counter-reset: counter2 counter3 counter4 counter5 counter6 counter7 counter8;
+}
+.doc-container .level1 > .levelAlts,
+.procedure-alert .level1 > .levelAlts,
+.doc-container .levelAlts > .level2,
+.procedure-alert .levelAlts > .level2 {
+  counter-reset: counter3 counter4 counter5 counter6 counter7 counter8;
+}
+.doc-container .level2 > .levelAlts,
+.procedure-alert .level2 > .levelAlts,
+.doc-container .levelAlts > .level3,
+.procedure-alert .levelAlts > .level3 {
+  counter-reset: counter4 counter5 counter6 counter7 counter8;
+}
+.doc-container .level3 > .levelAlts,
+.procedure-alert .level3 > .levelAlts,
+.doc-container .levelAlts > .level4,
+.procedure-alert .levelAlts > .level4 {
+  counter-reset: counter5 counter6 counter7 counter8;
+}
+.doc-container .level4 > .levelAlts,
+.procedure-alert .level4 > .levelAlts,
+.doc-container .levelAlts > .level5,
+.procedure-alert .levelAlts > .level5 {
+  counter-reset: counter6 counter7 counter8;
+}
+.doc-container .level5 > .levelAlts,
+.procedure-alert .level5 > .levelAlts,
+.doc-container .levelAlts > .level6,
+.procedure-alert .levelAlts > .level6 {
+  counter-reset: counter7 counter8;
+}
+.doc-container .level6 > .levelAlts,
+.procedure-alert .level6 > .levelAlts,
+.doc-container .levelAlts > .level7,
+.procedure-alert .levelAlts > .level7 {
+  counter-reset: counter8;
+}
+.doc-container .levelledPara > .levelledPara,
+.procedure-alert .levelledPara > .levelledPara,
+.doc-container .levelledPara > .levelAlts > .levelledPara,
+.procedure-alert .levelledPara > .levelAlts > .levelledPara,
+.doc-container .proceduralStep > .proceduralStep,
+.procedure-alert .proceduralStep > .proceduralStep,
+.doc-container .proceduralStep > .levelAlts > .proceduralStep,
+.procedure-alert .proceduralStep > .levelAlts > .proceduralStep,
+.doc-container .commonInfoDescrPara > .commonInfoDescrPara,
+.procedure-alert .commonInfoDescrPara > .commonInfoDescrPara,
+.doc-container .commonInfoDescrPara > .levelAlts > .commonInfoDescrPara,
+.procedure-alert .commonInfoDescrPara > .levelAlts > .commonInfoDescrPara {
+  margin-left: var(--left-text-indent-reverse);
+}
+.doc-container .level1,
+.procedure-alert .level1,
+.doc-container .level2,
+.procedure-alert .level2,
+.doc-container .level3,
+.procedure-alert .level3,
+.doc-container .level4,
+.procedure-alert .level4,
+.doc-container .level5,
+.procedure-alert .level5,
+.doc-container .level6,
+.procedure-alert .level6,
+.doc-container .level7,
+.procedure-alert .level7,
+.doc-container .level8,
+.procedure-alert .level8 {
+  position: relative;
+  padding-left: var(--left-text-indent);
+}
+.doc-container .level1 > .title,
+.procedure-alert .level1 > .title,
+.doc-container .level2 > .title,
+.procedure-alert .level2 > .title,
+.doc-container .level3 > .title,
+.procedure-alert .level3 > .title,
+.doc-container .level4 > .title,
+.procedure-alert .level4 > .title,
+.doc-container .level5 > .title,
+.procedure-alert .level5 > .title,
+.doc-container .level6 > .title,
+.procedure-alert .level6 > .title,
+.doc-container .level7 > .title,
+.procedure-alert .level7 > .title,
+.doc-container .level8 > .title,
+.procedure-alert .level8 > .title {
+  margin-top: 0;
+}
+.doc-container .level1 > *:first-child:before,
+.procedure-alert .level1 > *:first-child:before,
+.doc-container .level2 > *:first-child:before,
+.procedure-alert .level2 > *:first-child:before,
+.doc-container .level3 > *:first-child:before,
+.procedure-alert .level3 > *:first-child:before,
+.doc-container .level4 > *:first-child:before,
+.procedure-alert .level4 > *:first-child:before,
+.doc-container .level5 > *:first-child:before,
+.procedure-alert .level5 > *:first-child:before,
+.doc-container .level6 > *:first-child:before,
+.procedure-alert .level6 > *:first-child:before,
+.doc-container .level7 > *:first-child:before,
+.procedure-alert .level7 > *:first-child:before,
+.doc-container .level8 > *:first-child:before,
+.procedure-alert .level8 > *:first-child:before {
+  position: absolute;
+  margin-left: var(--left-text-indent-reverse);
+}
+.doc-container .legend,
+.procedure-alert .legend {
+  margin-left: var(--left-text-indent);
+}
+.doc-container .legend table,
+.procedure-alert .legend table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+  font-weight: normal;
+  font-style: normal;
+}
+.doc-container .definitionList table caption,
+.procedure-alert .definitionList table caption {
+  text-align: left;
+  font-style: italic;
+  margin-bottom: 4pt;
+}
+.doc-container .legend td,
+.procedure-alert .legend td {
+  width: 50%;
+}
+.doc-container .legend .definitionListItem,
+.procedure-alert .legend .definitionListItem {
+  display: flex;
+}
+.doc-container .legend .listItemTerm,
+.procedure-alert .legend .listItemTerm {
+  min-width: var(--list-body-indent);
+  width: 10%;
+}
+.doc-container .legend .listItemDefinition,
+.procedure-alert .legend .listItemDefinition {
+  width: 90%;
+}
+.doc-container .definitionList td,
+.procedure-alert .definitionList td,
+.doc-container .definitionList th,
+.procedure-alert .definitionList th {
+  vertical-align: top;
+}
+.doc-container .definitionListHeader,
+.procedure-alert .definitionListHeader {
+  margin-bottom: 4pt;
+}
+.doc-container .definitionListItem,
+.procedure-alert .definitionListItem {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.doc-container .listItemDefinition .p,
+.procedure-alert .listItemDefinition .p {
+  margin-top: 0;
+}
+.doc-container .legend caption:before,
+.procedure-alert .legend caption:before {
+  content: var(--label-legend) " " attr(data-figure) ":";
+}
+.doc-container .definitionList caption.rest:after,
+.procedure-alert .definitionList caption.rest:after {
+  content: " (" var(--label-continued) ")";
+}
+.doc-container .definitionList caption,
+.procedure-alert .definitionList caption {
+  page-break-after: avoid;
+}
+.doc-container .li,
+.procedure-alert .li {
+  display: flex;
+}
+.doc-container .li:before,
+.procedure-alert .li:before {
+  flex-shrink: 0;
+  width: var(--list-body-indent);
+}
+.doc-container .listItemBody > .p:first-child,
+.procedure-alert .listItemBody > .p:first-child {
+  margin-top: 0;
+}
+.doc-container .list .list,
+.procedure-alert .list .list {
+  margin-top: 8pt;
+}
+.doc-container .list .list .li:last-child .listItemBody > .p:last-child,
+.procedure-alert .list .list .li:last-child .listItemBody > .p:last-child {
+  margin-bottom: 0;
+}
+.doc-container .ol,
+.procedure-alert .ol {
+  counter-reset: seq1;
+}
+.doc-container .ol > .li,
+.procedure-alert .ol > .li {
+  counter-increment: seq1;
+}
+.doc-container .ol > .li:before,
+.procedure-alert .ol > .li:before {
+  content: counter(seq1);
+}
+.doc-container .ol .ol,
+.procedure-alert .ol .ol {
+  counter-reset: seq2;
+}
+.doc-container .ol > .li .ol > .li,
+.procedure-alert .ol > .li .ol > .li {
+  counter-increment: seq2;
+}
+.doc-container .ol .ol > .li:before,
+.procedure-alert .ol .ol > .li:before {
+  content: counter(seq1) "." counter(seq2);
+}
+.doc-container .ul.pf01 > .li:before,
+.procedure-alert .ul.pf01 > .li:before {
+  content: "";
+}
+.doc-container .ul.pf03 > .li:before,
+.procedure-alert .ul.pf03 > .li:before {
+  content: "\2010";
+}
+.doc-container .ul.pf04 > .li:before,
+.procedure-alert .ul.pf04 > .li:before {
+  content: "\229A";
+}
+.doc-container .ul.pf05 > .li:before,
+.procedure-alert .ul.pf05 > .li:before {
+  content: "\25CB";
+}
+.doc-container .ul.pf06 > .li:before,
+.procedure-alert .ul.pf06 > .li:before {
+  content: "\25A1";
+}
+.doc-container .ul.pf01 > .li:before,
+.procedure-alert .ul.pf01 > .li:before {
+  content: "";
+}
+.doc-container .ul.pf03 > .li:before,
+.procedure-alert .ul.pf03 > .li:before {
+  content: "\2010";
+}
+.doc-container .ul.pf04 > .li:before,
+.procedure-alert .ul.pf04 > .li:before {
+  content: "\229A";
+}
+.doc-container .ul.pf05 > .li:before,
+.procedure-alert .ul.pf05 > .li:before {
+  content: "\25CB";
+}
+.doc-container .ul.pf06 > .li:before,
+.procedure-alert .ul.pf06 > .li:before {
+  content: "\25A1";
+}
+.doc-container .warning .ul > .li:before,
+.procedure-alert .warning .ul > .li:before,
+.doc-container .caution .ul > .li:before,
+.procedure-alert .caution .ul > .li:before,
+.doc-container .ul.pf07 > .li:before,
+.procedure-alert .ul.pf07 > .li:before {
+  content: "\25CF";
+  font-weight: normal;
+}
+.doc-container .ul > .li:before,
+.procedure-alert .ul > .li:before,
+.doc-container .ul.pf02 > .li:before,
+.procedure-alert .ul.pf02 > .li:before {
+  content: "\2010";
+}
+.doc-container .ol .ul > .li:before,
+.procedure-alert .ol .ul > .li:before,
+.doc-container .ul .ul > .li:before,
+.procedure-alert .ul .ul > .li:before,
+.doc-container .ol .ul.pf02 > .li:before,
+.procedure-alert .ol .ul.pf02 > .li:before,
+.doc-container .ul .ul.pf02 > .li:before,
+.procedure-alert .ul .ul.pf02 > .li:before {
+  content: "\25CF";
+}
+.doc-container .ol .ul .ul > .li:before,
+.procedure-alert .ol .ul .ul > .li:before,
+.doc-container .ul .ul .ul > .li:before,
+.procedure-alert .ul .ul .ul > .li:before,
+.doc-container .ol .ul .ul.pf02 > .li:before,
+.procedure-alert .ol .ul .ul.pf02 > .li:before,
+.doc-container .ul .ul .ul > .li:before,
+.procedure-alert .ul .ul .ul > .li:before,
+.doc-container .ul .ul .ul.pf02 > .li:before,
+.procedure-alert .ul .ul .ul.pf02 > .li:before {
+  content: "\2010";
+}
+.doc-container .p > .list,
+.procedure-alert .p > .list {
+  margin-top: 8pt;
+}
+.doc-container .reqCondGroup:before,
+.procedure-alert .reqCondGroup:before,
+.doc-container .reqSupportEquips:before,
+.procedure-alert .reqSupportEquips:before,
+.doc-container .reqSupplies:before,
+.procedure-alert .reqSupplies:before,
+.doc-container .reqTechInfoGroup:before,
+.procedure-alert .reqTechInfoGroup:before,
+.doc-container .reqSpares:before,
+.procedure-alert .reqSpares:before,
+.doc-container .reqSafety:before,
+.procedure-alert .reqSafety:before,
+.doc-container .reqPersons:before,
+.procedure-alert .reqPersons:before {
+  display: block;
+  font-size: 14pt;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 27pt;
+  margin-bottom: 17pt;
+  min-height: 1em;
+}
+.doc-container .reqCondGroup table,
+.procedure-alert .reqCondGroup table,
+.doc-container .reqSupportEquips table,
+.procedure-alert .reqSupportEquips table,
+.doc-container .reqSupplies table,
+.procedure-alert .reqSupplies table,
+.doc-container .reqSpares table,
+.procedure-alert .reqSpares table {
+  margin-left: 0;
+}
+.doc-container .formalTable table,
+.procedure-alert .formalTable table {
+  margin-left: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-bottom: 0.5pt solid black;
+  width: 100%;
+  text-align: left;
+}
+.doc-container .reqSafety > *,
+.procedure-alert .reqSafety > * {
+  margin-left: var(--left-text-indent);
+}
+.doc-container .formalTable td,
+.procedure-alert .formalTable td,
+.doc-container .formalTable th,
+.procedure-alert .formalTable th {
+  padding: 4pt;
+  text-align: left;
+  vertical-align: top;
+}
+.doc-container .formalTable th,
+.procedure-alert .formalTable th {
+  font-weight: bold;
+}
+.doc-container .formalTable td[colspan],
+.procedure-alert .formalTable td[colspan] {
+  display: table-cell;
+}
+.doc-container .formalTable thead tr,
+.procedure-alert .formalTable thead tr {
+  border-bottom: 0.5pt solid black;
+  border-top: 0.5pt solid black;
+}
+.doc-container .reqCondDm + .reqCondCircuitBreaker,
+.procedure-alert .reqCondDm + .reqCondCircuitBreaker,
+.doc-container .reqCondNoRef + .reqCondCircuitBreaker,
+.procedure-alert .reqCondNoRef + .reqCondCircuitBreaker,
+.doc-container .reqCondPm + .reqCondCircuitBreaker,
+.procedure-alert .reqCondPm + .reqCondCircuitBreaker,
+.doc-container .reqCondExternalPub + .reqCondCircuitBreaker,
+.procedure-alert .reqCondExternalPub + .reqCondCircuitBreaker,
+.doc-container .circuitBreakerDescr + .reqCondDm,
+.procedure-alert .circuitBreakerDescr + .reqCondDm,
+.doc-container .circuitBreakerDescr + .reqCondNoRef,
+.procedure-alert .circuitBreakerDescr + .reqCondNoRef,
+.doc-container .circuitBreakerDescr + .reqCondPm,
+.procedure-alert .circuitBreakerDescr + .reqCondPm,
+.doc-container .circuitBreakerDescr + .reqCondExternalPub,
+.procedure-alert .circuitBreakerDescr + .reqCondExternalPub {
+  border-top: 0.5pt solid black;
+}
+.doc-container .prelimTable td > *,
+.procedure-alert .prelimTable td > * {
+  padding-bottom: 4pt;
+}
+.doc-container .prelimTable td > *:last-child,
+.procedure-alert .prelimTable td > *:last-child {
+  padding-bottom: 0pt;
+}
+.doc-container .prelimTable_identification > *,
+.procedure-alert .prelimTable_identification > * {
+  display: block;
+}
+.doc-container .identNumber[data-partnumber]:before,
+.procedure-alert .identNumber[data-partnumber]:before {
+  content: var(--label-partno) " " attr(data-partnumber);
+}
+.doc-container .identNumber[data-partnumber][data-manufacturercode]:before,
+.procedure-alert .identNumber[data-partnumber][data-manufacturercode]:before {
+  content: var(--label-partno) " " attr(data-manufacturercode) "/" attr(data-partnumber);
+}
+.doc-container tr.embeddedSupportEquipDescr > :first-child:before,
+.procedure-alert tr.embeddedSupportEquipDescr > :first-child:before,
+.doc-container tr.embeddedSupplyDescr > :first-child:before,
+.procedure-alert tr.embeddedSupplyDescr > :first-child:before,
+.doc-container tr.embeddedSpareDescr > :first-child:before,
+.procedure-alert tr.embeddedSpareDescr > :first-child:before {
+  position: absolute;
+  margin-left: -18pt;
+  content: "-";
+}
+.doc-container .reqCondExternalPub .externalPubTitle,
+.procedure-alert .reqCondExternalPub .externalPubTitle {
+  display: none;
+}
+.doc-container .noSupportEquips:before,
+.procedure-alert .noSupportEquips:before,
+.doc-container .noSupplies:before,
+.procedure-alert .noSupplies:before,
+.doc-container .noSpares:before,
+.procedure-alert .noSpares:before,
+.doc-container .noConds:before,
+.procedure-alert .noConds:before {
+  display: block;
+  padding: 0;
+}
+.doc-container .noSupportEquips,
+.procedure-alert .noSupportEquips,
+.doc-container .noSupplies,
+.procedure-alert .noSupplies,
+.doc-container .noSpares,
+.procedure-alert .noSpares,
+.doc-container .noConds,
+.procedure-alert .noConds {
+  display: block;
+}
+.doc-container .row__noSupportEquips,
+.procedure-alert .row__noSupportEquips,
+.doc-container .row__noSupplies,
+.procedure-alert .row__noSupplies,
+.doc-container .row__noSpares,
+.procedure-alert .row__noSpares,
+.doc-container .row__noConds,
+.procedure-alert .row__noConds {
+  border-bottom: 1px solid black;
+}
+.doc-container .reqCondGroup th:nth-child(1),
+.procedure-alert .reqCondGroup th:nth-child(1) {
+  width: 13%;
+}
+.doc-container .reqCondGroup th:nth-child(2),
+.procedure-alert .reqCondGroup th:nth-child(2) {
+  width: 15%;
+}
+.doc-container .reqCondGroup th:nth-child(3),
+.procedure-alert .reqCondGroup th:nth-child(3) {
+  width: 23%;
+}
+.doc-container .reqCondGroup th:nth-child(4),
+.procedure-alert .reqCondGroup th:nth-child(4) {
+  width: 13%;
+}
+.doc-container .reqCondGroup th:nth-child(5),
+.procedure-alert .reqCondGroup th:nth-child(5) {
+  width: 16%;
+}
+.doc-container .reqCondGroup th:nth-child(6),
+.procedure-alert .reqCondGroup th:nth-child(6) {
+  width: 20%;
+}
+.doc-container .reqPersons th:nth-child(1),
+.procedure-alert .reqPersons th:nth-child(1) {
+  width: 20%;
+}
+.doc-container .reqPersons th:nth-child(2),
+.procedure-alert .reqPersons th:nth-child(2) {
+  width: 20%;
+}
+.doc-container .reqPersons th:nth-child(3),
+.procedure-alert .reqPersons th:nth-child(3) {
+  width: 20%;
+}
+.doc-container .reqPersons th:nth-child(4),
+.procedure-alert .reqPersons th:nth-child(4) {
+  width: 20%;
+}
+.doc-container .reqPersons th:nth-child(5),
+.procedure-alert .reqPersons th:nth-child(5) {
+  width: 20%;
+}
+.doc-container .reqTechInfoGroup th:nth-child(1),
+.procedure-alert .reqTechInfoGroup th:nth-child(1) {
+  width: 38%;
+}
+.doc-container .reqTechInfoGroup th:nth-child(2),
+.procedure-alert .reqTechInfoGroup th:nth-child(2) {
+  width: 46%;
+}
+.doc-container .reqTechInfoGroup th:nth-child(3),
+.procedure-alert .reqTechInfoGroup th:nth-child(3) {
+  width: 16%;
+}
+.doc-container .prelimTable th:nth-child(1),
+.procedure-alert .prelimTable th:nth-child(1) {
+  width: 35%;
+}
+.doc-container .prelimTable th:nth-child(2),
+.procedure-alert .prelimTable th:nth-child(2) {
+  width: 35%;
+}
+.doc-container .prelimTable th:nth-child(3),
+.procedure-alert .prelimTable th:nth-child(3) {
+  width: 10%;
+}
+.doc-container .prelimTable th:nth-child(4),
+.procedure-alert .prelimTable th:nth-child(4) {
+  width: 20%;
+}
+.doc-container .formalTable caption,
+.procedure-alert .formalTable caption {
+  font-style: italic;
+  margin-bottom: 4pt;
+  page-break-after: avoid;
+}
+.doc-container .reqCondGroup:before,
+.procedure-alert .reqCondGroup:before,
+.doc-container .reqPersons:before,
+.procedure-alert .reqPersons:before,
+.doc-container .reqTechInfoGroup:before,
+.procedure-alert .reqTechInfoGroup:before,
+.doc-container .reqSupportEquips:before,
+.procedure-alert .reqSupportEquips:before,
+.doc-container .reqSupplies:before,
+.procedure-alert .reqSupplies:before,
+.doc-container .reqSpares:before,
+.procedure-alert .reqSpares:before {
+  page-break-after: avoid;
+}
+.doc-container .reqCondGroup caption:before,
+.procedure-alert .reqCondGroup caption:before {
+  content: var(--label-table) " " counter(table) " " var(--label-reqCondGroup);
+}
+.doc-container .reqPersons caption:before,
+.procedure-alert .reqPersons caption:before {
+  content: var(--label-table) " " counter(table) " " var(--label-reqPersons);
+}
+.doc-container .reqTechInfoGroup caption:before,
+.procedure-alert .reqTechInfoGroup caption:before {
+  content: var(--label-table) " " counter(table) " " var(--label-reqTechInfoGroup);
+}
+.doc-container .reqSupportEquips caption:before,
+.procedure-alert .reqSupportEquips caption:before {
+  content: var(--label-table) " " counter(table) " " var(--label-reqSupportEquips);
+}
+.doc-container .reqSupplies caption:before,
+.procedure-alert .reqSupplies caption:before {
+  content: var(--label-table) " " counter(table) " " var(--label-reqSupplies);
+}
+.doc-container .reqSpares caption:before,
+.procedure-alert .reqSpares caption:before {
+  content: var(--label-table) " " counter(table) " " var(--label-reqSpares);
+}
+.doc-container .reqCondGroup caption.rest:after,
+.procedure-alert .reqCondGroup caption.rest:after,
+.doc-container .reqPersons caption.rest:after,
+.procedure-alert .reqPersons caption.rest:after,
+.doc-container .reqTechInfoGroup caption.rest:after,
+.procedure-alert .reqTechInfoGroup caption.rest:after,
+.doc-container .reqSupportEquips caption.rest:after,
+.procedure-alert .reqSupportEquips caption.rest:after,
+.doc-container .reqSupplies caption.rest:after,
+.procedure-alert .reqSupplies caption.rest:after,
+.doc-container .reqSpares caption.rest:after,
+.procedure-alert .reqSpares caption.rest:after,
+.doc-container .avehcfg caption.rest:after,
+.procedure-alert .avehcfg caption.rest:after,
+.doc-container .highInstruction caption.rest:after,
+.procedure-alert .highInstruction caption.rest:after {
+  content: " (" var(--label-continued) ")";
+}
+.doc-container .reqCondGroup thead .condition:before,
+.procedure-alert .reqCondGroup thead .condition:before {
+  content: var(--label-action) "/" var(--label-condition);
+}
+.doc-container .reqCondGroup thead .publication:before,
+.procedure-alert .reqCondGroup thead .publication:before {
+  content: var(--label-data-module) "/" var(--label-technical-publication);
+}
+.doc-container .reqCondGroup thead .cbEntry__action:before,
+.procedure-alert .reqCondGroup thead .cbEntry__action:before {
+  content: "";
+}
+.doc-container .reqCondGroup thead .cbEntry__accessPoint:before,
+.procedure-alert .reqCondGroup thead .cbEntry__accessPoint:before {
+  content: var(--label-accessPoint);
+}
+.doc-container .reqCondGroup thead .cbEntry__name:before,
+.procedure-alert .reqCondGroup thead .cbEntry__name:before {
+  content: var(--label-header-cb-name);
+}
+.doc-container .reqCondGroup thead .cbEntry__cb:before,
+.procedure-alert .reqCondGroup thead .cbEntry__cb:before {
+  content: var(--label-header-cb);
+}
+.doc-container .reqCondGroup thead .cbEntry__location:before,
+.procedure-alert .reqCondGroup thead .cbEntry__location:before {
+  content: var(--label-header-cb-location);
+}
+.doc-container .reqCondGroup thead .cbEntry__remarks:before,
+.procedure-alert .reqCondGroup thead .cbEntry__remarks:before {
+  content: var(--label-remarks);
+}
+.doc-container .reqPersons thead .person:before,
+.procedure-alert .reqPersons thead .person:before {
+  content: var(--label-person);
+}
+.doc-container .reqPersons thead .person__category::before,
+.procedure-alert .reqPersons thead .person__category::before {
+  content: var(--label-personCategory);
+}
+.doc-container .reqPersons thead .person__skill:before,
+.procedure-alert .reqPersons thead .person__skill:before {
+  content: var(--label-personSkill);
+}
+.doc-container .reqPersons thead .person__trade:before,
+.procedure-alert .reqPersons thead .person__trade:before {
+  content: var(--label-trade);
+}
+.doc-container .reqPersons thead .person__estimatedTime:before,
+.procedure-alert .reqPersons thead .person__estimatedTime:before {
+  content: var(--label-estimatedTime);
+}
+.doc-container .reqTechInfoGroup thead .documentNumber:before,
+.procedure-alert .reqTechInfoGroup thead .documentNumber:before {
+  content: var(--label-document-number);
+}
+.doc-container .reqTechInfoGroup thead .reqTechInfoTitle:before,
+.procedure-alert .reqTechInfoGroup thead .reqTechInfoTitle:before {
+  content: var(--label-title);
+}
+.doc-container .reqTechInfoGroup thead .category:before,
+.procedure-alert .reqTechInfoGroup thead .category:before {
+  content: var(--label-category);
+}
+.doc-container thead .prelimTable__name:before,
+.procedure-alert thead .prelimTable__name:before {
+  content: var(--label-name);
+}
+.doc-container thead .prelimTable__identification:before,
+.procedure-alert thead .prelimTable__identification:before {
+  content: var(--label-identification) "/" var(--label-reference);
+}
+.doc-container thead .prelimTable__qty:before,
+.procedure-alert thead .prelimTable__qty:before {
+  content: var(--label-quantity);
+}
+.doc-container thead .prelimTable__remark:before,
+.procedure-alert thead .prelimTable__remark:before {
+  content: var(--label-remarks);
+}
+.doc-container .cbEntry__action[data-circuitbreakeraction="open"]:before,
+.procedure-alert .cbEntry__action[data-circuitbreakeraction="open"]:before,
+.doc-container .cbEntry__action[data-circuitbreakeraction="open-order"]:before,
+.procedure-alert .cbEntry__action[data-circuitbreakeraction="open-order"]:before {
+  content: "- " var(--label-cbActionOpen);
+}
+.doc-container .cbEntry__action[data-circuitbreakeraction="close"]:before,
+.procedure-alert .cbEntry__action[data-circuitbreakeraction="close"]:before,
+.doc-container .cbEntry__action[data-circuitbreakeraction="close-order"]:before,
+.procedure-alert .cbEntry__action[data-circuitbreakeraction="close-order"]:before {
+  content: "- " var(--label-cbActionClose);
+}
+.doc-container .person__man:before,
+.procedure-alert .person__man:before {
+  content: var(--label-man) " " attr(data-value);
+}
+.doc-container .person__personnel[data-value]:before,
+.procedure-alert .person__personnel[data-value]:before {
+  content: attr(data-value) " " var(--label-persons);
+}
+.doc-container .person__personnel[data-value='1']:before,
+.procedure-alert .person__personnel[data-value='1']:before {
+  content: attr(data-value) " " var(--label-person-inline);
+}
+.doc-container .person__personnel[data-value='0']:before,
+.procedure-alert .person__personnel[data-value='0']:before,
+.doc-container .person__personnel[data-value='']:before,
+.procedure-alert .person__personnel[data-value='']:before {
+  content: var(--label-as-required);
+}
+.doc-container .person__category:before,
+.procedure-alert .person__category:before {
+  content: attr(data-personcategorycode);
+}
+.doc-container .person__skill[data-skilllevelcode]:before,
+.procedure-alert .person__skill[data-skilllevelcode]:before {
+  content: attr(data-skilllevelcode);
+}
+.doc-container .person__skill[data-skilllevelcode="sk01"]:before,
+.procedure-alert .person__skill[data-skilllevelcode="sk01"]:before {
+  content: var(--label-skillLevelCode-01);
+}
+.doc-container .person__skill[data-skilllevelcode="sk02"]:before,
+.procedure-alert .person__skill[data-skilllevelcode="sk02"]:before {
+  content: var(--label-skillLevelCode-02);
+}
+.doc-container .person__skill[data-skilllevelcode="sk03"]:before,
+.procedure-alert .person__skill[data-skilllevelcode="sk03"]:before {
+  content: var(--label-skillLevelCode-03);
+}
+.doc-container .person__estimatedTime:after,
+.procedure-alert .person__estimatedTime:after {
+  content: attr(data-unitofmeasure);
+}
+.doc-container .reqTechInfoGroup td[data-reqtechinfocategory]:before,
+.procedure-alert .reqTechInfoGroup td[data-reqtechinfocategory]:before {
+  content: attr(data-reqtechinfocategory);
+}
+.doc-container .reqTechInfoGroup td[data-reqtechinfocategory="ti01"]:before,
+.procedure-alert .reqTechInfoGroup td[data-reqtechinfocategory="ti01"]:before {
+  content: var(--label-reqTechInfoCategory-01);
+}
+.doc-container .reqTechInfoGroup td[data-reqtechinfocategory="ti02"]:before,
+.procedure-alert .reqTechInfoGroup td[data-reqtechinfocategory="ti02"]:before {
+  content: var(--label-reqTechInfoCategory-02);
+}
+.doc-container .reqTechInfoGroup td[data-reqtechinfocategory="ti03"]:before,
+.procedure-alert .reqTechInfoGroup td[data-reqtechinfocategory="ti03"]:before {
+  content: var(--label-reqTechInfoCategory-03);
+}
+.doc-container .reqTechInfoGroup td[data-reqtechinfocategory="ti04"]:before,
+.procedure-alert .reqTechInfoGroup td[data-reqtechinfocategory="ti04"]:before {
+  content: var(--label-reqTechInfoCategory-04);
+}
+.doc-container .reqTechInfoGroup td[data-reqtechinfocategory="ti05"]:before,
+.procedure-alert .reqTechInfoGroup td[data-reqtechinfocategory="ti05"]:before {
+  content: var(--label-reqTechInfoCategory-05);
+}
+.doc-container .reqTechInfoGroup td[data-reqtechinfocategory="ti06"]:before,
+.procedure-alert .reqTechInfoGroup td[data-reqtechinfocategory="ti06"]:before {
+  content: var(--label-reqTechInfoCategory-06);
+}
+.doc-container .workAreaLocationGroup:before,
+.procedure-alert .workAreaLocationGroup:before {
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 4pt;
+  margin-bottom: 4pt;
+  min-height: 1em;
+}
+.doc-container .workAreaLocationGroup .zoneRef::before,
+.procedure-alert .workAreaLocationGroup .zoneRef::before,
+.doc-container .workAreaLocationGroup .accessPointRef:before,
+.procedure-alert .workAreaLocationGroup .accessPointRef:before {
+  font-weight: normal;
+  display: block;
+  width: 100%;
+}
+.doc-container .workAreaLocationGroup *,
+.procedure-alert .workAreaLocationGroup * {
+  display: block !important;
+}
+.doc-container .productionMaintData .thresholdInterval:before,
+.procedure-alert .productionMaintData .thresholdInterval:before {
+  content: var(--label-thresholdInterval);
+  width: 110pt;
+  font-weight: bold;
+}
+.doc-container .productionMaintData .thresholdInterval,
+.procedure-alert .productionMaintData .thresholdInterval {
+  display: flex;
+}
+.doc-container .workAreaLocationGroup__type,
+.procedure-alert .workAreaLocationGroup__type {
+  margin-left: 22pt;
+  display: flex !important;
+}
+.doc-container .type__label,
+.procedure-alert .type__label {
+  width: 88pt;
+  font-weight: bold;
+}
+.doc-container .pmd .type__label,
+.procedure-alert .pmd .type__label {
+  width: 110pt;
+}
+.doc-container .type__body,
+.procedure-alert .type__body {
+  flex-grow: 1;
+  padding-bottom: 2pt;
+}
+.doc-container .type__item,
+.procedure-alert .type__item {
+  display: flex !important;
+  padding-bottom: 2pt;
+}
+.doc-container .item__number,
+.procedure-alert .item__number {
+  width: 88pt;
+}
+.doc-container .item__number:before,
+.procedure-alert .item__number:before {
+  content: attr(data-zonenumber) attr(data-accesspointnumber) attr(data-functionalitemnumber);
+}
+.doc-container .item__body,
+.procedure-alert .item__body {
+  flex-grow: 1;
+}
+.doc-container .item__body > *,
+.procedure-alert .item__body > * {
+  padding-bottom: 2pt;
+}
+.doc-container .item__full,
+.procedure-alert .item__full {
+  flex-grow: 1;
+}
+.doc-container .productItem,
+.procedure-alert .productItem {
+  display: inline;
+}
+.doc-container .type__label.zone:before,
+.procedure-alert .type__label.zone:before {
+  content: var(--label-zone);
+}
+.doc-container .type__label.zones:before,
+.procedure-alert .type__label.zones:before {
+  content: var(--label-zones);
+}
+.doc-container .type__label.accessPoint:before,
+.procedure-alert .type__label.accessPoint:before {
+  content: var(--label-accessPoint);
+}
+.doc-container .type__label.accessPoints:before,
+.procedure-alert .type__label.accessPoints:before {
+  content: var(--label-accessPoints);
+}
+.doc-container .type__label.workLocation:before,
+.procedure-alert .type__label.workLocation:before {
+  content: var(--label-workLocation);
+}
+.doc-container .type__label.workLocations:before,
+.procedure-alert .type__label.workLocations:before {
+  content: var(--label-workLocations);
+}
+.doc-container .taskDuration::after,
+.procedure-alert .taskDuration::after {
+  content: var(--label-preliminaryRqmts) " " attr(data-startupduration) " " attr(data-unitofmeasure) "\000a" var(--label-mainProcedure) " " attr(data-procedureduration) " " attr(data-unitofmeasure) "\000a" var(--label-closeRqmts) " " attr(data-closeupduration) " " attr(data-unitofmeasure);
+}
+.doc-container .item__body[data-accesspointtypevalue]:before,
+.procedure-alert .item__body[data-accesspointtypevalue]:before {
+  content: attr(data-accesspointtypevalue);
+}
+.doc-container .item__body[data-accesspointtypevalue='accpnl01']:before,
+.procedure-alert .item__body[data-accesspointtypevalue='accpnl01']:before {
+  content: var(--label-accessPoint-accpnl01);
+}
+.doc-container .item__body[data-accesspointtypevalue='accpnl02']:before,
+.procedure-alert .item__body[data-accesspointtypevalue='accpnl02']:before {
+  content: var(--label-accessPoint-accpnl02);
+}
+.doc-container .item__body[data-accesspointtypevalue='accpnl03']:before,
+.procedure-alert .item__body[data-accesspointtypevalue='accpnl03']:before {
+  content: var(--label-accessPoint-accpnl03);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure]:after {
+  content: " " attr(data-thresholdunitofmeasure);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th01"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th01"]:after {
+  content: " " var(--label-thresholdInterval-th01);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th02"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th02"]:after {
+  content: " " var(--label-thresholdInterval-th02);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th03"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th03"]:after {
+  content: " " var(--label-thresholdInterval-th03);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th04"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th04"]:after {
+  content: " " var(--label-thresholdInterval-th04);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th05"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th05"]:after {
+  content: " " var(--label-thresholdInterval-th05);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th06"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th06"]:after {
+  content: " " var(--label-thresholdInterval-th06);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th07"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th07"]:after {
+  content: " " var(--label-thresholdInterval-th07);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th08"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th08"]:after {
+  content: " " var(--label-thresholdInterval-th08);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th09"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th09"]:after {
+  content: " " var(--label-thresholdInterval-th09);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th10"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th10"]:after {
+  content: " " var(--label-thresholdInterval-th10);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th11"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th11"]:after {
+  content: " " var(--label-thresholdInterval-th11);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th12"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th12"]:after {
+  content: " " var(--label-thresholdInterval-th12);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th13"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th13"]:after {
+  content: " " var(--label-thresholdInterval-th13);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th14"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th14"]:after {
+  content: " " var(--label-thresholdInterval-th14);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th15"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th15"]:after {
+  content: " " var(--label-thresholdInterval-th15);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th16"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th16"]:after {
+  content: " " var(--label-thresholdInterval-th16);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th17"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th17"]:after {
+  content: " " var(--label-thresholdInterval-th17);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th18"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th18"]:after {
+  content: " " var(--label-thresholdInterval-th18);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th19"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th19"]:after {
+  content: " " var(--label-thresholdInterval-th19);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th20"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th20"]:after {
+  content: " " var(--label-thresholdInterval-th20);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th21"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th21"]:after {
+  content: " " var(--label-thresholdInterval-th21);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th22"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th22"]:after {
+  content: " " var(--label-thresholdInterval-th22);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th23"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th23"]:after {
+  content: " " var(--label-thresholdInterval-th23);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th24"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th24"]:after {
+  content: " " var(--label-thresholdInterval-th24);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th25"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th25"]:after {
+  content: " " var(--label-thresholdInterval-th25);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th26"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th26"]:after {
+  content: " " var(--label-thresholdInterval-th26);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th27"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th27"]:after {
+  content: " " var(--label-thresholdInterval-th27);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th28"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th28"]:after {
+  content: " " var(--label-thresholdInterval-th28);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th29"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th29"]:after {
+  content: " " var(--label-thresholdInterval-th29);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th30"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th30"]:after {
+  content: " " var(--label-thresholdInterval-th30);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th31"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th31"]:after {
+  content: " " var(--label-thresholdInterval-th31);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th32"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th32"]:after {
+  content: " " var(--label-thresholdInterval-th32);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th33"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th33"]:after {
+  content: " " var(--label-thresholdInterval-th33);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th34"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th34"]:after {
+  content: " " var(--label-thresholdInterval-th34);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th35"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th35"]:after {
+  content: " " var(--label-thresholdInterval-th35);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th36"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th36"]:after {
+  content: " " var(--label-thresholdInterval-th36);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th37"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th37"]:after {
+  content: " " var(--label-thresholdInterval-th37);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th38"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th38"]:after {
+  content: " " var(--label-thresholdInterval-th38);
+}
+.doc-container .thresholdInterval[data-thresholdunitofmeasure="th39"]:after,
+.procedure-alert .thresholdInterval[data-thresholdunitofmeasure="th39"]:after {
+  content: " " var(--label-thresholdInterval-th39);
+}
+.doc-container .installationLocation[data-installationlocationtype]:before,
+.procedure-alert .installationLocation[data-installationlocationtype]:before {
+  content: attr(data-installationlocationtype) " = ";
+}
+.doc-container .installationLocation[data-installationlocationtype="instloctyp02"]:before,
+.procedure-alert .installationLocation[data-installationlocationtype="instloctyp02"]:before {
+  content: var(--label-installationLocationType-02) " = ";
+}
+.doc-container .installationLocation[data-installationlocationtype="instloctyp03"]:before,
+.procedure-alert .installationLocation[data-installationlocationtype="instloctyp03"]:before {
+  content: var(--label-installationLocationType-03) " = ";
+}
+.doc-container .installationLocation[data-installationlocationtype="instloctyp04"]:before,
+.procedure-alert .installationLocation[data-installationlocationtype="instloctyp04"]:before {
+  content: var(--label-installationLocationType-04) " = ";
+}
+.doc-container .installationLocation[data-installationlocationtype="instloctyp05"]:before,
+.procedure-alert .installationLocation[data-installationlocationtype="instloctyp05"]:before {
+  content: var(--label-installationLocationType-05) " = ";
+}
+.doc-container .installationLocation:after,
+.procedure-alert .installationLocation:after {
+  content: " " attr(data-unitofmeasure);
+}
+.doc-container .productItem[data-productitemtype]:before,
+.procedure-alert .productItem[data-productitemtype]:before {
+  content: attr(data-productitemtype) " " attr(data-productitemname);
+}
+.doc-container .productItem[data-productitemtype="pi01"]:before,
+.procedure-alert .productItem[data-productitemtype="pi01"]:before {
+  content: var(--label-productItemType-01) " " attr(data-productitemname);
+}
+.doc-container .productItem[data-productitemtype="pi02"]:before,
+.procedure-alert .productItem[data-productitemtype="pi02"]:before {
+  content: var(--label-productItemType-02) " " attr(data-productitemname);
+}
+.doc-container .productItem[data-productitemtype="pi03"]:before,
+.procedure-alert .productItem[data-productitemtype="pi03"]:before {
+  content: var(--label-productItemType-03) " " attr(data-productitemname);
+}
+.doc-container .refs.formalTable td:nth-child(1),
+.procedure-alert .refs.formalTable td:nth-child(1) {
+  width: 44%;
+}
+.doc-container .refs.formalTable td:nth-child(2),
+.procedure-alert .refs.formalTable td:nth-child(2) {
+  width: 56%;
+}
+.doc-container .refs.formalTable caption:before,
+.procedure-alert .refs.formalTable caption:before {
+  content: var(--label-table) " " counter(table) " " var(--label-references);
+}
+.doc-container .refs.formalTable caption.rest:after,
+.procedure-alert .refs.formalTable caption.rest:after {
+  content: " (" var(--label-continued) ")";
+}
+.doc-container .refs thead .refs__code:before,
+.procedure-alert .refs thead .refs__code:before {
+  content: var(--label-data-module) "/" var(--label-technical-publication);
+}
+.doc-container .refs thead .refs__title:before,
+.procedure-alert .refs thead .refs__title:before {
+  content: var(--label-title);
+}
+.doc-container .formalTable .reference__code .dmRefAddressItems,
+.procedure-alert .formalTable .reference__code .dmRefAddressItems,
+.doc-container .formalTable .frontMatterTable__code .dmRefAddressItems,
+.procedure-alert .formalTable .frontMatterTable__code .dmRefAddressItems,
+.doc-container .formalTable .reference__code .issueInfo,
+.procedure-alert .formalTable .reference__code .issueInfo,
+.doc-container .formalTable .frontMatterTable__code .issueInfo,
+.procedure-alert .formalTable .frontMatterTable__code .issueInfo,
+.doc-container .formalTable .reference__code .language,
+.procedure-alert .formalTable .reference__code .language,
+.doc-container .formalTable .frontMatterTable__code .language,
+.procedure-alert .formalTable .frontMatterTable__code .language,
+.doc-container .formalTable .reference__code .pmRefAddressItems,
+.procedure-alert .formalTable .reference__code .pmRefAddressItems,
+.doc-container .formalTable .frontMatterTable__code .pmRefAddressItems,
+.procedure-alert .formalTable .frontMatterTable__code .pmRefAddressItems,
+.doc-container .formalTable .reference__code .externalPubTitle,
+.procedure-alert .formalTable .reference__code .externalPubTitle,
+.doc-container .formalTable .frontMatterTable__code .externalPubTitle,
+.procedure-alert .formalTable .frontMatterTable__code .externalPubTitle,
+.doc-container .formalTable .reference__code .externalPubIssueInfo,
+.procedure-alert .formalTable .reference__code .externalPubIssueInfo,
+.doc-container .formalTable .frontMatterTable__code .externalPubIssueInfo,
+.procedure-alert .formalTable .frontMatterTable__code .externalPubIssueInfo,
+.doc-container .formalTable .reference__code .externalPubRefAddressItems,
+.procedure-alert .formalTable .reference__code .externalPubRefAddressItems,
+.doc-container .formalTable .frontMatterTable__code .externalPubRefAddressItems,
+.procedure-alert .formalTable .frontMatterTable__code .externalPubRefAddressItems {
+  display: none;
+}
+.doc-container .formalTable .reference__title .techName,
+.procedure-alert .formalTable .reference__title .techName,
+.doc-container .formalTable .reference__title .infoName,
+.procedure-alert .formalTable .reference__title .infoName {
+  display: inline;
+}
+.doc-container .formalTable .reference__title .infoName:before,
+.procedure-alert .formalTable .reference__title .infoName:before {
+  content: " - ";
+}
+.doc-container .externalPubCode:before,
+.procedure-alert .externalPubCode:before {
+  margin-right: 0;
+}
+.doc-container .internalRef.irtt01:before,
+.procedure-alert .internalRef.irtt01:before {
+  content: var(--label-figure) " " var(--figureCounter);
+}
+.doc-container .internalRef.irtt02:before,
+.procedure-alert .internalRef.irtt02:before {
+  content: var(--label-table) " " var(--tableCounter);
+}
+.doc-container .internalRef.irtt03:before,
+.procedure-alert .internalRef.irtt03:before {
+  content: var(--label-multimedia) " " var(--figureCounter);
+}
+.doc-container .internalRef.irtt07:before,
+.procedure-alert .internalRef.irtt07:before {
+  content: var(--label-para) " " attr(data-index);
+}
+.doc-container .internalRef.irtt07.levelled1:before,
+.procedure-alert .internalRef.irtt07.levelled1:before {
+  content: var(--label-para) " " var(--levelledCounterContent1);
+}
+.doc-container .internalRef.irtt07.levelled2:before,
+.procedure-alert .internalRef.irtt07.levelled2:before {
+  content: var(--label-para) " " var(--levelledCounterContent1_2);
+}
+.doc-container .internalRef.irtt07.levelled3:before,
+.procedure-alert .internalRef.irtt07.levelled3:before {
+  content: var(--label-para) " " var(--levelledCounterContent1_2_3);
+}
+.doc-container .internalRef.irtt07.levelled4:before,
+.procedure-alert .internalRef.irtt07.levelled4:before {
+  content: var(--label-para) " " var(--levelledCounterContent1_2_3_4);
+}
+.doc-container .internalRef.irtt07.levelled5:before,
+.procedure-alert .internalRef.irtt07.levelled5:before {
+  content: var(--label-para) " " var(--levelledCounterContent1_2_3_4_5);
+}
+.doc-container .internalRef.irtt07.levelled6:before,
+.procedure-alert .internalRef.irtt07.levelled6:before {
+  content: var(--label-para) " " var(--levelledCounterContent1_2_3_4_5_6);
+}
+.doc-container .internalRef.irtt07.levelled7:before,
+.procedure-alert .internalRef.irtt07.levelled7:before {
+  content: var(--label-para) " " var(--levelledCounterContent1_2_3_4_5_6_7);
+}
+.doc-container .internalRef.irtt07.levelled8:before,
+.procedure-alert .internalRef.irtt07.levelled8:before {
+  content: var(--label-para) " " var(--levelledCounterContent1_2_3_4_5_6_7_8);
+}
+.doc-container .internalRef.irtt08:before,
+.procedure-alert .internalRef.irtt08:before {
+  content: var(--label-step) " " attr(data-index);
+}
+.doc-container .internalRef.irtt08.levelled1:before,
+.procedure-alert .internalRef.irtt08.levelled1:before {
+  content: var(--label-step) " " var(--levelledCounterContent1);
+}
+.doc-container .internalRef.irtt08.levelled2:before,
+.procedure-alert .internalRef.irtt08.levelled2:before {
+  content: var(--label-step) " " var(--levelledCounterContent1_2);
+}
+.doc-container .internalRef.irtt08.levelled3:before,
+.procedure-alert .internalRef.irtt08.levelled3:before {
+  content: var(--label-step) " " var(--levelledCounterContent1_2_3);
+}
+.doc-container .internalRef.irtt08.levelled4:before,
+.procedure-alert .internalRef.irtt08.levelled4:before {
+  content: var(--label-step) " " var(--levelledCounterContent1_2_3_4);
+}
+.doc-container .internalRef.irtt08.levelled5:before,
+.procedure-alert .internalRef.irtt08.levelled5:before {
+  content: var(--label-step) " " var(--levelledCounterContent1_2_3_4_5);
+}
+.doc-container .internalRef.irtt08.levelled6:before,
+.procedure-alert .internalRef.irtt08.levelled6:before {
+  content: var(--label-step) " " var(--levelledCounterContent1_2_3_4_5_6);
+}
+.doc-container .internalRef.irtt08.levelled7:before,
+.procedure-alert .internalRef.irtt08.levelled7:before {
+  content: var(--label-step) " " var(--levelledCounterContent1_2_3_4_5_6_7);
+}
+.doc-container .internalRef.irtt08.levelled8:before,
+.procedure-alert .internalRef.irtt08.levelled8:before {
+  content: var(--label-step) " " var(--levelledCounterContent1_2_3_4_5_6_7_8);
+}
+.doc-container .internalRef.irtt09:before,
+.procedure-alert .internalRef.irtt09:before {
+  content: var(--label-figure) " " var(--figureCounter) ", " var(--label-sheet) " " var(--sheetCounter);
+}
+.doc-container .internalRef.irtt10:before,
+.procedure-alert .internalRef.irtt10:before {
+  content: var(--label-multimedia) " " var(--figureCounter) ", " attr(data-multimediatype);
+}
+.doc-container .internalRef.irtt11:before,
+.procedure-alert .internalRef.irtt11:before {
+  content: var(--label-figure) " " var(--figureCounter) " [" attr(data-referredfragment) "]";
+}
+.doc-container .listItemTerm .internalRef.irtt11:before,
+.procedure-alert .listItemTerm .internalRef.irtt11:before {
+  content: attr(data-referredfragment);
+}
+.doc-container .internalRef.irtt13[data-zoneNumber]:before,
+.procedure-alert .internalRef.irtt13[data-zoneNumber]:before {
+  content: var(--label-zone) " " attr(data-zoneNumber);
+}
+.doc-container .internalRef.irtt16[data-accessPointNumber]:before,
+.procedure-alert .internalRef.irtt16[data-accessPointNumber]:before {
+  content: attr(data-accessPointNumber);
+}
+.doc-container .internalRef.irtt16.accpnl01[data-accessPointNumber]:before,
+.procedure-alert .internalRef.irtt16.accpnl01[data-accessPointNumber]:before {
+  content: var(--label-accessPoint-accpnl01) " " attr(data-accessPointNumber);
+}
+.doc-container .internalRef.irtt16.accpnl02[data-accessPointNumber]:before,
+.procedure-alert .internalRef.irtt16.accpnl02[data-accessPointNumber]:before {
+  content: var(--label-accessPoint-accpnl02) " " attr(data-accessPointNumber);
+}
+.doc-container .internalRef.irtt16.accpnl03[data-accessPointNumber]:before,
+.procedure-alert .internalRef.irtt16.accpnl03[data-accessPointNumber]:before {
+  content: var(--label-accessPoint-accpnl03) " " attr(data-accessPointNumber);
+}
+.doc-container .internalRef[data-filled]:before,
+.procedure-alert .internalRef[data-filled]:before {
+  content: none !important;
+}
+.doc-container .catalogSeqNumberRef[data-systemCode]:before,
+.procedure-alert .catalogSeqNumberRef[data-systemCode]:before {
+  content: var(--label-CSN) " " attr(data-systemcode) "-" attr(data-subsystemcode) attr(data-subsubsystemcode) "-" attr(data-assycode) " " var(--label-figure) " " attr(data-figurenumber) attr(data-figurenumbervariant) " " var(--label-item) " " attr(data-item) attr(data-itemvariant);
+}
+.doc-container .catalogSeqNumberRef[data-systemCode][data-itemSeqNumberValue]:before,
+.procedure-alert .catalogSeqNumberRef[data-systemCode][data-itemSeqNumberValue]:before {
+  content: var(--label-CSNISN) " " attr(data-systemcode) "-" attr(data-subsystemcode) attr(data-subsubsystemcode) "-" attr(data-assycode) " " var(--label-figure) " " attr(data-figurenumber) attr(data-figurenumbervariant) " " var(--label-item) " " attr(data-item) attr(data-itemvariant) "/" attr(data-itemseqnumbervalue);
+}
+.doc-container .materialSetRef:before,
+.procedure-alert .materialSetRef:before {
+  content: var(--label-materialSet) " " attr(data-materialsetident);
+}
+.doc-container .materialSetRef[data-materialsetissue]:before,
+.procedure-alert .materialSetRef[data-materialsetissue]:before {
+  content: var(--label-materialSet) " " attr(data-materialsetident) "-" attr(data-materialsetissue);
+}
+.doc-container caption,
+.procedure-alert caption {
+  caption-side: top;
+}
+.doc-container caption.rest,
+.procedure-alert caption.rest {
+  display: none;
+}
+.doc-container .table[data-pgwide="1"],
+.procedure-alert .table[data-pgwide="1"] {
+  margin-left: var(--left-text-indent-reverse);
+}
+.doc-container .description > .table,
+.procedure-alert .description > .table {
+  margin-left: var(--left-text-indent);
+}
+.doc-container .description > .table[data-pgwide="1"],
+.procedure-alert .description > .table[data-pgwide="1"] {
+  margin-left: 0;
+}
+.doc-container .table > .table-contents > .title,
+.procedure-alert .table > .table-contents > .title {
+  display: none;
+}
+.doc-container .table caption,
+.procedure-alert .table caption {
+  font-style: italic;
+  margin-bottom: 4pt;
+  padding-left: 0;
+  margin-left: 0;
+  text-indent: 0;
+  page-break-after: avoid;
+}
+.doc-container .table caption .title,
+.procedure-alert .table caption .title {
+  font-weight: normal;
+  display: inline;
+}
+.doc-container .table caption .title:before,
+.procedure-alert .table caption .title:before {
+  content: var(--label-table) " " counter(table) " ";
+}
+.doc-container .table caption.rest .title:after,
+.procedure-alert .table caption.rest .title:after {
+  content: " (" var(--label-continued) ")";
+}
+.doc-container .FM__productIntro,
+.procedure-alert .FM__productIntro {
+  margin-top: 20pt;
+  margin-bottom: 20pt;
+}
+.doc-container .FM__pmTitle,
+.procedure-alert .FM__pmTitle {
+  margin-bottom: 20pt;
+}
+.doc-container .frontMatterTitlePage .name,
+.procedure-alert .frontMatterTitlePage .name {
+  font-weight: bold;
+  font-size: 18pt;
+}
+.doc-container .frontMatterTitlePage .productAndModel,
+.procedure-alert .frontMatterTitlePage .productAndModel {
+  display: block;
+}
+.doc-container .frontMatterTitlePage .pmTitle,
+.procedure-alert .frontMatterTitlePage .pmTitle {
+  font-weight: bold;
+  font-size: 24pt;
+}
+.doc-container .frontMatterTitlePage .pmTitle + .shortPmTitle,
+.procedure-alert .frontMatterTitlePage .pmTitle + .shortPmTitle {
+  margin-top: 10pt;
+}
+.doc-container .frontMatterTitlePage .shortPmTitle,
+.procedure-alert .frontMatterTitlePage .shortPmTitle {
+  font-weight: bold;
+  font-size: 14pt;
+}
+.doc-container .frontMatterTitlePage .pmCode,
+.procedure-alert .frontMatterTitlePage .pmCode {
+  display: block;
+  font-weight: bold;
+  font-size: 14pt;
+  margin-bottom: 10pt;
+}
+.doc-container .frontMatterTitlePage .issueInfo,
+.procedure-alert .frontMatterTitlePage .issueInfo {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14pt;
+  margin-bottom: 10pt;
+}
+.doc-container .frontMatterTitlePage .issueInfo:after,
+.procedure-alert .frontMatterTitlePage .issueInfo:after {
+  content: var(--label-issueNo) " " attr(data-issuenumber) "-" attr(data-inwork) ", ";
+}
+.doc-container .frontMatterTitlePage .issueInfo[data-inwork="00"]:after,
+.procedure-alert .frontMatterTitlePage .issueInfo[data-inwork="00"]:after {
+  content: var(--label-issueNo) " " attr(data-issuenumber) ", ";
+}
+.doc-container .frontMatterTitlePage .issueDate,
+.procedure-alert .frontMatterTitlePage .issueDate {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14pt;
+}
+.doc-container .productIllustration .graphicImg,
+.procedure-alert .productIllustration .graphicImg {
+  max-height: 100mm;
+  max-width: 100%;
+}
+.doc-container .productIllustration .graphicImg[width],
+.procedure-alert .productIllustration .graphicImg[width] {
+  max-width: none;
+  width: attr(width);
+}
+.doc-container .productIllustration .graphicImg[height],
+.procedure-alert .productIllustration .graphicImg[height] {
+  max-height: none;
+  height: attr(height);
+}
+.doc-container .productIllustration .infoEntityIdent,
+.procedure-alert .productIllustration .infoEntityIdent {
+  display: none;
+}
+.doc-container .frontMatterTitlePage .copyright:before,
+.procedure-alert .frontMatterTitlePage .copyright:before,
+.doc-container .frontMatterTitlePage .dataDistribution:before,
+.procedure-alert .frontMatterTitlePage .dataDistribution:before,
+.doc-container .frontMatterTitlePage .exportControl:before,
+.procedure-alert .frontMatterTitlePage .exportControl:before,
+.doc-container .frontMatterTitlePage .dataHandling:before,
+.procedure-alert .frontMatterTitlePage .dataHandling:before,
+.doc-container .frontMatterTitlePage .dataDestruction:before,
+.procedure-alert .frontMatterTitlePage .dataDestruction:before,
+.doc-container .frontMatterTitlePage .dataDisclosure:before,
+.procedure-alert .frontMatterTitlePage .dataDisclosure:before {
+  content: none;
+}
+.doc-container .frontMatterTitlePage .restrictionInfo,
+.procedure-alert .frontMatterTitlePage .restrictionInfo,
+.doc-container .frontMatterTitlePage .restrictionInstructions,
+.procedure-alert .frontMatterTitlePage .restrictionInstructions,
+.doc-container .frontMatterTitlePage .frontMatterInfo,
+.procedure-alert .frontMatterTitlePage .frontMatterInfo {
+  font-size: 0.8em;
+  margin-left: 0;
+}
+.doc-container .frontMatterTitlePage .restrictionInfo .p,
+.procedure-alert .frontMatterTitlePage .restrictionInfo .p {
+  margin-bottom: 0;
+}
+.doc-container .frontMatterTitlePage .restrictionInfo .copyrightPara,
+.procedure-alert .frontMatterTitlePage .restrictionInfo .copyrightPara,
+.doc-container .frontMatterInfo .reducedPara,
+.procedure-alert .frontMatterInfo .reducedPara,
+.doc-container .frontMatterInfo .title,
+.procedure-alert .frontMatterInfo .title {
+  margin-top: 0;
+  margin-bottom: 4pt;
+}
+.doc-container .reducedRandomList,
+.procedure-alert .reducedRandomList {
+  margin-top: 4pt;
+}
+.doc-container .preFooter .container,
+.procedure-alert .preFooter .container,
+.doc-container .preFooter .publisherBody,
+.procedure-alert .preFooter .publisherBody,
+.doc-container .preFooter .manufacturerBody,
+.procedure-alert .preFooter .manufacturerBody {
+  display: flex;
+  column-gap: 12pt;
+}
+.doc-container .preFooter .leftArea,
+.procedure-alert .preFooter .leftArea {
+  width: 100mm;
+}
+.doc-container .preFooter .rightArea,
+.procedure-alert .preFooter .rightArea {
+  flex-grow: 1;
+  text-align: right;
+  align-self: flex-end;
+}
+.doc-container .preFooter .enterpriseLogo,
+.procedure-alert .preFooter .enterpriseLogo,
+.doc-container .preFooter .publisherLogo,
+.procedure-alert .preFooter .publisherLogo {
+  max-width: 30mm;
+  min-width: 15mm;
+  max-height: 30mm;
+}
+.doc-container .preFooter .enterpriseLogo img,
+.procedure-alert .preFooter .enterpriseLogo img,
+.doc-container .preFooter .publisherLogo img,
+.procedure-alert .preFooter .publisherLogo img {
+  max-width: 30mm;
+  max-height: 30mm;
+}
+.doc-container .preFooter .responsiblePartnerCompany,
+.procedure-alert .preFooter .responsiblePartnerCompany,
+.doc-container .preFooter .enterpriseSpec,
+.procedure-alert .preFooter .enterpriseSpec {
+  flex-grow: 1;
+}
+.doc-container .publisher,
+.procedure-alert .publisher,
+.doc-container .manufacturer,
+.procedure-alert .manufacturer {
+  margin-top: 4pt;
+}
+.doc-container .manufacturer,
+.procedure-alert .manufacturer {
+  border-top: 2pt solid black;
+}
+.doc-container .manufacturer .street,
+.procedure-alert .manufacturer .street,
+.doc-container .manufacturer .building,
+.procedure-alert .manufacturer .building,
+.doc-container .manufacturer .country,
+.procedure-alert .manufacturer .country,
+.doc-container .manufacturer .postalZipCode,
+.procedure-alert .manufacturer .postalZipCode,
+.doc-container .manufacturer .city,
+.procedure-alert .manufacturer .city {
+  display: inline;
+}
+.doc-container .manufacturer .building:before,
+.procedure-alert .manufacturer .building:before,
+.doc-container .manufacturer .postalZipCode:before,
+.procedure-alert .manufacturer .postalZipCode:before {
+  content: ", ";
+}
+.doc-container .publisher:before,
+.procedure-alert .publisher:before {
+  content: var(--label-publisher) var(--label-colonSymbol);
+}
+.doc-container .manufacturer:before,
+.procedure-alert .manufacturer:before {
+  content: var(--label-manufacturer) var(--label-colonSymbol);
+}
+.doc-container .referencedApplicGroup,
+.procedure-alert .referencedApplicGroup {
+  display: none;
+}
+.doc-container .dmStatus .applic[data-displaytext="All"]:after,
+.procedure-alert .dmStatus .applic[data-displaytext="All"]:after {
+  content: var(--label-applic-all);
+}
+.doc-container .dmStatus .applic:after,
+.procedure-alert .dmStatus .applic:after {
+  content: attr(data-displaytext);
+}
+.doc-container .dmStatus .applic .displayText,
+.procedure-alert .dmStatus .applic .displayText {
+  display: none;
+}
+.doc-container .loedmGeneratePretopic__row1:before,
+.procedure-alert .loedmGeneratePretopic__row1:before,
+.doc-container .tocGeneratePretopic__row1:before,
+.procedure-alert .tocGeneratePretopic__row1:before,
+.doc-container .highGeneratePretopic__row1:before,
+.procedure-alert .highGeneratePretopic__row1:before {
+  content: var(--label-loedm-generate-row1-part1) attr(data-issuenumber) var(--label-loedm-generate-row1-part2) attr(data-year) "-" attr(data-month) "-" attr(data-day) var(--label-loedm-generate-row1-part3);
+}
+.doc-container .loedmGeneratePretopic__row2:before,
+.procedure-alert .loedmGeneratePretopic__row2:before {
+  content: var(--label-loedm-generate-row2);
+}
+.doc-container .loedmGeneratePretopic__row3:before,
+.procedure-alert .loedmGeneratePretopic__row3:before {
+  content: var(--label-loedm-generate-row3);
+}
+.doc-container .highInstructionGeneratePretopic__row1:before,
+.procedure-alert .highInstructionGeneratePretopic__row1:before {
+  content: var(--label-high-generate-row1);
+}
+.doc-container .highInstructionGeneratePretopic__row2:before,
+.procedure-alert .highInstructionGeneratePretopic__row2:before {
+  content: var(--label-high-generate-row2);
+}
+.doc-container .highInstructionGeneratePretopic__row3:before,
+.procedure-alert .highInstructionGeneratePretopic__row3:before {
+  content: var(--label-high-generate-row3);
+}
+.doc-container .frontMatterList > .issueInfo,
+.procedure-alert .frontMatterList > .issueInfo,
+.doc-container .frontMatterList > .issueDate,
+.procedure-alert .frontMatterList > .issueDate,
+.doc-container .frontMatterTableOfContent > .issueInfo,
+.procedure-alert .frontMatterTableOfContent > .issueInfo,
+.doc-container .frontMatterTableOfContent > .issueDate,
+.procedure-alert .frontMatterTableOfContent > .issueDate {
+  display: none;
+}
+.doc-container .frontMatterList .reducedPara,
+.procedure-alert .frontMatterList .reducedPara,
+.doc-container .frontMatterTableOfContent .reducedPara,
+.procedure-alert .frontMatterTableOfContent .reducedPara {
+  margin-bottom: 4pt;
+  margin-left: var(--left-text-indent);
+}
+.doc-container .frontMatterTable .externalPubTitle,
+.procedure-alert .frontMatterTable .externalPubTitle {
+  font-weight: normal;
+}
+.doc-container .frontMatterTable .infoName,
+.procedure-alert .frontMatterTable .infoName {
+  font-style: italic;
+}
+.doc-container .frontMatterTable .externalPubIssueDate:after,
+.procedure-alert .frontMatterTable .externalPubIssueDate:after,
+.doc-container .frontMatterTable .issueDate:after,
+.procedure-alert .frontMatterTable .issueDate:after {
+  content: attr(data-year) "-" attr(data-month) "-" attr(data-day);
+}
+.doc-container .frontMatterTable tr,
+.procedure-alert .frontMatterTable tr {
+  page-break-inside: avoid;
+}
+.doc-container .loedm th:nth-child(1),
+.procedure-alert .loedm th:nth-child(1) {
+  width: 33%;
+}
+.doc-container .loedm th:nth-child(2),
+.procedure-alert .loedm th:nth-child(2) {
+  width: 33%;
+}
+.doc-container .loedm th:nth-child(3),
+.procedure-alert .loedm th:nth-child(3) {
+  width: 4%;
+}
+.doc-container .loedm th:nth-child(4),
+.procedure-alert .loedm th:nth-child(4) {
+  width: 12%;
+}
+.doc-container .loedm th:nth-child(5),
+.procedure-alert .loedm th:nth-child(5) {
+  width: 8%;
+}
+.doc-container .loedm th:nth-child(6),
+.procedure-alert .loedm th:nth-child(6) {
+  width: 10%;
+}
+.doc-container .highInstruction th:nth-child(1),
+.procedure-alert .highInstruction th:nth-child(1) {
+  width: 33%;
+}
+.doc-container .highInstruction th:nth-child(2),
+.procedure-alert .highInstruction th:nth-child(2) {
+  width: 33%;
+}
+.doc-container .highInstruction th:nth-child(3),
+.procedure-alert .highInstruction th:nth-child(3) {
+  width: 4%;
+}
+.doc-container .highInstruction th:nth-child(4),
+.procedure-alert .highInstruction th:nth-child(4) {
+  width: 12%;
+}
+.doc-container .highInstruction th:nth-child(5),
+.procedure-alert .highInstruction th:nth-child(5) {
+  width: 8%;
+}
+.doc-container .highInstruction th:nth-child(6),
+.procedure-alert .highInstruction th:nth-child(6) {
+  width: 10%;
+}
+.doc-container .highlights th:nth-child(1),
+.procedure-alert .highlights th:nth-child(1) {
+  width: 33%;
+}
+.doc-container .highlights th:nth-child(2),
+.procedure-alert .highlights th:nth-child(2) {
+  width: 67%;
+}
+.doc-container th.frontMatterTable__title:before,
+.procedure-alert th.frontMatterTable__title:before {
+  content: var(--label-documentTitle);
+}
+.doc-container th.frontMatterTable__code:before,
+.procedure-alert th.frontMatterTable__code:before {
+  content: var(--label-dataModuleCode);
+}
+.doc-container th.frontMatterTable__issueDate:before,
+.procedure-alert th.frontMatterTable__issueDate:before {
+  content: var(--label-issueDate);
+}
+.doc-container th.frontMatterTable__pages:before,
+.procedure-alert th.frontMatterTable__pages:before {
+  content: var(--label-noOfPages);
+}
+.doc-container th.frontMatterTable__applic:before,
+.procedure-alert th.frontMatterTable__applic:before {
+  content: var(--label-fm-applic);
+}
+.doc-container th.high__DM:before,
+.procedure-alert th.high__DM:before {
+  content: var(--label-data-module);
+}
+.doc-container th.high__rfu:before,
+.procedure-alert th.high__rfu:before {
+  content: var(--label-reason-for-update);
+}
+.doc-container .loedm__status[data-issuetype="new"]:before,
+.procedure-alert .loedm__status[data-issuetype="new"]:before,
+.doc-container .loedm__status[data-issuetype="rinstate-status"]:before,
+.procedure-alert .loedm__status[data-issuetype="rinstate-status"]:before,
+.doc-container .loedm__status[data-issuetype="rinstate-changed"]:before,
+.procedure-alert .loedm__status[data-issuetype="rinstate-changed"]:before,
+.doc-container .loedm__status[data-issuetype="rinstate-revised"]:before,
+.procedure-alert .loedm__status[data-issuetype="rinstate-revised"]:before {
+  content: "N";
+}
+.doc-container .loedm__status[data-issuetype="revised"]:before,
+.procedure-alert .loedm__status[data-issuetype="revised"]:before,
+.doc-container .loedm__status[data-issuetype="changed"]:before,
+.procedure-alert .loedm__status[data-issuetype="changed"]:before,
+.doc-container .loedm__status[data-issuetype="status"]:before,
+.procedure-alert .loedm__status[data-issuetype="status"]:before {
+  content: "C";
+}
+.doc-container .high__status:before,
+.procedure-alert .high__status:before {
+  content: "I";
+}
+.doc-container .high__status[data-issuetype="deleted"]:before,
+.procedure-alert .high__status[data-issuetype="deleted"]:before {
+  content: "R";
+}
+.doc-container .toc th:nth-child(1),
+.procedure-alert .toc th:nth-child(1) {
+  width: 36%;
+}
+.doc-container .toc th:nth-child(2),
+.procedure-alert .toc th:nth-child(2) {
+  width: 36%;
+}
+.doc-container .toc th:nth-child(4),
+.procedure-alert .toc th:nth-child(4) {
+  width: 15%;
+}
+.doc-container .toc th:nth-child(6),
+.procedure-alert .toc th:nth-child(6) {
+  width: 13%;
+}
+.doc-container .toc [data-toclevel="1"] .title,
+.procedure-alert .toc [data-toclevel="1"] .title {
+  font-size: 14pt;
+  font-weight: bold;
+  text-align: left;
+}
+.doc-container .toc [data-toclevel="2"] .title,
+.procedure-alert .toc [data-toclevel="2"] .title {
+  font-size: 12pt;
+  font-weight: bold;
+  margin-left: 10mm;
+}
+.doc-container .description > .p,
+.procedure-alert .description > .p {
+  margin-left: var(--left-text-indent);
+}
+.doc-container .table[data-tabstyle="changeRecord"] .p,
+.procedure-alert .table[data-tabstyle="changeRecord"] .p {
+  margin-top: 3pt;
+  margin-bottom: 3pt;
+}
+.doc-container .description.noHeader:before,
+.procedure-alert .description.noHeader:before {
+  content: none;
+}
+.doc-container .highlights .reasonForUpdate,
+.procedure-alert .highlights .reasonForUpdate {
+  margin-top: 0;
+  text-align: left;
+}
+.doc-container .highlights .reasonForUpdate:before,
+.procedure-alert .highlights .reasonForUpdate:before {
+  content: none;
+}
+.doc-container .highInstruction.formalTable,
+.procedure-alert .highInstruction.formalTable {
+  counter-increment: table;
+}
+.doc-container .highInstruction .header:before,
+.procedure-alert .highInstruction .header:before {
+  content: var(--label-updating-instruction);
+}
+.doc-container .highInstruction caption:before,
+.procedure-alert .highInstruction caption:before {
+  content: var(--label-table) " " counter(table) " " var(--label-high-table);
+}
+.doc-container tr[data-keep-with-previous="always"],
+.procedure-alert tr[data-keep-with-previous="always"] {
+  page-break-before: avoid;
+}
+.doc-container .crewRefCard:before,
+.procedure-alert .crewRefCard:before {
+  content: var(--label-crewRefCard);
+}
+.doc-container .crew > .crewRefCard > *,
+.procedure-alert .crew > .crewRefCard > * {
+  margin-left: var(--left-text-indent);
+}
+.doc-container .crewRefCard > .title,
+.procedure-alert .crewRefCard > .title {
+  border: 1px solid black;
+  padding: 4pt;
+  margin-bottom: 5pt;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14pt;
+  page-break-after: avoid;
+}
+.doc-container .crewDrill > .title,
+.procedure-alert .crewDrill > .title {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 4pt;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 0;
+  margin-bottom: 8pt;
+  page-break-after: avoid;
+}
+.doc-container .crewDrill,
+.procedure-alert .crewDrill,
+.doc-container .subCrewDrill,
+.procedure-alert .subCrewDrill {
+  margin-bottom: 4pt;
+}
+.doc-container .subCrewDrill > .title,
+.procedure-alert .subCrewDrill > .title {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 4pt;
+  font-weight: bold;
+  font-size: 10pt;
+  margin-top: 0;
+  margin-bottom: 8pt;
+  page-break-after: avoid;
+}
+.doc-container .caseCond,
+.procedure-alert .caseCond {
+  font-style: italic;
+  margin-bottom: 8pt;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.doc-container .challengeAndResponse,
+.procedure-alert .challengeAndResponse {
+  display: flex;
+  align-items: flex-start;
+}
+.doc-container .challengeAndResponse .separator,
+.procedure-alert .challengeAndResponse .separator {
+  border-bottom: 1px dotted;
+  flex-grow: 1;
+  min-height: 1em;
+}
+.doc-container .response[data-grow="1"],
+.procedure-alert .response[data-grow="1"] {
+  flex-grow: 1;
+}
+.doc-container .crewDrill .p,
+.procedure-alert .crewDrill .p,
+.doc-container .crewDrill .table,
+.procedure-alert .crewDrill .table {
+  margin-top: 0pt;
+}
+.doc-container .crewDrill .p,
+.procedure-alert .crewDrill .p {
+  margin-bottom: 8pt;
+}
+.doc-container .crewDrill .if:before,
+.procedure-alert .crewDrill .if:before,
+.doc-container .crewDrill .elseIf:before,
+.procedure-alert .crewDrill .elseIf:before,
+.doc-container .crewDrill .case:before,
+.procedure-alert .crewDrill .case:before {
+  float: left;
+  width: 3mm;
+  height: 1em;
+  margin-left: -7mm;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  content: " ";
+}
+.doc-container .crewDrill .if:before,
+.procedure-alert .crewDrill .if:before,
+.doc-container .crewDrill .elseIf:before,
+.procedure-alert .crewDrill .elseIf:before {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 10 10"><circle cx="4" cy="4" r="3" stroke-width="0.2" fill="%23000000"/></svg>');
+}
+.doc-container .crewDrill .case:before,
+.procedure-alert .crewDrill .case:before {
+  background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 10 10"><rect x="1" y="1" width="6" height="6" stroke-width="0.2" fill="%23000000"/></svg>');
+}
+.doc-container .crewDrillStep:before,
+.procedure-alert .crewDrillStep:before {
+  float: left;
+  margin-left: -7mm;
+  content: "−";
+}
+.doc-container .crewDrillStep,
+.procedure-alert .crewDrillStep,
+.doc-container .if,
+.procedure-alert .if,
+.doc-container .elseIf,
+.procedure-alert .elseIf,
+.doc-container .case,
+.procedure-alert .case {
+  margin-left: var(--list-body-indent);
+  page-break-inside: avoid;
+}
+.doc-container .assessmentQuestion .p,
+.procedure-alert .assessmentQuestion .p {
+  margin-left: 0;
+}
+.doc-container *[data-displaytext]:before,
+.procedure-alert *[data-displaytext]:before {
+  content: var(--label-HF-applic) var(--label-colonSymbol) " " attr(data-displaytext);
+  font-weight: bold;
+  font-style: normal;
+  margin-left: var(--left-text-indent-reverse);
+  display: block;
+  padding-bottom: 2pt;
+  page-break-after: avoid;
+  text-align: left;
+}
+.doc-container .figure[data-displaytext]:before,
+.procedure-alert .figure[data-displaytext]:before,
+.doc-container .multimedia[data-displaytext]:before,
+.procedure-alert .multimedia[data-displaytext]:before,
+.doc-container .figure > [data-displaytext],
+.procedure-alert .figure > [data-displaytext],
+.doc-container .multimedia > [data-displaytext],
+.procedure-alert .multimedia > [data-displaytext] {
+  align-self: start;
+}
+.doc-container .figure[data-displaytext]:before,
+.procedure-alert .figure[data-displaytext]:before,
+.doc-container .multimedia[data-displaytext]:before,
+.procedure-alert .multimedia[data-displaytext]:before,
+.doc-container table [data-displaytext]:before,
+.procedure-alert table [data-displaytext]:before,
+.doc-container .figure [data-displaytext]:before,
+.procedure-alert .figure [data-displaytext]:before,
+.doc-container .multimedia [data-displaytext]:before,
+.procedure-alert .multimedia [data-displaytext]:before {
+  margin-left: 0;
+}
+.doc-container .dmStatus [data-displaytext]:before,
+.procedure-alert .dmStatus [data-displaytext]:before {
+  display: inline;
+}
+.doc-container .preliminaryRqmts [data-displaytext]:before,
+.procedure-alert .preliminaryRqmts [data-displaytext]:before,
+.doc-container .closeRqmts [data-displaytext]:before,
+.procedure-alert .closeRqmts [data-displaytext]:before {
+  margin-left: 0;
+  margin-top: 8pt;
+}
+.doc-container .frontMatterTable__code > *[data-displaytext]:before,
+.procedure-alert .frontMatterTable__code > *[data-displaytext]:before {
+  content: none;
+}
+.doc-container .applicCrossRefTable:before,
+.procedure-alert .applicCrossRefTable:before {
+  content: var(--label-applicCrossRefTable);
+}
+.doc-container .productAttributeList,
+.procedure-alert .productAttributeList {
+  display: block;
+}
+.doc-container .productAttribute,
+.procedure-alert .productAttribute {
+  display: list-item;
+  margin-left: 40pt;
+  margin-top: 12pt;
+}
+.doc-container .productAttribute > *,
+.procedure-alert .productAttribute > * {
+  margin-top: 6pt;
+  margin-bottom: 6pt;
+}
+.doc-container .productCrossRefTable:before,
+.procedure-alert .productCrossRefTable:before {
+  content: var(--label-productCrossRefTable);
+}
+.doc-container .product,
+.procedure-alert .product {
+  display: list-item;
+  margin-left: 40pt;
+  margin-top: 12pt;
+}
+.doc-container .product > *,
+.procedure-alert .product > * {
+  margin-top: 6pt;
+  margin-bottom: 6pt;
+}
+.doc-container .assign:before,
+.procedure-alert .assign:before {
+  content: attr(data-applicpropertyident) "=" attr(data-applicpropertyvalue);
+}
+.doc-container .sbManagementInfo > .title:before,
+.procedure-alert .sbManagementInfo > .title:before {
+  content: var(--label-sbManagementInfo);
+}
+.doc-container .sbRevisionInfo > .title:before,
+.procedure-alert .sbRevisionInfo > .title:before {
+  content: var(--label-sbRevisionInfo);
+}
+.doc-container .sbSummary > .title:before,
+.procedure-alert .sbSummary > .title:before {
+  content: var(--label-sbSummary);
+}
+.doc-container .sbPlanningInfo > .title:before,
+.procedure-alert .sbPlanningInfo > .title:before {
+  content: var(--label-sbPlanningInfo);
+}
+.doc-container .sbMaterialInfo > .title:before,
+.procedure-alert .sbMaterialInfo > .title:before {
+  content: var(--label-sbMaterialInfo);
+}
+.doc-container .sbAccomplishmentInstructions > .title:before,
+.procedure-alert .sbAccomplishmentInstructions > .title:before {
+  content: var(--label-sbAccomplishmentInstructions);
+}
+.doc-container .sbAdditionalInfo > .title:before,
+.procedure-alert .sbAdditionalInfo > .title:before {
+  content: var(--label-sbAdditionalInfo);
+}
+.doc-container .sbMaterialSetList > .title:before,
+.procedure-alert .sbMaterialSetList > .title:before {
+  content: var(--label-sbMaterialSetList);
+}
+.doc-container .sbSupportEquipsList > .title:before,
+.procedure-alert .sbSupportEquipsList > .title:before {
+  content: var(--label-sbSupportEquipsList);
+}
+.doc-container .sbSuppliesList > .title:before,
+.procedure-alert .sbSuppliesList > .title:before {
+  content: var(--label-sbSuppliesList);
+}
+.doc-container .sbSparesList > .title:before,
+.procedure-alert .sbSparesList > .title:before {
+  content: var(--label-sbSparesList);
+}
+.doc-container .sbRemovedSparesList > .title:before,
+.procedure-alert .sbRemovedSparesList > .title:before {
+  content: var(--label-sbRemovedSparesList);
+}
+.doc-container .noInfo:before,
+.procedure-alert .noInfo:before {
+  content: var(--label-noInfo);
+}
+.doc-container .levels > .para,
+.procedure-alert .levels > .para,
+.doc-container .levels > .noInfo,
+.procedure-alert .levels > .noInfo {
+  margin-left: var(--left-text-indent);
+}
+.doc-container .sbTopicContent > .levelledPara,
+.procedure-alert .sbTopicContent > .levelledPara {
+  margin-left: var(--left-text-indent-reverse);
+}
+.doc-container .level1 > .numbering,
+.procedure-alert .level1 > .numbering {
+  font-size: 14pt;
+  font-weight: bold;
+}
+.doc-container .sbSet col:nth-child(1),
+.procedure-alert .sbSet col:nth-child(1) {
+  width: 30%;
+}
+.doc-container .sbSet col:nth-child(2),
+.procedure-alert .sbSet col:nth-child(2) {
+  width: 40%;
+}
+.doc-container .sbSet col:nth-child(3),
+.procedure-alert .sbSet col:nth-child(3) {
+  width: 15%;
+}
+.doc-container .sbSet col:nth-child(4),
+.procedure-alert .sbSet col:nth-child(4) {
+  width: 15%;
+}
+.doc-container .sbSet.ICY col:nth-child(1),
+.procedure-alert .sbSet.ICY col:nth-child(1) {
+  width: 24%;
+}
+.doc-container .sbSet.ICY col:nth-child(2),
+.procedure-alert .sbSet.ICY col:nth-child(2) {
+  width: 23%;
+}
+.doc-container .sbSet.ICY col:nth-child(3),
+.procedure-alert .sbSet.ICY col:nth-child(3) {
+  width: 23%;
+}
+.doc-container .sbSet.ICY col:nth-child(4),
+.procedure-alert .sbSet.ICY col:nth-child(4) {
+  width: 15%;
+}
+.doc-container .sbSet.ICY col:nth-child(5),
+.procedure-alert .sbSet.ICY col:nth-child(5) {
+  width: 15%;
+}
+.doc-container .sbSet.noICY col:nth-child(1),
+.procedure-alert .sbSet.noICY col:nth-child(1) {
+  width: 35%;
+}
+.doc-container .sbSet.noICY col:nth-child(2),
+.procedure-alert .sbSet.noICY col:nth-child(2) {
+  width: 35%;
+}
+.doc-container .sbSet.noICY col:nth-child(3),
+.procedure-alert .sbSet.noICY col:nth-child(3) {
+  width: 15%;
+}
+.doc-container .sbSet.noICY col:nth-child(4),
+.procedure-alert .sbSet.noICY col:nth-child(4) {
+  width: 15%;
+}
+.doc-container .sbSet.onlyRemoved col:nth-child(1),
+.procedure-alert .sbSet.onlyRemoved col:nth-child(1) {
+  width: 40%;
+}
+.doc-container .sbSet.onlyRemoved col:nth-child(2),
+.procedure-alert .sbSet.onlyRemoved col:nth-child(2) {
+  width: 45%;
+}
+.doc-container .sbSet.onlyRemoved col:nth-child(3),
+.procedure-alert .sbSet.onlyRemoved col:nth-child(3) {
+  width: 15%;
+}
+.doc-container th.sbSet__identification:before,
+.procedure-alert th.sbSet__identification:before {
+  content: var(--label-identification);
+}
+.doc-container th.sbSet__name:before,
+.procedure-alert th.sbSet__name:before {
+  content: var(--label-name);
+}
+.doc-container th.sbSet__qty:before,
+.procedure-alert th.sbSet__qty:before {
+  content: var(--label-quantity);
+}
+.doc-container th.sbSet__remarks:before,
+.procedure-alert th.sbSet__remarks:before {
+  content: var(--label-remarks);
+}
+.doc-container th.sbSet__oldIdentification:before,
+.procedure-alert th.sbSet__oldIdentification:before {
+  content: var(--label-oldIdentification);
+}
+.doc-container th.sbSet__newIdentification:before,
+.procedure-alert th.sbSet__newIdentification:before {
+  content: var(--label-newIdentification);
+}
+.doc-container th.sbSet__ICY:before,
+.procedure-alert th.sbSet__ICY:before {
+  content: var(--label-sbICY);
+}
+.doc-container td.bold,
+.procedure-alert td.bold {
+  font-weight: bold;
+}
+.doc-container .sbPriceInfo > td.sbSet__identification:before,
+.procedure-alert .sbPriceInfo > td.sbSet__identification:before {
+  content: var(--label-price);
+}
+.doc-container .sbAvailability > td.sbSet__identification:before,
+.procedure-alert .sbAvailability > td.sbSet__identification:before {
+  content: var(--label-availability);
+}
+.doc-container .sbProcurementAddress > td.sbSet__identification:before,
+.procedure-alert .sbProcurementAddress > td.sbSet__identification:before {
+  content: var(--label-procurementAddress);
+}
+.doc-container .sbIndustrySupport > td.sbSet__identification:before,
+.procedure-alert .sbIndustrySupport > td.sbSet__identification:before {
+  content: var(--label-industrySupport);
+}
+.doc-container .sbDrawingRef > td.sbSet__identification:before,
+.procedure-alert .sbDrawingRef > td.sbSet__identification:before {
+  content: var(--label-drawing);
+}
+.doc-container .sbInstructionRef > td.sbSet__identification:before,
+.procedure-alert .sbInstructionRef > td.sbSet__identification:before {
+  content: var(--label-instruction);
+}
+.doc-container .sbSet,
+.procedure-alert .sbSet,
+.doc-container .sbExternalSupportEquipSet,
+.procedure-alert .sbExternalSupportEquipSet,
+.doc-container .sbExternalSupplySet,
+.procedure-alert .sbExternalSupplySet,
+.doc-container .sbExternalSpareSet,
+.procedure-alert .sbExternalSpareSet,
+.doc-container .noInfo,
+.procedure-alert .noInfo {
+  margin-bottom: var(--indent-standart);
+}
+.doc-container .sbImpact,
+.procedure-alert .sbImpact,
+.doc-container .sbProductModification,
+.procedure-alert .sbProductModification,
+.doc-container .sbConcurrentSbInfo,
+.procedure-alert .sbConcurrentSbInfo,
+.doc-container .sbTimeCompliance,
+.procedure-alert .sbTimeCompliance,
+.doc-container .sbLimit,
+.procedure-alert .sbLimit,
+.doc-container .sbTimeInfo,
+.procedure-alert .sbTimeInfo,
+.doc-container .sbApprovedDm .refs > *,
+.procedure-alert .sbApprovedDm .refs > *,
+.doc-container .sbReplacementSb .refs > *,
+.procedure-alert .sbReplacementSb .refs > *,
+.doc-container .genericProperty,
+.procedure-alert .genericProperty {
+  margin-bottom: var(--indent-half);
+}
+.doc-container .sbProductModification:last-child,
+.procedure-alert .sbProductModification:last-child,
+.doc-container .sbImpact:last-child,
+.procedure-alert .sbImpact:last-child,
+.doc-container .sbConcurrentSbInfo:last-child,
+.procedure-alert .sbConcurrentSbInfo:last-child,
+.doc-container .sbTimeCompliance:last-child,
+.procedure-alert .sbTimeCompliance:last-child,
+.doc-container .sbLimit:last-child,
+.procedure-alert .sbLimit:last-child,
+.doc-container .sbTimeInfo:last-child,
+.procedure-alert .sbTimeInfo:last-child,
+.doc-container .sbApprovedDm .refs > *:last-child,
+.procedure-alert .sbApprovedDm .refs > *:last-child,
+.doc-container .sbReplacementSb .refs > *:last-child,
+.procedure-alert .sbReplacementSb .refs > *:last-child,
+.doc-container .genericProperty:last-child,
+.procedure-alert .genericProperty:last-child {
+  margin-bottom: 0;
+}
+.doc-container td .refs > *,
+.procedure-alert td .refs > * {
+  display: block;
+}
+.doc-container .sbMaterialSet > .name,
+.procedure-alert .sbMaterialSet > .name,
+.doc-container .sbMaterialSet > .shortName,
+.procedure-alert .sbMaterialSet > .shortName,
+.doc-container .sbSupportEquipSet > .name,
+.procedure-alert .sbSupportEquipSet > .name,
+.doc-container .sbSupportEquipSet > .shortName,
+.procedure-alert .sbSupportEquipSet > .shortName,
+.doc-container .sbSupplySet > .name,
+.procedure-alert .sbSupplySet > .name,
+.doc-container .sbSupplySet > .shortName,
+.procedure-alert .sbSupplySet > .shortName,
+.doc-container .sbSpareSet > .name,
+.procedure-alert .sbSpareSet > .name,
+.doc-container .sbSpareSet > .shortName,
+.procedure-alert .sbSpareSet > .shortName,
+.doc-container .sbRemovedSpareSet > .name,
+.procedure-alert .sbRemovedSpareSet > .name,
+.doc-container .sbRemovedSpareSet > .shortName,
+.procedure-alert .sbRemovedSpareSet > .shortName {
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: var(--indent-half);
+}
+.doc-container .para .dmRefAddressItems,
+.procedure-alert .para .dmRefAddressItems {
+  display: none;
+}
+.doc-container .para .externalPubRef .externalPubRefAddressItems,
+.procedure-alert .para .externalPubRef .externalPubRefAddressItems {
+  display: none;
+}
+.doc-container .externalPubCode::before,
+.procedure-alert .externalPubCode::before {
+  content: attr(data-pubcodingscheme) " ";
+}
+.doc-container .enterpriseRef:before,
+.procedure-alert .enterpriseRef:before {
+  content: attr(data-manufacturercodevalue);
+}
+.doc-container .formalTable tbody,
+.procedure-alert .formalTable tbody {
+  border-top: 1px solid black;
+}
+.doc-container .sbExternalSupportEquipSet > .title,
+.procedure-alert .sbExternalSupportEquipSet > .title,
+.doc-container .sbExternalSupplySet > .title,
+.procedure-alert .sbExternalSupplySet > .title,
+.doc-container .sbExternalSpareSet > .title,
+.procedure-alert .sbExternalSpareSet > .title {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+}
+.doc-container .sbExternalSupportEquipSet > .title:before,
+.procedure-alert .sbExternalSupportEquipSet > .title:before,
+.doc-container .sbExternalSupplySet > .title:before,
+.procedure-alert .sbExternalSupplySet > .title:before,
+.doc-container .sbExternalSpareSet > .title:before,
+.procedure-alert .sbExternalSpareSet > .title:before {
+  content: var(--label-referencedTools);
+}
+.doc-container .sbAccomplishmentInstructions .mainProcedure,
+.procedure-alert .sbAccomplishmentInstructions .mainProcedure {
+  display: none;
+}
+.doc-container .sbInstructionIndentBlock,
+.procedure-alert .sbInstructionIndentBlock {
+  margin-left: var(--left-text-indent);
+}
+.doc-container .sb .sbManagementInfo,
+.procedure-alert .sb .sbManagementInfo,
+.doc-container .sb .sbAccomplishmentInstructions,
+.procedure-alert .sb .sbAccomplishmentInstructions {
+  margin-bottom: var(--indent-standart);
+}
+.doc-container .sbManagementInfoTable td:nth-child(1),
+.procedure-alert .sbManagementInfoTable td:nth-child(1) {
+  font-weight: bold;
+  width: 30%;
+}
+.doc-container .sbCompliance .label:before,
+.procedure-alert .sbCompliance .label:before {
+  content: var(--label-sbCompliance);
+}
+.doc-container .sbTaskType .label:before,
+.procedure-alert .sbTaskType .label:before {
+  content: var(--label-sbTaskType);
+}
+.doc-container .sbProductModificationList .label:before,
+.procedure-alert .sbProductModificationList .label:before {
+  content: var(--label-sbProductModificationList);
+}
+.doc-container .sbImpactList .label:before,
+.procedure-alert .sbImpactList .label:before {
+  content: var(--label-sbImpactList);
+}
+.doc-container .sbConcurrentSbList .label:before,
+.procedure-alert .sbConcurrentSbList .label:before {
+  content: var(--label-sbConcurrentSbList);
+}
+.doc-container .sbAccomplishmentLimit .label:before,
+.procedure-alert .sbAccomplishmentLimit .label:before {
+  content: var(--label-sbAccomplishmentLimit);
+}
+.doc-container .sbTimeAssessment .label:before,
+.procedure-alert .sbTimeAssessment .label:before {
+  content: var(--label-sbTimeAssessment);
+}
+.doc-container .sbOriginalIssueDate .label:before,
+.procedure-alert .sbOriginalIssueDate .label:before {
+  content: var(--label-sbOriginalIssueDate);
+}
+.doc-container .sbApproval .label:before,
+.procedure-alert .sbApproval .label:before {
+  content: var(--label-sbApproval);
+}
+.doc-container .sbApprovedDm .label:before,
+.procedure-alert .sbApprovedDm .label:before {
+  content: var(--label-sbApprovedDm);
+}
+.doc-container .genericPropertyGroup .label:before,
+.procedure-alert .genericPropertyGroup .label:before {
+  content: var(--label-genericPropertyGroup);
+}
+.doc-container .sbReplacementSb .label:before,
+.procedure-alert .sbReplacementSb .label:before {
+  content: var(--label-sbReplacementSb);
+}
+.doc-container .sbImpact .label:before,
+.procedure-alert .sbImpact .label:before {
+  content: attr(data-sbimpacttype) var(--label-colonSymbol) " ";
+}
+.doc-container .sbImpact[data-sbimpacttype="sbit01"] .label:before,
+.procedure-alert .sbImpact[data-sbimpacttype="sbit01"] .label:before {
+  content: var(--label-sbImpactType-sbit01) var(--label-colonSymbol) " ";
+}
+.doc-container .sbImpact[data-sbimpacttype="sbit02"] .label:before,
+.procedure-alert .sbImpact[data-sbimpacttype="sbit02"] .label:before {
+  content: var(--label-sbImpactType-sbit02) var(--label-colonSymbol) " ";
+}
+.doc-container .sbImpact[data-sbimpacttype="sbit03"] .label:before,
+.procedure-alert .sbImpact[data-sbimpacttype="sbit03"] .label:before {
+  content: var(--label-sbImpactType-sbit03) var(--label-colonSymbol) " ";
+}
+.doc-container .sbImpact[data-sbimpacttype="sbit04"] .label:before,
+.procedure-alert .sbImpact[data-sbimpacttype="sbit04"] .label:before {
+  content: var(--label-sbImpactType-sbit04) var(--label-colonSymbol) " ";
+}
+.doc-container .sbImpact[data-sbimpacttype="sbit05"] .label:before,
+.procedure-alert .sbImpact[data-sbimpacttype="sbit05"] .label:before {
+  content: var(--label-sbImpactType-sbit05) var(--label-colonSymbol) " ";
+}
+.doc-container .sbImpact[data-sbimpacttype="sbit06"] .label:before,
+.procedure-alert .sbImpact[data-sbimpacttype="sbit06"] .label:before {
+  content: var(--label-sbImpactType-sbit06) var(--label-colonSymbol) " ";
+}
+.doc-container .sbConcurrentSbInfo[data-sbconcurrentstatus="previous"] .label:before,
+.procedure-alert .sbConcurrentSbInfo[data-sbconcurrentstatus="previous"] .label:before {
+  content: var(--label-sbConcurrentStatus-previous) var(--label-colonSymbol);
+}
+.doc-container .sbConcurrentSbInfo[data-sbconcurrentstatus="notPrevious"] .label:before,
+.procedure-alert .sbConcurrentSbInfo[data-sbconcurrentstatus="notPrevious"] .label:before {
+  content: var(--label-sbConcurrentStatus-notPrevious) var(--label-colonSymbol);
+}
+.doc-container .sbConcurrentSbInfo[data-sbconcurrentstatus="previousOrParallel"] .label:before,
+.procedure-alert .sbConcurrentSbInfo[data-sbconcurrentstatus="previousOrParallel"] .label:before {
+  content: var(--label-sbConcurrentStatus-previousOrParallel) var(--label-colonSymbol);
+}
+.doc-container .sbComplianceCategory:before,
+.procedure-alert .sbComplianceCategory:before {
+  content: attr(data-sbcompliancecategory);
+}
+.doc-container .sbComplianceCategory[data-sbcompliancecategory="sbcc01"]:before,
+.procedure-alert .sbComplianceCategory[data-sbcompliancecategory="sbcc01"]:before {
+  content: var(--label-sbComplianceCategory-sbcc01);
+}
+.doc-container .sbComplianceCategory[data-sbcompliancecategory="sbcc02"]:before,
+.procedure-alert .sbComplianceCategory[data-sbcompliancecategory="sbcc02"]:before {
+  content: var(--label-sbComplianceCategory-sbcc02);
+}
+.doc-container .sbComplianceCategory[data-sbcompliancecategory="sbcc03"]:before,
+.procedure-alert .sbComplianceCategory[data-sbcompliancecategory="sbcc03"]:before {
+  content: var(--label-sbComplianceCategory-sbcc03);
+}
+.doc-container .sbComplianceCategory[data-sbcompliancecategory="sbcc04"]:before,
+.procedure-alert .sbComplianceCategory[data-sbcompliancecategory="sbcc04"]:before {
+  content: var(--label-sbComplianceCategory-sbcc04);
+}
+.doc-container .sbTaskCategory:before,
+.procedure-alert .sbTaskCategory:before {
+  content: attr(data-sbtaskcategory);
+}
+.doc-container .sbTaskCategory[data-sbtaskcategory="sbtc01"]:before,
+.procedure-alert .sbTaskCategory[data-sbtaskcategory="sbtc01"]:before {
+  content: var(--label-sbTaskCategory-sbtc01);
+}
+.doc-container .sbTaskCategory[data-sbtaskcategory="sbtc02"]:before,
+.procedure-alert .sbTaskCategory[data-sbtaskcategory="sbtc02"]:before {
+  content: var(--label-sbTaskCategory-sbtc02);
+}
+.doc-container .sbTaskCategory[data-sbtaskcategory="sbtc03"]:before,
+.procedure-alert .sbTaskCategory[data-sbtaskcategory="sbtc03"]:before {
+  content: var(--label-sbTaskCategory-sbtc03);
+}
+.doc-container .sbTaskCategory[data-sbtaskcategory="sbtc04"]:before,
+.procedure-alert .sbTaskCategory[data-sbtaskcategory="sbtc04"]:before {
+  content: var(--label-sbTaskCategory-sbtc04);
+}
+.doc-container .sbTaskCategory[data-sbtaskcategory="sbtc05"]:before,
+.procedure-alert .sbTaskCategory[data-sbtaskcategory="sbtc05"]:before {
+  content: var(--label-sbTaskCategory-sbtc05);
+}
+.doc-container .sbTimeCompliance:before,
+.procedure-alert .sbTimeCompliance:before {
+  content: attr(data-sbtimecompliancetype) var(--label-colonSymbol) " ";
+}
+.doc-container .sbTimeCompliance[data-sbtimecompliancetype="sbtct01"]:before,
+.procedure-alert .sbTimeCompliance[data-sbtimecompliancetype="sbtct01"]:before {
+  content: var(--label-sbTimeComplianceType-sbtct01) var(--label-colonSymbol) " ";
+}
+.doc-container .sbTimeCompliance[data-sbtimecompliancetype="sbtct02"]:before,
+.procedure-alert .sbTimeCompliance[data-sbtimecompliancetype="sbtct02"]:before {
+  content: var(--label-sbTimeComplianceType-sbtct02) var(--label-colonSymbol) " ";
+}
+.doc-container .sbTimeCompliance[data-sbtimecompliancetype="sbtct03"]:before,
+.procedure-alert .sbTimeCompliance[data-sbtimecompliancetype="sbtct03"]:before {
+  content: var(--label-sbTimeComplianceType-sbtct03) var(--label-colonSymbol) " ";
+}
+.doc-container .sbManagementInfoTable td.sbTaskType:before,
+.procedure-alert .sbManagementInfoTable td.sbTaskType:before {
+  content: var(--label-sbTaskType);
+}
+.doc-container .sbProductModification[data-sbmodificationident] .label:before,
+.procedure-alert .sbProductModification[data-sbmodificationident] .label:before {
+  content: '[' attr(data-sbmodificationident) '] ';
+}
+.doc-container .quantityValue[data-quantityunitofmeasure]:after,
+.procedure-alert .quantityValue[data-quantityunitofmeasure]:after {
+  content: " " attr(data-quantityunitofmeasure);
+}
+.doc-container .limit[data-limittypevalue="po"]:before,
+.procedure-alert .limit[data-limittypevalue="po"]:before {
+  content: var(--label-limitTypeValue-po);
+}
+.doc-container .limit[data-limittypevalue="oc"]:before,
+.procedure-alert .limit[data-limittypevalue="oc"]:before {
+  content: var(--label-limitTypeValue-oc) " ";
+}
+.doc-container .limit[data-limittypevalue="pe"]:before,
+.procedure-alert .limit[data-limittypevalue="pe"]:before {
+  content: var(--label-limitTypeValue-pe);
+}
+.doc-container .sbCondition:before,
+.procedure-alert .sbCondition:before {
+  content: var(--label-sbCondition) var(--label-colonSymbol);
+}
+.doc-container .sbDuration:before,
+.procedure-alert .sbDuration:before {
+  content: var(--label-sbDuration) var(--label-colonSymbol);
+}
+.doc-container .sbEstimatedTime:before,
+.procedure-alert .sbEstimatedTime:before {
+  content: var(--label-sbEstimatedTime) var(--label-colonSymbol);
+}
+.doc-container .sbTimeInfo > .refs:before,
+.procedure-alert .sbTimeInfo > .refs:before {
+  content: var(--label-references) var(--label-colonSymbol);
+}
+.doc-container .sbApprovalIdent:before,
+.procedure-alert .sbApprovalIdent:before {
+  content: attr(data-sbapprovalident);
+}
+.doc-container .genericProperty .label:before,
+.procedure-alert .genericProperty .label:before {
+  content: attr(data-genericpropertytype) var(--label-colonSymbol) " ";
+}
+.doc-container .genericProperty[data-genericpropertytype="gpt01"] .label:before,
+.procedure-alert .genericProperty[data-genericpropertytype="gpt01"] .label:before {
+  content: var(--label-genericProperty-gpt01) var(--label-colonSymbol) " ";
+}
+.doc-container .genericProperty[data-genericpropertytype="gpt02"] .label:before,
+.procedure-alert .genericProperty[data-genericpropertytype="gpt02"] .label:before {
+  content: var(--label-genericProperty-gpt02) var(--label-colonSymbol) " ";
+}
+.doc-container .genericProperty[data-genericpropertytype="gpt03"] .label:before,
+.procedure-alert .genericProperty[data-genericpropertytype="gpt03"] .label:before {
+  content: var(--label-genericProperty-gpt03) var(--label-colonSymbol) " ";
+}
+.doc-container .genericProperty[data-genericpropertytype="gpt04"] .label:before,
+.procedure-alert .genericProperty[data-genericpropertytype="gpt04"] .label:before {
+  content: var(--label-genericProperty-gpt04) var(--label-colonSymbol) " ";
+}
+.doc-container .genericProperty[data-genericpropertytype="gpt05"] .label:before,
+.procedure-alert .genericProperty[data-genericpropertytype="gpt05"] .label:before {
+  content: var(--label-genericProperty-gpt05) var(--label-colonSymbol) " ";
+}
+.doc-container .genericProperty[data-genericpropertytype="gpt06"] .label:before,
+.procedure-alert .genericProperty[data-genericpropertytype="gpt06"] .label:before {
+  content: var(--label-genericProperty-gpt06) var(--label-colonSymbol) " ";
+}
+.doc-container .genericProperty[data-genericpropertytype="gpt07"] .label:before,
+.procedure-alert .genericProperty[data-genericpropertytype="gpt07"] .label:before {
+  content: var(--label-genericProperty-gpt07) var(--label-colonSymbol) " ";
+}
+.doc-container .genericProperty[data-genericpropertytype="gpt08"] .label:before,
+.procedure-alert .genericProperty[data-genericpropertytype="gpt08"] .label:before {
+  content: var(--label-genericProperty-gpt08) var(--label-colonSymbol) " ";
+}
+.doc-container .genericProperty[data-genericpropertytype="gpt09"] .label:before,
+.procedure-alert .genericProperty[data-genericpropertytype="gpt09"] .label:before {
+  content: var(--label-genericProperty-gpt09) var(--label-colonSymbol) " ";
+}
+.doc-container .genericProperty[data-genericpropertytype="gpt10"] .label:before,
+.procedure-alert .genericProperty[data-genericpropertytype="gpt10"] .label:before {
+  content: var(--label-genericProperty-gpt10) var(--label-colonSymbol) " ";
+}
+.doc-container .genericProperty[data-genericpropertytype="gpt11"] .label:before,
+.procedure-alert .genericProperty[data-genericpropertytype="gpt11"] .label:before {
+  content: var(--label-genericProperty-gpt11) var(--label-colonSymbol) " ";
+}
+.doc-container .genericProperty .label:after,
+.procedure-alert .genericProperty .label:after {
+  content: var(--label-genericPropertyFlag);
+}
+.doc-container .genericProperty[data-genericpropertyflag="1"] .label:after,
+.procedure-alert .genericProperty[data-genericpropertyflag="1"] .label:after {
+  content: var(--label-genericPropertyFlag-true);
+}
+.doc-container .genericProperty[data-genericpropertyflag="0"] .label:after,
+.procedure-alert .genericProperty[data-genericpropertyflag="0"] .label:after {
+  content: var(--label-genericPropertyFlag-false);
+}
+.doc-container .fullTable table,
+.procedure-alert .fullTable table {
+  margin-left: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+}
+.doc-container .fullTable td,
+.procedure-alert .fullTable td,
+.doc-container .fullTable th,
+.procedure-alert .fullTable th {
+  border: 0.5pt solid black;
+  vertical-align: top;
+  padding: 2pt;
+}
+.doc-container .mpdTaskDefinitionTable,
+.procedure-alert .mpdTaskDefinitionTable {
+  font-size: 0.8em;
+}
+.doc-container .taskDefinition .taskTitle,
+.procedure-alert .taskDefinition .taskTitle {
+  font-weight: bold;
+}
+.doc-container .taskDefinition .simplePara,
+.procedure-alert .taskDefinition .simplePara {
+  margin-bottom: 0;
+}
+.doc-container .rqmtSource:before,
+.procedure-alert .rqmtSource:before {
+  content: attr(data-sourceofrqmt);
+}
+.doc-container .taskDefinition .zoneRef:before,
+.procedure-alert .taskDefinition .zoneRef:before,
+.doc-container .taskDefinition .accessPointRef:before,
+.procedure-alert .taskDefinition .accessPointRef:before {
+  content: "";
+}
+.doc-container .taskDefinition .description > *,
+.procedure-alert .taskDefinition .description > * {
+  padding-top: 4pt;
+}
+.doc-container .taskDefinition .description > *:first-child,
+.procedure-alert .taskDefinition .description > *:first-child {
+  padding-top: 0pt;
+}
+.doc-container .taskDefinition .reqConds > *,
+.procedure-alert .taskDefinition .reqConds > *,
+.doc-container .taskDefinition .remarks > *,
+.procedure-alert .taskDefinition .remarks > * {
+  display: block;
+  margin-left: 10pt;
+}
+.doc-container .taskDefinition .access:before,
+.procedure-alert .taskDefinition .access:before {
+  content: var(--label-access) ": ";
+}
+.doc-container .taskDefinition .reqConds:before,
+.procedure-alert .taskDefinition .reqConds:before {
+  content: var(--label-reqConds) ": ";
+}
+.doc-container .taskDefinition .remarks:before,
+.procedure-alert .taskDefinition .remarks:before {
+  content: var(--label-remarks) ": ";
+}
+.doc-container .taskDefinition .taskCode[data-taskcode="taskcd01"]:before,
+.procedure-alert .taskDefinition .taskCode[data-taskcode="taskcd01"]:before {
+  content: var(--label-taskCode-taskcd01);
+}
+.doc-container .taskDefinition .taskCode[data-taskcode="taskcd02"]:before,
+.procedure-alert .taskDefinition .taskCode[data-taskcode="taskcd02"]:before {
+  content: var(--label-taskCode-taskcd02);
+}
+.doc-container .taskDefinition .taskCode[data-taskcode="taskcd03"]:before,
+.procedure-alert .taskDefinition .taskCode[data-taskcode="taskcd03"]:before {
+  content: var(--label-taskCode-taskcd03);
+}
+.doc-container .taskDefinition .taskCode[data-taskcode="taskcd04"]:before,
+.procedure-alert .taskDefinition .taskCode[data-taskcode="taskcd04"]:before {
+  content: var(--label-taskCode-taskcd04);
+}
+.doc-container .taskDefinition .taskCode[data-taskcode="taskcd05"]:before,
+.procedure-alert .taskDefinition .taskCode[data-taskcode="taskcd05"]:before {
+  content: var(--label-taskCode-taskcd05);
+}
+.doc-container .taskDefinition .taskCode[data-taskcode="taskcd06"]:before,
+.procedure-alert .taskDefinition .taskCode[data-taskcode="taskcd06"]:before {
+  content: var(--label-taskCode-taskcd06);
+}
+.doc-container .taskDefinition .taskCode[data-taskcode="taskcd07"]:before,
+.procedure-alert .taskDefinition .taskCode[data-taskcode="taskcd07"]:before {
+  content: var(--label-taskCode-taskcd07);
+}
+.doc-container .taskDefinition .taskCode[data-taskcode="taskcd08"]:before,
+.procedure-alert .taskDefinition .taskCode[data-taskcode="taskcd08"]:before {
+  content: var(--label-taskCode-taskcd08);
+}
+.doc-container .taskDefinition .taskCode[data-taskcode="taskcd09"]:before,
+.procedure-alert .taskDefinition .taskCode[data-taskcode="taskcd09"]:before {
+  content: var(--label-taskCode-taskcd09);
+}
+.doc-container .taskDefinition .limit .threshold,
+.procedure-alert .taskDefinition .limit .threshold {
+  display: block;
+}
+.doc-container .taskDefinition .limitRange .threshold,
+.procedure-alert .taskDefinition .limitRange .threshold {
+  display: inline;
+}
+.doc-container .taskDefinition .interval .threshold[data-thresholdtype="interval"]:before,
+.procedure-alert .taskDefinition .interval .threshold[data-thresholdtype="interval"]:before {
+  content: var(--label-interval-short) ": ";
+}
+.doc-container .taskDefinition .interval .threshold[data-thresholdtype="threshold"]:before,
+.procedure-alert .taskDefinition .interval .threshold[data-thresholdtype="threshold"]:before {
+  content: var(--label-threshold-short) ": ";
+}
+.doc-container .taskDefinition .skill[data-skilltype="st01"]:before,
+.procedure-alert .taskDefinition .skill[data-skilltype="st01"]:before {
+  content: var(--label-skillType-st01-airplane);
+}
+.doc-container .taskDefinition .skill[data-skilltype="st02"]:before,
+.procedure-alert .taskDefinition .skill[data-skilltype="st02"]:before {
+  content: var(--label-skillType-st02-electric);
+}
+.doc-container .taskDefinition .skill[data-skilltype="st03"]:before,
+.procedure-alert .taskDefinition .skill[data-skilltype="st03"]:before {
+  content: var(--label-skillType-st03-avionics);
+}
+.doc-container .taskDefinition .skill[data-skilltype="st04"]:before,
+.procedure-alert .taskDefinition .skill[data-skilltype="st04"]:before {
+  content: var(--label-skillType-st04-engine);
+}
+.doc-container .taskDefinition .skill[data-skilltype="st51"]:before,
+.procedure-alert .taskDefinition .skill[data-skilltype="st51"]:before {
+  content: var(--label-skillType-st51-cabin);
+}
+.doc-container .taskDefinition .skill[data-skilltype="st52"]:before,
+.procedure-alert .taskDefinition .skill[data-skilltype="st52"]:before {
+  content: var(--label-skillType-st52-ndt);
+}
+.doc-container .taskDefinition .skill[data-skilltype="st53"]:before,
+.procedure-alert .taskDefinition .skill[data-skilltype="st53"]:before {
+  content: var(--label-skillType-st53-radio);
+}
+.doc-container .taskDefinition .skill[data-skilltype="st54"]:before,
+.procedure-alert .taskDefinition .skill[data-skilltype="st54"]:before {
+  content: var(--label-skillType-st54-utilization);
+}
+.doc-container .taskDefinition .person:before,
+.procedure-alert .taskDefinition .person:before {
+  content: attr(data-man);
+}
+.doc-container .taskDefinition .complexity .mpdTaskDuration:after,
+.procedure-alert .taskDefinition .complexity .mpdTaskDuration:after,
+.doc-container .taskDefinition .complexity .estimatedTime:after,
+.procedure-alert .taskDefinition .complexity .estimatedTime:after {
+  content: " " attr(data-unitofmeasure);
+}
+.doc-container .taskDefinition .complexity .mpdTaskDuration:before,
+.procedure-alert .taskDefinition .complexity .mpdTaskDuration:before {
+  content: attr(data-procedureduration);
+}
+.doc-container .taskDefinition [data-displaytext]:before,
+.procedure-alert .taskDefinition [data-displaytext]:before,
+.doc-container .timeLimitInfo [data-displaytext]:before,
+.procedure-alert .timeLimitInfo [data-displaytext]:before {
+  font-weight: normal;
+  content: attr(data-displaytext);
+}
+.doc-container .mpdTimeLimitTable .timeLimitInfo *:before,
+.procedure-alert .mpdTimeLimitTable .timeLimitInfo *:before {
+  font-weight: normal;
+}
+.doc-container .limitRangeFrom:before,
+.procedure-alert .limitRangeFrom:before {
+  content: var(--label-from) " ";
+}
+.doc-container .limitRangeTo:before,
+.procedure-alert .limitRangeTo:before {
+  content: var(--label-to) " ";
+}
+.doc-container .tolerance[data-tolerancetype="plusorminus"]:before,
+.procedure-alert .tolerance[data-tolerancetype="plusorminus"]:before {
+  content: "±" attr(data-tolerancevalue);
+}
+.doc-container .tolerance[data-tolerancetype="plus"]:before,
+.procedure-alert .tolerance[data-tolerancetype="plus"]:before {
+  content: "+" attr(data-tolerancevalue);
+}
+.doc-container .tolerance[data-tolerancetype="minus"]:before,
+.procedure-alert .tolerance[data-tolerancetype="minus"]:before {
+  content: "-" attr(data-tolerancevalue);
+}
+.doc-container .mpdTaskDefinitionTable thead .taskIdent:before,
+.procedure-alert .mpdTaskDefinitionTable thead .taskIdent:before {
+  content: var(--label-taskIdent);
+}
+.doc-container .mpdTaskDefinitionTable thead .zone:before,
+.procedure-alert .mpdTaskDefinitionTable thead .zone:before {
+  content: var(--label-mpdZone);
+}
+.doc-container .mpdTaskDefinitionTable thead .taskCode:before,
+.procedure-alert .mpdTaskDefinitionTable thead .taskCode:before {
+  content: var(--label-taskCode);
+}
+.doc-container .mpdTaskDefinitionTable thead .description:before,
+.procedure-alert .mpdTaskDefinitionTable thead .description:before {
+  content: var(--label-description);
+}
+.doc-container .mpdTaskDefinitionTable thead .interval__threshold:before,
+.procedure-alert .mpdTaskDefinitionTable thead .interval__threshold:before {
+  content: var(--label-threshold) " (" var(--label-threshold-short) ")";
+}
+.doc-container .mpdTaskDefinitionTable thead .interval__interval:before,
+.procedure-alert .mpdTaskDefinitionTable thead .interval__interval:before {
+  content: var(--label-interval) " (" var(--label-interval-short) ")";
+}
+.doc-container .mpdTaskDefinitionTable thead .source:before,
+.procedure-alert .mpdTaskDefinitionTable thead .source:before {
+  content: var(--label-source);
+}
+.doc-container .mpdTaskDefinitionTable thead .reference:before,
+.procedure-alert .mpdTaskDefinitionTable thead .reference:before {
+  content: var(--label-reference);
+}
+.doc-container .mpdTaskDefinitionTable thead .skill:before,
+.procedure-alert .mpdTaskDefinitionTable thead .skill:before {
+  content: var(--label-skill);
+}
+.doc-container .mpdTaskDefinitionTable thead .man:before,
+.procedure-alert .mpdTaskDefinitionTable thead .man:before {
+  content: var(--label-man);
+}
+.doc-container .mpdTaskDefinitionTable thead .complexity:before,
+.procedure-alert .mpdTaskDefinitionTable thead .complexity:before {
+  content: var(--label-complexity);
+}
+.doc-container .mpdTaskDefinitionTable thead .applic:before,
+.procedure-alert .mpdTaskDefinitionTable thead .applic:before {
+  content: var(--label-fm-applic);
+}
+.doc-container .threshold[data-thresholdunitofmeasure]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure]:after {
+  content: " " attr(data-thresholdunitofmeasure);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th01"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th01"]:after {
+  content: " " var(--label-thresholdInterval-th01);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th02"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th02"]:after {
+  content: " " var(--label-thresholdInterval-th02);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th03"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th03"]:after {
+  content: " " var(--label-thresholdInterval-th03);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th04"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th04"]:after {
+  content: " " var(--label-thresholdInterval-th04);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th05"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th05"]:after {
+  content: " " var(--label-thresholdInterval-th05);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th06"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th06"]:after {
+  content: " " var(--label-thresholdInterval-th06);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th07"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th07"]:after {
+  content: " " var(--label-thresholdInterval-th07);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th08"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th08"]:after {
+  content: " " var(--label-thresholdInterval-th08);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th09"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th09"]:after {
+  content: " " var(--label-thresholdInterval-th09);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th10"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th10"]:after {
+  content: " " var(--label-thresholdInterval-th10);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th11"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th11"]:after {
+  content: " " var(--label-thresholdInterval-th11);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th12"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th12"]:after {
+  content: " " var(--label-thresholdInterval-th12);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th13"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th13"]:after {
+  content: " " var(--label-thresholdInterval-th13);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th14"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th14"]:after {
+  content: " " var(--label-thresholdInterval-th14);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th15"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th15"]:after {
+  content: " " var(--label-thresholdInterval-th15);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th16"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th16"]:after {
+  content: " " var(--label-thresholdInterval-th16);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th17"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th17"]:after {
+  content: " " var(--label-thresholdInterval-th17);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th18"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th18"]:after {
+  content: " " var(--label-thresholdInterval-th18);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th19"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th19"]:after {
+  content: " " var(--label-thresholdInterval-th19);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th20"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th20"]:after {
+  content: " " var(--label-thresholdInterval-th20);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th21"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th21"]:after {
+  content: " " var(--label-thresholdInterval-th21);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th22"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th22"]:after {
+  content: " " var(--label-thresholdInterval-th22);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th23"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th23"]:after {
+  content: " " var(--label-thresholdInterval-th23);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th24"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th24"]:after {
+  content: " " var(--label-thresholdInterval-th24);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th25"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th25"]:after {
+  content: " " var(--label-thresholdInterval-th25);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th26"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th26"]:after {
+  content: " " var(--label-thresholdInterval-th26);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th27"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th27"]:after {
+  content: " " var(--label-thresholdInterval-th27);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th28"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th28"]:after {
+  content: " " var(--label-thresholdInterval-th28);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th29"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th29"]:after {
+  content: " " var(--label-thresholdInterval-th29);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th30"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th30"]:after {
+  content: " " var(--label-thresholdInterval-th30);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th31"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th31"]:after {
+  content: " " var(--label-thresholdInterval-th31);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th32"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th32"]:after {
+  content: " " var(--label-thresholdInterval-th32);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th33"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th33"]:after {
+  content: " " var(--label-thresholdInterval-th33);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th34"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th34"]:after {
+  content: " " var(--label-thresholdInterval-th34);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th35"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th35"]:after {
+  content: " " var(--label-thresholdInterval-th35);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th36"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th36"]:after {
+  content: " " var(--label-thresholdInterval-th36);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th37"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th37"]:after {
+  content: " " var(--label-thresholdInterval-th37);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th38"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th38"]:after {
+  content: " " var(--label-thresholdInterval-th38);
+}
+.doc-container .threshold[data-thresholdunitofmeasure="th39"]:after,
+.procedure-alert .threshold[data-thresholdunitofmeasure="th39"]:after {
+  content: " " var(--label-thresholdInterval-th39);
+}
+.doc-container .taskDefinition .limit[data-limittypevalue="oc"]:before,
+.procedure-alert .taskDefinition .limit[data-limittypevalue="oc"]:before {
+  content: var(--label-limitTypeValue-oc) " " attr(data-limitcond);
+}
+.doc-container .taskDefinition .reference .dmRefAddressItems,
+.procedure-alert .taskDefinition .reference .dmRefAddressItems {
+  display: none;
+}
+.doc-container .timeLimitIdent:before,
+.procedure-alert .timeLimitIdent:before {
+  content: attr(data-timelimitident);
+}
+.doc-container .taskIdent:before,
+.procedure-alert .taskIdent:before {
+  content: attr(data-taskident);
+}
+.doc-container .limitType[data-limitunittype="lt01"]:after,
+.procedure-alert .limitType[data-limitunittype="lt01"]:after {
+  content: " " var(--label-limitUnitType-lt01);
+}
+.doc-container .limitType[data-limitunittype="lt02"]:after,
+.procedure-alert .limitType[data-limitunittype="lt02"]:after {
+  content: " " var(--label-limitUnitType-lt02);
+}
+.doc-container .limitType[data-limitunittype="lt03"]:after,
+.procedure-alert .limitType[data-limitunittype="lt03"]:after {
+  content: " " var(--label-limitUnitType-lt03);
+}
+.doc-container .limitType[data-limitunittype="lt04"]:after,
+.procedure-alert .limitType[data-limitunittype="lt04"]:after {
+  content: " " var(--label-limitUnitType-lt04);
+}
+.doc-container .limitType[data-limitunittype="lt05"]:after,
+.procedure-alert .limitType[data-limitunittype="lt05"]:after {
+  content: " " var(--label-limitUnitType-lt05);
+}
+.doc-container .limitType[data-limitunittype="lt06"]:after,
+.procedure-alert .limitType[data-limitunittype="lt06"]:after {
+  content: " " var(--label-limitUnitType-lt06);
+}
+.doc-container .limitType[data-limitunittype="lt07"]:after,
+.procedure-alert .limitType[data-limitunittype="lt07"]:after {
+  content: " " var(--label-limitUnitType-lt07);
+}
+.doc-container .mpdTaskDefinitionTable th:nth-child(1),
+.procedure-alert .mpdTaskDefinitionTable th:nth-child(1) {
+  width: 9%;
+}
+.doc-container .mpdTaskDefinitionTable th:nth-child(2),
+.procedure-alert .mpdTaskDefinitionTable th:nth-child(2) {
+  width: 4%;
+}
+.doc-container .mpdTaskDefinitionTable th:nth-child(3),
+.procedure-alert .mpdTaskDefinitionTable th:nth-child(3) {
+  width: 4%;
+}
+.doc-container .mpdTaskDefinitionTable th:nth-child(4),
+.procedure-alert .mpdTaskDefinitionTable th:nth-child(4) {
+  width: 39%;
+}
+.doc-container .mpdTaskDefinitionTable th:nth-child(5),
+.procedure-alert .mpdTaskDefinitionTable th:nth-child(5) {
+  width: 9%;
+}
+.doc-container .mpdTaskDefinitionTable th:nth-child(6),
+.procedure-alert .mpdTaskDefinitionTable th:nth-child(6) {
+  width: 4%;
+}
+.doc-container .mpdTaskDefinitionTable th:nth-child(7),
+.procedure-alert .mpdTaskDefinitionTable th:nth-child(7) {
+  width: 9%;
+}
+.doc-container .mpdTaskDefinitionTable th:nth-child(8),
+.procedure-alert .mpdTaskDefinitionTable th:nth-child(8) {
+  width: 4%;
+}
+.doc-container .mpdTaskDefinitionTable th:nth-child(9),
+.procedure-alert .mpdTaskDefinitionTable th:nth-child(9) {
+  width: 4%;
+}
+.doc-container .mpdTaskDefinitionTable th:nth-child(10),
+.procedure-alert .mpdTaskDefinitionTable th:nth-child(10) {
+  width: 4%;
+}
+.doc-container .mpdTaskDefinitionTable th:nth-child(11),
+.procedure-alert .mpdTaskDefinitionTable th:nth-child(11) {
+  width: 10%;
+}
+.doc-container .mpdTimeLimitTable thead .timeLimitIdent:before,
+.procedure-alert .mpdTimeLimitTable thead .timeLimitIdent:before {
+  content: var(--label-timeLimitIdent);
+}
+.doc-container .mpdTimeLimitTable thead .equip:before,
+.procedure-alert .mpdTimeLimitTable thead .equip:before {
+  content: var(--label-equipGroup);
+}
+.doc-container .mpdTimeLimitTable thead .qty:before,
+.procedure-alert .mpdTimeLimitTable thead .qty:before {
+  content: var(--label-quantity);
+}
+.doc-container .mpdTimeLimitTable thead .timeLimit:before,
+.procedure-alert .mpdTimeLimitTable thead .timeLimit:before {
+  content: var(--label-threshold) "/" var(--label-interval);
+}
+.doc-container .mpdTimeLimitTable thead .applic:before,
+.procedure-alert .mpdTimeLimitTable thead .applic:before {
+  content: var(--label-fm-applic);
+}
+.doc-container .mpdTimeLimitTable th:nth-child(1),
+.procedure-alert .mpdTimeLimitTable th:nth-child(1) {
+  width: 7%;
+}
+.doc-container .mpdTimeLimitTable th:nth-child(2),
+.procedure-alert .mpdTimeLimitTable th:nth-child(2) {
+  width: 43%;
+}
+.doc-container .mpdTimeLimitTable th:nth-child(3),
+.procedure-alert .mpdTimeLimitTable th:nth-child(3) {
+  width: 10%;
+}
+.doc-container .mpdTimeLimitTable th:nth-child(4),
+.procedure-alert .mpdTimeLimitTable th:nth-child(4) {
+  width: 20%;
+}
+.doc-container .mpdTimeLimitTable th:nth-child(4),
+.procedure-alert .mpdTimeLimitTable th:nth-child(4) {
+  width: 20%;
+}
+:root {
+  --left-text-indent: 2cm;
+  --left-text-indent-reverse: -2cm;
+  --left-toc-indent: 1.4cm;
+  --font-size: 10pt;
+  --change-bar-width: 2pt;
+  --change-bar-left-indent: 3mm;
+  --change-bar-left-indent-reverse: -3mm;
+  --list-body-indent: 7mm;
+  --indent-standart: 8pt;
+  --indent-half: 4pt;
+  --indent-quater: 2pt;
+}
+:root {
+  --levelledCounter1: target-counter(attr(href), counter1);
+  --levelledCounter2: target-counter(attr(href), counter2);
+  --levelledCounter3: target-counter(attr(href), counter3);
+  --levelledCounter4: target-counter(attr(href), counter4);
+  --levelledCounter5: target-counter(attr(href), counter5);
+  --levelledCounter6: target-counter(attr(href), counter6);
+  --levelledCounter7: target-counter(attr(href), counter7);
+  --levelledCounter8: target-counter(attr(href), counter8);
+  --levelledCounter1_2: var(--levelledCounter1) "." var(--levelledCounter2);
+  --levelledCounter1_2_3: var(--levelledCounter1_2) "." var(--levelledCounter3);
+  --levelledCounter1_2_3_4: var(--levelledCounter1_2_3) "." var(--levelledCounter4);
+  --levelledCounter1_2_3_4_5: var(--levelledCounter1_2_3_4) "." var(--levelledCounter5);
+  --levelledCounter1_2_3_4_5_6: var(--levelledCounter1_2_3_4_5) "." var(--levelledCounter6);
+  --levelledCounter1_2_3_4_5_6_7: var(--levelledCounter1_2_3_4_5_6) "." var(--levelledCounter7);
+  --levelledCounter1_2_3_4_5_6_7_8: var(--levelledCounter1_2_3_5_6_7) "." var(--levelledCounter8);
+  --levelledCounterContent1: attr(data-index);
+  --levelledCounterContent1_2: attr(data-index);
+  --levelledCounterContent1_2_3: attr(data-index);
+  --levelledCounterContent1_2_3_4: attr(data-index);
+  --levelledCounterContent1_2_3_4_5: attr(data-index);
+  --levelledCounterContent1_2_3_4_5_6: attr(data-index);
+  --levelledCounterContent1_2_3_4_5_6_7: attr(data-index);
+  --levelledCounterContent1_2_3_4_5_6_7_8: attr(data-index);
+  --figureCounter: attr(data-figure);
+  --sheetCounter: attr(data-sheet);
+  --tableCounter: attr(data-index);
+}

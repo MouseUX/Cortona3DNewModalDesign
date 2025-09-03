@@ -1,0 +1,346 @@
+﻿<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Guida del visualizzatore di formazione virtuale</title>
+    <style type="text/css">
+        body {
+            font-family: verdana;
+            font-size: 80%;
+            background-color: white;
+            color: black;
+            margin-top: 12pt;
+            margin-bottom: 10pt;
+            margin-left: 10pt;
+            margin-right: 10pt;
+        }
+
+        p {
+            font-family: verdana;
+            font-size: 100%;
+            color: black;
+            margin-top: 6pt;
+            margin-bottom: 6pt;
+            margin-left: 0pt;
+        }
+
+        li {
+            font-family: verdana;
+            font-size: 100%;
+            margin-left: 0pt;
+        }
+
+        td {
+            font-family: verdana;
+            font-size: 70%;
+            color: black;
+
+            background-color: whitesmoke;
+            margin: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border: solid 1px white;
+            vertical-align: top;
+        }
+
+        th {
+            font-family: verdana;
+            font-size: 70%;
+            color: black;
+            text-align: left;
+
+            background-color: gainsboro;
+            padding: 4px;
+            border: solid 1px white;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            text-align: left;
+            color: darkslategray;
+        }
+
+        h1 {
+            font-size: 150%;
+            margin-top: 20pt;
+            margin-bottom: 0pt;
+
+        }
+
+        h2 {
+            font-size: 120%;
+            margin-left: 9pt;
+            margin-bottom: 0pt;
+            margin-top: 0pt;
+        }
+
+        h3 {
+            font-size: 110%;
+            margin-bottom: 6pt;
+            color: black;
+        }
+
+        ul {
+            margin-top: 0pt;
+            margin-bottom: 6pt;
+            color: black;
+            list-style-type: disc;
+        }
+
+        ol {
+            margin-left: 0px;
+            margin-top: 0pt;
+            margin-bottom: 6pt;
+        }
+		
+        li {
+            font-family: verdana;
+            font-size: 100%;
+            margin-left: 0pt;
+        }		
+
+       
+        table {
+            font-size: medium;
+        }
+		
+        div.note {
+            background-image: url(images/note1.png);
+            background-repeat: no-repeat;
+            background-color: white;
+            margin-top: 12pt;
+            margin-bottom: 0pt;
+            margin-left: 0pt;
+		}
+
+        img.btn {
+            margin: 2px 4px;
+            width: 16px;
+            height: 16px;
+        }
+
+        img.btn.inline {
+            margin: 0 2px 0 4px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="main">
+        <h1>Applicazione di formazione 3D - interfaccia utente</h1>
+        <p>
+            Questa applicazione di formazione 3D consente di studiare la procedura di formazione. &Egrave; possibile utilizzare l'applicazione di formazione in tre diverse modalit&agrave;:
+            <ul>
+                <li>
+                    <b>Modalit&agrave; dimostrazione</b>: riproduzione automatica della procedura. &Egrave; possibile riprodurre gli step desiderati pi&ugrave; volte a varie velocit&agrave; ed esaminare la procedura da diverse angolazioni.</li>
+                <li>
+                    <b>Modalit&agrave; studio</b>: riproduzione interattiva della procedura. &Egrave; possibile eseguire la procedura con l'aiuto di vari suggerimenti.</li>
+                <li>
+                    <b>Modalit&agrave; esame</b>: testare le proprie conoscenze. La procedura deve essere eseguita senza alcun suggerimento.
+                </li>
+            </ul>
+        </p>
+
+        <h1>Ambiente di formazione</h1>
+        <p>
+            Il riquadro in basso consente di selezionare e attivare la modalit&agrave; di formazione appropriata:
+		</p>			
+		<p>
+            <img src="images/operation_pane.png" width="412" height="58" />
+        </p>
+        <p>
+            Nelle modalit&agrave; Dimostrazione e Studio &egrave; possibile controllare la riproduzione della procedura utilizzando un pannello di controllo simile al VCR:
+		</p>			
+		<p>			
+            <img src="images/operation_pane_mode_selected.png" width="412" height="66" />
+        </p>
+
+        <ul>
+            <li>
+                <b>Riproduci step</b> avvia (interrompe) la riproduzione della procedura. </li>
+            <li>
+                <b>Ripristina step</b> arresta e riavvolge lo step corrente all'inizio. </li>
+            <li>
+                <b>Step precedente</b> sposta la riproduzione allo step precedente.</li>
+            <li>
+                <b>Step successivo</b> sposta la riproduzione allo step successivo. </li>
+            <li>
+                <b>Esci dalla modalit&agrave;</b> annulla la modalit&agrave; corrente.</li>
+        </ul>
+
+        <p>
+            <img src="images/playing_options1.png" width="412" height="64" />
+		</p>			
+		
+            <ul>
+                <li>
+                    <b>Posizione</b> consente di spostare la telecamera nell'area appropriata del modello 3D.</li>
+            </ul>
+        
+        <p>
+            Il <b>riquadro Operazione</b> rappresenta l'operazione prevista o il gruppo di operazioni. &Egrave; necessario leggere le istruzioni ed eseguire azioni, ad esempio immettere il parametro richiesto o selezionare l'oggetto che fa parte di una procedura:
+		</p>			
+		<p>			
+            <img src="images/operation_panel1.png" width="412" height="142" />
+        </p>
+
+        <p>
+            Il riquadro superiore consente di passare attraverso la procedura:
+		</p>			
+		<p>			
+            <img src="images/upper_pane1.png" width="412" height="124" />
+		</p>			
+            <ul>
+                <li>
+                    <b>Documenti</b>. Visualizza la parte del documento associata allo step della procedura correntemente attivo. </li>
+                <li>
+                    <b>Istruzioni</b>. Visualizza i commenti associati allo step di formazione corrente. </li>
+                <li>
+                    <b>Parti</b>. Visualizza l'elenco degli oggetti interattivi nella formazione corrente. Consente di trovare la posizione degli oggetti e di visualizzare ulteriori meta-informazioni.</li>
+                <li>
+                    <b>Parametri</b>. Visualizza l'elenco dei parametri utilizzati nella formazione corrente. Questi parametri vengono utilizzati come salto condizionale nello scenario di formazione. &Egrave; possibile specificare un parametro di questo tipo.
+                </li>
+            </ul>
+        
+
+        <h1>Modalit&agrave; di formazione</h1>
+
+        <p>
+            <h2>Modalit&agrave; dimostrazione</h2>
+            <ul>
+                <li>Per accedere a questa modalit&agrave;, selezionare la modalit&agrave; Dimostrazione, quindi fare clic su <b>Attiva modalit&agrave;</b>.</li>
+                <li>Per avviare la riproduzione, fare clic su <b>Riproduci step</b>. La descrizione dello step correntemente attivo viene visualizzata nella pagina a schede Documento. </li>
+                <li>La procedura viene visualizzata in modo continuativo.</li>
+                <li>Per interrompere temporaneamente la riproduzione, fare clic su <b>Pausa</b>. Fare clic su <b>Riproduci</b> per continuare la riproduzione. </li>
+                <li>Per visualizzare la descrizione dell'intera procedura, fare clic su <b>Documento</b>. </li>
+                <li>&Egrave; possibile navigare nella finestra 3D (vedere la sezione Navigazione nella finestra 3D di questo documento).
+                </li>
+                <li> La pagina a schede Parti consente di evidenziare la parte desiderata nella finestra 3D (fare clic sull'opzione Individua) e visualizzare informazioni aggiuntive (fare clic su Meta). </li>
+                <li>Per passare allo step successivo o precedente della procedura, fare clic su <b>Step successivo</b> o <b>Step precedente</b>. </li>
+                <li>Per uscire dalla modalit&agrave; Dimostrazione, fare clic <b>Esci dalla modalit&agrave;</b>. </li>
+            </ul>
+        </p>
+
+
+
+        <p>
+            <h2>Modalit&agrave; studio</h2>
+            <ul>
+                <li>Per accedere a questa modalit&agrave;, selezionare la modalit&agrave; <b>Studio</b>, quindi fare clic su <b>Attiva modalit&agrave;</b>.</li>
+                <li>Fare clic su <b>Riproduci step</b> per iniziare lo studio della procedura. &Egrave; necessario seguire le istruzioni visualizzate nel riquadro Operazione. Esistono tre gruppi di istruzioni: </li>
+                <ol>
+                    <li>Individuare le parti coinvolte nello step della procedura corrente, quindi fare clic su di esse nella finestra 3D o nella pagina a schede Parti.</li>
+                    <li>Selezionare la risposta corretta nell'elenco di scelta. </li>
+                    <li>Specificare un valore per un parametro. </li>
+                </ol>
+                <li>Il pulsante<b>Ignora</b> consente di passare all'operazione successiva nello scenario di formazione. </li>
+                <li>Il <b>risultato del test</b> indica visivamente che sono stati commessi degli errori (verdi &ndash; corretti, rossi &ndash; non corretti). Il livello dell'errore &egrave; specificato nella simulazione 3D e aumenta gradualmente per lo step corrente. Ogni nuovo step inizia con il livello di errore zero. </li>
+                <li>Completare tutti gli step e fare clic su <b>Esci dalla modalit&agrave;</b> ogni volta che si &egrave; pronti per uscire dalla modalit&agrave; Studio. </li>
+            </ul>
+        </p>
+
+        <p>
+            <h2>Modalit&agrave; esame</h2>
+            <ul>
+                <li>Per accedere a questa modalit&agrave;, selezionare la modalit&agrave; <b>Esame</b>, quindi fare clic su <b>Attiva modalit&agrave;</b>. </li>
+                <li>Fare clic su <b>Avvia</b> per avviare la prova. Qui &egrave; necessario eseguire le azioni nello stesso modo della modalit&agrave; Studio, ma i suggerimenti non sono pi&ugrave; disponibili. </li>
+                <li>Per uscire dalla modalit&agrave; Esame, fare clic su <b>Esci dalla modalit&agrave;</b>.</li>
+            </ul>
+        </p>
+
+        <h1>Navigazione nella finestra 3D</h1>
+        <p>
+            &Egrave; possibile navigare nella finestra 3D utilizzando il mouse o la barra Navigazione:
+		</p>			
+		<p>			
+            <img src="images/navigation_bar.png" width="412" height="30" />
+        </p>
+        <p>
+            <b>Per ingrandire/rimpicciolire il modello 3D:</b>
+            <ul>
+                <li>Utilizzare la rotella del mouse; </li>
+                <li>In caso contrario, fare clic su Zoom <img class="btn inline" src="../../../../components/rococo/img/sbtn_zoom.png"> nella barra Navigazione, posizionare il puntatore in un punto qualsiasi della finestra 3D, premere il pulsante sinistro del mouse, quindi spostare il mouse tenendo premuto il pulsante sinistro del mouse. </li>
+            </ul>
+        </p>
+        <p>
+            <b>Per spostare la telecamera verso l'alto/verso il basso o verso sinistra/destra:</b>
+            <ul>
+                <li>Posizionare il puntatore in qualsiasi punto della finestra 3D, quindi spostare il mouse con il pulsante centrale (o rotella del mouse) premuto. </li>
+                <li>Oppure fare clic su Panoramica <img class="btn inline" src="../../../../components/rococo/img/sbtn_pan.png"> nella barra Navigazione, posizionare il puntatore su 3D e spostare il mouse tenendo premuto il pulsante sinistro.</li>
+            </ul>
+        </p>
+        <p>
+            <b>Per rendere il modello 3D completamente visibile nella finestra 3D:</b>
+            <ul>
+                <li>Fare clic su Adatta <img class="btn inline" src="../../../../components/rococo/img/btn_fit.png"> nella barra Navigazione. </li>
+            </ul>
+        </p>
+        <p>
+            <b>Per ruotare il modello 3D:</b>
+            <ul>
+                <li>Fare clic su Rotazione <img class="btn inline" src="../../../../components/rococo/img/sbtn_spin.png"> nella barra Navigazione, posizionare il puntatore sul modello 3D e spostare il mouse tenendo premuto il pulsante sinistro. </li>
+            </ul>
+        </p>
+        <p>
+            <b>Per specificare il centro di rotazione in 3D:</b>
+            <ul>
+                <li>Premere il tasto ALT e fare clic su qualsiasi geometria nella finestra 3D.</li>
+                <li>Oppure posizionare il puntatore su qualsiasi geometria nella finestra 3D, quindi fare clic con il pulsante centrale del mouse (o rotella del mouse). </li>
+            </ul>
+        </p>
+
+        <p>
+            <b>Per passare allo step successivo della procedura (animazione):</b>
+            <ul>
+                <li>Fare clic su Ignora animazione corrente <img class="btn inline" src="../../../../components/rococo/img/btn_skip_anim.png">.
+                </li>
+
+            </ul>
+        </p>
+
+        <h1>Impostazioni</h1>
+        <p>
+            <ul>
+                <li>
+                    <b>Velocit&agrave;</b>. Imposta la velocit&agrave; di riproduzione per la procedura 3D.
+                </li>
+                <li>
+                    <b>Congela punto di vista</b>. Se selezionata, durante la riproduzione viene utilizzata la posizione corrente del visualizzatore.
+                </li>
+                <li>
+                    <b>Disattiva messaggio di avviso</b>. Se selezionata, viene bloccata la generazione di messaggi di avviso. </li>
+                <li>
+                    <b>Abilita evidenziazione extra di parti nelle modalit&agrave; Dimostrazione e Studio</b>. Se selezionata (valore predefinito), una sfera lampeggiante semi trasparente viene visualizzata sopra l'oggetto selezionato nell'oggetto 3D per attirare l'attenzione della persona in formazione.
+                </li>
+
+                <li>
+                    <b>Riproduzione continua in modalit&agrave; Dimostrazione</b>. Se selezionata (valore predefinito), consente la riproduzione ininterrotta della procedura di formazione. Se deselezionata, la riproduzione si interrompe dopo ogni step.</li>
+
+                <li>
+                    <b>Abilita suggerimenti diretti in modalit&agrave; Studio</b>. Mostra o nasconde, nel riquadro Operazione, le informazioni sulle azioni della persona in formazione che devono essere eseguite. Abilitando i suggerimenti diretti, &egrave; possibile individuare la parte utilizzando il pulsante Individua parte (che ha il nome della parte richiesta). Inoltre, quando i suggerimenti diretti sono abilitati, nell'elenco di scelta vengono visualizzate le risposte corrette.</li>
+				<li>
+                    <b>Mostra cubo di navigazione</b>. Mostra o nasconde il Cubo di navigazione nella finestra 3D. Il Cubo di navigazione ha tre diversi tipi di aree hotspot: Spigolo, Vertice e Faccia. Quando si posiziona il puntatore sul bordo, sul vertice o sulla faccia del Cubo di navigazione, viene evidenziata l'area corrispondente. Con queste aree &egrave; possibile passare da una vista standard all'altra ed eseguire rotazioni.
+					</li>
+                <li>    
+                    <b>Mostra spigoli superficie</b>. Se selezionata, consente la visualizzazione dei contorni della superficie nella finestra 3D.
+                    </li>					
+                <li>
+                    <b>Antialiasing</b>. Attiva una tecnica per ridurre al minimo gli elementi di distorsione nella finestra 3D.</li>					
+                <li>
+                    <b>Occlusione ambientale</b>. Attiva la tecnica di rendering e ombreggiatura dell'occlusione ambientale nella finestra 3D.</li> 					
+                <li>
+                    <b>Contorno degli oggetti al passaggio del mouse</b>. La selezione viene contornata.
+				</li>					
+            </ul>
+        </p>
+    </div>
+</body>
+
+</html>

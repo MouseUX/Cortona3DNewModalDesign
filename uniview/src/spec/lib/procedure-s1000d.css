@@ -1,0 +1,106 @@
+.procedure-alert .skin-modal-inner {
+    border: 1px solid #000;
+    background-color: inherit;
+}
+
+.procedure-alert.warning:before,
+.procedure-alert.caution:before {
+    content: "";
+}
+
+.procedure-alert.caution .skin-modal-panel,
+.procedure-alert.warning .skin-modal-panel {
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid #000;
+}
+
+.procedure-alert.caution .skin-modal-panel .skin-modal-title,
+.procedure-alert.warning .skin-modal-panel .skin-modal-title {
+    border-radius: 0;
+    display: none;
+}
+
+.procedure-alert.caution .p,
+.procedure-alert.warning .p {
+    text-align: center;
+}
+
+.procedure-alert.caution .skin-modal-panel:before,
+.procedure-alert.warning .skin-modal-panel:before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 2em);
+    height: calc(100% + 2em);
+    top: -1em;
+    left: -1em;
+    z-index: -5;
+}
+
+.procedure-alert.warning .skin-modal-panel:before {
+    background: repeating-linear-gradient(-45deg, #f00, #f00 1em, #fff 1em, #fff 2em);
+}
+
+.procedure-alert.caution .skin-modal-panel:before {
+    background: repeating-linear-gradient(-45deg, #000, #000 1em, #ff0 1em, #ff0 2em);
+}
+
+span.link3d {
+    position: absolute;
+    top: 0;
+    margin-left: -2em;
+}
+
+[data-displaytext] > span.link3d {
+    top: calc(1em + 13pt);
+}
+
+.Procedure {
+    margin-left: .3em;
+}
+
+.cortona3dsolo-iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.identAndStatusSection.full .dmStatus {
+    display: block;
+}
+
+.identAndStatusSection.short .dmAddress {
+    text-align: left;
+}
+.identAndStatusSection.short .language,
+.identAndStatusSection.short .issueInfo,
+.identAndStatusSection.short .issueDate,
+.identAndStatusSection.short .dmStatus {
+    display: none;
+}
+.identAndStatusSection.short .dmIdent,
+.identAndStatusSection.short .dmAddressItems,
+.identAndStatusSection.short .dmTitle,
+.identAndStatusSection.short .dmCode,
+.identAndStatusSection.short .techName,
+.identAndStatusSection.short .infoName {
+    display: inline;
+}
+.identAndStatusSection.short .dmCode,
+.identAndStatusSection.short .techName,
+.identAndStatusSection.short .infoName {
+    text-align: left;
+    font-weight: normal !important;
+    font-size: 1em;
+}
+.identAndStatusSection.short .techName,
+.identAndStatusSection.short .infoName {
+    font-style: italic;
+    color: gray;
+}
+
+.identAndStatusSection.short .techName:before,
+.identAndStatusSection.short .infoName:before {
+    content: " - ";
+    margin-right: 0;
+}

@@ -1,0 +1,51 @@
+.standard-views .skin-img-button + .skin-img-button {
+    margin-left: 0;
+}
+
+#btn-set-center {
+    background-image: url(img/btn_goto.png);
+}
+
+#btn-show-hide-rotation-center {
+    background-image: url(img/btn_center.png);
+}
+
+#btn-fit-all {
+    background-image: url(img/btn_fit.png);
+}
+
+#btn-align {
+    background-image: url(img/btn_align.png);
+}
+
+#btn-show-hide-axes {
+    background-image: url(img/btn_axes.png);
+}
+
+#btn-front {
+    background-image: url(img/v1.png);
+}
+
+#btn-back {
+    background-image: url(img/v2.png);
+}
+
+#btn-left {
+    background-image: url(img/v4.png);
+}
+
+#btn-right {
+    background-image: url(img/v3.png);
+}
+
+#btn-top {
+    background-image: url(img/v5.png);
+}
+
+#btn-bottom {
+    background-image: url(img/v6.png);
+}
+
+#btn-isometric {
+    background-image: url(img/v7.png);
+}

@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@cortona3d/ipccfg-webpack": "file:cortona3d-ipccfg-webpack-0.2.0.tgz",
+    "@cortona3d/solo": "file:cortona3d-solo-2.6.0.tgz",
+    "@cortona3d/solo-uniview": "file:cortona3d-solo-uniview-2412.0.0.tgz"
+  }
+}

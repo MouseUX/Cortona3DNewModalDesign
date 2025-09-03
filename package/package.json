@@ -1,0 +1,32 @@
+{
+  "name": "@cortona3d/solo",
+  "version": "2.6.0",
+  "description": "Cortona3D Solo library",
+  "main": "lib/Cortona3DSolo.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "gulp clean",
+    "debug": "gulp",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+http://git.paragraph.ru/scm/jsps/solo-lib.git"
+  },
+  "devDependencies": {
+    "@cortona3d/solo-api": "^2.6.0",
+    "@cortona3d/solo-core": "^2.6.0",
+    "@cortona3d/solo-standalone": "^2.6.0",
+    "@cortona3d/solo-standalone-text": "^2.6.0",
+    "@cortona3d/solo-tag": "^2.6.0",
+    "del": "^2.2.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-replace": "^0.6.1",
+    "gulp-v3": "^3.12.1"
+  },
+  "author": "Paragraphics Ltd.",
+  "license": "SEE LICENSE IN LICENSE"
+}

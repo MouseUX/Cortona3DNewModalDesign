@@ -1,0 +1,1087 @@
+/*
+    s1000d_prc.css
+    13.05.2015 12:08:16
+*/
+
+/*
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 10pt;
+  font-family: Verdana, sans-serif;
+  overflow: auto;
+}
+
+a[href] { 
+    color:#0000A0; 
+    text-decoration: none; 
+}
+a[href]:visited { 
+    color: #0000A0; 
+}
+a[href]:hover { 
+    color: #0000FF; 
+    text-decoration: underline; 
+}
+*/
+
+.dmodule {
+	padding: 8pt;
+}
+
+.content {
+    counter-reset: table figure;
+}
+
+.content > * {
+    margin-top: 12pt;
+}
+
+.dmodule:after {
+	display: block;
+	text-align: center;
+	margin-top: 16pt;
+	font-weight: bold;
+	min-height: 1em;
+}
+
+.opndurn:before,
+.title {
+    display: block;
+    font-weight: bold;
+    margin-top: 8pt;
+	min-height: 1em;
+}
+
+.idstatus {
+	background-color: #E0FFFF;
+	padding: 6pt;
+	margin-top: 12pt;
+	border: solid silver 1px;
+	cursor: pointer;
+}
+
+.idstatus > .dmaddres {
+    display: block;
+    text-align: right;
+	min-height: 1em;
+}
+.idstatus > .dmaddres * {
+    display: block;
+    font-weight: normal;
+	min-height: 1em;
+}
+.idstatus > .dmaddres .dmc {
+    font-weight: bold;
+    margin-top: 12pt;
+    margin-bottom: 6pt;
+}
+.idstatus > .dmaddres *:before {
+    color: #808080;
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+.externalPubTitle {
+    font-weight: bold;
+}
+
+.status {
+    display: none;
+}
+
+.status .security {
+  font-weight: bold;
+}
+.status .brexref,
+.status .qa,
+.status .sbc,
+.status .skill,
+.status .rfu,
+.status .techstd,
+.status .applic,
+.status .applicCrossRefTableRef,
+.status .ein,
+.status .remarks,
+.status .security,
+.status .rpc,
+.status .orig {
+  text-align: right;
+  display: block;
+  min-height: 1em;
+}
+.status .brexref,
+.status .qa,
+.status .sbc,
+.status .skill,
+.status .rfu,
+.status .techstd,
+.status .applic,
+.status .applicCrossRefTableRef,
+.status .ein,
+.status .remarks {
+  margin-top: 6pt;
+}
+
+.datarest {
+  font-family: monospace;
+  font-size: 9pt;
+}
+.instruct {
+  margin-left: 20pt;
+}
+.handling:before,
+.destruct:before,
+.disclose:before,
+.distrib:before,
+.copyright:before,
+.expcont:before {
+  display: block;
+  margin-top: 6pt;
+  margin-bottom: 6pt;
+  min-height: 1em;
+}
+.datarest:before,
+.handling,
+.disclose,
+.destruct,
+.distrib,
+.dataConds,
+.policyStatement,
+.supersedure,
+.copyright,
+.expcont {
+	margin-top: 2pt;
+	margin-bottom: 6pt;
+	text-align: left;
+}
+.inform {
+  margin-left: 20pt;
+  margin-top: 12pt;
+}
+
+.referencedApplicGroup {
+}
+
+.deftask {
+}
+
+.dmaddres .dmtitle > * {
+    text-align: center;
+}
+
+.dmaddres .techname,
+.centerhead1 {
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 27pt;
+    margin-bottom: 17pt;
+}
+
+.mainfunc {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.mainfunc > .link {
+    margin-top: 27pt;
+    position: inherit;
+}
+
+.mainfunc:before,
+.content > .descript:before,
+.schedule:before,
+.isolationMainProcedure:before,
+.descacrw:before,
+.commonRepository:before,
+.faultReporting:before,
+.detect:before,
+.content > .refs:before,
+.prelreqs:before,
+.closereqs:before,
+.dmaddres .infoname,
+.centerhead2 {
+    display: block;
+    font-size: 14pt;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin-top: 27pt;
+    margin-bottom: 17pt;
+    min-height: 1em;
+}
+
+
+.pmd:before,
+.reqconds:before,
+.supequip:before,
+.supplies:before,
+.reqTechInfoGroup:before, 
+.spares:before, 
+.safety:before, 
+.reqpers:before, 
+.cautionRepository:before,
+.toollist:before,
+.controlIndicatorRepository:before,
+.functionalPhysicalAreaRepository:before,
+.warningRepository:before,
+.zobelist:before,
+.partlist:before,
+.einlist:before,
+.workAreaLocationGroup:before,
+.sidehead0 {
+    display: block;
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 27pt;
+    margin-bottom: 17pt;
+    min-height: 1em;
+}
+
+.level1 > .title,
+.sidehead1 {
+    display: block;
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 27pt;
+    margin-bottom: 7pt;
+    min-height: 1em;
+}
+
+.level2 > .title,
+.sidehead2 {
+    display: block;
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: left;
+    min-height: 1em;
+}
+
+.level3 > .title,
+.sidehead3 {
+    display: block;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: left;
+    min-height: 1em;
+}
+
+.level4 > .title,
+.sidehead4 {
+    display: block;
+    font-size: 10pt;
+    text-align: left;
+    min-height: 1em;
+}
+
+.level5 > .title,
+.sidehead5 {
+    display: block;
+    font-size: 10pt;
+    font-style: italic;
+    text-align: left;
+    min-height: 1em;
+}
+
+.levelledPara,
+.proceduralStep {
+    padding-left: 55pt;
+    position: relative;
+}
+
+.levelledPara > .levelledPara,
+.proceduralStep > .proceduralStep {
+    margin-left: -55pt;
+}
+
+.level1 {
+    counter-increment: counter1;
+    counter-reset: counter2 counter3 counter4 counter5 counter6 counter7 counter8;
+}
+.level2 {
+    counter-increment: counter2;
+    counter-reset: counter3 counter4 counter5 counter6 counter7 counter8;
+}
+.level3 {
+    counter-increment: counter3;
+    counter-reset: counter4 counter5 counter6 counter7 counter8;
+}
+.level4 {
+    counter-increment: counter4;
+    counter-reset: counter5 counter6 counter7 counter8;
+}
+.level5 {
+    counter-increment: counter5;
+    counter-reset: counter6 counter7 counter8;
+}
+.level6 {
+    counter-increment: counter6;
+    counter-reset: counter7 counter8;
+}
+.level7 {
+    counter-increment: counter7;
+    counter-reset: counter8;
+}
+.level8 {
+    counter-increment: counter8;
+}
+
+.level1 > *:first-child:before,
+.level2 > *:first-child:before,
+.level3 > *:first-child:before,
+.level4 > *:first-child:before,
+.level5 > *:first-child:before,
+.level6 > *:first-child:before,
+.level7 > *:first-child:before,
+.level8 > *:first-child:before {
+    position: absolute;
+    margin-left: -55pt;
+}
+
+.level1 > *:first-child:before {
+    content: counter(counter1);
+}
+.level2 > *:first-child:before {
+    content: counter(counter1) "." counter(counter2);
+}
+.level3 > *:first-child:before {
+    content: counter(counter1) "." counter(counter2) "." counter(counter3);
+}
+.level4 > *:first-child:before {
+    content: counter(counter1) "." counter(counter2) "." counter(counter3) "." counter(counter4);
+}
+.level5 > *:first-child:before {
+    content: counter(counter1) "." counter(counter2) "." counter(counter3) "." counter(counter4) "." counter(counter5);
+}
+.level6 > *:first-child:before {
+    content: counter(counter1) "." counter(counter2) "." counter(counter3) "." counter(counter4) "." counter(counter5) "." counter(counter6);
+}
+.level7 > *:first-child:before {
+    content: counter(counter1) "." counter(counter2) "." counter(counter3) "." counter(counter4) "." counter(counter5) "." counter(counter6) "." counter(counter7);
+}
+.level8 > *:first-child:before {
+    content: counter(counter1) "." counter(counter2) "." counter(counter3) "." counter(counter4) "." counter(counter5) "." counter(counter6) "." counter(counter7) "." counter(counter8);
+}
+
+/* Caption */
+.caption {
+  display: block;
+  padding-top: 2pt;
+  padding-left: 2pt;
+  padding-bottom: 2pt;
+  padding-right: 2pt;
+  min-height: 1em;
+}
+.caption[data-color='co00'] > .caption{
+  background-color: white;
+}
+.caption[data-color='co01'] > .caption {
+  background-color: green;
+}
+.caption[data-color='co02'] > .caption {
+  background-color: #FFA500;
+}
+.caption[data-color='co03'] > .caption {
+  background-color: #FFD700;
+}
+.caption[data-color='co04'] > .caption {
+  background-color: red;
+}
+.caption[data-color='co07'] > .caption {
+  background-color: white;
+}
+.caption[data-color='co08'] > .caption {
+  background-color: gray;
+}
+.caption[data-color='co09'] > .caption {
+  background-color: clear;
+}
+.caption[data-color='co10'] > .caption {
+  background-color: black;
+}
+.caption[data-color='co51'] > .caption {
+  background-color: #3C6BFB;
+}
+
+/* Warning, Caution, Notes */
+
+.warning,
+.caution,
+.note {
+    display: block;
+    min-height: 1em;
+}
+.warning, 
+.caution {
+    font-weight: bold;
+    text-align: center;
+}
+.warning > * {
+    text-align: left;
+}
+.warning:before,
+.caution:before {
+    display: block;
+    font-size: 12pt;
+    line-height: 1;
+    width: max-content;
+    margin: 0 auto;
+}
+.warning:before {
+    text-decoration: none;
+    border-bottom: 2px solid;
+}
+.note {
+    padding-left: 7mm;
+}
+.note:before {
+    text-align: left;
+    font-weight: bold;
+    display: block;
+    margin-left: -7mm;
+    min-height: 1em;
+}
+
+/* References */
+
+.multimedia > .title,
+.figure > .title {
+    display: none;
+}
+
+.multimedia,
+.figure {
+    display: block;
+    margin-top: 8pt;
+    margin-bottom: 8pt;
+    font-style: italic;
+    counter-increment: figure;
+    counter-reset: sheet;
+    min-height: 1em;
+}
+
+.multimediaobject,
+.graphic {
+    display: block;
+    margin-top: 4pt;
+    counter-increment: sheet;
+    min-height: 1em;
+}
+
+/* Toggle elements styles (bold, italic, underline) */
+
+.emphasis {
+  font-weight: bold;
+}
+.emphasis.em01 {
+  font-weight: bold;
+}
+.emphasis.em02
+{
+  font-weight: normal;
+  font-style: italic;
+}
+.emphasis.em03 {
+  font-weight: normal;
+  text-decoration: underline;
+}
+.emphasis.em04 {
+  font-weight: normal;
+  text-decoration: overline;
+}
+.emphasis.em05 {
+  font-weight: normal;
+  text-decoration: line-through;
+}
+
+.subscrpt {
+  vertical-align: sub;
+  font-size: 80%;
+}
+.supscrpt {
+  vertical-align: super;
+  font-size: 80%;
+}
+
+/* Paragraphs */
+.p {
+    display: block;
+	margin-bottom: 8pt;
+	margin-top: 8pt;
+	text-indent: 0;
+	text-align: left;
+    min-height: 1em;
+}
+
+/* Lists */
+ul {
+	display: block;
+	margin-bottom: 8pt;
+	margin-top: 8pt;
+	text-align: left;
+	padding-left: 9mm;
+    min-height: 1em;
+}
+ol {
+	display: block;
+	margin-bottom: 8pt;
+	margin-top: 8pt;
+	text-align: left;
+	padding-left: 9mm;
+    min-height: 1em;
+}
+li {
+	display: block;
+	margin-bottom: 0pt;
+	margin-top: 0pt;
+	text-align: left;
+	font-style: normal;
+    min-height: 1em;
+}
+li {
+	text-indent: -9mm;
+}
+li .note {
+	margin-left: 9mm;
+    text-indent: 0;
+	padding-left: 0;
+}
+ol > li {
+	margin-bottom: 8pt;
+}
+li > .p:first-child {
+	display: inline;
+}
+ol {
+    counter-reset: seq1;
+}
+ol ol {
+    counter-reset: seq2;
+}
+ol > li {
+    counter-increment: seq1;
+}
+ol ol > li {
+    counter-increment: seq2;
+}
+li:before {
+	display: inline-block;
+	text-indent: 0;
+	width: 7mm;
+}
+ol > li:before {
+	content: counter(seq1);
+}
+ol ol > li:before {
+	content: counter(seq1) "." counter(seq2);
+}
+ul.pf01 > li:before { content: ""; }
+ul.pf03 > li:before { content: "\2010"; }
+ul.pf04 > li:before { content: "\229A"; }
+ul.pf05 > li:before { content: "\25CB"; }
+ul.pf06 > li:before { content: "\25A1"; }
+
+.warning ul > li:before,
+.caution ul > li:before,
+ul.pf07 > li:before         { content: "\25CF";	font-weight: normal; }
+
+ul > li:before,
+ul.pf02 > li:before         { content: "\2010"; }
+
+ol ul > li:before,
+ul ul > li:before,
+ol ul.pf02 > li:before,
+ul ul.pf02 > li:before      { content: "\25CF"; }
+
+ol ul ul > li:before,
+ul ul ul > li:before,
+ol ul ul.pf02 > li:before,
+ul ul ul.pf02 > li:before   { content: "\2010"; }
+
+/* Definition List */
+.deflist {
+    display: block;
+    margin-top: 8pt;
+    min-height: 1em;
+}
+dt {
+    width: 50mm;
+    float: left;
+}
+dd {
+    margin-left: 50mm;
+}
+
+/* Lists headings styles */
+ol > .title, 
+ul > .title {
+	text-align: left;
+	font-weight: bold;
+	margin-bottom: 4pt;
+	padding-left: 0;
+	margin-left: -9mm;
+	text-indent: 0;
+}
+.content > .refs > .tabular:before,
+.reqconds > .tabular:before,
+.reqpers > .tabular:before,
+.supequip > .tabular:before,
+.supplies > .tabular:before,
+.spares > .tabular:before,
+.table-contents > .title,
+.deflist > .title {
+	text-align: left;
+	font-weight: normal;
+	font-style: italic;
+	margin-bottom: 4pt;
+	padding-left: 0;
+	margin-left: 0;
+	text-indent: 0;
+}
+.termTitle,
+.definitionTitle {
+    display: block;
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: left;
+    min-height: 1em;
+}
+.termTitle {
+    width: 50mm;
+    float: left;
+}
+.definitionTitle {
+    margin-left: 50mm;
+}
+
+/* Tables */
+.content > .refs,
+.pmd > .avehcfg,
+.reqconds,
+.reqpers,
+.supequip,
+.supplies,
+.spares {
+  counter-increment: table;
+}
+.table {
+    display: block;
+    margin-top: 12pt;
+    counter-increment: table;
+    min-height: 1em;
+}
+.table table {
+    width: 100%;
+}
+.table tr {
+}
+.table td,
+.table th {
+    padding: 0pt 4pt; 
+}
+
+th[align='left'],
+td[align='left'],
+th[align='left'] .p, 
+td[align='left'] .p {
+    text-align: left;
+}
+th[align='center'],
+td[align='center'],
+th[align='center'] .p, 
+td[align='center'] .p {
+    text-align: center;
+}
+th[align='right'],
+td[align='right'],
+th[align='right'] .p, 
+td[align='right'] .p {
+    text-align: right;
+}
+th[align='justify'],
+td[align='justify'],
+th[align='justify'] .p, 
+td[align='justify'] .p {
+    text-align: justify;
+}
+
+/* Preliminary requirements */
+.pmd,
+.reqconds,
+.supequip,
+.supplies,
+.spares,
+.reqpers,
+.safety {
+    display: block;
+    min-height: 1em;
+}
+
+.pmd > *,
+.reqconds > *,
+.supequip > *,
+.supplies > *,
+.spares > *,
+.reqpers > *,
+.safety > * {
+    margin-left: 55pt;
+}
+
+.embeddedSupportEquipDescr > *:first-child,
+.embeddedSupplyDescr > *:first-child,
+.embeddedSpareDescr > *:first-child {
+    padding-left: 22pt;
+}
+
+.workAreaLocationGroup {
+    margin-top: 6pt;
+}
+.workAreaLocationGroup * {
+    display: inline-block;
+}
+
+.workAreaLocationGroup .zone:before,
+.workAreaLocationGroup .accpnl:before {
+    font-weight: bold;
+    display: inline-block;
+    width: 110pt;
+}
+
+.workAreaLocationGroup .zone + .zone,
+.workAreaLocationGroup .accpnl + .accpnl {
+    display: block;
+    min-height: 1em;
+}
+
+.circuitBreakerRef:after {
+    content: attr(data-circuitBreakerNumber);
+}
+
+/* Tabular data */
+.content > .refs > .tabular:before,
+.reqconds > .tabular:before,
+.reqpers > .tabular:before,
+.supequip > .tabular:before,
+.supplies > .tabular:before,
+.spares > .tabular:before {
+    text-align: center;
+    display: table-caption;
+}
+
+.tabular {
+    display: table;
+    margin-left: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-bottom: .5pt solid black;
+    width: 100%;
+}
+.tabular > * {
+    display: table-row !important;
+}
+.nosupeq:before,
+.nosupply:before,
+.nospares:before,
+.noconds:before,
+.tabular > * > * {
+    display: table-cell !important;
+}
+
+/* taskDuration */
+
+.opndurn {
+    display: block;
+    padding-left: 55pt;
+    min-height: 1em;
+}
+.opndurn:before {
+    margin-left: -55pt;
+}
+.opndurn:after { 
+    white-space: pre;
+}
+
+.externalPubCode:before {
+    display: inline-block;
+    margin-right: .25em;
+}
+
+/* Tables heading */
+.table-contents > .title {
+    text-align: center;
+}
+
+
+/* Tabular headers */
+.header > * {
+    font-weight: bold;
+    border-bottom: .5pt solid black;
+    border-top: .5pt solid black;
+}
+
+/* Autocontent heading */
+.dmaddres .language:before, 
+.dmaddres .language:before, 
+.dmaddres .issno:before, 
+.dmaddres .issdate:before, 
+.status .rpc:before, 
+.status .orig:before, 
+.applicCrossRefTableRef:before, 
+.status > .applic:before, 
+.techstd:before, 
+.brexref:before, 
+.firstver:before, 
+.secver:before, 
+.unverif:before, 
+.sbc:before, 
+.skill:before, 
+.rfu:before, 
+.supply:before, 
+.spare:before, 
+.supequi:before, 
+.embeddedSupplyDescr:before, 
+.embeddedSupportEquipDescr:before, 
+.embeddedSpareDescr:before, 
+.condCrossRefTableRef:before, 
+.productCrossRefTableRef:before, 
+.if > .caseCond:before, 
+.elseIf > .caseCond:before, 
+.challeng:after, 
+.datarest:before, 
+.distrib:before, 
+.expcont:before, 
+.handling:before, 
+.destruct:before, 
+.disclose:before, 
+.copyright:before, 
+.frontMatter .rpc:before, 
+.frontMatter .enterpriseSpec:before, 
+.timeLimitInfo *:before, 
+.isostep:before, 
+.param:before,
+.hotspot:before,
+.isoend:before {
+	font-weight: bold;
+	color: #444444;
+}
+
+/* Inlines */
+
+.rpcname,
+.dmcextension,
+.dmc,
+.language,
+.issno,
+.issdate,
+.security,
+.exportRegistrationStmt,
+.subscrpt,
+.supscrpt,
+.refdm,
+.age,
+.avee,
+.ein,
+.refs > .refdm .age,
+.refs > .refdm .age > *,
+.refs > .refdm .avee,
+.refs > .refdm .avee > *,
+.refs .techname,
+.refs .infoname,
+.reftp,
+.pmRefIdent,
+.pubcode,
+.pmRefAddressItems,
+.pubMedia,
+.externalPubRef,
+.externalPubRefIdent,
+.externalPubCode,
+.externalPubTitle,
+.indexFlag,
+.acronym,
+.acroterm,
+.verbatim,
+.externalPubIssue,
+.externalPubRefAddressItems,
+.circuitBreakerRef,
+.controlIndicatorRef,
+.inlineSignificantData,
+.quantity,
+.fullNatoStockNumber,
+.zone,
+.accpnl,
+.pnr,
+.serialNumber,
+.xref,
+.changeInline,
+.symbol,
+.caption,
+.footnoteRef,
+.spanspec,
+.enumeration,
+.csnref,
+.pnr,
+.installationLocation,
+.productItem,
+.noconds,
+.reqcond,
+.variableRef,
+.globalPropertyRef,
+.booleanOperator,
+.numberOperator,
+.setOperator,
+.stringOperator,
+.booleanFunction,
+.numberFunction,
+.setFunction,
+.stringFunction,
+.trueValue,
+.falseValue,
+.noValue,
+.reqcondm,
+.reqcondm > *,
+.perscat,
+.skill,
+.trade,
+.esttime,
+.tool,
+.materialSetRef,
+.nosupeq,
+.nosupply,
+.consupply,
+.supplyRqmtRef,
+.nospares,
+.nosafety,
+.threshold,
+.value,
+.tolerance,
+.enterpriseRef,
+.bfe,
+.spc,
+.partUsage,
+.unitOfIssueQualificationSegment,
+.quantityPerUnit,
+.hazardousClass,
+.organizationid,
+.enterpriseIdentAlt,
+.workArea,
+.limit,
+.limit > *,
+.sampling,
+.inspectionType,
+.trigger,
+.limrange,
+.from,
+.cautionIdent,
+.functionalPhysicalAreaIdent,
+.warningIdent,
+.zoneid,
+.partid,
+.einid,
+.applic *,
+.identno,
+.identno > * {
+    display: inline;
+}
+
+/* Blocks */
+.supequi > * > *,
+.supply > * > *,
+.spare > * > *,
+.embeddedSupportEquipDescr > * > *,
+.embeddedSpareDescr > * > *,
+.blockchild > * {
+    display: block !important;
+}
+
+/* acronyms */
+
+.acronym {
+    display: inline-block;
+}
+
+.acroterm {
+    cursor: pointer;
+    border-bottom: 1px dashed #000;
+}
+
+.acrodef {
+    display: none;
+}
+
+.footnote {
+  cursor: pointer;
+  vertical-align: super;
+  font-size: 80%;
+}
+.footnoteBody {
+  display: none;
+}
+
+.nsn[data-nsn]:after {
+    content: attr(data-nsn);
+}
+
+.nsn[data-nsc] [data-ncb] [data-nin3to9]:after {
+    content: attr(data-nsc) "-" attr(data-ncb) "-" attr(data-nin3to9)
+}
+
+.remarks > .p {
+    margin-top: 0;
+}
+
+.nosupeq,
+.nosupply,
+.nospares,
+.noconds {
+    display: block;
+}
+
+.pmd .workAreaLocationGroup__type {
+    margin-left: var(--left-text-indent);
+}
+
+.avehcfg caption:before {
+    content: var(--label-table) " " counter(table) " " var(--label-avehcfg);
+}
+
+.avehcfg th:nth-child(1) { width: 33%; }
+.avehcfg th:nth-child(2) { width: 33%; }
+.avehcfg th:nth-child(3) { width: 34%; }
+
+.avehcfg .avehcfg__status:before { content: var(--label-avehcfg-status); }
+.avehcfg .avehcfg__power:before  { content: var(--label-avehcfg-power); }
+.jacked td:nth-child(1):before   { content: var(--label-avehcfg-jacked); }
+.safedev td:nth-child(1):before  { content: var(--label-avehcfg-safedev); }
+.elecpwr td:nth-child(1):before  { content: var(--label-avehcfg-elecpwr); }
+.hydpwr td:nth-child(1):before   { content: var(--label-avehcfg-hydpwr); }
+.airpwr td:nth-child(1):before   { content: var(--label-avehcfg-airpwr); }
+.fuel td:nth-child(1):before     { content: var(--label-avehcfg-fuel); }
+.water td:nth-child(1):before    { content: var(--label-avehcfg-water); }
+.fcposn td:nth-child(1):before   { content: var(--label-avehcfg-fcposn); }
+
+.avehcfg td[data-status="yes"]:before          { content: var(--label-avehcfg-status-yes); }
+.avehcfg td[data-status="no"]:before           { content: var(--label-avehcfg-status-no); }
+.avehcfg td[data-status="indiffer"]:before     { content: var(--label-avehcfg-status-indiffer); }
+.avehcfg td[data-status="na"]:before           { content: var(--label-avehcfg-status-na); }
+
+.avehcfg td[data-power="engine"]:before        { content: var(--label-avehcfg-power-engine); }
+.avehcfg td[data-power="apu"]:before           { content: var(--label-avehcfg-power-apu); }
+.avehcfg td[data-power="external"]:before      { content: var(--label-avehcfg-power-external); }
+.avehcfg td[data-power="internal"]:before      { content: var(--label-avehcfg-power-internal); }
+.avehcfg td[data-power="indifferent"]:before   { content: var(--label-avehcfg-power-indifferent); }
+.avehcfg td[data-power="notapplic"]:before     { content: var(--label-avehcfg-power-notapplic); }
+
+.verbatim {
+    font-size: 0.9em;
+    white-space: pre;
+    font-family: monospace;
+}

@@ -1,0 +1,30 @@
+.panel-view {
+    display: none !important;
+}
+
+.aux.panel {
+    flex: 1 1 25%;
+}
+
+.main.panel {
+    flex: 1 1 75%;
+    border: none;
+}
+
+.solo-uniview-content {
+    flex-flow: row-reverse;
+}
+
+.structure-tree .skin-tree-item .content.completed {
+    font-weight: bold;
+}
+
+.structure-tree .skin-tree-item .content.disabled {
+    color: lightgray;
+}
+
+@media (orientation: portrait) {
+    .solo-uniview-content {
+        flex-flow: column-reverse !important;
+    }
+}

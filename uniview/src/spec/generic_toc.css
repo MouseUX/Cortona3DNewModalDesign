@@ -1,0 +1,11 @@
+main .panel.aux {
+    flex-basis: 0;
+}
+
+.skin-holder-aux {
+    justify-content: center;
+}
+
+.skin-holder {
+    font-size: 14px;
+}

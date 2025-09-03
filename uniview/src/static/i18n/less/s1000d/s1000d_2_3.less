@@ -1,0 +1,554 @@
+@plugin "less-plugin-i18n";
+configure();
+setLocale(@locale);
+
+@charset "utf-8";
+
+/*
+    s1000d_2_3.less
+*/
+
+.idstatus .issno[data-issuenumber]:before {
+    content: __("Issue") ": ";
+}
+
+.idstatus .language[data-languageisocode]:before {
+    content: __("Language") ": ";
+}
+
+.idstatus .issdate[data-day]:before {
+    content: __("Date") ": ";
+}
+
+.pubcode:after {
+    content: attr(data-modelIdentCode) "-" attr(data-pmIssuer) "-" attr(data-pmNumber) "-" attr(data-pmVolume);
+}
+
+.issno[data-issuenumber]:after {
+    content: attr(data-issuenumber) "-" attr(data-inwork);
+}
+
+.language[data-languageisocode]:after {
+    content: attr(data-languageisocode) "-" attr(data-countryisocode);
+}
+
+.issdate[data-day]:after {
+    content: attr(data-year) "-" attr(data-month) "-" attr(data-day)
+}
+
+.firstver:after {
+    content: attr(data-verificationType);
+}
+
+.skill[data-skillCode]:after {
+    content: attr(data-skillCode);
+}
+
+.datarest:before {
+    content: __("Data Restrictions") ":";
+}
+
+.distrib:before {
+    content: __("Distribution");
+}
+
+.expcont:before {
+    content: __("Export Control");
+}
+
+.handling:before {
+    content: __("Handling");
+}
+
+.destruct:before {
+    content: __("Destruction");
+}
+
+.disclose:before {
+    content: __("Disclosure");
+}
+
+.copyright:before {
+    content: __("Copyright");
+}
+
+.dmRefAddressItems .infoname:before {
+    content: " - ";
+}
+
+.identno:before {
+    content: "";
+}
+
+.partAndSerialNumber:before {
+    content: "/";
+}
+
+.natoStockNumber:before {
+    content: __("NSN") " ";
+}
+
+.serialNumber:before {
+    content: __("Serial No") " " attr(data-serialNumberValue);
+}
+
+.customerStockNumber:before {
+    content: __("Stock no.") " ";
+}
+
+.zone:before {
+    content: __("Zone") " " attr(data-zoneNumber);
+}
+
+.accpnl:before,
+.accpnl[data-accessPointTypeValue="accpnl01"]:before {
+    content: __("Door") " " attr(data-accessPointNumber);
+}
+
+.accpnl[data-accessPointTypeValue="accpnl02"]:before {
+    content: __("Panel") " " attr(data-accessPointNumber);
+}
+
+.accpnl[data-accessPointTypeValue="accpnl03"]:before {
+    content: __("Electrical panel") " " attr(data-accessPointNumber);
+}
+
+.multimediaobject:before,
+.graphic:before {
+    content: __("Fig") " " attr(data-figure) " ";
+}
+
+.graphic[data-sheets]:after {
+    content: " (" __("Sheet") " " attr(data-sheet) " " __("of") " " attr(data-sheets) ")";
+}
+
+.multimediaobject[data-sheets]:after {
+    content: " (" __("Multimedia") " " attr(data-sheet) " " __("of") " " attr(data-sheets) ")";
+}
+
+.xref.irtt01:before {
+    content: __("Fig") " " attr(data-figure);
+}
+
+.xref.irtt02:before {
+    content: __("Table") " " attr(data-index);
+}
+
+.xref.irtt03:before {
+    content: __("Fig") " " attr(data-figure);
+}
+
+.xref.irtt07:before {
+    content: __("Para") " " attr(data-index);
+}
+
+.xref.irtt08:before {
+    content: __("Step") " " attr(data-index);
+}
+
+.xref.irtt09:before {
+    content: __("Fig") " " attr(data-figure) ", " __("Sheet") " " attr(data-sheet);
+}
+
+.xref.irtt10:before {
+    content: __("Fig") " " attr(data-figure) ", " attr(data-multimediatype);
+}
+
+.xref.irtt11:before {
+    content: __("Fig") " " attr(data-figure) " [" attr(data-referredfragment) "]";
+}
+
+#app-figure-title.multimediaobject:before,
+#app-figure-title.xref.irtt01:before,
+#app-figure-title.xref.irtt03:before,
+#app-figure-title.xref.irtt09:before,
+#app-figure-title.xref.irtt10:before,
+#app-figure-title.xref.irtt11:before,
+#app-figure-title.xref.irtt12:before,
+#app-figure-title.graphic:before {
+    content: __("Fig") " " attr(data-index) " ";
+}
+
+#app-figure-title.graphic[data-subindexes]:after {
+    content: " (" __("Sheet") " " attr(data-subindex) " " __("of") " " attr(data-subindexes) ")";
+}
+
+#app-figure-title.multimediaobject[data-subindexes]:after {
+    content: " (" __("Multimedia") " " attr(data-subindex) " " __("of") " " attr(data-subindexes) ")";
+}
+
+#app-figure-title.graphic[data-subindexes='']:after,
+#app-figure-title.multimediaobject[data-subindexes='']:after {
+    content: none;
+}
+
+.personnel .numRequired[data-value]:before {
+    content: attr(data-value) " " __("persons");
+}
+
+.personnel .numRequired[data-value='1']:before {
+    content: attr(data-value) " " __("person");
+}
+
+.personnel .numRequired[data-value='0']:before,
+.personnel .numRequired[data-value='']:before {
+    content: __("As required");
+}
+
+.opndurn:before {
+    content: __("Maintenance task duration");
+}
+
+.opndurn:after {
+    content: __("Preliminary requirements") " " attr(data-startupDuration) " " attr(data-unitOfMeasure) "\000a" __("Procedure") " " attr(data-procedureDuration) " " attr(data-unitOfMeasure) "\000a" __("Requirements after job completion") " " attr(data-closeupDuration) " " attr(data-unitOfMeasure);
+}
+
+.externalPubCode:before {
+    content: attr(data-pubCodingScheme);
+}
+
+.externalPubIssueInfo:before {
+    content: __("Edition:") " ";
+}
+
+/* Centerhead2 titles */
+
+.mainfunc:before {
+    content: __("Procedure");
+}
+
+.content>.descript:before {
+    content: __("Description");
+}
+
+.schedule:before {
+    content: __("Schedule");
+}
+
+.isolationMainProcedure:before {
+    content: __("Fault isolation procedure");
+}
+
+.descacrw:before {
+    content: __("Crew/operator content");
+}
+
+.commonRepository:before {
+    content: __("Common information repository");
+}
+
+.faultReporting:before {
+    content: __("Fault reporting");
+}
+
+.detect:before {
+    content: __("Fault Detection");
+}
+
+.content>.refs:before {
+    content: __("References");
+}
+
+.prelreqs:before {
+    content: __("Preliminary requirements");
+}
+
+.closereqs:before {
+    content: __("Requirements after job completion");
+}
+
+/* sidehead0 titles */
+
+.cautionRepository:before {
+    content: __("Caution repository");
+}
+
+.toollist:before {
+    content: __("Tool repository");
+}
+
+.controlIndicatorRepository:before {
+    content: __("Controls and indicators");
+}
+
+.functionalPhysicalAreaRepository:before {
+    content: __("Functional and/or physical area repository");
+}
+
+.warningRepository:before {
+    content: __("Warning repository");
+}
+
+.zobelist:before {
+    content: __("Zone repository");
+}
+
+.partlist:before {
+    content: __("Part repository");
+}
+
+.einlist:before {
+    content: __("Functional item repository");
+}
+
+/* Warning, Caution, Note */
+
+.warning:before {
+    content: __("WARNING");
+}
+
+.caution:before {
+    content: __("CAUTION");
+}
+
+.note:before {
+    content: __("Note");
+}
+
+/* Sidehead0 titles */
+
+.pmd:before {
+    content: __("Production management data");
+}
+
+.reqconds:before {
+    content: __("Required conditions");
+}
+
+.supequip:before {
+    content: __("Support equipment");
+}
+
+.supplies:before {
+    content: __("Consumables, materials and expendables");
+}
+
+.reqTechInfoGroup:before {
+    content: __("Required technical information");
+}
+
+.spares:before {
+    content: __("Spares");
+}
+
+.safety:before {
+    content: __("Safety conditions");
+}
+
+.reqpers:before {
+    content: __("Required persons");
+}
+
+.workAreaLocationGroup:before {
+    content: __("Work area location");
+}
+
+/* None keyword */
+
+.nosupeq:before,
+.nosupply:before,
+.nospares:before,
+.nosafety:before,
+.noconds:before {
+    content: __("None");
+}
+
+/* Tables */
+
+.table-contents>.title:before {
+    content: __("Table") " " counter(table) " ";
+}
+
+.content>.refs>.tabular:before {
+    content: __("Table") " " counter(table) " " __("References");
+}
+
+.reqconds>.tabular:before {
+    content: __("Table") " " counter(table) " " __("Required conditions");
+}
+
+.reqpers>.tabular:before {
+    content: __("Table") " " counter(table) " " __("Required persons");
+}
+
+.supequip>.tabular:before {
+    content: __("Table") " " counter(table) " " __("Support equipment");
+}
+
+.supplies>.tabular:before {
+    content: __("Table") " " counter(table) " " __("Consumables, materials and expendables");
+}
+
+.spares>.tabular:before {
+    content: __("Table") " " counter(table) " " __("Spares");
+}
+
+.header>.name:before {
+    content: __("Name");
+}
+
+.header>.ident:before {
+    content: __("Identification/Reference");
+}
+
+.header>.qty:before {
+    content: __("Quantity");
+}
+
+.header>.remark:before {
+    content: __("Remark");
+}
+
+.header>.condition:before {
+    content: __("Action/Condition");
+}
+
+.header>.publication:before {
+    content: __("Data module/Technical publication");
+}
+
+.header>.title:before {
+    content: __("Title");
+}
+
+.header>.person:before {
+    content: __("Person");
+}
+
+.header>.category:before {
+    content: __("Category");
+}
+
+.header>.skill:before {
+    content: __("Skill level");
+}
+
+.header>.trade:before {
+    content: __("Trade/Trade code");
+}
+
+.header>.time:before {
+    content: __("Estimated time");
+}
+
+.dmodule:after {
+    content: __("End of data module");
+}
+
+.status .security[data-securityClassification]:before {
+    content: __("Security class") " " attr(data-securityClassification);
+}
+
+.status .security[data-securityClassification="01"]:before {
+    content: __("UNCLASSIFIED");
+}
+
+.status .security[data-securityClassification="02"]:before {
+    content: __("RESTRICTED");
+}
+
+.status .security[data-securityClassification="03"]:before {
+    content: __("CONFIDENTIAL");
+}
+
+.status .security[data-securityClassification="04"]:before {
+    content: __("SECRET");
+}
+
+.status .security[data-securityClassification="05"]:before {
+    content: __("TOP SECRET");
+}
+
+.status .rpc:before {
+    content: __("Responsible partner company") ": " attr(data-enterpriseCode) " / ";
+}
+
+.status .orig:before {
+    content: __("Originator") ": " attr(data-enterpriseCode) " / ";
+}
+
+.applicCrossRefTableRef:before {
+    content: __("ACT data module") ": ";
+}
+
+.status>.applic:before {
+    content: __("Applicability") ": ";
+}
+
+.techstd:before {
+    content: __("Technical standard") ":";
+}
+
+.brexref:before {
+    content: __("BREX data module") ": ";
+}
+
+.unverif:before {
+    content: __("Unverified");
+}
+
+.firstver:before {
+    content: __("First verification") ": ";
+}
+
+.secver:before {
+    content: __("Second verification") ": ";
+}
+
+.sbc:before {
+    content: __("System breakdown code") ": ";
+}
+
+.rfu:before {
+    content: __("Reason for update") ": ";
+}
+
+.skill:before {
+    content: __("Skill level") ": ";
+}
+
+.skill[data-skillCode="sk01"]:after {
+    content: __("Basic");
+}
+
+.skill[data-skillCode="sk02"]:after {
+    content: __("Intermediate");
+}
+
+.skill[data-skillCode="sk03"]:after {
+    content: __("Advanced");
+}
+
+.csnref:before {
+    content: __("CSN") " " attr(data-figureNumber)attr(data-figureNumberVariant) "-" attr(data-item)attr(data-itemVariant);
+}
+
+.csnref[data-systemCode]:before {
+    content: __("CSN") " " attr(data-systemCode) "-" attr(data-subSystemCode)attr(data-subSubSystemCode) "-" attr(data-assyCode) "-" attr(data-figureNumber)attr(data-figureNumberVariant) "-" attr(data-item)attr(data-itemVariant);
+}
+
+.csnref[data-itemSeqNumberValue]:before {
+    content: __("CSN/ISN") " " attr(data-figureNumber)attr(data-figureNumberVariant) "-" attr(data-item)attr(data-itemVariant) "/" attr(data-itemSeqNumberValue);
+}
+
+.csnref[data-systemCode][data-itemSeqNumberValue]:before {
+    content: __("CSN/ISN") " " attr(data-systemCode) "-" attr(data-subSystemCode)attr(data-subSubSystemCode) "-" attr(data-assyCode) "-" attr(data-figureNumber)attr(data-figureNumberVariant) "-" attr(data-item)attr(data-itemVariant) "/" attr(data-itemSeqNumberValue);
+}
+
+.reqQuantity[data-unitOfMeasure]:after {
+    content: " " attr(data-unitOfMeasure);
+}
+
+.materialSetRef:before {
+    content: attr(data-materialSetIdent) " " attr(data-materialSetIssue);
+}
+
+.natoStockNumber [data-natoSupplyClass] [data-natoCodificationBureau] [data-natoItemIdentNumberCore]:after {
+    content: attr(data-natoSupplyClass) "-" attr(data-natoCodificationBureau) "-" attr(data-natoItemIdentNumberCore)
+}
+
+.nsn:before {
+    content: __("NSN") " ";
+}
+
+@import (less) "s1000d-label-variables.css";

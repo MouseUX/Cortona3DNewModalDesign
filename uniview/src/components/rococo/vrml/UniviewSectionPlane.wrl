@@ -1,0 +1,218 @@
+#VRML V2.0 utf8
+
+PROTO UniviewSectionPlane [
+	exposedField SFRotation rotation 0 0 1 0
+	exposedField SFVec3f translation 0 0 0
+	exposedField SFVec3f scale 1 1 1
+
+	exposedField SFInt32 whichChoice 0 # -1 - disabled; 0 - show control; 1 - front (Z); 2 - top (Y); 3 - side (X); 4 - aft (Flip); > 4 - hide control
+
+	exposedField SFColor diffuseColor 1 0 0
+	exposedField SFBool cap TRUE
+	exposedField SFVec3f normal 0 1 0
+] {
+
+	EXTERNPROTO ClippingPlane [
+		exposedField SFBool enabled #!(TRUE)
+		exposedField SFVec3f normal #!%normal(0 1 0)
+		exposedField SFFloat distance #!%coord(0)
+		exposedField SFNode appearance #!{Appearance}
+		exposedField SFBool cap #!(TRUE)
+	]
+	[ "urn:inet:parallelgraphics.com:cortona:ClippingPlane" "http://www.cortona3d.com/source/extensions.wrl#ClippingPlane" ]
+
+	EXTERNPROTO ClippingPlaneCanceller []
+	[ "urn:inet:parallelgraphics.com:cortona:ClippingPlaneCanceller" "http://www.cortona3d.com/source/extensions.wrl#ClippingPlaneCanceller" ]
+
+	PROTO PROXY [
+		exposedField SFRotation rotation 0 0 1 0
+		exposedField SFVec3f translation 0 0 0
+		exposedField SFVec3f scale 1 1 1
+		exposedField SFInt32 whichChoice 0
+	]{}
+
+	DEF SW Switch {
+		choice [
+			DEF	C Transform	{
+				children DEF C2 Transform {
+					children [
+						DEF	TIME TimeSensor	{
+							cycleInterval 0.1
+							loop TRUE
+						}
+						ClippingPlaneCanceller {}
+						DEF PLANE_T Transform {
+							translation 0 0 0.001
+							children [
+								Shape	{
+									geometry IndexedFaceSet	{
+										solid FALSE
+										coordIndex [0 1 2 3]
+										coord DEF COORD Coordinate {
+											point [
+												-0.5 -0.5 0, -0.5 0.5 0, 0.5 0.5 0, 0.5 -0.5 0
+											]
+										}
+									}
+									appearance DEF PCOLOR Appearance {
+										material Material {
+											diffuseColor 0 .21 .34
+											specularColor .3 .92 .98
+											emissiveColor 0 .22 .35
+											ambientIntensity 0
+											shininess .1
+											transparency .55
+										}
+									}
+								}
+								Shape	{
+									geometry IndexedLineSet	{
+										coordIndex [0 1 -1 2 3]
+										coord Coordinate {
+											point [														
+												-0.03 0 0.0001, 0.03 0 0.0001, 0 -0.03 0.0001, 0 0.03 0.0001
+											]
+										}
+									}
+									appearance DEF LCOLOR Appearance {
+										material Material {
+											emissiveColor 1 1 0
+										}
+									}
+								}
+							]
+						}
+					]
+
+				}
+			}
+			DEF	LC Transform {
+				scale IS scale
+				translation	IS translation
+				children DEF LC2 Transform {
+					rotation IS	rotation
+					children [
+						ClippingPlaneCanceller {}
+						ZGroup {
+							check TRUE
+							write FALSE
+							children [
+								Shape {
+									geometry IndexedLineSet	{
+										coordIndex [0 1 2 3 0]
+										coord USE COORD
+									}
+									appearance USE PCOLOR
+								}
+							]
+						}
+					]
+
+				}
+			}
+		]
+	}
+
+	DEF	S Script {
+		field SFNode proxy PROXY {
+			scale IS scale
+			rotation IS	rotation
+			translation	IS translation
+			whichChoice	IS whichChoice
+		}
+		eventIn	SFVec3f	set_scale
+		eventIn SFRotation set_rotation
+		eventIn	SFVec3f	set_translation
+		eventIn	SFInt32	set_whichChoice
+		field SFVec3f scale 1 1 1
+		field SFRotation rotation 0 0 1 0
+		field SFVec3f translation 0 0 0
+		field SFInt32 whichChoice -1
+
+		field SFNode planetr USE PLANE_T
+		field SFNode sw USE	SW
+		field SFNode center USE	C
+		field SFNode center2 USE C2
+		field SFNode cp DEF CP ClippingPlane {
+			enabled	FALSE
+			cap	IS cap
+			normal IS normal
+			appearance Appearance {
+				material Material {
+					diffuseColor IS diffuseColor
+				}
+			}
+		}
+		eventIn	SFTime tick
+		eventIn	SFTime rebuild
+		url "javascript:
+		var ortx = new SFVec3f(1, 0, 0),
+			orty = new SFVec3f(0, 1, 0),
+			ortz = new SFVec3f(0, 0, 1);
+		function initialize() {
+			var rootnodes = Browser.getScene().getRootNodes();
+			rootnodes.add(cp);
+			
+			center2.rotation = new SFRotation(ortz, cp.normal);
+			rotation = center2.rotation;
+			translation = center.translation;
+
+			proxy.rotation = rotation;
+			proxy.translation = translation;
+
+			rebuild();
+		}
+		function shutdown() {
+			var rootnodes = Browser.getScene().getRootNodes();
+			rootnodes.remove(cp);
+		}
+		function set_whichChoice(value) {
+			whichChoice = value;
+			cp.enabled = value >= 0;
+			sw.whichChoice = value;
+		}
+		function set_rotation(value) {
+			rotation = value;
+		}
+		function set_translation(value) {
+			translation = value;
+		}
+		function set_scale(value) {
+			scale = value;
+		}
+		function rebuild() {
+			center.scale = proxy.scale;
+			center.translation = proxy.translation;
+			center2.rotation = proxy.rotation;
+			cp.normal = center2.rotation.multVec(ortz);
+			cp.distance = center.translation.dot(cp.normal);
+		}
+		function tick() {
+			// Cause routes is disabled for _tiramisu_setObjectPropertyf()
+			var changed = false;
+			if (proxy.scale.toString() !== scale.toString()) {
+				set_scale(proxy.scale);
+				changed = true;
+			}
+			if (proxy.rotation.toString() !== rotation.toString()) {
+				set_rotation(proxy.rotation);
+				changed = true;
+			}
+			if (proxy.translation.toString() !== translation.toString()) {
+				set_translation(proxy.translation);
+				changed = true;
+			}
+			if (proxy.whichChoice !== whichChoice) {
+				set_whichChoice(proxy.whichChoice);
+			}
+			if (changed) rebuild();
+		}
+		"
+	}
+
+	ROUTE TIME.cycleTime TO S.tick
+}
+
+UniviewSectionPlane	{
+	whichChoice	-1
+}

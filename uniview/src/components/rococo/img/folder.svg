@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 39 33" style="enable-background:new 0 0 39 33;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#B6DCFE;}
+	.st1{fill:#4788C7;}
+	.st2{fill:#DFF0FE;}
+</style>
+<g id="surface1">
+	<path class="st0" d="M1.2,32.1V1.1c0,0,0,0,0,0l10.1-0.2c0,0,0,0,0,0l3.2,3.2c0,0,0,0,0,0h23.6c0,0,0,0,0,0v27.9c0,0,0,0,0,0
+		L1.2,32.1C1.2,32.1,1.2,32.1,1.2,32.1z"/>
+	<path class="st1" d="M11.1,1.5l3,3h23.4v27h-36v-30H11.1 M11.5,0.5h-11v32h38v-29h-24L11.5,0.5z"/>
+	<path class="st2" d="M1,32V6h10.7l3-1.8L38,4v28H1z"/>
+	<path class="st1" d="M37.5,4.5v27h-36v-25h10.3l0.3-0.2l2.8-1.8H37.5 M38.5,3.5h-24l-3,2h-11v27h38V3.5z"/>
+</g>
+</svg>

@@ -1,0 +1,356 @@
+/**
+  ata-cmm.css
+  26.10.2014 3:41:06
+ */
+
+.task {
+  display: block;
+  margin: 1em 1em 1em 0.5em;
+  padding: .3em;
+  counter-reset: item;
+}
+
+.Procedure {
+  margin-left: 1em;
+}
+
+.changed {
+  background-color: #E0E0E0;
+}
+
+.chgdesc {
+  display: none;
+}
+
+.title {
+  display: block;
+  margin: 1em 0;
+}
+
+.task > .title {
+  font-size: 100%;
+  font-weight: bold;
+  text-align: left;
+  margin: 0;
+  padding: 1em 0;
+  background-color: #F8F8F8;
+}
+
+.task > .title + div {
+  clear: both;
+}
+
+.topic > .title,
+.pretopic > .title {
+  font-size: 100%;
+  font-weight: normal;  
+  text-decoration: underline;
+}
+
+.amtoss {
+  display: block;
+  margin-right: 1em;
+}
+
+.task > .amtoss {
+  float: left;
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+
+.subtask > .amtoss {
+  /*margin-left: -3em;*/
+}
+
+.subtask {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  padding: .3em;
+}
+
+.legalntc {
+  display: block;
+  margin: 6em;
+  font-size: 90%;
+}
+
+.cpyrght {
+  display: block;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+  text-indent: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+ol {
+  margin-left: 0;
+  padding-left: 0;
+  counter-reset: item;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.topic, 
+.pretopic, 
+ol > li  {
+  counter-increment: item;
+}
+
+ol.list1 > li  {
+  counter-increment: item2;
+}
+
+.topic, 
+.pretopic {
+  counter-reset: item2;
+}
+
+.topic,
+.pretopic,
+li {
+  padding-left: 3em;
+  text-indent: 0em;
+  margin-top: 1em;
+  display: list-item;
+  list-style: none;
+  clear: both;
+}
+
+.topic:before, 
+.pretopic:before, 
+li:before {
+    position: relative;
+    width: 3em;
+    display: inline-block;
+    margin-left: -3em;
+}
+
+.topic > *:first-child,
+.pretopic > *:first-child,
+li > *:first-child {
+  display: inline;
+}
+
+ul.system > li:before, ul > li:before { content: "•"; }
+ul.none > li:before {  content: " "; }
+ul.bullet > li:before { content: "•"; }
+ul.ndash > li:before { content: "–"; }
+ul.mdash > li:before { content: "—"; }
+ul.diamond > li:before { content: "♦"; }
+ul.asterisk > li:before { content: "*"; }
+ul.delta > li:before { content: "Δ"; }
+ul.square > li:before { content: "□"; }
+
+.topic:before, .pretopic:before, ol.nnp > li:before, ol > li:before { content: counter(item) "."; }
+ol.list1 > li:before { content: counter(item2, upper-alpha) "."; }
+ol.aup > li:before { content: counter(item, upper-alpha) "."; }
+ol.list2 > li:before, ol.nnb > li:before {  content: "(" counter(item) ")"; }
+ol.list3 > li:before, ol.alb > li:before { content: "(" counter(item, lower-alpha) ")"; }
+ol.list4 > li:before, ol.nns > li:before { content: counter(item); text-decoration: underline; }
+ol.list5 > li:before { content: counter(item, lower-alpha) "."; }
+ol.list6 > li:before { content: counter(item, lower-roman); }
+ol.list7 > li:before { content: counter(item, upper-roman); }
+ol.rup > li:before { content: counter(item, upper-roman) "."; }
+ol.rlp > li:before { content: counter(item, lower-roman) "."; }
+ol.rur > li:before { content: counter(item, upper-roman) ")"; }
+ol.rlr > li:before { content: counter(item, lower-roman) ")"; }
+ol.nnr > li:before { content: counter(item) ")"; }
+ol.aur > li:before { content: counter(item, upper-alpha) ")"; }
+ol.alr > li:before { content: counter(item, lower-alpha) ")"; }
+
+.sub {
+	display: inline;
+	vertical-align: sub;
+	font-size: 75%;
+}
+
+.super {
+	display: inline;
+	vertical-align: super;
+	font-size: 75%;
+}
+
+.year + .year:before {
+  content: ", ";
+}
+
+.year + .holder:before {
+  content: " © ";
+}
+
+.holder + .holder:before {
+  content: ", ";
+}
+
+.section > h4 {
+  text-decoration: underline;
+}
+
+
+ol.list1 > li > h4 {
+  text-decoration: underline; 
+}
+
+div.table-contents {
+  margin-top: 1em;
+}
+
+div.table-contents h4 {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 80%;
+}
+
+td, th {
+  padding: .5em;
+}
+
+td p, th p {
+  margin: 0;
+}
+
+.note > *:first-child:before {
+    text-decoration: underline;
+    position: relative;
+    width: 5em;
+    display: inline-block;
+  }
+  
+  .caution > *:first-child:before {
+    text-decoration: underline;
+    position: relative;
+    width: 7em;
+    display: inline-block;
+  }
+  
+  .warning > *:first-child:before {
+    text-decoration: underline;
+    position: relative;
+    width: 7em;
+    display: inline-block;
+  }
+  
+.note > * {
+  margin-top: 1em;
+}
+
+.caution > *, .warning > * {
+  margin-top: 1em;
+}
+
+.caution, .warning {
+  font-weight: bold;
+  display: block;
+}
+
+.note {
+  display: block;
+}
+
+.graphic {
+  text-align: center;
+  display:block;
+  max-width: 100%;
+}
+
+img, object {
+  display:block;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+object, embed {
+  width: 100%;
+  height: 480px;
+}
+
+.sheet {
+  padding: 2px;
+  display:block;
+  border: 1px solid #EEEEEE;
+  margin-top: 1em;
+}
+
+.sptool *:before,
+.consume *:before {
+  content: " ";
+}
+
+.sptool *:first-child:before,
+.consume *:first-child:before {
+  content: "";
+}
+
+.kwd {
+  display: none;
+}
+
+.link3d {
+  background-color: #DD0000;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-family: Verdana, sans-serif;
+  font-size: .7em;
+  padding: .15em;
+  margin-left: .5em;
+  vertical-align: super;
+  cursor: pointer;
+}
+
+li > .link3d {
+  margin-left: 0;
+  margin-right: .5em;
+}
+
+li > .link3d + * {
+  display: inline;
+}
+
+span:hover.link3d {
+  background-color: #FF0000;
+  text-decoration: underline;
+}
+
+/********************************/
+
+.task > .title {
+  background-color: #DDDDDD !important;
+}
+
+.graphic > .title {
+  margin-top: 1.5em !important;
+}
+
+.note    { color:#216F02; font-weight:bold; }
+.warning { color:#FF0000; font-weight:bold; }
+.caution { color:#FF8800; font-weight:bold; }
+
+th { 
+  background-color:#EFEFEF; 
+}
+
+.sheet {
+  border: none !important;
+}
+
+#doc * {
+  font-family: arial, helvetica, sans-serif;
+}
+
+a { color:#000080; text-decoration: none; }
+a:visited { color:#000080; }
+a:hover { color:#0000FF; text-decoration: underline; }

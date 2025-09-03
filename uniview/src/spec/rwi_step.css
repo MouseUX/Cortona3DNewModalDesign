@@ -1,0 +1,11 @@
+.job .skin-tree-item .collapse-button {
+    display: none;
+}
+
+.job .skin-tree-item .collapse-button + .content {
+    margin-left: 0;
+}
+
+.step a.xref {
+    display: none;
+}

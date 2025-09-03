@@ -1,0 +1,23 @@
+@media print {
+    .dpl-table tr td:first-child input {
+        display: none;
+    }
+
+    .dpl-table tr td:first-child {
+        max-width: 1em;
+        border-right: none;
+    }
+
+    .dpl-table thead td {
+        background: inherit;
+    }
+
+    .dpl-table,
+    .dpl-table tbody td {
+        border: none;
+    }
+
+    .dpl-table tbody tr:last-child td {
+        border: none;
+    }
+}

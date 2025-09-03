@@ -1,0 +1,31 @@
+#VRML V2.0 utf8
+
+DEF TABLE Transform {
+    children [ 
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor .51 .17 .06
+                    specularColor .53 .53 .53
+                    ambientIntensity .06
+                    shininess .93
+                    transparency .5
+                }
+            }
+            geometry Box {
+				size 10 .1 10
+            }
+        }
+    ]
+}
+DEF	OI OrientationInterpolator {
+    key	[0, 0.5, 1]
+    keyValue [0 1 0 0, 0 1 0 3.141, 0 1 0 6.282]
+}
+DEF	TS TimeSensor {
+    cycleInterval 30
+    enabled	TRUE
+    loop TRUE
+}
+ROUTE TS.fraction_changed TO OI.set_fraction
+ROUTE OI.value_changed TO TABLE.rotation

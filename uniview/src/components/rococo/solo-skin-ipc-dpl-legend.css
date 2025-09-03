@@ -1,0 +1,24 @@
+.dpl-legend {
+    margin-top: .25em;
+    padding-top: .25em;
+    flex-direction: column;
+    flex-shrink: 0;
+    order: 20;
+    max-height: 25%;
+    flex-wrap: wrap;
+    overflow: auto;
+    border-top: 1px solid black;
+}
+.dpl-legend-item {
+    white-space: pre;
+    font-family: monospace;
+    font-size: 12px;
+    margin-right: .5em;
+}
+
+@media print {
+    .dpl-legend {
+        margin-top: 0.5em;
+        padding: 0.5em 0;
+    }
+}

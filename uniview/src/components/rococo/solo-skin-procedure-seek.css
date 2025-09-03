@@ -1,0 +1,45 @@
+.procedure-duration {
+    margin: 0 .5em;
+}
+
+.procedure-duration .skin-text {
+    display: inline-block;
+    min-width: 2em;
+    text-align: center;
+}
+
+.procedure-duration .divider {
+    min-width: 1em;
+}
+
+.procedure-seek {
+    position: relative;
+    width: 100%;
+    margin-right: .5em;
+    display: flex;
+}
+
+.procedure-seek input[type=range] {
+    width: 0;
+    min-width: 100%;
+}
+
+.procedure-seek-selection-holder {
+    position: absolute;
+    height: .4em;
+    top: 100%;
+    left: 10px;
+    right: 10px;
+}
+
+.procedure-seek-selection {
+    position: absolute;
+    height: .4em;
+    background-color: rgba(200, 100, 100, .7);
+}
+
+.procedure-seek-container {
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+}

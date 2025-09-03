@@ -1,0 +1,76 @@
+@plugin "less-plugin-i18n";
+configure();
+setLocale(@locale);
+
+@charset "utf-8";
+
+@import (less) "dita.less";
+
+/*
+    tcsp_workcard.less
+*/
+
+[data-class~="taskreq-d/reqconds"]:before {
+    content: __("Required Conditions");
+}
+
+[data-class~="taskreq-d/reqpers"]:before {
+    content: __("Required Persons");
+}
+
+[data-class~="taskreq-d/supequip"]:before {
+    content: __("Support Equipment");
+}
+
+[data-class~="taskreq-d/supplies"]:before {
+    content: __("Consumables, Materials, and Expendables");
+}
+
+[data-class~="taskreq-d/spares"]:before {
+    content: __("Spares");
+}
+
+[data-class~="taskreq-d/safety"]:before {
+    content: __("Safety Conditions");
+}
+
+[data-class~="task/prereq"]:before {
+    content: __("task_prereq");
+}
+
+[data-class~="task/postreq"]:before {
+    content: __("task_postreq");
+}
+
+[data-class~="task/steps"]:before {
+    content: __("task_procedure");
+}
+
+[data-class~="topic/related-links"]:before {
+    content: __("References");
+}
+
+[data-class~="taskreq-d/nosupeq"]:before,
+[data-class~="taskreq-d/nosupply"]:before,
+[data-class~="taskreq-d/nospares"]:before,
+[data-class~="taskreq-d/nosafety"]:before,
+[data-class~="taskreq-d/noconds"]:before {
+    content: __("None");
+}
+
+[data-outputclass~="section-frequency"]:before {
+    content: __("Frequency");
+}
+
+[data-outputclass~="section-category"]:before {
+    content: __("Category");
+}
+
+[data-outputclass~="section-reqpers"]:before {
+    content: __("Required Persons");
+}
+
+[data-class~="taskreq-d/personnel"]:after, 
+[data-outputclass~="reqpers-personnel"]:after { 
+    content: " " __("person"); 
+}

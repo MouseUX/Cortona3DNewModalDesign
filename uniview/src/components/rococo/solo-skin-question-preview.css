@@ -1,0 +1,11 @@
+.headerControl {
+  padding: 0 !important;
+}
+
+.orderItem:hover {
+  background-color: #ffefd5;
+}
+
+.orderItem.select {
+  background-color: aquamarine;
+}

@@ -1,0 +1,23 @@
+.label-control {
+    display: flex;
+    align-items: center;
+}
+
+.skin-holder .label-control .skin-control {
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skin-holder label .label-control-checkbox,
+.skin-holder label .label-control-radio,
+.skin-holder label .label-text {
+    margin-left: 0;
+}
+
+.skin-holder label .label-text-checkbox,
+.skin-holder label .label-text-radio {
+    margin-left: .5em;
+}

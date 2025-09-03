@@ -1,0 +1,48 @@
+@plugin "less-plugin-i18n";
+configure("rwi-locale-");
+setLocale(@locale);
+
+@charset "utf-8";
+
+/*
+    rwi.less
+*/
+
+.note .skin-modal-title:before {
+    content: __("note:before");
+}
+
+.caution .skin-modal-title:before {
+    content: __("caution:before");
+}
+
+.warning .skin-modal-title:before {
+    content: __("warning:before");
+}
+
+:root {
+    --label-jobCode: __("jobCode:before");
+    --label-summary: __("summary:before");
+    --label-workType: __("workType:before");
+    --label-role: __("role:before");
+    --label-expTime: __("expTime:before");
+    --label-workCell: __("workCell:before");
+    --label-preJob: __("preJob:before");
+    --label-postJob: __("postJob:before");
+    --label-workOrder: __("workOrder:before");
+    --label-revision: __("revision:before");
+    --label-preq: __("preq:before");
+    --label-billOfMaterial: __("bom:before");
+    --label-resources: __("Resources");
+    --label-altpnr: __("altpnr:before");
+	--label-pnr: __("pnr:before");
+    --label-desc: __("desc:before");
+    --label-qty: __("qty:before");
+    --label-job: __("job:before");
+    --label-no: __("No");
+    --label-task: __("Task");
+    --label-illustration: __("Illustration");
+    --label-warning: __("warning:before");
+    --label-caution: __("caution:before");
+    --label-note: __("note:before");
+}

@@ -1,0 +1,123 @@
+.navigation-tabs {
+    flex-grow: 1;
+    min-height: 4em;
+}
+
+.structure-tree .skin-tree-item .content.hover {
+    cursor: pointer;
+    background-color: blanchedalmond;
+}
+
+.structure-tree .skin-tree-item .content.choose,
+.searchResult .skin-tree-item .content.choose {
+    cursor: pointer;
+    background-color: aquamarine;
+}
+
+.structure-tree .skin-tree-item > div:first-child {
+    display: flex;
+    padding-left: 0;
+}
+
+.structure-tree .skin-tree-item .collapse-button {
+    flex: 0 0 1.5em;
+    /*width: 1.2em;
+    height: 1.2em;*/
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:60% 60%;
+    margin-right: 0.5em;
+}
+
+.structure-tree .skin-tree-item .content {
+    display: flex;
+    border: none;
+    padding: 0.2em;
+    margin: 0 0 0 2em;
+}
+/*
+.structure-tree .skin-tree-item .content>div {
+    float: left;
+}*/
+
+.skin-holder .skin-toolbar.main.applied {
+    background: linear-gradient(to top, #22c1c3, #b7ffdc);
+}
+
+#options-filterpct select {
+    max-width: 100pt;
+}
+
+.structure-tree .skin-tree-item .content .icon {
+    flex: 0 0 1.2em;
+    /*width: 1.2em;
+    height: 1.2em;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    margin: 0 .5em 0 .5em;
+}
+
+.structure-tree .skin-tree-item .content .icon.file {
+    background-image: url(components/rococo/img/file.svg)
+} 
+
+.structure-tree .skin-tree-item .content .icon.folder {
+    background-image: url(components/rococo/img/folder_opened.svg)
+}
+
+.skin-tree-item .content .main .code {
+    font-style: italic;
+    color: gray;
+    font-size: 0.9em;
+}
+
+.skin-tree-item .content .main .title * {
+    display: inline;
+}
+
+.skin-tree-item .content .main .title *:nth-child(2):before {
+    content: " - ";
+}
+
+.structure-tree .skin-tree-item.collapsed .content .icon.folder {
+    background-image: url(components/rococo/img/folder.svg)
+}
+
+.structure-tree .skin-tree-item.collapsed .collapse-button {
+    background-image: url(components/rococo/img/collapsed.svg);
+}
+
+.structure-tree .skin-tree-item .collapse-button {
+    background-image: url(components/rococo/img/expanded.svg);
+}
+
+.structure-tree .skin-tree-item.collapsed .collapse-button:before {
+    content: "";
+}
+
+.structure-tree .skin-tree-item .collapse-button:before {
+    content: "";
+}
+
+.structure-tree .skin-tree-item .collapse-button + .content {
+    margin-left: 0;
+}
+
+.structure-tree .skin-tree-item .children {
+    margin-left: 0.5em;
+}
+
+.structure-restricted-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1;
+    text-align: center;
+}
+
+.structure-restricted-message a {
+    margin-top: 1em;
+}

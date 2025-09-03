@@ -1,0 +1,10 @@
+.skin-external-3d-panel .skin-iframe {
+    position: absolute;
+}
+
+.skin-external-3d-panel .button-close {
+    position: absolute;
+    right: .5em;
+    top: .5em;
+    z-index: 100;
+}

@@ -1,0 +1,56 @@
+#btn-order {
+    background-image: url(img/btn_basket.png);
+    position: relative;
+}
+
+.shopping-cart {
+    position: relative;
+}
+
+.shopping-cart .counter {
+    font-size: 8px;
+    font-weight: bold;
+    color: #000;
+    background-color: orange;
+    border-radius: 50%;
+    border: 2px solid orange;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    min-width: 1em;
+    text-align: center;
+    pointer-events: none;
+}
+
+.basket {
+    background-image: url(img/basket.gif);
+    width: 18px;
+    height: 13px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.ordered .basket {
+    background-color: #D2E6F5;
+    border: 1px solid #0078D7;
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .basket:hover {
+        background-color: #B2D8F4;
+        border: 1px solid #0078D7;
+    }
+    .ordered .basket:hover {
+        background-color: #9ABBD4;
+    }
+}
+
+@media print {
+    .basket {
+        display: none;
+    }
+}

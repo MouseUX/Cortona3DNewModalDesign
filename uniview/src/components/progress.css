@@ -1,0 +1,10 @@
+.skin-progress-bar {
+    position: absolute;
+    bottom: 0;
+    height: 2em;
+    left: 0;
+    width: 0;
+    background-color: darkslategrey;
+    z-index: 100;
+}
+

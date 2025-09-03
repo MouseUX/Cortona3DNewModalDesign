@@ -1,0 +1,88 @@
+#btn-reset {
+    background-image: url(img/btn_reset.png);
+}
+
+#btn-2d-graphics {
+    background-image: url(img/btn_2d.png);
+}
+
+#btn-print-graphics {
+    background-image: url(img/btn_print3d.png);
+}
+
+#btn-ignore-transparency {
+    background-image: url(img/btn_ignore_tr.png);
+}
+
+#btn-skip-animation {
+    background-image: url(img/btn_skip_anim.png);
+}
+
+#btn-surface-edges {
+    background-image: url(img/btn_surface_edges.png);
+}
+
+#btn-settings {
+    background-image: url(img/btn_settings.png);
+}
+
+.display-mode-2d #btn-ignore-transparency,
+.display-mode-2d #btn-skip-animation {
+    display: none;
+}
+
+.sheet-rev-mark {
+    font-family: 'Courier New', Courier, monospace;
+    color: #a00000;    
+    margin-right: .2em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#options-sheet {
+    display: flex;
+    align-items: center;
+}
+
+#options-sheet select {
+    width: 100%;
+}    
+
+/* Large desktops and laptops 
+@media (min-width: 1200px) {}
+*/
+
+/* Portrait tablets and medium desktops 
+@media (min-width: 992px) and (max-width: 1199px) {}
+*/
+
+/* Portrait tablets and small desktops 
+@media (min-width: 768px) and (max-width: 991px) {}
+*/
+
+/* Landscape phones and portrait tablets 
+@media (max-width: 767px) {}
+
+@media (max-width: 667px) {}
+
+@media (max-width: 568px) {}
+*/
+
+/* Landscape phones and smaller
+@media (max-width: 480px) {}
+*/
+
+@media (max-width: 767px) and (orientation: landscape) {
+    #options-sheet .label-text {
+        display: none;
+    }    
+}
+@media (max-width: 480px) and (orientation: portrait) {
+    #options-sheet .label-text {
+        display: none;
+    }    
+}
+
+/* Portrait
+@media (orientation: portrait) {}
+*/

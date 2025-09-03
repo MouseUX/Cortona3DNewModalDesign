@@ -1,0 +1,1959 @@
+/* change bars */
+
+.bar {
+    background: black;
+    width: var(--change-bar-width);
+    position: absolute;
+    left: var(--change-bar-left-indent);
+}
+
+/* common headers*/
+
+.centerhead1,
+.centerhead2,
+.sidehead0,
+.sidehead1,
+.sidehead2,
+.sidehead3,
+.sidehead4,
+.sidehead5 {
+    display: block;
+    margin-top: 0;
+}
+.centerhead1 {
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 17pt;
+    min-height: 1em;
+}
+.centerhead2 {
+    font-size: 14pt;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 17pt;
+    min-height: 1em;
+}
+.sidehead1 {
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 15pt;
+    min-height: 1em;
+}
+
+/* common info */
+
+.commonInfo > .title.empty:before {
+    content: var(--label-commonInfo);
+}
+
+/* fault */
+
+.faultTable {
+    margin-bottom: 17pt;
+}
+.faultTable th:nth-child(1) { width: 30%; }
+.faultTable th:nth-child(2) { width: 40%; }
+.faultTable th:nth-child(3) { width: 30%; }
+
+.faultTableTitle:before {
+    content: var(--label-faultCodes);
+}
+
+.faultTable th.code:before {
+    content: var(--label-faultCode);
+}
+.faultTable th.description:before {
+    content: var(--label-faultDescription);
+}
+.faultTable th.causes:before {
+    content: var(--label-possibleCauses);
+}
+.faultTable .faultCode:before {
+    content: attr(data-faultcode);
+}
+
+/* footnote */
+
+.footnote:before {
+    display: inline;
+    vertical-align: super;
+    content: attr(data-count) " ";
+}
+
+.row__footnote .footnoteBody,
+.row__footnote .footnoteBody > * {
+    display: inline;
+}
+
+.row__footnote {
+    border-top: .5pt solid black;
+}
+
+/* global */
+
+.status.print,
+.headFootData,
+img.graphicImg,
+img.multimediaObject,
+.infoEntityIdent {
+    display: none;
+}
+
+.productIllustration .graphicImg {
+    display: block;
+    margin: auto;
+}
+
+/* counters */
+
+.reqTechInfoGroup {
+    counter-increment: table;
+}
+
+.dmodule {
+    counter-reset: counter1 counter2 counter3 counter4 counter5 counter6 counter7 counter8 figure sheet table footnote question;
+}
+.Procedure,
+.description {
+    counter-reset: counter1 counter2 counter3 counter4 counter5 counter6 counter7 counter8;
+}
+.levelled1:before {
+    content: var(--levelledCounterContent1);
+}
+.levelled2:before {
+    content: var(--levelledCounterContent1_2);
+}
+.levelled3:before {
+    content: var(--levelledCounterContent1_2_3);
+}
+.levelled4:before {
+    content: var(--levelledCounterContent1_2_3_4);
+}
+.levelled5:before {
+    content: var(--levelledCounterContent1_2_3_4_5);
+}
+.levelled6:before {
+    content: var(--levelledCounterContent1_2_3_4_5_6);
+}
+.levelled7:before {
+    content: var(--levelledCounterContent1_2_3_4_5_6_7);
+}
+.levelled8:before {
+    content: var(--levelledCounterContent1_2_3_4_5_6_7_8);
+}
+
+/* ==== alt steps ==== */
+
+.levels > .levelAlts {
+    counter-increment: counter1;
+}
+.level1 > .levelAlts {
+    counter-increment: counter2;
+}
+.level2 > .levelAlts {
+    counter-increment: counter3;
+}
+.level3 > .levelAlts {
+    counter-increment: counter4;
+}
+.level4 > .levelAlts {
+    counter-increment: counter5;
+}
+.level5 > .levelAlts {
+    counter-increment: counter6;
+}
+.level6 > .levelAlts {
+    counter-increment: counter7;
+}
+.level7 > .levelAlts {
+    counter-increment: counter8;
+}
+
+.levelAlts > .level1,
+.levelAlts > .level2,
+.levelAlts > .level3,
+.levelAlts > .level4,
+.levelAlts > .level5,
+.levelAlts > .level6
+.levelAlts > .level7,
+.levelAlts > .level8 {
+    counter-increment: none;
+}
+
+.levels {
+    counter-reset: counter1 counter2 counter3 counter4 counter5 counter6 counter7 counter8;
+}
+
+.levels > .levelAlts,
+.levelAlts > .level1 {
+    counter-reset: counter2 counter3 counter4 counter5 counter6 counter7 counter8;
+}
+.level1 > .levelAlts,
+.levelAlts > .level2 {
+    counter-reset: counter3 counter4 counter5 counter6 counter7 counter8;
+}
+.level2 > .levelAlts,
+.levelAlts > .level3 {
+    counter-reset: counter4 counter5 counter6 counter7 counter8;
+}
+.level3 > .levelAlts,
+.levelAlts > .level4 {
+    counter-reset: counter5 counter6 counter7 counter8;
+}
+.level4 > .levelAlts,
+.levelAlts > .level5 {
+    counter-reset: counter6 counter7 counter8;
+}
+.level5 > .levelAlts,
+.levelAlts > .level6 {
+    counter-reset: counter7 counter8;
+}
+.level6 > .levelAlts,
+.levelAlts > .level7 {
+    counter-reset: counter8;
+}
+
+.levelledPara > .levelledPara,
+.levelledPara > .levelAlts > .levelledPara,
+.proceduralStep > .proceduralStep,
+.proceduralStep > .levelAlts > .proceduralStep,
+.commonInfoDescrPara > .commonInfoDescrPara,
+.commonInfoDescrPara > .levelAlts > .commonInfoDescrPara {
+    margin-left: var(--left-text-indent-reverse);
+}
+
+.level1, 
+.level2, 
+.level3, 
+.level4, 
+.level5, 
+.level6, 
+.level7, 
+.level8 {
+    position: relative;
+    padding-left: var(--left-text-indent);
+}
+
+.level1 > .title, 
+.level2 > .title, 
+.level3 > .title, 
+.level4 > .title, 
+.level5 > .title, 
+.level6 > .title, 
+.level7 > .title, 
+.level8 > .title {
+    margin-top: 0;
+}
+
+.level1 > *:first-child:before, 
+.level2 > *:first-child:before, 
+.level3 > *:first-child:before, 
+.level4 > *:first-child:before, 
+.level5 > *:first-child:before, 
+.level6 > *:first-child:before, 
+.level7 > *:first-child:before, 
+.level8 > *:first-child:before {
+    position: absolute;
+    margin-left: var(--left-text-indent-reverse);
+}
+
+/* lists */
+.legend {
+    margin-left: var(--left-text-indent);
+}
+.legend table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+    font-weight: normal;
+    font-style: normal;
+}
+.definitionList table caption {
+    text-align: left;
+    font-style: italic;
+    margin-bottom: 4pt;
+}
+.legend td {
+    width: 50%;
+}
+.legend .definitionListItem {
+    display: flex;
+}
+.legend .listItemTerm {
+    min-width: var(--list-body-indent);
+    width: 10%;
+}
+.legend .listItemDefinition {
+    width: 90%;
+}
+
+.definitionList td,
+.definitionList th {
+    vertical-align: top;
+}
+.definitionListHeader {
+    margin-bottom: 4pt;
+}
+.definitionListItem {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.listItemDefinition .p {
+    margin-top: 0;
+}
+.legend caption:before {
+    content: var(--label-legend) " " attr(data-figure) ":";
+}
+.definitionList caption.rest:after {
+    content: " (" var(--label-continued) ")";
+}
+.definitionList caption {
+    page-break-after: avoid;
+}
+
+.li {
+    display: flex;
+}
+.li:before {
+    flex-shrink: 0;
+    width: var(--list-body-indent);
+}
+.listItemBody > .p:first-child {
+    margin-top: 0;
+}
+.list .list {
+    margin-top: 8pt;
+}
+.list .list .li:last-child .listItemBody>.p:last-child {
+    margin-bottom: 0;
+}
+
+.ol {
+    counter-reset: seq1;
+}
+.ol > .li {
+    counter-increment: seq1;
+}
+.ol > .li:before {
+    content: counter(seq1);
+}
+.ol .ol {
+    counter-reset: seq2;
+}
+.ol > .li .ol > .li {
+    counter-increment: seq2;
+}
+.ol .ol > .li:before {
+    content: counter(seq1) "." counter(seq2);
+}
+
+.ul.pf01 > .li:before { content: ""; }
+.ul.pf03 > .li:before { content: "\2010"; }
+.ul.pf04 > .li:before { content: "\229A"; }
+.ul.pf05 > .li:before { content: "\25CB"; }
+.ul.pf06 > .li:before { content: "\25A1"; }
+
+.ul.pf01 > .li:before { content: ""; }
+.ul.pf03 > .li:before { content: "\2010"; }
+.ul.pf04 > .li:before { content: "\229A"; }
+.ul.pf05 > .li:before { content: "\25CB"; }
+.ul.pf06 > .li:before { content: "\25A1"; }
+
+.warning .ul > .li:before,
+.caution .ul > .li:before,
+.ul.pf07 > .li:before         { content: "\25CF";	font-weight: normal; }
+
+.ul > .li:before,
+.ul.pf02 > .li:before         { content: "\2010"; }
+
+.ol .ul > .li:before,
+.ul .ul > .li:before,
+.ol .ul.pf02 > .li:before,
+.ul .ul.pf02 > .li:before      { content: "\25CF"; }
+
+.ol .ul .ul > .li:before,
+.ul .ul .ul > .li:before,
+.ol .ul .ul.pf02 > .li:before,
+.ul .ul .ul > .li:before,
+.ul .ul .ul.pf02 > .li:before   { content: "\2010"; }
+
+.p > .list {
+    margin-top: 8pt;
+}
+
+/* proced -> preliminaryRqmts */
+
+.reqCondGroup:before,
+.reqSupportEquips:before,
+.reqSupplies:before,
+.reqTechInfoGroup:before, 
+.reqSpares:before, 
+.reqSafety:before, 
+.reqPersons:before {
+    display: block;
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 27pt;
+    margin-bottom: 17pt;
+    min-height: 1em;    
+}
+
+
+.reqCondGroup table,
+.reqSupportEquips table,
+.reqSupplies table,
+.reqSpares table {
+    margin-left: 0;
+}
+
+
+/* ==== format table ==== */
+.formalTable table {
+    margin-left: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-bottom: .5pt solid black;
+    width: 100%;
+    text-align: left;
+}
+.reqSafety > * {
+    margin-left: var(--left-text-indent);
+}
+.formalTable td,
+.formalTable th {
+    padding: 4pt;
+    text-align: left;
+    vertical-align: top;
+}
+.formalTable th {
+    font-weight: bold;
+}
+.formalTable td[colspan] {
+    display: table-cell;
+}
+.formalTable thead tr {
+    border-bottom: .5pt solid black;
+    border-top: .5pt solid black;
+}
+.reqCondDm + .reqCondCircuitBreaker,
+.reqCondNoRef + .reqCondCircuitBreaker,
+.reqCondPm + .reqCondCircuitBreaker,
+.reqCondExternalPub + .reqCondCircuitBreaker,
+.circuitBreakerDescr + .reqCondDm,
+.circuitBreakerDescr + .reqCondNoRef,
+.circuitBreakerDescr + .reqCondPm,
+.circuitBreakerDescr + .reqCondExternalPub {
+    border-top: .5pt solid black;
+}
+
+.prelimTable td > * {
+    padding-bottom: 4pt;
+}
+.prelimTable td > *:last-child {
+    padding-bottom: 0pt;
+}
+.prelimTable_identification > * {
+    display: block;
+}
+.identNumber[data-partnumber]:before {
+    content: var(--label-partno) " " attr(data-partnumber);
+}
+.identNumber[data-partnumber][data-manufacturercode]:before {
+    content: var(--label-partno) " " attr(data-manufacturercode) "/" attr(data-partnumber);
+}
+
+tr.embeddedSupportEquipDescr > :first-child:before, 
+tr.embeddedSupplyDescr > :first-child:before, 
+tr.embeddedSpareDescr > :first-child:before {
+    position: absolute;
+    margin-left: -18pt;
+    content: "-";
+}
+
+.reqCondExternalPub .externalPubTitle {
+    display: none;
+}
+
+.noSupportEquips:before, 
+.noSupplies:before, 
+.noSpares:before, 
+.noConds:before {
+    display: block;
+    padding: 0;
+}
+
+.noSupportEquips, 
+.noSupplies, 
+.noSpares, 
+.noConds {
+    display: block;
+}
+
+/* chrome fix */
+.row__noSupportEquips, 
+.row__noSupplies, 
+.row__noSpares, 
+.row__noConds {
+    border-bottom: 1px solid black;
+}
+
+/* ==== column widths ==== */
+
+.reqCondGroup th:nth-child(1) { width: 13%; }
+.reqCondGroup th:nth-child(2) { width: 15%; }
+.reqCondGroup th:nth-child(3) { width: 23%; }
+.reqCondGroup th:nth-child(4) { width: 13%; }
+.reqCondGroup th:nth-child(5) { width: 16%; }
+.reqCondGroup th:nth-child(6) { width: 20%; }
+
+.reqPersons th:nth-child(1) { width: 20%; }
+.reqPersons th:nth-child(2) { width: 20%; }
+.reqPersons th:nth-child(3) { width: 20%; }
+.reqPersons th:nth-child(4) { width: 20%; }
+.reqPersons th:nth-child(5) { width: 20%; }
+
+.reqTechInfoGroup th:nth-child(1) { width: 38%; }
+.reqTechInfoGroup th:nth-child(2) { width: 46%; }
+.reqTechInfoGroup th:nth-child(3) { width: 16%; }
+
+.prelimTable th:nth-child(1) { width: 35%; }
+.prelimTable th:nth-child(2) { width: 35%; }
+.prelimTable th:nth-child(3) { width: 10%; }
+.prelimTable th:nth-child(4) { width: 20%; }
+
+/* ==== table captions ==== */
+
+.formalTable caption {
+    font-style: italic;
+    margin-bottom: 4pt;
+    page-break-after: avoid;
+}
+
+.reqCondGroup:before,
+.reqPersons:before,
+.reqTechInfoGroup:before,
+.reqSupportEquips:before,
+.reqSupplies:before,
+.reqSpares:before {
+    page-break-after: avoid;
+}
+
+.reqCondGroup caption:before {
+    content: var(--label-table) " " counter(table) " " var(--label-reqCondGroup);
+}
+.reqPersons caption:before {
+    content: var(--label-table) " " counter(table) " " var(--label-reqPersons);
+}
+.reqTechInfoGroup caption:before {
+    content: var(--label-table) " " counter(table) " " var(--label-reqTechInfoGroup);
+}
+.reqSupportEquips caption:before {
+    content: var(--label-table) " " counter(table) " " var(--label-reqSupportEquips);
+}
+.reqSupplies caption:before {
+    content: var(--label-table) " " counter(table) " " var(--label-reqSupplies);
+}
+.reqSpares caption:before {
+    content: var(--label-table) " " counter(table) " " var(--label-reqSpares);
+}
+.reqCondGroup caption.rest:after,
+.reqPersons caption.rest:after,
+.reqTechInfoGroup caption.rest:after,
+.reqSupportEquips caption.rest:after,
+.reqSupplies caption.rest:after,
+.reqSpares caption.rest:after,
+.avehcfg caption.rest:after,
+.highInstruction caption.rest:after {
+    content: " (" var(--label-continued) ")";
+}
+
+/* ==== table headers ==== */
+
+.reqCondGroup thead .condition:before { content: var(--label-action) "/" var(--label-condition); }
+.reqCondGroup thead .publication:before { content: var(--label-data-module) "/" var(--label-technical-publication); }
+.reqCondGroup thead .cbEntry__action:before { content: ""; }
+.reqCondGroup thead .cbEntry__accessPoint:before { content: var(--label-accessPoint); }
+.reqCondGroup thead .cbEntry__name:before { content: var(--label-header-cb-name); }
+.reqCondGroup thead .cbEntry__cb:before { content: var(--label-header-cb); }
+.reqCondGroup thead .cbEntry__location:before { content: var(--label-header-cb-location); }
+.reqCondGroup thead .cbEntry__remarks:before { content: var(--label-remarks); }
+
+.reqPersons thead .person:before { content: var(--label-person); }
+.reqPersons thead .person__category::before { content: var(--label-personCategory); }
+.reqPersons thead .person__skill:before { content: var(--label-personSkill); }
+.reqPersons thead .person__trade:before { content: var(--label-trade); }
+.reqPersons thead .person__estimatedTime:before { content: var(--label-estimatedTime); }
+
+.reqTechInfoGroup thead .documentNumber:before { content: var(--label-document-number); }
+.reqTechInfoGroup thead .reqTechInfoTitle:before { content: var(--label-title); }
+.reqTechInfoGroup thead .category:before { content: var(--label-category); }
+
+thead .prelimTable__name:before { content: var(--label-name); }
+thead .prelimTable__identification:before { content: var(--label-identification) "/" var(--label-reference); }
+thead .prelimTable__qty:before { content: var(--label-quantity); }
+thead .prelimTable__remark:before { content: var(--label-remarks); }
+
+/* ==== table contents ==== */
+
+.cbEntry__action[data-circuitbreakeraction="open"]:before,
+.cbEntry__action[data-circuitbreakeraction="open-order"]:before {
+    content: "- " var(--label-cbActionOpen);
+}
+.cbEntry__action[data-circuitbreakeraction="close"]:before,
+.cbEntry__action[data-circuitbreakeraction="close-order"]:before {
+    content: "- " var(--label-cbActionClose);
+}
+
+.person__man:before {
+    content: var(--label-man) " " attr(data-value);
+}
+.person__personnel[data-value]:before {
+    content: attr(data-value) " " var(--label-persons);
+}
+.person__personnel[data-value='1']:before {
+    content: attr(data-value) " " var(--label-person-inline);
+}
+.person__personnel[data-value='0']:before,
+.person__personnel[data-value='']:before {
+    content: var(--label-as-required);
+}
+
+.person__category:before { content: attr(data-personcategorycode); }
+
+.person__skill[data-skilllevelcode]:before        { content: attr(data-skilllevelcode); }
+.person__skill[data-skilllevelcode="sk01"]:before { content: var(--label-skillLevelCode-01); }
+.person__skill[data-skilllevelcode="sk02"]:before { content: var(--label-skillLevelCode-02); }
+.person__skill[data-skilllevelcode="sk03"]:before { content: var(--label-skillLevelCode-03); }
+
+.person__estimatedTime:after {
+    content: attr(data-unitofmeasure);
+}
+
+.reqTechInfoGroup td[data-reqtechinfocategory]:before        { content: attr(data-reqtechinfocategory); }
+.reqTechInfoGroup td[data-reqtechinfocategory="ti01"]:before { content: var(--label-reqTechInfoCategory-01); }
+.reqTechInfoGroup td[data-reqtechinfocategory="ti02"]:before { content: var(--label-reqTechInfoCategory-02); }
+.reqTechInfoGroup td[data-reqtechinfocategory="ti03"]:before { content: var(--label-reqTechInfoCategory-03); }
+.reqTechInfoGroup td[data-reqtechinfocategory="ti04"]:before { content: var(--label-reqTechInfoCategory-04); }
+.reqTechInfoGroup td[data-reqtechinfocategory="ti05"]:before { content: var(--label-reqTechInfoCategory-05); }
+.reqTechInfoGroup td[data-reqtechinfocategory="ti06"]:before { content: var(--label-reqTechInfoCategory-06); }
+
+/* proced -> productionMaintData */
+
+.workAreaLocationGroup:before {
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 4pt;
+    margin-bottom: 4pt;
+    min-height: 1em;
+}
+
+.workAreaLocationGroup .zoneRef::before,
+.workAreaLocationGroup .accessPointRef:before {
+    font-weight: normal;
+    display: block;
+    width: 100%;
+}
+/*.workAreaLocationGroup .zoneRef:before,
+.workAreaLocationGroup .accessPointRef:before {
+    content: "";
+}*/
+
+.workAreaLocationGroup * {
+    display: block !important;
+}
+
+.productionMaintData .thresholdInterval:before {
+    content: var(--label-thresholdInterval);
+    width: 110pt;
+    font-weight: bold;
+}
+
+.productionMaintData .thresholdInterval {
+    display: flex;
+}
+
+.workAreaLocationGroup__type {
+    margin-left: 22pt;
+    display: flex !important;
+}
+
+.type__label {
+    width: 88pt;
+    font-weight: bold;
+}
+
+.pmd .type__label {
+    width: 110pt;
+}
+
+.type__body {
+    flex-grow: 1;
+    padding-bottom: 2pt;
+}
+
+.type__item {
+    display: flex !important;
+    padding-bottom: 2pt;
+}
+
+.item__number {
+    width: 88pt;
+}
+
+.item__number:before {
+    content: attr(data-zonenumber) attr(data-accesspointnumber) attr(data-functionalitemnumber);
+}
+
+.item__body {
+    flex-grow: 1;
+}
+
+.item__body > * {
+    padding-bottom: 2pt;
+}
+
+.item__full {
+    flex-grow: 1;
+}
+
+.productItem {
+    display: inline;
+}
+
+.type__label.zone:before {
+    content: var(--label-zone);
+}
+
+.type__label.zones:before {
+    content: var(--label-zones);
+}
+
+.type__label.accessPoint:before {
+    content: var(--label-accessPoint);
+}
+
+.type__label.accessPoints:before {
+    content: var(--label-accessPoints);
+}
+
+.type__label.workLocation:before {
+    content: var(--label-workLocation);
+}
+
+.type__label.workLocations:before {
+    content: var(--label-workLocations);
+}
+
+.taskDuration::after {
+    content: var(--label-preliminaryRqmts) " " attr(data-startupduration) " " attr(data-unitofmeasure) "\000a" var(--label-mainProcedure) " " attr(data-procedureduration) " " attr(data-unitofmeasure) "\000a" var(--label-closeRqmts) " " attr(data-closeupduration) " " attr(data-unitofmeasure);
+}
+
+
+
+.item__body[data-accesspointtypevalue]:before            { content: attr(data-accesspointtypevalue); }
+.item__body[data-accesspointtypevalue='accpnl01']:before { content: var(--label-accessPoint-accpnl01); }
+.item__body[data-accesspointtypevalue='accpnl02']:before { content: var(--label-accessPoint-accpnl02); }
+.item__body[data-accesspointtypevalue='accpnl03']:before { content: var(--label-accessPoint-accpnl03); }
+
+.thresholdInterval[data-thresholdunitofmeasure]:after        { content: " " attr(data-thresholdunitofmeasure); }
+.thresholdInterval[data-thresholdunitofmeasure="th01"]:after { content: " " var(--label-thresholdInterval-th01); }
+.thresholdInterval[data-thresholdunitofmeasure="th02"]:after { content: " " var(--label-thresholdInterval-th02); }
+.thresholdInterval[data-thresholdunitofmeasure="th03"]:after { content: " " var(--label-thresholdInterval-th03); }
+.thresholdInterval[data-thresholdunitofmeasure="th04"]:after { content: " " var(--label-thresholdInterval-th04); }
+.thresholdInterval[data-thresholdunitofmeasure="th05"]:after { content: " " var(--label-thresholdInterval-th05); }
+.thresholdInterval[data-thresholdunitofmeasure="th06"]:after { content: " " var(--label-thresholdInterval-th06); }
+.thresholdInterval[data-thresholdunitofmeasure="th07"]:after { content: " " var(--label-thresholdInterval-th07); }
+.thresholdInterval[data-thresholdunitofmeasure="th08"]:after { content: " " var(--label-thresholdInterval-th08); }
+.thresholdInterval[data-thresholdunitofmeasure="th09"]:after { content: " " var(--label-thresholdInterval-th09); }
+.thresholdInterval[data-thresholdunitofmeasure="th10"]:after { content: " " var(--label-thresholdInterval-th10); }
+.thresholdInterval[data-thresholdunitofmeasure="th11"]:after { content: " " var(--label-thresholdInterval-th11); }
+.thresholdInterval[data-thresholdunitofmeasure="th12"]:after { content: " " var(--label-thresholdInterval-th12); }
+.thresholdInterval[data-thresholdunitofmeasure="th13"]:after { content: " " var(--label-thresholdInterval-th13); }
+.thresholdInterval[data-thresholdunitofmeasure="th14"]:after { content: " " var(--label-thresholdInterval-th14); }
+.thresholdInterval[data-thresholdunitofmeasure="th15"]:after { content: " " var(--label-thresholdInterval-th15); }
+.thresholdInterval[data-thresholdunitofmeasure="th16"]:after { content: " " var(--label-thresholdInterval-th16); }
+.thresholdInterval[data-thresholdunitofmeasure="th17"]:after { content: " " var(--label-thresholdInterval-th17); }
+.thresholdInterval[data-thresholdunitofmeasure="th18"]:after { content: " " var(--label-thresholdInterval-th18); }
+.thresholdInterval[data-thresholdunitofmeasure="th19"]:after { content: " " var(--label-thresholdInterval-th19); }
+.thresholdInterval[data-thresholdunitofmeasure="th20"]:after { content: " " var(--label-thresholdInterval-th20); }
+.thresholdInterval[data-thresholdunitofmeasure="th21"]:after { content: " " var(--label-thresholdInterval-th21); }
+.thresholdInterval[data-thresholdunitofmeasure="th22"]:after { content: " " var(--label-thresholdInterval-th22); }
+.thresholdInterval[data-thresholdunitofmeasure="th23"]:after { content: " " var(--label-thresholdInterval-th23); }
+.thresholdInterval[data-thresholdunitofmeasure="th24"]:after { content: " " var(--label-thresholdInterval-th24); }
+.thresholdInterval[data-thresholdunitofmeasure="th25"]:after { content: " " var(--label-thresholdInterval-th25); }
+.thresholdInterval[data-thresholdunitofmeasure="th26"]:after { content: " " var(--label-thresholdInterval-th26); }
+.thresholdInterval[data-thresholdunitofmeasure="th27"]:after { content: " " var(--label-thresholdInterval-th27); }
+.thresholdInterval[data-thresholdunitofmeasure="th28"]:after { content: " " var(--label-thresholdInterval-th28); }
+.thresholdInterval[data-thresholdunitofmeasure="th29"]:after { content: " " var(--label-thresholdInterval-th29); }
+.thresholdInterval[data-thresholdunitofmeasure="th30"]:after { content: " " var(--label-thresholdInterval-th30); }
+.thresholdInterval[data-thresholdunitofmeasure="th31"]:after { content: " " var(--label-thresholdInterval-th31); }
+.thresholdInterval[data-thresholdunitofmeasure="th32"]:after { content: " " var(--label-thresholdInterval-th32); }
+.thresholdInterval[data-thresholdunitofmeasure="th33"]:after { content: " " var(--label-thresholdInterval-th33); }
+.thresholdInterval[data-thresholdunitofmeasure="th34"]:after { content: " " var(--label-thresholdInterval-th34); }
+.thresholdInterval[data-thresholdunitofmeasure="th35"]:after { content: " " var(--label-thresholdInterval-th35); }
+.thresholdInterval[data-thresholdunitofmeasure="th36"]:after { content: " " var(--label-thresholdInterval-th36); }
+.thresholdInterval[data-thresholdunitofmeasure="th37"]:after { content: " " var(--label-thresholdInterval-th37); }
+.thresholdInterval[data-thresholdunitofmeasure="th38"]:after { content: " " var(--label-thresholdInterval-th38); }
+.thresholdInterval[data-thresholdunitofmeasure="th39"]:after { content: " " var(--label-thresholdInterval-th39); }
+
+.installationLocation[data-installationlocationtype]:before                { content: attr(data-installationlocationtype) " = "; }
+.installationLocation[data-installationlocationtype="instloctyp02"]:before { content: var(--label-installationLocationType-02) " = "; }
+.installationLocation[data-installationlocationtype="instloctyp03"]:before { content: var(--label-installationLocationType-03) " = "; }
+.installationLocation[data-installationlocationtype="instloctyp04"]:before { content: var(--label-installationLocationType-04) " = "; }
+.installationLocation[data-installationlocationtype="instloctyp05"]:before { content: var(--label-installationLocationType-05) " = "; }
+.installationLocation:after { content: " " attr(data-unitofmeasure); }
+
+.productItem[data-productitemtype]:before        { content: attr(data-productitemtype) " " attr(data-productitemname); }
+.productItem[data-productitemtype="pi01"]:before { content: var(--label-productItemType-01) " " attr(data-productitemname); }
+.productItem[data-productitemtype="pi02"]:before { content: var(--label-productItemType-02) " " attr(data-productitemname); }
+.productItem[data-productitemtype="pi03"]:before { content: var(--label-productItemType-03) " " attr(data-productitemname); }
+
+/* References */
+
+/* =========== refs ============ */
+
+.refs.formalTable td:nth-child(1) {
+    width: 44%;
+}
+.refs.formalTable td:nth-child(2) {
+    width: 56%;
+}
+.refs.formalTable caption:before {
+    content: var(--label-table) " " counter(table) " " var(--label-references);
+}
+.refs.formalTable caption.rest:after {
+    content: " (" var(--label-continued) ")";
+}
+.refs thead .refs__code:before { content: var(--label-data-module) "/" var(--label-technical-publication); }
+.refs thead .refs__title:before { content: var(--label-title); }
+
+.formalTable .reference__code .dmRefAddressItems,
+.formalTable .frontMatterTable__code .dmRefAddressItems,
+.formalTable .reference__code .issueInfo,
+.formalTable .frontMatterTable__code .issueInfo,
+.formalTable .reference__code .language,
+.formalTable .frontMatterTable__code .language,
+.formalTable .reference__code .pmRefAddressItems,
+.formalTable .frontMatterTable__code .pmRefAddressItems,
+.formalTable .reference__code .externalPubTitle,
+.formalTable .frontMatterTable__code .externalPubTitle,
+.formalTable .reference__code .externalPubIssueInfo,
+.formalTable .frontMatterTable__code .externalPubIssueInfo,
+.formalTable .reference__code .externalPubRefAddressItems,
+.formalTable .frontMatterTable__code .externalPubRefAddressItems {
+    display: none;
+}
+
+.formalTable .reference__title .techName,
+.formalTable .reference__title .infoName {
+    display: inline;
+}
+
+.formalTable .reference__title .infoName:before {
+    content: " - ";
+}
+
+.externalPubCode:before {
+    margin-right: 0;
+}
+/* ========== internalRef ============ */
+
+/* figure */
+.internalRef.irtt01:before {
+    content: var(--label-figure) " " var(--figureCounter);
+}
+/* table */
+.internalRef.irtt02:before {
+    content: var(--label-table) " " var(--tableCounter);
+}
+/* multimedia */
+.internalRef.irtt03:before {
+    content: var(--label-multimedia) " " var(--figureCounter);
+}
+/* para */
+.internalRef.irtt07:before {
+    content: var(--label-para) " " attr(data-index);;
+}
+.internalRef.irtt07.levelled1:before {
+    content: var(--label-para) " " var(--levelledCounterContent1);
+}
+.internalRef.irtt07.levelled2:before {
+    content: var(--label-para) " " var(--levelledCounterContent1_2);
+}
+.internalRef.irtt07.levelled3:before {
+    content: var(--label-para) " " var(--levelledCounterContent1_2_3);
+}
+.internalRef.irtt07.levelled4:before {
+    content: var(--label-para) " " var(--levelledCounterContent1_2_3_4);
+}
+.internalRef.irtt07.levelled5:before {
+    content: var(--label-para) " " var(--levelledCounterContent1_2_3_4_5);
+}
+.internalRef.irtt07.levelled6:before {
+    content: var(--label-para) " " var(--levelledCounterContent1_2_3_4_5_6);
+}
+.internalRef.irtt07.levelled7:before {
+    content: var(--label-para) " " var(--levelledCounterContent1_2_3_4_5_6_7);
+}
+.internalRef.irtt07.levelled8:before {
+    content: var(--label-para) " " var(--levelledCounterContent1_2_3_4_5_6_7_8);
+}
+/* proceduralStep */
+.internalRef.irtt08:before {
+    content: var(--label-step) " " attr(data-index);
+}
+.internalRef.irtt08.levelled1:before {
+    content: var(--label-step) " " var(--levelledCounterContent1);
+}
+.internalRef.irtt08.levelled2:before {
+    content: var(--label-step) " " var(--levelledCounterContent1_2);
+}
+.internalRef.irtt08.levelled3:before {
+    content: var(--label-step) " " var(--levelledCounterContent1_2_3);
+}
+.internalRef.irtt08.levelled4:before {
+    content: var(--label-step) " " var(--levelledCounterContent1_2_3_4);
+}
+.internalRef.irtt08.levelled5:before {
+    content: var(--label-step) " " var(--levelledCounterContent1_2_3_4_5);
+}
+.internalRef.irtt08.levelled6:before {
+    content: var(--label-step) " " var(--levelledCounterContent1_2_3_4_5_6);
+}
+.internalRef.irtt08.levelled7:before {
+    content: var(--label-step) " " var(--levelledCounterContent1_2_3_4_5_6_7);
+}
+.internalRef.irtt08.levelled8:before {
+    content: var(--label-step) " " var(--levelledCounterContent1_2_3_4_5_6_7_8);
+}
+/* sheet[graphic] */
+.internalRef.irtt09:before {
+    content: var(--label-figure) " " var(--figureCounter) ", " var(--label-sheet) " " var(--sheetCounter);
+}
+/* multimediaObject */
+.internalRef.irtt10:before {
+    content: var(--label-multimedia) " " var(--figureCounter) ", " attr(data-multimediatype);
+}
+/* hotspot */
+.internalRef.irtt11:before {
+    content: var(--label-figure) " " var(--figureCounter) " [" attr(data-referredfragment) "]";
+}
+.listItemTerm .internalRef.irtt11:before {
+    content: attr(data-referredfragment);
+}
+/* zone */
+.internalRef.irtt13[data-zoneNumber]:before {
+    content: var(--label-zone) " " attr(data-zoneNumber);
+}
+/* accessPoint */
+.internalRef.irtt16[data-accessPointNumber]:before {
+    content: attr(data-accessPointNumber);
+}
+.internalRef.irtt16.accpnl01[data-accessPointNumber]:before {
+    content: var(--label-accessPoint-accpnl01) " " attr(data-accessPointNumber);
+}
+.internalRef.irtt16.accpnl02[data-accessPointNumber]:before {
+    content: var(--label-accessPoint-accpnl02) " " attr(data-accessPointNumber);
+}
+.internalRef.irtt16.accpnl03[data-accessPointNumber]:before {
+    content: var(--label-accessPoint-accpnl03) " " attr(data-accessPointNumber);
+}
+.internalRef[data-filled]:before {
+    content: none !important;
+}
+
+/* ==== CSN ==== */
+
+.catalogSeqNumberRef[data-systemCode]:before {
+    content: var(--label-CSN) " " attr(data-systemcode) "-" attr(data-subsystemcode) attr(data-subsubsystemcode) "-" attr(data-assycode) " " var(--label-figure) " " attr(data-figurenumber) attr(data-figurenumbervariant) " " var(--label-item) " " attr(data-item) attr(data-itemvariant);
+}
+.catalogSeqNumberRef[data-systemCode][data-itemSeqNumberValue]:before {
+    content: var(--label-CSNISN) " " attr(data-systemcode) "-" attr(data-subsystemcode) attr(data-subsubsystemcode) "-" attr(data-assycode) " " var(--label-figure) " " attr(data-figurenumber) attr(data-figurenumbervariant) " " var(--label-item) " " attr(data-item) attr(data-itemvariant) "/" attr(data-itemseqnumbervalue);
+}
+
+/* ==== materialSetRef ==== */
+
+.materialSetRef:before {
+    content: var(--label-materialSet) " " attr(data-materialsetident);
+}
+.materialSetRef[data-materialsetissue]:before {
+    content: var(--label-materialSet) " " attr(data-materialsetident) "-" attr(data-materialsetissue);
+}
+
+/* tables */
+
+caption {
+    caption-side: top;
+}
+caption.rest {
+    display: none;
+}
+.table[data-pgwide="1"] {
+    margin-left: var(--left-text-indent-reverse);
+}
+.description > .table {
+    margin-left: var(--left-text-indent);
+}
+.description > .table[data-pgwide="1"] {
+    margin-left: 0;
+}
+.table > .table-contents > .title {
+    display: none;
+}
+.table caption {
+    font-style: italic;
+    margin-bottom: 4pt;
+    padding-left: 0;
+    margin-left: 0;
+    text-indent: 0;
+    page-break-after: avoid;
+}
+.table caption .title {
+    font-weight: normal;
+    display: inline;
+}
+.table caption .title:before {
+    content: var(--label-table) " " counter(table) " ";
+}
+.table caption.rest .title:after {
+    content: " (" var(--label-continued) ")";
+}
+
+/* ========== frontmatter =========== */
+
+.FM__productIntro {
+    margin-top: 20pt;
+    margin-bottom: 20pt;
+}
+.FM__pmTitle {
+    margin-bottom: 20pt;
+}
+
+.frontMatterTitlePage .name {
+    font-weight: bold;
+    font-size: 18pt;
+}
+.frontMatterTitlePage .productAndModel {
+    display: block;
+}
+
+.frontMatterTitlePage .pmTitle {
+    font-weight: bold;
+    font-size: 24pt;
+}
+.frontMatterTitlePage .pmTitle + .shortPmTitle {
+    margin-top: 10pt;
+}
+.frontMatterTitlePage .shortPmTitle {
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+.frontMatterTitlePage .pmCode {
+    display: block;
+    font-weight: bold;
+    font-size: 14pt;
+    margin-bottom: 10pt;
+}
+.frontMatterTitlePage .issueInfo {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14pt;
+    margin-bottom: 10pt;
+}
+.frontMatterTitlePage .issueInfo:after {
+    content: var(--label-issueNo) " " attr(data-issuenumber) "-" attr(data-inwork) ", ";
+}
+.frontMatterTitlePage .issueInfo[data-inwork="00"]:after {
+    content: var(--label-issueNo) " " attr(data-issuenumber) ", ";
+}
+.frontMatterTitlePage .issueDate {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14pt;
+}
+.productIllustration .graphicImg {
+    max-height: 100mm;
+    max-width: 100%;
+}
+.productIllustration .graphicImg[width] {
+    max-width: none;
+    width: attr(width);
+}
+.productIllustration .graphicImg[height] {
+    max-height: none;
+    height: attr(height);
+}
+.productIllustration .infoEntityIdent {
+    display: none;
+}
+.frontMatterTitlePage .copyright:before,
+.frontMatterTitlePage .dataDistribution:before,
+.frontMatterTitlePage .exportControl:before,
+.frontMatterTitlePage .dataHandling:before,
+.frontMatterTitlePage .dataDestruction:before,
+.frontMatterTitlePage .dataDisclosure:before {
+    content: none;
+}
+.frontMatterTitlePage .restrictionInfo,
+.frontMatterTitlePage .restrictionInstructions,
+.frontMatterTitlePage .frontMatterInfo {
+    font-size: 0.8em;
+    margin-left: 0;
+}
+.frontMatterTitlePage .restrictionInfo .p {
+    margin-bottom: 0;
+}
+.frontMatterTitlePage .restrictionInfo .copyrightPara,
+.frontMatterInfo .reducedPara,
+.frontMatterInfo .title {
+    margin-top: 0;
+    margin-bottom: 4pt;
+}
+.reducedRandomList {
+    margin-top: 4pt;
+}
+.preFooter .container,
+.preFooter .publisherBody,
+.preFooter .manufacturerBody {
+    display: flex;
+    column-gap: 12pt;
+}
+.preFooter .leftArea {
+    width: 100mm;
+}
+.preFooter .rightArea {
+    flex-grow: 1;
+    text-align: right;
+    align-self: flex-end;
+}
+.preFooter .enterpriseLogo,
+.preFooter .publisherLogo {
+    max-width: 30mm;
+    min-width: 15mm;
+    max-height: 30mm;
+}
+.preFooter .enterpriseLogo img,
+.preFooter .publisherLogo img {
+    max-width: 30mm;
+    max-height: 30mm;
+}
+
+.preFooter .responsiblePartnerCompany,
+.preFooter .enterpriseSpec {
+    flex-grow: 1;
+}
+.publisher,
+.manufacturer {
+    margin-top: 4pt;
+}
+.manufacturer {
+    border-top: 2pt solid black;
+}
+.manufacturer .street,
+.manufacturer .building,
+.manufacturer .country,
+.manufacturer .postalZipCode,
+.manufacturer .city {
+    display: inline;
+}
+
+.manufacturer .building:before,
+.manufacturer .postalZipCode:before {
+    content: ", ";
+}
+.publisher:before {
+    content: var(--label-publisher) var(--label-colonSymbol);
+}
+.manufacturer:before {
+    content: var(--label-manufacturer) var(--label-colonSymbol);
+}
+
+.referencedApplicGroup {
+    display: none;
+}
+
+.dmStatus .applic[data-displaytext="All"]:after {
+    content: var(--label-applic-all);
+}
+.dmStatus .applic:after {
+    content: attr(data-displaytext);
+}
+.dmStatus .applic .displayText {
+    display: none;
+}
+
+.loedmGeneratePretopic__row1:before,
+.tocGeneratePretopic__row1:before,
+.highGeneratePretopic__row1:before {
+    content: var(--label-loedm-generate-row1-part1) attr(data-issuenumber) var(--label-loedm-generate-row1-part2) attr(data-year) "-" attr(data-month) "-" attr(data-day) var(--label-loedm-generate-row1-part3);
+}
+.loedmGeneratePretopic__row2:before {
+    content: var(--label-loedm-generate-row2);
+}
+.loedmGeneratePretopic__row3:before {
+    content: var(--label-loedm-generate-row3);
+}
+.highInstructionGeneratePretopic__row1:before {
+    content: var(--label-high-generate-row1);
+}
+.highInstructionGeneratePretopic__row2:before {
+    content: var(--label-high-generate-row2);
+}
+.highInstructionGeneratePretopic__row3:before {
+    content: var(--label-high-generate-row3);
+}
+
+.frontMatterList > .issueInfo,
+.frontMatterList > .issueDate,
+.frontMatterTableOfContent > .issueInfo,
+.frontMatterTableOfContent > .issueDate {
+    display: none;
+}
+.frontMatterList .reducedPara,
+.frontMatterTableOfContent .reducedPara {
+    margin-bottom: 4pt;
+    margin-left: var(--left-text-indent);
+}
+
+.frontMatterTable .externalPubTitle {
+    font-weight: normal;
+}
+.frontMatterTable .infoName {
+    font-style: italic;
+}
+.frontMatterTable .externalPubIssueDate:after,
+.frontMatterTable .issueDate:after {
+    content: attr(data-year) "-" attr(data-month) "-" attr(data-day);
+}
+.frontMatterTable tr {
+    page-break-inside: avoid;
+}
+
+.loedm th:nth-child(1) { width: 33%; }
+.loedm th:nth-child(2) { width: 33%; }
+.loedm th:nth-child(3) { width: 4%; }
+.loedm th:nth-child(4) { width: 12%; }
+.loedm th:nth-child(5) { width: 8%; }
+.loedm th:nth-child(6) { width: 10%; }
+
+.highInstruction th:nth-child(1) { width: 33%; }
+.highInstruction th:nth-child(2) { width: 33%; }
+.highInstruction th:nth-child(3) { width: 4%; }
+.highInstruction th:nth-child(4) { width: 12%; }
+.highInstruction th:nth-child(5) { width: 8%; }
+.highInstruction th:nth-child(6) { width: 10%; }
+
+.highlights th:nth-child(1) { width: 33%; }
+.highlights th:nth-child(2) { width: 67%; }
+
+th.frontMatterTable__title:before     { content: var(--label-documentTitle); }
+th.frontMatterTable__code:before      { content: var(--label-dataModuleCode); }
+th.frontMatterTable__issueDate:before { content: var(--label-issueDate); }
+th.frontMatterTable__pages:before     { content: var(--label-noOfPages); }
+th.frontMatterTable__applic:before    { content: var(--label-fm-applic); }
+
+th.high__DM:before { content: var(--label-data-module); }
+th.high__rfu:before { content: var(--label-reason-for-update); }
+
+.loedm__status[data-issuetype="new"]:before,
+.loedm__status[data-issuetype="rinstate-status"]:before,
+.loedm__status[data-issuetype="rinstate-changed"]:before,
+.loedm__status[data-issuetype="rinstate-revised"]:before { content: "N"; }
+
+.loedm__status[data-issuetype="revised"]:before,
+.loedm__status[data-issuetype="changed"]:before,
+.loedm__status[data-issuetype="status"]:before           { content: "C"; }
+
+.high__status:before                           { content: "I"; }
+.high__status[data-issuetype="deleted"]:before { content: "R"; }
+
+.toc th:nth-child(1) { width: 36%; }
+.toc th:nth-child(2) { width: 36%; }
+.toc th:nth-child(4) { width: 15%; }
+.toc th:nth-child(6) { width: 13%; }
+
+.toc [data-toclevel="1"] .title {
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: left;
+}
+.toc [data-toclevel="2"] .title {
+    font-size: 12pt;
+    font-weight: bold;
+    margin-left: 10mm;
+}
+.description > .p {
+    margin-left: var(--left-text-indent);
+}
+.table[data-tabstyle="changeRecord"] .p {
+    margin-top: 3pt;
+    margin-bottom: 3pt;
+}
+.description.noHeader:before {
+    content: none;
+}
+.highlights .reasonForUpdate {
+    margin-top: 0;
+    text-align: left;
+}
+.highlights .reasonForUpdate:before {
+    content: none;
+}
+.highInstruction.formalTable {
+    counter-increment: table;
+}
+.highInstruction .header:before {
+    content: var(--label-updating-instruction);
+}
+.highInstruction caption:before {
+    content: var(--label-table) " " counter(table) " " var(--label-high-table);
+}
+tr[data-keep-with-previous="always"] {
+    page-break-before: avoid;
+}
+
+/* crew */
+.crewRefCard:before {
+    content: var(--label-crewRefCard);
+}
+.crew > .crewRefCard > * {
+    margin-left: var(--left-text-indent);
+}
+.crewRefCard > .title {
+    border: 1px solid black;
+	padding: 4pt;
+	margin-bottom: 5pt;
+	text-align: center;
+	font-weight: bold;
+	font-size: 14pt;
+    page-break-after: avoid;
+}
+.crewDrill > .title {
+    display: inline-block;
+	border: 1px solid black;
+	padding: 4pt;
+	font-weight: bold;
+	font-size: 12pt;
+    margin-top: 0;
+    margin-bottom: 8pt;
+    page-break-after: avoid;
+}
+.crewDrill,
+.subCrewDrill {
+    margin-bottom: 4pt;
+}
+.subCrewDrill > .title {
+	display: inline-block;
+	border: 1px solid black;
+	padding: 4pt;
+	font-weight: bold;
+	font-size: 10pt;
+    margin-top: 0;
+    margin-bottom: 8pt;
+    page-break-after: avoid;
+}
+.caseCond {
+	font-style: italic;
+    margin-bottom: 8pt;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.challengeAndResponse {
+    display: flex;
+    align-items: flex-start;
+}
+.challengeAndResponse .separator {
+    border-bottom: 1px dotted;
+    flex-grow: 1;
+    min-height: 1em;
+}
+.response[data-grow="1"] {
+    flex-grow: 1;
+}
+.crewDrill .p,
+.crewDrill .table {
+    margin-top: 0pt;
+}
+.crewDrill .p {
+    margin-bottom: 8pt;
+}
+.crewDrill .if:before, 
+.crewDrill .elseIf:before,
+.crewDrill .case:before {
+	float: left;
+	width: 3mm;
+    height: 1em;
+	margin-left: -7mm;
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	content: " ";
+}
+.crewDrill .if:before,
+.crewDrill .elseIf:before {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 10 10"><circle cx="4" cy="4" r="3" stroke-width="0.2" fill="%23000000"/></svg>');
+}
+.crewDrill .case:before {
+    background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 10 10"><rect x="1" y="1" width="6" height="6" stroke-width="0.2" fill="%23000000"/></svg>');
+}
+
+.crewDrillStep:before {
+    float: left;
+    margin-left: -7mm;
+    content: "−";
+}
+.crewDrillStep,
+.if,
+.elseIf,
+.case {
+    margin-left: var(--list-body-indent);
+    page-break-inside: avoid;
+}
+/* ==== learning ==== */
+.assessmentQuestion .p {
+    margin-left: 0;
+}
+/* ==== inlineApplic ==== */
+*[data-displaytext]:before {
+    content: var(--label-HF-applic) var(--label-colonSymbol) " " attr(data-displaytext);
+    font-weight: bold;
+    font-style: normal;
+    margin-left: var(--left-text-indent-reverse);
+    display: block;
+    padding-bottom: 2pt;
+    page-break-after: avoid;
+    text-align: left;
+}
+.figure[data-displaytext]:before,
+.multimedia[data-displaytext]:before,
+.figure>[data-displaytext],
+.multimedia>[data-displaytext] {
+    align-self: start;
+}
+.figure[data-displaytext]:before,
+.multimedia[data-displaytext]:before,
+table [data-displaytext]:before,
+.figure [data-displaytext]:before,
+.multimedia [data-displaytext]:before {
+    margin-left: 0;
+}
+.dmStatus [data-displaytext]:before {
+    display: inline;
+}
+.preliminaryRqmts [data-displaytext]:before,
+.closeRqmts [data-displaytext]:before {
+    margin-left: 0;
+    margin-top: 8pt;
+}
+
+.frontMatterTable__code > *[data-displaytext]:before {
+    content: none;
+}
+/* ==== ACT ==== */
+.applicCrossRefTable:before { 
+    content: var(--label-applicCrossRefTable); 
+}
+.productAttributeList {
+    display: block;
+}
+.productAttribute {
+    display: list-item;
+    margin-left: 40pt;
+    margin-top: 12pt;
+}
+.productAttribute > * {
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+}
+/* ==== PCT ==== */
+.productCrossRefTable:before { 
+    content: var(--label-productCrossRefTable); 
+}
+.product {
+    display: list-item;
+    margin-left: 40pt;
+    margin-top: 12pt;
+}
+.product > * {
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+}
+.assign:before {
+    content: attr(data-applicpropertyident) "=" attr(data-applicpropertyvalue); 
+}
+/* sb */
+
+.sbManagementInfo > .title:before   { content: var(--label-sbManagementInfo); }
+.sbRevisionInfo > .title:before     { content: var(--label-sbRevisionInfo); }
+.sbSummary > .title:before          { content: var(--label-sbSummary); }
+.sbPlanningInfo > .title:before     { content: var(--label-sbPlanningInfo); }
+.sbMaterialInfo > .title:before     { content: var(--label-sbMaterialInfo); }
+.sbAccomplishmentInstructions > .title:before { content: var(--label-sbAccomplishmentInstructions); }
+.sbAdditionalInfo > .title:before   { content: var(--label-sbAdditionalInfo); }
+.sbMaterialSetList > .title:before  { content: var(--label-sbMaterialSetList); }
+.sbSupportEquipsList > .title:before    { content: var(--label-sbSupportEquipsList); }
+.sbSuppliesList > .title:before     { content: var(--label-sbSuppliesList); }
+.sbSparesList > .title:before       { content: var(--label-sbSparesList); }
+.sbRemovedSparesList > .title:before    { content: var(--label-sbRemovedSparesList); }
+
+.noInfo:before { content: var(--label-noInfo); }
+
+
+/* .sbManagementInfo,
+.sbRevisionInfo,
+.sbSummary,
+.sbPlanningInfo,
+.sbMaterialInfo,
+.sbAccomplishmentInstructions,
+.sbAdditionalInfo {
+    break-before: page;
+} */
+
+.levels > .para,
+.levels > .noInfo {
+    margin-left: var(--left-text-indent);
+}
+.sbTopicContent > .levelledPara {
+    margin-left: var(--left-text-indent-reverse);
+}
+
+.level1 > .numbering {
+    font-size: 14pt;
+    font-weight: bold;
+}
+.sbSet col:nth-child(1) { width: 30%; }
+.sbSet col:nth-child(2) { width: 40%; }
+.sbSet col:nth-child(3) { width: 15%; }
+.sbSet col:nth-child(4) { width: 15%; }
+
+.sbSet.ICY col:nth-child(1) { width: 24%; }
+.sbSet.ICY col:nth-child(2) { width: 23%; }
+.sbSet.ICY col:nth-child(3) { width: 23%; }
+.sbSet.ICY col:nth-child(4) { width: 15%; }
+.sbSet.ICY col:nth-child(5) { width: 15%; }
+
+.sbSet.noICY col:nth-child(1) { width: 35%; }
+.sbSet.noICY col:nth-child(2) { width: 35%; }
+.sbSet.noICY col:nth-child(3) { width: 15%; }
+.sbSet.noICY col:nth-child(4) { width: 15%; }
+
+.sbSet.onlyRemoved col:nth-child(1) { width: 40%; }
+.sbSet.onlyRemoved col:nth-child(2) { width: 45%; }
+.sbSet.onlyRemoved col:nth-child(3) { width: 15%; }
+
+th.sbSet__identification:before     { content: var(--label-identification); }
+th.sbSet__name:before               { content: var(--label-name); }
+th.sbSet__qty:before                { content: var(--label-quantity); }
+th.sbSet__remarks:before            { content: var(--label-remarks); }
+th.sbSet__oldIdentification:before  { content: var(--label-oldIdentification); }
+th.sbSet__newIdentification:before  { content: var(--label-newIdentification); }
+th.sbSet__ICY:before                { content: var(--label-sbICY); }
+
+td.bold { 
+    font-weight: bold; 
+}
+
+.sbPriceInfo > td.sbSet__identification:before          { content: var(--label-price); }
+.sbAvailability > td.sbSet__identification:before       { content: var(--label-availability); }
+.sbProcurementAddress > td.sbSet__identification:before { content: var(--label-procurementAddress); }
+.sbIndustrySupport > td.sbSet__identification:before    { content: var(--label-industrySupport); }
+.sbDrawingRef > td.sbSet__identification:before         { content: var(--label-drawing); }
+.sbInstructionRef > td.sbSet__identification:before     { content: var(--label-instruction); }
+
+.sbSet,
+.sbExternalSupportEquipSet,
+.sbExternalSupplySet,
+.sbExternalSpareSet,
+.noInfo {
+    margin-bottom: var(--indent-standart);
+}
+
+.sbImpact,
+.sbProductModification,
+.sbConcurrentSbInfo,
+.sbTimeCompliance,
+.sbLimit,
+.sbTimeInfo,
+.sbApprovedDm .refs > *,
+.sbReplacementSb .refs > *,
+.genericProperty {
+    margin-bottom: var(--indent-half);
+}
+
+.sbProductModification:last-child,
+.sbImpact:last-child,
+.sbConcurrentSbInfo:last-child,
+.sbTimeCompliance:last-child,
+.sbLimit:last-child,
+.sbTimeInfo:last-child,
+.sbApprovedDm .refs > *:last-child,
+.sbReplacementSb .refs > *:last-child,
+.genericProperty:last-child {
+    margin-bottom: 0;
+}
+
+td .refs > * {
+    display: block;
+}
+
+.sbMaterialSet > .name,
+.sbMaterialSet > .shortName,
+.sbSupportEquipSet > .name,
+.sbSupportEquipSet > .shortName,
+.sbSupplySet > .name,
+.sbSupplySet > .shortName,
+.sbSpareSet > .name,
+.sbSpareSet > .shortName,
+.sbRemovedSpareSet > .name,
+.sbRemovedSpareSet > .shortName {
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: var(--indent-half);
+}
+
+.para .dmRefAddressItems {
+    display: none;
+}
+
+.para .externalPubRef .externalPubRefAddressItems {
+    display: none;
+}
+
+.externalPubCode::before {
+    content: attr(data-pubcodingscheme) " ";
+}
+
+.enterpriseRef:before {
+    content: attr(data-manufacturercodevalue);
+}
+
+.formalTable tbody {
+    border-top: 1px solid black;
+}
+
+.sbExternalSupportEquipSet > .title,
+.sbExternalSupplySet > .title,
+.sbExternalSpareSet > .title {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sbExternalSupportEquipSet > .title:before,
+.sbExternalSupplySet > .title:before,
+.sbExternalSpareSet > .title:before {
+    content: var(--label-referencedTools);
+}
+
+.sbAccomplishmentInstructions .mainProcedure {
+    display: none;
+}
+.sbInstructionIndentBlock {
+    margin-left: var(--left-text-indent);
+}
+
+.sb .sbManagementInfo,
+.sb .sbAccomplishmentInstructions {
+    margin-bottom: var(--indent-standart);
+}
+
+.sbManagementInfoTable td:nth-child(1) {
+    font-weight: bold;
+    width: 30%;
+}
+
+.sbCompliance .label:before               { content: var(--label-sbCompliance); }
+.sbTaskType .label:before                 { content: var(--label-sbTaskType); }
+.sbProductModificationList .label:before  { content: var(--label-sbProductModificationList); }
+.sbImpactList .label:before               { content: var(--label-sbImpactList); }
+.sbConcurrentSbList .label:before         { content: var(--label-sbConcurrentSbList); }
+.sbAccomplishmentLimit .label:before      { content: var(--label-sbAccomplishmentLimit); }
+.sbTimeAssessment .label:before           { content: var(--label-sbTimeAssessment); }
+.sbOriginalIssueDate .label:before        { content: var(--label-sbOriginalIssueDate); }
+.sbApproval .label:before                 { content: var(--label-sbApproval); }
+.sbApprovedDm .label:before               { content: var(--label-sbApprovedDm); }
+.genericPropertyGroup .label:before       { content: var(--label-genericPropertyGroup); }
+.sbReplacementSb .label:before            { content: var(--label-sbReplacementSb); }
+
+
+.sbImpact .label:before { content: attr(data-sbimpacttype) var(--label-colonSymbol) " "; }
+.sbImpact[data-sbimpacttype="sbit01"] .label:before { content: var(--label-sbImpactType-sbit01) var(--label-colonSymbol) " "; }
+.sbImpact[data-sbimpacttype="sbit02"] .label:before { content: var(--label-sbImpactType-sbit02) var(--label-colonSymbol) " "; }
+.sbImpact[data-sbimpacttype="sbit03"] .label:before { content: var(--label-sbImpactType-sbit03) var(--label-colonSymbol) " "; }
+.sbImpact[data-sbimpacttype="sbit04"] .label:before { content: var(--label-sbImpactType-sbit04) var(--label-colonSymbol) " "; }
+.sbImpact[data-sbimpacttype="sbit05"] .label:before { content: var(--label-sbImpactType-sbit05) var(--label-colonSymbol) " "; }
+.sbImpact[data-sbimpacttype="sbit06"] .label:before { content: var(--label-sbImpactType-sbit06) var(--label-colonSymbol) " "; }
+
+.sbConcurrentSbInfo[data-sbconcurrentstatus="previous"] .label:before           { content: var(--label-sbConcurrentStatus-previous) var(--label-colonSymbol); }
+.sbConcurrentSbInfo[data-sbconcurrentstatus="notPrevious"] .label:before        { content: var(--label-sbConcurrentStatus-notPrevious) var(--label-colonSymbol); }
+.sbConcurrentSbInfo[data-sbconcurrentstatus="previousOrParallel"] .label:before { content: var(--label-sbConcurrentStatus-previousOrParallel) var(--label-colonSymbol); }
+
+.sbComplianceCategory:before { content: attr(data-sbcompliancecategory); }
+.sbComplianceCategory[data-sbcompliancecategory="sbcc01"]:before { content: var(--label-sbComplianceCategory-sbcc01); }
+.sbComplianceCategory[data-sbcompliancecategory="sbcc02"]:before { content: var(--label-sbComplianceCategory-sbcc02); }
+.sbComplianceCategory[data-sbcompliancecategory="sbcc03"]:before { content: var(--label-sbComplianceCategory-sbcc03); }
+.sbComplianceCategory[data-sbcompliancecategory="sbcc04"]:before { content: var(--label-sbComplianceCategory-sbcc04); }
+
+.sbTaskCategory:before { content: attr(data-sbtaskcategory); }
+.sbTaskCategory[data-sbtaskcategory="sbtc01"]:before { content: var(--label-sbTaskCategory-sbtc01); }
+.sbTaskCategory[data-sbtaskcategory="sbtc02"]:before { content: var(--label-sbTaskCategory-sbtc02); }
+.sbTaskCategory[data-sbtaskcategory="sbtc03"]:before { content: var(--label-sbTaskCategory-sbtc03); }
+.sbTaskCategory[data-sbtaskcategory="sbtc04"]:before { content: var(--label-sbTaskCategory-sbtc04); }
+.sbTaskCategory[data-sbtaskcategory="sbtc05"]:before { content: var(--label-sbTaskCategory-sbtc05); }
+
+.sbTimeCompliance:before { content: attr(data-sbtimecompliancetype) var(--label-colonSymbol) " "; }
+.sbTimeCompliance[data-sbtimecompliancetype="sbtct01"]:before { content: var(--label-sbTimeComplianceType-sbtct01) var(--label-colonSymbol) " "; }
+.sbTimeCompliance[data-sbtimecompliancetype="sbtct02"]:before { content: var(--label-sbTimeComplianceType-sbtct02) var(--label-colonSymbol) " "; }
+.sbTimeCompliance[data-sbtimecompliancetype="sbtct03"]:before { content: var(--label-sbTimeComplianceType-sbtct03) var(--label-colonSymbol) " "; }
+
+.sbManagementInfoTable td.sbTaskType:before {
+    content: var(--label-sbTaskType);
+}
+.sbProductModification[data-sbmodificationident] .label:before {
+    content: '[' attr(data-sbmodificationident) '] ';
+}
+.quantityValue[data-quantityunitofmeasure]:after {
+    content: " " attr(data-quantityunitofmeasure);
+}
+.limit[data-limittypevalue="po"]:before { content: var(--label-limitTypeValue-po); }
+.limit[data-limittypevalue="oc"]:before { content: var(--label-limitTypeValue-oc) " "; }
+.limit[data-limittypevalue="pe"]:before { content: var(--label-limitTypeValue-pe); }
+
+.sbCondition:before         { content: var(--label-sbCondition) var(--label-colonSymbol); }
+.sbDuration:before          { content: var(--label-sbDuration) var(--label-colonSymbol); }
+.sbEstimatedTime:before     { content: var(--label-sbEstimatedTime) var(--label-colonSymbol); }
+.sbTimeInfo > .refs:before  { content: var(--label-references) var(--label-colonSymbol); }
+
+.sbApprovalIdent:before { content: attr(data-sbapprovalident); }
+
+.genericProperty .label:before { content: attr(data-genericpropertytype) var(--label-colonSymbol) " "; }
+.genericProperty[data-genericpropertytype="gpt01"] .label:before   { content: var(--label-genericProperty-gpt01) var(--label-colonSymbol) " "; }
+.genericProperty[data-genericpropertytype="gpt02"] .label:before   { content: var(--label-genericProperty-gpt02) var(--label-colonSymbol) " "; }
+.genericProperty[data-genericpropertytype="gpt03"] .label:before   { content: var(--label-genericProperty-gpt03) var(--label-colonSymbol) " "; }
+.genericProperty[data-genericpropertytype="gpt04"] .label:before   { content: var(--label-genericProperty-gpt04) var(--label-colonSymbol) " "; }
+.genericProperty[data-genericpropertytype="gpt05"] .label:before   { content: var(--label-genericProperty-gpt05) var(--label-colonSymbol) " "; }
+.genericProperty[data-genericpropertytype="gpt06"] .label:before   { content: var(--label-genericProperty-gpt06) var(--label-colonSymbol) " "; }
+.genericProperty[data-genericpropertytype="gpt07"] .label:before   { content: var(--label-genericProperty-gpt07) var(--label-colonSymbol) " "; }
+.genericProperty[data-genericpropertytype="gpt08"] .label:before   { content: var(--label-genericProperty-gpt08) var(--label-colonSymbol) " "; }
+.genericProperty[data-genericpropertytype="gpt09"] .label:before   { content: var(--label-genericProperty-gpt09) var(--label-colonSymbol) " "; }
+.genericProperty[data-genericpropertytype="gpt10"] .label:before   { content: var(--label-genericProperty-gpt10) var(--label-colonSymbol) " "; }
+.genericProperty[data-genericpropertytype="gpt11"] .label:before   { content: var(--label-genericProperty-gpt11) var(--label-colonSymbol) " "; }
+
+.genericProperty .label:after   { content: var(--label-genericPropertyFlag); }
+.genericProperty[data-genericpropertyflag="1"] .label:after   { content: var(--label-genericPropertyFlag-true); }
+.genericProperty[data-genericpropertyflag="0"] .label:after   { content: var(--label-genericPropertyFlag-false); }
+
+
+.fullTable table {
+    margin-left: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
+.fullTable td,
+.fullTable th {
+    border: .5pt solid black;
+    vertical-align: top;
+    padding: 2pt;
+}
+
+.mpdTaskDefinitionTable {
+    font-size: 0.8em;
+}
+
+.taskDefinition .taskTitle {
+    font-weight: bold;
+}
+
+.taskDefinition .simplePara {
+    margin-bottom: 0;
+}
+
+.rqmtSource:before {
+    content: attr(data-sourceofrqmt);
+}
+
+.taskDefinition .zoneRef:before,
+.taskDefinition .accessPointRef:before { 
+    content: ""; 
+}
+
+.taskDefinition .description > * { 
+    padding-top: 4pt;
+}
+.taskDefinition .description > *:first-child {
+    padding-top: 0pt;
+}
+
+.taskDefinition .reqConds > *,
+.taskDefinition .remarks > * {
+    display: block;
+    margin-left: 10pt;
+}
+
+.taskDefinition .access:before    { content: var(--label-access) ": "; }
+.taskDefinition .reqConds:before  { content: var(--label-reqConds) ": "; }
+.taskDefinition .remarks:before   { content: var(--label-remarks) ": "; }
+
+.taskDefinition .taskCode[data-taskcode="taskcd01"]:before { content: var(--label-taskCode-taskcd01); }
+.taskDefinition .taskCode[data-taskcode="taskcd02"]:before { content: var(--label-taskCode-taskcd02); }
+.taskDefinition .taskCode[data-taskcode="taskcd03"]:before { content: var(--label-taskCode-taskcd03); }
+.taskDefinition .taskCode[data-taskcode="taskcd04"]:before { content: var(--label-taskCode-taskcd04); }
+.taskDefinition .taskCode[data-taskcode="taskcd05"]:before { content: var(--label-taskCode-taskcd05); }
+.taskDefinition .taskCode[data-taskcode="taskcd06"]:before { content: var(--label-taskCode-taskcd06); }
+.taskDefinition .taskCode[data-taskcode="taskcd07"]:before { content: var(--label-taskCode-taskcd07); }
+.taskDefinition .taskCode[data-taskcode="taskcd08"]:before { content: var(--label-taskCode-taskcd08); }
+.taskDefinition .taskCode[data-taskcode="taskcd09"]:before { content: var(--label-taskCode-taskcd09); }
+
+.taskDefinition .limit .threshold { 
+    display: block; 
+}
+.taskDefinition .limitRange .threshold { 
+    display: inline; 
+}
+
+.taskDefinition .interval .threshold[data-thresholdtype="interval"]:before  { content: var(--label-interval-short) ": "}
+.taskDefinition .interval .threshold[data-thresholdtype="threshold"]:before { content: var(--label-threshold-short) ": "}
+
+.taskDefinition .skill[data-skilltype="st01"]:before { content: var(--label-skillType-st01-airplane); }
+.taskDefinition .skill[data-skilltype="st02"]:before { content: var(--label-skillType-st02-electric); }
+.taskDefinition .skill[data-skilltype="st03"]:before { content: var(--label-skillType-st03-avionics); }
+.taskDefinition .skill[data-skilltype="st04"]:before { content: var(--label-skillType-st04-engine); }
+.taskDefinition .skill[data-skilltype="st51"]:before { content: var(--label-skillType-st51-cabin); }
+.taskDefinition .skill[data-skilltype="st52"]:before { content: var(--label-skillType-st52-ndt); }
+.taskDefinition .skill[data-skilltype="st53"]:before { content: var(--label-skillType-st53-radio); }
+.taskDefinition .skill[data-skilltype="st54"]:before { content: var(--label-skillType-st54-utilization); }
+
+.taskDefinition .person:before { content: attr(data-man); }
+
+.taskDefinition .complexity .mpdTaskDuration:after,
+.taskDefinition .complexity .estimatedTime:after  { content: " " attr(data-unitofmeasure); }
+.taskDefinition .complexity .mpdTaskDuration:before  { content: attr(data-procedureduration); }
+
+.taskDefinition [data-displaytext]:before,
+.timeLimitInfo [data-displaytext]:before { 
+    font-weight: normal; 
+    content: attr(data-displaytext);
+}
+
+.mpdTimeLimitTable .timeLimitInfo *:before {
+    font-weight: normal;
+}
+
+.limitRangeFrom:before  { content: var(--label-from) " "; }
+.limitRangeTo:before    { content: var(--label-to) " "; }
+
+.tolerance[data-tolerancetype="plusorminus"]:before { content: "±" attr(data-tolerancevalue); }
+.tolerance[data-tolerancetype="plus"]:before        { content: "+" attr(data-tolerancevalue); }
+.tolerance[data-tolerancetype="minus"]:before       { content: "-" attr(data-tolerancevalue); }
+
+
+.mpdTaskDefinitionTable thead .taskIdent:before           { content: var(--label-taskIdent); }
+.mpdTaskDefinitionTable thead .zone:before                { content: var(--label-mpdZone); }
+.mpdTaskDefinitionTable thead .taskCode:before            { content: var(--label-taskCode); }
+.mpdTaskDefinitionTable thead .description:before         { content: var(--label-description); }
+.mpdTaskDefinitionTable thead .interval__threshold:before { content: var(--label-threshold) " (" var(--label-threshold-short) ")"; }
+.mpdTaskDefinitionTable thead .interval__interval:before  { content: var(--label-interval) " (" var(--label-interval-short) ")"; }
+.mpdTaskDefinitionTable thead .source:before              { content: var(--label-source); }
+.mpdTaskDefinitionTable thead .reference:before           { content: var(--label-reference); }
+.mpdTaskDefinitionTable thead .skill:before               { content: var(--label-skill); }
+.mpdTaskDefinitionTable thead .man:before                 { content: var(--label-man); }
+.mpdTaskDefinitionTable thead .complexity:before          { content: var(--label-complexity); }
+.mpdTaskDefinitionTable thead .applic:before              { content: var(--label-fm-applic); }
+
+.threshold[data-thresholdunitofmeasure]:after        { content: " " attr(data-thresholdunitofmeasure); }
+.threshold[data-thresholdunitofmeasure="th01"]:after { content: " " var(--label-thresholdInterval-th01); }
+.threshold[data-thresholdunitofmeasure="th02"]:after { content: " " var(--label-thresholdInterval-th02); }
+.threshold[data-thresholdunitofmeasure="th03"]:after { content: " " var(--label-thresholdInterval-th03); }
+.threshold[data-thresholdunitofmeasure="th04"]:after { content: " " var(--label-thresholdInterval-th04); }
+.threshold[data-thresholdunitofmeasure="th05"]:after { content: " " var(--label-thresholdInterval-th05); }
+.threshold[data-thresholdunitofmeasure="th06"]:after { content: " " var(--label-thresholdInterval-th06); }
+.threshold[data-thresholdunitofmeasure="th07"]:after { content: " " var(--label-thresholdInterval-th07); }
+.threshold[data-thresholdunitofmeasure="th08"]:after { content: " " var(--label-thresholdInterval-th08); }
+.threshold[data-thresholdunitofmeasure="th09"]:after { content: " " var(--label-thresholdInterval-th09); }
+.threshold[data-thresholdunitofmeasure="th10"]:after { content: " " var(--label-thresholdInterval-th10); }
+.threshold[data-thresholdunitofmeasure="th11"]:after { content: " " var(--label-thresholdInterval-th11); }
+.threshold[data-thresholdunitofmeasure="th12"]:after { content: " " var(--label-thresholdInterval-th12); }
+.threshold[data-thresholdunitofmeasure="th13"]:after { content: " " var(--label-thresholdInterval-th13); }
+.threshold[data-thresholdunitofmeasure="th14"]:after { content: " " var(--label-thresholdInterval-th14); }
+.threshold[data-thresholdunitofmeasure="th15"]:after { content: " " var(--label-thresholdInterval-th15); }
+.threshold[data-thresholdunitofmeasure="th16"]:after { content: " " var(--label-thresholdInterval-th16); }
+.threshold[data-thresholdunitofmeasure="th17"]:after { content: " " var(--label-thresholdInterval-th17); }
+.threshold[data-thresholdunitofmeasure="th18"]:after { content: " " var(--label-thresholdInterval-th18); }
+.threshold[data-thresholdunitofmeasure="th19"]:after { content: " " var(--label-thresholdInterval-th19); }
+.threshold[data-thresholdunitofmeasure="th20"]:after { content: " " var(--label-thresholdInterval-th20); }
+.threshold[data-thresholdunitofmeasure="th21"]:after { content: " " var(--label-thresholdInterval-th21); }
+.threshold[data-thresholdunitofmeasure="th22"]:after { content: " " var(--label-thresholdInterval-th22); }
+.threshold[data-thresholdunitofmeasure="th23"]:after { content: " " var(--label-thresholdInterval-th23); }
+.threshold[data-thresholdunitofmeasure="th24"]:after { content: " " var(--label-thresholdInterval-th24); }
+.threshold[data-thresholdunitofmeasure="th25"]:after { content: " " var(--label-thresholdInterval-th25); }
+.threshold[data-thresholdunitofmeasure="th26"]:after { content: " " var(--label-thresholdInterval-th26); }
+.threshold[data-thresholdunitofmeasure="th27"]:after { content: " " var(--label-thresholdInterval-th27); }
+.threshold[data-thresholdunitofmeasure="th28"]:after { content: " " var(--label-thresholdInterval-th28); }
+.threshold[data-thresholdunitofmeasure="th29"]:after { content: " " var(--label-thresholdInterval-th29); }
+.threshold[data-thresholdunitofmeasure="th30"]:after { content: " " var(--label-thresholdInterval-th30); }
+.threshold[data-thresholdunitofmeasure="th31"]:after { content: " " var(--label-thresholdInterval-th31); }
+.threshold[data-thresholdunitofmeasure="th32"]:after { content: " " var(--label-thresholdInterval-th32); }
+.threshold[data-thresholdunitofmeasure="th33"]:after { content: " " var(--label-thresholdInterval-th33); }
+.threshold[data-thresholdunitofmeasure="th34"]:after { content: " " var(--label-thresholdInterval-th34); }
+.threshold[data-thresholdunitofmeasure="th35"]:after { content: " " var(--label-thresholdInterval-th35); }
+.threshold[data-thresholdunitofmeasure="th36"]:after { content: " " var(--label-thresholdInterval-th36); }
+.threshold[data-thresholdunitofmeasure="th37"]:after { content: " " var(--label-thresholdInterval-th37); }
+.threshold[data-thresholdunitofmeasure="th38"]:after { content: " " var(--label-thresholdInterval-th38); }
+.threshold[data-thresholdunitofmeasure="th39"]:after { content: " " var(--label-thresholdInterval-th39); }
+
+.taskDefinition .limit[data-limittypevalue="oc"]:before { content: var(--label-limitTypeValue-oc) " " attr(data-limitcond); }
+
+.taskDefinition .reference .dmRefAddressItems { 
+  display: none; 
+}
+
+.timeLimitIdent:before  { content: attr(data-timelimitident); }
+.taskIdent:before       { content: attr(data-taskident); }
+
+.limitType[data-limitunittype="lt01"]:after { content: " " var(--label-limitUnitType-lt01); }
+.limitType[data-limitunittype="lt02"]:after { content: " " var(--label-limitUnitType-lt02); }
+.limitType[data-limitunittype="lt03"]:after { content: " " var(--label-limitUnitType-lt03); }
+.limitType[data-limitunittype="lt04"]:after { content: " " var(--label-limitUnitType-lt04); }
+.limitType[data-limitunittype="lt05"]:after { content: " " var(--label-limitUnitType-lt05); }
+.limitType[data-limitunittype="lt06"]:after { content: " " var(--label-limitUnitType-lt06); }
+.limitType[data-limitunittype="lt07"]:after { content: " " var(--label-limitUnitType-lt07); }
+
+.mpdTaskDefinitionTable th:nth-child(1)  { width: 9%; }
+.mpdTaskDefinitionTable th:nth-child(2)  { width: 4%; }
+.mpdTaskDefinitionTable th:nth-child(3)  { width: 4%; }
+.mpdTaskDefinitionTable th:nth-child(4)  { width: 39%; }
+.mpdTaskDefinitionTable th:nth-child(5)  { width: 9%; }
+.mpdTaskDefinitionTable th:nth-child(6)  { width: 4%; }
+.mpdTaskDefinitionTable th:nth-child(7)  { width: 9%; }
+.mpdTaskDefinitionTable th:nth-child(8)  { width: 4%; }
+.mpdTaskDefinitionTable th:nth-child(9)  { width: 4%; }
+.mpdTaskDefinitionTable th:nth-child(10) { width: 4%; }
+.mpdTaskDefinitionTable th:nth-child(11) { width: 10%; }
+
+.mpdTimeLimitTable thead .timeLimitIdent:before      { content: var(--label-timeLimitIdent); }
+.mpdTimeLimitTable thead .equip:before               { content: var(--label-equipGroup); }
+.mpdTimeLimitTable thead .qty:before                 { content: var(--label-quantity); }
+.mpdTimeLimitTable thead .timeLimit:before           { content: var(--label-threshold) "/" var(--label-interval); }
+.mpdTimeLimitTable thead .applic:before              { content: var(--label-fm-applic); }
+
+.mpdTimeLimitTable th:nth-child(1) { width: 7%; }
+.mpdTimeLimitTable th:nth-child(2) { width: 43%; }
+.mpdTimeLimitTable th:nth-child(3) { width: 10%; }
+.mpdTimeLimitTable th:nth-child(4) { width: 20%; }
+.mpdTimeLimitTable th:nth-child(4) { width: 20%; }
+
+
+
+

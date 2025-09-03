@@ -1,0 +1,1565 @@
+/*
+    s1000d_prc.css
+    13.05.2015 12:08:16
+*/
+
+/*
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 10pt;
+  font-family: Verdana, sans-serif;
+  overflow: auto;
+}
+
+a[href] { 
+    color:#0000A0; 
+    text-decoration: none; 
+}
+a[href]:visited { 
+    color: #0000A0; 
+}
+a[href]:hover { 
+    color: #0000FF; 
+    text-decoration: underline; 
+}
+*/
+
+.dmodule {
+	padding: 8pt;
+}
+
+.content {
+    counter-reset: table figure;
+}
+
+.content > * {
+    margin-top: 12pt;
+}
+
+.dmodule:after {
+	display: block;
+	text-align: center;
+	margin-top: 16pt;
+	font-weight: bold;
+	min-height: 1em;
+}
+
+.taskDuration:before,
+.title {
+    display: block;
+    font-weight: bold;
+    margin-top: 8pt;
+	min-height: 1em;
+}
+
+.identAndStatusSection {
+	background-color: #E0FFFF;
+	padding: 6pt;
+	margin-top: 12pt;
+	border: solid silver 1px;
+	cursor: pointer;
+}
+
+.identAndStatusSection > .dmAddress {
+    display: block;
+    text-align: right;
+	min-height: 1em;
+}
+.identAndStatusSection > .dmAddress * {
+    display: block;
+    font-weight: normal;
+	min-height: 1em;
+}
+.identAndStatusSection > .dmAddress .dmCode {
+    font-weight: bold;
+    margin-top: 12pt;
+    margin-bottom: 6pt;
+}
+.identAndStatusSection > .dmAddress *:before {
+    color: #808080;
+    font-weight: bold;
+    margin-right: 1em;
+}
+.identAndStatusSection .identExtension {
+    display: block;
+    text-align: right;
+}
+
+.externalPubTitle {
+    font-weight: bold;
+}
+
+.dmStatus {
+    display: none;
+}
+
+.dmStatus .security {
+  font-weight: bold;
+}
+.brexDmRef,
+.qualityAssurance,
+.systemBreakdownCode,
+.skillLevel,
+.reasonForUpdate,
+.dmStatus .techStandard,
+.dmStatus .applic,
+.dmStatus .applicCrossRefTableRef,
+.dmStatus .functionalItemRef,
+.dmStatus .remarks,
+.dmStatus .security,
+.dmStatus .responsiblePartnerCompany,
+.dmStatus .originator {
+  text-align: right;
+  display: block;
+  min-height: 1em;
+}
+.brexDmRef,
+.qualityAssurance,
+.systemBreakdownCode,
+.skillLevel,
+.reasonForUpdate,
+.dmStatus .techStandard,
+.dmStatus .applic,
+.dmStatus .applicCrossRefTableRef,
+.dmStatus .functionalItemRef,
+.dmStatus .remarks {
+  margin-top: 6pt;
+}
+
+.dataRestrictions {
+  font-family: monospace;
+  font-size: 9pt;
+}
+.restrictionInstructions {
+  margin-left: 20pt;
+}
+.dataHandling:before,
+.dataDestruction:before,
+.dataDisclosure:before,
+.dataDistribution:before,
+.copyright:before,
+.exportControl:before {
+  display: block;
+  margin-top: 6pt;
+  margin-bottom: 6pt;
+  min-height: 1em;
+}
+.dataRestrictions:before,
+.dataHandling,
+.dataDisclosure,
+.dataDestruction,
+.dataDistribution,
+.dataConds,
+.policyStatement,
+.supersedure,
+.copyright,
+.exportControl {
+	margin-top: 2pt;
+	margin-bottom: 6pt;
+	text-align: left;
+}
+.restrictionInfo {
+  margin-left: 20pt;
+  margin-top: 12pt;
+}
+
+.referencedApplicGroup {
+}
+
+.taskDefinition {
+}
+
+.dmAddress .dmTitle > * {
+    text-align: center;
+}
+
+.dmAddress .techName,
+.centerhead1 {
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 27pt;
+    margin-bottom: 17pt;
+}
+
+.mainProcedure,
+.isolationMainProcedure {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.mainProcedure > .link,
+.isolationMainProcedure > .link {
+    margin-top: 27pt;
+    position: inherit;
+}
+
+.mainProcedure:before,
+.content > .description:before,
+.maintPlanning:before,
+.isolationMainProcedure:before,
+.descrCrew:before,
+.crewRefCard:before,
+.commonRepository:before,
+.faultReporting:before,
+.detectionInfo:before,
+.content > .refs:before,
+.preliminaryRqmts:before,
+.closeRqmts:before,
+.dmAddress .infoName,
+.dmAddress .infoNameVariant,
+.centerhead2,
+.productCrossRefTable:before,
+.applicCrossRefTable:before {
+    display: block;
+    font-size: 14pt;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin-top: 27pt;
+    margin-bottom: 17pt;
+    min-height: 1em;
+}
+
+.dmAddress .infoName + .infoNameVariant {
+    margin-top: 0;
+}
+
+.productionMaintData:before,
+.reqCondGroup:before,
+.reqSupportEquips:before,
+.reqSupplies:before,
+.reqTechInfoGroup:before, 
+.reqSpares:before, 
+.reqSafety:before, 
+.reqPersons:before, 
+.cautionRepository:before,
+.toolRepository:before,
+.controlIndicatorRepository:before,
+.functionalPhysicalAreaRepository:before,
+.warningRepository:before,
+.zoneRepository:before,
+.partRepository:before,
+.functionalItemRepository:before,
+.workAreaLocationGroup:before,
+.sidehead0 {
+    display: block;
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 27pt;
+    margin-bottom: 17pt;
+    min-height: 1em;
+}
+
+.level1 > .title,
+.sidehead1 {
+    display: block;
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 27pt;
+    margin-bottom: 7pt;
+    min-height: 1em;
+}
+
+.level2 > .title,
+.sidehead2 {
+    display: block;
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: left;
+    min-height: 1em;
+}
+
+.level3 > .title,
+.sidehead3 {
+    display: block;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: left;
+    min-height: 1em;
+}
+
+.level4 > .title,
+.sidehead4 {
+    display: block;
+    font-size: 10pt;
+    text-align: left;
+    min-height: 1em;
+}
+
+.level5 > .title,
+.sidehead5 {
+    display: block;
+    font-size: 10pt;
+    font-style: italic;
+    text-align: left;
+    min-height: 1em;
+}
+
+.levelledPara,
+.proceduralStep,
+.commonInfoDescrPara,
+.isolationStep,
+.isolationStepQuestion,
+.choice,
+.yesAnswer,
+.noAnswer,
+.isolationProcedureEnd {
+    padding-left: 55pt;
+    position: relative;
+}
+
+.levelledPara > .levelledPara,
+.proceduralStep > .proceduralStep,
+.commonInfoDescrPara > .commonInfoDescrPara {
+    margin-left: -55pt;
+}
+
+.level1 {
+    counter-increment: counter1;
+    counter-reset: counter2 counter3 counter4 counter5 counter6 counter7 counter8;
+}
+.level2 {
+    counter-increment: counter2;
+    counter-reset: counter3 counter4 counter5 counter6 counter7 counter8;
+}
+.level3 {
+    counter-increment: counter3;
+    counter-reset: counter4 counter5 counter6 counter7 counter8;
+}
+.level4 {
+    counter-increment: counter4;
+    counter-reset: counter5 counter6 counter7 counter8;
+}
+.level5 {
+    counter-increment: counter5;
+    counter-reset: counter6 counter7 counter8;
+}
+.level6 {
+    counter-increment: counter6;
+    counter-reset: counter7 counter8;
+}
+.level7 {
+    counter-increment: counter7;
+    counter-reset: counter8;
+}
+.level8 {
+    counter-increment: counter8;
+}
+
+.level1 > *:first-child:before,
+.level2 > *:first-child:before,
+.level3 > *:first-child:before,
+.level4 > *:first-child:before,
+.level5 > *:first-child:before,
+.level6 > *:first-child:before,
+.level7 > *:first-child:before,
+.level8 > *:first-child:before {
+    position: absolute;
+    margin-left: -55pt;
+}
+
+.level1 > *:first-child:before {
+    content: counter(counter1);
+}
+.level2 > *:first-child:before {
+    content: counter(counter1) "." counter(counter2);
+}
+.level3 > *:first-child:before {
+    content: counter(counter1) "." counter(counter2) "." counter(counter3);
+}
+.level4 > *:first-child:before {
+    content: counter(counter1) "." counter(counter2) "." counter(counter3) "." counter(counter4);
+}
+.level5 > *:first-child:before {
+    content: counter(counter1) "." counter(counter2) "." counter(counter3) "." counter(counter4) "." counter(counter5);
+}
+.level6 > *:first-child:before {
+    content: counter(counter1) "." counter(counter2) "." counter(counter3) "." counter(counter4) "." counter(counter5) "." counter(counter6);
+}
+.level7 > *:first-child:before {
+    content: counter(counter1) "." counter(counter2) "." counter(counter3) "." counter(counter4) "." counter(counter5) "." counter(counter6) "." counter(counter7);
+}
+.level8 > *:first-child:before {
+    content: counter(counter1) "." counter(counter2) "." counter(counter3) "." counter(counter4) "." counter(counter5) "." counter(counter6) "." counter(counter7) "." counter(counter8);
+}
+
+/* Caption */
+.caption {
+  display: inline-block;
+}
+td > .caption {
+  padding: .3em;
+  min-height: 1em;
+  vertical-align: middle;
+}
+td > .caption > .caption-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+.captionLine {
+    white-space: nowrap;
+    display: block;
+}
+/* caption inline */
+.caption[data-color='co00'] {
+  color: white;
+}
+.caption[data-color='co01'] {
+  color: green;
+}
+.caption[data-color='co02'] {
+  color: #FFA500;
+}
+.caption[data-color='co03'] {
+  color: #FFD700;
+}
+.caption[data-color='co04'] {
+  color: red;
+}
+.caption[data-color='co07'] {
+  color: white;
+}
+.caption[data-color='co08'] {
+  color: gray;
+}
+.caption[data-color='co09'] {
+  color: none;
+}
+.caption[data-color='co10'] {
+  color: black;
+}
+.caption[data-color='co51'] {
+  color: #3C6BFB;
+}
+
+/* captionGroup */
+td > .caption[data-color='co00'] {
+  background-color: white;
+  color: black;
+}
+td > .caption[data-color='co01'] {
+  background-color: green;
+  color: black;
+}
+td > .caption[data-color='co02'] {
+  background-color: #FFA500;
+  color: black;
+}
+td > .caption[data-color='co03'] {
+  background-color: #FFD700;
+  color: black;
+}
+td > .caption[data-color='co04'] {
+  background-color: red;
+  color: black;
+}
+td > .caption[data-color='co07'] {
+  background-color: white;
+  color: black;
+}
+td > .caption[data-color='co08'] {
+  background-color: gray;
+  color: black;
+}
+td > .caption[data-color='co09'] {
+  background-color: clear;
+  color: black;
+}
+td > .caption[data-color='co10'] {
+  background-color: black;
+  color: white;
+}
+td > .caption[data-color='co51'] {
+  background-color: #3C6BFB;
+  color: black;
+}
+
+/* Warning, Caution, Notes */
+
+.warning,
+.caution,
+.note {
+    display: block;
+    min-height: 1em;
+}
+.warning, 
+.caution {
+    font-weight: bold;
+    text-align: center;
+}
+.warning > * {
+    text-align: left;
+}
+.warning:before,
+.caution:before {
+    display: block;
+    font-size: 12pt;
+    line-height: 1;
+    width: max-content;
+    margin: 0 auto;
+}
+.warning:before {
+    text-decoration: none;
+    border-bottom: 2px solid;
+}
+.note {
+    padding-left: 7mm;
+}
+.note:before {
+    text-align: left;
+    font-weight: bold;
+    display: block;
+    margin-left: -7mm;
+    min-height: 1em;
+}
+
+/* References */
+
+.multimedia > .title,
+.figure > .title {
+    display: none;
+}
+
+.multimedia,
+.figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8pt;
+    margin-bottom: 8pt;
+    font-style: italic;
+    counter-increment: figure;
+    counter-reset: sheet;
+    min-height: 1em;
+}
+
+.multimediaObject,
+.graphic {
+    display: block;
+    margin-top: 4pt;
+    counter-increment: sheet;
+    min-height: 1em;
+}
+
+/* Toggle elements styles (bold, italic, underline) */
+
+.emphasis {
+  font-weight: bold;
+}
+.emphasis.em01 {
+  font-weight: bold;
+}
+.emphasis.em02
+{
+  font-weight: normal;
+  font-style: italic;
+}
+.emphasis.em03 {
+  font-weight: normal;
+  text-decoration: underline;
+}
+.emphasis.em04 {
+  font-weight: normal;
+  text-decoration: overline;
+}
+.emphasis.em05 {
+  font-weight: normal;
+  text-decoration: line-through;
+}
+
+.subScript {
+  vertical-align: sub;
+  font-size: 80%;
+}
+.superScript {
+  vertical-align: super;
+  font-size: 80%;
+}
+
+/* Paragraphs */
+.p,
+.action {
+    display: block;
+	margin-bottom: 8pt;
+	margin-top: 8pt;
+	text-indent: 0;
+	text-align: left;
+    min-height: 1em;
+}
+
+.isolationProcedureEnd:after {
+    display: block;
+    font-weight: bold;
+}
+
+/* Lists */
+ul {
+	display: block;
+	margin-bottom: 8pt;
+	margin-top: 8pt;
+	text-align: left;
+	padding-left: 9mm;
+    min-height: 1em;
+}
+ol {
+	display: block;
+	margin-bottom: 8pt;
+	margin-top: 8pt;
+	text-align: left;
+	padding-left: 9mm;
+    min-height: 1em;
+}
+li {
+	display: block;
+	margin-bottom: 0pt;
+	margin-top: 0pt;
+	text-align: left;
+	font-style: normal;
+    min-height: 1em;
+}
+li {
+	text-indent: -9mm;
+}
+li .note {
+	margin-left: 9mm;
+    text-indent: 0;
+	padding-left: 0;
+}
+ol > li {
+	margin-bottom: 8pt;
+}
+li > .p:first-child {
+	display: inline;
+}
+ol {
+    counter-reset: seq1;
+}
+ol ol {
+    counter-reset: seq2;
+}
+ol > li {
+    counter-increment: seq1;
+}
+ol ol > li {
+    counter-increment: seq2;
+}
+li:before {
+	display: inline-block;
+	text-indent: 0;
+	width: 7mm;
+}
+ol > li:before {
+	content: counter(seq1);
+}
+ol ol > li:before {
+	content: counter(seq1) "." counter(seq2);
+}
+ul.pf01 > li:before { content: ""; }
+ul.pf03 > li:before { content: "\2010"; }
+ul.pf04 > li:before { content: "\229A"; }
+ul.pf05 > li:before { content: "\25CB"; }
+ul.pf06 > li:before { content: "\25A1"; }
+
+.warning ul > li:before,
+.caution ul > li:before,
+ul.pf07 > li:before         { content: "\25CF";	font-weight: normal; }
+
+ul > li:before,
+ul.pf02 > li:before         { content: "\25CF"; }
+
+ol ul > li:before,
+ul ul > li:before,
+ol ul.pf02 > li:before,
+ul ul.pf02 > li:before      { content: "\25CF"; }
+
+ol ul ul > li:before,
+ul ul ul > li:before,
+ol ul ul.pf02 > li:before,
+ul ul ul.pf02 > li:before   { content: "\2010"; }
+
+/* Definition List */
+.definitionList {
+    display: block;
+    margin-top: 8pt;
+    min-height: 1em;
+}
+dt {
+    width: 50mm;
+    float: left;
+}
+dd {
+    margin-left: 50mm;
+}
+
+/* Lists headings styles */
+ol > .title, 
+ul > .title {
+	text-align: left;
+	font-weight: bold;
+	margin-bottom: 4pt;
+	padding-left: 0;
+	margin-left: -9mm;
+	text-indent: 0;
+}
+.content > .refs > .tabular:before,
+.reqCondGroup > .tabular:before,
+.reqPersons > .tabular:before,
+.reqSupportEquips > .tabular:before,
+.reqSupplies > .tabular:before,
+.reqSpares > .tabular:before,
+.table-contents > .title,
+.definitionList > .title {
+	text-align: left;
+	font-weight: normal;
+	font-style: italic;
+	margin-bottom: 4pt;
+	padding-left: 0;
+	margin-left: 0;
+	text-indent: 0;
+}
+.termTitle,
+.definitionTitle {
+    display: block;
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: left;
+    min-height: 1em;
+}
+.termTitle {
+    width: 50mm;
+    float: left;
+}
+.definitionTitle {
+    margin-left: 50mm;
+}
+
+/* Tables */
+.content > .refs,
+.reqCondGroup,
+.reqPersons,
+.reqSupportEquips,
+.reqSupplies,
+.reqSpares {
+  counter-increment: table;
+}
+.table {
+    display: block;
+    margin-top: 12pt;
+    counter-increment: table;
+    min-height: 1em;
+}
+.table table {
+    width: 100%;
+}
+.table tr {
+}
+.table td,
+.table th {
+    padding: 0pt 4pt; 
+}
+
+th[align='left'],
+td[align='left'],
+th[align='left'] .p, 
+td[align='left'] .p {
+    text-align: left;
+}
+th[align='center'],
+td[align='center'],
+th[align='center'] .p, 
+td[align='center'] .p {
+    text-align: center;
+}
+th[align='right'],
+td[align='right'],
+th[align='right'] .p, 
+td[align='right'] .p {
+    text-align: right;
+}
+th[align='justify'],
+td[align='justify'],
+th[align='justify'] .p, 
+td[align='justify'] .p {
+    text-align: justify;
+}
+
+/* Preliminary requirements */
+.productionMaintData,
+.reqCondGroup,
+.reqSupportEquips,
+.reqSupplies,
+.reqSpares,
+.reqPersons,
+.reqSafety {
+    display: block;
+    min-height: 1em;
+}
+
+.productionMaintData > *,
+.reqCondGroup > *,
+.reqSupportEquips > *,
+.reqSupplies > *,
+.reqSpares > *,
+.reqPersons > *,
+.reqSafety > * {
+    margin-left: 55pt;
+}
+
+.embeddedSupportEquipDescr > *:first-child,
+.embeddedSupplyDescr > *:first-child,
+.embeddedSpareDescr > *:first-child {
+    padding-left: 22pt;
+}
+
+.workAreaLocationGroup {
+    margin-top: 6pt;
+}
+.workAreaLocationGroup * {
+    display: inline-block;
+}
+
+.workAreaLocationGroup .zoneRef:before,
+.workAreaLocationGroup .accessPointRef:before {
+    font-weight: bold;
+    display: inline-block;
+    width: 110pt;
+}
+
+.workAreaLocationGroup .zoneRef + .zoneRef,
+.workAreaLocationGroup .accessPointRef + .accessPointRef {
+    display: block;
+    min-height: 1em;
+}
+
+.personSkill .skillLevel {
+    text-align: left;
+}
+
+/* Tabular data */
+.content > .refs > .tabular:before,
+.reqCondGroup > .tabular:before,
+.reqPersons > .tabular:before,
+.reqSupportEquips > .tabular:before,
+.reqSupplies > .tabular:before,
+.reqSpares > .tabular:before {
+    text-align: center;
+    display: table-caption;
+}
+
+.tabular {
+    display: table;
+    margin-left: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-bottom: .5pt solid black;
+    width: 100%;
+}
+.tabular > * {
+    display: table-row !important;
+}
+.noSupportEquips:before,
+.noSupplies:before,
+.noSpares:before,
+.noConds:before,
+.tabular > * > * {
+    display: table-cell !important;
+    padding: 4pt;
+}
+
+/* taskDuration */
+
+.taskDuration {
+    display: block;
+    padding-left: 55pt;
+    min-height: 1em;
+}
+.taskDuration:before {
+    margin-left: -55pt;
+}
+.taskDuration:after { 
+    white-space: pre;
+}
+
+.externalPubCode:before {
+    display: inline-block;
+    margin-right: .25em;
+}
+
+/* Tables heading */
+.table-contents > .title {
+    text-align: center;
+}
+
+/* Tabular headers */
+.header > * {
+    font-weight: bold;
+    border-bottom: .5pt solid black;
+    border-top: .5pt solid black;
+}
+
+/* Autocontent heading */
+.dmAddress .language:before, 
+.dmAddress .language:before, 
+.dmAddress .issueInfo:before, 
+.dmAddress .issueDate:before, 
+.dmStatus .responsiblePartnerCompany:before, 
+.dmStatus .originator:before, 
+.applicCrossRefTableRef:before, 
+.dmStatus > .applic:before, 
+.techStandard:before, 
+.brexDmRef:before, 
+.firstVerification:before, 
+.secondVerification:before, 
+.unverified:before, 
+.systemBreakdownCode:before, 
+.skillLevel:before, 
+.reasonForUpdate:before, 
+.supplyDescr:before, 
+.spareDescr:before, 
+.supportEquipDescr:before, 
+.embeddedSupplyDescr:before, 
+.embeddedSupportEquipDescr:before, 
+.embeddedSpareDescr:before, 
+.condCrossRefTableRef:before, 
+.productCrossRefTableRef:before, 
+.if > .caseCond:before, 
+.elseIf > .caseCond:before, 
+.challenge:after, 
+.dataRestrictions:before, 
+.dataDistribution:before, 
+.exportControl:before, 
+.dataHandling:before, 
+.dataDestruction:before, 
+.dataDisclosure:before, 
+.copyright:before, 
+.frontMatter .responsiblePartnerCompany:before, 
+.frontMatter .enterpriseSpec:before, 
+.timeLimitInfo *:before, 
+.isolationStep:before, 
+.parameter:before,
+.hotspot:before,
+.isolationProcedureEnd:before,
+.identAndStatusSection .identExtension:before {
+	font-weight: bold;
+	color: #444444;
+}
+
+/* Inlines */
+
+.enterpriseName,
+.identExtension,
+.dmCode,
+.language,
+.issueInfo,
+.issueDate,
+.security,
+.exportRegistrationStmt,
+.subScript,
+.superScript,
+.dmRef,
+.dmRefIdent,
+.dmRefAddressItems,
+.behavior,
+.functionalItemRef,
+.refs > .dmRef .dmRefIdent,
+.refs > .dmRef .dmRefIdent > *,
+.refs > .dmRef .dmRefAddressItems,
+.refs > .dmRef .dmRefAddressItems > *,
+.refs .techName,
+.refs .infoName,
+.refs .infoNameVariant,
+.pmRef,
+.pmRefIdent,
+.pmCode,
+.pmRefAddressItems,
+.pubMedia,
+.externalPubRef,
+.externalPubRefIdent,
+.externalPubCode,
+.externalPubTitle,
+.indexFlag,
+.acronym,
+.acronymTerm,
+.verbatimText,
+.externalPubIssue,
+.externalPubRefAddressItems,
+.circuitBreakerRef,
+.controlIndicatorRef,
+.inlineSignificantData,
+.quantity,
+.fullNatoStockNumber,
+.zoneRef,
+.accessPointRef,
+.partNumber,
+.serialNumber,
+.internalRef,
+.changeInline,
+.symbol,
+.footnoteRef,
+.spanspec,
+.enumeration,
+.catalogSeqNumberRef,
+.partRef,
+.installationLocation,
+.productItem,
+.noConds,
+.reqCond,
+.variableRef,
+.globalPropertyRef,
+.booleanOperator,
+.numberOperator,
+.setOperator,
+.stringOperator,
+.booleanFunction,
+.numberFunction,
+.setFunction,
+.stringFunction,
+.trueValue,
+.falseValue,
+.noValue,
+.tabular .reqCondDm,
+.tabular .reqCondDm > *,
+.personCategory,
+.personSkill,
+.trade,
+.estimatedTime,
+.toolRef,
+.materialSetRef,
+.noSupportEquips,
+.noSupplies,
+.supplyRef,
+.supplyRqmtRef,
+.noSpares,
+.noSafety,
+.threshold,
+.thresholdValue,
+.tolerance,
+.enterpriseRef,
+.buyerFurnishedEquipFlag,
+.sparePartClass,
+.partUsage,
+.unitOfIssueQualificationSegment,
+.quantityPerUnit,
+.hazardousClass,
+.enterpriseIdent,
+.enterpriseIdentAlt,
+.workArea,
+.limit,
+.limit > *,
+.sampling,
+.inspectionType,
+.trigger,
+.limitRange,
+.limitRangeFrom,
+.cautionIdent,
+.functionalPhysicalAreaIdent,
+.warningIdent,
+.zoneIdent,
+.partIdent,
+.functionalItemIdent,
+.applic *,
+.identNumber,
+.identNumber > * {
+    display: inline;
+}
+
+/* Blocks */
+.supportEquipDescr > * > *,
+.supplyDescr > * > *,
+.spareDescr > * > *,
+.embeddedSupportEquipDescr > * > *,
+.embeddedSpareDescr > * > *,
+.blockchild > * {
+    display: block !important;
+}
+
+.learning {
+    display: block;
+}
+
+.learningPlan,
+.learningOverview,
+.learningContent,
+.learningSummary,
+.learningAssessment,
+.lcProject,
+.lcPerformanceAnalysis,
+.lcCauseAnalysis,
+.lcInterventionDefinition,
+.lcOrganizationalAnalysis,
+.lcGapAnalysis,
+.lcClient,
+.lcLearningPlan,
+.lcCourseIdentNumber,
+.lcModificationDate,
+.lcDeliveryDate,
+.lcPlanSubject,
+.lcVisionStatement,
+.lcMissionStatement,
+.lcValues,
+.lcGoalStatement,
+.lcObjectiveStatement,
+.lcGapItem,
+.lcDesiredPerformanceStatement,
+.lcActualPerformanceStatement,
+.lcPlanObjective,
+.lcJtaItem,
+.lcGapStatement,
+.lcOrganizationalEnvironmentAnalysis,
+.lcWorkEnvironmentAnalysis,
+.lcPhysicalAspectsOfSite,
+.lcSocialAspectsOfSite,
+.lcPerformerAnalysis,
+.lcJobTitle,
+.lcJobCode,
+.lcEducationLevel,
+.lcAge,
+.lcProfessionalBackground,
+.lcKnowledge,
+.lcSkills,
+.lcAbilities,
+.lcAttitude,
+.lcEnvironmentalFactor,
+.lcData,
+.lcResources,
+.lcIncentives,
+.lcInternalFactor,
+.lcCapacity,
+.lcMotives,
+.lcNonTrainingInterventions,
+.lcPerformanceSupport,
+.lcJobDesign,
+.lcPersonalDevelopment,
+.lcHumanResourceDevelopment,
+.lcOrganizationalCommunication,
+.lcOrganizationalDesign,
+.lcTrainingInterventions,
+.lcTargetAudience,
+.lcCurrentEntryBehaviors,
+.lcAttitudeTowardContent,
+.lcLearningPreferences,
+.lcPrerequisites,
+.lcRequiredEntryBehaviors,
+.lcTrainingComponent,
+.lcTrainingType,
+.lcLearningStrategy,
+.lcTime,
+.lcRequiredFinances,
+.lcRequiredPersonnel,
+.lcRequiredFacilities,
+.lcRequiredEquipment,
+.lcLocalCultureConsiderations,
+.lcAssessmentStrategy,
+.lcAssessmentComponent,
+.lcMasteryScoreCriteria,
+.lcPerformanceRubric,
+.lcScoringMethod,
+.lcMinimumPassThreshold,
+.lcTechnicalRqmts,
+.lcBrowsers,
+.lcLms,
+.lcNonLmsEnvironment,
+.lcPaperBasedMaterials,
+.lcClassroom,
+.lcOjt,
+.lcAccessibility,
+.lcPlayers,
+.lcGraphicStandards,
+.lcViewers,
+.lcResolution,
+.lcFileSizeLimitations,
+.lcDownloadTime,
+.lcSecurity,
+.lcLearningObjectives,
+.lcObjectiveItem,
+.lcInterventionImplementation,
+.lcPerformanceEvaluation,
+.lcFormativeEvaluation,
+.lcSummativeEvaluation,
+.lcImmediatePerformanceCompetence,
+.lcJobTransfer,
+.lcOrganizationalImpact,
+.lcSection,
+.lcIntro,
+.lcInteraction,
+.lcSummary,
+.lcQuestion,
+.lcAnswerOption,
+.lcSequenceOption,
+.lcFeedbackItem,
+.lcAsset,
+.lcSequence,
+.lcReview,
+.lcNextSteps {
+    display: block;
+}
+
+.lcClient:before,
+.lcLearningPlan:before,
+.lcCourseIdentNumber:before,
+.lcModificationDate:before,
+.lcDeliveryDate:before,
+.lcPlanSubject:before,
+.lcVisionStatement:before,
+.lcMissionStatement:before,
+.lcValues:before,
+.lcGoalStatement:before,
+.lcObjectiveStatement:before,
+.lcDesiredPerformanceStatement:before,
+.lcActualPerformanceStatement:before,
+.lcPlanObjective:before,
+.lcJtaItem:before,
+.lcGapStatement:before,
+.lcManagerialSupport:before,
+.lcPhysicalAspectsOfSite:before,
+.lcSocialAspectsOfSite:before,
+.lcSpecialFactors:before,
+.lcJobTitle:before,
+.lcJobCode:before,
+.lcEducationLevel:before,
+.lcAge:before,
+.lcProfessionalBackground:before,
+.lcKnowledge:before,
+.lcSkills:before,
+.lcAbilities:before,
+.lcAttitude:before,
+.lcData:before,
+.lcResources:before,
+.lcIncentives:before,
+.lcCapacity:before,
+.lcMotives:before,
+.lcPerformanceSupport:before,
+.lcJobDesign:before,
+.lcPersonalDevelopment:before,
+.lcHumanResourceDevelopment:before,
+.lcOrganizationalCommunication:before,
+.lcOrganizationalDesign:before,
+.lcCurrentEntryBehaviors:before,
+.lcAttitudeTowardContent:before,
+.lcLearningPreferences:before,
+.lcTrainingType:before,
+.lcLearningStrategy:before,
+.lcDuration:before,
+.lcTime:before,
+.lcRequiredFinances:before,
+.lcRequiredPersonnel:before,
+.lcRequiredFacilities:before,
+.lcRequiredEquipment:before,
+.lcLocalCultureConsiderations:before,
+.lcMasteryScoreCriteria:before,
+.lcPerformanceRubric:before,
+.lcScoringMethod:before,
+.lcMinimumPassThreshold:before,
+.lcBrowsers:before,
+.lcLms:before,
+.lcNonLmsEnvironment:before,
+.lcPaperBasedMaterials:before,
+.lcClassroom:before,
+.lcOjt:before,
+.lcAccessibility:before,
+.lcPlayers:before,
+.lcGraphicStandards:before,
+.lcViewers:before,
+.lcResolution:before,
+.lcFileSizeLimitations:before,
+.lcDownloadTime:before,
+.lcSecurity:before,
+.lcObjectiveItem:before,
+.lcImmediatePerformanceCompetence:before,
+.lcJobTransfer:before,
+.lcOrganizationalImpact:before,
+.lcQuestion:before,
+.lcAnswerOption:before,
+.lcSequenceOption:before,
+.lcFeedbackItem:before,
+.lcAsset:before {
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+    color: #808080;
+}
+
+.lcCorrectResponse:before,
+.lcSequence:before {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: black;
+}
+
+
+/* Centerhead 2 */
+
+.learningPlan:before,
+.learningOverview:before,
+.learningContent:before,
+.learningSummary:before,
+.learningAssessment:before {
+    display: block;
+    font-style: italic;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-top: 16pt;
+    margin-bottom: 11pt;
+}
+
+
+/* Sidehead 1 */
+
+.lcProject:before,
+.lcPerformanceAnalysis:before,
+.lcCauseAnalysis:before,
+.lcInterventionDefinition:before,
+.lcInstruction:before,
+.lcInterventionImplementation:before,
+.lcPerformanceEvaluation:before {
+    display: block;
+    font-size: 1.4em;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 12pt;
+    margin-bottom: 12pt;
+}
+
+
+/* Sidehead 2 */
+
+.lcOrganizationalAnalysis:before,
+.lcGapAnalysis:before,
+.lcOrganizationalEnvironmentAnalysis:before,
+.lcWorkEnvironmentAnalysis:before,
+.lcPerformerAnalysis:before,
+.lcEnvironmentalFactor:before,
+.lcInternalFactor:before,
+.lcNonTrainingInterventions:before,
+.lcTrainingInterventions:before,
+.lcLearningObjectives:before,
+.lcFormativeEvaluation:before,
+.lcSummativeEvaluation:before,
+.lcAudience:before,
+.learningOverview>.lcDuration:before,
+.learningOverview>.lcResources:before,
+.learningSummary>.lcResources:before,
+.lcSection:before,
+.lcIntro:before,
+.learningAssessment>.lcDuration:before,
+.lcInteraction:before,
+.lcSummary:before,
+.lcReview:before,
+.lcNextSteps:before {
+    display: block;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.2em;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 12pt;
+    margin-bottom: 6pt;
+    color: black;
+}
+
+
+/* Sidehead 3 */
+
+.lcGapItem:before,
+.lcTargetAudience:before,
+.lcPrerequisites:before,
+.lcRequiredEntryBehaviors:before,
+.lcTrainingComponent:before,
+.lcAssessmentStrategy:before,
+.lcTechnicalRqmts:before,
+.lcEntryBehavior:before {
+    display: block;
+    text-align: left;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 6pt;
+    margin-bottom: 1pt;
+}
+
+
+/* Sidehead 4 */
+
+.lcAssessmentComponent {
+    display: block;
+    text-align: left;
+    font-size: 1em;
+    font-weight: normal;
+    margin-top: 6pt;
+    margin-bottom: 1pt;
+}
+
+.lcProject>*,
+.lcPerformanceAnalysis>*,
+.lcCauseAnalysis>*,
+.lcInterventionDefinition>*,
+.lcOrganizationalAnalysis>*,
+.lcGapAnalysis>*,
+.lcGapItem>*,
+.lcWorkEnvironmentAnalysis>*,
+.lcPerformerAnalysis>*,
+.lcEnvironmentalFactor>*,
+.lcInternalFactor>*,
+.lcNonTrainingInterventions>*,
+.lcTrainingInterventions>*,
+.lcTargetAudience>*,
+.lcTrainingComponent>*,
+.lcAssessmentComponent>*,
+.lcTechnicalRqmts>*,
+.lcLearningObjectives>*,
+.lcObjectiveItem>*,
+.lcPerformanceEvaluation>*,
+.lcSummativeEvaluation>*,
+.lcAudience>*,
+.lcDuration>*,
+.lcResources>*,
+.lcSection>*,
+.lcQuestion>*,
+.lcSummary>*,
+.lcReview>*,
+.lcNextSteps>*,
+.lcAnswerOption>*,
+.lcSequenceOption>*,
+.lcFeedbackItem>* {
+    display: block;
+    margin-left: 20pt;
+}
+
+.lcFeedbackItem[feedbackStatus="fbCorrect"]:before {
+    color: green;
+}
+
+.lcFeedbackItem[feedbackStatus="fbIncorrect"]:before {
+    color: red;
+}
+
+.lcMatchTable {
+    display: table;
+}
+
+.lcMatchingHeader,
+.lcMatchingPair {
+    display: table-row;
+}
+
+.lcMatchingHeader {
+    font-weight: bold;
+    background-color: #d3d3d3;
+}
+
+.lcMatchingPair>.lcItem,
+.lcMatchingPair>.lcMatchingItem,
+.lcMatchingHeader>.lcItem,
+.lcMatchingHeader>.lcMatchingItem {
+    display: table-cell;
+}
+
+.lcSequenceOption {
+    border: 1px solid black;
+  }
+  
+.select {
+    background-color: aquamarine;
+}
+
+.tabular.lcAnswerOptionGroup,
+.tabular.lcSequenceOptionGroup,
+.tabular.lcMatchTable {
+    table-layout: fixed;
+}
+
+.tabular.lcAnswerOptionGroup .control {
+    width: 50px;
+}
+
+.tabular.lcMatchTable > * > * {
+    width: 50%;
+}
+
+.slideControl {
+    text-align: right;
+}
+
+.correct {
+    background-color: #90EE90;
+}
+.wrong {
+    background-color: #FFCCCC;
+}
+.slide.hide {
+    display: none;
+}
+.slide.show {
+    display: block;
+}
+
+/* acronyms */
+
+.acronym {
+    display: inline-block;
+}
+
+.acronymTerm {
+    cursor: pointer;
+    border-bottom: 1px dashed #000;
+}
+
+.acronymDefinition {
+    display: none;
+}
+.footnote {
+  cursor: pointer;
+  vertical-align: super;
+  font-size: 80%;
+}
+.footnoteBody {
+  display: none;
+}
+
+.verbatimText {
+    font-size: 0.9em;
+    white-space: pre;
+    font-family: monospace;
+}
+.identExtension:after {
+    content: attr(data-extensionproducer) "-" attr(data-extensioncode);
+}
+
+.controlAuthority {
+    display: flex;
+    align-items: center;
+}
+
+.controlAuthority:after {
+    content: attr(data-controlauthorityvalue);
+    font-weight: bold;
+}
+
+.controlAuthority[data-controlauthoritytype='cat01']:after {
+    content: var(--label-controlAuthorityType-cat01) " " attr(data-controlauthorityvalue);
+}
+
+.controlAuthority[data-controlauthoritytype='cat13']:after {
+    content: attr(data-controlauthoritysource);
+}
+
+.controlAuthority .symbol {
+    max-height: 1em;
+    margin-right: 2em;
+}
+
+.hotspot {
+    display: none !important;
+}

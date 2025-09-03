@@ -1,0 +1,84 @@
+.action {
+    padding: 1em;
+    border: 1px solid black;
+    margin-bottom: 1em;
+    min-height: 2em;
+    max-height: 50%;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.action-container {
+    flex-flow: row wrap;
+    flex-shrink: 0;
+    margin-top: 1em;
+    justify-content: space-between;
+}
+
+.action-container > *,
+.action-container .skin-container > .skin-control {
+    margin-right: .5em;
+}
+
+.action-container .skin-control {
+    border-color: lightgray;
+}
+
+.action-container > .left {
+    order: -1;
+} 
+.action-container > .right {
+    order: 1;
+}
+
+.action-container.keep-together {
+    justify-content: inherit;
+    align-items: center;
+}
+
+.action a.linkbtn {
+    padding: .2em;
+    text-decoration: none;
+    color: blue;
+}
+
+.action a.linkbtn:hover {
+    text-decoration: underline;
+}
+
+.action a.linkbtn:visited {
+    color: blue;
+}
+
+.action .active {
+    background-color: lightskyblue;
+    font-weight: bold;
+}
+
+.action .action-help {
+    color: darkcyan;
+    margin-bottom: 1em;
+}
+
+.action .descr {
+    margin-bottom: 1em;
+}
+
+.action .prompt {
+    margin-bottom: .5em;
+}
+
+.radio-container {
+    flex-direction: column;
+}
+
+.radio-container label {
+    font-weight: normal;
+    margin-top: .5em;
+    display: flex;
+}
+
+.skin-holder .radio-container label > * {
+    margin-left: 0;
+    margin-right: 0.5em;
+}

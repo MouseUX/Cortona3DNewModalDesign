@@ -1,0 +1,1309 @@
+.doc-container,
+.procedure-alert {
+  /* TABLES */
+  /* FIG */
+  /* DL */
+  /* OL, UL */
+  /*!
+ * This file is part of the DITA Open Toolkit project. 
+ *
+ * Copyright 2004, 2005 IBM Corporation
+ *
+ * See the accompanying LICENSE file for applicable license.
+ */
+  /* Align images based on @align on topic/image */
+  /* Set heading sizes, getting smaller for deeper nesting */
+  /* Most link groups are created with <div>. Ensure they have space before and after. */
+  /* Simple lists do not get a bullet */
+  /* Default of bold for definition list terms */
+  /* Use CSS to expand lists with @compact="no" */
+  /* All note formats have the same default presentation */
+  /* Various basic phrase styles */
+  /* Add space for top level topics */
+  /* div with class=p is used for paragraphs that contain blocks, to keep the XHTML valid */
+  /* FIX: RT-9666 */
+  /* flagging styles */
+}
+.doc-container .caution,
+.procedure-alert .caution,
+.doc-container .warning,
+.procedure-alert .warning,
+.doc-container .danger,
+.procedure-alert .danger {
+  font-weight: bold;
+}
+.doc-container .cautiontitle,
+.procedure-alert .cautiontitle,
+.doc-container .warningtitle,
+.procedure-alert .warningtitle,
+.doc-container .noticetitle,
+.procedure-alert .noticetitle,
+.doc-container .troubletitle,
+.procedure-alert .troubletitle {
+  font-weight: bold;
+}
+.doc-container .caution,
+.procedure-alert .caution,
+.doc-container .warning,
+.procedure-alert .warning {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.doc-container .notice,
+.procedure-alert .notice,
+.doc-container .trouble,
+.procedure-alert .trouble {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.doc-container [data-class~='topic/fig'],
+.procedure-alert [data-class~='topic/fig'],
+.doc-container [data-class~='topic/table'],
+.procedure-alert [data-class~='topic/table'] {
+  margin: 2em 0;
+}
+.doc-container [data-class~='topic/topic'],
+.procedure-alert [data-class~='topic/topic'] {
+  margin: 1em;
+}
+.doc-container [data-class~='task/step'],
+.procedure-alert [data-class~='task/step'],
+.doc-container [data-class~='task/substep'],
+.procedure-alert [data-class~='task/substep'] {
+  margin-top: 0.23em;
+  padding: 0.33em;
+}
+.doc-container [data-class~='task/task'].play-context,
+.procedure-alert [data-class~='task/task'].play-context {
+  border: none;
+}
+.doc-container [data-class~='task/task'].play-context [data-class~='task/taskbody'],
+.procedure-alert [data-class~='task/task'].play-context [data-class~='task/taskbody'] {
+  border-left: 0.5em solid #add8e6;
+}
+.doc-container [data-class~='topic/table'] > caption,
+.procedure-alert [data-class~='topic/table'] > caption {
+  margin-bottom: 0.75em;
+}
+.doc-container .figcap,
+.procedure-alert .figcap {
+  display: block;
+}
+.doc-container [data-class~='topic/table'] > thead,
+.procedure-alert [data-class~='topic/table'] > thead,
+.doc-container [data-class~="topic/simpletable"] > thead,
+.procedure-alert [data-class~="topic/simpletable"] > thead {
+  background-color: #e5e5e5;
+}
+.doc-container [data-class~='topic/fig'],
+.procedure-alert [data-class~='topic/fig'] {
+  padding: 0.75em;
+}
+.doc-container [data-class~='topic/image'][data-placement='break'],
+.procedure-alert [data-class~='topic/image'][data-placement='break'] {
+  display: inline-block;
+  max-width: 100%;
+}
+.doc-container [data-class~="hazard-d/hazardstatement"] [data-class~="topic/image"],
+.procedure-alert [data-class~="hazard-d/hazardstatement"] [data-class~="topic/image"] {
+  max-width: initial;
+  width: 64px;
+  height: auto;
+}
+.doc-container [data-class~="hazard-d/hazardstatement"],
+.procedure-alert [data-class~="hazard-d/hazardstatement"] {
+  width: 100%;
+}
+.doc-container [data-class~="hazard-d/hazardstatement"] tr td:first-child,
+.procedure-alert [data-class~="hazard-d/hazardstatement"] tr td:first-child {
+  width: 0;
+}
+.doc-container [data-class~="hazard-d/hazardstatement"] tr td:first-child svg,
+.procedure-alert [data-class~="hazard-d/hazardstatement"] tr td:first-child svg {
+  visibility: hidden;
+  width: 64px;
+  height: auto;
+}
+.doc-container [data-class~="topic/div"],
+.procedure-alert [data-class~="topic/div"] {
+  display: block;
+}
+.doc-container [data-class~='topic/table'],
+.procedure-alert [data-class~='topic/table'],
+.doc-container [data-class~="topic/simpletable"],
+.procedure-alert [data-class~="topic/simpletable"] {
+  border: solid 1px;
+}
+.doc-container [data-class~='topic/table'] > thead,
+.procedure-alert [data-class~='topic/table'] > thead,
+.doc-container [data-class~='topic/table'] > tbody,
+.procedure-alert [data-class~='topic/table'] > tbody,
+.doc-container [data-class~="topic/simpletable"] > thead,
+.procedure-alert [data-class~="topic/simpletable"] > thead {
+  border-top: solid 1px;
+}
+.doc-container [data-class~='topic/table'].frame-top > tbody,
+.procedure-alert [data-class~='topic/table'].frame-top > tbody,
+.doc-container .frame-topbot > tbody,
+.procedure-alert .frame-topbot > tbody,
+.doc-container .frame-all > tbody,
+.procedure-alert .frame-all > tbody,
+.doc-container .frame-top > thead,
+.procedure-alert .frame-top > thead,
+.doc-container .frame-topbot > thead,
+.procedure-alert .frame-topbot > thead,
+.doc-container .frame-all > thead,
+.procedure-alert .frame-all > thead {
+  border-top: solid 1px;
+}
+.doc-container .frame-sides > tbody,
+.procedure-alert .frame-sides > tbody,
+.doc-container .frame-bottom > tbody,
+.procedure-alert .frame-bottom > tbody,
+.doc-container .frame-none > tbody,
+.procedure-alert .frame-none > tbody,
+.doc-container .frame-sides > thead,
+.procedure-alert .frame-sides > thead,
+.doc-container .frame-bottom > thead,
+.procedure-alert .frame-bottom > thead,
+.doc-container .frame-none > thead,
+.procedure-alert .frame-none > thead {
+  border-top: 0;
+}
+.doc-container .frame-none [data-class~='topic/stentry'],
+.procedure-alert .frame-none [data-class~='topic/stentry'],
+.doc-container .frame-top [data-class~='topic/stentry'],
+.procedure-alert .frame-top [data-class~='topic/stentry'],
+.doc-container .frame-bottom [data-class~='topic/stentry'],
+.procedure-alert .frame-bottom [data-class~='topic/stentry'],
+.doc-container .frame-sides [data-class~='topic/stentry'],
+.procedure-alert .frame-sides [data-class~='topic/stentry'] {
+  border-bottom: 0;
+}
+.doc-container .frame-none [data-class~='topic/stentry'],
+.procedure-alert .frame-none [data-class~='topic/stentry'],
+.doc-container .frame-top [data-class~='topic/stentry'],
+.procedure-alert .frame-top [data-class~='topic/stentry'],
+.doc-container .frame-bottom [data-class~='topic/stentry'],
+.procedure-alert .frame-bottom [data-class~='topic/stentry'],
+.doc-container .frame-topbot [data-class~='topic/stentry'],
+.procedure-alert .frame-topbot [data-class~='topic/stentry'] {
+  border-right: 0;
+}
+.doc-container [data-class~='topic/entry'],
+.procedure-alert [data-class~='topic/entry'],
+.doc-container [data-class~='topic/stentry'],
+.procedure-alert [data-class~='topic/stentry'] {
+  padding: 4px;
+  text-align: left;
+}
+.doc-container [data-class~='topic/simpletable'] > thead th,
+.procedure-alert [data-class~='topic/simpletable'] > thead th {
+  vertical-align: top;
+}
+.doc-container [data-class~='topic/table'] > thead th,
+.procedure-alert [data-class~='topic/table'] > thead th {
+  vertical-align: bottom;
+}
+.doc-container [data-class~='topic/table'] > thead th.valign-top,
+.procedure-alert [data-class~='topic/table'] > thead th.valign-top {
+  vertical-align: top;
+}
+.doc-container [data-class~='topic/table'] > thead th.valign-bottom,
+.procedure-alert [data-class~='topic/table'] > thead th.valign-bottom {
+  vertical-align: bottom;
+}
+.doc-container [data-class~='topic/table'] > thead th.valign-middle,
+.procedure-alert [data-class~='topic/table'] > thead th.valign-middle {
+  vertical-align: middle;
+}
+.doc-container [data-class~='topic/fig'].figborder,
+.procedure-alert [data-class~='topic/fig'].figborder {
+  border: 2px solid Silver;
+}
+.doc-container [data-class~='topic/fig'].figsides,
+.procedure-alert [data-class~='topic/fig'].figsides {
+  border-left: 2px solid Silver;
+  border-right: 2px solid Silver;
+}
+.doc-container [data-class~='topic/fig'].figtop,
+.procedure-alert [data-class~='topic/fig'].figtop {
+  border-top: 2px solid Silver;
+}
+.doc-container [data-class~='topic/fig'].figbottom,
+.procedure-alert [data-class~='topic/fig'].figbottom {
+  border-width: 2px;
+  border-bottom: 2px solid Silver;
+}
+.doc-container [data-class~='topic/fig'].figtopbot,
+.procedure-alert [data-class~='topic/fig'].figtopbot {
+  border-bottom: 2px solid Silver;
+  border-top: 2px solid Silver;
+}
+.doc-container div.dl,
+.procedure-alert div.dl,
+.doc-container div[data-class~='topic/dl'],
+.procedure-alert div[data-class~='topic/dl'] {
+  display: table;
+}
+.doc-container div.dlhead,
+.procedure-alert div.dlhead,
+.doc-container div[data-class~='topic/dlhead'],
+.procedure-alert div[data-class~='topic/dlhead'] {
+  display: table-row;
+}
+.doc-container div.dtentry,
+.procedure-alert div.dtentry,
+.doc-container div.ddentry,
+.procedure-alert div.ddentry {
+  display: table-cell;
+}
+.doc-container div.dtentry,
+.procedure-alert div.dtentry {
+  padding-right: 1em;
+}
+.doc-container div.dlentry,
+.procedure-alert div.dlentry,
+.doc-container div[data-class~='topic/dlentry'],
+.procedure-alert div[data-class~='topic/dlentry'] {
+  display: table-row;
+}
+.doc-container [data-class~='topic/ol'],
+.procedure-alert [data-class~='topic/ol'],
+.doc-container [data-class~='topic/ul'],
+.procedure-alert [data-class~='topic/ul'] {
+  padding-inline-start: 2em;
+  line-height: normal;
+}
+.doc-container [data-class~="learningBase/fig"],
+.procedure-alert [data-class~="learningBase/fig"] {
+  padding: 0;
+  margin: 0;
+}
+.doc-container [data-class~="learningBase/learningBasebody"] [data-class~="learningBase/fig"] > [data-class~="topic/title"],
+.procedure-alert [data-class~="learningBase/learningBasebody"] [data-class~="learningBase/fig"] > [data-class~="topic/title"],
+.doc-container [data-class~="learningInteractionBase-d/lcInteractionBase"] > [data-class~="topic/title"],
+.procedure-alert [data-class~="learningInteractionBase-d/lcInteractionBase"] > [data-class~="topic/title"],
+.doc-container [data-class~="learningInteractionBase2-d/lcInteractionBase2"] > [data-class~="learningInteractionBase2-d/lcInteractionLabel2"],
+.procedure-alert [data-class~="learningInteractionBase2-d/lcInteractionBase2"] > [data-class~="learningInteractionBase2-d/lcInteractionLabel2"],
+.doc-container .questionBlockTitle,
+.procedure-alert .questionBlockTitle {
+  font-size: 110%;
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-align: left;
+  font-weight: bold;
+  font-style: normal;
+}
+.doc-container [data-class~="learningBase/learningBasebody"] [data-class~="learningBase/fig"] > [data-class~="topic/title"]:before,
+.procedure-alert [data-class~="learningBase/learningBasebody"] [data-class~="learningBase/fig"] > [data-class~="topic/title"]:before,
+.doc-container [data-class~="learningInteractionBase-d/lcInteractionBase"] > [data-class~="topic/title"]:before,
+.procedure-alert [data-class~="learningInteractionBase-d/lcInteractionBase"] > [data-class~="topic/title"]:before {
+  content: "";
+}
+.doc-container [data-class~="learningInteractionBase2-d/lcInteractionBase2"],
+.procedure-alert [data-class~="learningInteractionBase2-d/lcInteractionBase2"] {
+  display: block;
+  padding-left: 1em;
+}
+.doc-container .assessmentQuestion,
+.procedure-alert .assessmentQuestion {
+  padding: 0.75em;
+}
+.doc-container .tabular,
+.procedure-alert .tabular {
+  display: table;
+  margin-left: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  width: 100%;
+}
+.doc-container .tabular.lcMatchTable,
+.procedure-alert .tabular.lcMatchTable,
+.doc-container .tabular.lcSequenceOptionGroup,
+.procedure-alert .tabular.lcSequenceOptionGroup {
+  border-bottom: 0.5pt solid black;
+}
+.doc-container .tabular > *,
+.procedure-alert .tabular > * {
+  display: table-row !important;
+}
+.doc-container .tabular > * > *,
+.procedure-alert .tabular > * > * {
+  display: table-cell !important;
+  padding: 4pt;
+}
+.doc-container .learning,
+.procedure-alert .learning {
+  display: block;
+}
+.doc-container .lcQuestion,
+.procedure-alert .lcQuestion,
+.doc-container .lcAnswerOption,
+.procedure-alert .lcAnswerOption,
+.doc-container .lcSequenceOption,
+.procedure-alert .lcSequenceOption,
+.doc-container .lcFeedbackItem,
+.procedure-alert .lcFeedbackItem,
+.doc-container .lcAsset,
+.procedure-alert .lcAsset,
+.doc-container .lcSequence,
+.procedure-alert .lcSequence {
+  display: block;
+}
+.doc-container .lcQuestion:before,
+.procedure-alert .lcQuestion:before,
+.doc-container .lcAnswerOption:before,
+.procedure-alert .lcAnswerOption:before,
+.doc-container .lcSequenceOption:before,
+.procedure-alert .lcSequenceOption:before,
+.doc-container .lcFeedbackItem:before,
+.procedure-alert .lcFeedbackItem:before,
+.doc-container .lcAsset:before,
+.procedure-alert .lcAsset:before {
+  display: block;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+  margin-top: 6pt;
+  margin-bottom: 6pt;
+  color: #808080;
+}
+.doc-container .lcCorrectResponse:before,
+.procedure-alert .lcCorrectResponse:before,
+.doc-container .lcSequence:before,
+.procedure-alert .lcSequence:before {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: black;
+}
+.doc-container .lcQuestion > *,
+.procedure-alert .lcQuestion > *,
+.doc-container .lcAnswerOption > *,
+.procedure-alert .lcAnswerOption > *,
+.doc-container .lcSequenceOption > *,
+.procedure-alert .lcSequenceOption > *,
+.doc-container .lcFeedbackItem > *,
+.procedure-alert .lcFeedbackItem > * {
+  display: block;
+  margin-left: 20pt;
+}
+.doc-container .lcMatchTable,
+.procedure-alert .lcMatchTable {
+  display: table;
+}
+.doc-container .lcMatchingHeader,
+.procedure-alert .lcMatchingHeader,
+.doc-container .lcMatchingPair,
+.procedure-alert .lcMatchingPair {
+  display: table-row;
+}
+.doc-container .lcMatchingHeader,
+.procedure-alert .lcMatchingHeader {
+  font-weight: bold;
+  background-color: #d3d3d3;
+}
+.doc-container .lcMatchingPair > .lcItem,
+.procedure-alert .lcMatchingPair > .lcItem,
+.doc-container .lcMatchingPair > .lcMatchingItem,
+.procedure-alert .lcMatchingPair > .lcMatchingItem,
+.doc-container .lcMatchingHeader > .lcItem,
+.procedure-alert .lcMatchingHeader > .lcItem,
+.doc-container .lcMatchingHeader > .lcMatchingItem,
+.procedure-alert .lcMatchingHeader > .lcMatchingItem {
+  display: table-cell;
+}
+.doc-container .select,
+.procedure-alert .select {
+  background-color: aquamarine;
+}
+.doc-container .tabular.lcAnswerOptionGroup,
+.procedure-alert .tabular.lcAnswerOptionGroup,
+.doc-container .tabular.lcSequenceOptionGroup,
+.procedure-alert .tabular.lcSequenceOptionGroup,
+.doc-container .tabular.lcMatchTable,
+.procedure-alert .tabular.lcMatchTable {
+  table-layout: fixed;
+}
+.doc-container .tabular.lcAnswerOptionGroup .control,
+.procedure-alert .tabular.lcAnswerOptionGroup .control {
+  width: 50px;
+}
+.doc-container .tabular.lcMatchTable > * > *,
+.procedure-alert .tabular.lcMatchTable > * > * {
+  width: 50%;
+}
+.doc-container .slideControl,
+.procedure-alert .slideControl {
+  text-align: right;
+}
+.doc-container .correct,
+.procedure-alert .correct {
+  background-color: #90EE90;
+}
+.doc-container .wrong,
+.procedure-alert .wrong {
+  background-color: #FFCCCC;
+}
+.doc-container .slide.hide,
+.procedure-alert .slide.hide {
+  display: none;
+}
+.doc-container .slide.show,
+.procedure-alert .slide.show {
+  display: block;
+}
+.doc-container .notetitle > span,
+.procedure-alert .notetitle > span {
+  display: none;
+}
+.doc-container .note[data-type="other"] .notetitle > span,
+.procedure-alert .note[data-type="other"] .notetitle > span {
+  display: none;
+}
+.doc-container .note[data-type="other"][data-othertype] .notetitle:before,
+.procedure-alert .note[data-type="other"][data-othertype] .notetitle:before {
+  display: none;
+}
+.doc-container .note[data-type="other"][data-othertype] .notetitle > span,
+.procedure-alert .note[data-type="other"][data-othertype] .notetitle > span {
+  display: inline;
+}
+.doc-container .warningtitle > span,
+.procedure-alert .warningtitle > span {
+  display: none;
+}
+.doc-container .cautiontitle > span,
+.procedure-alert .cautiontitle > span {
+  display: none;
+}
+.doc-container .dangertitle > span,
+.procedure-alert .dangertitle > span {
+  display: none;
+}
+.doc-container .notestitle > span,
+.procedure-alert .notestitle > span {
+  display: none;
+}
+.doc-container .tiptitle > span,
+.procedure-alert .tiptitle > span {
+  display: none;
+}
+.doc-container .fastpathtitle > span,
+.procedure-alert .fastpathtitle > span {
+  display: none;
+}
+.doc-container .importanttitle > span,
+.procedure-alert .importanttitle > span {
+  display: none;
+}
+.doc-container .attentiontitle > span,
+.procedure-alert .attentiontitle > span {
+  display: none;
+}
+.doc-container .remembertitle > span,
+.procedure-alert .remembertitle > span {
+  display: none;
+}
+.doc-container .restrictiontitle > span,
+.procedure-alert .restrictiontitle > span {
+  display: none;
+}
+.doc-container .noticetitle > span,
+.procedure-alert .noticetitle > span {
+  display: none;
+}
+.doc-container .troubletitle > span,
+.procedure-alert .troubletitle > span {
+  display: none;
+}
+.doc-container video,
+.procedure-alert video,
+.doc-container audio,
+.procedure-alert audio {
+  margin: 0.5em;
+  display: inline-block;
+  max-width: 100%;
+}
+.doc-container a.object,
+.procedure-alert a.object,
+.doc-container a.image,
+.procedure-alert a.image {
+  align-items: baseline;
+  display: inline-flex;
+}
+.doc-container a.image.embed,
+.procedure-alert a.image.embed {
+  display: inline;
+}
+.doc-container .fig a.object,
+.procedure-alert .fig a.object,
+.doc-container .fig a.image,
+.procedure-alert .fig a.image {
+  align-items: center;
+}
+.doc-container .fig .object,
+.procedure-alert .fig .object {
+  margin-top: 1em;
+}
+.doc-container a.image:before,
+.procedure-alert a.image:before,
+.doc-container a.object:before,
+.procedure-alert a.object:before {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-color: #FFFFFF;
+  flex: 0 0 32px;
+  margin-right: 0.5em;
+}
+.doc-container a.image:before,
+.procedure-alert a.image:before {
+  background-image: url(../../components/rococo/img/icon32-picture.png);
+}
+.doc-container a.image[data-ext='svg']:before,
+.procedure-alert a.image[data-ext='svg']:before,
+.doc-container a.image[data-ext='cgm']:before,
+.procedure-alert a.image[data-ext='cgm']:before {
+  background-image: url(../../components/rococo/img/icon32-vector.png);
+}
+.doc-container a.image.embed:before,
+.procedure-alert a.image.embed:before {
+  display: none;
+}
+.doc-container a.object:before,
+.procedure-alert a.object:before {
+  background-image: url(../../components/rococo/img/icon32-file-download.png);
+}
+.doc-container a.object[data-multimediatype='video']:before,
+.procedure-alert a.object[data-multimediatype='video']:before {
+  background-image: url(../../components/rococo/img/icon32-video.png);
+}
+.doc-container a.object[data-multimediatype='audio']:before,
+.procedure-alert a.object[data-multimediatype='audio']:before {
+  background-image: url(../../components/rococo/img/icon32-audio.png);
+}
+.doc-container a.object[data-link='link3d']:before,
+.procedure-alert a.object[data-link='link3d']:before,
+.doc-container a.object[data-multimediatype='model']:before,
+.procedure-alert a.object[data-multimediatype='model']:before,
+.doc-container a.object[data-ext='wrl']:before,
+.procedure-alert a.object[data-ext='wrl']:before,
+.doc-container a.object[data-ext='cortona3d']:before,
+.procedure-alert a.object[data-ext='cortona3d']:before,
+.doc-container a.object[data-ext='vmb']:before,
+.procedure-alert a.object[data-ext='vmb']:before,
+.doc-container a.object[data-ext='solo']:before,
+.procedure-alert a.object[data-ext='solo']:before {
+  background-image: url(../../components/rococo/img/icon32-3d-model.png);
+}
+.doc-container a.object[data-ext='pdf']:before,
+.procedure-alert a.object[data-ext='pdf']:before {
+  background-image: url(../../components/rococo/img/icon32-pdf-window.png);
+}
+.doc-container .image[placement="break"][align="left"],
+.procedure-alert .image[placement="break"][align="left"] {
+  align-self: left;
+}
+.doc-container .image[placement="break"][align="right"],
+.procedure-alert .image[placement="break"][align="right"] {
+  align-self: right;
+}
+.doc-container .image[placement="break"][align="center"],
+.procedure-alert .image[placement="break"][align="center"] {
+  align-self: center;
+}
+.doc-container .frame-top,
+.procedure-alert .frame-top {
+  border-top: solid 1px;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+}
+.doc-container .frame-bottom,
+.procedure-alert .frame-bottom {
+  border-top: 0;
+  border-right: 0;
+  border-bottom: solid 1px;
+  border-left: 0;
+}
+.doc-container .frame-topbot,
+.procedure-alert .frame-topbot {
+  border-top: solid 1px;
+  border-right: 0;
+  border-bottom: solid 1px;
+  border-left: 0;
+}
+.doc-container .frame-all,
+.procedure-alert .frame-all {
+  border: solid 1px;
+}
+.doc-container .frame-sides,
+.procedure-alert .frame-sides {
+  border-top: 0;
+  border-left: solid 1px;
+  border-right: solid 1px;
+  border-bottom: 0;
+}
+.doc-container .frame-none,
+.procedure-alert .frame-none {
+  border: 0;
+}
+.doc-container .scale-50,
+.procedure-alert .scale-50 {
+  font-size: 50%;
+}
+.doc-container .scale-60,
+.procedure-alert .scale-60 {
+  font-size: 60%;
+}
+.doc-container .scale-70,
+.procedure-alert .scale-70 {
+  font-size: 70%;
+}
+.doc-container .scale-80,
+.procedure-alert .scale-80 {
+  font-size: 80%;
+}
+.doc-container .scale-90,
+.procedure-alert .scale-90 {
+  font-size: 90%;
+}
+.doc-container .scale-100,
+.procedure-alert .scale-100 {
+  font-size: 100%;
+}
+.doc-container .scale-110,
+.procedure-alert .scale-110 {
+  font-size: 110%;
+}
+.doc-container .scale-120,
+.procedure-alert .scale-120 {
+  font-size: 120%;
+}
+.doc-container .scale-140,
+.procedure-alert .scale-140 {
+  font-size: 140%;
+}
+.doc-container .scale-160,
+.procedure-alert .scale-160 {
+  font-size: 160%;
+}
+.doc-container .scale-180,
+.procedure-alert .scale-180 {
+  font-size: 180%;
+}
+.doc-container .scale-200,
+.procedure-alert .scale-200 {
+  font-size: 200%;
+}
+.doc-container .expanse-page,
+.procedure-alert .expanse-page,
+.doc-container .expanse-spread,
+.procedure-alert .expanse-spread {
+  width: 100%;
+}
+.doc-container .hazardstatement td,
+.procedure-alert .hazardstatement td,
+.doc-container .hazardstatement th,
+.procedure-alert .hazardstatement th {
+  padding: 0.5rem;
+}
+.doc-container .hazardstatement th,
+.procedure-alert .hazardstatement th {
+  text-align: center;
+  text-transform: uppercase;
+}
+.doc-container .hazardstatement--caution,
+.procedure-alert .hazardstatement--caution {
+  background-color: #ffd100;
+}
+.doc-container .hazardstatement--danger,
+.procedure-alert .hazardstatement--danger {
+  background-color: #c8102e;
+  color: #fff;
+}
+.doc-container .hazardstatement--warning,
+.procedure-alert .hazardstatement--warning {
+  background-color: #ff8200;
+}
+.doc-container .hazardstatement--attention,
+.procedure-alert .hazardstatement--attention,
+.doc-container .hazardstatement--fastpath,
+.procedure-alert .hazardstatement--fastpath,
+.doc-container .hazardstatement--important,
+.procedure-alert .hazardstatement--important,
+.doc-container .hazardstatement--note,
+.procedure-alert .hazardstatement--note,
+.doc-container .hazardstatement--notice,
+.procedure-alert .hazardstatement--notice,
+.doc-container .hazardstatement--other,
+.procedure-alert .hazardstatement--other,
+.doc-container .hazardstatement--remember,
+.procedure-alert .hazardstatement--remember,
+.doc-container .hazardstatement--restriction,
+.procedure-alert .hazardstatement--restriction,
+.doc-container .hazardstatement--tip,
+.procedure-alert .hazardstatement--tip {
+  background-color: #0072ce;
+  color: #fff;
+  font-style: italic;
+}
+.doc-container .line-through,
+.procedure-alert .line-through {
+  text-decoration: line-through;
+}
+.doc-container .overline,
+.procedure-alert .overline {
+  text-decoration: overline;
+}
+.doc-container .codeblock,
+.procedure-alert .codeblock {
+  font-family: monospace;
+}
+.doc-container .syntaxdiagram,
+.procedure-alert .syntaxdiagram {
+  border: 1 black solid;
+  color: maroon;
+  display: block;
+  margin-bottom: 6pt;
+  padding: 2pt;
+}
+.doc-container .codeph,
+.procedure-alert .codeph {
+  font-family: monospace;
+}
+.doc-container .kwd,
+.procedure-alert .kwd {
+  font-weight: bold;
+}
+.doc-container .parmname,
+.procedure-alert .parmname {
+  font-weight: bold;
+}
+.doc-container .var,
+.procedure-alert .var {
+  font-style: italic;
+}
+.doc-container .filepath,
+.procedure-alert .filepath {
+  font-family: monospace;
+}
+.doc-container .tasklabel,
+.procedure-alert .tasklabel {
+  font-size: 100%;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.doc-container .lq div,
+.procedure-alert .lq div {
+  text-align: right;
+}
+.doc-container .boolean,
+.procedure-alert .boolean {
+  color: green;
+}
+.doc-container .state,
+.procedure-alert .state {
+  color: red;
+}
+.doc-container .screen,
+.procedure-alert .screen {
+  background-color: #ccc;
+  border: outset;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  padding: 5px;
+  white-space: pre;
+}
+.doc-container .wintitle,
+.procedure-alert .wintitle {
+  font-weight: bold;
+}
+.doc-container .numcharref,
+.procedure-alert .numcharref {
+  color: #639;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.doc-container .parameterentity,
+.procedure-alert .parameterentity {
+  color: #639;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.doc-container .textentity,
+.procedure-alert .textentity {
+  color: #639;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.doc-container .xmlatt,
+.procedure-alert .xmlatt {
+  color: #639;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.doc-container .xmlelement,
+.procedure-alert .xmlelement {
+  color: #639;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.doc-container .xmlnsname,
+.procedure-alert .xmlnsname {
+  color: #639;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.doc-container .xmlpi,
+.procedure-alert .xmlpi {
+  color: #639;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.doc-container .fig,
+.procedure-alert .fig {
+  /* Default of italics to set apart figure captions */
+  /* Use @frame to create frames on figures */
+}
+.doc-container .figcap,
+.procedure-alert .figcap {
+  font-style: italic;
+}
+.doc-container .figdesc,
+.procedure-alert .figdesc {
+  font-style: normal;
+}
+.doc-container .figborder,
+.procedure-alert .figborder {
+  border-color: Silver;
+  border-style: solid;
+  border-width: 2px;
+  margin-top: 1em;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.doc-container .figsides,
+.procedure-alert .figsides {
+  border-color: Silver;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  margin-top: 1em;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.doc-container .figtop,
+.procedure-alert .figtop {
+  border-color: Silver;
+  border-top: 2px solid;
+  margin-top: 1em;
+}
+.doc-container .figbottom,
+.procedure-alert .figbottom {
+  border-bottom: 2px solid;
+  border-color: Silver;
+}
+.doc-container .figtopbot,
+.procedure-alert .figtopbot {
+  border-bottom: 2px solid;
+  border-color: Silver;
+  border-top: 2px solid;
+  margin-top: 1em;
+}
+.doc-container div.imageleft,
+.procedure-alert div.imageleft {
+  text-align: left;
+}
+.doc-container div.imagecenter,
+.procedure-alert div.imagecenter {
+  text-align: center;
+}
+.doc-container div.imageright,
+.procedure-alert div.imageright {
+  text-align: right;
+}
+.doc-container div.imagejustify,
+.procedure-alert div.imagejustify {
+  text-align: justify;
+}
+.doc-container .topictitle1,
+.procedure-alert .topictitle1 {
+  font-size: 1.34em;
+  margin-bottom: 0.1em;
+  margin-top: 0;
+}
+.doc-container .topictitle2,
+.procedure-alert .topictitle2 {
+  font-size: 1.17em;
+  margin-bottom: 0.45em;
+  margin-top: 1pc;
+}
+.doc-container .topictitle3,
+.procedure-alert .topictitle3 {
+  font-size: 1.17em;
+  font-weight: bold;
+  margin-bottom: 0.17em;
+  margin-top: 1pc;
+}
+.doc-container .topictitle4,
+.procedure-alert .topictitle4 {
+  font-size: 1.17em;
+  font-weight: bold;
+  margin-top: 0.83em;
+}
+.doc-container .topictitle5,
+.procedure-alert .topictitle5 {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+.doc-container .topictitle6,
+.procedure-alert .topictitle6 {
+  font-size: 1.17em;
+  font-style: italic;
+}
+.doc-container .sectiontitle,
+.procedure-alert .sectiontitle {
+  color: #000;
+  font-size: 1.17em;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 1em;
+}
+.doc-container .section,
+.procedure-alert .section {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.doc-container .example,
+.procedure-alert .example {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.doc-container .indexterm,
+.procedure-alert .indexterm {
+  background-color: #fdf;
+  border: 1pt #000 solid;
+  margin: 1pt;
+}
+.doc-container .ullinks,
+.procedure-alert .ullinks {
+  list-style-type: none;
+}
+.doc-container .ulchildlink,
+.procedure-alert .ulchildlink {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.doc-container .olchildlink,
+.procedure-alert .olchildlink {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.doc-container .linklist,
+.procedure-alert .linklist {
+  margin-bottom: 1em;
+}
+.doc-container ul.linklist,
+.procedure-alert ul.linklist {
+  margin-top: 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+.doc-container li.linklist,
+.procedure-alert li.linklist {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.doc-container .linklistwithchild,
+.procedure-alert .linklistwithchild {
+  margin-bottom: 1em;
+  margin-left: 1.5em;
+}
+.doc-container .sublinklist,
+.procedure-alert .sublinklist {
+  margin-bottom: 1em;
+  margin-left: 1.5em;
+}
+.doc-container .relconcepts,
+.procedure-alert .relconcepts {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.doc-container .reltasks,
+.procedure-alert .reltasks {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.doc-container .relref,
+.procedure-alert .relref {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.doc-container .relinfo,
+.procedure-alert .relinfo {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.doc-container .breadcrumb,
+.procedure-alert .breadcrumb {
+  font-size: smaller;
+  margin-bottom: 1em;
+}
+.doc-container ul.simple,
+.procedure-alert ul.simple {
+  list-style-type: none;
+}
+.doc-container .dlterm,
+.procedure-alert .dlterm {
+  font-weight: bold;
+}
+.doc-container .dltermexpand,
+.procedure-alert .dltermexpand {
+  font-weight: bold;
+  margin-top: 1em;
+}
+.doc-container *[compact=yes] > li,
+.procedure-alert *[compact=yes] > li {
+  margin-top: 0;
+}
+.doc-container *[compact=no] > li,
+.procedure-alert *[compact=no] > li {
+  margin-top: 0.53em;
+}
+.doc-container .liexpand,
+.procedure-alert .liexpand {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.doc-container .sliexpand,
+.procedure-alert .sliexpand {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.doc-container .dlexpand,
+.procedure-alert .dlexpand {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.doc-container .ddexpand,
+.procedure-alert .ddexpand {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.doc-container .stepexpand,
+.procedure-alert .stepexpand {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.doc-container .substepexpand,
+.procedure-alert .substepexpand {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.doc-container dt.prereq,
+.procedure-alert dt.prereq {
+  margin-left: 20px;
+}
+.doc-container .note,
+.procedure-alert .note {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.doc-container .note .notetitle,
+.procedure-alert .note .notetitle,
+.doc-container .note .notelisttitle,
+.procedure-alert .note .notelisttitle,
+.doc-container .note .note__title,
+.procedure-alert .note .note__title {
+  font-weight: bold;
+}
+.doc-container .bold,
+.procedure-alert .bold {
+  font-weight: bold;
+}
+.doc-container .bolditalic,
+.procedure-alert .bolditalic {
+  font-style: italic;
+  font-weight: bold;
+}
+.doc-container .italic,
+.procedure-alert .italic {
+  font-style: italic;
+}
+.doc-container .underlined,
+.procedure-alert .underlined {
+  text-decoration: underline;
+}
+.doc-container .uicontrol,
+.procedure-alert .uicontrol {
+  font-weight: bold;
+}
+.doc-container .defkwd,
+.procedure-alert .defkwd {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.doc-container .shortcut,
+.procedure-alert .shortcut {
+  text-decoration: underline;
+}
+.doc-container .menucascade > abbr,
+.procedure-alert .menucascade > abbr {
+  text-decoration: none;
+}
+.doc-container table,
+.procedure-alert table {
+  border-collapse: collapse;
+}
+.doc-container table .desc,
+.procedure-alert table .desc {
+  display: block;
+  font-style: italic;
+}
+.doc-container .cellrowborder,
+.procedure-alert .cellrowborder {
+  border-bottom: solid 1px;
+  border-left: 0;
+  border-right: solid 1px;
+  border-top: 0;
+}
+.doc-container .row-nocellborder,
+.procedure-alert .row-nocellborder {
+  border-bottom: solid 1px;
+  border-left: 0;
+  border-top: 0;
+}
+.doc-container .cell-norowborder,
+.procedure-alert .cell-norowborder {
+  border-left: 0;
+  border-right: solid 1px;
+  border-top: 0;
+}
+.doc-container .nocellnorowborder,
+.procedure-alert .nocellnorowborder {
+  border: 0;
+}
+.doc-container .firstcol,
+.procedure-alert .firstcol {
+  font-weight: bold;
+}
+.doc-container .table--pgwide-1,
+.procedure-alert .table--pgwide-1 {
+  width: 100%;
+}
+.doc-container .align-left,
+.procedure-alert .align-left {
+  text-align: left;
+}
+.doc-container .align-right,
+.procedure-alert .align-right {
+  text-align: right;
+}
+.doc-container .align-center,
+.procedure-alert .align-center {
+  text-align: center;
+}
+.doc-container .align-justify,
+.procedure-alert .align-justify {
+  text-align: justify;
+}
+.doc-container .align-char,
+.procedure-alert .align-char {
+  text-align: char;
+}
+.doc-container .valign-top,
+.procedure-alert .valign-top {
+  vertical-align: top;
+}
+.doc-container .valign-bottom,
+.procedure-alert .valign-bottom {
+  vertical-align: bottom;
+}
+.doc-container .valign-middle,
+.procedure-alert .valign-middle {
+  vertical-align: middle;
+}
+.doc-container .colsep-0,
+.procedure-alert .colsep-0 {
+  border-right: 0;
+}
+.doc-container .colsep-1,
+.procedure-alert .colsep-1 {
+  border-right: 1px solid;
+}
+.doc-container .rowsep-0,
+.procedure-alert .rowsep-0 {
+  border-bottom: 0;
+}
+.doc-container .rowsep-1,
+.procedure-alert .rowsep-1 {
+  border-bottom: 1px solid;
+}
+.doc-container .entry.rotate,
+.procedure-alert .entry.rotate {
+  writing-mode: vertical-rl;
+}
+.doc-container .stentry,
+.procedure-alert .stentry {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+}
+.doc-container .stentry:last-child,
+.procedure-alert .stentry:last-child {
+  border-right: 0;
+}
+.doc-container .strow:last-child .stentry,
+.procedure-alert .strow:last-child .stentry {
+  border-bottom: 0;
+}
+.doc-container .nested0,
+.procedure-alert .nested0 {
+  margin-top: 1em;
+}
+.doc-container .p,
+.procedure-alert .p {
+  line-height: 1.2;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+.doc-container .flag__style--italics,
+.procedure-alert .flag__style--italics {
+  font-style: italic;
+}
+.doc-container .flag__style--bold,
+.procedure-alert .flag__style--bold {
+  font-weight: bold;
+}
+.doc-container .flag__style--underline,
+.procedure-alert .flag__style--underline {
+  text-decoration: underline;
+}
+.doc-container .flag__style--double-underline,
+.procedure-alert .flag__style--double-underline {
+  text-decoration: double-underline;
+}
+.doc-container .flag__style--overline,
+.procedure-alert .flag__style--overline {
+  text-decoration: overline;
+}
+.doc-container .hidden,
+.procedure-alert .hidden,
+.doc-container a.image.hidden,
+.procedure-alert a.image.hidden,
+.doc-container a.object.hidden,
+.procedure-alert a.object.hidden {
+  display: none;
+}
+.doc-container .break,
+.procedure-alert .break,
+.doc-container a.image.break,
+.procedure-alert a.image.break,
+.doc-container a.object.break,
+.procedure-alert a.object.break {
+  display: block;
+}
+.doc-container .center,
+.procedure-alert .center,
+.doc-container a.image.center,
+.procedure-alert a.image.center,
+.doc-container a.object.center,
+.procedure-alert a.object.center {
+  display: block;
+  text-align: center;
+}

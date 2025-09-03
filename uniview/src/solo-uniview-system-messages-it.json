@@ -1,0 +1,16 @@
+{
+  "loading": {
+    "loading": "Caricamento",
+    "initializing": "Inizializzazione",
+    "failed": "Errore durante il caricamento"
+  },
+  "msg001": "La pubblicazione è aperta in un browser web localmente e non tramite protocolli HTTP o HTTPS.",
+  "msg002": "Vedere l'articolo %s per le possibili cause e soluzioni.",
+  "msg003": "Versione incompatibile della libreria Cortona3D Solo. La versione deve essere %s o successiva.",
+  "msg004": "Errore durante il caricamento.",
+  "msg005": "Memoria insufficiente (%s MB) affinché il visualizzatore 3D possa caricare la pubblicazione. È necessario aumentare la quantità di memoria allocata per il visualizzatore 3D nell'opzione di pubblicazione Memoria del visualizzatore 3D (Strumenti &gt; Opzioni di pubblicazione) e pubblicare nuovamente il progetto.",
+  "msg006": "Per maggiori dettagli, vedere la console del browser.",
+  "msg007": "Questo browser non è più supportato. La funzionalità di pubblicazione potrebbe essere limitata.",
+  "msg008": "Questo browser non è supportato.",
+  "msg009": "Il file della Guida non è disponibile. Controllare la connessione con %s."
+}

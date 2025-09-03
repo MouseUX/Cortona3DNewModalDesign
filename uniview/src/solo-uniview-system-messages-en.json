@@ -1,0 +1,16 @@
+{
+    "loading": {
+        "loading": "Loading",
+        "initializing": "Initializing",
+        "failed": "Loading failed"
+    },
+    "msg001": "The publication is opened in a web browser locally, and not via HTTP or HTTPS protocols.",
+    "msg002": "See the %s article for possible causes and solutions.",
+    "msg003": "Incompatible version of the Cortona3D Solo library. The version must be %s and higher.",
+    "msg004": "Loading error.",
+    "msg005": "There is not enough memory (%s MB) for 3D Viewer to load the publication. You need to increase the amount of memory allocated for 3D viewer in the 3D Viewer Memory publishing option (Tools &gt; Publish Options) and re-publish the project.",
+    "msg006": "See the web browser console for more details.",
+    "msg007": "This browser is no longer supported. The functionality of the publication may be limited.",
+    "msg008": "This browser is not supported.",
+    "msg009": "The help file is not available. Check your connection with %s."
+}

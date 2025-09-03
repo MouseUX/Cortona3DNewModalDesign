@@ -1,0 +1,87 @@
+body {
+    overflow: hidden;
+}
+
+.skin-holder-app {
+    flex-flow: column;
+    font-size: 14px;
+}
+
+.skin-holder-app.layout-reverse .solo-uniview-content {
+    flex-flow: row-reverse;
+}
+
+.panel {
+    margin: .5em;
+    box-sizing: border-box;
+    flex: 1 1 50%;
+    position: relative;
+    border: 1px gray solid;
+    box-sizing: border-box;
+}
+
+.solo-uniview-content {
+    flex-flow: row;
+    display: flex;
+    flex: 1 0;
+}
+
+.cortona3dsolo-iframe-only .structure.panel,
+.cortona3dsolo-structure-only .iframe.panel {
+    display: none;
+}
+
+.structure.panel {
+    flex: 1 1 25%;
+}
+
+.iframe.panel {
+    flex: 1 1 75%;
+}
+
+.structure.panel,
+.iframe.panel {
+    border: none;
+    overflow: auto;
+    flex-grow: 1;
+}
+
+.loading .panel {
+    display: none;
+}
+
+/* Large desktops and laptops */
+
+@media (min-width: 1200px) {}
+
+/* Portrait tablets and medium desktops */
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/* Portrait tablets and small desktops */
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/* Landscape phones and portrait tablets */
+
+@media (max-width: 767px) {
+    .panel {
+        margin: .1em;
+    }
+}
+
+/* Landscape phones and smaller */
+
+@media (max-width: 480px) {}
+
+/* Portrait */
+
+@media (orientation: portrait) {
+    .solo-uniview-content {
+        flex-flow: column !important;
+    }
+
+    .panel {
+        flex-basis: 50% !important;
+    }
+}

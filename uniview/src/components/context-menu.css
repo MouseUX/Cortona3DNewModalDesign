@@ -1,0 +1,72 @@
+.skin-popup-menu {
+    border: 1px solid gray;
+    z-index: 100;
+    background-color: #FFF;
+    color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 2px 4px 28px rgba(0,0,0,0.25), 2px 4px 10px rgba(0,0,0,0.22);
+    font-size: 8pt;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.skin-popup-menu .li {
+    font-size: 1.05em;
+    padding: .5em 2em;
+    white-space: nowrap;
+}
+
+.skin-popup-menu .accent {
+    font-weight: bold;
+}
+
+.skin-popup-menu ul {
+    margin: .5em 0;
+    padding: 0;
+}
+
+.skin-popup-menu li {
+    list-style: none;
+    padding: .5em 2em;
+    white-space: nowrap;
+    font-weight: normal;
+    line-height: 1em;
+}
+
+.skin-popup-menu .checked:before {
+    content: "✓";
+    font-size: 1.5em;
+    display: inline-block;
+    margin-left: -1em;
+    width: 1em;
+}
+
+.skin-popup-menu .disabled, 
+.skin-popup-menu .disabled:hover {
+    color: #888;
+}
+    
+.skin-popup-menu li:hover,
+.skin-popup-menu .active {
+    background-color: #C8E8ff;
+    color: #000;
+    cursor: pointer;
+}
+
+.skin-popup-menu hr {
+    margin: .5em;
+    border: none;
+    border-top: 1px solid lightgray;
+}
+
+.skin-popup-menu a {
+    text-decoration: none;
+    color: #000;
+}
+
+.skin-popup-menu a:visited {
+    color: #000;
+}

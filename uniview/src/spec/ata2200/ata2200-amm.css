@@ -1,0 +1,618 @@
+/**
+  ata-cmm.css
+  26.10.2014 3:41:06
+ */
+
+ .trfmatr>.title,
+ .pgblk>.title {
+     font-size: 1.5em;
+ }
+
+ .intro>.title,
+ .sblist>.title,
+ .effxref>.title,
+ .chapter>.title,
+ .section>.title,
+ .subject>.title,
+ .task>.title,
+ .pbfmatr>.title,
+ .prclist1>li>.prcitem>.title {
+    font-size: 1.2em;
+}
+.headFootData,
+.graphicImg {
+    display: none;
+}
+
+.pgblk {
+    display: block;
+    margin-left: .3em;
+}
+
+.pgblk>.title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.task {
+    display: block;
+    margin: 1em 1em 1em 0.5em;
+    padding: .3em;
+}
+
+.Procedure {
+    margin-left: 1em;
+}
+
+.changed {
+    background-color: #E0E0E0;
+}
+
+.chgdesc {
+    display: none;
+}
+
+.title {
+    display: block;
+    margin: 1em 0;
+    font-weight: bold;
+}
+
+.task>.title {
+    text-align: left;
+    margin: 0;
+    padding: 1em 0;
+    text-decoration: underline;
+}
+
+.prclist1>li>.prcitem>.title,
+.task>.title {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.prclist1>li:before,
+.prclist2>li:before,
+.task>.title:before {
+    font-weight: bold;
+}
+li[data-notitle]:before {
+    font-weight: normal;
+}
+
+.topic>.title,
+.pretopic>.title,
+.prclist2>li>.prcitem>.title {
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.amtoss {
+    display: block;
+    position: relative;
+    background-color: #EEEEEE;
+    padding: .5em;
+}
+
+.task>.amtoss {
+    margin: 1em 0 1em -2.8em;
+}
+
+.subtask>.amtoss {
+}
+
+.subtask {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    padding: .3em;
+}
+
+.legalntc {
+    display: block;
+    margin: 6em;
+    font-size: 0.9em;
+}
+
+.cpyrght {
+    display: block;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+    text-indent: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+ol {
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+/*
+.pgblk {
+    counter-reset: item item1 item2 item3;
+}*/
+.pageBlock.pgblk[data-pgblknbr] {
+    counter-reset: graphic item1;
+}
+.pgblk {
+    counter-reset: none;
+}
+
+.task,
+.pbfmatr,
+ol.prclist1 {
+    counter-reset: item item2 item3;
+}
+
+.topic,
+.pretopic,
+ol.prclist2,
+.pbfmatr ol.list1 {
+    counter-reset: item3;
+}
+
+ol {
+    counter-reset: item;
+}
+
+.task,
+.pbfmatr,
+ol.prclist1>li {
+    counter-increment: item1;
+}
+
+.topic,
+.pretopic,
+.pbfmatr ol.list1>li,
+ol.prclist2>li {
+    counter-increment: item2;
+}
+
+.subtask ol.list1>li,
+.pretopic ol.list1>li,
+.pbfmatr ol.list2>li,
+ol.prclist3>li {
+    counter-increment: item3;
+}
+
+ol>li,
+.alert-message ol>li {
+    counter-increment: item;
+}
+
+.task,
+.pbfmatr,
+.topic,
+.pretopic,
+li {
+    padding-left: var(--left-indent);
+    text-indent: 0em;
+    margin-top: 1em;
+    display: list-item;
+    list-style: none;
+}
+
+.task>.title::before,
+.pbfmatr>.title::before,
+.topic>.title:before,
+.pretopic>.title:before,
+li:before {
+    position: relative;
+    width: var(--left-indent);
+    display: inline-block;
+    margin-left: var(--left-indent-reverse);
+}
+
+li>*:first-child,
+.prcitem>*:first-child {
+    display: inline;
+}
+
+ul.system>li:before,
+ul>li:before {
+    content: "•";
+}
+
+ul.none>li:before {
+    content: " ";
+}
+
+ul.bullet>li:before {
+    content: "•";
+}
+
+ul.ndash>li:before {
+    content: "–";
+}
+
+ul.mdash>li:before {
+    content: "—";
+}
+
+ul.diamond>li:before {
+    content: "♦";
+}
+
+ul.asterisk>li:before {
+    content: "*";
+}
+
+ul.delta>li:before {
+    content: "Δ";
+}
+
+ul.square>li:before {
+    content: "□";
+}
+
+/*
+  ATA Paragraphing and Outlining
+
+  1. prclist1, task, pbfmatr
+    A. prclist2, pretopic, topic, pbfmatr>list1
+      (1) prclist3, list1, pbfmatr>list2
+        (a) prclist4, list2, pbfmatr>list3
+          1. prclist5, list3, pbfmatr>list4
+            a. prclist6, list4, pbfmatr>list5
+              i prclist7, list5, pbfmatr>list6
+*/
+
+.task>.title:before,
+.pbfmatr>.title:before,
+ol.prclist1>li:before {
+    content: counter(item1) ".";
+}
+
+.topic>.title:before,
+.pretopic>.title:before,
+ol.prclist2>li:before,
+.pbfmatr ol.list1>li:before {
+    content: counter(item2, upper-alpha) ".";
+}
+
+.subtask ol.list1>li:before,
+.pretopic ol.list1>li:before,
+.pbfmatr ol.list2>li:before,
+ol.prclist3>li:before {
+    content: "(" counter(item3) ")";
+}
+
+ol.nnp>li:before,
+ol>li:before {
+    content: counter(item) ".";
+}
+
+ol.aup>li:before {
+    content: counter(item, upper-alpha) ".";
+}
+
+ol.nnb>li:before {
+    content: "(" counter(item) ")";
+}
+
+.subtask ol.list2>li:before,
+.pretopic ol.list2>li:before,
+.pbfmatr ol.list3>li:before,
+ol.prclist4>li:before,
+ol.alb>li:before {
+    content: "(" counter(item, lower-alpha) ")";
+}
+
+.subtask ol.list3>li:before,
+.pretopic ol.list3>li:before,
+.pbfmatr ol.list4>li:before,
+ol.prclist5>li:before,
+ol.nns>li:before {
+    content: counter(item);
+    text-decoration: underline;
+}
+
+.subtask ol.list4>li:before,
+.pretopic ol.list4>li:before,
+.pbfmatr ol.list5>li:before,
+ol.prclist6>li:before {
+    content: counter(item, lower-alpha) ".";
+}
+
+.subtask ol.list5>li:before,
+.pretopic ol.list5>li:before,
+.pbfmatr ol.list6>li:before,
+ol.prclist7>li:before {
+    content: counter(item, lower-roman);
+}
+
+.subtask ol.list6>li:before,
+.pretopic ol.list6>li:before,
+.pbfmatr ol.list7>li:before {
+    content: counter(item, upper-roman);
+}
+
+ol.rup>li:before {
+    content: counter(item, upper-roman) ".";
+}
+
+ol.rlp>li:before {
+    content: counter(item, lower-roman) ".";
+}
+
+ol.rur>li:before {
+    content: counter(item, upper-roman) ")";
+}
+
+ol.rlr>li:before {
+    content: counter(item, lower-roman) ")";
+}
+
+ol.nnr>li:before {
+    content: counter(item) ")";
+}
+
+ol.aur>li:before {
+    content: counter(item, upper-alpha) ")";
+}
+
+ol.alr>li:before {
+    content: counter(item, lower-alpha) ")";
+}
+
+.sub {
+    display: inline;
+    vertical-align: sub;
+    font-size: 75%;
+}
+
+.super {
+    display: inline;
+    vertical-align: super;
+    font-size: 75%;
+}
+
+.year+.year:before {
+    content: ", ";
+}
+
+.year+.holder:before {
+    content: " © ";
+}
+
+.holder+.holder:before {
+    content: ", ";
+}
+
+.section>h4 {
+    text-decoration: underline;
+}
+
+ol.list1>li>h4 {
+    text-decoration: underline;
+}
+
+div.table-contents {
+    margin-top: 1em;
+}
+
+div.table-contents h4 {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: .5em;
+}
+
+td p,
+th p {
+    margin: 0;
+}
+
+.warning {
+    display: block;
+    margin-top: 1em;
+    margin-left: var(--left-indent-warning);
+}
+
+.caution {
+    display: block;
+    margin-top: 1em;
+    margin-left: var(--left-indent-caution);
+}
+.note {
+    display: block;
+    margin-top: 1em;
+    margin-left: var(--left-indent-note);
+}
+
+.warning:before,
+.caution:before,
+.note:before {
+    float: left;
+    text-decoration: underline;
+}
+.warning:before {
+    width: var(--left-indent-warning);
+    margin-left: var(--left-indent-warning-reverse);
+    content: var(--label-warning) var(--label-ColonSymbol);
+}
+.caution:before {
+    width: var(--left-indent-caution);
+    margin-left: var(--left-indent-caution-reverse);
+    content: var(--label-caution) var(--label-ColonSymbol);
+}
+.note:before {
+    width: var(--left-indent-note);
+    margin-left: var(--left-indent-note-reverse);
+    content: var(--label-note) var(--label-ColonSymbol);
+}
+.amm[data-lang="RU"] .warning {
+    margin-left: var(--left-indent-warning-extend);
+}
+.amm[data-lang="RU"] .caution {
+    margin-left: var(--left-indent-caution-extend);
+}
+.amm[data-lang="RU"] .note {
+    margin-left: var(--left-indent-note-extend);
+}
+.amm[data-lang="RU"] .warning:before {
+    width: var(--left-indent-warning-extend);
+    margin-left: var(--left-indent-warning-extend-reverse);
+}
+.amm[data-lang="RU"] .caution:before {
+    width: var(--left-indent-caution-extend);
+    margin-left: var(--left-indent-caution-extend-reverse);
+}
+.amm[data-lang="RU"] .note:before {
+    width: var(--left-indent-note-extend);
+    margin-left: var(--left-indent-note-extend-reverse);
+}
+
+.warning > *:first-child,
+.caution > *:first-child,
+.note > *:first-child {
+    margin-top: 0;
+}
+.warning > *:first-child > li:first-child,
+.caution > *:first-child > li:first-child,
+.note > *:first-child > li:first-child {
+    margin-top: 0;
+}
+
+
+.graphic {
+    text-align: center;
+    display: block;
+    max-width: 100%;
+}
+
+
+/*
+img, object {
+  display:block;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+object, embed {
+  width: 100%;
+  height: 480px;
+}
+*/
+
+.sheet {
+    padding: 2px;
+    display: block;
+    margin-top: 1em;
+}
+
+.sptool *:before,
+.consume *:before {
+    content: " ";
+}
+
+.sptool *:first-child:before,
+.consume *:first-child:before {
+    content: "";
+}
+
+.kwd {
+    display: none;
+}
+
+li>.link3d {
+    margin-left: 0;
+    margin-right: .5em;
+}
+
+li>.link3d+* {
+    display: inline;
+}
+
+
+/********************************/
+
+.graphic>.title {
+    margin-top: 1.5em;
+}
+
+.note {
+    color: #216F02;
+    font-weight: bold;
+}
+
+.warning {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.caution {
+    color: #FF8800;
+    font-weight: bold;
+}
+
+th {
+    background-color: #EFEFEF;
+}
+
+a {
+    color: #000080;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000080;
+}
+
+a:hover {
+    color: #0000FF;
+    text-decoration: underline;
+}
+
+.trreason {
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+.ftnote {
+    display: block;
+    font-size: 0.85em;
+}
+
+.conname,
+.toolname,
+.std[title] .stdname {
+    display: none;
+}
+
+.con[title],
+.ted[title],
+.std[title] {
+    border-bottom: 1px dashed #000;
+    cursor: help;
+}
+
+.fullstmt>.title {
+    text-align: center;
+}
+
+.effect[data-efftext] {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.effect[data-efftext]:before {
+    content: "** ON " attr(data-efftext);
+    display: block;
+}

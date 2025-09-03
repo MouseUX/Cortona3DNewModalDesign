@@ -1,0 +1,22 @@
+:root {
+    --left-indent: 2rem;
+    --left-indent-reverse: -2rem;
+}
+
+:root {
+    --left-indent-warning: 6em;
+    --left-indent-caution: 6em;
+    --left-indent-note: 4em;
+
+    --left-indent-warning-reverse: -6em;
+    --left-indent-caution-reverse: -6em;
+    --left-indent-note-reverse: -4em;
+
+    --left-indent-warning-extend: 12em;
+    --left-indent-caution-extend: 8em;
+    --left-indent-note-extend: 8em;
+
+    --left-indent-warning-extend-reverse: -12em;
+    --left-indent-caution-extend-reverse: -8em;
+    --left-indent-note-extend-reverse: -8em;
+}

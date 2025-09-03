@@ -1,0 +1,67 @@
+.parts {
+    position: relative;
+}
+
+.parts .skin-tree-item .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: inherit;
+}
+
+.parts .skin-tree-item .content > .left {
+    flex-grow: 1;
+}
+
+.parts .content .group .skin-control {
+    margin-left: .5em;
+    border-color: lightgray;
+}
+
+.skin-tree-item:nth-child(odd) {
+    background-color: lightgrey;
+}
+
+.skin-tree-item > div > .content {
+    border: none;
+}
+
+.meta {
+    margin-top: .5em;
+    font-weight: bold;
+}
+
+.meta .value {
+    font-weight: normal;
+}
+
+.parts .skin-tree-item:hover,
+.parts .skin-tree-item.hover {
+    cursor: pointer;
+    background-color: blanchedalmond;
+}
+
+.parts .skin-tree-item .disabled {
+    color: gray;
+    pointer-events: none;
+}
+
+.parts .skin-tree-item .disabled button {
+    pointer-events: auto;
+}
+
+.parts .content .left {
+    align-items: center;
+}
+
+.parts .content .part-checkbox {
+    align-self: flex-start;
+    margin-right: 1em;
+    visibility: hidden;
+}
+
+.training-mode-1 .active .parts .content .part-checkbox, 
+.training-mode-2 .active .parts .content .part-checkbox {
+    visibility: visible;
+}

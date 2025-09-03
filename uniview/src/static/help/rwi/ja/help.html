@@ -1,0 +1,815 @@
+﻿<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>作業手順ユーザーインタフェース</title>
+
+    <style type="text/css">
+        body {
+            font-family: verdana;
+            font-size: 80%;
+            background-color: white;
+            color: black;
+            margin-top: 12pt;
+            margin-bottom: 10pt;
+            margin-left: 10pt;
+            margin-right: 10pt;
+        }
+
+        p {
+            font-family: verdana;
+            font-size: 100%;
+            color: black;
+            margin-top: 6pt;
+            margin-bottom: 6pt;
+            margin-left: 0pt;
+        }
+
+        li {
+            font-family: verdana;
+            font-size: 100%;
+            margin-left: 0pt;
+        }
+
+        td {
+            font-family: verdana;
+            font-size: 80%;
+            color: black;
+
+            background-color: whitesmoke;
+            margin: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border: solid 1px white;
+            vertical-align: top;
+        }
+
+        td.key {
+            background-color: gainsboro;
+            font-weight: bold;
+            vertical-align: top;
+        }
+
+        td.wht {
+            background-color: white;
+            margin: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            border: none;
+            vertical-align: top;
+        }
+
+        th {
+            font-family: verdana;
+            font-size: 80%;
+            color: black;
+            text-align: left;
+
+            background-color: gainsboro;
+            padding: 4px;
+            border: solid 1px white;
+        }
+
+        h1 {
+            font-family: verdana;
+            font-size: 130%;
+            font-weight: bold;
+            background-color: white;
+            color: #336699;
+            margin-bottom: 6pt;
+        }
+
+        h2 {
+            font-family: verdana;
+            font-size: 115%;
+            font-weight: bold;
+            background-color: white;
+            color: #336699;
+            margin-bottom: 6pt;
+            margin-top: 24pt;
+        }
+
+        h3 {
+            font-family: verdana;
+            font-size: 100%;
+            font-weight: bold;
+            background-color: white;
+            color: black;
+            margin-bottom: 3pt;
+        }
+
+        hr {
+            color: #336699;
+            height: 1px;
+        }
+
+        ul {
+            margin-top: 0pt;
+            margin-bottom: 6pt;
+            color: black;
+            list-style-type: disc;
+        }
+
+        a {
+            color: #1080FF;
+        }
+
+        a:visited {
+            color: saddlebrown;
+        }
+
+        a:hover {
+            color: darkorange;
+        }
+
+        .command {
+            padding: 4px;
+            color: #336699;
+            background-color: whitesmoke;
+            font-family: courier;
+        }
+
+        .hdbar {
+            margin-top: 32px;
+            margin-bottom: 0px;
+            width: 100%;
+            font-weight: bold;
+            background-color: #6699CC;
+            color: white;
+            padding: 2px;
+            padding-left: 4px;
+        }
+
+        div.note {
+            background-image: url(images/note1.png);
+            background-repeat: no-repeat;
+            background-color: white;
+            margin-top: 12pt;
+            margin-bottom: 0pt;
+            margin-left: 0pt;
+        }
+
+        div.table_note {
+            background-image: url(images/note2.png);
+            background-repeat: no-repeat;
+            background-color: #F5F5F5;
+            margin-top: 6pt;
+            margin-bottom: 0pt;
+            margin-left: 0pt;
+        }
+
+        div.fig_note {
+            font-size: 90%;
+            margin-top: 6pt;
+            margin-bottom: 6pt;
+            margin-left: 12pt;
+        }
+        
+        table {
+            font-size: medium;
+        }
+
+        img.btn {
+            margin: 2px 4px;
+            width: 16px;
+            height: 16px;
+        }
+
+        img.btn.inline {
+            margin: 0 2px 0 4px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>作業手順 &ndash; ユーザーインタフェース</h1>
+    <hr noshade>
+
+    <p>
+        対話型ドキュメントは、2つの異なるモードで使用することができます。
+
+        <h3>プレビューモード</h3>
+        <ul>
+            <li>プロシージャ全体が再生されます。</li>
+            <li>ユーザーはプロシージャの再生を制御することができます。</li>
+            <li>必須ではないので、<i>サインオフ</i> コマンドは使用できません。</li>
+        </ul>
+
+        <h3>ジョブモード</h3>
+        <ul>
+            <li>現在のタスクが再生されます。</li>
+            <li>現在のタスクの再生を制御することができます。</li>
+            <li><i>サインオフ</i> ボタンをクリックして、次のタスクに移動する必要があります。</li>
+        </ul>
+
+    </p>
+
+    <p>
+        対話型ドキュメントのユーザーインタフェースは、データウィンドウと3D/2Dウィンドウの2つのワークスペースで構成されています。各ワークスペースには、独自の制御要素があります。</p>
+    <p>
+        ヘルプを表示するには、対話型ドキュメントの右下にあるヘルプボタンをクリックします。
+    </p>
+
+    <table width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+            <td class="wht" width="130"><img src="images/Layout1.png" width="921" height="363" border="0"></td>
+        </tr>
+    </table>
+
+    <div class="hdbar">データウィンドウ</div>
+    <p>データウィンドウには、タイトル領域と、前提条件タブ、BOMタブ、リソースタブ、指示タブ、およびドキュメントタブが含まれます。</p>
+
+    <!-- Title Area -->
+    <h3>タイトル領域</h3>
+    <p>タイトル領域には、作業指示に関する一般情報が表示されます。例えば、ジョブコード、作業タイプ、予想される時間などです。
+    </p>
+
+    <!-- Prerequisite Tab -->
+    <h3>前提条件タブ</h3>
+    <p>前提条件タブには、テクニカルプロシージャを開始する前に満たす必要がある要件が記されています。対話型ドキュメントが最初に開かれたとき、タブはアクティブになっています。
+    </p>
+
+    <!-- BOM Tab -->
+    <h3>BOMタブ</h3>
+    <p>BOM(部品表)タブには、インデントされたパートリストが表示されます。各BOMレコードは、パート番号、説明、数量、および代替パート番号など、パートに関する情報を提供します。</p>
+
+    <p>BOMレコードをクリックすると、対応するアイテムが3Dウィンドウにフィットして強調表示されます。</p>
+    <p>BOMレコードの上にポインタを置くと、3Dウィンドウ内のレコードおよび対応するアイテムが強調表示されます。</p>
+    <p>プラス記号をクリックすると、階層が展開されます。</p>
+
+
+    <!-- Resources Tab -->
+    <h3>リソース タブ</h3>
+    <p>リソースタブには、テクニカルプロシージャを実行するために必要なリソースが記されています。
+    </p>
+
+    <!-- Instructions Tab -->
+    <h3>指示タブ</h3>
+    <p>指示タブは、現在のタスク、必要なパート、必要なリソースのセクションで構成されています。<i>現在のタスク</i> セクションには、現在のタスクに対するテキストが表示されます。</p>
+    <p>
+        テキストには、3Dアイテムおよび2Dイメージへのハイパーリンクを含めることができます。3Dアイテムへのリンクを含むテキストは、破線で下線が引かれます。下線付きテキストをクリックすると、対応するアイテムが3Dウィンドウにフィットして表示されます。<br>
+        2Dイメージへのリンクを含むテキストは、点線(<img src="images/Ex_figure.png" width="38" height="19">など)で下線が引かれます。下線付きテキストをクリックすると、2Dウィンドウに対応するイメージが開きます。</p>
+    <p>
+        <i>必要なパート</i> セクションには、対応する3Dアイテムへのリンクを含むパートに対してのみBOMデータが表示されます。
+    </p>
+    <p>
+        <i>必要なリソース</i> セクションには、現在のタスクに必要なリソースが表示されます。
+    </p>
+
+    <!-- Document Tab -->
+    <h3>ドキュメントタブ</h3>
+    <p>ドキュメントタブには、作業指示の全文が表示されます。
+        <p>ジョブモードでは、<i>サインオフ</i> ボタンをクリックして、指示の次のタスクに移動することができます。前のタスクは、そのタスクに対して<i>サインオフ</i> ボタンがクリックされた日時を表示します(例えば、<i>サインオフ: Wednesday, July 21, 2010 12:47:10 PM</i>)。このデータはどこにも保存されていないため、日時の表示は現在のセッション内でのみ可能です。
+        </p>
+
+        <p>
+            プロシージャの再生中に、<i>検査が必要です。</i> メッセージボックスが表示されることがあります。対応するタスクには、<i>検査が必要です。</i> メッセージボックスで<i>閉じる</i> ボタンがクリックされた日時が表示されます(例えば、<i>検査済み: Wednesday, July 21, 2010 12:48:57 PM</i>)。日時の表示は、現在のセッション内でのみ可能です。
+        </p>
+
+        <p>
+            プレビューモードで、プロシージャの必要なタスクをクリックすると、ドキュメントタブでタスクが強調表示され、プロシージャの再生が有効になります。ジョブモードでは、現在のタスクのみが再生に使用することができます。</p>
+        <p>
+            ドキュメントテキストには、3Dアイテムおよび2Dイメージへのハイパーリンクを含めることができます(指示タブを参照してください)。</p>
+    </p>
+
+    <!--3D Window   -->
+
+    <div class="hdbar">3Dウィンドウ</div>
+    <p>
+        3Dウィンドウは、ドキュメントタブに記述されたプロシージャの3D表現を示します。3Dウィンドウでは、再生バーを使用してプロシージャを再生し、マウスボタンを使用してナビゲートすることができます。3Dウィンドウの右上にあるロケータ(座標系の三軸など)を使用して、ユニットまたはパートの空間位置を決定できます。
+    </p>
+
+    <!-- 3D Playback -->
+    <h3>再生バー</h3>
+    <p>
+        3Dウィンドウでのプロシージャ再生を制御するボタン。
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                コマンド
+            </th>
+            <th valign="top" align="left">
+                目的
+            </th>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                再生
+            </td>
+
+            <td valign="top" align="left">
+                停止または一時停止されている場合に、プロシージャの再生を開始します。
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                一時停止
+            </td>
+            <td valign="top" align="left">
+                現在のステップで再生を停止します。
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                停止
+            </td>
+            <td valign="top" align="left">
+                現在のステップを停止して、最初に巻き戻します。
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                サインオフ
+            </td>
+
+            <td valign="top" align="left">
+                ジョブモードで使用可能です。<br>
+                次のタスクをアクティブにします。タスクがドキュメントタブで強調表示され、プロシージャの対応するモーメントが3Dウィンドウで再生されます。ドキュメントタブでの前のタスクは、そのタスクに対して<i>サインオフ</i> ボタンがクリックされた日時を示します。
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                <p>設定</p>
+            </td>
+            <td valign="top" align="left">
+                <p>設定リストを表示または非表示にします。</p>
+                <p>
+                    <b>速度</b>。再生速度を設定します。</p>
+                <p>
+                    <b>ビューポイントを凍結</b>。選択されている場合、カメラが現在のビューにロックされるので、プロシージャ再生中にカメラの移動を防止します。</p>                                    
+                <p>
+                    <b>アラートメッセージを無効化</b>。選択されている場合、再生中にプロシージャのアラートメッセージを無効にします。</p>
+                <p>
+                    <b>PMI</b>。選択されている場合、PMIデータが表示されます。製品製造情報(PMI)は、製品コンポーネントまたはサブシステムの製造に必要な3Dコンピュータ支援設計の非ジオメトリ属性を表します。 </p>
+				<p>
+                    <b>シーン光源</b>。 光源の数と光源の位置を定義して、3Dウィンドウ内のモデルを照らします。 光源の相対位置がリストの右側に表示されます。 すべての光源はビューアと共に移動します。
+					</p>					
+				<p>
+                    <b>ナビゲーションキューブを表示</b>。3Dウィンドウで、ナビゲーションキューブを表示または非表示にします。ナビゲーションキューブには、エッジ、コーナー、およびフェースの、3つの異なるタイプのホットスポット領域があります。ナビゲーションキューブのエッジ、コーナー、またはフェースの上にポインタを置くと、対応する領域が強調表示されます。これらの領域を使用すると、標準ビューを切り替え、回転することができます。
+					</p>
+                <p>
+                    <b>サーフェスエッジを表示</b>。選択されている場合、3Dウィンドウでのサーフェス境界の表示を有効にします。</p>					
+                <p>
+                    <b>アンチエイリアシング</b>。3Dウィンドウ内のゆがみアーティファクトを最小化するテクニックをアクティブにします。</p>						
+                <p>
+                    <b>周囲の包蔵</b>。3Dウィンドウで、アンビエントオクルージョンシェーディングおよびレンダリングテクニックをアクティブにします。</p>					
+
+                <p>
+                    <b>選択モード</b>。3Dウィンドウで選択するオブジェクト表現を指定します。</p>			
+				<p> 
+					<i>色で強調表示</i> - 選択が強調表示されます。</p>			
+                <p>
+					<i>選択したオブジェクトをX-レイ</i>&nbsp;&ndash; 選択対象を除き、グレーの半透明で表示されます。</p>			
+                <p>
+					<i>透過シェル</i> - モデル全体の外側シェルが透明に表示され、選択されていない内部オブジェクトが非表示になります。  
+				</p>					
+                <p>
+                    <b>アウトラインホバーオブジェクト</b>。選択対象の輪郭が描かれます。
+				</p>
+
+
+
+            </td>
+        </tr>
+
+    </table>
+
+    <!-- 3D Navigation -->
+    <h3>再生進行状況バー</h3>
+    <p>
+        再生の進行状況を表示します。バーをクリックすると、プロシージャの希望するモーメントを選択できます。
+    </p>
+
+
+    <!-- Selection Bar -->
+    <h3>選択バー</h3>
+
+    <p>
+        3Dウィンドウで選択されたオブジェクトのフィッティング、表示、非表示、および透明化のためのボタン。
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                ユーザーインタフェース
+            </th>
+            <th valign="top" align="left">
+                ボタン
+            </th>
+            <th valign="top" align="left">
+                目的
+            </th>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                選択したオブジェクトを別のウィンドウで表示
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_selection_external_view.png">
+            </td>			
+            <td valign="top" align="left">
+                有効な場合は、セカンダリ3Dウィンドウに選択内容を表示します。
+            </td>
+        </tr>		
+
+        <tr>
+            <td valign="top" align="left">
+                透明度を無視
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_ignore_tr.png">
+            </td>			
+            <td valign="top" align="left">
+                有効な場合、透明アイテムがユーザーのクリックに反応しなくなるので、3Dウィンドウ内の透明アイテムを通してクリックすることができます。
+            </td>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                すべて復元
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_show_all.png">
+            </td>			
+            <td valign="top" align="left">
+                非表示オブジェクトと半透明オブジェクトをすべて表示します。
+            </td>
+        </tr>			
+
+        <tr>
+            <td valign="top" align="left">
+                フィット
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_selection_fit.png">
+            </td>			
+            <td valign="top" align="left">
+                選択したアイテムの境界ボックスを3Dウィンドウにフィットさせます。
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                表示
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_selection_show.png">
+            </td>			
+            <td valign="top" align="left">
+                3Dウィンドウにおいて、前に非表示にした選択アイテムを表示します。
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                非表示
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_selection_hide.png">
+            </td>				
+            <td valign="top" align="left">
+                3Dウィンドウで選択したアイテムを非表示にします。
+            </td>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                すべての選択を解除
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_select_none.png">
+            </td>				
+            <td valign="top" align="left">
+                すべてのアイテムを選択解除します。
+            </td>
+        </tr>			
+
+        <tr>
+            <td valign="top" align="left">
+                透明度
+            </td>
+            <td valign="top" align="center">
+                &nbsp;
+            </td>			
+            <td valign="top" align="left">
+                選択したアイテムの透明度の値を設定できます。透明度コマンドは、3Dウィンドウで1つまたは複数のアイテムが選択されている場合に使用できます。
+            </td>
+        </tr>
+    </table>
+	
+    <!-- Secondary 3D -->
+    <h3>セカンダリ3Dウィンドウ</h3>
+
+    <p>
+        選択したオブジェクトがセカンダリ3Dウィンドウに表示されます。 
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                ユーザーインタフェース
+            </th>
+            <th valign="top" align="left">
+                ボタン
+            </th>
+            <th valign="top" align="left">
+                目的
+            </th>
+        </tr>
+		
+        <tr>
+            <td valign="top" align="left">
+                中心に設定
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_goto.png">
+            </td>
+            <td valign="top" align="left">
+                3D モデルの回転中心を指定できます。
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                回転中心を表示
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_center.png">
+            </td>
+            <td valign="top" align="left">
+                回転中心を非表示または表示することができます。
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                すべてフィット
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_fit.png">
+            </td>
+            <td valign="top" align="left">
+                3Dウィンドウ内の3Dモデル全体を完全に可視にします。
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                水平に整列
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_align.png">
+            </td>
+            <td valign="top" align="left">
+                カメラの水平軸(縦方向軸ではない)を座標系の水平面に平行にします。
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                測定
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_measure.png">
+            </td>			
+            <td valign="top" align="left">
+                距離を測定するツールを開きます。3Dウィンドウで、1つの点を1回クリックしてから、2番目の点を再度クリックします。2つの赤い点の間の距離が表示されます。垂直または水平面上に投影される点間の距離を取得するには、リストから投影平面の名前を選択します。長さの単位を変更するには、<b>ユニット</b>を選択します。引出し線の長さを設定するには、<b>H</b>スライダをドラッグします。測定ツールを閉じた後に寸法線を表示するには、<b>可視を維持</b>を選択します。新しい点を設定するには、<b>クリア</b>をクリックするか、Escキーを押してから、3Dウィンドウで点を指定します。
+				<p>
+				<b>WARNING</b>				
+				</p>
+				<p>
+				3Dイラストは実際の製品とは異なる場合があるので、測定結果をワークフローで直接使用しないでください。製造またはサービスに必要な寸法を取得するには、関連する技術文書を参照してください。				
+				</p>					
+            </td>
+        </tr>			
+		
+        <tr>
+            <td valign="top" align="left">
+                断面平面
+            </td>
+            <td valign="top" align="center">
+                <img class="btn inline" src="../../../../components/rococo/img/btn_section_plane.png">
+            </td>			
+            <td valign="top" align="left">
+				平面によって切断されたかのようにモデルを表示します。コントロールを使用して、断面平面の設定(左、上、フロント)と回転(XおよびY)を行います。断面平面を移動するには、<b>D</b>スライダをドラッグします。断面をミラーするには、<b>反転</b>を使用します。スライダの精度を改善するには、<b>正確なモード</b>を選択します。ツールを閉じた後に断面を表示するには、<b>可視を維持</b>を選択します。断面平面を選択の中心に移動するには、<b>リセット</b>をクリックします。				
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                フロント
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v1.png">
+            </td>
+            <td valign="top" align="left">
+                モデルを正面から表示します。
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                バック
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v2.png">
+            </td>
+            <td valign="top" align="left">
+                モデルを背面から表示します。
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                左
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v4.png">
+            </td>
+            <td valign="top" align="left">
+                モデルを左側から表示します。
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                右
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v3.png">
+            </td>
+            <td valign="top" align="left">
+                モデルを右側から表示します。
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                トップ
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v5.png">
+            </td>
+            <td valign="top" align="left">
+                モデルを上から表示します。
+            </td>
+        </tr>
+
+
+        <tr>
+            <td valign="top" align="left">
+                ボトム
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v6.png">
+            </td>
+            <td valign="top" align="left">
+                モデルを下から表示します。
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                等角投影
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/v7.png">
+            </td>
+            <td valign="top" align="left">
+                等角投影ビューでモデルを表示します。
+            </td>
+        </tr>		
+
+    </table>
+
+    <!-- 3D Context Commands-->
+    <h3>3Dウィンドウのコンテキスト依存メニュー</h3>
+    <p>3Dウィンドウ内の任意の場所を右クリックして、コンテキスト依存メニューにアクセスします。
+    </p>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                コマンド
+            </th>
+            <th valign="top" align="left">
+                目的
+            </th>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                リセット
+            </td>
+            <td valign="top" align="left">
+                ステップビューをリセットします。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                すべてフィット
+            </td>
+            <td valign="top" align="left">
+                3Dウィンドウでアイテムを完全に表示するようにします。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                バージョン情報
+            </td>
+            <td valign="top" align="left">
+                対話型ドキュメント、3Dビューアおよび2Dビューアのバージョンを表示します。
+            </td>
+        </tr>
+
+    </table>
+
+
+    <!--2D Window   -->
+    <div class="hdbar">2Dウィンドウ</div>
+    <p>
+        2Dウィンドウには、データウィンドウに記述されているプロシージャに関連付けられているベクトルおよびラスタイメージが表示されます。
+        <p>
+            2Dウィンドウは、データウィンドウ(指示タブまたはドキュメントタブ)で2Dイメージのハイパーリンクをクリックすると、3Dウィンドウに置き換わります。
+        </p>
+        2Dウィンドウで右クリックして、使用可能なコンテキスト依存コマンドにアクセスします。コマンドのリストは、2Dウィンドウで使用している2Dビューアによって異なります。
+    </p>
+
+    <h3>2Dウィンドウでのナビゲーション</h3>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <th valign="top" align="left">
+                オペレーション
+            </th>
+            <th valign="top" align="left">
+                ユーザーアクション
+            </th>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                パン
+            </td>
+            <td valign="top" align="left">
+                左ボタンを押したままマウスを移動します。
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" align="left">
+                ズーム
+            </td>
+            <td valign="top" align="left">
+                マウスホイールを前方または後方に回転します。
+            </td>
+        </tr>
+    </table>
+
+    <div class="hdbar">3D/2Dウィンドウのボタン</div>
+
+    <table cellpadding="2" cellspacing="0" border="0">
+        <tr>
+            <td valign="top" align="left">
+                ヘルプ
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_help.png">
+            </td>
+            <td valign="top" align="left">
+                ユーザーインタフェースのヘルプシステムを提供します。
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left">
+                3D
+            </td>
+            <td valign="top" align="center">
+                <img class="btn" src="../../../../components/rococo/img/btn_3d.png">
+            </td>
+            <td valign="top" align="left">
+                3Dウィンドウを開きます。
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

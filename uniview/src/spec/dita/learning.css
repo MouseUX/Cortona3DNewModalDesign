@@ -1,0 +1,154 @@
+[data-class~="learningBase/fig"] {
+    padding: 0;
+    margin: 0;
+}
+
+[data-class~="learningBase/learningBasebody"] [data-class~="learningBase/fig"]>[data-class~="topic/title"],
+[data-class~="learningInteractionBase-d/lcInteractionBase"]>[data-class~="topic/title"],
+[data-class~="learningInteractionBase2-d/lcInteractionBase2"]>[data-class~="learningInteractionBase2-d/lcInteractionLabel2"],
+.questionBlockTitle {
+    font-size: 110%;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: left;
+    font-weight: bold;
+    font-style: normal;
+}
+
+[data-class~="learningBase/learningBasebody"] [data-class~="learningBase/fig"]>[data-class~="topic/title"]:before,
+[data-class~="learningInteractionBase-d/lcInteractionBase"]>[data-class~="topic/title"]:before {
+    content: "";
+}
+
+[data-class~="learningInteractionBase2-d/lcInteractionBase2"] {
+    display: block;
+    padding-left: 1em;
+}
+
+.assessmentQuestion {
+    padding: 0.75em;
+}
+
+.tabular {
+    display: table;
+    margin-left: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    width: 100%;
+}
+
+.tabular.lcMatchTable,
+.tabular.lcSequenceOptionGroup {
+    border-bottom: .5pt solid black;
+}
+
+.tabular>* {
+    display: table-row !important;
+}
+
+.tabular>*>* {
+    display: table-cell !important;
+    padding: 4pt;
+}
+
+.learning {
+    display: block;
+}
+
+.lcQuestion,
+.lcAnswerOption,
+.lcSequenceOption,
+.lcFeedbackItem,
+.lcAsset,
+.lcSequence {
+    display: block;
+}
+
+.lcQuestion:before,
+.lcAnswerOption:before,
+.lcSequenceOption:before,
+.lcFeedbackItem:before,
+.lcAsset:before {
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+    color: #808080;
+}
+
+.lcCorrectResponse:before,
+.lcSequence:before {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: black;
+}
+
+.lcQuestion>*,
+.lcAnswerOption>*,
+.lcSequenceOption>*,
+.lcFeedbackItem>* {
+    display: block;
+    margin-left: 20pt;
+}
+
+.lcMatchTable {
+    display: table;
+}
+
+.lcMatchingHeader,
+.lcMatchingPair {
+    display: table-row;
+}
+
+.lcMatchingHeader {
+    font-weight: bold;
+    background-color: #d3d3d3;
+}
+
+.lcMatchingPair>.lcItem,
+.lcMatchingPair>.lcMatchingItem,
+.lcMatchingHeader>.lcItem,
+.lcMatchingHeader>.lcMatchingItem {
+    display: table-cell;
+}
+
+.select {
+    background-color: aquamarine;
+}
+
+.tabular.lcAnswerOptionGroup,
+.tabular.lcSequenceOptionGroup,
+.tabular.lcMatchTable {
+    table-layout: fixed;
+}
+
+.tabular.lcAnswerOptionGroup .control {
+    width: 50px;
+}
+
+.tabular.lcMatchTable>*>* {
+    width: 50%;
+}
+
+.slideControl {
+    text-align: right;
+}
+
+.correct {
+    background-color: #90EE90;
+}
+
+.wrong {
+    background-color: #FFCCCC;
+}
+
+.slide.hide {
+    display: none;
+}
+
+.slide.show {
+    display: block;
+}

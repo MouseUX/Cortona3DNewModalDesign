@@ -1,0 +1,12 @@
+.skin-popup {
+    overflow: hidden;
+}   
+
+.skin-popup:focus {
+    outline: none;
+}
+
+.skin-popup hr {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}

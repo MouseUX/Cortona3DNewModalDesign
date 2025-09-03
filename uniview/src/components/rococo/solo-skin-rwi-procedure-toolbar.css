@@ -1,0 +1,66 @@
+.skin-holder-figure {
+    justify-content: flex-end;
+}
+
+.panel-settings {
+    bottom: 0;
+    top: auto;
+}
+
+#btn-help {
+    background-image: url(img/btn_help.png);
+}
+
+#btn-play {
+    background-image: url(img/btn_play.png);
+}
+
+#btn-play.played {
+    background-image: url(img/btn_pause.png);
+}
+
+#btn-stop {
+    background-image: url(img/btn_stop.png);
+}
+
+#btn-settings {
+    background-image: url(img/btn_settings.png);
+}
+
+/* Large desktops and laptops 
+@media (min-width: 1200px) {}
+*/
+
+/* Portrait tablets and medium desktops 
+@media (min-width: 992px) and (max-width: 1199px) {}
+*/
+
+/* Portrait tablets and small desktops 
+@media (min-width: 768px) and (max-width: 991px) {}
+*/
+
+/* Landscape phones and portrait tablets 
+@media (max-width: 767px) {}
+@media (max-width: 667px) {}
+*/
+
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    .skin-holder-main .skin-toolbar.top.main {
+        flex-wrap: wrap;
+    }
+
+    .skin-holder-main .skin-toolbar.bottom.main {
+        flex-wrap: wrap-reverse;
+    }
+
+    .skin-toolbar.main .procedure-seek-container {
+        order: 2;
+        flex-basis: 100%;
+    }
+}
+
+/* Portrait
+@media (orientation: portrait) {}
+*/

@@ -1,0 +1,20 @@
+.activeFaultStep .controls {
+    display: block;
+}
+.controls {
+    text-align: center;
+    display: none;
+    padding: 5pt;
+}
+
+.activeFaultStep {
+    background-color: #ffefd5;
+    border: solid silver 1px;
+    margin-left: -6pt;
+    padding: 2pt 6pt 2pt 6pt;
+}
+.activeFaultStep .isolationStepQuestion:after {
+    display: block;
+    font-style: italic;
+    color: #AAAAAA;
+}

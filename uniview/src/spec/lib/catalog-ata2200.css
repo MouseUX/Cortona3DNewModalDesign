@@ -1,0 +1,44 @@
+.dpl-table thead tr:first-child td:nth-child(4):after {
+    content: "1234567";
+    position: absolute;
+    display: block;
+    font-family: monospace;
+    font-weight: normal;
+    font-size: 12px;
+    left: 4px;
+    bottom: 4px;
+}
+
+.dpl-table tr.aux td {
+    text-align: center;
+}
+
+.dpl-table tr.aux:hover,
+.dpl-table tr.aux.hover {
+    background-color: inherit !important;
+}
+
+.dpl-table thead .fig {
+    position: absolute;
+    bottom: 0;
+}
+
+.dpl-table thead .fig pre {
+    position: absolute;
+    top: .5em;
+    font-weight: normal;
+    font-size: 12px;
+    font-family: monospace;
+}
+
+.dpl-table thead td {
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+}
+
+@media print {
+    .print .header .rev .sheet-rev-mark {
+        margin-bottom: 1em;
+    }
+}
