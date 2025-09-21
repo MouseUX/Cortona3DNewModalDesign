@@ -18,7 +18,7 @@
             return;
         }
 
-        // ---------- keep your custom menu (unchanged) ----------
+        // ---------------- keep your custom menu ----------------
         const menu = document.createElement('div');
         menu.className = 'custom-menu';
         document.body.appendChild(menu);
@@ -34,20 +34,20 @@
             ul.appendChild(li);
         });
 
-        // ---------- popup button + DOM ----------
+        // ---------- popup UI ----------
         const openBtn = document.createElement('button');
         openBtn.textContent = 'Open Parts List';
         openBtn.className = 'open-parts-btn';
         document.body.appendChild(openBtn);
 
         const popup = document.createElement('div');
-        popup.className = 'parts-popup'; // we'll toggle .active
+        popup.className = 'parts-popup';
         popup.innerHTML = `
-            <div class="popup-content">
+            <div class="popup-content" role="dialog" aria-modal="true">
                 <button class="close-popup" title="Close">✖</button>
                 <h3>Parts Browser</h3>
                 <div class="row">
-                    <label>Category</label>
+                    <label for="category-select">Category</label>
                     <select id="category-select"></select>
                 </div>
                 <div class="row">
@@ -68,36 +68,15 @@
             searchInput.focus();
         });
         closeBtn.addEventListener('click', () => popup.classList.remove('active'));
+        popup.addEventListener('click', e => { if (e.target === popup) popup.classList.remove('active'); });
 
-        // click outside to close
-        popup.addEventListener('click', (e) => {
-            if (e.target === popup) popup.classList.remove('active');
-        });
+        // ---------- small CSS so popup & highlight are visible ----------
 
-        // ---------- minimal CSS injected so popup actually appears ----------
-        const css = `
-.parts-popup{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:10000;background:#fff;border:1px solid #ccc;box-shadow:0 6px 20px rgba(0,0,0,0.15);padding:14px;max-width:720px;width:90%;display:none;max-height:70vh;overflow:auto;font-family:Arial,Helvetica,sans-serif}
-.parts-popup.active{display:block}
-.parts-popup .popup-content{position:relative}
-.parts-popup .close-popup{position:absolute;right:8px;top:8px;border:0;background:transparent;font-size:16px;cursor:pointer}
-.parts-popup .row{margin:8px 0;display:flex;gap:8px;align-items:center}
-.parts-popup input#parts-search{flex:1;padding:6px;border:1px solid #bbb;border-radius:4px}
-.parts-list ul{list-style:none;padding:0;margin:8px 0}
-.parts-list li{display:flex;gap:12px;padding:8px;border-bottom:1px solid #eee;cursor:pointer;align-items:center}
-.parts-list li:hover{background:#f6f6f6}
-.parts-list .item-no{width:48px;flex:0 0 48px;font-weight:700}
-.parts-list .part-no{background:#f0f0f0;padding:4px 6px;border-radius:4px;font-size:12px}
-.parts-list .desc{flex:1}
-.parts-list .no-results{padding:10px;color:#666}
-        `;
-        const style = document.createElement('style');
-        style.textContent = css;
-        document.head.appendChild(style);
-
-        // ---------- parse XML (views, parts, items) ----------
-        let categories = [];   // {id, name}
-        let partsMap = {};     // partId -> { partNo, description }
-        let items = [];        // { id (item id), viewRef, itemNo, description, partNo, refPart }
+        // ---------- parse XML: categories (views), parts map, items, and view->refItems ----------
+        let categories = [];    // {id, name}
+        let partsMap = {};      // partId -> { partNo, description }
+        let items = [];         // { id, viewRef(s), itemNo, refPartId, partNo, description }
+        let viewItemsMap = {};  // viewId -> Set(itemId)
 
         fetch(`./data/${interactivityFile}`)
             .then(r => r.text())
@@ -105,62 +84,163 @@
                 const parser = new DOMParser();
                 const xml = parser.parseFromString(str, 'application/xml');
 
-                // parts map (parts section provides actual PARTNUMBER / Description)
-                const partNodes = Array.from(xml.querySelectorAll('parts > part'));
-                partNodes.forEach(p => {
+                // PARTS: build map from <parts><part id="...">
+                Array.from(xml.querySelectorAll('parts > part')).forEach(p => {
                     const id = p.getAttribute('id') || '';
-                    const partDesc = p.querySelector('metadata value[name="Description"]')?.textContent?.trim() || '';
-                    const partNum = p.querySelector('metadata value[name="PARTNUMBER"]')?.textContent?.trim()
-                        || p.querySelector('metadata value[name="PARTNUMBER"]')?.textContent?.trim()
-                        || '';
-                    partsMap[id] = { partNo: partNum, description: partDesc };
+                    const partNo = p.querySelector('metadata value[name="PARTNUMBER"]')?.textContent?.trim() || '';
+                    const desc = p.querySelector('metadata value[name="Description"]')?.textContent?.trim() || '';
+                    partsMap[id] = { partNo, description: desc };
                 });
 
-                // categories: views are under <views><view><description>...</description></view></views>
-                const viewNodes = Array.from(xml.querySelectorAll('views > view'));
-                categories = viewNodes.map(v => {
-                    return {
-                        id: v.getAttribute('id'),
-                        name: (v.querySelector('description')?.textContent || v.getAttribute('name') || v.getAttribute('title') || '').trim()
-                    };
+                // VIEWS: collect only visible views (hidden != "1")
+                Array.from(xml.querySelectorAll('views > view')).forEach(v => {
+                    const hidden = v.getAttribute('hidden');
+                    if (hidden === '1') return; // skip hidden/intermediate views
+                    const id = v.getAttribute('id');
+                    const name = (v.querySelector('description')?.textContent || v.getAttribute('name') || '').trim();
+                    categories.push({ id, name });
+                    // build viewItemsMap from refItem entries inside each view
+                    const refItems = Array.from(v.querySelectorAll('refItem')).map(r => r.getAttribute('ref')).filter(Boolean);
+                    viewItemsMap[id] = new Set(refItems);
                 });
 
-                // items: each <item> has refview (view id), refPart (part id), metadata ITEM, commands->value[name="Description For Part"]
-                const itemNodes = Array.from(xml.querySelectorAll('item'));
-                items = itemNodes.map(it => {
+                // ITEMS: build list; some items may also have <refview ref="..."> referencing views
+                Array.from(xml.querySelectorAll('item')).forEach(it => {
                     const id = it.getAttribute('id') || '';
-                    const viewRef = it.querySelector('refview')?.getAttribute('ref') || '';
-                    const itemNo = it.querySelector('metadata value[name="ITEM"]')?.textContent?.trim() || '';
                     const refPartId = it.getAttribute('refPart') || '';
+                    // items can have one or multiple refview entries — collect all refs
+                    const refViews = Array.from(it.querySelectorAll('refview')).map(rv => rv.getAttribute('ref')).filter(Boolean);
+                    const itemNo = it.querySelector('metadata value[name="ITEM"]')?.textContent?.trim() || '';
                     const cmdDesc = it.querySelector('commands command value[name="Description For Part"]')?.textContent?.trim() || '';
                     const partEntry = partsMap[refPartId] || {};
                     const partNo = partEntry.partNo || refPartId || '';
                     const description = cmdDesc || partEntry.description || '';
-                    return { id, viewRef, itemNo, refPartId, partNo, description };
+                    items.push({ id, refPartId, refViews, itemNo, partNo, description });
+
+                    // If item lists refview(s), also make sure it's included in viewItemsMap
+                    refViews.forEach(vId => {
+                        if (!viewItemsMap[vId]) viewItemsMap[vId] = new Set();
+                        viewItemsMap[vId].add(id);
+                    });
                 });
 
-                // populate category select
+                // Populate category select (only visible categories)
                 catSelect.innerHTML = categories.map(c => `<option value="${c.id}">${escapeHtml(c.name || c.id)}</option>`).join('');
                 if (categories.length) {
                     catSelect.value = categories[0].id;
                     renderParts(categories[0].id, '');
                 }
             })
-            .catch(err => {
-                console.error('Error parsing XML:', err);
-            });
+            .catch(err => console.error('Error parsing XML:', err));
 
-        // ---------- render & filter functions ----------
-        function normalizeForSearch(s) { return (s || '').toLowerCase(); }
+        // ---------- helper util ----------
         function escapeHtml(s) { return (s || '').replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": "&#39;" }[ch])); }
+        function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
+        // Wait for toolbar ipc table to render the rows (or a specific refItem to appear)
+        function waitForNativeTable(refItem, timeout = 2500) {
+            return new Promise(resolve => {
+                const start = Date.now();
+                const check = () => {
+                    if (refItem && document.querySelector(`#toolbar-ipc [refitem="${refItem}"], #toolbar-ipc [data-refitem="${refItem}"]`)) {
+                        resolve(true); return;
+                    }
+                    // any table rows exist under toolbar-ipc? That means table refreshed.
+                    if (document.querySelector('#toolbar-ipc table tbody tr, #toolbar-ipc tbody tr')) {
+                        resolve(true); return;
+                    }
+                    if (Date.now() - start > timeout) { resolve(false); return; }
+                    requestAnimationFrame(check);
+                };
+                check();
+            });
+        }
+
+        // Try likely Cortona API methods to select/highlight an item by refItem
+        function tryCortonaApiSelect(refItem) {
+            const candidates = [
+                'ipcTable.selectItem',
+                'ipcTable.selectRow',
+                'ipcTable.select',
+                'selectItem',
+                'selectRow',
+                'selectByRefItem',
+                'selectIpcItem',
+                'selectIPCItem',
+                'ipc.selectItem'
+            ];
+
+            for (const path of candidates) {
+                const parts = path.split('.');
+                let holder = app;
+                for (let i = 0; i < parts.length - 1; i++) {
+                    if (!holder) break;
+                    holder = holder[parts[i]];
+                }
+                const fnName = parts[parts.length - 1];
+                const fn = holder?.[fnName];
+                if (typeof fn === 'function') {
+                    try {
+                        fn.call(holder, refItem);
+                        console.log('Called Cortona API:', path, refItem);
+                        return true;
+                    } catch (err) {
+                        console.warn('API call failed for', path, err);
+                    }
+                }
+            }
+            return false;
+        }
+
+        // DOM fallback to locate row in native IPC table and click/highlight it
+        function domSelectAndHighlight(refItem, matchTextCandidates = []) {
+            // clear previous highlights
+            Array.from(document.querySelectorAll('#toolbar-ipc .ipc-selection-highlight')).forEach(el => el.classList.remove('ipc-selection-highlight'));
+
+            // try attributes
+            const selectors = [
+                `#toolbar-ipc [refitem="${refItem}"]`,
+                `#toolbar-ipc [data-refitem="${refItem}"]`,
+                `#toolbar-ipc tr[refitem="${refItem}"]`,
+                `#toolbar-ipc tr[data-refitem="${refItem}"]`
+            ];
+            for (const s of selectors) {
+                const el = document.querySelector(s);
+                if (el) {
+                    if (typeof el.click === 'function') el.click();
+                    el.classList.add('ipc-selection-highlight');
+                    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    return true;
+                }
+            }
+
+            // fallback: text-search within toolbar rows
+            const rows = Array.from(document.querySelectorAll('#toolbar-ipc table tbody tr, #toolbar-ipc tbody tr'));
+            for (const r of rows) {
+                const txt = (r.innerText || '').toLowerCase();
+                if (matchTextCandidates.some(c => c && txt.includes(c.toLowerCase()))) {
+                    if (typeof r.click === 'function') r.click();
+                    r.classList.add('ipc-selection-highlight');
+                    r.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        // ---------- render filtered parts for a view ----------
         function renderParts(viewId, filter) {
-            const query = (filter || '').trim().toLowerCase();
-            const list = items.filter(it => it.viewRef === viewId);
-            const filtered = query ? list.filter(it =>
-                (it.partNo && it.partNo.toLowerCase().includes(query)) ||
-                (it.description && it.description.toLowerCase().includes(query)) ||
-                (it.itemNo && it.itemNo.toLowerCase().includes(query))
+            const q = (filter || '').trim().toLowerCase();
+            // collect item ids that belong to this view (from viewItemsMap)
+            const idSet = viewItemsMap[viewId] ? new Set(Array.from(viewItemsMap[viewId])) : new Set();
+            // also include items that explicitly reference this view via refViews
+            items.forEach(it => { if (it.refViews && it.refViews.includes(viewId)) idSet.add(it.id); });
+
+            const list = items.filter(it => idSet.has(it.id));
+            const filtered = q ? list.filter(it =>
+                (it.partNo && it.partNo.toLowerCase().includes(q)) ||
+                (it.description && it.description.toLowerCase().includes(q)) ||
+                (it.itemNo && it.itemNo.toLowerCase().includes(q))
             ) : list;
 
             partsList.innerHTML = '';
@@ -172,14 +252,12 @@
             const ul = document.createElement('ul');
             filtered.forEach(p => {
                 const li = document.createElement('li');
-                // item number | part number | description (separated visually)
                 li.innerHTML = `<span class="item-no">${escapeHtml(p.itemNo)}</span>
                                 <span class="part-no">${escapeHtml(p.partNo)}</span>
                                 <span class="desc">${escapeHtml(p.description)}</span>`;
-                li.addEventListener('click', () => {
-                    // switch native #toolbar-ipc select to view that contains this part
+                li.addEventListener('click', async () => {
+                    // find native select option corresponding to this view and switch it
                     const viewName = (categories.find(c => c.id === viewId)?.name || '').trim();
-                    // try to find option by value includes viewId OR text includes viewName
                     const opt = Array.from(selectEl.options).find(o =>
                         (o.value && o.value.includes(viewId)) ||
                         ((o.text || '').toLowerCase().includes(viewName.toLowerCase()))
@@ -188,17 +266,22 @@
                         selectEl.value = opt.value;
                         selectEl.dispatchEvent(new Event('change', { bubbles: true }));
                     } else {
-                        // fallback: try find by text match (loose)
-                        const loose = Array.from(selectEl.options).find(o => (o.text || '').toLowerCase().includes(viewName.toLowerCase().split(' ')[0] || ''));
-                        if (loose) {
-                            selectEl.value = loose.value;
-                            selectEl.dispatchEvent(new Event('change', { bubbles: true }));
-                        } else {
-                            console.warn('Could not find matching select option for view:', viewId, viewName);
-                        }
+                        console.warn('Could not find select option for view:', viewId, viewName);
                     }
+
                     // close popup
                     popup.classList.remove('active');
+
+                    // wait for table to update and try select/highlight
+                    await waitForNativeTable(p.id, 2000);
+
+                    // 1) try cortona API selection
+                    if (tryCortonaApiSelect(p.id)) return;
+
+                    // 2) fallback to DOM selection (by refItem or by text)
+                    if (domSelectAndHighlight(p.id, [p.partNo, p.description, p.itemNo])) return;
+
+                    console.warn('Could not programmatically highlight item in native table for', p);
                 });
                 ul.appendChild(li);
             });
@@ -212,6 +295,11 @@
         searchInput.addEventListener('input', () => {
             renderParts(catSelect.value, searchInput.value);
         });
+
+        // expose data for debugging
+        window.__ipc_helper = { categories, items, partsMap, viewItemsMap };
+
+        console.info('Parts browser ready. I parsed views/items from your IPC XML (hidden views excluded). If a specific view still shows fewer parts than expected, run: console.log(Object.fromEntries(Object.entries(viewItemsMap).map(([k,s])=>[k, s.size])) ) to inspect counts.');
 
     }).catch(err => {
         console.error('❌ Error loading model:', err);

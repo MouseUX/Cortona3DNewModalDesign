@@ -56,7 +56,77 @@ main {
     z-index: 9999;
     position: relative;
 }
+.parts-popup {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 14px;
+    max-width: 720px;
+    width: 90%;
+    display: none;
+    max-height: 70vh;
+    overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.parts-popup.active {
+    display: block;
+}
+.parts-popup .row {
+    margin: 8px 0;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.parts-popup input#parts-search {
+    flex: 1;
+    padding: 6px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+.parts-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0;
+}
+.parts-list li {
+    display: flex;
+    gap: 12px;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    align-items: center;
+}
+.parts-list li:hover {
+    background: #f6f6f6;
+}
+.parts-list .item-no {
+    width: 48px;
+    flex: 0 0 48px;
+    font-weight: 700;
+}
+.parts-list .part-no {
+    background: #f0f0f0;
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.parts-list .desc {
+    flex: 1;
+}
+.parts-list .no-results {
+    padding: 10px;
+    color: #666;
+}
 
+/* highlight for the real native IPC table rows */
+#toolbar-ipc .ipc-selection-highlight {
+    background: #fffa8c !important;
+    outline: 2px solid #f5e06e !important;
+}
 .custom-menu {
     position: absolute;
     top: 4rem;
