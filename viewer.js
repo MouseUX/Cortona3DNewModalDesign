@@ -4,6 +4,7 @@
 
     const app = solo.skin.create('app');
     const interactivityFile = 'pump-catalog.interactivity.xml';
+    // const interactivityFile = 'Swivel.interactivity.xml';
 
     app.use('solo-uniview', {
         baseUrl: 'uniview/src/',
@@ -24,34 +25,44 @@
         document.body.appendChild(menu);
         const ul = document.createElement('ul');
         menu.appendChild(ul);
-        Array.from(selectEl.options).forEach(opt => {
+        Array.from(selectEl.options).forEach((opt, index) => {
             const li = document.createElement('li');
             li.textContent = opt.text;
+            li.dataset.value = opt.value;
+            if (index === 0) li.classList.add('active');
             li.addEventListener('click', () => {
                 selectEl.value = opt.value;
                 selectEl.dispatchEvent(new Event('change', { bubbles: true }));
             });
             ul.appendChild(li);
         });
+        const allLi = document.querySelectorAll('.custom-menu li');
+        allLi.forEach(i => {
+            i.addEventListener('click', function (e) {
+                allLi.forEach(j => j.classList.remove('active'));
+                e.currentTarget.classList.add('active');
+            });
+        });
 
         // ---------------- Popup UI ----------------
+        const topRightItems = document.querySelector('#toolbar-dpl .right.skin-container');
         const openBtn = document.createElement('button');
         openBtn.innerText = '🔍';
         openBtn.className = 'open-parts-btn';
-        document.body.appendChild(openBtn);
+        topRightItems.appendChild(openBtn);
 
         const popup = document.createElement('div');
         popup.className = 'parts-popup';
         popup.innerHTML = `
             <div class="popup-content">
                 <button class="close-popup">✖</button>
-                <h3>Parts Browser</h3>
+                <h3>חיפוש חלקים</h3>
                 <div class="row">
-                    <label for="category-select">Category</label>
+                    <label for="category-select">קטגוריה</label>
                     <select id="category-select"></select>
                 </div>
                 <div class="row">
-                    <input id="parts-search" placeholder="Filter by part number or name" />
+                    <input id="parts-search" placeholder="חיפוש לפי שם חלק או מקט" />
                 </div>
                 <div id="parts-list" class="parts-list"></div>
             </div>
@@ -186,6 +197,15 @@
                         app.ipcTable.selectItem(p.id);
                     } else if (typeof Cortona3DSolo.selectItemById === 'function') {
                         Cortona3DSolo.selectItemById(p.id);
+                    }
+
+                    // ✅ Sync custom menu active state
+                    const menuItems = document.querySelectorAll('.custom-menu li');
+                    menuItems.forEach(li => li.classList.remove('active'));
+                    const cat = categories.find(c => c.id === viewId);
+                    if (cat) {
+                        const targetLi = document.querySelector(`.custom-menu li[data-value="${cat.id}"]`);
+                        if (targetLi) targetLi.classList.add('active');
                     }
 
                     popup.classList.remove('active');

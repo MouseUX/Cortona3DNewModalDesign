@@ -10,6 +10,7 @@ main {
     display: none;
 }
 .parts-popup {
+    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -22,7 +23,6 @@ main {
     max-width: 500px;
     overflow-y: auto;
     z-index: 9999;
-    display: none; /* hidden by default */
 }
 #toolbar-ipc .ipc-selection-highlight {
     background: #fffa8c !important;
@@ -30,7 +30,7 @@ main {
 }
 
 .parts-popup.active {
-    display: block; /* show when active */
+    display: block;
 }
 
 .parts-popup .popup-content {
@@ -76,6 +76,7 @@ main {
     max-height: 70vh;
     overflow: auto;
     font-family: Arial, Helvetica, sans-serif;
+    direction: rtl;
 }
 .parts-popup.active {
     display: block;
@@ -91,6 +92,18 @@ main {
     padding: 6px;
     border: 1px solid #bbb;
     border-radius: 4px;
+}
+.parts-popup label {
+    color: #000;
+}
+.parts-popup select#category-select {
+    padding: 6px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.parts-popup button.close-popup {
+    cursor: pointer;
 }
 .parts-list ul {
     list-style: none;
@@ -153,9 +166,16 @@ main {
     padding: 8px 10px;
     border-bottom: 1px solid #eee;
     cursor: pointer;
+    transition:
+        background-color 0.2s linear,
+        color 0.2s linear;
 }
 .custom-menu li.active {
     background-color: #20262d;
+    color: #fff;
+}
+.custom-menu li.active:hover {
+    background-color: #37414d;
 }
 .custom-menu li:last-child {
     border-bottom: none;
@@ -211,7 +231,8 @@ label,
 }
 
 .dpl-table {
-    background-color: #4c5259;
+    padding: 0 0 4rem;
+    border: unset;
 }
 
 .dpl-table pre {
@@ -228,7 +249,9 @@ label,
 .right.skin-container {
     gap: 15px;
 }
-
+.dpl-table tr {
+    padding: 1rem 0;
+}
 .dpl-table td {
     border-right: unset !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
