@@ -159,7 +159,7 @@
 
             partsList.innerHTML = '';
             if (!filtered.length) {
-                partsList.innerHTML = `<div class="no-results">No parts found.</div>`;
+                partsList.innerHTML = `<div class="no-results">לא נמצאו פריטים.</div>`;
                 return;
             }
 
@@ -182,7 +182,6 @@
                         selectEl.dispatchEvent(new Event('change', { bubbles: true }));
                     }
 
-                    // Highlight row in IPC table
                     const row = document.querySelector(`#dpl-table tr[data-ref="${p.id}"]`);
                     if (row) {
                         document.querySelectorAll('#toolbar-ipc .ipc-selection-highlight')
@@ -192,14 +191,12 @@
                         row.scrollIntoView({ behavior: 'smooth', block: 'center' });
                     }
 
-                    // Use Cortona API to sync with 3D
                     if (app.ipcTable && typeof app.ipcTable.selectItem === 'function') {
                         app.ipcTable.selectItem(p.id);
                     } else if (typeof Cortona3DSolo.selectItemById === 'function') {
                         Cortona3DSolo.selectItemById(p.id);
                     }
 
-                    // ✅ Sync custom menu active state
                     const menuItems = document.querySelectorAll('.custom-menu li');
                     menuItems.forEach(li => li.classList.remove('active'));
                     const cat = categories.find(c => c.id === viewId);

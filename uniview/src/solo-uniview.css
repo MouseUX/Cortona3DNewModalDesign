@@ -402,7 +402,13 @@ input[type="range"]::-webkit-slider-thumb {
     height: 100%;
     flex-grow: 1;
 }
-
+.skin-holder.skin-holder-view > .panel-settings {
+    right: unset;
+    left: 0;
+}
+.skin-holder.skin-holder-view > .panel-settings span {
+    color: #000;
+}
 .loading .panel,
 .loading .skin-split-pane {
     display: none !important;
