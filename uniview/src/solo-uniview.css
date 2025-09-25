@@ -17,11 +17,16 @@ main {
     background: #fff;
     border: 1px solid #ccc;
     padding: 1rem;
-    max-height: 70vh;
+    max-height: 70rem;
+    min-height: 50rem;
     max-width: 500px;
     overflow-y: auto;
     z-index: 9999;
     display: none; /* hidden by default */
+}
+#toolbar-ipc .ipc-selection-highlight {
+    background: #fffa8c !important;
+    outline: 2px solid #f5e06e !important;
 }
 
 .parts-popup.active {
@@ -148,6 +153,9 @@ main {
     padding: 8px 10px;
     border-bottom: 1px solid #eee;
     cursor: pointer;
+}
+.custom-menu li.active {
+    background-color: #20262d;
 }
 .custom-menu li:last-child {
     border-bottom: none;
