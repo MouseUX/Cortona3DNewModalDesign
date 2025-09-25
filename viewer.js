@@ -171,7 +171,6 @@
                     <span class="part-no">${escapeHtml(p.partNo)}</span>
                     <span class="desc">${escapeHtml(p.description)}</span>`;
                 li.addEventListener('click', () => {
-                    // Switch the native select to correct view
                     const viewName = (categories.find(c => c.id === viewId)?.name || '').trim();
                     const opt = Array.from(selectEl.options).find(o =>
                         (o.value && o.value.includes(viewId)) ||
