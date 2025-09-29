@@ -215,6 +215,41 @@
         catSelect.addEventListener('change', () => renderParts(catSelect.value, searchInput.value));
         searchInput.addEventListener('input', () => renderParts(catSelect.value, searchInput.value));
 
+        // ==========================================================
+        //  Simple PDF Export 
+        // ==========================================================
+        const pdfBtn = document.createElement('button');
+        pdfBtn.innerText = '📄 Export PDF';
+        pdfBtn.className = 'export-pdf-btn';
+        topRightItems.appendChild(pdfBtn);
+
+        pdfBtn.addEventListener('click', () => {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+
+            doc.setFontSize(16);
+            doc.text("Parts Catalog Export", 20, 20);
+
+            let y = 40;
+            console.log(items); // An array of objects containing the parts info and data.
+            items.forEach((p, idx) => {
+                const line = `${p.itemNo || '-'} | ${p.partNo || '-'} | ${p.description || ''}`;
+                doc.setFontSize(10);
+                doc.text(line, 20, y);
+                y += 7;
+                if (y > 280) {
+                    doc.addPage();
+                    y = 20;
+                }
+            });
+            // This doc.save will prompt a download
+            // doc.save("catalog.pdf");
+            // This pdfUrl will open the PDF in a new tab
+            const pdfBlob = doc.output('blob');
+            const pdfUrl = URL.createObjectURL(pdfBlob);
+            window.open(pdfUrl, '_blank');
+        });
+
     }).catch(err => {
         console.error('❌ Error loading model:', err);
     });
