@@ -3,7 +3,7 @@
     solo.use('skin', { baseUrl: 'uniview/src/' });
 
     const app = solo.skin.create('app');
-    const interactivityFile = 'pump-catalog.interactivity.xml';
+    const interactivityFile = 'Untitled.interactivity.xml';
     // const interactivityFile = 'Swivel.interactivity.xml';
 
     app.use('solo-uniview', {
@@ -102,7 +102,7 @@
                 xml.querySelectorAll('parts > part').forEach(p => {
                     const id = p.getAttribute('id') || '';
                     const partNo = p.querySelector('metadata value[name="PARTNUMBER"]')?.textContent?.trim() || '';
-                    const desc = p.querySelector('metadata value[name="Description"]')?.textContent?.trim() || '';
+                    const desc = p.querySelector('metadata value[name="Description"]')?.textContent?.trim() || p.querySelector('metadata value[name="תיאור"]')?.textContent?.trim() || '';
                     partsMap[id] = { partNo, description: desc };
                 });
 
@@ -261,7 +261,7 @@
         //  Simple PDF Export 
         // ==========================================================
         const pdfBtn = document.createElement('button');
-        pdfBtn.innerText = '📄 Export PDF';
+        pdfBtn.innerText = '📄 ייצוא ל- PDF';
         pdfBtn.className = 'export-pdf-btn';
         topRightItems.appendChild(pdfBtn);
 
