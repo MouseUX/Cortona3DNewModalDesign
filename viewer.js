@@ -99,7 +99,6 @@
                 const parser = new DOMParser();
                 const xml = parser.parseFromString(str, 'application/xml');
 
-                // Build parts map
                 xml.querySelectorAll('parts > part').forEach(p => {
                     const id = p.getAttribute('id') || '';
                     const partNo = p.querySelector('metadata value[name="PARTNUMBER"]')?.textContent?.trim() || '';
@@ -107,7 +106,7 @@
                     partsMap[id] = { partNo, description: desc };
                 });
 
-                // Categories (skip hidden)
+                // Step 1: Build the complete viewItemsMap (same as before)
                 xml.querySelectorAll('views > view').forEach(v => {
                     if (v.getAttribute('hidden') === '1') return;
                     const id = v.getAttribute('id');
@@ -117,7 +116,7 @@
                     viewItemsMap[id] = new Set(refItems);
                 });
 
-                // Items
+                let rawItems = []; // Use a temporary array first
                 xml.querySelectorAll('item').forEach(it => {
                     const id = it.getAttribute('id') || '';
                     const refPartId = it.getAttribute('refPart') || '';
@@ -127,14 +126,45 @@
                     const partEntry = partsMap[refPartId] || {};
                     const partNo = partEntry.partNo || refPartId || '';
                     const description = cmdDesc || partEntry.description || '';
-                    items.push({ id, refPartId, refViews, itemNo, partNo, description });
+                    rawItems.push({ id, refPartId, refViews, itemNo, partNo, description });
                     refViews.forEach(vId => {
                         if (!viewItemsMap[vId]) viewItemsMap[vId] = new Set();
                         viewItemsMap[vId].add(id);
                     });
                 });
 
-                // Populate categories
+                // Step 2: Create the reverse map (item -> views) (same as before)
+                const itemToViewsMap = {};
+                for (const viewId of Object.keys(viewItemsMap)) {
+                    for (const itemId of viewItemsMap[viewId]) {
+                        if (!itemToViewsMap[itemId]) itemToViewsMap[itemId] = [];
+                        itemToViewsMap[itemId].push(viewId);
+                    }
+                }
+
+                // Step 3: THE KEY CHANGE - "Explode" the items into a new list.
+                // Each entry in this new list represents a unique item-in-view combination.
+                const itemsInViewContext = [];
+                rawItems.forEach(item => {
+                    const allViews = itemToViewsMap[item.id] || [];
+                    if (allViews.length > 0) {
+                        allViews.forEach(viewId => {
+                            // Create a new, distinct object for each view context
+                            itemsInViewContext.push({
+                                ...item, // Copy original properties (id, partNo, etc.)
+                                contextualViewId: viewId, // Add the specific view for this instance
+                            });
+                        });
+                    } else {
+                        // Fallback for items with no view (should be rare)
+                        itemsInViewContext.push({ ...item, contextualViewId: null });
+                    }
+                });
+
+                // Overwrite the global 'items' array with our new, more detailed list.
+                items = itemsInViewContext;
+
+                // Populate UI
                 catSelect.innerHTML = categories.map(c =>
                     `<option value="${c.id}">${escapeHtml(c.name || c.id)}</option>`
                 ).join('');
@@ -143,44 +173,55 @@
                     renderParts(categories[0].id, '');
                 }
             });
-
         // ---------------- Render list ----------------
         function renderParts(viewId, filter) {
             const q = (filter || '').trim().toLowerCase();
-            const idSet = viewItemsMap[viewId] ? new Set(viewItemsMap[viewId]) : new Set();
-            items.forEach(it => { if (it.refViews.includes(viewId)) idSet.add(it.id); });
+            let list = [];
 
-            const list = items.filter(it => idSet.has(it.id));
-            const filtered = q ? list.filter(it =>
-                (it.partNo && it.partNo.toLowerCase().includes(q)) ||
-                (it.description && it.description.toLowerCase().includes(q)) ||
-                (it.itemNo && it.itemNo.toLowerCase().includes(q))
-            ) : list;
+            if (q) {
+                // Search logic now filters our new "exploded" list.
+                // This will naturally find multiple entries for the same part if it's in multiple views.
+                list = items.filter(it =>
+                    (it.partNo && it.partNo.toLowerCase().includes(q)) ||
+                    (it.description && it.description.toLowerCase().includes(q)) ||
+                    (it.itemNo && it.itemNo.toLowerCase().includes(q))
+                );
+            } else {
+                // Browsing by category is now a simple filter on the item's specific view context.
+                list = items.filter(it => it.contextualViewId === viewId);
+            }
 
             partsList.innerHTML = '';
-            if (!filtered.length) {
+            if (!list.length) {
                 partsList.innerHTML = `<div class="no-results">לא נמצאו פריטים.</div>`;
                 return;
             }
 
             const ul = document.createElement('ul');
-            filtered.forEach(p => {
+            list.forEach(p => {
+                // Find the view name using the item's specific contextualViewId
+                const viewName = categories.find(c => c.id === p.contextualViewId)?.name || p.contextualViewId || '';
+
                 const li = document.createElement('li');
                 li.innerHTML = `
-                    <span class="item-no">${escapeHtml(p.itemNo)}</span>
-                    <span class="part-no">${escapeHtml(p.partNo)}</span>
-                    <span class="desc">${escapeHtml(p.description)}</span>`;
+            <span class="item-no">${escapeHtml(p.itemNo || '-')}</span>
+            <span class="part-no">${escapeHtml(p.partNo || '-')}</span>
+            <span class="desc">${escapeHtml(p.description || '')}</span>
+            <span class="view-badge">[${escapeHtml(viewName)}]</span>
+        `; // The view badge is now always shown for clarity
+
                 li.addEventListener('click', () => {
-                    const viewName = (categories.find(c => c.id === viewId)?.name || '').trim();
-                    const opt = Array.from(selectEl.options).find(o =>
-                        (o.value && o.value.includes(viewId)) ||
-                        ((o.text || '').toLowerCase().includes(viewName.toLowerCase()))
-                    );
+                    // The click logic is now dead simple: the target view is the item's contextual view.
+                    const targetViewId = p.contextualViewId;
+                    if (!targetViewId) return; // Do nothing if item has no view context
+
+                    const opt = Array.from(selectEl.options).find(o => o.value === targetViewId);
                     if (opt) {
                         selectEl.value = opt.value;
                         selectEl.dispatchEvent(new Event('change', { bubbles: true }));
                     }
 
+                    // Highlighting the IPC table row (using the original item id 'p.id')
                     const row = document.querySelector(`#dpl-table tr[data-ref="${p.id}"]`);
                     if (row) {
                         document.querySelectorAll('#toolbar-ipc .ipc-selection-highlight')
@@ -196,20 +237,21 @@
                         Cortona3DSolo.selectItemById(p.id);
                     }
 
+                    // Update custom menu active state
                     const menuItems = document.querySelectorAll('.custom-menu li');
                     menuItems.forEach(li => li.classList.remove('active'));
-                    const cat = categories.find(c => c.id === viewId);
-                    if (cat) {
-                        const targetLi = document.querySelector(`.custom-menu li[data-value="${cat.id}"]`);
-                        if (targetLi) targetLi.classList.add('active');
-                    }
+                    const targetLi = document.querySelector(`.custom-menu li[data-value="${targetViewId}"]`);
+                    if (targetLi) targetLi.classList.add('active');
 
                     popup.classList.remove('active');
                 });
+
                 ul.appendChild(li);
             });
+
             partsList.appendChild(ul);
         }
+
 
         // Handlers
         catSelect.addEventListener('change', () => renderParts(catSelect.value, searchInput.value));
