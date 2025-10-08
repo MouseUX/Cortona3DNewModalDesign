@@ -258,38 +258,111 @@
         searchInput.addEventListener('input', () => renderParts(catSelect.value, searchInput.value));
 
         // ==========================================================
-        //  Simple PDF Export 
+        //  Simple PDF Export (Hebrew with Heebo font)
         // ==========================================================
         const pdfBtn = document.createElement('button');
         pdfBtn.innerText = '📄 ייצוא ל- PDF';
         pdfBtn.className = 'export-pdf-btn';
         topRightItems.appendChild(pdfBtn);
 
-        pdfBtn.addEventListener('click', () => {
+        pdfBtn.addEventListener('click', async () => {
             const { jsPDF } = window.jspdf;
             const doc = new jsPDF();
 
-            doc.setFontSize(16);
-            doc.text("Parts Catalog Export", 20, 20);
-
-            let y = 40;
-            console.log(items); // An array of objects containing the parts info and data.
-            items.forEach((p, idx) => {
-                const line = `${p.itemNo || '-'} | ${p.partNo || '-'} | ${p.description || ''}`;
-                doc.setFontSize(10);
-                doc.text(line, 20, y);
-                y += 7;
-                if (y > 280) {
-                    doc.addPage();
-                    y = 20;
+            try {
+                // Prefer local TTF if available; fallback to remote
+                async function loadHeeboBase64() {
+                    const toBase64 = (buffer) => btoa(new Uint8Array(buffer).reduce((data, byte) => data + String.fromCharCode(byte), ''));
+                    // Try common local filenames first to avoid CORS (check both res/ and fonts/)
+                    const localCandidates = [
+                        './fonts/Heebo/Heebo-Regular.ttf',
+                        './fonts/Heebo/Heebo-VariableFont_wght.ttf',
+                        '/fonts/Heebo/Heebo-Regular.ttf',
+                        '/fonts/Heebo/Heebo-VariableFont_wght.ttf'
+                    ];
+                    for (const url of localCandidates) {
+                        const res = await fetch(url);
+                        if (res.ok) return toBase64(await res.arrayBuffer());
+                    }
                 }
-            });
-            // This doc.save will prompt a download
-            // doc.save("catalog.pdf");
-            // This pdfUrl will open the PDF in a new tab
-            const pdfBlob = doc.output('blob');
-            const pdfUrl = URL.createObjectURL(pdfBlob);
-            window.open(pdfUrl, '_blank');
+
+                const fontBase64 = await loadHeeboBase64();
+
+                doc.addFileToVFS('Heebo-Regular.ttf', fontBase64);
+                doc.addFont('Heebo-Regular.ttf', 'Heebo', 'normal');
+                doc.setFont('Heebo');
+                doc.setR2L(true);
+
+                const pageWidth = doc.internal.pageSize.getWidth();
+                const pageHeight = doc.internal.pageSize.getHeight();
+                const rightMargin = 20;
+                const topMargin = 20;
+                const lineHeight = 7;
+                const headerGap = 10;
+                const footerGap = 10;
+                const contentTop = topMargin + 12 + headerGap;
+                const contentBottom = pageHeight - footerGap;
+
+                function drawHeader(title) {
+                    doc.setFontSize(16);
+                    doc.text(title, pageWidth - rightMargin, topMargin, { align: 'right' });
+                    doc.setFontSize(10);
+                }
+
+                function ensureSpace(currentY, needed = lineHeight) {
+                    if (currentY + needed > contentBottom) {
+                        doc.addPage();
+                        drawHeader(currentHeader);
+                        return contentTop;
+                    }
+                    return currentY;
+                }
+
+                // Group items by category (contextualViewId)
+                const viewIdToName = Object.fromEntries(categories.map(c => [c.id, c.name || c.id]));
+                const itemsByCategory = {};
+                items.forEach(p => {
+                    const key = p.contextualViewId || 'UNCATEGORIZED';
+                    if (!itemsByCategory[key]) itemsByCategory[key] = [];
+                    itemsByCategory[key].push(p);
+                });
+
+                let y = contentTop;
+                let currentHeader = '';
+                const orderedCategories = categories.map(c => c.id).filter(id => itemsByCategory[id] && itemsByCategory[id].length);
+                if (!orderedCategories.length && items.length) {
+                    orderedCategories.push('UNCATEGORIZED');
+                }
+
+                orderedCategories.forEach((catId, index) => {
+                    currentHeader = catId === 'UNCATEGORIZED' ? 'ללא קטגוריה' : (viewIdToName[catId] || catId);
+                    if (index > 0) {
+                        doc.addPage();
+                    }
+                    drawHeader(currentHeader);
+                    y = contentTop;
+
+                    // Optional column titles per category
+                    const titleLine = 'פריט | מספר פריט | תיאור';
+                    doc.setFontSize(11);
+                    doc.text(titleLine, pageWidth - rightMargin, y, { align: 'right' });
+                    doc.setFontSize(10);
+                    y += lineHeight + 2;
+
+                    itemsByCategory[catId].forEach(p => {
+                        y = ensureSpace(y);
+                        const line = `${p.itemNo || '-'} | ${p.partNo || '-'} | ${p.description || ''}`;
+                        doc.text(line, pageWidth - rightMargin, y, { align: 'right' });
+                        y += lineHeight;
+                    });
+                });
+
+                const pdfBlob = doc.output('blob');
+                const pdfUrl = URL.createObjectURL(pdfBlob);
+                window.open(pdfUrl, '_blank');
+            } catch (err) {
+                console.error('❌ PDF generation failed:', err);
+            }
         });
 
     }).catch(err => {
