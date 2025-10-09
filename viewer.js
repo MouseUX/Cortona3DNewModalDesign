@@ -3,8 +3,8 @@
     solo.use('skin', { baseUrl: 'uniview/src/' });
 
     const app = solo.skin.create('app');
-    const interactivityFile = 'Untitled.interactivity.xml';
-    // const interactivityFile = 'Swivel.interactivity.xml';
+    // const interactivityFile = 'Untitled.interactivity.xml';
+    const interactivityFile = 'Buchna.interactivity.xml';
 
     app.use('solo-uniview', {
         baseUrl: 'uniview/src/',
@@ -20,9 +20,18 @@
         }
 
         // ---------------- Custom menu ----------------
+
+        // const chevron = document.createElement('button');
         const menu = document.createElement('div');
+        const menuHeader = document.createElement('div');
+        const main = document.querySelector('main');
+        menuHeader.className = 'custom-menu-header';
         menu.className = 'custom-menu';
-        document.body.appendChild(menu);
+        // chevron.className = 'custom-menu-button';
+        // chevron.innerHTML = '<span>⬅️</span>';
+        // menu.appendChild(chevron);
+        menu.appendChild(menuHeader);
+        main.prepend(menu);
         const ul = document.createElement('ul');
         menu.appendChild(ul);
         Array.from(selectEl.options).forEach((opt, index) => {
@@ -43,13 +52,19 @@
                 e.currentTarget.classList.add('active');
             });
         });
+        // chevron.addEventListener('click', function (e) {
+        //     e.preventDefault();
+        //     chevron.classList.toggle('open');
+        //     chevron.textContent = '➡️';
+        //     console.log('test');
+        // });
 
         // ---------------- Popup UI ----------------
-        const topRightItems = document.querySelector('#toolbar-dpl .right.skin-container');
+        // const topRightItems = document.querySelector('#toolbar-dpl .right.skin-container');
         const openBtn = document.createElement('button');
         openBtn.innerText = '🔍';
         openBtn.className = 'open-parts-btn';
-        topRightItems.appendChild(openBtn);
+        menuHeader.appendChild(openBtn);
 
         const popup = document.createElement('div');
         popup.className = 'parts-popup';
@@ -263,7 +278,7 @@
         const pdfBtn = document.createElement('button');
         pdfBtn.innerText = '📄 ייצוא ל- PDF';
         pdfBtn.className = 'export-pdf-btn';
-        topRightItems.appendChild(pdfBtn);
+        menuHeader.appendChild(pdfBtn);
 
         pdfBtn.addEventListener('click', async () => {
             const { jsPDF } = window.jspdf;
@@ -307,6 +322,7 @@
                     doc.setFontSize(16);
                     doc.text(title, pageWidth - rightMargin, topMargin, { align: 'right' });
                     doc.setFontSize(10);
+
                 }
 
                 function ensureSpace(currentY, needed = lineHeight) {

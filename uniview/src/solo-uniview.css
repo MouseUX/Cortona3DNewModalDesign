@@ -1,4 +1,4 @@
-/* SOLO CSS */
+/* Custom CSS */
 body {
     font-family: "Roboto", "Assistant";
 }
@@ -36,7 +36,10 @@ main {
 .parts-popup .popup-content {
     position: relative;
 }
-
+#btn-composite-print,
+#btn-print-table {
+    display: none;
+}
 .parts-popup .popup-close {
     position: absolute;
     top: 5px;
@@ -147,16 +150,38 @@ main {
 }
 
 .custom-menu {
-    position: absolute;
-    top: 4rem;
-    right: 0;
+    position: relative;
     background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    max-width: 250px;
-    font-family: sans-serif;
+    width: 350px;
+}
+.custom-menu:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+        to right,
+        #577599 0%,
+        #577599 33.33%,
+        #6aa0e2 33.33%,
+        #6aa0e2 66.66%,
+        #ffe650 66.66%,
+        #ffe650 100%
+    );
+    width: 100%;
+    height: 5px;
+}
+.custom-menu button {
+    background: red;
     margin: 10px;
-    z-index: 999;
+    border: 2px solid pink;
+}
+.custom-menu .custom-menu-header {
+    background-color: #20262d;
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+    text-align: center;
 }
 .custom-menu ul {
     list-style: none;
@@ -253,10 +278,10 @@ label,
 .dpl-table tr {
     padding: 1rem 0;
 }
-.dpl-table td {
+.dpl-table tbody td {
     border-right: unset !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
-    padding: 10px 0;
+    padding: 10px 10px 10px 0;
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -376,7 +401,8 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .main.panel {
-    order: -5;
+    order: 2;
+    /* order: -5; */
 }
 
 .aux.panel,
@@ -413,6 +439,7 @@ input[type="range"]::-webkit-slider-thumb {
 .loading .panel,
 .loading .skin-split-pane {
     display: none !important;
+    order: 5;
 }
 
 .skin-modal.help iframe {
